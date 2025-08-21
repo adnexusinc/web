@@ -58,7 +58,7 @@ export const HeroSection = () => {
                   size="xl" 
                   className="group"
                 >
-                  Signup
+                  Get Started
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
