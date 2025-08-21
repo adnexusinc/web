@@ -3,8 +3,12 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+import { useToast } from '@/hooks/use-toast';
 
 export const ContactSection = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,10 +23,51 @@ export const ContactSection = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase
+        .from('contacts')
+        .insert({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company || null,
+          message: formData.message || null
+        });
+
+      if (error) {
+        console.error('Error submitting contact form:', error);
+        toast({
+          title: "Error",
+          description: "Failed to send your message. Please try again.",
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for contacting us. We'll get back to you soon.",
+        });
+        
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          message: ''
+        });
+      }
+    } catch (error) {
+      console.error('Unexpected error:', error);
+      toast({
+        title: "Error", 
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -116,9 +161,15 @@ export const ContactSection = () => {
                 />
               </div>
               
-              <Button type="submit" variant="cta" size="lg" className="w-full group">
+              <Button 
+                type="submit" 
+                variant="cta" 
+                size="lg" 
+                className="w-full group" 
+                disabled={isSubmitting}
+              >
                 <Send className="group-hover:translate-x-1 transition-transform" />
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
           </div>
