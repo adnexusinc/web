@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <div className="min-h-screen gradient-hero">
+    <div className="min-h-screen bg-background">
       <div className="container mx-auto px-6 py-12">
         <Link to="/">
           <Button variant="ghost" className="mb-8">
