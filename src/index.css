@@ -34,8 +34,8 @@ All colors MUST be HSL. Modern gradients and tech-forward aesthetics.
     --accent: 280 100% 70%;
     --accent-foreground: 210 40% 98%;
 
-    /* Success - Growth green */
-    --success: 142 69% 58%;
+    /* Success - Purple accent */
+    --success: 280 100% 70%;
     --success-foreground: 222 47% 4%;
 
     --destructive: 0 84% 60%;

@@ -73,18 +73,12 @@ export const HeroSection = () => {
 
           {/* Social Proof */}
           <div className="gradient-card rounded-2xl p-6 backdrop-blur-sm border border-primary/20 max-w-2xl mx-auto">
-            <div className="flex items-center justify-center gap-2 mb-3">
+            <div className="flex items-center justify-center gap-2">
               <div className="w-3 h-3 bg-success rounded-full animate-pulse"></div>
               <span className="font-semibold text-success">
                 Join 100+ companies already scaling with ADXYZ
               </span>
             </div>
-            <p className="text-muted-foreground">
-              "We increased our ad revenue by 340% in the first month using ADXYZ's white-label DSP."
-            </p>
-            <p className="text-sm text-muted-foreground mt-2">
-              — Sarah Chen, CEO at MediaFlow
-            </p>
           </div>
         </div>
       </div>
