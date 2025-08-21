@@ -5,14 +5,12 @@ import { Link } from 'react-router-dom';
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-hero">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Logo */}
       <div className="absolute top-8 left-8 z-20">
-        <img 
-          src="/lovable-uploads/b81bd43c-c312-4c2d-b235-002b7bf718d1.png" 
-          alt="ADXYZ Logo" 
-          className="w-16 h-16"
-        />
+        <div className="text-2xl font-bold">
+          AD<span className="text-gradient">XYZ</span>
+        </div>
       </div>
 
       {/* Main Content */}
