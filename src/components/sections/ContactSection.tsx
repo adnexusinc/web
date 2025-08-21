@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
@@ -13,13 +14,22 @@ export const ContactSection = () => {
     name: '',
     email: '',
     company: '',
-    message: ''
+    message: '',
+    interestArea: '',
+    companySize: ''
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSelectChange = (name: string, value: string) => {
+    setFormData({
+      ...formData,
+      [name]: value
     });
   };
 
@@ -34,7 +44,9 @@ export const ContactSection = () => {
           name: formData.name,
           email: formData.email,
           company: formData.company || null,
-          message: formData.message || null
+          message: formData.message || null,
+          interest_area: formData.interestArea || null,
+          company_size: formData.companySize || null
         });
 
       if (error) {
@@ -55,7 +67,9 @@ export const ContactSection = () => {
           name: '',
           email: '',
           company: '',
-          message: ''
+          message: '',
+          interestArea: '',
+          companySize: ''
         });
       }
     } catch (error) {
@@ -145,6 +159,41 @@ export const ContactSection = () => {
                   onChange={handleInputChange}
                   placeholder="Your company name"
                 />
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium mb-2">
+                    Interest Area
+                  </label>
+                  <Select onValueChange={(value) => handleSelectChange('interestArea', value)} value={formData.interestArea}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select your interest" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="ADX">ADX</SelectItem>
+                      <SelectItem value="SSP">SSP</SelectItem>
+                      <SelectItem value="DSP">DSP</SelectItem>
+                      <SelectItem value="Network">Network</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium mb-2">
+                    Company Size
+                  </label>
+                  <Select onValueChange={(value) => handleSelectChange('companySize', value)} value={formData.companySize}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select company size" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="1-10">1-10 people</SelectItem>
+                      <SelectItem value="10-100">10-100 people</SelectItem>
+                      <SelectItem value="100+">100+ people</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
               </div>
               
               <div>

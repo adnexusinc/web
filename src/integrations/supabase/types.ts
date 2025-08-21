@@ -47,27 +47,33 @@ export type Database = {
       contacts: {
         Row: {
           company: string | null
+          company_size: string | null
           created_at: string
           email: string
           id: string
+          interest_area: string | null
           message: string | null
           name: string
           updated_at: string
         }
         Insert: {
           company?: string | null
+          company_size?: string | null
           created_at?: string
           email: string
           id?: string
+          interest_area?: string | null
           message?: string | null
           name: string
           updated_at?: string
         }
         Update: {
           company?: string | null
+          company_size?: string | null
           created_at?: string
           email?: string
           id?: string
+          interest_area?: string | null
           message?: string | null
           name?: string
           updated_at?: string
