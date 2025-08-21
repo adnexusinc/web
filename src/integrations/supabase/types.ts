@@ -14,6 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
+      contact_audit_log: {
+        Row: {
+          action: string
+          contact_id: string | null
+          id: string
+          ip_address: unknown | null
+          timestamp: string | null
+          user_agent: string | null
+          user_id: string | null
+        }
+        Insert: {
+          action: string
+          contact_id?: string | null
+          id?: string
+          ip_address?: unknown | null
+          timestamp?: string | null
+          user_agent?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          action?: string
+          contact_id?: string | null
+          id?: string
+          ip_address?: unknown | null
+          timestamp?: string | null
+          user_agent?: string | null
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       contacts: {
         Row: {
           company: string | null
@@ -98,6 +128,10 @@ export type Database = {
     }
     Functions: {
       is_admin: {
+        Args: { user_id: string }
+        Returns: boolean
+      }
+      is_admin_secure: {
         Args: { user_id: string }
         Returns: boolean
       }
