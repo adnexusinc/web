@@ -112,7 +112,7 @@ export const Footer = () => {
                           className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group"
                         >
                           {link}
-                          <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                          <ArrowRight className="w-3 h-3 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                         </a>
                       </li>
                     ))}

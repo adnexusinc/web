@@ -4,12 +4,11 @@ import { TrendingUp } from 'lucide-react';
 export const StatsSection = () => {
   const stats = [
     { number: "300%", label: "ROI", description: "our customers have achieved over the past 3 years with ADXYZ Ecosystem solutions and products" },
-    { number: "10+", label: "years of experience", description: "in the digital programmatic advertising industry" },
-    { number: "230", label: "our clients", description: "trust us with their advertising operations worldwide" },
-    { number: "40+", label: "account managers", description: "available 7 days a week for personalized support" },
-    { number: "250+", label: "partners connected", description: "in our exclusive trading community" },
-    { number: "4", label: "unique solutions", description: "covering every aspect of programmatic advertising" },
-    { number: "100%", label: "scanned traffic", description: "ensuring premium quality and fraud protection" }
+    { number: "150M+", label: "imps / mo", description: "Total capacity across all ad formats" },
+    { number: "55+", label: "Available campaign settings", description: "Complete control over targeting and optimization" },
+    { number: "100%", label: "Of verified traffic", description: "using leading scanners" },
+    { number: "15+", label: "years of experience", description: "in the digital programmatic advertising industry" },
+    { number: "2ms", label: "response time", description: "Trade at unthinkable speed" }
   ];
 
   return (
