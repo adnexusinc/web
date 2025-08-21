@@ -46,31 +46,49 @@ export type Database = {
       }
       profiles: {
         Row: {
+          approval_status: string | null
+          business_description: string | null
+          company_name: string | null
           created_at: string
           email: string | null
           full_name: string | null
           id: string
           is_admin: boolean
+          monthly_volume: string | null
+          platform_type: string | null
           updated_at: string
           user_id: string
+          website_url: string | null
         }
         Insert: {
+          approval_status?: string | null
+          business_description?: string | null
+          company_name?: string | null
           created_at?: string
           email?: string | null
           full_name?: string | null
           id?: string
           is_admin?: boolean
+          monthly_volume?: string | null
+          platform_type?: string | null
           updated_at?: string
           user_id: string
+          website_url?: string | null
         }
         Update: {
+          approval_status?: string | null
+          business_description?: string | null
+          company_name?: string | null
           created_at?: string
           email?: string | null
           full_name?: string | null
           id?: string
           is_admin?: boolean
+          monthly_volume?: string | null
+          platform_type?: string | null
           updated_at?: string
           user_id?: string
+          website_url?: string | null
         }
         Relationships: []
       }
