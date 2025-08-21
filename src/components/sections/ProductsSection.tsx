@@ -11,7 +11,7 @@ export const ProductsSection = () => {
       description: "Launch an advertising business and earn money from day one with our comprehensive ad exchange platform.",
       features: ["Real-time bidding", "Multi-format support", "Advanced analytics", "Fraud protection"],
       color: "from-blue-500 to-cyan-500",
-      link: "/partners"
+      link: "/white-label-adexchange"
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
@@ -27,7 +27,7 @@ export const ProductsSection = () => {
       description: "Monetize your websites and applications with our advanced SSP technology and premium demand sources.",
       features: ["Header bidding", "Yield optimization", "Premium advertisers", "Revenue analytics"],
       color: "from-green-500 to-emerald-500",
-      link: "/publishers"
+      link: "/ssp"
     },
     {
       icon: <Users className="w-8 h-8" />,

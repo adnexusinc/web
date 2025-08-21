@@ -9,6 +9,8 @@ import Publishers from "./pages/Publishers";
 import Advertisers from "./pages/Advertisers";
 import Partners from "./pages/Partners";
 import About from "./pages/About";
+import SSP from "./pages/SSP";
+import WhiteLabelAdExchange from "./pages/WhiteLabelAdExchange";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/advertisers" element={<Advertisers />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/about" element={<About />} />
+          <Route path="/ssp" element={<SSP />} />
+          <Route path="/white-label-adexchange" element={<WhiteLabelAdExchange />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
