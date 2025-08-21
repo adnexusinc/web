@@ -26,9 +26,9 @@ export const HeroSection = () => {
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Scale programmatic ads{' '}
-            <span className="text-gradient">10X faster</span>{' '}
-            with white-label solutions
+            Scale your advertising campaigns{' '}
+            <span className="text-gradient">with premium</span>{' '}
+            programmatic advertising
           </h1>
 
           {/* Subheadline */}
@@ -52,15 +52,16 @@ export const HeroSection = () => {
           {/* CTA Section */}
           <div className="mb-16">
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-              <Button 
-                variant="hero" 
-                size="xl" 
-                className="group"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Start Free Trial
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link to="/auth">
+                <Button 
+                  variant="hero" 
+                  size="xl" 
+                  className="group"
+                >
+                  Signup
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
               <Button variant="outline" size="xl" className="group">
                 <Play size={20} className="group-hover:scale-110 transition-transform" />
                 Book Demo
