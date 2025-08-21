@@ -20,75 +20,71 @@ export const HeroSection = () => {
           <div className="inline-flex items-center gap-2 gradient-card rounded-full px-6 py-3 mb-8 backdrop-blur-sm border border-primary/20">
             <div className="w-2 h-2 bg-success rounded-full animate-pulse"></div>
             <span className="text-sm font-medium text-muted-foreground">
-              Trusted by 230+ clients worldwide
+              Trusted by 100+ clients worldwide
             </span>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            We add value connecting{' '}
-            <span className="text-gradient">advertisers</span>{' '}
-            and{' '}
-            <span className="text-gradient">publishers</span>
+            Scale programmatic ads{' '}
+            <span className="text-gradient">10X faster</span>{' '}
+            with white-label solutions
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto">
-            through our white-label programmatic platforms!
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            Launch your AdTech business in days, not months. Get up to 10X ROI compared to traditional platforms.
           </p>
 
-          {/* Platform Types */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12 text-lg font-semibold">
-            <span className="gradient-card px-6 py-3 rounded-lg backdrop-blur-sm border border-primary/20">
-              Ad Exchange
+          {/* Key Benefits */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12 text-sm font-medium">
+            <span className="gradient-card px-4 py-2 rounded-full backdrop-blur-sm border border-primary/20">
+              ⚡ 2ms response time
             </span>
-            <span className="gradient-card px-6 py-3 rounded-lg backdrop-blur-sm border border-primary/20">
-              Demand-Side Platform
+            <span className="gradient-card px-4 py-2 rounded-full backdrop-blur-sm border border-primary/20">
+              📈 150M+ monthly impressions
             </span>
-            <span className="gradient-card px-6 py-3 rounded-lg backdrop-blur-sm border border-primary/20">
-              Supply-Side Platform
+            <span className="gradient-card px-4 py-2 rounded-full backdrop-blur-sm border border-primary/20">
+              🛡️ 100% verified traffic
             </span>
           </div>
 
           {/* CTA Section */}
           <div className="mb-16">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Looking for ways to make money with programmatic advertising?
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Fill out the contact form, and a personal manager will contact you promptly
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
               <Button 
                 variant="hero" 
                 size="xl" 
                 className="group"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Connect to ADXYZ Ecosystem
+                Start Free Trial
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Link to="/about">
-                <Button variant="outline" size="lg" className="group">
-                  <Play size={20} className="group-hover:scale-110 transition-transform" />
-                  Learn More
-                </Button>
-              </Link>
+              <Button variant="outline" size="xl" className="group">
+                <Play size={20} className="group-hover:scale-110 transition-transform" />
+                Book Demo
+              </Button>
             </div>
+            <p className="text-sm text-muted-foreground">
+              Free 14-day trial • No credit card required • Setup in 5 minutes
+            </p>
           </div>
 
-          {/* Value Proposition */}
-          <div className="gradient-card rounded-2xl p-8 backdrop-blur-sm border border-primary/20 max-w-2xl mx-auto">
-            <p className="text-lg leading-relaxed">
-              Together we will select a solutions package to meet your goals and sign a contract.
-            </p>
-            <div className="mt-6 flex items-center justify-center gap-2">
+          {/* Social Proof */}
+          <div className="gradient-card rounded-2xl p-6 backdrop-blur-sm border border-primary/20 max-w-2xl mx-auto">
+            <div className="flex items-center justify-center gap-2 mb-3">
               <div className="w-3 h-3 bg-success rounded-full animate-pulse"></div>
               <span className="font-semibold text-success">
-                Connect to ADXYZ Ecosystem and earn more every day!
+                Join 100+ companies already scaling with ADXYZ
               </span>
             </div>
+            <p className="text-muted-foreground">
+              "We increased our ad revenue by 340% in the first month using ADXYZ's white-label DSP."
+            </p>
+            <p className="text-sm text-muted-foreground mt-2">
+              — Sarah Chen, CEO at MediaFlow
+            </p>
           </div>
         </div>
       </div>

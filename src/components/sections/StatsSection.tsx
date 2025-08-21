@@ -3,11 +3,10 @@ import { TrendingUp } from 'lucide-react';
 
 export const StatsSection = () => {
   const stats = [
-    { number: "300%", label: "ROI", description: "our customers have achieved over the past 3 years with ADXYZ Ecosystem solutions and products" },
+    { number: "10X", label: "ROI increase", description: "for advertisers on our platform compared to traditional platforms" },
     { number: "150M+", label: "imps / mo", description: "Total capacity across all ad formats" },
     { number: "55+", label: "Available campaign settings", description: "Complete control over targeting and optimization" },
     { number: "100%", label: "Of verified traffic", description: "using leading scanners" },
-    { number: "15+", label: "years of experience", description: "in the digital programmatic advertising industry" },
     { number: "2ms", label: "response time", description: "Trade at unthinkable speed" }
   ];
 
@@ -27,11 +26,11 @@ export const StatsSection = () => {
             <div className="relative z-10">
               <div className="flex items-center justify-center gap-4 mb-6">
                 <TrendingUp className="w-12 h-12 text-success" />
-                <div className="text-8xl font-bold text-gradient">300%</div>
+                <div className="text-8xl font-bold text-gradient">10X</div>
                 <span className="text-2xl font-semibold text-success">ROI</span>
               </div>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                our customers have achieved over the past 3 years with ADXYZ Ecosystem solutions and products
+                for advertisers on our platform compared to traditional platforms
               </p>
             </div>
           </div>
