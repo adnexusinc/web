@@ -135,7 +135,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold mb-1">Email Support</h4>
-                    <p className="text-muted-foreground">support@ADXYZ.com</p>
+                    <p className="text-muted-foreground">support@ad.xyz</p>
                     <p className="text-sm text-muted-foreground">We respond within 2 hours</p>
                   </div>
                 </div>
