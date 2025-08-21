@@ -67,19 +67,10 @@ export const HeroSection = () => {
               </Button>
             </div>
             <p className="text-sm text-muted-foreground">
-              Free 14-day trial • No credit card required • Setup in 5 minutes
+              No credit card required • Setup in 5 minutes
             </p>
           </div>
 
-          {/* Social Proof */}
-          <div className="gradient-card rounded-2xl p-6 backdrop-blur-sm border border-primary/20 max-w-2xl mx-auto">
-            <div className="flex items-center justify-center gap-2">
-              <div className="w-3 h-3 bg-success rounded-full animate-pulse"></div>
-              <span className="font-semibold text-success">
-                Join 100+ companies already scaling with ADXYZ
-              </span>
-            </div>
-          </div>
         </div>
       </div>
 
