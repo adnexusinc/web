@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, TrendingUp, Users, Zap, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const ProductsSection = () => {
   const products = [
@@ -9,28 +10,32 @@ export const ProductsSection = () => {
       title: "White Label AdExchange",
       description: "Launch an advertising business and earn money from day one with our comprehensive ad exchange platform.",
       features: ["Real-time bidding", "Multi-format support", "Advanced analytics", "Fraud protection"],
-      color: "from-blue-500 to-cyan-500"
+      color: "from-blue-500 to-cyan-500",
+      link: "/partners"
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
       title: "Demand-Side Platform", 
       description: "Grow your brand's performance with proven advertising software and advanced targeting capabilities.",
       features: ["Audience targeting", "Campaign optimization", "Cross-channel reach", "Performance tracking"],
-      color: "from-purple-500 to-pink-500"
+      color: "from-purple-500 to-pink-500",
+      link: "/advertisers"
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Supply-Side Platform",
       description: "Monetize your websites and applications with our advanced SSP technology and premium demand sources.",
       features: ["Header bidding", "Yield optimization", "Premium advertisers", "Revenue analytics"],
-      color: "from-green-500 to-emerald-500"
+      color: "from-green-500 to-emerald-500",
+      link: "/publishers"
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "ADXYZ Community",
       description: "Connect to our ecosystem and start trading with 250+ verified partners in our exclusive network.",
       features: ["250+ partners", "Direct deals", "Community support", "Exclusive opportunities"],
-      color: "from-orange-500 to-red-500"
+      color: "from-orange-500 to-red-500",
+      link: "/partners"
     }
   ];
 
@@ -77,10 +82,12 @@ export const ProductsSection = () => {
                 ))}
               </div>
               
-              <Button variant="outline" className="w-full group">
-                Learn More
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link to={product.link}>
+                <Button variant="outline" className="w-full group">
+                  Learn More
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
             </div>
           ))}
         </div>

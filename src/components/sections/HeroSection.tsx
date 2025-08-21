@@ -1,25 +1,18 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Play } from 'lucide-react';
-import heroImage from '@/assets/hero-adtech.jpg';
+import { Link } from 'react-router-dom';
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-hero">
+      {/* Logo */}
+      <div className="absolute top-8 left-8 z-20">
         <img 
-          src={heroImage} 
-          alt="ADXYZ Programmatic Advertising Platform" 
-          className="w-full h-full object-cover opacity-30"
+          src="/lovable-uploads/b81bd43c-c312-4c2d-b235-002b7bf718d1.png" 
+          alt="ADXYZ Logo" 
+          className="w-16 h-16"
         />
-        <div className="absolute inset-0 gradient-hero opacity-80"></div>
-      </div>
-
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 overflow-hidden z-0">
-        <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-to-br from-primary/20 via-transparent to-accent/20 animate-pulse"></div>
-        <div className="absolute -bottom-1/2 -left-1/2 w-full h-full bg-gradient-to-tr from-primary-glow/20 via-transparent to-primary/20 animate-pulse delay-1000"></div>
       </div>
 
       {/* Main Content */}
@@ -78,10 +71,12 @@ export const HeroSection = () => {
                 Connect to ADXYZ Ecosystem
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="lg" className="group">
-                <Play size={20} className="group-hover:scale-110 transition-transform" />
-                Watch Demo
-              </Button>
+              <Link to="/about">
+                <Button variant="outline" size="lg" className="group">
+                  <Play size={20} className="group-hover:scale-110 transition-transform" />
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
 
