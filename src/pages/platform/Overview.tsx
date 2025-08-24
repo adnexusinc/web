@@ -207,7 +207,7 @@ const PlatformOverview = () => {
               </Card>
               <Card className="p-6">
                 <div className="text-3xl font-bold performance-number mb-2">12ms</div>
-                <div className="text-sm text-muted-foreground">AI Decision Time</div>
+                <div className="text-sm text-muted-foreground">Matching Engine</div>
               </Card>
             </div>
           </div>

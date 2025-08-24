@@ -336,13 +336,17 @@ const Publishers = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button variant="hero" size="xl" className="group">
-                Start Monetizing Today
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline" size="xl">
-                Calculate Your Revenue
-              </Button>
+              <Link to="/auth">
+                <Button variant="hero" size="xl" className="group">
+                  Start Monetizing Today
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <Link to="/platform/overview">
+                <Button variant="outline" size="xl">
+                  Calculate Your Revenue
+                </Button>
+              </Link>
             </div>
 
             <div className="text-sm text-muted-foreground">

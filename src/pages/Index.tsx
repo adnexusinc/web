@@ -274,7 +274,7 @@ const Index = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold performance-number mb-2">12ms</div>
-                  <div className="text-sm text-muted-foreground">AI decision time</div>
+                  <div className="text-sm text-muted-foreground">Matching engine</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold performance-number mb-2">200%</div>

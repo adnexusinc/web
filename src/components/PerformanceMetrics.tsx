@@ -30,7 +30,7 @@ export const PerformanceMetrics = () => {
           {isVisible && <AnimatedNumber value={1} suffix="ms" />}
           {!isVisible && "0ms"}
         </div>
-        <div className="text-sm text-muted-foreground">AI Decision Time</div>
+        <div className="text-sm text-muted-foreground">Matching Engine</div>
       </div>
       <div className="text-center space-y-2 group cursor-pointer">
         <div className="text-3xl md:text-4xl font-bold performance-number transition-transform group-hover:scale-110">
