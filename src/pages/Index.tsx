@@ -24,13 +24,13 @@ const features = [
   },
   {
     icon: Shield,
-    title: "Zero-Knowledge Privacy",
-    description: "Privacy-preserving auctions that protect user data while maximizing advertiser reach and publisher revenue."
+    title: "AI-Powered Privacy",
+    description: "Advanced machine learning algorithms that optimize ad targeting while maintaining strict user privacy and data protection standards."
   },
   {
     icon: Cpu,
-    title: "Distributed Mining Network",
-    description: "Decentralized infrastructure ensuring 99.99% uptime with global edge computing for maximum performance."
+    title: "Smart Infrastructure",
+    description: "AI-driven cloud infrastructure with intelligent load balancing and predictive scaling for optimal performance and reliability."
   },
   {
     icon: Target,
