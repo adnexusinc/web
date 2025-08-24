@@ -18,31 +18,31 @@ const Inventory = () => {
   const premiumFeatures = [
     {
       icon: Tv,
-      title: "Premium CTV/OTT Inventory",
-      description: "Exclusive access to high-quality Connected TV and Over-The-Top streaming inventory from top-tier publishers."
+      title: "250M+ Monthly CTV Impressions",
+      description: "Massive Connected TV reach across premium streaming platforms, delivering unmatched scale for brand advertisers seeking maximum exposure."
     },
     {
-      icon: DollarSign,
-      title: "Guaranteed $50+ CPM",
-      description: "Premium inventory commanding $50+ CPM rates with verified performance metrics and brand-safe environments."
+      icon: TrendingUp,
+      title: "10X Conversion Performance",
+      description: "CTV ads convert 10X better than standard video ads due to engaged living room audiences and premium content environments."
     },
     {
       icon: Shield,
-      title: "Brand Safety Certified",
-      description: "All inventory is pre-screened and certified for brand safety with comprehensive content verification."
+      title: "2ms Ultra-Fast Response",
+      description: "Lightning-fast bid responses ensure you never miss premium inventory opportunities in competitive CTV auctions."
     },
     {
       icon: Target,
-      title: "Premium Audience Targeting",
-      description: "Reach high-value demographics with advanced targeting capabilities and first-party data integration."
+      title: "Premium CTV Targeting",
+      description: "Advanced household-level targeting on big-screen environments where purchase decisions are made, not just consumed."
     }
   ];
 
   const inventoryStats = [
-    { value: "$75", label: "Average CPM", suffix: "+" },
-    { value: "2M+", label: "Monthly Impressions", suffix: "" },
-    { value: "98%", label: "Viewability Rate", suffix: "" },
-    { value: "95%", label: "Completion Rate", suffix: "+" }
+    { value: "250M+", label: "Monthly CTV Impressions", suffix: "" },
+    { value: "2ms", label: "Response Time", suffix: "" },
+    { value: "10X", label: "Conversion vs Video Ads", suffix: "" },
+    { value: "98%", label: "Viewability Rate", suffix: "+" }
   ];
 
   const contentCategories = [
@@ -72,10 +72,10 @@ const Inventory = () => {
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              Premium <span className="performance-number">CTV Inventory</span>
+              Premium CTV ads that <span className="performance-number">convert 10X over</span> normal video
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Exclusive Connected TV advertising opportunities with guaranteed $50+ CPM rates
+              Access 250M+ monthly Connected TV impressions with 2ms response time. Premium inventory only.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <Link to="/auth">
@@ -112,11 +112,11 @@ const Inventory = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Why Our <span className="performance-number">Inventory</span> Commands Premium Rates
+              Why CTV Ads <span className="performance-number">Convert 10X Better</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our carefully curated Connected TV inventory delivers exceptional performance 
-              for brand advertisers seeking premium placements.
+              Connected TV advertising delivers superior performance because viewers are actively engaged 
+              in living room environments where major purchase decisions happen.
             </p>
           </div>
 
