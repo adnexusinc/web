@@ -173,7 +173,7 @@ const Auth = () => {
           </div>
           <h1 className="text-2xl font-bold mb-2">Welcome to Adnexus</h1>
           <p className="text-muted-foreground">
-            Join our programmatic advertising platform
+            Enterprise programmatic advertising platform
           </p>
         </div>
 

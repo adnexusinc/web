@@ -20,7 +20,7 @@ export const AnimatedLogo = () => {
         </div>
         
         <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-          AdNexus
+          Adnexus
         </span>
       </div>
       

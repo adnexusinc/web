@@ -2,23 +2,43 @@ import React, { useState } from 'react';
 import { AnimatedLogo } from '../AnimatedLogo';
 import { PremiumSignUpForm } from '../PremiumSignUpForm';
 import { Button } from '@/components/ui/button';
-import { Play, ArrowDown } from 'lucide-react';
+import { Play, ArrowDown, LogIn, UserPlus } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export const HeroSection = () => {
   const [showSignUp, setShowSignUp] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <section className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="p-6">
-        <AnimatedLogo />
+        <div className="flex items-center justify-between max-w-7xl mx-auto">
+          <AnimatedLogo />
+          <div className="flex items-center gap-4">
+            <Button 
+              variant="ghost" 
+              onClick={() => navigate('/auth')}
+              className="text-sm"
+            >
+              <LogIn className="w-4 h-4 mr-2" />
+              Login
+            </Button>
+            <Button 
+              variant="outline" 
+              onClick={() => navigate('/auth')}
+              className="text-sm"
+            >
+              <UserPlus className="w-4 h-4 mr-2" />
+              Sign Up
+            </Button>
+          </div>
+        </div>
       </header>
 
       {/* Main Hero Content */}
       <div className="flex-1 flex items-center justify-center px-6">
         <div className="max-w-6xl mx-auto text-center">
-          {!showSignUp ? (
-            <>
               {/* Hero Content */}
               <div className="mb-12">
                 <div className="inline-flex items-center gap-2 bg-accent/50 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-border/50">
@@ -42,7 +62,7 @@ export const HeroSection = () => {
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
                   <Button 
-                    onClick={() => setShowSignUp(true)}
+                    onClick={() => navigate('/auth')}
                     className="premium-button text-lg px-8 py-4 group"
                   >
                     Get Started
@@ -70,20 +90,6 @@ export const HeroSection = () => {
                   </div>
                 ))}
               </div>
-            </>
-          ) : (
-            /* Sign Up Form */
-            <div className="animate-fade-in">
-              <PremiumSignUpForm />
-              <Button 
-                variant="ghost" 
-                onClick={() => setShowSignUp(false)}
-                className="mt-6"
-              >
-                ← Back to overview
-              </Button>
-            </div>
-          )}
         </div>
       </div>
 

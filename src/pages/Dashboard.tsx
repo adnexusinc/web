@@ -55,7 +55,7 @@ const Dashboard = () => {
     if (paymentStatus === 'success') {
       toast({
         title: "Payment Successful!",
-        description: "Your $10,000/month retainer has been activated. Welcome to Adnexus Enterprise!",
+        description: "Your enterprise retainer has been activated. Welcome to Adnexus Enterprise!",
       });
       // Clear URL params
       window.history.replaceState({}, '', '/dashboard');
@@ -184,7 +184,7 @@ const Dashboard = () => {
 
       toast({
         title: "Information Submitted!",
-        description: "Your information has been saved. To proceed with our services, please activate your $10,000/month retainer.",
+        description: "Your information has been saved. To proceed with our services, please activate your enterprise retainer.",
       });
       
       // Reload profile
@@ -333,9 +333,9 @@ const Dashboard = () => {
                   <h3 className="font-semibold">Enterprise Retainer Status</h3>
                   <p className="text-sm text-muted-foreground">
                     {subscriptionStatus.subscribed ? (
-                      <span className="text-success">Active - $10,000/month</span>
+                      <span className="text-success">Active - Enterprise retainer confirmed</span>
                     ) : (
-                      <span className="text-warning">Inactive - Retainer required for service access</span>
+                      <span className="text-warning">Inactive - Enterprise retainer required for service access</span>
                     )}
                   </p>
                 </div>
@@ -367,7 +367,7 @@ const Dashboard = () => {
               <div className="mt-4 p-4 bg-warning/10 border border-warning/20 rounded-lg">
                 <p className="text-warning text-sm font-medium">
                   💡 Our enterprise retainer model ensures dedicated support and premium service delivery. 
-                  Activate your $10,000/month retainer to begin working with our team.
+                  Activate your enterprise retainer to begin working with our team.
                 </p>
               </div>
             )}
