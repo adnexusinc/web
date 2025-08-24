@@ -41,6 +41,11 @@ const App = () => (
           <Route path="/white-label-adexchange" element={<WhiteLabelAdExchange />} />
           <Route path="/agencies" element={<Agencies />} />
           <Route path="/inventory" element={<Inventory />} />
+          {/* Platform routes */}
+          <Route path="/platform/overview" element={<PlatformOverview />} />
+          <Route path="/platform/plan" element={<PlatformPlan />} />
+          <Route path="/platform/activate" element={<PlatformActivate />} />
+          <Route path="/platform/measure" element={<PlatformMeasure />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
