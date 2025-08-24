@@ -45,8 +45,8 @@ serve(async (req) => {
           price_data: {
             currency: "usd",
             product_data: { 
-              name: "Adnexus Enterprise Retainer",
-              description: "Monthly enterprise retainer for full platform access"
+              name: "Adnexus Enterprise",
+              description: "Monthly subscription for full platform access and dedicated support"
             },
             unit_amount: 1000000, // $10,000 in cents
             recurring: { interval: "month" },
