@@ -15,6 +15,11 @@ import SSP from "./pages/SSP";
 import WhiteLabelAdExchange from "./pages/WhiteLabelAdExchange";
 import Agencies from "./pages/Agencies";
 import Inventory from "./pages/Inventory";
+// Platform pages
+import PlatformOverview from "./pages/platform/Overview";
+import PlatformPlan from "./pages/platform/Plan";
+import PlatformActivate from "./pages/platform/Activate";
+import PlatformMeasure from "./pages/platform/Measure";
 
 const queryClient = new QueryClient();
 

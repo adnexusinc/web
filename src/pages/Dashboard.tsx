@@ -40,6 +40,7 @@ const Dashboard = () => {
     subscription_status: string;
     subscription_end?: string;
   }>({ subscribed: false, subscription_status: 'inactive' });
+  const [lastSubscriptionCheck, setLastSubscriptionCheck] = useState<number>(0);
   
   const [formData, setFormData] = useState({
     platform_type: '',
@@ -55,7 +56,7 @@ const Dashboard = () => {
     if (paymentStatus === 'success') {
       toast({
         title: "Payment Successful!",
-        description: "Your enterprise retainer has been activated. Welcome to Adnexus Enterprise!",
+        description: "Your subscription has been activated. Welcome to Adnexus Enterprise!",
       });
       // Clear URL params
       window.history.replaceState({}, '', '/dashboard');
@@ -69,10 +70,19 @@ const Dashboard = () => {
     }
   }, [searchParams, toast]);
 
-  const checkSubscriptionStatus = useCallback(async () => {
+  const checkSubscriptionStatus = useCallback(async (force: boolean = false) => {
     if (!session) return;
     
+    // Rate limit: Check only once per minute unless forced
+    const now = Date.now();
+    const timeSinceLastCheck = now - lastSubscriptionCheck;
+    if (!force && timeSinceLastCheck < 60000) {
+      return; // Skip if less than 1 minute since last check
+    }
+    
     setIsCheckingSubscription(true);
+    setLastSubscriptionCheck(now);
+    
     try {
       const { data, error } = await supabase.functions.invoke('check-subscription', {
         headers: {
@@ -88,7 +98,7 @@ const Dashboard = () => {
     } finally {
       setIsCheckingSubscription(false);
     }
-  }, [session]);
+  }, [session, lastSubscriptionCheck]);
 
   const loadUserProfile = useCallback(async (userId: string) => {
     try {
@@ -111,9 +121,6 @@ const Dashboard = () => {
           monthly_volume: data.monthly_volume || '',
           business_description: data.business_description || ''
         });
-        
-        // Check subscription status
-        await checkSubscriptionStatus();
       }
     } catch (error) {
       console.error('Error loading profile:', error);
@@ -125,7 +132,7 @@ const Dashboard = () => {
     } finally {
       setIsLoading(false);
     }
-  }, [toast, checkSubscriptionStatus]);
+  }, [toast]);
 
   useEffect(() => {
     // Set up auth state listener
@@ -158,6 +165,13 @@ const Dashboard = () => {
     return () => subscription.unsubscribe();
   }, [navigate, loadUserProfile]);
 
+  // Check subscription status when profile loads
+  useEffect(() => {
+    if (profile && session) {
+      checkSubscriptionStatus();
+    }
+  }, [profile, session, checkSubscriptionStatus]);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -184,7 +198,7 @@ const Dashboard = () => {
 
       toast({
         title: "Information Submitted!",
-        description: "Your information has been saved. To proceed with our services, please activate your enterprise retainer.",
+        description: "Your information has been saved. To proceed with our services, please activate Adnexus Enterprise.",
       });
       
       // Reload profile
@@ -330,12 +344,12 @@ const Dashboard = () => {
               <div className="flex items-center gap-3">
                 <DollarSign className="w-6 h-6 text-primary" />
                 <div>
-                  <h3 className="font-semibold">Enterprise Retainer Status</h3>
+                  <h3 className="font-semibold">Adnexus Enterprise Status</h3>
                   <p className="text-sm text-muted-foreground">
                     {subscriptionStatus.subscribed ? (
-                      <span className="text-success">Active - Enterprise retainer confirmed</span>
+                      <span className="text-success">Active - Adnexus Enterprise subscription confirmed</span>
                     ) : (
-                      <span className="text-warning">Inactive - Enterprise retainer required for service access</span>
+                      <span className="text-warning">Inactive - Adnexus Enterprise required for service access</span>
                     )}
                   </p>
                 </div>
@@ -344,7 +358,7 @@ const Dashboard = () => {
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  onClick={checkSubscriptionStatus}
+                  onClick={() => checkSubscriptionStatus(true)}
                   disabled={isCheckingSubscription}
                 >
                   {isCheckingSubscription ? 'Checking...' : 'Refresh Status'}
@@ -357,7 +371,7 @@ const Dashboard = () => {
                 ) : (
                   <Button variant="cta" size="sm" onClick={handleStartSubscription}>
                     <DollarSign className="w-4 h-4 mr-2" />
-                    Activate Retainer
+                    Activate Adnexus Enterprise
                   </Button>
                 )}
               </div>
@@ -366,8 +380,8 @@ const Dashboard = () => {
             {!subscriptionStatus.subscribed && (
               <div className="mt-4 p-4 bg-warning/10 border border-warning/20 rounded-lg">
                 <p className="text-warning text-sm font-medium">
-                  💡 Our enterprise retainer model ensures dedicated support and premium service delivery. 
-                  Activate your enterprise retainer to begin working with our team.
+                  💡 Adnexus Enterprise ensures dedicated support and premium service delivery. 
+                  Activate Adnexus Enterprise to begin working with our team.
                 </p>
               </div>
             )}
@@ -574,7 +588,7 @@ const Dashboard = () => {
               </CardTitle>
               <CardDescription>
                 Tell us about your business and what you'd like to explore with Adnexus. 
-                Activating your enterprise retainer will unlock full platform access.
+                Activating Adnexus Enterprise will unlock full platform access.
               </CardDescription>
             </CardHeader>
             <CardContent>
