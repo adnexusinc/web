@@ -85,14 +85,14 @@ const Index = () => {
             <div className="mb-8">
               <div className="text-center mb-6">
                 <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                  <span className="performance-number">Adnexus</span>
+                  <span className="performance-number">ADXYZ</span>
                 </h1>
               </div>
               <p className="text-xl md:text-2xl text-muted-foreground mb-2">
-                The fastest SSP, DSP & ADX in the industry
+                Premium CTV Inventory with Guaranteed $50+ CPM
               </p>
               <p className="text-lg text-muted-foreground/80">
-                Sub-millisecond latency • Privacy-first • CTV/OTT optimized
+                Exclusive Connected TV • Brand-safe environments • Premium audiences
               </p>
             </div>
 
@@ -119,11 +119,11 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Complete <span className="performance-number">Adnexus</span> Stack
+              Premium <span className="performance-number">CTV Inventory</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Unified platform combining all essential advertising technology components 
-              for maximum efficiency and performance.
+              Access exclusive Connected TV advertising inventory with guaranteed $50+ CPM rates. 
+              Premium brand-safe environments reaching high-value audiences.
             </p>
           </div>
 
@@ -146,10 +146,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Why Choose <span className="performance-number">Adnexus</span>
+              Why Choose <span className="performance-number">ADXYZ</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Built from the ground up for maximum performance, privacy, and profitability.
+              Premium CTV inventory delivering exceptional performance with guaranteed high CPM rates.
             </p>
           </div>
 
@@ -216,10 +216,10 @@ const Index = () => {
       <footer className="py-12 px-4 border-t border-border bg-card/50">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="performance-number text-2xl font-bold">Adnexus</div>
+            <div className="performance-number text-2xl font-bold">ADXYZ Inc.</div>
           </div>
           <p className="text-muted-foreground">
-            The future of high-performance, privacy-first advertising technology.
+            Premium CTV inventory delivering guaranteed $50+ CPM rates.
           </p>
         </div>
       </footer>

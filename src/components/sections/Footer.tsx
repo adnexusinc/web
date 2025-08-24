@@ -15,11 +15,11 @@ export const Footer = () => {
     products: {
       title: "Products",
       links: [
-        "Adnexus Community",
+        "Premium CTV Inventory",
         "White Label AdExchange",
-        "Supply Side Platform",
+        "Supply Side Platform", 
         "Demand Side Platform",
-        "White Label Video Ad Server"
+        "Video Ad Server"
       ]
     },
     company: {
@@ -41,11 +41,11 @@ export const Footer = () => {
   };
 
   const certifications = [
+    "Terms of Service",
     "Privacy Policy",
     "Cookie Policy", 
     "Data Processing Addendum",
-    "GDPR Compliance",
-    "Prohibited Creatives"
+    "GDPR Compliance"
   ];
 
   return (
@@ -63,18 +63,18 @@ export const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-4">
               <div className="mb-6">
-                <h3 className="text-3xl font-bold text-gradient mb-4">Adnexus</h3>
+                <h3 className="text-3xl font-bold text-gradient mb-4">ADXYZ</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Adnexus is a full-stack AdTech company developing programmatic ecosystems, 
-                  connecting publishers and advertisers with cutting-edge technology and 
-                  personalized support.
+                  ADXYZ Inc. is a premium AdTech company specializing in high-value CTV/OTT inventory. 
+                  Our programmatic platform delivers exclusive Connected TV advertising opportunities 
+                  with guaranteed $50+ CPM rates for premium brand advertisers.
                 </p>
               </div>
               
               <div className="mb-6">
                 <div className="flex items-center gap-3 mb-2">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span className="text-foreground font-medium">hi@ad.nexus</span>
+                  <span className="text-foreground font-medium">contact@adxyz.com</span>
                 </div>
               </div>
 
