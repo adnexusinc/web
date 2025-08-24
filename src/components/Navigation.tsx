@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MoonLogo from "@/components/MoonLogo";
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -21,7 +22,9 @@ import {
   Users,
   Zap,
   ArrowRight,
-  ChevronDown
+  ChevronDown,
+  Menu,
+  X
 } from "lucide-react";
 
 const platformItems = [
@@ -130,6 +133,7 @@ ListItem.displayName = "ListItem";
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -232,17 +236,127 @@ export const Navigation = () => {
           </div>
 
           <div className="flex items-center gap-4">
-            <Link to="/auth">
-              <Button variant="ghost" size="sm">
-                Sign In
-              </Button>
-            </Link>
-            <Link to="/auth">
-              <Button size="sm" className="group">
-                Book a Demo
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
+            <div className="hidden md:flex items-center gap-4">
+              <Link to="/auth">
+                <Button variant="ghost" size="sm">
+                  Sign In
+                </Button>
+              </Link>
+              <Link to="/auth">
+                <Button size="sm" className="group">
+                  Book a Demo
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+            </div>
+
+            {/* Mobile Menu */}
+            <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="sm" className="md:hidden">
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                <div className="flex flex-col gap-6 mt-6">
+                  <div>
+                    <h3 className="font-semibold mb-3">Platform</h3>
+                    <div className="space-y-2">
+                      {platformItems.map((item) => (
+                        <Link 
+                          key={item.title}
+                          to={item.href} 
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="block p-2 rounded-lg hover:bg-accent transition-colors"
+                        >
+                          <div className="flex items-center gap-3">
+                            <item.icon className="w-4 h-4 text-primary" />
+                            <div>
+                              <div className="font-medium">{item.title}</div>
+                              <div className="text-xs text-muted-foreground">{item.description}</div>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-3">Solutions</h3>
+                    <div className="space-y-2">
+                      {solutionItems.map((item) => (
+                        <Link 
+                          key={item.title}
+                          to={item.href} 
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="block p-2 rounded-lg hover:bg-accent transition-colors"
+                        >
+                          <div className="flex items-center gap-3">
+                            <item.icon className="w-4 h-4 text-primary" />
+                            <div>
+                              <div className="font-medium">{item.title}</div>
+                              <div className="text-xs text-muted-foreground">{item.description}</div>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-3">Products</h3>
+                    <div className="space-y-2">
+                      {productItems.map((item) => (
+                        <Link 
+                          key={item.title}
+                          to={item.href} 
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="block p-2 rounded-lg hover:bg-accent transition-colors"
+                        >
+                          <div className="flex items-center gap-3">
+                            <item.icon className="w-4 h-4 text-primary" />
+                            <div>
+                              <div className="font-medium">{item.title}</div>
+                              <div className="text-xs text-muted-foreground">{item.description}</div>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="space-y-2">
+                    <Link 
+                      to="/resources" 
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block p-2 rounded-lg hover:bg-accent transition-colors font-medium"
+                    >
+                      Resources
+                    </Link>
+                    <Link 
+                      to="/company" 
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block p-2 rounded-lg hover:bg-accent transition-colors font-medium"
+                    >
+                      Company
+                    </Link>
+                  </div>
+
+                  <div className="pt-4 border-t space-y-2">
+                    <Link to="/auth" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Button variant="ghost" className="w-full justify-start">
+                        Sign In
+                      </Button>
+                    </Link>
+                    <Link to="/auth" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Button className="w-full">
+                        Book a Demo
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>

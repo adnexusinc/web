@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Mail, Twitter, Linkedin, Facebook } from 'lucide-react';
 
 export const Footer = () => {
@@ -6,36 +7,36 @@ export const Footer = () => {
     solutions: {
       title: "Solutions",
       links: [
-        "For Publishers",
-        "For Advertisers", 
-        "For Adnetworks",
-        "and RTB Partners"
+        { text: "For Publishers", href: "/publishers" },
+        { text: "For Advertisers", href: "/advertisers" }, 
+        { text: "For Agencies", href: "/agencies" },
+        { text: "Enterprise Partners", href: "/partners" }
       ]
     },
     products: {
       title: "Products",
       links: [
-        "Premium CTV Inventory",
-        "White Label AdExchange",
-        "Supply Side Platform", 
-        "Demand Side Platform",
-        "Video Ad Server"
+        { text: "Premium CTV Inventory", href: "/premium" },
+        { text: "White Label AdExchange", href: "/white-label-adexchange" },
+        { text: "Supply Side Platform", href: "/ssp" }, 
+        { text: "Demand Side Platform", href: "/dsp" },
+        { text: "Ad Exchange", href: "/adx" }
       ]
     },
     company: {
       title: "Company",
       links: [
-        "About Us",
-        "Adnexus Team", 
-        "Careers",
-        "News"
+        { text: "About Us", href: "/about" },
+        { text: "Leadership Team", href: "/company" }, 
+        { text: "Platform Overview", href: "/platform/overview" },
+        { text: "Resources", href: "/resources" }
       ]
     },
     connect: {
       title: "Connect",
       links: [
-        "Blog",
-        "Adtech Glossary"
+        { text: "Inventory List", href: "/inventory" },
+        { text: "Contact Us", href: "/auth" }
       ]
     }
   };
@@ -107,13 +108,13 @@ export const Footer = () => {
                   <ul className="space-y-3">
                     {section.links.map((link, index) => (
                       <li key={index}>
-                        <a 
-                          href="#"
+                        <Link 
+                          to={link.href}
                           className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group"
                         >
-                          {link}
+                          {link.text}
                           <ArrowRight className="w-3 h-3 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
