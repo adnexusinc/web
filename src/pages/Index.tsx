@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { PerformanceMetrics } from "@/components/PerformanceMetrics";
 import { FeatureCard } from "@/components/FeatureCard";
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/sections/Footer";
 import { ClientLogoTicker } from "@/components/ClientLogoTicker";
 import { CaseStudiesSection } from "@/components/CaseStudiesSection";
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
@@ -362,16 +363,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 border-t border-border bg-card/50">
-        <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="performance-number text-2xl font-bold">Adnexus</div>
-          </div>
-          <p className="text-muted-foreground">
-            Copyright 2025 ADXYZ Inc.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
