@@ -14,133 +14,13 @@ export type Database = {
   }
   public: {
     Tables: {
-      contact_audit_log: {
-        Row: {
-          action: string
-          contact_id: string | null
-          id: string
-          ip_address: unknown | null
-          timestamp: string | null
-          user_agent: string | null
-          user_id: string | null
-        }
-        Insert: {
-          action: string
-          contact_id?: string | null
-          id?: string
-          ip_address?: unknown | null
-          timestamp?: string | null
-          user_agent?: string | null
-          user_id?: string | null
-        }
-        Update: {
-          action?: string
-          contact_id?: string | null
-          id?: string
-          ip_address?: unknown | null
-          timestamp?: string | null
-          user_agent?: string | null
-          user_id?: string | null
-        }
-        Relationships: []
-      }
-      contacts: {
-        Row: {
-          company: string | null
-          company_size: string | null
-          created_at: string
-          email: string
-          id: string
-          interest_area: string | null
-          message: string | null
-          name: string
-          updated_at: string
-        }
-        Insert: {
-          company?: string | null
-          company_size?: string | null
-          created_at?: string
-          email: string
-          id?: string
-          interest_area?: string | null
-          message?: string | null
-          name: string
-          updated_at?: string
-        }
-        Update: {
-          company?: string | null
-          company_size?: string | null
-          created_at?: string
-          email?: string
-          id?: string
-          interest_area?: string | null
-          message?: string | null
-          name?: string
-          updated_at?: string
-        }
-        Relationships: []
-      }
-      profiles: {
-        Row: {
-          approval_status: string | null
-          business_description: string | null
-          company_name: string | null
-          created_at: string
-          email: string | null
-          full_name: string | null
-          id: string
-          is_admin: boolean
-          monthly_volume: string | null
-          platform_type: string | null
-          updated_at: string
-          user_id: string
-          website_url: string | null
-        }
-        Insert: {
-          approval_status?: string | null
-          business_description?: string | null
-          company_name?: string | null
-          created_at?: string
-          email?: string | null
-          full_name?: string | null
-          id?: string
-          is_admin?: boolean
-          monthly_volume?: string | null
-          platform_type?: string | null
-          updated_at?: string
-          user_id: string
-          website_url?: string | null
-        }
-        Update: {
-          approval_status?: string | null
-          business_description?: string | null
-          company_name?: string | null
-          created_at?: string
-          email?: string | null
-          full_name?: string | null
-          id?: string
-          is_admin?: boolean
-          monthly_volume?: string | null
-          platform_type?: string | null
-          updated_at?: string
-          user_id?: string
-          website_url?: string | null
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      is_admin: {
-        Args: { user_id: string }
-        Returns: boolean
-      }
-      is_admin_secure: {
-        Args: { user_id: string }
-        Returns: boolean
-      }
+      [_ in never]: never
     }
     Enums: {
       [_ in never]: never
