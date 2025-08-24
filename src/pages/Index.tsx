@@ -329,7 +329,7 @@ const Index = () => {
             <div className="performance-number text-2xl font-bold">Adnexus</div>
           </div>
           <p className="text-muted-foreground">
-            Premium CTV inventory delivering guaranteed $50+ CPM rates.
+            Copyright 2025 ADXYZ Inc.
           </p>
         </div>
       </footer>
