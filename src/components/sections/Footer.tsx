@@ -63,7 +63,7 @@ export const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-4">
               <div className="mb-6">
-                <h3 className="text-3xl font-bold text-gradient mb-4">ADXYZ</h3>
+                <h3 className="text-3xl font-bold text-gradient mb-4">Adnexus</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   ADXYZ Inc. is a premium AdTech company specializing in high-value CTV/OTT inventory. 
                   Our programmatic platform delivers exclusive Connected TV advertising opportunities 
@@ -74,7 +74,7 @@ export const Footer = () => {
               <div className="mb-6">
                 <div className="flex items-center gap-3 mb-2">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span className="text-foreground font-medium">contact@adxyz.com</span>
+                  <span className="text-foreground font-medium">contact@ad.nexus</span>
                 </div>
               </div>
 
