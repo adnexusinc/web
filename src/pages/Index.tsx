@@ -113,9 +113,9 @@ const Index = () => {
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Link to="/auth">
+              <Link to="/premium">
                 <Button variant="outline" size="xl" className="group">
-                  Sign Up Free
+                  View Premium Inventory
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>

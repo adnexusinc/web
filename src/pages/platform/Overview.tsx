@@ -61,9 +61,11 @@ const PlatformOverview = () => {
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Button variant="outline" size="lg">
-                View Case Studies
-              </Button>
+              <Link to="/premium">
+                <Button variant="outline" size="lg">
+                  View Premium Inventory
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

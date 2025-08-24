@@ -20,6 +20,7 @@ import PlatformOverview from "./pages/platform/Overview";
 import PlatformPlan from "./pages/platform/Plan";
 import PlatformActivate from "./pages/platform/Activate";
 import PlatformMeasure from "./pages/platform/Measure";
+import Premium from "./pages/Premium";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/platform/plan" element={<PlatformPlan />} />
           <Route path="/platform/activate" element={<PlatformActivate />} />
           <Route path="/platform/measure" element={<PlatformMeasure />} />
+          <Route path="/premium" element={<Premium />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
