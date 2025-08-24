@@ -22,21 +22,21 @@ export const HeroSection = () => {
                 <div className="inline-flex items-center gap-2 bg-accent/50 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-border/50">
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                   <span className="text-sm text-muted-foreground">
-                    Live: 250M+ monthly impressions available
+                    Live: $50M+ premium inventory available now
                   </span>
                 </div>
 
                 <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-tight tracking-tight">
-                  Access premium content{' '}
+                  The inventory everyone{' '}
                   <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-                    before everyone else
+                    wants but can't buy
                   </span>
                 </h1>
 
                 <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-                  Exclusive tier-1 streaming inventory from Netflix, Disney+, HBO Max and other premium publishers. 
-                  <span className="text-white font-semibold">10X higher conversions</span> than standard video ads with 
-                  guaranteed $50+ CPMs and 95% completion rates.
+                  We own the premium CTV inventory that Netflix, Disney+, and HBO Max don't sell publicly. 
+                  <span className="text-white font-semibold">Direct partnerships</span> mean you get the cream of the crop - 
+                  tier-1 streaming inventory with <span className="text-white font-semibold">guaranteed $50+ CPMs</span> and zero junk traffic.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
@@ -44,7 +44,7 @@ export const HeroSection = () => {
                     onClick={() => navigate('/auth')}
                     className="premium-button text-lg px-8 py-4 group"
                   >
-                    Get Premium Access
+                    Access Premium Inventory
                     <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
                   </Button>
                   
@@ -54,7 +54,7 @@ export const HeroSection = () => {
                     className="text-lg px-8 py-4 group border-border/50 hover:border-border"
                   >
                     <Play size={20} className="group-hover:scale-110 transition-transform" />
-                    View Premium Inventory
+                    View Exclusive Inventory
                   </Button>
                 </div>
               </div>
@@ -62,10 +62,10 @@ export const HeroSection = () => {
               {/* Premium Performance Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
                 {[
-                  { value: "10X", label: "Higher conversions", sublabel: "vs standard video" },
+                  { value: "Exclusive", label: "Inventory access", sublabel: "Not on open exchanges" },
                   { value: "427%", label: "Average ROAS", sublabel: "Fortune 500 client" },
-                  { value: "$50-85", label: "CPM range", sublabel: "Premium inventory" },
-                  { value: "95%", label: "Completion rate", sublabel: "Non-skippable CTV" }
+                  { value: "$50-85", label: "CPM range", sublabel: "Premium streaming only" },
+                  { value: "Zero", label: "Junk traffic", sublabel: "Hand-curated inventory" }
                 ].map((stat, i) => (
                   <div key={i} className="premium-card text-center">
                     <div className="text-3xl font-bold mb-2 performance-number">{stat.value}</div>
