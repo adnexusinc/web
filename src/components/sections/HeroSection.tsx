@@ -27,15 +27,16 @@ export const HeroSection = () => {
                 </div>
 
                 <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-tight tracking-tight">
-                  Access premium inventory{' '}
+                  Access premium content{' '}
                   <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
                     before everyone else
                   </span>
                 </h1>
 
                 <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-                  Join 100+ enterprise advertisers accessing 250M+ monthly premium CTV impressions. 
-                  Fastest settlement, highest fill rates, and inventory that actually converts at scale.
+                  Exclusive access to tier-1 streaming inventory that's not available on open exchanges. 
+                  Premium CTV impressions from Netflix, Disney+, HBO Max and other premium publishers. 
+                  Higher engagement, better brand safety, and inventory that actually drives results.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
