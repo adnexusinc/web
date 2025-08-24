@@ -15,7 +15,6 @@ import {
   CheckCircle
 } from "lucide-react";
 import heroBackground from "@/assets/hero-bg.jpg";
-import adnexusLogo from "@/assets/adnexus-logo.png";
 
 const features = [
   {
@@ -84,8 +83,7 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-5xl mx-auto">
             <div className="mb-8">
-              <div className="flex items-center justify-center gap-4 mb-6">
-                <img src={adnexusLogo} alt="Adnexus Logo" className="w-16 h-16 md:w-20 md:h-20" />
+              <div className="text-center mb-6">
                 <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                   <span className="performance-number">Adnexus</span>
                 </h1>
@@ -218,7 +216,6 @@ const Index = () => {
       <footer className="py-12 px-4 border-t border-border bg-card/50">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <img src={adnexusLogo} alt="Adnexus Logo" className="w-8 h-8" />
             <div className="performance-number text-2xl font-bold">Adnexus</div>
           </div>
           <p className="text-muted-foreground">
