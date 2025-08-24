@@ -24,20 +24,20 @@ export const HeroSection = () => {
                 <div className="inline-flex items-center gap-2 bg-accent/50 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-border/50">
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                   <span className="text-sm text-muted-foreground">
-                    Live: 100+ partners processing 150M+ impressions
+                    Live: 250M+ monthly impressions available
                   </span>
                 </div>
 
                 <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-tight tracking-tight">
-                  Scale your ad revenue with{' '}
+                  Access premium inventory{' '}
                   <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-                    enterprise technology
+                    before everyone else
                   </span>
                 </h1>
 
                 <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-                  150M+ monthly impressions processed. Fastest settlement in the industry. 
-                  Premium CTV inventory designed for advertisers, publishers, and agencies to thrive.
+                  Join 100+ enterprise advertisers accessing 250M+ monthly premium CTV impressions. 
+                  Fastest settlement, highest fill rates, and inventory that actually converts at scale.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
@@ -59,10 +59,10 @@ export const HeroSection = () => {
               {/* Performance Stats */}
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
                 {[
-                  { value: "150M+", label: "Monthly impressions" },
-                  { value: "98.5%", label: "Fill rate" },
+                  { value: "250M+", label: "Monthly impressions available" },
+                  { value: "99.8%", label: "Fill rate guarantee" },
                   { value: "2ms", label: "Response time" },
-                  { value: "Fastest", label: "Settlement" }
+                  { value: "Same-day", label: "Settlement" }
                 ].map((stat, i) => (
                   <div key={i} className="premium-card text-center">
                     <div className="text-3xl font-bold mb-2">{stat.value}</div>
