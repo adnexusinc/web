@@ -166,6 +166,116 @@ const Index = () => {
         </div>
       </section>
 
+      {/* AI-Optimized Advertising Section */}
+      <section className="py-24 px-4 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              <span className="performance-number">AI-Optimized</span> Advertising for the LLM Era
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+              While others worry about AI disruption, we've built advertising technology that thrives in 
+              the AI-driven marketplace. Our ads are optimized for discovery, engagement, and conversion 
+              in both traditional and LLM-powered environments.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+            <div>
+              <h3 className="text-3xl font-bold mb-6">
+                Built for <span className="performance-number">Answer Engine Optimization</span>
+              </h3>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="gradient-secondary p-2 rounded-lg">
+                    <CheckCircle className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">LLM-Ready Ad Formats</h4>
+                    <p className="text-muted-foreground">
+                      Our ads are structured with semantic markup and contextual data that make them 
+                      easily discoverable and recommendable by AI systems like ChatGPT and Claude.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="gradient-secondary p-2 rounded-lg">
+                    <CheckCircle className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">AI-Enhanced Targeting</h4>
+                    <p className="text-muted-foreground">
+                      Machine learning algorithms analyze user behavior across platforms to predict 
+                      intent and deliver ads at the optimal moment in the customer journey.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="gradient-secondary p-2 rounded-lg">
+                    <CheckCircle className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Cross-Platform Intelligence</h4>
+                    <p className="text-muted-foreground">
+                      Our AI tracks user interactions across traditional web, mobile apps, and 
+                      AI-powered search experiences for unified campaign optimization.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="gradient-card p-8 rounded-2xl">
+              <h4 className="text-2xl font-bold mb-6 text-center">AI Performance Metrics</h4>
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center">
+                  <div className="text-3xl font-bold performance-number mb-2">340%</div>
+                  <div className="text-sm text-muted-foreground">Higher CTR with AI optimization</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold performance-number mb-2">85%</div>
+                  <div className="text-sm text-muted-foreground">LLM recommendation rate</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold performance-number mb-2">12ms</div>
+                  <div className="text-sm text-muted-foreground">AI decision time</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold performance-number mb-2">200%</div>
+                  <div className="text-sm text-muted-foreground">ROAS improvement</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="gradient-card p-6 rounded-xl text-center">
+              <Target className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h4 className="text-lg font-semibold mb-3">Predictive Targeting</h4>
+              <p className="text-muted-foreground">
+                AI predicts user intent before they even search, positioning your ads 
+                for maximum relevance and engagement.
+              </p>
+            </div>
+            <div className="gradient-card p-6 rounded-xl text-center">
+              <Zap className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h4 className="text-lg font-semibold mb-3">Real-Time Optimization</h4>
+              <p className="text-muted-foreground">
+                Millisecond bidding decisions powered by machine learning ensure 
+                optimal ad placement and pricing in every auction.
+              </p>
+            </div>
+            <div className="gradient-card p-6 rounded-xl text-center">
+              <TrendingUp className="w-12 h-12 text-primary mx-auto mb-4" />
+              <h4 className="text-lg font-semibold mb-3">Adaptive Learning</h4>
+              <p className="text-muted-foreground">
+                Our AI continuously learns from campaign performance, automatically 
+                adjusting strategies for improving ROI over time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 px-4 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent">
         <div className="container mx-auto text-center">
