@@ -34,9 +34,9 @@ export const HeroSection = () => {
                 </h1>
 
                 <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-                  Exclusive access to tier-1 streaming inventory that's not available on open exchanges. 
-                  Premium CTV impressions from Netflix, Disney+, HBO Max and other premium publishers. 
-                  Higher engagement, better brand safety, and inventory that actually drives results.
+                  Exclusive tier-1 streaming inventory from Netflix, Disney+, HBO Max and other premium publishers. 
+                  <span className="text-white font-semibold">10X higher conversions</span> than standard video ads with 
+                  guaranteed $50+ CPMs and 95% completion rates.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
@@ -44,7 +44,7 @@ export const HeroSection = () => {
                     onClick={() => navigate('/auth')}
                     className="premium-button text-lg px-8 py-4 group"
                   >
-                    Get Started
+                    Get Premium Access
                     <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
                   </Button>
                   
@@ -59,17 +59,18 @@ export const HeroSection = () => {
                 </div>
               </div>
 
-              {/* Performance Stats */}
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+              {/* Premium Performance Stats */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
                 {[
-                  { value: "250M+", label: "Monthly impressions available" },
-                  { value: "99.8%", label: "Fill rate guarantee" },
-                  { value: "2ms", label: "Response time" },
-                  { value: "Same-day", label: "Settlement" }
+                  { value: "10X", label: "Higher conversions", sublabel: "vs standard video" },
+                  { value: "427%", label: "Average ROAS", sublabel: "Fortune 500 client" },
+                  { value: "$50-85", label: "CPM range", sublabel: "Premium inventory" },
+                  { value: "95%", label: "Completion rate", sublabel: "Non-skippable CTV" }
                 ].map((stat, i) => (
                   <div key={i} className="premium-card text-center">
-                    <div className="text-3xl font-bold mb-2">{stat.value}</div>
-                    <div className="text-sm text-muted-foreground">{stat.label}</div>
+                    <div className="text-3xl font-bold mb-2 performance-number">{stat.value}</div>
+                    <div className="text-sm font-medium mb-1">{stat.label}</div>
+                    <div className="text-xs text-muted-foreground">{stat.sublabel}</div>
                   </div>
                 ))}
               </div>
