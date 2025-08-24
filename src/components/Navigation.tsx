@@ -220,17 +220,6 @@ export const Navigation = () => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem>
-                  <Link to="/resources" className="px-4 py-2 text-sm font-medium hover:text-primary transition-colors">
-                    Resources
-                  </Link>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <Link to="/company" className="px-4 py-2 text-sm font-medium hover:text-primary transition-colors">
-                    Company
-                  </Link>
-                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
           </div>
@@ -325,22 +314,6 @@ export const Navigation = () => {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <Link 
-                      to="/resources" 
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="block p-2 rounded-lg hover:bg-accent transition-colors font-medium"
-                    >
-                      Resources
-                    </Link>
-                    <Link 
-                      to="/company" 
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="block p-2 rounded-lg hover:bg-accent transition-colors font-medium"
-                    >
-                      Company
-                    </Link>
-                  </div>
 
                   <div className="pt-4 border-t space-y-2">
                     <Link to="/auth" onClick={() => setIsMobileMenuOpen(false)}>

@@ -1,9 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Mail, Twitter, Linkedin, Facebook } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { ArrowRight, Mail, Twitter, Linkedin, Facebook, Send, Phone, MapPin } from 'lucide-react';
 
 export const Footer = () => {
+  const [email, setEmail] = useState('');
+  const [isSubscribed, setIsSubscribed] = useState(false);
+
+  const handleNewsletterSignup = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      setIsSubscribed(true);
+      setEmail('');
+      setTimeout(() => setIsSubscribed(false), 3000);
+    }
+  };
+
   const footerSections = {
+    platform: {
+      title: "Platform",
+      links: [
+        { text: "Overview", href: "/platform/overview" },
+        { text: "Plan", href: "/platform/plan" },
+        { text: "Activate", href: "/platform/activate" },
+        { text: "Measure", href: "/platform/measure" }
+      ]
+    },
     solutions: {
       title: "Solutions",
       links: [
@@ -17,24 +40,18 @@ export const Footer = () => {
       title: "Products",
       links: [
         { text: "Premium CTV Inventory", href: "/premium" },
-        { text: "White Label AdExchange", href: "/white-label-adexchange" },
         { text: "Supply Side Platform", href: "/ssp" }, 
         { text: "Demand Side Platform", href: "/dsp" },
-        { text: "Ad Exchange", href: "/adx" }
+        { text: "Ad Exchange", href: "/adx" },
+        { text: "White Label AdExchange", href: "/white-label-adexchange" }
       ]
     },
-    company: {
-      title: "Company",
+    resources: {
+      title: "Resources & Company",
       links: [
+        { text: "Resources Hub", href: "/resources" },
         { text: "About Us", href: "/about" },
-        { text: "Leadership Team", href: "/company" }, 
-        { text: "Platform Overview", href: "/platform/overview" },
-        { text: "Resources", href: "/resources" }
-      ]
-    },
-    connect: {
-      title: "Connect",
-      links: [
+        { text: "Leadership Team", href: "/company" },
         { text: "Inventory List", href: "/inventory" },
         { text: "Contact Us", href: "/auth" }
       ]
@@ -58,24 +75,105 @@ export const Footer = () => {
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
+        {/* Newsletter Section */}
+        <div className="py-16 border-b border-primary/10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Stay Ahead of the <span className="performance-number">AdTech Revolution</span>
+              </h2>
+              <p className="text-muted-foreground text-lg mb-6">
+                Get exclusive insights, industry reports, and platform updates delivered to your inbox. 
+                Join 5,000+ AdTech professionals already subscribed.
+              </p>
+              <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span>Weekly industry insights</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span>Platform updates</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <span>Exclusive reports</span>
+                </div>
+              </div>
+            </div>
+            
+            <div className="gradient-card p-6 rounded-2xl">
+              <form onSubmit={handleNewsletterSignup} className="space-y-4">
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                    Email Address
+                  </label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="Enter your work email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full"
+                    required
+                  />
+                </div>
+                <Button 
+                  type="submit" 
+                  className="w-full group"
+                  disabled={isSubscribed}
+                >
+                  {isSubscribed ? (
+                    'Successfully Subscribed!'
+                  ) : (
+                    <>
+                      Subscribe to Newsletter
+                      <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </>
+                  )}
+                </Button>
+              </form>
+              <p className="text-xs text-muted-foreground mt-3 text-center">
+                No spam, unsubscribe at any time. We respect your privacy.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Main Footer Content */}
         <div className="py-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Brand Section */}
             <div className="lg:col-span-4">
-              <div className="mb-6">
+              <div className="mb-8">
                 <h3 className="text-3xl font-bold text-gradient mb-4">Adnexus</h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed mb-6">
                   ADXYZ Inc. is a premium AdTech company specializing in high-value CTV/OTT inventory. 
                   Our programmatic platform delivers exclusive Connected TV advertising opportunities 
                   with guaranteed $50+ CPM rates for premium brand advertisers.
                 </p>
               </div>
               
-              <div className="mb-6">
-                <div className="flex items-center gap-3 mb-2">
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span className="text-foreground font-medium">contact@ad.nexus</span>
+                  <a href="mailto:contact@ad.nexus" className="text-foreground hover:text-primary transition-colors">
+                    contact@ad.nexus
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-primary" />
+                  <a href="tel:+1-555-ADNEXUS" className="text-foreground hover:text-primary transition-colors">
+                    +1 (555) ADN-EXUS
+                  </a>
+                </div>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-5 h-5 text-primary mt-0.5" />
+                  <div className="text-muted-foreground">
+                    <div>New York, NY</div>
+                    <div>San Francisco, CA</div>
+                    <div>London, UK</div>
+                  </div>
                 </div>
               </div>
 
@@ -83,15 +181,17 @@ export const Footer = () => {
                 <h4 className="font-semibold mb-4">Follow Us</h4>
                 <div className="flex gap-4">
                   {[
-                    { icon: Twitter, label: "Twitter" },
-                    { icon: Linkedin, label: "LinkedIn" }, 
-                    { icon: Facebook, label: "Facebook" }
+                    { icon: Twitter, label: "Twitter", href: "#" },
+                    { icon: Linkedin, label: "LinkedIn", href: "#" }, 
+                    { icon: Facebook, label: "Facebook", href: "#" }
                   ].map((social, index) => (
                     <a 
                       key={index}
-                      href="#"
+                      href={social.href}
                       className="w-10 h-10 gradient-secondary rounded-lg flex items-center justify-center hover:shadow-primary transition-smooth group"
                       aria-label={social.label}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
                     </a>
@@ -104,16 +204,16 @@ export const Footer = () => {
             <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
               {Object.entries(footerSections).map(([key, section]) => (
                 <div key={key}>
-                  <h4 className="font-semibold mb-4 text-foreground">{section.title}</h4>
+                  <h4 className="font-semibold mb-6 text-foreground">{section.title}</h4>
                   <ul className="space-y-3">
                     {section.links.map((link, index) => (
                       <li key={index}>
                         <Link 
                           to={link.href}
-                          className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group"
+                          className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2 group text-sm"
                         >
                           {link.text}
-                          <ArrowRight className="w-3 h-3 opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                          <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                         </Link>
                       </li>
                     ))}
@@ -124,35 +224,60 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Certifications Section */}
-        <div className="border-t border-primary/20 py-8">
-          <div className="text-center mb-6">
-            <h4 className="text-lg font-semibold mb-4">
-              Partnerships and certifications for our customers' success!
-            </h4>
-          </div>
-          
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {certifications.map((cert, index) => (
-              <a 
-                key={index}
-                href="#"
-                className="px-4 py-2 gradient-secondary rounded-lg text-sm text-muted-foreground hover:text-primary transition-colors backdrop-blur-sm border border-primary/10"
-              >
-                {cert}
-              </a>
-            ))}
+        {/* Certifications & Performance Stats */}
+        <div className="border-t border-primary/10 py-12">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h4 className="text-lg font-semibold mb-6">
+                Partnerships & Certifications
+              </h4>
+              <div className="flex flex-wrap gap-3">
+                {certifications.map((cert, index) => (
+                  <a 
+                    key={index}
+                    href="#"
+                    className="px-3 py-2 gradient-secondary rounded-lg text-xs text-muted-foreground hover:text-primary transition-colors backdrop-blur-sm border border-primary/10"
+                  >
+                    {cert}
+                  </a>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="text-lg font-semibold mb-6">Platform Performance</h4>
+              <div className="grid grid-cols-2 gap-6">
+                <div className="text-center">
+                  <div className="text-2xl font-bold performance-number mb-1">250M+</div>
+                  <div className="text-xs text-muted-foreground">Monthly CTV Impressions</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold performance-number mb-1">99.8%</div>
+                  <div className="text-xs text-muted-foreground">Fill Rate</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold performance-number mb-1">2ms</div>
+                  <div className="text-xs text-muted-foreground">Response Time</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold performance-number mb-1">$50+</div>
+                  <div className="text-xs text-muted-foreground">Avg CPM</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-primary/20 py-6">
+        <div className="border-t border-primary/10 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-muted-foreground">
               © 2025 ADXYZ Inc. All rights reserved.
             </div>
-            <div className="text-sm text-muted-foreground">
-              Built with ❤️ for the programmatic advertising community
+            <div className="flex items-center gap-6 text-xs text-muted-foreground">
+              <span>🚀 Built for the programmatic advertising community</span>
+              <span>•</span>
+              <span>🌟 Trusted by 1,000+ enterprise clients</span>
             </div>
           </div>
         </div>
