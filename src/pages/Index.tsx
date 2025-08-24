@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { PerformanceMetrics } from "@/components/PerformanceMetrics";
 import { FeatureCard } from "@/components/FeatureCard";
@@ -100,10 +101,12 @@ const Index = () => {
             <PerformanceMetrics />
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-              <Button variant="hero" size="xl" className="group">
-                Get Started
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link to="/auth">
+                <Button variant="hero" size="xl" className="group">
+                  Get Started
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
               <Button variant="outline" size="xl" className="group">
                 <Play size={20} className="group-hover:scale-110 transition-transform" />
                 Watch Demo
@@ -178,10 +181,12 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button variant="hero" size="xl" className="group">
-                Start Free Trial
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link to="/auth">
+                <Button variant="hero" size="xl" className="group">
+                  Start Free Trial
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
               <Button variant="outline" size="xl">
                 Schedule Demo
               </Button>
