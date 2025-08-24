@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom';
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-primary">
       {/* Logo */}
       <div className="absolute top-8 left-8 z-20">
-        <div className="text-2xl font-bold">
-          Ad<span className="text-gradient">nexus</span>
+        <div className="text-3xl font-bold tracking-tight">
+          <span className="text-white/90">Ad</span><span className="text-white font-extrabold tracking-wider">nexus</span>
+          <div className="w-full h-0.5 bg-gradient-to-r from-white/60 to-transparent mt-1"></div>
         </div>
       </div>
 
