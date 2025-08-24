@@ -6,15 +6,19 @@ import { Link } from 'react-router-dom';
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-6 py-12">
+      {/* Header */}
+      <div className="container mx-auto px-6 py-8">
         <Link to="/">
           <Button variant="ghost" className="mb-8">
             <ArrowLeft className="mr-2" />
             Back to Home
           </Button>
         </Link>
+      </div>
 
-        <div className="max-w-4xl mx-auto">
+      {/* Hero Section */}
+      <section className="min-h-screen flex items-center justify-center px-6 -mt-24 pt-24">
+        <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6 text-gradient">
             About Adnexus
           </h1>
@@ -57,7 +61,7 @@ const About = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

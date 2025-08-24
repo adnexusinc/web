@@ -65,7 +65,7 @@ const Premium = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 bg-gradient-to-b from-primary/5 to-transparent">
+      <section className="min-h-screen flex items-center justify-center px-4 bg-gradient-to-b from-primary/5 to-transparent">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">

@@ -135,7 +135,7 @@ const Publishers = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-6 py-16">
+      <section className="min-h-screen flex items-center justify-center px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Maximize Your <span className="text-gradient">Ad Revenue</span>

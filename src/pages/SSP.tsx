@@ -16,19 +16,21 @@ const SSP = () => {
 
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
-          <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-6 text-gradient">
-              Supply Side Platform
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Run more formats, and earn more cash. Our white-label supply-side platform ships with a universal VAST adapter that connects every video player in minutes and keeps media management smooth.
-            </p>
-            <Link to="/#contact">
-              <Button variant="hero" size="xl" className="mb-12">
-                Contact Us
-              </Button>
-            </Link>
-          </div>
+          <section className="min-h-screen flex items-center justify-center -mt-12 pt-12">
+            <div className="text-center">
+              <h1 className="text-5xl font-bold mb-6 text-gradient">
+                Supply Side Platform
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+                Run more formats, and earn more cash. Our white-label supply-side platform ships with a universal VAST adapter that connects every video player in minutes and keeps media management smooth.
+              </p>
+              <Link to="/#contact">
+                <Button variant="hero" size="xl" className="mb-12">
+                  Contact Us
+                </Button>
+              </Link>
+            </div>
+          </section>
 
           {/* Description */}
           <div className="mb-16 text-center">

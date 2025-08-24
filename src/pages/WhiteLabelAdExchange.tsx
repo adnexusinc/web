@@ -16,24 +16,26 @@ const WhiteLabelAdExchange = () => {
 
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
-          <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold mb-6 text-gradient">
-              White Label AdExchange
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Start your advertising business with minimal investment and maximum income
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/#contact">
-                <Button variant="hero" size="xl">
-                  Want to Connect?
+          <section className="min-h-screen flex items-center justify-center -mt-12 pt-12">
+            <div className="text-center">
+              <h1 className="text-5xl font-bold mb-6 text-gradient">
+                White Label AdExchange
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+                Start your advertising business with minimal investment and maximum income
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/#contact">
+                  <Button variant="hero" size="xl">
+                    Want to Connect?
+                  </Button>
+                </Link>
+                <Button variant="outline" size="xl">
+                  Explore Features
                 </Button>
-              </Link>
-              <Button variant="outline" size="xl">
-                Explore Features
-              </Button>
+              </div>
             </div>
-          </div>
+          </section>
 
           {/* Platform Description */}
           <div className="mb-16 text-center">
