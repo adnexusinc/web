@@ -154,7 +154,7 @@ export const Navigation = () => {
             <Link to="/" className="flex items-center gap-3 group">
               <MoonLogo size="md" />
               <div className="text-2xl font-bold text-white/90 group-hover:text-white transition-colors">
-                Adnexus
+                AdNexus
               </div>
             </Link>
 
