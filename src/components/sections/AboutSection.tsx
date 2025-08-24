@@ -66,7 +66,7 @@ export const AboutSection = () => {
               </div>
             </div>
 
-            {/* ADXYZ Community */}
+            {/* Adnexus Community */}
             <div className="gradient-card rounded-xl p-6 backdrop-blur-sm border border-primary/20 hover:shadow-primary transition-smooth group">
               <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <ArrowRight className="text-primary-foreground" />

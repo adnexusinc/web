@@ -248,7 +248,7 @@ const WhiteLabelAdExchange = () => {
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">With Adnexus AdExchange, you become a part of Adnexus's community!</h2>
             <p className="text-lg text-muted-foreground text-center mb-12 max-w-4xl mx-auto">
-              By trading exclusively within the secure ADXYZ Community environment, you get the opportunity to work with top partners without additional fees and commissions to get even better results!
+              By trading exclusively within the secure Adnexus Community environment, you get the opportunity to work with top partners without additional fees and commissions to get even better results!
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
