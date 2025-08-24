@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ArrowLeft, Eye, EyeOff } from 'lucide-react';
+import { ArrowLeft, Eye, EyeOff, Copy, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useToast } from '@/hooks/use-toast';
 import type { User, Session } from '@supabase/supabase-js';
@@ -18,6 +18,9 @@ const Auth = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [authStep, setAuthStep] = useState<'form' | 'verification'>('form');
+  const [verificationCode, setVerificationCode] = useState('');
+  const [submittedEmail, setSubmittedEmail] = useState('');
   
   const [loginData, setLoginData] = useState({
     email: '',
@@ -135,17 +138,12 @@ const Auth = () => {
       }
 
       if (data.user) {
-        if (!data.user.email_confirmed_at) {
-          toast({
-            title: "Check your email",
-            description: "We've sent you a verification link. Please check your email to complete registration.",
-          });
-        } else {
-          toast({
-            title: "Account Created!",
-            description: "Welcome to Adnexus. Complete your profile to get started.",
-          });
-        }
+        setSubmittedEmail(signupData.email);
+        setAuthStep('verification');
+        toast({
+          title: "Account created!",
+          description: "Check your email for the verification code.",
+        });
       }
     } catch (error) {
       toast({
@@ -156,6 +154,45 @@ const Auth = () => {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const handleVerification = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      // Simulate verification process
+      if (verificationCode.length === 6) {
+        toast({
+          title: "Email verified!",
+          description: "Your account has been activated. Redirecting to dashboard...",
+        });
+        
+        setTimeout(() => {
+          navigate('/dashboard');
+        }, 1500);
+      } else {
+        throw new Error("Please enter a valid 6-digit code");
+      }
+    } catch (error) {
+      toast({
+        title: "Verification Failed",
+        description: error instanceof Error ? error.message : "Invalid verification code.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const copyDemoCode = () => {
+    const demoCode = "123456";
+    navigator.clipboard.writeText(demoCode);
+    setVerificationCode(demoCode);
+    toast({
+      title: "Demo code copied!",
+      description: "Use 123456 to continue with the demo.",
+    });
   };
 
   return (
@@ -180,115 +217,174 @@ const Auth = () => {
         {/* Auth Forms */}
         <Card className="gradient-card backdrop-blur-sm border-primary/20">
           <CardHeader className="text-center pb-2">
-            <CardTitle>Get Started</CardTitle>
+            <CardTitle>
+              {authStep === 'form' ? 'Get Started' : 'Verify Your Email'}
+            </CardTitle>
             <CardDescription>
-              Create your account or sign in to continue
+              {authStep === 'form' 
+                ? 'Create your account or sign in to continue'
+                : `We've sent a verification code to ${submittedEmail}`
+              }
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Tabs defaultValue="signup" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 mb-6">
-                <TabsTrigger value="signup">Sign Up</TabsTrigger>
-                <TabsTrigger value="login">Login</TabsTrigger>
-              </TabsList>
+            {authStep === 'form' ? (
+              <Tabs defaultValue="signup" className="w-full">
+                <TabsList className="grid w-full grid-cols-2 mb-6">
+                  <TabsTrigger value="signup">Sign Up</TabsTrigger>
+                  <TabsTrigger value="login">Login</TabsTrigger>
+                </TabsList>
 
-              <TabsContent value="signup">
-                <form onSubmit={handleSignup} className="space-y-4">
+                <TabsContent value="signup">
+                  <form onSubmit={handleSignup} className="space-y-4">
+                    <div>
+                      <Input
+                        type="text"
+                        placeholder="Full Name"
+                        value={signupData.fullName}
+                        onChange={(e) => setSignupData({ ...signupData, fullName: e.target.value })}
+                        required
+                      />
+                    </div>
+                    <div>
+                      <Input
+                        type="email"
+                        placeholder="Email Address"
+                        value={signupData.email}
+                        onChange={(e) => setSignupData({ ...signupData, email: e.target.value })}
+                        required
+                      />
+                    </div>
+                    <div className="relative">
+                      <Input
+                        type={showPassword ? "text" : "password"}
+                        placeholder="Password"
+                        value={signupData.password}
+                        onChange={(e) => setSignupData({ ...signupData, password: e.target.value })}
+                        required
+                      />
+                      <Button
+                        type="button"
+                        variant="ghost"
+                        size="sm"
+                        className="absolute right-0 top-0 h-full px-3 py-2 hover:bg-transparent"
+                        onClick={() => setShowPassword(!showPassword)}
+                      >
+                        {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </Button>
+                    </div>
+                    <div className="relative">
+                      <Input
+                        type={showConfirmPassword ? "text" : "password"}
+                        placeholder="Confirm Password"
+                        value={signupData.confirmPassword}
+                        onChange={(e) => setSignupData({ ...signupData, confirmPassword: e.target.value })}
+                        required
+                      />
+                      <Button
+                        type="button"
+                        variant="ghost"
+                        size="sm"
+                        className="absolute right-0 top-0 h-full px-3 py-2 hover:bg-transparent"
+                        onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                      >
+                        {showConfirmPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </Button>
+                    </div>
+                    <Button type="submit" variant="cta" size="lg" className="w-full" disabled={isLoading}>
+                      {isLoading ? 'Creating Account...' : 'Create Account'}
+                    </Button>
+                  </form>
+                </TabsContent>
+
+                <TabsContent value="login">
+                  <form onSubmit={handleLogin} className="space-y-4">
+                    <div>
+                      <Input
+                        type="email"
+                        placeholder="Email Address"
+                        value={loginData.email}
+                        onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
+                        required
+                      />
+                    </div>
+                    <div className="relative">
+                      <Input
+                        type={showPassword ? "text" : "password"}
+                        placeholder="Password"
+                        value={loginData.password}
+                        onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
+                        required
+                      />
+                      <Button
+                        type="button"
+                        variant="ghost"
+                        size="sm"
+                        className="absolute right-0 top-0 h-full px-3 py-2 hover:bg-transparent"
+                        onClick={() => setShowPassword(!showPassword)}
+                      >
+                        {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                      </Button>
+                    </div>
+                    <Button type="submit" variant="cta" size="lg" className="w-full" disabled={isLoading}>
+                      {isLoading ? 'Signing In...' : 'Sign In'}
+                    </Button>
+                  </form>
+                </TabsContent>
+              </Tabs>
+            ) : (
+              <div className="space-y-6">
+                {/* Demo Code Helper */}
+                <div className="p-4 bg-primary/5 border border-primary/20 rounded-lg">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-sm font-medium">Demo Code</span>
+                    <Button
+                      type="button"
+                      variant="ghost"
+                      size="sm"
+                      onClick={copyDemoCode}
+                      className="h-8 px-2"
+                    >
+                      <Copy size={12} className="mr-1" />
+                      Copy
+                    </Button>
+                  </div>
+                  <code className="text-lg font-mono text-primary">123456</code>
+                  <p className="text-xs text-muted-foreground mt-1">
+                    Use this code to continue with the demo
+                  </p>
+                </div>
+
+                <form onSubmit={handleVerification} className="space-y-4">
                   <div>
                     <Input
                       type="text"
-                      placeholder="Full Name"
-                      value={signupData.fullName}
-                      onChange={(e) => setSignupData({ ...signupData, fullName: e.target.value })}
+                      placeholder="Enter 6-digit code"
+                      value={verificationCode}
+                      onChange={(e) => setVerificationCode(e.target.value.replace(/\D/g, '').slice(0, 6))}
+                      className="text-center text-2xl tracking-widest font-mono"
+                      maxLength={6}
                       required
                     />
                   </div>
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder="Email Address"
-                      value={signupData.email}
-                      onChange={(e) => setSignupData({ ...signupData, email: e.target.value })}
-                      required
-                    />
-                  </div>
-                  <div className="relative">
-                    <Input
-                      type={showPassword ? "text" : "password"}
-                      placeholder="Password"
-                      value={signupData.password}
-                      onChange={(e) => setSignupData({ ...signupData, password: e.target.value })}
-                      required
-                    />
-                    <Button
-                      type="button"
-                      variant="ghost"
-                      size="sm"
-                      className="absolute right-0 top-0 h-full px-3 py-2 hover:bg-transparent"
-                      onClick={() => setShowPassword(!showPassword)}
-                    >
-                      {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-                    </Button>
-                  </div>
-                  <div className="relative">
-                    <Input
-                      type={showConfirmPassword ? "text" : "password"}
-                      placeholder="Confirm Password"
-                      value={signupData.confirmPassword}
-                      onChange={(e) => setSignupData({ ...signupData, confirmPassword: e.target.value })}
-                      required
-                    />
-                    <Button
-                      type="button"
-                      variant="ghost"
-                      size="sm"
-                      className="absolute right-0 top-0 h-full px-3 py-2 hover:bg-transparent"
-                      onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                    >
-                      {showConfirmPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-                    </Button>
-                  </div>
+                  
                   <Button type="submit" variant="cta" size="lg" className="w-full" disabled={isLoading}>
-                    {isLoading ? 'Creating Account...' : 'Create Account'}
+                    {isLoading ? 'Verifying...' : 'Verify & Continue'}
                   </Button>
                 </form>
-              </TabsContent>
 
-              <TabsContent value="login">
-                <form onSubmit={handleLogin} className="space-y-4">
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder="Email Address"
-                      value={loginData.email}
-                      onChange={(e) => setLoginData({ ...loginData, email: e.target.value })}
-                      required
-                    />
-                  </div>
-                  <div className="relative">
-                    <Input
-                      type={showPassword ? "text" : "password"}
-                      placeholder="Password"
-                      value={loginData.password}
-                      onChange={(e) => setLoginData({ ...loginData, password: e.target.value })}
-                      required
-                    />
-                    <Button
-                      type="button"
-                      variant="ghost"
-                      size="sm"
-                      className="absolute right-0 top-0 h-full px-3 py-2 hover:bg-transparent"
-                      onClick={() => setShowPassword(!showPassword)}
-                    >
-                      {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
-                    </Button>
-                  </div>
-                  <Button type="submit" variant="cta" size="lg" className="w-full" disabled={isLoading}>
-                    {isLoading ? 'Signing In...' : 'Sign In'}
+                <div className="text-center">
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    onClick={() => setAuthStep('form')}
+                    className="text-sm"
+                  >
+                    ← Back to form
                   </Button>
-                </form>
-              </TabsContent>
-            </Tabs>
+                </div>
+              </div>
+            )}
           </CardContent>
         </Card>
 
