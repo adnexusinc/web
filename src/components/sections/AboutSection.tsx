@@ -8,12 +8,12 @@ export const AboutSection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 gradient-card rounded-full px-6 py-3 mb-8 backdrop-blur-sm border border-primary/20">
             <span className="text-sm font-medium text-accent uppercase tracking-wide">
-              What is ADXYZ?
+              What is Adnexus?
             </span>
           </div>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            ADXYZ is a team of{' '}
+            Adnexus is a team of{' '}
             <span className="text-gradient">industry-proven experts</span>{' '}
             with 10+ years of track record
           </h2>
@@ -71,7 +71,7 @@ export const AboutSection = () => {
               <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <ArrowRight className="text-primary-foreground" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">ADXYZ Community</h3>
+              <h3 className="text-lg font-semibold mb-2">Adnexus Community</h3>
               <p className="text-sm text-muted-foreground mb-4">
                 Connect to the Community and start trading with 250+ partners
               </p>

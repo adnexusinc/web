@@ -86,7 +86,7 @@ const SSP = () => {
 
           {/* Features */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">Explore ADXYZ SSP features</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Explore Adnexus SSP features</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
@@ -123,7 +123,7 @@ const SSP = () => {
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-8">Easy & Stable integration solutions</h2>
             <p className="text-lg text-muted-foreground text-center mb-12 max-w-4xl mx-auto">
-              ADXYZ provides only proven solutions to maximize your profit! Our development team has invested much effort in providing maximum coverage for various connection methods.
+              Adnexus provides only proven solutions to maximize your profit! Our development team has invested much effort in providing maximum coverage for various connection methods.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
               {[
@@ -152,13 +152,13 @@ const SSP = () => {
               <div className="gradient-card p-8 rounded-2xl">
                 <h3 className="text-xl font-semibold mb-4">Save money and time with white-label SSP</h3>
                 <p className="text-muted-foreground">
-                  Instead of an expensive and lengthy process of in-house software development, the ADXYZ white-label SSP solution will save you money and time and gives you an ultimate package of tools to increase your revenue from day one!
+                  Instead of an expensive and lengthy process of in-house software development, the Adnexus white-label SSP solution will save you money and time and gives you an ultimate package of tools to increase your revenue from day one!
                 </p>
               </div>
               <div className="gradient-card p-8 rounded-2xl">
                 <h3 className="text-xl font-semibold mb-4">Trade with your monetization terms</h3>
                 <p className="text-muted-foreground">
-                  Take full control of your direct publishers or inventory management and monetizing process. With ADXYZ SSP, you can establish your terms to maximize your revenue and create the most profitable cooperation with partners.
+                  Take full control of your direct publishers or inventory management and monetizing process. With Adnexus SSP, you can establish your terms to maximize your revenue and create the most profitable cooperation with partners.
                 </p>
               </div>
             </div>
@@ -166,9 +166,9 @@ const SSP = () => {
 
           {/* Community Benefits */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">Become a white-label partner and join the ADXYZ Community!</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Become a white-label partner and join the Adnexus Community!</h2>
             <p className="text-lg text-muted-foreground text-center mb-12 max-w-4xl mx-auto">
-              By trading exclusively within the secure ADXYZ Community environment, you can work with top partners without additional fees and commissions to get even better results!
+              By trading exclusively within the secure Adnexus Community environment, you can work with top partners without additional fees and commissions to get even better results!
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -192,7 +192,7 @@ const SSP = () => {
 
           {/* Final CTA */}
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-6">Get Started with a Free Demo by ADXYZ's customer success expert!</h2>
+            <h2 className="text-3xl font-bold mb-6">Get Started with a Free Demo by Adnexus's customer success expert!</h2>
             <Link to="/#contact">
               <Button variant="hero" size="xl">
                 Contact Us

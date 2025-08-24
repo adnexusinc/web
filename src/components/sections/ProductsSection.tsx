@@ -31,7 +31,7 @@ export const ProductsSection = () => {
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "ADXYZ Community",
+      title: "Adnexus Community",
       description: "Connect to our ecosystem and start trading with 250+ verified partners in our exclusive network.",
       features: ["250+ partners", "Direct deals", "Community support", "Exclusive opportunities"],
       color: "from-orange-500 to-red-500",

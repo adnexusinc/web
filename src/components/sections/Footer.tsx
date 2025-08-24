@@ -15,7 +15,7 @@ export const Footer = () => {
     products: {
       title: "Products",
       links: [
-        "ADXYZ Community",
+        "Adnexus Community",
         "White Label AdExchange",
         "Supply Side Platform",
         "Demand Side Platform",
@@ -26,7 +26,7 @@ export const Footer = () => {
       title: "Company",
       links: [
         "About Us",
-        "ADXYZ Team", 
+        "Adnexus Team", 
         "Careers",
         "News"
       ]
@@ -63,9 +63,9 @@ export const Footer = () => {
             {/* Brand Section */}
             <div className="lg:col-span-4">
               <div className="mb-6">
-                <h3 className="text-3xl font-bold text-gradient mb-4">ADXYZ</h3>
+                <h3 className="text-3xl font-bold text-gradient mb-4">Adnexus</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  ADXYZ is a full-stack AdTech company developing programmatic ecosystems, 
+                  Adnexus is a full-stack AdTech company developing programmatic ecosystems, 
                   connecting publishers and advertisers with cutting-edge technology and 
                   personalized support.
                 </p>
@@ -148,7 +148,7 @@ export const Footer = () => {
         <div className="border-t border-primary/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-muted-foreground">
-              © 2025 ADXYZ. All rights reserved.
+              © 2025 Adnexus. All rights reserved.
             </div>
             <div className="text-sm text-muted-foreground">
               Built with ❤️ for the programmatic advertising community

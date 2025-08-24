@@ -42,7 +42,7 @@ export const WhyUsSection = () => {
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Why{' '}
-            <span className="text-gradient">ADXYZ</span>{' '}
+            <span className="text-gradient">Adnexus</span>{' '}
             is Your Best Choice
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -76,7 +76,7 @@ export const WhyUsSection = () => {
                 Ready to Start Earning More?
               </h3>
               <p className="text-xl text-muted-foreground mb-8">
-                Join hundreds of successful partners who have transformed their advertising operations with ADXYZ.
+                Join hundreds of successful partners who have transformed their advertising operations with Adnexus.
               </p>
               <Button 
                 variant="cta" 

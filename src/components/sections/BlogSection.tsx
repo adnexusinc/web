@@ -19,7 +19,7 @@ export const BlogSection = () => {
       image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=600&h=400&fit=crop&crop=center"
     },
     {
-      title: "How to Connect Your Mobile App to ADXYZ SSP via SDK: A Practical Integration Guide",
+      title: "How to Connect Your Mobile App to Adnexus SSP via SDK: A Practical Integration Guide",
       excerpt: "Programmatic advertising might be confusing at times. With the continuous industry updates, both publishers and advertisers might struggle to keep up with the requirements and various technical implementations.",
       date: "Jul 25, 2025",
       tags: ["Publishers", "Trends"],

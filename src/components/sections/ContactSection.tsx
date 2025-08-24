@@ -271,7 +271,7 @@ export const ContactSection = () => {
               </div>
               <h4 className="text-xl font-bold mb-2">Ready to Join?</h4>
               <p className="text-muted-foreground mb-4">
-                Start earning with ADXYZ ecosystem today
+                Start earning with Adnexus ecosystem today
               </p>
               <div className="text-sm text-success font-semibold">
                 ✓ Free consultation<br />

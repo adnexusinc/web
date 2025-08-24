@@ -41,7 +41,7 @@ export const StatsSection = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Here are some more numbers about{' '}
-              <span className="text-gradient">ADXYZ</span>
+              <span className="text-gradient">Adnexus</span>
             </h2>
           </div>
 

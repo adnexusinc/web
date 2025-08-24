@@ -16,7 +16,7 @@ const About = () => {
 
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl font-bold mb-6 text-gradient">
-            About ADXYZ
+            About Adnexus
           </h1>
           <p className="text-xl text-muted-foreground mb-12">
             A team of industry-proven experts with 10+ years of track record developing cutting-edge AdTech ecosystem

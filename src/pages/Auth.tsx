@@ -143,7 +143,7 @@ const Auth = () => {
         } else {
           toast({
             title: "Account Created!",
-            description: "Welcome to ADXYZ. Complete your profile to get started.",
+            description: "Welcome to Adnexus. Complete your profile to get started.",
           });
         }
       }
@@ -169,9 +169,9 @@ const Auth = () => {
           </Link>
           
           <div className="text-2xl font-bold mb-2">
-            AD<span className="text-gradient">XYZ</span>
+            Ad<span className="text-gradient">nexus</span>
           </div>
-          <h1 className="text-2xl font-bold mb-2">Welcome to ADXYZ</h1>
+          <h1 className="text-2xl font-bold mb-2">Welcome to Adnexus</h1>
           <p className="text-muted-foreground">
             Join our programmatic advertising platform
           </p>

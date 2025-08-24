@@ -207,7 +207,7 @@ const Dashboard = () => {
       <header className="border-b border-border bg-card/50 backdrop-blur-sm">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="text-2xl font-bold">
-            AD<span className="text-gradient">XYZ</span>
+            Ad<span className="text-gradient">nexus</span>
           </div>
           <div className="flex items-center gap-4">
             <span className="text-sm text-muted-foreground">

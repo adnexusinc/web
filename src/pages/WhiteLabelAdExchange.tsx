@@ -44,7 +44,7 @@ const WhiteLabelAdExchange = () => {
               It is a simple but professional tool to earn unlimited income in the AdTech industry!
             </p>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              The ADXYZ ecosystem's technical excellence helps customers increase their revenue compared to other solutions. With leading-edge programmatic technology, our partners are sure of the result!
+              The Adnexus ecosystem's technical excellence helps customers increase their revenue compared to other solutions. With leading-edge programmatic technology, our partners are sure of the result!
             </p>
           </div>
 
@@ -68,14 +68,14 @@ const WhiteLabelAdExchange = () => {
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-12">SAVE TIME AND MONEY WITH WHITE-LABEL ADEXCHANGE</h2>
             <p className="text-lg text-muted-foreground text-center mb-12 max-w-4xl mx-auto">
-              Instead of an expensive and lengthy process of in-house software development, the ADXYZ White-Label AdExchange solution will save you money, time and gives you an ultimate package of tools to increase your revenue from day one!
+              Instead of an expensive and lengthy process of in-house software development, the Adnexus White-Label AdExchange solution will save you money, time and gives you an ultimate package of tools to increase your revenue from day one!
             </p>
             
             {/* Comparison */}
             <div className="grid md:grid-cols-2 gap-8">
               <div className="gradient-card p-8 rounded-2xl border-2 border-primary/20">
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-primary mb-2">ADXYZ WHITE LABEL ADEXCHANGE</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-2">Adnexus WHITE LABEL ADEXCHANGE</h3>
                   <p className="text-lg font-semibold">Fast and easy way to start making money in programmatic</p>
                 </div>
                 <ul className="space-y-3 mb-6">
@@ -148,7 +148,7 @@ const WhiteLabelAdExchange = () => {
                 <Shield className="w-12 h-12 text-primary mb-4" />
                 <h3 className="text-xl font-semibold mb-4">Fault-tolerant technical solution</h3>
                 <p className="text-muted-foreground">
-                  ADXYZ provides only proven solutions with the best reliability to maximize your profit! Our development team has invested much effort in providing the most reliable software without downtimes or interruptions.
+                  Adnexus provides only proven solutions with the best reliability to maximize your profit! Our development team has invested much effort in providing the most reliable software without downtimes or interruptions.
                 </p>
               </div>
               <div className="gradient-card p-8 rounded-2xl">
@@ -160,9 +160,9 @@ const WhiteLabelAdExchange = () => {
               </div>
               <div className="gradient-card p-8 rounded-2xl">
                 <TrendingUp className="w-12 h-12 text-success mb-4" />
-                <h3 className="text-xl font-semibold mb-4">Access to ADXYZ Community</h3>
+                <h3 className="text-xl font-semibold mb-4">Access to Adnexus Community</h3>
                 <p className="text-muted-foreground">
-                  By trading exclusively within the secure ADXYZ Community environment, you get the opportunity to work with top partners without additional fees and commissions to get even better results!
+                  By trading exclusively within the secure Adnexus Community environment, you get the opportunity to work with top partners without additional fees and commissions to get even better results!
                 </p>
               </div>
             </div>
@@ -170,7 +170,7 @@ const WhiteLabelAdExchange = () => {
 
           {/* Features */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-12">ADXYZ AdExchange features</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">Adnexus AdExchange features</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
@@ -246,7 +246,7 @@ const WhiteLabelAdExchange = () => {
 
           {/* Community Benefits */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold text-center mb-8">With ADXYZ AdExchange, you become a part of ADXYZ's community!</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">With Adnexus AdExchange, you become a part of Adnexus's community!</h2>
             <p className="text-lg text-muted-foreground text-center mb-12 max-w-4xl mx-auto">
               By trading exclusively within the secure ADXYZ Community environment, you get the opportunity to work with top partners without additional fees and commissions to get even better results!
             </p>
@@ -272,7 +272,7 @@ const WhiteLabelAdExchange = () => {
 
           {/* Final CTA */}
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-6">Get Started with a Free Demo by ADXYZ's customer success expert!</h2>
+            <h2 className="text-3xl font-bold mb-6">Get Started with a Free Demo by Adnexus's customer success expert!</h2>
             <Link to="/#contact">
               <Button variant="hero" size="xl">
                 Contact Us

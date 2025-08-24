@@ -9,7 +9,7 @@ export const HeroSection = () => {
       {/* Logo */}
       <div className="absolute top-8 left-8 z-20">
         <div className="text-2xl font-bold">
-          AD<span className="text-gradient">XYZ</span>
+          Ad<span className="text-gradient">nexus</span>
         </div>
       </div>
 
