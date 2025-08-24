@@ -67,11 +67,11 @@ export const Footer = () => {
   ];
 
   return (
-    <footer className="bg-background/80 backdrop-blur-sm border-t border-primary/20 relative overflow-hidden">
+    <footer className="bg-card border-t border-border/50 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -bottom-1/2 -left-1/4 w-1/2 h-full bg-gradient-to-tr from-primary/5 to-transparent rounded-full blur-3xl"></div>
-        <div className="absolute -bottom-1/2 -right-1/4 w-1/2 h-full bg-gradient-to-tl from-accent/5 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-1/2 -left-1/4 w-1/2 h-full bg-gradient-to-tr from-primary/10 to-transparent rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-1/2 -right-1/4 w-1/2 h-full bg-gradient-to-tl from-accent/10 to-transparent rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
