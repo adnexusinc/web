@@ -148,7 +148,7 @@ export const Footer = () => {
         <div className="border-t border-primary/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-muted-foreground">
-              © 2025 Adnexus. All rights reserved.
+              © 2025 ADXYZ Inc. All rights reserved.
             </div>
             <div className="text-sm text-muted-foreground">
               Built with ❤️ for the programmatic advertising community
