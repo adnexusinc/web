@@ -8,9 +8,12 @@ export const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden gradient-primary">
       {/* Logo */}
       <div className="absolute top-8 left-8 z-20">
-        <div className="text-3xl font-bold tracking-tight">
-          <span className="text-white/90">Ad</span><span className="text-white font-extrabold tracking-wider">nexus</span>
-          <div className="w-full h-0.5 bg-gradient-to-r from-white/60 to-transparent mt-1"></div>
+        <div className="relative group">
+          <div className="text-4xl font-black tracking-tight bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
+            Ad<span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent font-extrabold">nexus</span>
+          </div>
+          <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-lg blur-sm opacity-0 group-hover:opacity-100 transition-opacity"></div>
         </div>
       </div>
 
