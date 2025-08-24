@@ -82,10 +82,10 @@ const Auth = () => {
           description: "You've been successfully logged in.",
         });
       }
-    } catch (error: any) {
+    } catch (error) {
       toast({
         title: "Login Failed",
-        description: error.message || "Failed to sign in. Please check your credentials.",
+        description: error instanceof Error ? error.message : "Failed to sign in. Please check your credentials.",
         variant: "destructive",
       });
     } finally {
@@ -147,10 +147,10 @@ const Auth = () => {
           });
         }
       }
-    } catch (error: any) {
+    } catch (error) {
       toast({
         title: "Signup Failed",
-        description: error.message || "Failed to create account. Please try again.",
+        description: error instanceof Error ? error.message : "Failed to create account. Please try again.",
         variant: "destructive",
       });
     } finally {

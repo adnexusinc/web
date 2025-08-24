@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
 import { Button } from '@/components/ui/button';
@@ -69,6 +69,27 @@ const Dashboard = () => {
     }
   }, [searchParams, toast]);
 
+  const checkSubscriptionStatus = useCallback(async () => {
+    if (!session) return;
+    
+    setIsCheckingSubscription(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('check-subscription', {
+        headers: {
+          Authorization: `Bearer ${session.access_token}`,
+        },
+      });
+
+      if (error) throw error;
+      
+      setSubscriptionStatus(data);
+    } catch (error) {
+      console.error('Error checking subscription:', error);
+    } finally {
+      setIsCheckingSubscription(false);
+    }
+  }, [session]);
+
   useEffect(() => {
     // Set up auth state listener
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
@@ -98,9 +119,9 @@ const Dashboard = () => {
     });
 
     return () => subscription.unsubscribe();
-  }, [navigate]);
+  }, [navigate, loadUserProfile]);
 
-  const loadUserProfile = async (userId: string) => {
+  const loadUserProfile = useCallback(async (userId: string) => {
     try {
       const { data, error } = await supabase
         .from('profiles')
@@ -135,28 +156,7 @@ const Dashboard = () => {
     } finally {
       setIsLoading(false);
     }
-  };
-
-  const checkSubscriptionStatus = async () => {
-    if (!session) return;
-    
-    setIsCheckingSubscription(true);
-    try {
-      const { data, error } = await supabase.functions.invoke('check-subscription', {
-        headers: {
-          Authorization: `Bearer ${session.access_token}`,
-        },
-      });
-
-      if (error) throw error;
-      
-      setSubscriptionStatus(data);
-    } catch (error) {
-      console.error('Error checking subscription:', error);
-    } finally {
-      setIsCheckingSubscription(false);
-    }
-  };
+  }, [toast, checkSubscriptionStatus]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -189,11 +189,11 @@ const Dashboard = () => {
       
       // Reload profile
       loadUserProfile(user.id);
-    } catch (error: any) {
+    } catch (error) {
       console.error('Error updating profile:', error);
       toast({
         title: "Error",
-        description: error.message || "Failed to submit your information.",
+        description: error instanceof Error ? error.message : "Failed to submit your information.",
         variant: "destructive",
       });
     } finally {
@@ -215,11 +215,11 @@ const Dashboard = () => {
 
       // Open Stripe checkout in a new tab
       window.open(data.url, '_blank');
-    } catch (error: any) {
+    } catch (error) {
       console.error('Error creating checkout:', error);
       toast({
         title: "Error",
-        description: error.message || "Failed to start subscription process.",
+        description: error instanceof Error ? error.message : "Failed to start subscription process.",
         variant: "destructive",
       });
     }
@@ -239,11 +239,11 @@ const Dashboard = () => {
 
       // Open Stripe customer portal in a new tab
       window.open(data.url, '_blank');
-    } catch (error: any) {
+    } catch (error) {
       console.error('Error opening customer portal:', error);
       toast({
         title: "Error",
-        description: error.message || "Failed to open billing portal.",
+        description: error instanceof Error ? error.message : "Failed to open billing portal.",
         variant: "destructive",
       });
     }

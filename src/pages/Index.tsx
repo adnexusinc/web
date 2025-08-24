@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { PerformanceMetrics } from "@/components/PerformanceMetrics";
 import { FeatureCard } from "@/components/FeatureCard";
+import { Navigation } from "@/components/Navigation";
+import { ClientLogoTicker } from "@/components/ClientLogoTicker";
+import { CaseStudiesSection } from "@/components/CaseStudiesSection";
+import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import { 
   Target, 
   Shield, 
@@ -12,7 +16,10 @@ import {
   Play,
   Globe,
   TrendingUp,
-  CheckCircle
+  CheckCircle,
+  Brain,
+  Activity,
+  Lock
 } from "lucide-react";
 import heroBackground from "@/assets/hero-bg.jpg";
 
@@ -70,6 +77,7 @@ const products = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       {/* Hero Section */}
       <section 
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
@@ -84,16 +92,16 @@ const Index = () => {
           <div className="max-w-5xl mx-auto">
             <div className="mb-8">
               <div className="text-center mb-6">
-                <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                  <span className="performance-number">Adnexus</span>
+                <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-4">
+                  Creating <span className="performance-number">Impossible Growth</span>
                 </h1>
+                <p className="text-xl md:text-2xl text-muted-foreground mb-2">
+                  AI-Powered Programmatic Platform
+                </p>
+                <p className="text-lg text-muted-foreground/80">
+                  Our omnichannel DSP, SSP, and ADX work tirelessly to deliver real-time audience patterns and maximize performance
+                </p>
               </div>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-2">
-                Premium CTV Inventory with Guaranteed $50+ CPM
-              </p>
-              <p className="text-lg text-muted-foreground/80">
-                Exclusive Connected TV • Brand-safe environments • Premium audiences
-              </p>
             </div>
 
             <PerformanceMetrics />
@@ -101,29 +109,34 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
               <Link to="/auth">
                 <Button variant="hero" size="xl" className="group">
-                  Get Started
+                  Book a Demo
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Button variant="outline" size="xl" className="group">
-                <Play size={20} className="group-hover:scale-110 transition-transform" />
-                Watch Demo
-              </Button>
+              <Link to="/auth">
+                <Button variant="outline" size="xl" className="group">
+                  Sign Up Free
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Client Logo Ticker */}
+      <ClientLogoTicker />
 
       {/* Products Section */}
       <section className="py-24 px-4 bg-card/30">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Premium <span className="performance-number">CTV Inventory</span>
+              Our <span className="performance-number">Omnichannel Platform</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Access exclusive Connected TV advertising inventory with guaranteed $50+ CPM rates. 
-              Premium brand-safe environments reaching high-value audiences.
+              Powered by AI, our integrated DSP, SSP, and ADX deliver unparalleled performance 
+              across display, video, CTV, and audio inventory.
             </p>
           </div>
 
@@ -131,12 +144,32 @@ const Index = () => {
             {products.map((product, index) => (
               <FeatureCard
                 key={index}
-                icon={Target}
+                icon={index === 0 ? Shield : index === 1 ? Brain : Zap}
                 title={product.title}
                 description={product.description}
                 features={product.features}
               />
             ))}
+          </div>
+
+          {/* Platform Stats */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center bg-background/50 rounded-2xl p-8 border border-border/50">
+            <div className="space-y-2">
+              <div className="text-3xl font-bold performance-number">1M+</div>
+              <div className="text-sm text-muted-foreground">QPS Capacity</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-3xl font-bold performance-number">&lt;1ms</div>
+              <div className="text-sm text-muted-foreground">Response Time</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-3xl font-bold performance-number">150+</div>
+              <div className="text-sm text-muted-foreground">Data Centers</div>
+            </div>
+            <div className="space-y-2">
+              <div className="text-3xl font-bold performance-number">99.99%</div>
+              <div className="text-sm text-muted-foreground">Uptime SLA</div>
+            </div>
           </div>
         </div>
       </section>
@@ -165,6 +198,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <TestimonialsCarousel />
 
       {/* AI-Optimized Advertising Section */}
       <section className="py-24 px-4 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5">
@@ -275,6 +311,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Case Studies */}
+      <CaseStudiesSection />
 
       {/* CTA Section */}
       <section className="py-24 px-4 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent">
