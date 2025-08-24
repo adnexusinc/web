@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import nexusSymbol from "@/assets/nexus-symbol.png";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -146,7 +147,12 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-8">
-            <Link to="/" className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-2 group">
+              <img 
+                src={nexusSymbol} 
+                alt="Adnexus Nexus Symbol" 
+                className="w-8 h-8 transition-transform group-hover:scale-110"
+              />
               <div className="text-2xl font-bold performance-number">Adnexus</div>
             </Link>
 

@@ -90,37 +90,6 @@ const Dashboard = () => {
     }
   }, [session]);
 
-  useEffect(() => {
-    // Set up auth state listener
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-      setSession(session);
-      setUser(session?.user ?? null);
-      
-      if (!session?.user) {
-        navigate('/auth');
-      } else {
-        // Defer profile loading to avoid deadlocks
-        setTimeout(() => {
-          loadUserProfile(session.user.id);
-        }, 0);
-      }
-    });
-
-    // Check for existing session
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session);
-      setUser(session?.user ?? null);
-      
-      if (!session?.user) {
-        navigate('/auth');
-      } else {
-        loadUserProfile(session.user.id);
-      }
-    });
-
-    return () => subscription.unsubscribe();
-  }, [navigate, loadUserProfile]);
-
   const loadUserProfile = useCallback(async (userId: string) => {
     try {
       const { data, error } = await supabase
@@ -157,6 +126,37 @@ const Dashboard = () => {
       setIsLoading(false);
     }
   }, [toast, checkSubscriptionStatus]);
+
+  useEffect(() => {
+    // Set up auth state listener
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      setSession(session);
+      setUser(session?.user ?? null);
+      
+      if (!session?.user) {
+        navigate('/auth');
+      } else {
+        // Defer profile loading to avoid deadlocks
+        setTimeout(() => {
+          loadUserProfile(session.user.id);
+        }, 0);
+      }
+    });
+
+    // Check for existing session
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+      setUser(session?.user ?? null);
+      
+      if (!session?.user) {
+        navigate('/auth');
+      } else {
+        loadUserProfile(session.user.id);
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, [navigate, loadUserProfile]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
