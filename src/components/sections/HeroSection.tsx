@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { AnimatedLogo } from '../AnimatedLogo';
+import { Navigation } from '../Navigation';
 import { PremiumSignUpForm } from '../PremiumSignUpForm';
 import { Button } from '@/components/ui/button';
-import { Play, ArrowDown, LogIn, UserPlus } from 'lucide-react';
+import { Play, ArrowDown } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export const HeroSection = () => {
@@ -11,30 +11,7 @@ export const HeroSection = () => {
 
   return (
     <section className="min-h-screen flex flex-col">
-      {/* Header */}
-      <header className="p-6">
-        <div className="flex items-center justify-between max-w-7xl mx-auto">
-          <AnimatedLogo />
-          <div className="flex items-center gap-4">
-            <Button 
-              variant="ghost" 
-              onClick={() => navigate('/auth')}
-              className="text-sm"
-            >
-              <LogIn className="w-4 h-4 mr-2" />
-              Login
-            </Button>
-            <Button 
-              variant="outline" 
-              onClick={() => navigate('/auth')}
-              className="text-sm"
-            >
-              <UserPlus className="w-4 h-4 mr-2" />
-              Sign Up
-            </Button>
-          </div>
-        </div>
-      </header>
+      <Navigation />
 
       {/* Main Hero Content */}
       <div className="flex-1 flex items-center justify-center px-6">
@@ -69,9 +46,13 @@ export const HeroSection = () => {
                     <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
                   </Button>
                   
-                  <Button variant="outline" className="text-lg px-8 py-4 group border-border/50 hover:border-border">
+                  <Button 
+                    variant="outline" 
+                    onClick={() => navigate('/premium')}
+                    className="text-lg px-8 py-4 group border-border/50 hover:border-border"
+                  >
                     <Play size={20} className="group-hover:scale-110 transition-transform" />
-                    Watch Demo
+                    View Premium Inventory
                   </Button>
                 </div>
               </div>
