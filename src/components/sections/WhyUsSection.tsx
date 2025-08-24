@@ -12,8 +12,8 @@ export const WhyUsSection = () => {
     },
     {
       icon: <Shield className="w-8 h-8" />,
-      title: "100% Traffic Quality",
-      description: "All traffic is scanned and verified to ensure premium quality and complete fraud protection for your campaigns.",
+      title: "Exclusive Premium Inventory",
+      description: "Access to tier-1 CTV inventory that Netflix, Disney+, and HBO Max don't sell publicly. Direct partnerships mean zero junk traffic and guaranteed performance.",
       color: "from-green-500 to-emerald-500"
     },
     {

@@ -72,10 +72,10 @@ const Inventory = () => {
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              Premium CTV ads that <span className="performance-number">convert 10X over</span> normal video
+              The <span className="performance-number">exclusive inventory</span> that converts 10X over normal video
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Access 250M+ monthly Connected TV impressions with 2ms response time. Premium inventory only.
+              Direct access to premium CTV inventory from Netflix, Disney+, HBO Max and other tier-1 platforms that don't sell publicly. Guaranteed performance, zero junk traffic.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <Link to="/auth">

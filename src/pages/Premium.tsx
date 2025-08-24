@@ -73,12 +73,12 @@ const Premium = () => {
               Premium Inventory
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              Premium CTV Inventory That <span className="performance-number">Converts</span>
+              The Exclusive CTV Inventory <span className="performance-number">Netflix Doesn't Sell</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              Access the most valuable advertising real estate in digital media. 
-              Our exclusive CTV inventory delivers unmatched engagement, completion rates, 
-              and ROI for enterprise advertisers.
+              Direct partnerships with tier-1 streaming platforms give you access to premium CTV inventory 
+              that's completely unavailable on open exchanges. Zero junk traffic, guaranteed $50+ CPMs, 
+              and the exact same inventory Fortune 500 brands fight over.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/auth">
