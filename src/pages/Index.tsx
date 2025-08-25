@@ -87,13 +87,13 @@ const Index = () => {
             <div className="mb-8">
               <div className="text-center mb-6">
                 <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-4">
-                  Access premium content <span className="performance-number">faster than anyone else</span>
+                  Welcome to <span className="text-gradient">Adnexus</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-2">
-                  AI-Powered Programmatic Platform
+                  Enterprise Programmatic Advertising Platform
                 </p>
                 <p className="text-lg text-muted-foreground/80">
-                  Our omnichannel DSP, SSP, and ADX work tirelessly to deliver real-time audience patterns and maximize performance
+                  AI-powered omnichannel DSP, SSP, and ADX delivering real-time optimization and maximum performance
                 </p>
               </div>
             </div>
@@ -336,6 +336,74 @@ const Index = () => {
                 Our AI continuously learns from campaign performance, automatically 
                 adjusting strategies for improving ROI over time.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Success Stories Section */}
+      <section className="py-24 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Powering <span className="performance-number">Success Stories</span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+              From TrillerFest's 169M+ monthly active users to Damon Motorcycles' $100M+ in pre-orders, 
+              see how Adnexus drives exceptional results for innovative companies.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
+              <div className="text-4xl font-bold performance-number mb-2">500x</div>
+              <div className="font-semibold mb-1">ROI Achievement</div>
+              <div className="text-sm text-muted-foreground">Damon Motorcycles launch</div>
+            </div>
+            <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
+              <div className="text-4xl font-bold performance-number mb-2">169M+</div>
+              <div className="font-semibold mb-1">Monthly Active Users</div>
+              <div className="text-sm text-muted-foreground">TrillerFest platform growth</div>
+            </div>
+            <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
+              <div className="text-4xl font-bold performance-number mb-2">120K</div>
+              <div className="font-semibold mb-1">ETH Raised</div>
+              <div className="text-sm text-muted-foreground">UnikoinGold 2017 ICO</div>
+            </div>
+            <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
+              <div className="text-4xl font-bold performance-number mb-2">$1.5M</div>
+              <div className="font-semibold mb-1">Monthly Revenue</div>
+              <div className="text-sm text-muted-foreground">KANOA growth milestone</div>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="gradient-card p-6 rounded-xl border border-primary/20 text-center">
+              <h3 className="text-xl font-bold mb-4">$100M+ Pre-Orders</h3>
+              <p className="text-muted-foreground mb-4">
+                Damon Motorcycles achieved unprecedented pre-order success through our AI-powered CTV campaigns.
+              </p>
+              <Button variant="outline" size="sm" asChild>
+                <Link to="/case-study/damon-motorcycles">View Case Study</Link>
+              </Button>
+            </div>
+            <div className="gradient-card p-6 rounded-xl border border-primary/20 text-center">
+              <h3 className="text-xl font-bold mb-4">Historic IndieGoGo Record</h3>
+              <p className="text-muted-foreground mb-4">
+                SKULLY achieved the highest successfully funded campaign in IndieGoGo history with our platform.
+              </p>
+              <Button variant="outline" size="sm" asChild>
+                <Link to="/our-work">View All Stories</Link>
+              </Button>
+            </div>
+            <div className="gradient-card p-6 rounded-xl border border-primary/20 text-center">
+              <h3 className="text-xl font-bold mb-4">Largest Virtual Festival</h3>
+              <p className="text-muted-foreground mb-4">
+                TrillerFest became the largest virtual music festival in history, doubling user engagement.
+              </p>
+              <Button variant="outline" size="sm" asChild>
+                <Link to="/case-study/trillerfest">View Case Study</Link>
+              </Button>
             </div>
           </div>
         </div>

@@ -31,6 +31,10 @@ import CookiePolicy from "./pages/CookiePolicy";
 import DataProcessingAddendum from "./pages/DataProcessingAddendum";
 import GDPRCompliance from "./pages/GDPRCompliance";
 import CaseStudies from "./pages/CaseStudies";
+import OurWork from "./pages/OurWork";
+import DamonMotorcycles from "./pages/case-study/DamonMotorcycles";
+import TrillerFest from "./pages/case-study/TrillerFest";
+import UnikoinGold from "./pages/case-study/UnikoinGold";
 
 const queryClient = new QueryClient();
 
@@ -68,6 +72,10 @@ const App = () => (
           <Route path="/data-processing-addendum" element={<DataProcessingAddendum />} />
           <Route path="/gdpr-compliance" element={<GDPRCompliance />} />
           <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/our-work" element={<OurWork />} />
+          <Route path="/case-study/damon-motorcycles" element={<DamonMotorcycles />} />
+          <Route path="/case-study/trillerfest" element={<TrillerFest />} />
+          <Route path="/case-study/unikoin-gold" element={<UnikoinGold />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
