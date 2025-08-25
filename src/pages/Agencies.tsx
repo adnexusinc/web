@@ -60,7 +60,7 @@ const Agencies = () => {
       name: "Sarah Chen",
       title: "Director of Digital Strategy",
       company: "MediaFlow Agency",
-      quote: "ADXYZ has transformed how we deliver results for our clients. The platform's automation features alone have saved us 20+ hours per week.",
+      quote: "Adnexus has transformed how we deliver results for our clients. The platform's automation features alone have saved us 20+ hours per week.",
       metric: "+450% Client ROI"
     },
     {
@@ -88,7 +88,7 @@ const Agencies = () => {
       <section className="container mx-auto px-6 py-16">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Scale Your Agency with <span className="text-gradient">ADXYZ</span>
+            Scale Your Agency with <span className="text-gradient">Adnexus</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             The complete programmatic advertising platform built for agencies. Manage multiple clients, 
@@ -158,7 +158,7 @@ const Agencies = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Why Agencies Choose <span className="text-gradient">ADXYZ</span>
+              Why Agencies Choose <span className="text-gradient">Adnexus</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Join 500+ agencies already delivering exceptional results for their clients
@@ -187,7 +187,7 @@ const Agencies = () => {
               Agency Success Stories
             </h2>
             <p className="text-xl text-muted-foreground">
-              See how agencies are scaling with ADXYZ
+              See how agencies are scaling with Adnexus
             </p>
           </div>
 

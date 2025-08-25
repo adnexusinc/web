@@ -87,7 +87,7 @@ const Publishers = () => {
       name: "Emily Watson",
       title: "Chief Revenue Officer",
       company: "StreamlineAds",
-      quote: "ADXYZ increased our ad revenue by 85% in the first quarter. The header bidding setup was seamless.",
+      quote: "Adnexus increased our ad revenue by 85% in the first quarter. The header bidding setup was seamless.",
       metric: "+85% Revenue"
     },
     {
@@ -263,7 +263,7 @@ const Publishers = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Why Publishers Choose <span className="text-gradient">ADXYZ</span>
+              Why Publishers Choose <span className="text-gradient">Adnexus</span>
             </h2>
             <p className="text-xl text-muted-foreground">
               Join 1,000+ publishers already maximizing their revenue
@@ -292,7 +292,7 @@ const Publishers = () => {
               Publisher Success Stories
             </h2>
             <p className="text-xl text-muted-foreground">
-              See how publishers are maximizing revenue with ADXYZ
+              See how publishers are maximizing revenue with Adnexus
             </p>
           </div>
 

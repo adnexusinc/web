@@ -72,7 +72,7 @@ const Advertisers = () => {
       name: "Sarah Chen",
       title: "VP of Marketing",
       company: "TechFlow Media",
-      quote: "ADXYZ increased our programmatic ROI by 340% in just 3 months. The targeting precision is unmatched.",
+      quote: "Adnexus increased our programmatic ROI by 340% in just 3 months. The targeting precision is unmatched.",
       metric: "+340% ROI"
     },
     {
@@ -232,7 +232,7 @@ const Advertisers = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Why Leading Brands Choose <span className="text-gradient">ADXYZ</span>
+              Why Leading Brands Choose <span className="text-gradient">Adnexus</span>
             </h2>
           </div>
 
