@@ -232,15 +232,25 @@ export const Footer = () => {
                 Partnerships & Certifications
               </h4>
               <div className="flex flex-wrap gap-3">
-                {certifications.map((cert, index) => (
-                  <a 
-                    key={index}
-                    href="#"
-                    className="px-3 py-2 gradient-secondary rounded-lg text-xs text-muted-foreground hover:text-primary transition-colors backdrop-blur-sm border border-primary/10"
-                  >
-                    {cert}
-                  </a>
-                ))}
+                {certifications.map((cert, index) => {
+                  const linkMap: { [key: string]: string } = {
+                    "Terms of Service": "/terms-of-service",
+                    "Privacy Policy": "/privacy-policy", 
+                    "Cookie Policy": "/cookie-policy",
+                    "Data Processing Addendum": "/data-processing-addendum",
+                    "GDPR Compliance": "/gdpr-compliance"
+                  };
+                  
+                  return (
+                    <Link 
+                      key={index}
+                      to={linkMap[cert] || "#"}
+                      className="px-3 py-2 gradient-secondary rounded-lg text-xs text-muted-foreground hover:text-primary transition-colors backdrop-blur-sm border border-primary/10"
+                    >
+                      {cert}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
             

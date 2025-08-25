@@ -25,6 +25,11 @@ import DSP from "./pages/DSP";
 import ADX from "./pages/ADX";
 import Resources from "./pages/Resources";
 import Company from "./pages/Company";
+import TermsOfService from "./pages/TermsOfService";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
+import DataProcessingAddendum from "./pages/DataProcessingAddendum";
+import GDPRCompliance from "./pages/GDPRCompliance";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +61,11 @@ const App = () => (
           <Route path="/adx" element={<ADX />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/company" element={<Company />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
+          <Route path="/data-processing-addendum" element={<DataProcessingAddendum />} />
+          <Route path="/gdpr-compliance" element={<GDPRCompliance />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
