@@ -150,11 +150,12 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-8">
-            <Link to="/" className="flex items-center gap-3 group">
-              <img src="/lovable-uploads/b6c119ca-2228-4f91-8cde-0c3abf83e9f7.png" alt="Adnexus" className="w-10 h-10 rounded-full" />
-              <div className="text-2xl font-bold text-white/90 group-hover:text-white transition-colors">
-                adnexus
-              </div>
+            <Link to="/" className="flex items-center group">
+              <img 
+                src="/lovable-uploads/ebba7dda-009e-4d3c-b5d4-06707a9a84ad.png" 
+                alt="Adnexus" 
+                className="h-8 filter invert brightness-0 group-hover:brightness-100 transition-all duration-300" 
+              />
             </Link>
 
             <NavigationMenu className="hidden lg:flex">
