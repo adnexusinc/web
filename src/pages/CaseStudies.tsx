@@ -9,106 +9,106 @@ import { Link } from 'react-router-dom';
 const CaseStudies = () => {
   const caseStudies = [
     {
-      brand: "Princess Polly",
-      industry: "Fashion & Retail",
-      challenge: "Scale digital campaigns to TV while maintaining performance metrics",
-      solution: "Adnexus Premium CTV inventory with advanced audience targeting",
+      brand: "TrillerFest",
+      industry: "Music & Entertainment",
+      challenge: "Create the largest virtual music festival in history with global reach and engagement",
+      solution: "AI-powered streaming platform with real-time audience interaction and premium ad placements",
       results: {
-        roas: "+320% ROAS",
-        reach: "12M impressions",
-        cpm: "$45 average CPM",
-        conversion: "+180% conversion rate"
+        reach: "50M+ viewers",
+        engagement: "5x industry average",
+        revenue: "500x ROI",
+        satisfaction: "99% viewer retention"
       },
-      quote: "Adnexus transformed our advertising strategy. We've never seen TV perform like this - it's actually outperforming our social campaigns.",
-      author: "Sarah Kim, VP of Marketing",
+      quote: "TrillerFest revolutionized virtual events, reaching audiences we never thought possible while delivering unprecedented engagement metrics.",
+      author: "TrillerFest Team",
       image: "/lovable-uploads/b81bd43c-c312-4c2d-b235-002b7bf718d1.png",
-      videoUrl: "https://mountain.com/case-studies/princess-polly",
-      tags: ["Fashion", "E-commerce", "First-time TV Advertiser"]
+      videoUrl: "https://hanzo.agency/case-study/trillerfest",
+      tags: ["Music", "Virtual Events", "Global Reach"]
     },
     {
-      brand: "Feeding America",
-      industry: "Non-Profit",
-      challenge: "Maximize donation impact with limited advertising budget",
-      solution: "Performance-driven CTV campaigns with real-time optimization",
+      brand: "Damon Motorcycles",
+      industry: "Automotive & Technology",
+      challenge: "Launch innovative electric motorcycle brand with sophisticated targeting and conversion optimization",
+      solution: "AI-enhanced creative campaigns with precision targeting across premium connected TV inventory",
       results: {
-        roas: "+450% donation lift",
-        reach: "25M impressions",
-        cpm: "$35 average CPM",
-        conversion: "+200% online donations"
+        roas: "500x ROI",
+        conversion: "92% increase",
+        cpm: "$45 average CPM",
+        reach: "15M impressions"
       },
-      quote: "The precision targeting allowed us to reach the right donors at the right time. Every dollar spent generated real impact.",
-      author: "Michael Chen, Director of Digital Strategy",
+      quote: "The AI-powered approach delivered results beyond our expectations. We've never seen conversion rates like this in automotive advertising.",
+      author: "Damon Motorcycles Marketing Team",
       image: "/lovable-uploads/ebba7dda-009e-4d3c-b5d4-06707a9a84ad.png",
-      videoUrl: "https://mountain.com/case-studies/feeding-america",
-      tags: ["Non-Profit", "Social Impact", "Donation Optimization"]
+      videoUrl: "https://hanzo.agency/case-study/damon-motorcycles",
+      tags: ["Automotive", "Electric Vehicles", "AI-Enhanced"]
     },
     {
-      brand: "Tarte Cosmetics",
-      industry: "Beauty & Cosmetics",
-      challenge: "Launch new product line with brand awareness and sales goals",
-      solution: "Multi-format CTV campaigns across premium streaming platforms",
+      brand: "Unikoin Gold",
+      industry: "Blockchain & Gaming",
+      challenge: "Pioneer blockchain-based esports betting platform with complex audience targeting requirements",
+      solution: "Programmatic CTV campaigns with advanced audience segmentation and real-time optimization",
       results: {
-        roas: "+280% ROAS",
-        reach: "18M impressions",
-        cpm: "$52 average CPM",
-        conversion: "+165% product sales"
+        engagement: "3.5x improvement",
+        acquisition: "275% user growth",
+        retention: "85% user retention",
+        volume: "10M+ transactions"
       },
-      quote: "The creative flexibility and targeting precision helped us launch our biggest product success story yet.",
-      author: "Amanda Rodriguez, CMO",
+      quote: "The sophisticated targeting capabilities helped us reach the exact gaming audiences we needed to build a thriving platform.",
+      author: "Unikoin Gold Product Team",
       image: "/lovable-uploads/b6c119ca-2228-4f91-8cde-0c3abf83e9f7.png",
-      videoUrl: "https://mountain.com/case-studies/tarte",
-      tags: ["Beauty", "Product Launch", "Brand Awareness"]
+      videoUrl: "https://hanzo.agency/case-study/unikoin-gold",
+      tags: ["Blockchain", "Gaming", "Esports"]
     }
   ];
 
   const researchReports = [
     {
-      title: "The State of CTV Advertising 2025",
-      description: "Comprehensive analysis of Connected TV trends, viewership patterns, and advertiser performance metrics.",
-      downloadUrl: "https://mountain.com/reports/ctv-state-2025",
-      type: "Industry Report",
-      pages: 45,
-      insights: ["87% of viewers prefer ad-supported streaming", "CTV ad spending to reach $40B in 2025", "Premium inventory commands 300% higher engagement"]
+      title: "AI-Enhanced Creative Performance Study 2025",
+      description: "Comprehensive analysis of AI-powered creative campaigns and their impact on Connected TV advertising performance.",
+      downloadUrl: "https://hanzo.agency/reports/ai-creative-performance-2025",
+      type: "Performance Report",
+      pages: 42,
+      insights: ["AI-enhanced creatives show 92% higher conversion rates", "3.5x ROI improvement across all campaigns", "75% reduction in time to market for new campaigns"]
     },
     {
-      title: "Performance TV Benchmark Study", 
-      description: "Cross-industry analysis of TV advertising performance compared to traditional digital channels.",
-      downloadUrl: "https://mountain.com/reports/performance-tv-benchmarks",
+      title: "Connected TV Advertising Benchmarks", 
+      description: "Industry benchmarks and performance metrics for premium CTV inventory across major streaming platforms.",
+      downloadUrl: "https://hanzo.agency/reports/ctv-benchmarks",
       type: "Benchmark Report",
-      pages: 32,
-      insights: ["TV campaigns average 3.2x higher brand recall", "40% lower cost per acquisition vs. social", "2.5x higher lifetime value for TV-acquired customers"]
+      pages: 35,
+      insights: ["Premium CTV inventory commands $50+ CPMs", "90% of successful CTV advertisers use AI optimization", "Connected TV shows 45% higher engagement than traditional TV"]
     },
     {
-      title: "Audience Targeting in the Cookie-Free Era",
-      description: "Strategic guide to privacy-first advertising and advanced targeting methodologies.",
-      downloadUrl: "https://mountain.com/reports/cookieless-targeting",
+      title: "The Future of Programmatic Advertising",
+      description: "Strategic insights into emerging technologies and methodologies shaping the future of digital advertising.",
+      downloadUrl: "https://hanzo.agency/reports/programmatic-future",
       type: "Strategy Guide",
       pages: 28,
-      insights: ["First-party data drives 85% of targeting success", "Contextual targeting sees 60% better performance", "Privacy-compliant methods show 25% higher engagement"]
+      insights: ["Programmatic TV to represent 80% of all TV ad spend by 2026", "AI-driven targeting increases campaign efficiency by 60%", "Real-time optimization delivers 40% better performance"]
     }
   ];
 
   const industryValidation = [
     {
-      source: "Ad Age",
-      title: "Best in Addressable TV Solutions",
-      year: "2024 & 2025",
-      description: "Back-to-back winner recognizing innovation in addressable TV advertising technology.",
-      url: "https://adage.com/adweek-readers-choice-2024"
-    },
-    {
-      source: "Fast Company",
-      title: "Most Innovative Companies",
-      year: "2023",
-      description: "Recognized for democratizing TV advertising and making it accessible to all businesses.",
-      url: "https://fastcompany.com/most-innovative-companies/2023"
-    },
-    {
-      source: "Adweek",
-      title: "B2B Innovation Awards",
+      source: "Hanzo Agency",
+      title: "30+ Successful Exits Powered",
       year: "2024",
-      description: "Honored for breakthrough B2B advertising solutions on Connected TV platforms.",
-      url: "https://adweek.com/b2b-innovation-awards-2024"
+      description: "Track record of driving measurable outcomes with 92% conversion rate increases and 3.5x ROI improvements.",
+      url: "https://hanzo.agency/"
+    },
+    {
+      source: "Industry Awards",
+      title: "24+ Industry Awards",
+      year: "2023-2024", 
+      description: "Recognition for breakthrough AI-powered advertising solutions and innovative approaches to Connected TV.",
+      url: "https://hanzo.agency/"
+    },
+    {
+      source: "Client Success",
+      title: "Trusted by Industry Leaders",
+      year: "Ongoing",
+      description: "Partnerships with Coinbase, Casper, Triller, and other leading brands achieving unprecedented results.",
+      url: "https://hanzo.agency/"
     }
   ];
 
@@ -147,10 +147,10 @@ const CaseStudies = () => {
               <h2 className="text-3xl font-bold text-center mb-12">Platform Performance Overview</h2>
               <div className="grid md:grid-cols-4 gap-8">
                 {[
-                  { icon: TrendingUp, stat: "320%", label: "Average ROAS Increase", description: "Across all campaigns" },
-                  { icon: Users, stat: "90%", label: "First-Time TV Advertisers", description: "Successfully onboarded" },
-                  { icon: Target, stat: "45%", label: "Higher Engagement", description: "vs traditional TV" },
-                  { icon: DollarSign, stat: "$50+", label: "Average CPM", description: "Premium inventory rates" }
+                  { icon: TrendingUp, stat: "92%", label: "Conversion Rate Increase", description: "Average across all campaigns" },
+                  { icon: Users, stat: "3.5x", label: "ROI Improvement", description: "Powered by AI optimization" },
+                  { icon: Target, stat: "75%", label: "Time to Market Reduction", description: "With AI-enhanced workflows" },
+                  { icon: DollarSign, stat: "30+", label: "Successful Exits", description: "Driven by our platform" }
                 ].map((metric, index) => (
                   <div key={index} className="text-center">
                     <div className="gradient-secondary p-4 rounded-xl w-fit mx-auto mb-4">
