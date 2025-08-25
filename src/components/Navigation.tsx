@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import MoonLogo from "@/components/MoonLogo";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
@@ -152,9 +151,9 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-8">
             <Link to="/" className="flex items-center gap-3 group">
-              <MoonLogo size="md" />
+              <img src="/lovable-uploads/b6c119ca-2228-4f91-8cde-0c3abf83e9f7.png" alt="Adnexus" className="w-10 h-10 rounded-full" />
               <div className="text-2xl font-bold text-white/90 group-hover:text-white transition-colors">
-                AdNexus
+                adnexus
               </div>
             </Link>
 
