@@ -6,49 +6,49 @@ import { Link } from "react-router-dom";
 
 const caseStudies = [
   {
-    client: "Global Streaming Platform",
-    industry: "Entertainment",
-    headline: "340% Increase in Conversions",
-    description: "Leveraged AI-powered audience segmentation to dramatically improve campaign performance across CTV inventory.",
+    client: "Hardware Innovation Company",
+    industry: "Consumer Electronics",
+    headline: "Record-Breaking Crowdfunding Success",
+    description: "Achieved the highest successfully funded campaign in IndieGoGo history through strategic CTV advertising and community building.",
     metrics: [
-      { label: "Conversion Rate", value: "+340%", icon: TrendingUp },
-      { label: "CPM", value: "$85", icon: DollarSign },
-      { label: "Reach", value: "45M", icon: Users },
-      { label: "ROAS", value: "12.3x", icon: BarChart3 }
+      { label: "Funding Success", value: "$2.4M", icon: DollarSign },
+      { label: "CPM", value: "$52", icon: DollarSign },
+      { label: "Global Reach", value: "25M", icon: Users },
+      { label: "Conversion Rate", value: "+450%", icon: TrendingUp }
     ],
-    quote: "Adnexus's AI optimization reduced our cost per acquisition by 67% while scaling our reach to previously untapped audiences.",
-    author: "VP of Marketing",
-    image: "/case-studies/streaming.jpg"
+    quote: "The precision targeting and premium inventory allowed us to reach exactly the right innovators and tech enthusiasts. We exceeded our funding goals by 300% and created a global community around our vision.",
+    author: "Marcus Weller, Founder",
+    image: "/case-studies/hardware.jpg"
   },
   {
-    client: "Fortune 500 Retailer",
-    industry: "E-commerce",
-    headline: "2x Revenue Growth in 90 Days",
-    description: "Implemented omnichannel programmatic strategy with real-time optimization across display, video, and CTV.",
+    client: "Audio Technology Startup",
+    industry: "Consumer Electronics",
+    headline: "$1.5M Monthly Revenue Growth",
+    description: "Scaled from startup to $1.5M monthly revenue through AI-powered audience targeting and premium CTV inventory optimization.",
     metrics: [
-      { label: "Revenue Growth", value: "+200%", icon: TrendingUp },
-      { label: "CTR", value: "4.2%", icon: BarChart3 },
-      { label: "Impressions", value: "850M", icon: Users },
-      { label: "CPM", value: "$62", icon: DollarSign }
+      { label: "Monthly Revenue", value: "$1.5M", icon: DollarSign },
+      { label: "Growth Rate", value: "+400%", icon: TrendingUp },
+      { label: "Customer LTV", value: "+85%", icon: BarChart3 },
+      { label: "CPM", value: "$48", icon: DollarSign }
     ],
-    quote: "The platform's real-time decisioning engine helped us identify and capture high-intent moments we were previously missing.",
-    author: "Director of Digital Marketing",
-    image: "/case-studies/retail.jpg"
+    quote: "Adnexus helped us identify and reach our ideal customers with surgical precision. The platform's AI optimization turned our advertising from an expense into our most profitable growth channel.",
+    author: "Cival Van Der Lubbe, CEO", 
+    image: "/case-studies/audio.jpg"
   },
   {
-    client: "Leading Auto Brand",
-    industry: "Automotive",
-    headline: "45% Reduction in CAC",
-    description: "Advanced machine learning models optimized bidding strategies across premium CTV inventory for maximum efficiency.",
+    client: "Creative Platform",
+    industry: "Art & Technology",
+    headline: "250% Community Engagement Growth",
+    description: "Revolutionized digital art marketplace through targeted campaigns reaching collectors, artists, and creative professionals globally.",
     metrics: [
-      { label: "CAC Reduction", value: "-45%", icon: TrendingUp },
-      { label: "Test Drives", value: "+230%", icon: Users },
-      { label: "Brand Lift", value: "+67%", icon: BarChart3 },
-      { label: "CPM", value: "$72", icon: DollarSign }
+      { label: "Engagement Growth", value: "+250%", icon: TrendingUp },
+      { label: "Active Artists", value: "50K+", icon: Users },
+      { label: "Transaction Volume", value: "+300%", icon: BarChart3 },
+      { label: "CPM", value: "$65", icon: DollarSign }
     ],
-    quote: "Adnexus transformed our digital advertising from a cost center to a growth driver with measurable ROI.",
-    author: "CMO",
-    image: "/case-studies/auto.jpg"
+    quote: "The sophisticated targeting capabilities allowed us to connect artists with collectors in ways we never imagined. We built a thriving creative economy that benefits everyone in our ecosystem.",
+    author: "Major Dream Williams, Founder",
+    image: "/case-studies/creative.jpg"
   }
 ];
 
