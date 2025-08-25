@@ -75,7 +75,7 @@ const Inventory = () => {
               The <span className="performance-number">exclusive inventory</span> that converts 10X over normal video
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Direct access to premium CTV inventory from Netflix, Disney+, HBO Max and other tier-1 platforms that don't sell publicly. Guaranteed performance, zero junk traffic.
+              Direct access to premium CTV inventory from Netflix, Disney+, HBO Max and other tier-1 platforms that don't sell publicly. Exceptional performance, zero junk traffic.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <Link to="/auth">
@@ -166,7 +166,7 @@ const Inventory = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Guaranteed <span className="performance-number">$50+ CPM</span> Performance
+              Premium <span className="performance-number">$50+ CPM</span> Performance
             </h2>
             <p className="text-xl text-muted-foreground mb-12">
               Our premium CTV inventory consistently delivers exceptional performance metrics 

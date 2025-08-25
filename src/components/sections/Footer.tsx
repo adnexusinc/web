@@ -150,7 +150,7 @@ export const Footer = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   ADXYZ Inc. is a premium AdTech company specializing in high-value CTV/OTT inventory. 
                   Our programmatic platform delivers exclusive Connected TV advertising opportunities 
-                  with guaranteed $50+ CPM rates for premium brand advertisers.
+                  with premium $50+ CPM rates for premium brand advertisers.
                 </p>
               </div>
               

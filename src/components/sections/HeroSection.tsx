@@ -36,7 +36,7 @@ export const HeroSection = () => {
                 <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
                   Lightning-fast access to tier-1 CTV inventory from Netflix, Disney+, and HBO Max. 
                   <span className="text-white font-semibold">Direct connections</span> mean you reach premium audiences 
-                  with <span className="text-white font-semibold">guaranteed $50+ CPMs</span> and zero lag time.
+                  with <span className="text-white font-semibold">premium $50+ CPMs</span> and zero lag time.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">

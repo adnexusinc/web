@@ -29,7 +29,7 @@ const Premium = () => {
     },
     {
       icon: DollarSign,
-      title: "Guaranteed $50+ CPMs",
+      title: "Premium $50+ CPMs",
       description: "Premium pricing for premium inventory. Our CTV campaigns consistently deliver $50-$85 CPMs.",
       stat: "$85 Avg CPM"
     },
@@ -77,7 +77,7 @@ const Premium = () => {
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Direct partnerships with tier-1 streaming platforms give you access to premium CTV inventory 
-              that's completely unavailable on open exchanges. Zero junk traffic, guaranteed $50+ CPMs, 
+              that's completely unavailable on open exchanges. Zero junk traffic, premium $50+ CPMs, 
               and the exact same inventory Fortune 500 brands fight over.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -359,7 +359,7 @@ const Premium = () => {
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
               Join enterprise advertisers achieving impossible growth with our 
-              exclusive CTV inventory and guaranteed performance.
+              exclusive CTV inventory and exceptional performance.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -369,7 +369,7 @@ const Premium = () => {
               </div>
               <div className="flex items-center justify-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary" />
-                <span className="text-sm font-medium">Guaranteed CPMs</span>
+                <span className="text-sm font-medium">Premium CPMs</span>
               </div>
               <div className="flex items-center justify-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary" />

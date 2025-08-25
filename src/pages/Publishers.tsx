@@ -142,7 +142,7 @@ const Publishers = () => {
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             Join 1,000+ publishers earning 85% more revenue with our advanced SSP technology. 
-            Premium demand, real-time optimization, and 99.2% fill rates guaranteed.
+            Premium demand, real-time optimization, and 99.2% fill rates.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button variant="hero" size="xl" className="group">

@@ -31,7 +31,7 @@ const ADX = () => {
     },
     {
       icon: DollarSign,
-      title: "Guaranteed Fill Rates",
+      title: "Optimized Fill Rates",
       description: "99.8% fill rates with premium CPM floors and intelligent yield optimization.",
       metric: "99.8% Fill Rate"
     },
@@ -180,7 +180,7 @@ const ADX = () => {
               Ready to Join the <span className="performance-number">Premium Exchange</span>?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Connect with our enterprise ad exchange and access premium inventory with guaranteed performance.
+              Connect with our enterprise ad exchange and access premium inventory with exceptional performance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/auth">

@@ -176,7 +176,7 @@ const Index = () => {
               Why Choose <span className="performance-number">Adnexus</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Premium CTV inventory delivering exceptional performance with guaranteed high CPM rates.
+              Premium CTV inventory delivering exceptional performance with high CPM rates.
             </p>
           </div>
 

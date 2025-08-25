@@ -7,7 +7,7 @@
 Adnexus is an enterprise-grade programmatic advertising platform offering DSP, SSP, and ADX capabilities with a focus on premium CTV inventory. Built with Quantcast-level sophistication and AI-powered optimization.
 
 ### Key Features
-- **Premium CTV Inventory**: $50-85 CPM guaranteed pricing
+- **Premium CTV Inventory**: $50-85 CPM premium pricing
 - **Enterprise Platform**: DSP, SSP, ADX in one integrated solution  
 - **AI-Powered**: Machine learning optimization for 340% average ROI
 - **Monochrome Moon Branding**: Custom moon logo with animated stars
