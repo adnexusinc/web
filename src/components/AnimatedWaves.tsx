@@ -13,26 +13,26 @@ export const AnimatedWaves: React.FC<AnimatedWavesProps> = ({ className = "" }) 
         preserveAspectRatio="xMidYMid slice"
       >
         <defs>
-          {/* 2x darker waves */}
+          {/* Very subtle waves, capped at #333 brightness */}
           <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.24}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.16}} />
+            <stop offset="0%" style={{stopColor: 'hsl(0, 0%, 20%)', stopOpacity: 0.8}} />
+            <stop offset="100%" style={{stopColor: 'hsl(0, 0%, 15%)', stopOpacity: 0.6}} />
           </linearGradient>
           <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.24}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.16}} />
+            <stop offset="0%" style={{stopColor: 'hsl(0, 0%, 18%)', stopOpacity: 0.7}} />
+            <stop offset="100%" style={{stopColor: 'hsl(0, 0%, 12%)', stopOpacity: 0.5}} />
           </linearGradient>
           <linearGradient id="waveGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.24}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.16}} />
+            <stop offset="0%" style={{stopColor: 'hsl(0, 0%, 16%)', stopOpacity: 0.6}} />
+            <stop offset="100%" style={{stopColor: 'hsl(0, 0%, 10%)', stopOpacity: 0.4}} />
           </linearGradient>
           <linearGradient id="waveGradient4" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.24}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.16}} />
+            <stop offset="0%" style={{stopColor: 'hsl(0, 0%, 14%)', stopOpacity: 0.5}} />
+            <stop offset="100%" style={{stopColor: 'hsl(0, 0%, 8%)', stopOpacity: 0.3}} />
           </linearGradient>
           <linearGradient id="waveGradient5" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.24}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.16}} />
+            <stop offset="0%" style={{stopColor: 'hsl(0, 0%, 12%)', stopOpacity: 0.4}} />
+            <stop offset="100%" style={{stopColor: 'hsl(0, 0%, 6%)', stopOpacity: 0.2}} />
           </linearGradient>
         </defs>
         
