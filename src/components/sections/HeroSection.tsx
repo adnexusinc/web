@@ -27,16 +27,16 @@ export const HeroSection = () => {
                 </div>
 
                 <h1 className="text-5xl md:text-8xl font-bold mb-8 leading-tight tracking-tight">
-                  The inventory everyone{' '}
+                  Access premium content{' '}
                   <span className="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">
-                    wants but can't buy
+                    faster than anyone else
                   </span>
                 </h1>
 
                 <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-                  We own the premium CTV inventory that Netflix, Disney+, and HBO Max don't sell publicly. 
-                  <span className="text-white font-semibold">Direct partnerships</span> mean you get the cream of the crop - 
-                  tier-1 streaming inventory with <span className="text-white font-semibold">guaranteed $50+ CPMs</span> and zero junk traffic.
+                  Lightning-fast access to tier-1 CTV inventory from Netflix, Disney+, and HBO Max. 
+                  <span className="text-white font-semibold">Direct connections</span> mean you reach premium audiences 
+                  with <span className="text-white font-semibold">guaranteed $50+ CPMs</span> and zero lag time.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
@@ -77,8 +77,8 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      {/* Animated Waves Background */}
-      <AnimatedWaves />
+      {/* Animated Waves Background - Hidden */}
+      {/* <AnimatedWaves /> */}
     </section>
   );
 };
