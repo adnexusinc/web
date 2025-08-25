@@ -6,8 +6,6 @@ import { FeatureCard } from "@/components/FeatureCard";
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/sections/Footer";
 import { ClientLogoTicker } from "@/components/ClientLogoTicker";
-import { CaseStudiesSection } from "@/components/CaseStudiesSection";
-import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
 import { AnimatedWaves } from "@/components/AnimatedWaves";
 import { 
   Target, 
@@ -228,8 +226,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <TestimonialsCarousel />
 
       {/* AI-Optimized Advertising Section */}
       <section className="py-24 px-4 bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5">
@@ -341,8 +337,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Case Studies */}
-      <CaseStudiesSection />
 
       {/* CTA Section */}
       <section className="py-24 px-4 bg-gradient-to-r from-primary/10 via-primary/5 to-transparent">
