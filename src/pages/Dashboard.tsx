@@ -47,7 +47,16 @@ const Dashboard = () => {
     company_name: '',
     website_url: '',
     monthly_volume: '',
-    business_description: ''
+    business_description: '',
+    // Platform-specific fields
+    traffic_sources: '',
+    audience_demographics: '',
+    content_categories: '',
+    targeting_capabilities: '',
+    campaign_objectives: '',
+    ad_formats: '',
+    budget_range: '',
+    industry_focus: ''
   });
 
   useEffect(() => {
@@ -119,7 +128,15 @@ const Dashboard = () => {
           company_name: data.company_name || '',
           website_url: data.website_url || '',
           monthly_volume: data.monthly_volume || '',
-          business_description: data.business_description || ''
+          business_description: data.business_description || '',
+          traffic_sources: data.traffic_sources || '',
+          audience_demographics: data.audience_demographics || '',
+          content_categories: data.content_categories || '',
+          targeting_capabilities: data.targeting_capabilities || '',
+          campaign_objectives: data.campaign_objectives || '',
+          ad_formats: data.ad_formats || '',
+          budget_range: data.budget_range || '',
+          industry_focus: data.industry_focus || ''
         });
       }
     } catch (error) {
@@ -180,16 +197,28 @@ const Dashboard = () => {
     setIsSaving(true);
 
     try {
+      const updateData: any = {
+        platform_type: formData.platform_type,
+        company_name: formData.company_name,
+        website_url: formData.website_url,
+        monthly_volume: formData.monthly_volume,
+        business_description: formData.business_description,
+        approval_status: 'pending'
+      };
+
+      // Add platform-specific fields if they have values
+      if (formData.traffic_sources) updateData.traffic_sources = formData.traffic_sources;
+      if (formData.audience_demographics) updateData.audience_demographics = formData.audience_demographics;
+      if (formData.content_categories) updateData.content_categories = formData.content_categories;
+      if (formData.targeting_capabilities) updateData.targeting_capabilities = formData.targeting_capabilities;
+      if (formData.campaign_objectives) updateData.campaign_objectives = formData.campaign_objectives;
+      if (formData.ad_formats) updateData.ad_formats = formData.ad_formats;
+      if (formData.budget_range) updateData.budget_range = formData.budget_range;
+      if (formData.industry_focus) updateData.industry_focus = formData.industry_focus;
+
       const { error } = await supabase
         .from('profiles')
-        .update({
-          platform_type: formData.platform_type,
-          company_name: formData.company_name,
-          website_url: formData.website_url,
-          monthly_volume: formData.monthly_volume,
-          business_description: formData.business_description,
-          approval_status: 'pending'
-        })
+        .update(updateData)
         .eq('user_id', user.id);
 
       if (error) {
@@ -449,20 +478,20 @@ const Dashboard = () => {
                       <SelectContent>
                         <SelectItem value="SSP">
                           <div>
-                            <div className="font-medium">Supply Side Platform (SSP)</div>
-                            <div className="text-xs text-muted-foreground">For publishers looking to sell ad inventory</div>
+                            <div className="font-medium">Publisher Portal (SSP)</div>
+                            <div className="text-xs text-muted-foreground">Monetize your content and sell premium ad inventory</div>
                           </div>
                         </SelectItem>
                         <SelectItem value="DSP">
                           <div>
-                            <div className="font-medium">Demand Side Platform (DSP)</div>
-                            <div className="text-xs text-muted-foreground">For advertisers looking to buy ad inventory</div>
+                            <div className="font-medium">Advertiser Portal (DSP)</div>
+                            <div className="text-xs text-muted-foreground">Buy premium CTV inventory and run targeted campaigns</div>
                           </div>
                         </SelectItem>
-                        <SelectItem value="ADX">
+                        <SelectItem value="Agency">
                           <div>
-                            <div className="font-medium">Ad Exchange (ADX)</div>
-                            <div className="text-xs text-muted-foreground">For established ad networks and agencies</div>
+                            <div className="font-medium">Agency Dashboard (AI Agency)</div>
+                            <div className="text-xs text-muted-foreground">Manage multiple clients with AI-powered optimization</div>
                           </div>
                         </SelectItem>
                       </SelectContent>
