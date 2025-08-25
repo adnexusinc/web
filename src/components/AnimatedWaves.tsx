@@ -13,60 +13,60 @@ export const AnimatedWaves: React.FC<AnimatedWavesProps> = ({ className = "" }) 
         preserveAspectRatio="xMidYMid slice"
       >
         <defs>
-          {/* Even lower opacity waves */}
+          {/* 2x darker waves */}
           <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.12}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.08}} />
+            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.24}} />
+            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.16}} />
           </linearGradient>
           <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.12}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.08}} />
+            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.24}} />
+            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.16}} />
           </linearGradient>
           <linearGradient id="waveGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.12}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.08}} />
+            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.24}} />
+            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.16}} />
           </linearGradient>
           <linearGradient id="waveGradient4" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.12}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.08}} />
+            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.24}} />
+            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.16}} />
           </linearGradient>
           <linearGradient id="waveGradient5" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.12}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.08}} />
+            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.24}} />
+            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.16}} />
           </linearGradient>
         </defs>
         
-        {/* Wave 1 - Deepest layer, starts lower */}
+        {/* Wave 1 - Deepest layer, pushed lower */}
         <path
-          d="M0,480 C180,400 380,580 600,480 C820,400 1020,580 1200,480 L1200,700 L0,700 Z"
+          d="M0,540 C180,460 380,640 600,540 C820,460 1020,640 1200,540 L1200,700 L0,700 Z"
           fill="url(#waveGradient1)"
           className="animate-[wave1_22s_ease-in-out_infinite]"
         />
         
-        {/* Wave 2 - Second layer, also lower */}
+        {/* Wave 2 - Second layer, pushed lower */}
         <path
-          d="M0,450 C120,370 320,530 600,450 C880,370 1080,530 1200,450 L1200,700 L0,700 Z"
+          d="M0,510 C120,430 320,590 600,510 C880,430 1080,590 1200,510 L1200,700 L0,700 Z"
           fill="url(#waveGradient2)"
           className="animate-[wave2_18s_ease-in-out_infinite_reverse]"
         />
         
-        {/* Wave 3 - Third layer, positioned lower */}
+        {/* Wave 3 - Third layer, pushed lower */}
         <path
-          d="M0,520 C220,440 420,600 600,520 C780,440 980,600 1200,520 L1200,700 L0,700 Z"
+          d="M0,580 C220,500 420,660 600,580 C780,500 980,660 1200,580 L1200,700 L0,700 Z"
           fill="url(#waveGradient3)"
           className="animate-[wave3_14s_ease-in-out_infinite]"
         />
         
-        {/* Wave 4 - Fourth layer, lower positioning */}
+        {/* Wave 4 - Fourth layer, pushed lower */}
         <path
-          d="M0,420 C160,340 360,500 600,420 C840,340 1040,500 1200,420 L1200,700 L0,700 Z"
+          d="M0,480 C160,400 360,560 600,480 C840,400 1040,560 1200,480 L1200,700 L0,700 Z"
           fill="url(#waveGradient4)"
           className="animate-[wave4_16s_ease-in-out_infinite_reverse]"
         />
         
-        {/* Wave 5 - Top layer, still below fold */}
+        {/* Wave 5 - Top layer, pushed lower */}
         <path
-          d="M0,390 C200,310 400,470 600,390 C800,310 1000,470 1200,390 L1200,700 L0,700 Z"
+          d="M0,450 C200,370 400,530 600,450 C800,370 1000,530 1200,450 L1200,700 L0,700 Z"
           fill="url(#waveGradient5)"
           className="animate-[wave5_12s_ease-in-out_infinite]"
         />
