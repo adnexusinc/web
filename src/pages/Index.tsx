@@ -94,7 +94,7 @@ const Index = () => {
             <div className="mb-8">
               <div className="text-center mb-6">
                 <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-4">
-                  Creating <span className="performance-number">Impossible Growth</span>
+                  Access premium content <span className="performance-number">faster than anyone else</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-2">
                   AI-Powered Programmatic Platform
