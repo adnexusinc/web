@@ -359,7 +359,7 @@ const Premium = () => {
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
               Join enterprise advertisers achieving impossible growth with our 
-              exclusive CTV inventory. $10K/month minimum with guaranteed performance.
+              exclusive CTV inventory and guaranteed performance.
             </p>
             
             <div className="grid md:grid-cols-3 gap-6 mb-8">
