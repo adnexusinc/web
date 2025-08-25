@@ -26,7 +26,7 @@ const caseStudies = [
     headline: "$1.5M Monthly Revenue Growth",
     description: "Scaled from startup to $1.5M monthly revenue through AI-powered audience targeting and premium CTV inventory optimization.",
     metrics: [
-      { label: "Monthly Revenue", value: "$1.5M", icon: DollarSign },
+      { label: "Revenue Growth", value: "$0→$1.5M", icon: TrendingUp },
       { label: "Growth Rate", value: "+400%", icon: TrendingUp },
       { label: "Customer LTV", value: "+85%", icon: BarChart3 },
       { label: "CPM", value: "$48", icon: DollarSign }

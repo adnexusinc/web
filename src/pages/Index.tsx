@@ -349,21 +349,21 @@ const Index = () => {
               Powering <span className="performance-number">Success Stories</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              From TrillerFest's 169M+ monthly active users to Damon Motorcycles' $100M+ in pre-orders, 
-              see how Adnexus drives exceptional results for innovative companies.
+              From TrillerFest reaching 169M+ users to Damon Motorcycles scaling from $0 to $100M+ in pre-orders, 
+              and KANOA growing from $0 to $1.5M monthly revenue - see how Adnexus drives exceptional results.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
-              <div className="text-4xl font-bold performance-number mb-2">500x</div>
-              <div className="font-semibold mb-1">ROI Achievement</div>
+              <div className="text-4xl font-bold performance-number mb-2">$0→$100M</div>
+              <div className="font-semibold mb-1">Pre-Orders Growth</div>
               <div className="text-sm text-muted-foreground">Damon Motorcycles launch</div>
             </div>
             <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
               <div className="text-4xl font-bold performance-number mb-2">169M+</div>
-              <div className="font-semibold mb-1">Monthly Active Users</div>
-              <div className="text-sm text-muted-foreground">TrillerFest platform growth</div>
+              <div className="font-semibold mb-1">Users Reached</div>
+              <div className="text-sm text-muted-foreground">TrillerFest global audience</div>
             </div>
             <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
               <div className="text-4xl font-bold performance-number mb-2">120K</div>
@@ -371,9 +371,9 @@ const Index = () => {
               <div className="text-sm text-muted-foreground">UnikoinGold 2017 ICO</div>
             </div>
             <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
-              <div className="text-4xl font-bold performance-number mb-2">$1.5M</div>
+              <div className="text-4xl font-bold performance-number mb-2">$0→$1.5M</div>
               <div className="font-semibold mb-1">Monthly Revenue</div>
-              <div className="text-sm text-muted-foreground">KANOA growth milestone</div>
+              <div className="text-sm text-muted-foreground">KANOA from zero growth</div>
             </div>
           </div>
 
@@ -397,9 +397,9 @@ const Index = () => {
               </Button>
             </div>
             <div className="gradient-card p-6 rounded-xl border border-primary/20 text-center">
-              <h3 className="text-xl font-bold mb-4">Largest Virtual Festival</h3>
+              <h3 className="text-xl font-bold mb-4">169M+ Users Reached</h3>
               <p className="text-muted-foreground mb-4">
-                TrillerFest became the largest virtual music festival in history, doubling user engagement.
+                TrillerFest reached 169 Million users globally, becoming the largest virtual music festival in history.
               </p>
               <Button variant="outline" size="sm" asChild>
                 <Link to="/case-study/trillerfest">View Case Study</Link>
