@@ -129,14 +129,14 @@ const Dashboard = () => {
           website_url: data.website_url || '',
           monthly_volume: data.monthly_volume || '',
           business_description: data.business_description || '',
-          traffic_sources: data.traffic_sources || '',
-          audience_demographics: data.audience_demographics || '',
-          content_categories: data.content_categories || '',
-          targeting_capabilities: data.targeting_capabilities || '',
-          campaign_objectives: data.campaign_objectives || '',
-          ad_formats: data.ad_formats || '',
-          budget_range: data.budget_range || '',
-          industry_focus: data.industry_focus || ''
+          traffic_sources: (data as any).traffic_sources || '',
+          audience_demographics: (data as any).audience_demographics || '',
+          content_categories: (data as any).content_categories || '',
+          targeting_capabilities: (data as any).targeting_capabilities || '',
+          campaign_objectives: (data as any).campaign_objectives || '',
+          ad_formats: (data as any).ad_formats || '',
+          budget_range: (data as any).budget_range || '',
+          industry_focus: (data as any).industry_focus || ''
         });
       }
     } catch (error) {
