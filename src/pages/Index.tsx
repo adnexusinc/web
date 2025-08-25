@@ -8,6 +8,7 @@ import { Footer } from "@/components/sections/Footer";
 import { ClientLogoTicker } from "@/components/ClientLogoTicker";
 import { CaseStudiesSection } from "@/components/CaseStudiesSection";
 import { TestimonialsCarousel } from "@/components/TestimonialsCarousel";
+import { AnimatedWaves } from "@/components/AnimatedWaves";
 import { 
   Target, 
   Shield, 
@@ -22,7 +23,6 @@ import {
   Activity,
   Lock
 } from "lucide-react";
-import heroBackground from "@/assets/hero-bg.jpg";
 
 const features = [
   {
@@ -80,15 +80,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       {/* Hero Section */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(${heroBackground})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
-        }}
-      >
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-background/95 to-primary/5">
+        <AnimatedWaves />
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="max-w-5xl mx-auto">
             <div className="mb-8">
