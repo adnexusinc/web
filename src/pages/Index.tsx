@@ -168,6 +168,41 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Did You Know Section */}
+      <section className="py-24 px-4 bg-card/30">
+        <div className="container mx-auto">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">
+                  The Premium Ad Experience.
+                </h2>
+                <p className="text-xl text-muted-foreground">
+                  Adnexus serves ads exclusively on top-tier streaming networks and apps to deliver both the brand safety and performance you need to succeed.
+                </p>
+              </div>
+              <div className="gradient-card p-8 rounded-2xl border border-primary/20">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="gradient-secondary p-2 rounded-lg">
+                    <Shield className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold">Did You Know?</h3>
+                </div>
+                <div className="mb-6">
+                  <div className="text-5xl md:text-6xl font-bold performance-number mb-3">45%</div>
+                  <p className="text-lg text-muted-foreground mb-4">
+                    of ad impression fraud happens to Fortune 500 advertisers. That includes fraudulent CTV channels, unsafe brand environments, and fake or divisive content.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Source: <a href="https://www.adweek.com/adweek-wire/peer39-study-fortune-500-brands-account-for-half-of-ads-on-divisive-fake-ctv-channels/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Peer39 Study via Adweek</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-24 px-4">
         <div className="container mx-auto">
