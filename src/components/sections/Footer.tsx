@@ -157,8 +157,8 @@ export const Footer = () => {
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-primary" />
-                  <a href="mailto:contact@ad.nexus" className="text-foreground hover:text-primary transition-colors">
-                    contact@ad.nexus
+                  <a href="mailto:hi@ad.nexus" className="text-foreground hover:text-primary transition-colors">
+                    hi@ad.nexus
                   </a>
                 </div>
                 <div className="flex items-start gap-3">
@@ -171,27 +171,6 @@ export const Footer = () => {
                 </div>
               </div>
 
-              <div>
-                <h4 className="font-semibold mb-4">Follow Us</h4>
-                <div className="flex gap-4">
-                  {[
-                    { icon: Twitter, label: "Twitter", href: "#" },
-                    { icon: Linkedin, label: "LinkedIn", href: "#" }, 
-                    { icon: Facebook, label: "Facebook", href: "#" }
-                  ].map((social, index) => (
-                    <a 
-                      key={index}
-                      href={social.href}
-                      className="w-10 h-10 gradient-secondary rounded-lg flex items-center justify-center hover:shadow-primary transition-smooth group"
-                      aria-label={social.label}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <social.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-                    </a>
-                  ))}
-                </div>
-              </div>
             </div>
 
             {/* Links Sections */}
