@@ -148,9 +148,9 @@ export const Footer = () => {
               <div className="mb-8">
                 <h3 className="text-3xl font-bold text-gradient mb-4">Adnexus</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Adnexus is a premium AdTech company specializing in high-value CTV/OTT inventory. 
-                  Our programmatic platform delivers exclusive Connected TV advertising opportunities 
-                  with premium $50+ CPM rates for premium brand advertisers.
+                  Adnexus provides a unified interface for AI-powered advertising across every channel. 
+                  Our programmatic platform seamlessly integrates CTV, display, video, and emerging AI-driven 
+                  environments to deliver comprehensive campaign management and optimization.
                 </p>
               </div>
               
