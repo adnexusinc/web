@@ -13,26 +13,26 @@ export const AnimatedWaves: React.FC<AnimatedWavesProps> = ({ className = "" }) 
         preserveAspectRatio="xMidYMid slice"
       >
         <defs>
-          {/* Waves with 0.25 opacity */}
+          {/* Waves with 0.18 opacity */}
           <linearGradient id="waveGradient1" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.25}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.15}} />
+            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.18}} />
+            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.12}} />
           </linearGradient>
           <linearGradient id="waveGradient2" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.25}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.15}} />
+            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.18}} />
+            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.12}} />
           </linearGradient>
           <linearGradient id="waveGradient3" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.25}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.15}} />
+            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.18}} />
+            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.12}} />
           </linearGradient>
           <linearGradient id="waveGradient4" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.25}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.15}} />
+            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.18}} />
+            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.12}} />
           </linearGradient>
           <linearGradient id="waveGradient5" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.25}} />
-            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.15}} />
+            <stop offset="0%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.18}} />
+            <stop offset="100%" style={{stopColor: 'hsl(var(--muted-foreground))', stopOpacity: 0.12}} />
           </linearGradient>
         </defs>
         
@@ -71,14 +71,7 @@ export const AnimatedWaves: React.FC<AnimatedWavesProps> = ({ className = "" }) 
           className="animate-[wave5_12s_ease-in-out_infinite]"
         />
         
-        {/* Enhanced floating particles for depth */}
-        <circle cx="200" cy="200" r="2" fill="hsl(var(--primary))" opacity="0.6" className="animate-[float1_8s_ease-in-out_infinite]" />
-        <circle cx="800" cy="150" r="1.5" fill="hsl(var(--accent))" opacity="0.7" className="animate-[float2_12s_ease-in-out_infinite]" />
-        <circle cx="1000" cy="300" r="2.5" fill="hsl(var(--primary))" opacity="0.5" className="animate-[float3_6s_ease-in-out_infinite]" />
-        <circle cx="400" cy="100" r="1" fill="hsl(var(--accent))" opacity="0.8" className="animate-[float1_10s_ease-in-out_infinite]" />
-        <circle cx="600" cy="250" r="1.8" fill="hsl(var(--muted-foreground))" opacity="0.4" className="animate-[float2_9s_ease-in-out_infinite]" />
-        <circle cx="300" cy="180" r="1.2" fill="hsl(var(--primary))" opacity="0.6" className="animate-[float3_11s_ease-in-out_infinite]" />
-        <circle cx="900" cy="280" r="2.2" fill="hsl(var(--accent))" opacity="0.5" className="animate-[float1_7s_ease-in-out_infinite]" />
+        {/* Removed all floating particles to eliminate moving dots */}
       </svg>
       
       <style>{`

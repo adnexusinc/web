@@ -63,7 +63,7 @@ export const HeroSection = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
                 {[
                   { value: "Exclusive", label: "Inventory access", sublabel: "Not on open exchanges" },
-                  { value: "427%", label: "Average ROAS", sublabel: "Fortune 500 client" },
+                  { value: "10X", label: "Conversion increase", sublabel: "Superior video ad inventory" },
                   { value: "$50-85", label: "CPM range", sublabel: "Premium streaming only" },
                   { value: "Zero", label: "Junk traffic", sublabel: "Hand-curated inventory" }
                 ].map((stat, i) => (
