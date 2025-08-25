@@ -24,12 +24,7 @@ export const AnimatedLogo = () => {
         </span>
       </div>
       
-      {/* Floating particles */}
-      <div className="absolute -inset-2 pointer-events-none">
-        <div className="absolute top-0 left-0 w-1 h-1 bg-white rounded-full opacity-60 animate-pulse"></div>
-        <div className="absolute top-2 right-0 w-0.5 h-0.5 bg-white rounded-full opacity-40 animate-pulse" style={{animationDelay: '0.5s'}}></div>
-        <div className="absolute bottom-0 left-2 w-0.5 h-0.5 bg-white rounded-full opacity-30 animate-pulse" style={{animationDelay: '1s'}}></div>
-      </div>
+      {/* Removed floating particles to fix top-left dot issue */}
     </div>
   );
 };
