@@ -99,9 +99,11 @@ const Agencies = () => {
               Start Free Agency Trial
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="outline" size="xl">
-              Schedule Demo
-            </Button>
+            <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="xl">
+                Schedule Demo
+              </Button>
+            </a>
           </div>
           
           {/* Quick Stats */}
@@ -233,9 +235,11 @@ const Agencies = () => {
                 Start Free Agency Trial
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="xl">
-                Schedule Demo
-              </Button>
+              <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" size="xl">
+                  Schedule Demo
+                </Button>
+              </a>
             </div>
 
             <div className="text-sm text-muted-foreground">

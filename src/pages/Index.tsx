@@ -101,12 +101,12 @@ const Index = () => {
             <PerformanceMetrics />
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-              <Link to="/auth">
+              <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
                 <Button variant="hero" size="xl" className="group">
                   Book a Demo
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                 </Button>
-              </Link>
+              </a>
               <Link to="/premium">
                 <Button variant="outline" size="xl" className="group">
                   View Premium Inventory
@@ -328,9 +328,11 @@ const Index = () => {
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Button variant="outline" size="xl">
-                Schedule Demo
-              </Button>
+              <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" size="xl">
+                  Schedule Demo
+                </Button>
+              </a>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">

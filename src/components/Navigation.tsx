@@ -231,12 +231,12 @@ export const Navigation = () => {
                   Sign In
                 </Button>
               </Link>
-              <Link to="/auth">
+              <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
                 <Button size="sm" className="group">
                   Book a Demo
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
-              </Link>
+              </a>
             </div>
 
             {/* Mobile Menu */}
@@ -321,11 +321,11 @@ export const Navigation = () => {
                         Sign In
                       </Button>
                     </Link>
-                    <Link to="/auth" onClick={() => setIsMobileMenuOpen(false)}>
+                    <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
                       <Button className="w-full">
                         Book a Demo
                       </Button>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </SheetContent>

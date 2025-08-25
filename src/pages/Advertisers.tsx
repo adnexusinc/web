@@ -111,9 +111,11 @@ const Advertisers = () => {
               Launch Your Campaign
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="outline" size="xl">
-              Schedule Demo
-            </Button>
+            <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="xl">
+                Schedule Demo
+              </Button>
+            </a>
           </div>
           
           {/* Quick Stats */}
@@ -279,9 +281,11 @@ const Advertisers = () => {
                 Start Your Campaign Today
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="xl">
-                Schedule Demo
-              </Button>
+              <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" size="xl">
+                  Schedule Demo
+                </Button>
+              </a>
             </div>
 
             <div className="text-sm text-muted-foreground">
