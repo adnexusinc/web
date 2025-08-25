@@ -36,19 +36,19 @@ const caseStudies = [
     image: "/case-studies/audio.jpg"
   },
   {
-    client: "Creative Platform",
-    industry: "Art & Technology",
-    headline: "250% Community Engagement Growth",
-    description: "Revolutionized digital art marketplace through targeted campaigns reaching collectors, artists, and creative professionals globally.",
+    client: "Blockchain Gaming Platform",
+    industry: "Crypto & Gaming",
+    headline: "$2.7B Market Cap Achievement",
+    description: "Revolutionary blockchain gaming ecosystem reached $2.7B market cap with 18,000+ token holders through strategic community building and targeted advertising.",
     metrics: [
-      { label: "Engagement Growth", value: "+250%", icon: TrendingUp },
-      { label: "Active Artists", value: "50K+", icon: Users },
-      { label: "Transaction Volume", value: "+300%", icon: BarChart3 },
-      { label: "CPM", value: "$65", icon: DollarSign }
+      { label: "Market Cap", value: "$2.7B", icon: DollarSign },
+      { label: "Token Holders", value: "18K+", icon: Users },
+      { label: "Community Growth", value: "+500%", icon: TrendingUp },
+      { label: "CPM", value: "$58", icon: DollarSign }
     ],
-    quote: "The sophisticated targeting capabilities allowed us to connect artists with collectors in ways we never imagined. We built a thriving creative economy that benefits everyone in our ecosystem.",
-    author: "Major Dream Williams, Founder",
-    image: "/case-studies/creative.jpg"
+    quote: "The platform's precision targeting helped us build a massive, engaged community of gamers and crypto enthusiasts. We went from concept to $2.7B valuation by reaching exactly the right audiences at the right moments.",
+    author: "Developer Z, Lead Developer",
+    image: "/case-studies/blockchain-gaming.jpg"
   }
 ];
 
