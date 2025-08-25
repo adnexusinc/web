@@ -148,7 +148,7 @@ export const Footer = () => {
               <div className="mb-8">
                 <h3 className="text-3xl font-bold text-gradient mb-4">Adnexus</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  ADXYZ Inc. is a premium AdTech company specializing in high-value CTV/OTT inventory. 
+                  Adnexus is a premium AdTech company specializing in high-value CTV/OTT inventory. 
                   Our programmatic platform delivers exclusive Connected TV advertising opportunities 
                   with premium $50+ CPM rates for premium brand advertisers.
                 </p>

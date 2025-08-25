@@ -346,11 +346,11 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Powering <span className="performance-number">Success Stories</span>
+              Powering <span className="performance-number">IPO Success Stories</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
-              From TrillerFest reaching 169M+ users to Damon Motorcycles scaling from $0 to $100M+ in pre-orders, 
-              and KANOA growing from $0 to $1.5M monthly revenue - see how Adnexus drives exceptional results.
+              From TrillerFest reaching 169M+ users (IPO 2024) to Damon Motorcycles scaling from $0 to $100M+ pre-orders (IPO 2024), 
+              Unikrn's 120,000+ ETH raise (successful exit), and Bellabeat's $1B+ valuation with LEAF product success.
             </p>
           </div>
 
@@ -358,48 +358,48 @@ const Index = () => {
             <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
               <div className="text-4xl font-bold performance-number mb-2">$0→$100M</div>
               <div className="font-semibold mb-1">Pre-Orders Growth</div>
-              <div className="text-sm text-muted-foreground">Damon Motorcycles launch</div>
+              <div className="text-sm text-muted-foreground">Damon Motorcycles → IPO 2024</div>
             </div>
             <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
               <div className="text-4xl font-bold performance-number mb-2">169M+</div>
               <div className="font-semibold mb-1">Users Reached</div>
-              <div className="text-sm text-muted-foreground">TrillerFest global audience</div>
+              <div className="text-sm text-muted-foreground">TrillerFest → IPO 2024</div>
             </div>
             <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
-              <div className="text-4xl font-bold performance-number mb-2">120K</div>
+              <div className="text-4xl font-bold performance-number mb-2">120K+</div>
               <div className="font-semibold mb-1">ETH Raised</div>
-              <div className="text-sm text-muted-foreground">UnikoinGold 2017 ICO</div>
+              <div className="text-sm text-muted-foreground">Unikrn → Successful Exit</div>
             </div>
             <div className="text-center gradient-card p-6 rounded-xl border border-primary/20">
-              <div className="text-4xl font-bold performance-number mb-2">$0→$1.5M</div>
-              <div className="font-semibold mb-1">Monthly Revenue</div>
-              <div className="text-sm text-muted-foreground">KANOA from zero growth</div>
+              <div className="text-4xl font-bold performance-number mb-2">$1B+</div>
+              <div className="font-semibold mb-1">Valuation</div>
+              <div className="text-sm text-muted-foreground">Bellabeat LEAF Success</div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="gradient-card p-6 rounded-xl border border-primary/20 text-center">
-              <h3 className="text-xl font-bold mb-4">$100M+ Pre-Orders</h3>
+              <h3 className="text-xl font-bold mb-4">Damon Motorcycles IPO 2024</h3>
               <p className="text-muted-foreground mb-4">
-                Damon Motorcycles achieved unprecedented pre-order success through our AI-powered CTV campaigns.
+                Scaled from $0 to $100M+ pre-orders, achieving successful IPO in 2024 through our AI-powered CTV campaigns.
               </p>
               <Button variant="outline" size="sm" asChild>
                 <Link to="/case-study/damon-motorcycles">View Case Study</Link>
               </Button>
             </div>
             <div className="gradient-card p-6 rounded-xl border border-primary/20 text-center">
-              <h3 className="text-xl font-bold mb-4">Historic IndieGoGo Record</h3>
+              <h3 className="text-xl font-bold mb-4">Bellabeat $1B+ Valuation</h3>
               <p className="text-muted-foreground mb-4">
-                SKULLY achieved the highest successfully funded campaign in IndieGoGo history with our platform.
+                LEAF product achieved massive success, driving Bellabeat to over $1B valuation with Nordic Eye investment.
               </p>
               <Button variant="outline" size="sm" asChild>
                 <Link to="/our-work">View All Stories</Link>
               </Button>
             </div>
             <div className="gradient-card p-6 rounded-xl border border-primary/20 text-center">
-              <h3 className="text-xl font-bold mb-4">169M+ Users Reached</h3>
+              <h3 className="text-xl font-bold mb-4">TrillerFest IPO Success</h3>
               <p className="text-muted-foreground mb-4">
-                TrillerFest reached 169 Million users globally, becoming the largest virtual music festival in history.
+                Reached 169 Million users globally, became largest virtual music festival in history, and achieved IPO in 2024.
               </p>
               <Button variant="outline" size="sm" asChild>
                 <Link to="/case-study/trillerfest">View Case Study</Link>
