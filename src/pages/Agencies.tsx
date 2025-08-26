@@ -96,7 +96,7 @@ const Agencies = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button variant="hero" size="xl" className="group">
-              Start Free Agency Trial
+              Start Agency Program
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Button>
             <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
@@ -227,12 +227,12 @@ const Agencies = () => {
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Join 500+ agencies already delivering exceptional results for their clients. 
-              Get started today with our 30-day free trial.
+              Get started today with enterprise platform access.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Button variant="hero" size="xl" className="group">
-                Start Free Agency Trial
+                Start Agency Program
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
               <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
@@ -243,7 +243,7 @@ const Agencies = () => {
             </div>
 
             <div className="text-sm text-muted-foreground">
-              ✓ 30-day free trial • ✓ No setup fees • ✓ Dedicated account manager
+              ✓ Enterprise access • ✓ Premium features • ✓ Dedicated account manager
             </div>
           </div>
         </div>

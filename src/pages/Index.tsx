@@ -353,7 +353,7 @@ const Index = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Link to="/auth">
                 <Button variant="hero" size="xl" className="group">
-                  Start Free Trial
+                  Get Enterprise Access
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
@@ -378,8 +378,8 @@ const Index = () => {
                 <div className="text-sm text-muted-foreground">Uptime SLA</div>
               </div>
               <div className="space-y-2">
-                <div className="text-2xl font-bold performance-number">30 days</div>
-                <div className="text-sm text-muted-foreground">Free trial</div>
+                <div className="text-2xl font-bold performance-number">24/7</div>
+                <div className="text-sm text-muted-foreground">Support</div>
               </div>
             </div>
           </div>

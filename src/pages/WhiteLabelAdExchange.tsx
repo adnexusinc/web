@@ -274,7 +274,7 @@ const WhiteLabelAdExchange = () => {
 
           {/* Final CTA */}
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-6">Get Started with a Free Demo by Adnexus's customer success expert!</h2>
+            <h2 className="text-3xl font-bold mb-6">Get Started with Expert Consultation by Adnexus's customer success team!</h2>
             <Link to="/#contact">
               <Button variant="hero" size="xl">
                 Contact Us

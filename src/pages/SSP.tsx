@@ -57,10 +57,10 @@ const SSP = () => {
 
           {/* CTA */}
           <div className="text-center mb-16">
-            <p className="text-lg mb-6">Experience a full-featured free trial with personalized support to test the product</p>
+            <p className="text-lg mb-6">Experience enterprise-grade SSP technology with personalized support and implementation</p>
             <Link to="/#contact">
               <Button variant="cta" size="xl">
-                Get Free Trial
+                Get Enterprise Access
               </Button>
             </Link>
           </div>
@@ -194,7 +194,7 @@ const SSP = () => {
 
           {/* Final CTA */}
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-6">Get Started with a Free Demo by Adnexus's customer success expert!</h2>
+            <h2 className="text-3xl font-bold mb-6">Get Started with Expert Consultation by Adnexus's customer success team!</h2>
             <Link to="/#contact">
               <Button variant="hero" size="xl">
                 Contact Us

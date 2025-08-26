@@ -227,7 +227,7 @@ const PlatformOverview = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/auth">
                 <Button size="lg" className="group">
-                  Start Enterprise Trial
+                  Get Enterprise Access
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>

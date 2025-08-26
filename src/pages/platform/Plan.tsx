@@ -256,7 +256,7 @@ const PlatformPlan = () => {
               </Link>
               <Link to="/auth">
                 <Button variant="outline" size="lg">
-                  Start Free Trial
+                  Get Enterprise Access
                 </Button>
               </Link>
             </div>

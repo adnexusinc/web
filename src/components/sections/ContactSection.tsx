@@ -274,7 +274,7 @@ export const ContactSection = () => {
                 Start earning with Adnexus ecosystem today
               </p>
               <div className="text-sm text-success font-semibold">
-                ✓ Free consultation<br />
+                ✓ Expert consultation<br />
                 ✓ Custom solution package<br />
                 ✓ Same-day response
               </div>
