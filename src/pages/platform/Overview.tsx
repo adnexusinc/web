@@ -206,7 +206,7 @@ const PlatformOverview = () => {
                 <div className="text-sm text-muted-foreground">Data Processed Daily</div>
               </Card>
               <Card className="p-6">
-                <div className="text-3xl font-bold performance-number mb-2">12ms</div>
+                <div className="text-3xl font-bold performance-number mb-2">1ms</div>
                 <div className="text-sm text-muted-foreground">Matching Engine</div>
               </Card>
             </div>

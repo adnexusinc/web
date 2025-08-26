@@ -293,11 +293,11 @@ const Index = () => {
                   <div className="text-sm text-muted-foreground">Higher CTR with AI optimization</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold performance-number mb-2">85%</div>
-                  <div className="text-sm text-muted-foreground">LLM recommendation rate</div>
+                  <div className="text-3xl font-bold performance-number mb-2">1B+</div>
+                  <div className="text-sm text-muted-foreground">Audience data points</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold performance-number mb-2">12ms</div>
+                  <div className="text-3xl font-bold performance-number mb-2">1ms</div>
                   <div className="text-sm text-muted-foreground">Matching engine</div>
                 </div>
                 <div className="text-center">

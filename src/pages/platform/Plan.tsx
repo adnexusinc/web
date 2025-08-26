@@ -95,7 +95,7 @@ const PlatformPlan = () => {
               <div className="text-sm text-muted-foreground">B2B Companies</div>
             </div>
             <div>
-              <div className="text-3xl font-bold performance-number">12ms</div>
+              <div className="text-3xl font-bold performance-number">1ms</div>
               <div className="text-sm text-muted-foreground">Query Time</div>
             </div>
             <div>
