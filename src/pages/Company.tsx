@@ -46,7 +46,7 @@ const Company = () => {
     {
       name: "Sarah Chen",
       role: "CEO & Founder",
-      bio: "Former VP of Programmatic at Google. Led $2B+ in programmatic revenue.",
+      bio: "Former VP of Programmatic at Google. Led billions in programmatic revenue.",
       location: "San Francisco, CA"
     },
     {
@@ -70,7 +70,7 @@ const Company = () => {
   ];
 
   const companyStats = [
-    { metric: "$500M+", label: "Ad Spend Managed" },
+    { metric: "Millions", label: "Ad Spend Managed" },
     { metric: "100+", label: "Enterprise Clients" },
     { metric: "5B+", label: "Daily Impressions" },
     { metric: "340%", label: "Average Client ROAS" }
@@ -180,7 +180,7 @@ const Company = () => {
                 <div className="text-sm text-muted-foreground">Team Members</div>
               </Card>
               <Card className="p-6 text-center">
-                <div className="text-3xl font-bold performance-number mb-2">$50M</div>
+                <div className="text-3xl font-bold performance-number mb-2">Substantial</div>
                 <div className="text-sm text-muted-foreground">Series B Raised</div>
               </Card>
               <Card className="p-6 text-center">

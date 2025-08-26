@@ -113,7 +113,7 @@ const Agencies = () => {
               <div className="text-sm text-muted-foreground">Agency Partners</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-gradient">$50M+</div>
+              <div className="text-3xl font-bold text-gradient">Millions</div>
               <div className="text-sm text-muted-foreground">Ad Spend Managed</div>
             </div>
             <div className="space-y-2">

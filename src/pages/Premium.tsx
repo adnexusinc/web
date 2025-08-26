@@ -29,9 +29,9 @@ const Premium = () => {
     },
     {
       icon: DollarSign,
-      title: "Premium $50+ CPMs",
-      description: "Premium pricing for premium inventory. Our CTV campaigns consistently deliver $50-$85 CPMs.",
-      stat: "$85 Avg CPM"
+      title: "Premium CPMs",
+      description: "Premium pricing for premium inventory. Our CTV campaigns consistently deliver exceptional CPMs.",
+      stat: "High Avg CPM"
     },
     {
       icon: Users,
@@ -77,7 +77,7 @@ const Premium = () => {
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               Direct partnerships with tier-1 streaming platforms give you access to premium CTV inventory 
-              that's completely unavailable on open exchanges. Zero junk traffic, premium $50+ CPMs, 
+              that's completely unavailable on open exchanges. Zero junk traffic, premium CPMs, 
               and the exact same inventory Fortune 500 brands fight over.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -103,7 +103,7 @@ const Premium = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold performance-number">$50-85</div>
+              <div className="text-3xl font-bold performance-number">Premium</div>
               <div className="text-sm text-muted-foreground">CPM Range</div>
             </div>
             <div>
@@ -237,7 +237,7 @@ const Premium = () => {
                   </div>
                   <div className="text-3xl font-bold performance-number mb-1">427% ROAS</div>
                   <div className="text-sm text-muted-foreground">
-                    $2.3M revenue from $540K CTV spend
+                    4.3x ROAS from CTV campaign
                   </div>
                 </div>
 
@@ -248,7 +248,7 @@ const Premium = () => {
                   </div>
                   <div className="text-3xl font-bold performance-number mb-1">67% Cost Reduction</div>
                   <div className="text-sm text-muted-foreground">
-                    $31 CPL vs $93 on traditional channels
+                    67% lower CPL vs traditional channels
                   </div>
                 </div>
 

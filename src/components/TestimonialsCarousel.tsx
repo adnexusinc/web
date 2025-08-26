@@ -13,11 +13,11 @@ const testimonials = [
     metric: "340% ROI Increase"
   },
   {
-    quote: "The platform's ability to interpret audience patterns in real-time has been game-changing. Our CTV campaigns now consistently achieve $85+ CPMs with exceptional viewer engagement rates.",
+    quote: "The platform's ability to interpret audience patterns in real-time has been game-changing. Our CTV campaigns now consistently achieve premium CPMs with exceptional viewer engagement rates.",
     author: "Michael Rodriguez",
     title: "Head of Programmatic",
     company: "Global Media Agency",
-    metric: "$85+ CPM Average"
+    metric: "Premium CPM Average"
   },
   {
     quote: "We reduced our customer acquisition cost by 67% in just 3 months. The AI's predictive capabilities help us reach the right audience at the perfect moment, every single time.",

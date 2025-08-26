@@ -201,7 +201,7 @@ const Inventory = () => {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8">
-              Premium <span className="performance-number">$50+ CPM</span> Performance
+              Premium <span className="performance-number">CPM</span> Performance
             </h2>
             <p className="text-xl text-muted-foreground mb-12">
               Our premium CTV inventory consistently delivers exceptional performance metrics 
@@ -222,7 +222,7 @@ const Inventory = () => {
               <div className="gradient-card p-6 rounded-xl">
                 <TrendingUp className="w-8 h-8 text-primary mx-auto mb-4" />
                 <h3 className="text-lg font-semibold mb-2">Proven Results</h3>
-                <p className="text-muted-foreground">Consistent $50+ CPM performance with verified metrics</p>
+                <p className="text-muted-foreground">Consistent premium CPM performance with verified metrics</p>
               </div>
             </div>
 

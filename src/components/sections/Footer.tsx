@@ -243,7 +243,7 @@ export const Footer = () => {
                   <div className="text-xs text-muted-foreground">Response Time</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold performance-number mb-1">$50+</div>
+                  <div className="text-2xl font-bold performance-number mb-1">Premium</div>
                   <div className="text-xs text-muted-foreground">Avg CPM</div>
                 </div>
               </div>

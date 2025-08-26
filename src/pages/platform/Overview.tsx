@@ -76,8 +76,8 @@ const PlatformOverview = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold performance-number">$10K</div>
-              <div className="text-sm text-muted-foreground">Monthly Subscription</div>
+              <div className="text-3xl font-bold performance-number">Enterprise</div>
+              <div className="text-sm text-muted-foreground">Pricing Model</div>
             </div>
             <div>
               <div className="text-3xl font-bold performance-number">340%</div>

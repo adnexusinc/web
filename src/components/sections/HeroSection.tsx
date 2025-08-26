@@ -22,7 +22,7 @@ export const HeroSection = () => {
                 <div className="inline-flex items-center gap-2 bg-accent/50 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-border/50">
                   <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                   <span className="text-sm text-muted-foreground">
-                    Live: $50M+ premium inventory available now
+                    Live: Premium inventory available now
                   </span>
                 </div>
 
@@ -36,7 +36,7 @@ export const HeroSection = () => {
                 <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
                   Lightning-fast access to tier-1 CTV inventory from Netflix, Disney+, and HBO Max. 
                   <span className="text-white font-semibold">Direct connections</span> mean you reach premium audiences 
-                  with <span className="text-white font-semibold">premium $50+ CPMs</span> and zero lag time.
+                  with <span className="text-white font-semibold">premium CPMs</span> and zero lag time.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
@@ -64,7 +64,7 @@ export const HeroSection = () => {
                 {[
                   { value: "<1ms", label: "Matching engine", sublabel: "2X faster results" },
                   { value: "10X", label: "Higher conversion", sublabel: "Superior video ad inventory" },
-                  { value: "$50-85", label: "CPM range", sublabel: "Premium streaming only" },
+                  { value: "Premium", label: "CPM tier", sublabel: "Top streaming only" },
                   { value: "Zero", label: "Junk traffic", sublabel: "Hand-curated inventory" }
                 ].map((stat, i) => (
                   <div key={i} className="premium-card text-center">

@@ -61,7 +61,7 @@ const WhiteLabelAdExchange = () => {
               <p className="text-muted-foreground">Professional support team</p>
             </div>
             <div className="gradient-card p-8 rounded-2xl text-center">
-              <div className="text-3xl font-bold text-success mb-2">$100m+</div>
+              <div className="text-3xl font-bold text-success mb-2">Massive</div>
               <p className="text-muted-foreground">Gross Revenue across our ecosystem yearly</p>
             </div>
           </div>
@@ -107,7 +107,7 @@ const WhiteLabelAdExchange = () => {
                   </li>
                 </ul>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">from $300/month</div>
+                  <div className="text-2xl font-bold text-primary">Affordable</div>
                   <p className="text-sm text-muted-foreground">Starting price for 1 AdServer</p>
                 </div>
               </div>
@@ -136,7 +136,7 @@ const WhiteLabelAdExchange = () => {
                   </li>
                 </ul>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-muted-foreground">≈ $500,000/yearly</div>
+                  <div className="text-2xl font-bold text-muted-foreground">High Revenue</div>
                   <p className="text-sm text-muted-foreground">Starting cost of Ad software development</p>
                 </div>
               </div>

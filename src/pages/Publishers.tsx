@@ -41,25 +41,25 @@ const Publishers = () => {
     {
       title: "Display & Native",
       description: "High-performing display and native ad units",
-      revenue: "$2.50+ RPM",
+      revenue: "High RPM",
       features: ["Responsive Design", "Lazy Loading", "A/B Testing"]
     },
     {
       title: "Video & CTV",
       description: "Premium video advertising with high completion rates",
-      revenue: "$8.00+ RPM", 
+      revenue: "Premium RPM", 
       features: ["VAST 4.0", "Autoplay Options", "Viewability Tracking"]
     },
     {
       title: "Mobile & AMP",
       description: "Mobile-optimized ads with AMP support",
-      revenue: "$1.80+ RPM",
+      revenue: "Strong RPM",
       features: ["AMP Compatible", "Fast Loading", "Touch Optimized"]
     },
     {
       title: "Audio & Podcast",
       description: "Innovative audio advertising solutions",
-      revenue: "$5.00+ RPM",
+      revenue: "Top RPM",
       features: ["Dynamic Insertion", "Contextual Targeting", "Skip Protection"]
     }
   ];
@@ -161,7 +161,7 @@ const Publishers = () => {
               <div className="text-sm text-muted-foreground">Active Publishers</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-gradient">$50M+</div>
+              <div className="text-3xl font-bold text-gradient">Millions</div>
               <div className="text-sm text-muted-foreground">Revenue Paid Out</div>
             </div>
             <div className="space-y-2">
