@@ -61,8 +61,8 @@ jobs:
     - name: Check OAuth Providers
       run: |
         echo "✅ Checking OAuth implementations"
-        grep -q "signInWithOAuth.*google" src/pages/Auth.tsx
-        grep -q "signInWithOAuth.*github" src/pages/Auth.tsx
+        grep -q "provider: 'google'" src/pages/Auth.tsx
+        grep -q "provider: 'github'" src/pages/Auth.tsx
         grep -q "resetPasswordForEmail" src/pages/PasswordReset.tsx
     
     - name: Upload build artifacts
