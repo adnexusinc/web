@@ -244,7 +244,7 @@ const Inventory = () => {
       <footer className="py-12 px-6 border-t border-border bg-card/50">
         <div className="container mx-auto text-center">
           <div className="text-sm text-muted-foreground">
-            © 2025 ADXYZ Inc. All rights reserved. | Terms of Service | Privacy Policy
+            © 2025 AdNexus Technology Inc. All rights reserved. | Terms of Service | Privacy Policy
           </div>
         </div>
       </footer>
