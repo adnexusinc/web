@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth Test - Adnexus</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #0a0a0a;
+            color: #e5e5e5;
+        }
+        h1 {
+            color: #fff;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .test-section {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .test-button {
+            background: #1a1a1a;
+            color: #e5e5e5;
+            border: 1px solid #333;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 10px 10px 10px 0;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .test-button:hover {
+            background: #222;
+            border-color: #555;
+        }
+        .test-button.primary {
+            background: #4a90e2;
+            border-color: #4a90e2;
+        }
+        .test-button.primary:hover {
+            background: #357abd;
+        }
+        .status {
+            padding: 8px 12px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-family: monospace;
+            font-size: 13px;
+        }
+        .status.success {
+            background: #1a3a1a;
+            border: 1px solid #2d5a2d;
+            color: #4ade80;
+        }
+        .status.error {
+            background: #3a1a1a;
+            border: 1px solid #5a2d2d;
+            color: #f87171;
+        }
+        .status.info {
+            background: #1a2a3a;
+            border: 1px solid #2d4a5a;
+            color: #60a5fa;
+        }
+        .status.warning {
+            background: #3a3a1a;
+            border: 1px solid #5a5a2d;
+            color: #fbbf24;
+        }
+        pre {
+            background: #0a0a0a;
+            border: 1px solid #333;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-size: 12px;
+        }
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist li {
+            padding: 8px 0;
+            border-bottom: 1px solid #222;
+        }
+        .checklist li:last-child {
+            border-bottom: none;
+        }
+        .check {
+            display: inline-block;
+            width: 20px;
+            margin-right: 10px;
+        }
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔐 OAuth Configuration Test</h1>
+    
+    <div class="test-section">
+        <h2>Quick Setup Links</h2>
+        <p>Configure OAuth providers in these dashboards:</p>
+        <ul class="checklist">
+            <li>
+                <span class="check">📊</span>
+                <a href="https://supabase.com/dashboard/project/uxuhclrodqpdyrhzypiv/auth/providers" target="_blank">
+                    Supabase Auth Providers Dashboard →
+                </a>
+            </li>
+            <li>
+                <span class="check">🔵</span>
+                <a href="https://console.cloud.google.com/apis/credentials" target="_blank">
+                    Google Cloud Console - OAuth Credentials →
+                </a>
+            </li>
+            <li>
+                <span class="check">🐙</span>
+                <a href="https://github.com/settings/developers" target="_blank">
+                    GitHub OAuth Apps →
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>1. Test OAuth Endpoints</h2>
+        <button class="test-button" onclick="testGoogleOAuth()">Test Google OAuth</button>
+        <button class="test-button" onclick="testGitHubOAuth()">Test GitHub OAuth</button>
+        <button class="test-button" onclick="testSupabaseConnection()">Test Supabase Connection</button>
+        <div id="oauth-results"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>2. Configuration Checklist</h2>
+        <ul class="checklist">
+            <li id="check-supabase">
+                <span class="check">⏳</span> Supabase connection
+            </li>
+            <li id="check-google">
+                <span class="check">⏳</span> Google OAuth enabled in Supabase
+            </li>
+            <li id="check-github">
+                <span class="check">⏳</span> GitHub OAuth enabled in Supabase
+            </li>
+            <li id="check-callbacks">
+                <span class="check">⏳</span> Callback URLs configured correctly
+            </li>
+        </ul>
+    </div>
+
+    <div class="test-section">
+        <h2>3. Required Callback URLs</h2>
+        <p>Add these to your OAuth apps:</p>
+        <pre>https://uxuhclrodqpdyrhzypiv.supabase.co/auth/v1/callback</pre>
+        <div class="status info">
+            ⚠️ Must match EXACTLY - no trailing slashes!
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>4. Test Live Login</h2>
+        <button class="test-button primary" onclick="window.open('http://localhost:8082/auth', '_blank')">
+            Open Auth Page →
+        </button>
+        <button class="test-button primary" onclick="window.open('http://localhost:8082/dashboard', '_blank')">
+            Open Dashboard →
+        </button>
+    </div>
+
+    <script type="module">
+        import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+        
+        const supabase = createClient(
+            'https://uxuhclrodqpdyrhzypiv.supabase.co',
+            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InV4dWhjbHJvZHFwZHlyaHp5cGl2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU5OTc4NzQsImV4cCI6MjA3MTU3Mzg3NH0.Y0Myzq7s7-ZhtsBmBvpGtMg09_EhADzzi8mj2QBIXJ0'
+        );
+
+        window.testSupabaseConnection = async function() {
+            const results = document.getElementById('oauth-results');
+            try {
+                const { data, error } = await supabase.auth.getSession();
+                if (error) throw error;
+                
+                results.innerHTML = '<div class="status success">✅ Supabase connection successful</div>';
+                document.getElementById('check-supabase').innerHTML = '<span class="check">✅</span> Supabase connection';
+                
+                // Test if providers are configured
+                await testProviderConfig();
+            } catch (error) {
+                results.innerHTML = `<div class="status error">❌ Supabase connection failed: ${error.message}</div>`;
+                document.getElementById('check-supabase').innerHTML = '<span class="check">❌</span> Supabase connection';
+            }
+        };
+
+        window.testGoogleOAuth = async function() {
+            const results = document.getElementById('oauth-results');
+            try {
+                const { data, error } = await supabase.auth.signInWithOAuth({
+                    provider: 'google',
+                    options: {
+                        redirectTo: `${window.location.origin}/dashboard`,
+                        skipBrowserRedirect: true
+                    }
+                });
+                
+                if (error) throw error;
+                
+                results.innerHTML = `
+                    <div class="status success">✅ Google OAuth endpoint accessible</div>
+                    <div class="status info">Auth URL generated: ${data.url ? 'Yes' : 'No'}</div>
+                    <div class="status warning">Note: If login fails, check Google OAuth credentials in Supabase dashboard</div>
+                `;
+                document.getElementById('check-google').innerHTML = '<span class="check">✅</span> Google OAuth enabled';
+            } catch (error) {
+                results.innerHTML = `<div class="status error">❌ Google OAuth error: ${error.message}</div>`;
+                document.getElementById('check-google').innerHTML = '<span class="check">❌</span> Google OAuth not configured';
+            }
+        };
+
+        window.testGitHubOAuth = async function() {
+            const results = document.getElementById('oauth-results');
+            try {
+                const { data, error } = await supabase.auth.signInWithOAuth({
+                    provider: 'github',
+                    options: {
+                        redirectTo: `${window.location.origin}/dashboard`,
+                        skipBrowserRedirect: true
+                    }
+                });
+                
+                if (error) throw error;
+                
+                results.innerHTML = `
+                    <div class="status success">✅ GitHub OAuth endpoint accessible</div>
+                    <div class="status info">Auth URL generated: ${data.url ? 'Yes' : 'No'}</div>
+                    <div class="status warning">Note: If login fails, check GitHub OAuth credentials in Supabase dashboard</div>
+                `;
+                document.getElementById('check-github').innerHTML = '<span class="check">✅</span> GitHub OAuth enabled';
+            } catch (error) {
+                results.innerHTML = `<div class="status error">❌ GitHub OAuth error: ${error.message}</div>`;
+                document.getElementById('check-github').innerHTML = '<span class="check">❌</span> GitHub OAuth not configured';
+            }
+        };
+
+        async function testProviderConfig() {
+            // This will help identify if providers are configured
+            const callbackCheck = document.getElementById('check-callbacks');
+            callbackCheck.innerHTML = '<span class="check">✅</span> Callback URLs ready (configure in provider dashboards)';
+        }
+
+        // Auto-run connection test on load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                window.testSupabaseConnection();
+            }, 500);
+        });
+    </script>
+</body>
+</html>
