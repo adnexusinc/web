@@ -129,14 +129,14 @@ const Dashboard = () => {
           website_url: data.website_url || '',
           monthly_volume: data.monthly_volume || '',
           business_description: data.business_description || '',
-          traffic_sources: (data as any).traffic_sources || '',
-          audience_demographics: (data as any).audience_demographics || '',
-          content_categories: (data as any).content_categories || '',
-          targeting_capabilities: (data as any).targeting_capabilities || '',
-          campaign_objectives: (data as any).campaign_objectives || '',
-          ad_formats: (data as any).ad_formats || '',
-          budget_range: (data as any).budget_range || '',
-          industry_focus: (data as any).industry_focus || ''
+          traffic_sources: (data as Profile & {traffic_sources?: string}).traffic_sources || '',
+          audience_demographics: (data as Profile & {audience_demographics?: string}).audience_demographics || '',
+          content_categories: (data as Profile & {content_categories?: string}).content_categories || '',
+          targeting_capabilities: (data as Profile & {targeting_capabilities?: string}).targeting_capabilities || '',
+          campaign_objectives: (data as Profile & {campaign_objectives?: string}).campaign_objectives || '',
+          ad_formats: (data as Profile & {ad_formats?: string}).ad_formats || '',
+          budget_range: (data as Profile & {budget_range?: string}).budget_range || '',
+          industry_focus: (data as Profile & {industry_focus?: string}).industry_focus || ''
         });
       }
     } catch (error) {
@@ -197,7 +197,7 @@ const Dashboard = () => {
     setIsSaving(true);
 
     try {
-      const updateData: any = {
+      const updateData: Record<string, string | null> = {
         platform_type: formData.platform_type,
         company_name: formData.company_name,
         website_url: formData.website_url,

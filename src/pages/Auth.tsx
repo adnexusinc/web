@@ -111,15 +111,22 @@ const Auth = () => {
       });
 
       if (error) {
+        console.error('Google OAuth error:', error);
+        if (error.message?.includes('OAuth')) {
+          throw new Error('Google login is not configured. Please contact support.');
+        }
         throw error;
       }
+      
+      // OAuth initiated successfully - browser will redirect
+      console.log('Google OAuth initiated, redirecting...');
     } catch (error) {
+      console.error('Google login error:', error);
       toast({
-        title: "Login Failed",
-        description: error instanceof Error ? error.message : "Failed to sign in with Google.",
+        title: "Google Login Error",
+        description: error instanceof Error ? error.message : "Failed to sign in with Google. Please try again.",
         variant: "destructive",
       });
-    } finally {
       setIsLoading(false);
     }
   };
@@ -135,15 +142,22 @@ const Auth = () => {
       });
 
       if (error) {
+        console.error('GitHub OAuth error:', error);
+        if (error.message?.includes('OAuth')) {
+          throw new Error('GitHub login is not configured. Please contact support.');
+        }
         throw error;
       }
+      
+      // OAuth initiated successfully - browser will redirect
+      console.log('GitHub OAuth initiated, redirecting...');
     } catch (error) {
+      console.error('GitHub login error:', error);
       toast({
-        title: "Login Failed",
-        description: error instanceof Error ? error.message : "Failed to sign in with GitHub.",
+        title: "GitHub Login Error",
+        description: error instanceof Error ? error.message : "Failed to sign in with GitHub. Please try again.",
         variant: "destructive",
       });
-    } finally {
       setIsLoading(false);
     }
   };
