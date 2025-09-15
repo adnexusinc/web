@@ -226,11 +226,11 @@ export const Navigation = () => {
 
           <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-4">
-              <Link to="/auth">
+              <a href="https://bc-dsp.ad.nexus">
                 <Button variant="ghost" size="sm">
                   Sign In
                 </Button>
-              </Link>
+              </a>
               <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
                 <Button size="sm" className="group">
                   Book a Demo
@@ -316,11 +316,11 @@ export const Navigation = () => {
 
 
                   <div className="pt-4 border-t space-y-2">
-                    <Link to="/auth" onClick={() => setIsMobileMenuOpen(false)}>
+                    <a href="https://bc-dsp.ad.nexus" onClick={() => setIsMobileMenuOpen(false)}>
                       <Button variant="ghost" className="w-full justify-start">
                         Sign In
                       </Button>
-                    </Link>
+                    </a>
                     <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
                       <Button className="w-full">
                         Book a Demo
