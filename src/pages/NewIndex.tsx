@@ -304,44 +304,60 @@ const NewIndex = () => {
         </div>
       </section>
 
-      {/* Picture-in-Picture Video - Draggable and Interactive */}
+      {/* Picture-in-Picture Video - Enhanced Draggable TV */}
       {isPiP && showPiP && (
         <div
           ref={pipContainerRef}
-          className={`fixed z-50 shadow-2xl transition-all duration-300 ${
-            isFullscreenPiP ? 'inset-0 bg-black/95' : ''
-          } ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+          className={`fixed z-50 transition-all duration-500 ease-out ${
+            isFullscreenPiP ? 'inset-0 bg-black/98 backdrop-blur-xl' : ''
+          } ${isDragging ? 'cursor-grabbing scale-105' : 'cursor-grab hover:scale-105'}`}
           style={
             !isFullscreenPiP
               ? {
                   left: `${pipPosition.x}px`,
                   top: `${pipPosition.y}px`,
+                  filter: isDragging ? 'brightness(1.1)' : 'brightness(1)',
                 }
               : {}
           }
           onMouseDown={handleMouseDown}
         >
           <div
-            className={`relative bg-black overflow-hidden ${
+            className={`relative bg-black overflow-hidden transition-all duration-500 ${
               isFullscreenPiP
                 ? 'w-full h-full'
-                : 'w-80 aspect-video rounded-lg ring-2 ring-primary/50 shadow-[0_0_30px_rgba(var(--primary),0.3)]'
+                : 'w-96 aspect-video rounded-2xl shadow-[0_0_60px_rgba(139,92,246,0.5),0_20px_40px_rgba(0,0,0,0.8)] hover:shadow-[0_0_80px_rgba(139,92,246,0.7),0_25px_50px_rgba(0,0,0,0.9)]'
             }`}
           >
-            {/* TV Frame Effect when not fullscreen */}
+            {/* Premium TV Frame Effect */}
             {!isFullscreenPiP && (
-              <div className="absolute inset-0 pointer-events-none z-10">
-                <div className="absolute inset-0 rounded-lg"
-                  style={{
-                    boxShadow: 'inset 0 0 20px rgba(0,0,0,0.5)',
-                  }}
-                />
-              </div>
+              <>
+                {/* Outer glow ring */}
+                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-primary via-purple-500 to-primary opacity-75 blur-xl animate-pulse" />
+
+                {/* Inner frame with glass effect */}
+                <div className="absolute inset-0 pointer-events-none z-10">
+                  <div className="absolute inset-0 rounded-2xl border-2 border-white/10 bg-gradient-to-b from-white/5 to-transparent"
+                    style={{
+                      boxShadow: 'inset 0 2px 20px rgba(255,255,255,0.1), inset 0 -2px 20px rgba(0,0,0,0.5)',
+                    }}
+                  />
+                </div>
+
+                {/* Scan line effect */}
+                <div className="absolute inset-0 pointer-events-none z-10 opacity-10">
+                  <div className="h-full w-full animate-scan"
+                    style={{
+                      backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px)',
+                    }}
+                  />
+                </div>
+              </>
             )}
 
             {/* YouTube Video */}
             <iframe
-              className="absolute inset-0 w-full h-full"
+              className={`absolute inset-0 w-full h-full ${!isFullscreenPiP ? 'rounded-2xl' : ''}`}
               src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
               title="Adnexus Demo PiP"
               frameBorder="0"
@@ -349,18 +365,18 @@ const NewIndex = () => {
               allowFullScreen
             />
 
-            {/* PiP Controls */}
-            <div className={`absolute ${isFullscreenPiP ? 'bottom-8 left-8' : 'bottom-2 left-2'} flex items-center gap-2 z-20`}>
+            {/* Enhanced PiP Controls */}
+            <div className={`absolute ${isFullscreenPiP ? 'bottom-10 left-10' : 'bottom-3 left-3'} flex items-center gap-2 z-20`}>
               {/* Sound Toggle */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   setIsMuted(!isMuted);
                 }}
-                className="p-2 bg-black/80 backdrop-blur-sm rounded-full hover:bg-primary/80 transition-all shadow-lg"
+                className="group relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-primary transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-110 border border-white/10"
                 title={isMuted ? 'Unmute' : 'Mute'}
               >
-                {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white" />}
+                {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white group-hover:scale-110 transition-transform" />}
               </button>
 
               {/* Fullscreen Toggle */}
@@ -369,13 +385,13 @@ const NewIndex = () => {
                   e.stopPropagation();
                   setIsFullscreenPiP(!isFullscreenPiP);
                 }}
-                className="p-2 bg-black/80 backdrop-blur-sm rounded-full hover:bg-primary/80 transition-all shadow-lg"
+                className="group relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-primary transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-110 border border-white/10"
                 title={isFullscreenPiP ? 'Minimize' : 'Fullscreen'}
               >
                 {isFullscreenPiP ? (
-                  <Minimize2 className="h-4 w-4 text-white" />
+                  <Minimize2 className="h-4 w-4 text-white group-hover:scale-110 transition-transform" />
                 ) : (
-                  <Maximize2 className="h-4 w-4 text-white" />
+                  <Maximize2 className="h-4 w-4 text-white group-hover:scale-110 transition-transform" />
                 )}
               </button>
 
@@ -385,18 +401,33 @@ const NewIndex = () => {
                   e.stopPropagation();
                   setShowPiP(false);
                 }}
-                className="p-2 bg-black/80 backdrop-blur-sm rounded-full hover:bg-red-600/80 transition-all shadow-lg"
+                className="group relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-red-600 transition-all duration-300 shadow-lg hover:shadow-red-600/50 hover:scale-110 border border-white/10"
                 title="Close"
               >
-                <X className="h-4 w-4 text-white" />
+                <X className="h-4 w-4 text-white group-hover:rotate-90 transition-transform duration-300" />
               </button>
             </div>
 
-            {/* Drag Indicator when not fullscreen */}
+            {/* Enhanced Drag Indicator */}
             {!isFullscreenPiP && (
-              <div className="absolute top-2 left-1/2 transform -translate-x-1/2 z-20">
-                <div className="flex items-center gap-1 px-3 py-1 bg-black/60 backdrop-blur-sm rounded-full">
-                  <div className="w-8 h-1 bg-white/30 rounded-full" />
+              <div className="absolute top-3 left-1/2 transform -translate-x-1/2 z-20">
+                <div className="flex items-center gap-1.5 px-4 py-2 bg-black/80 backdrop-blur-md rounded-full border border-white/10 shadow-lg">
+                  <div className="flex gap-1">
+                    <div className="w-1 h-1 bg-primary rounded-full animate-pulse" />
+                    <div className="w-1 h-1 bg-primary rounded-full animate-pulse delay-75" />
+                    <div className="w-1 h-1 bg-primary rounded-full animate-pulse delay-150" />
+                  </div>
+                  <span className="text-[10px] text-white/60 uppercase tracking-wider font-medium">Drag me</span>
+                </div>
+              </div>
+            )}
+
+            {/* Live indicator on PiP */}
+            {!isFullscreenPiP && (
+              <div className="absolute top-3 right-3 z-20">
+                <div className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
+                  <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]" />
+                  <span className="text-[10px] text-white/80 font-medium tracking-widest uppercase">Live</span>
                 </div>
               </div>
             )}
@@ -468,6 +499,171 @@ const NewIndex = () => {
         </div>
       </section>
 
+      {/* Ad Exchange Network Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-primary/5 to-transparent">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">
+              The Adnexus Ad Exchange
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              High-performance programmatic advertising infrastructure connecting premium publishers with performance-driven advertisers
+            </p>
+          </div>
+
+          {/* Key Metrics */}
+          <div className="grid md:grid-cols-4 gap-6 mb-16">
+            <Card className="text-center hover:shadow-xl transition-all hover:scale-105">
+              <CardContent className="p-6">
+                <div className="text-4xl font-bold text-primary mb-2">100M+</div>
+                <p className="text-sm text-muted-foreground">Monthly Impressions<br />Available in US</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-xl transition-all hover:scale-105">
+              <CardContent className="p-6">
+                <div className="text-4xl font-bold text-primary mb-2">500+</div>
+                <p className="text-sm text-muted-foreground">Premium<br />TV Channels</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-xl transition-all hover:scale-105">
+              <CardContent className="p-6">
+                <div className="text-4xl font-bold text-primary mb-2">&lt;50ms</div>
+                <p className="text-sm text-muted-foreground">Average Bid<br />Response Time</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center hover:shadow-xl transition-all hover:scale-105">
+              <CardContent className="p-6">
+                <div className="text-4xl font-bold text-primary mb-2">99.9%</div>
+                <p className="text-sm text-muted-foreground">Platform<br />Uptime SLA</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Two Products */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* SSP Product */}
+            <Card className="border-2 border-primary/20 hover:border-primary/40 transition-all hover:shadow-2xl">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-3 bg-primary/10 rounded-lg">
+                    <Tv className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold">Supply-Side Platform (SSP)</h3>
+                    <p className="text-sm text-muted-foreground">For Publishers & Content Owners</p>
+                  </div>
+                </div>
+
+                <p className="text-muted-foreground mb-6">
+                  Monetize your CTV/OTT inventory with our enterprise-grade SSP. Connect to hundreds of demand partners and maximize your ad revenue.
+                </p>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Real-time bidding with 100+ DSP integrations</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Advanced header bidding & waterfall optimization</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Floor price optimization with AI</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Brand safety & fraud prevention built-in</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Real-time analytics & revenue reporting</span>
+                  </div>
+                </div>
+
+                <Link to="/ssp">
+                  <Button className="w-full" size="lg">
+                    Explore SSP
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* DSP Product */}
+            <Card className="border-2 border-primary/20 hover:border-primary/40 transition-all hover:shadow-2xl">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="p-3 bg-primary/10 rounded-lg">
+                    <Target className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold">Demand-Side Platform (DSP)</h3>
+                    <p className="text-sm text-muted-foreground">For Advertisers & Agencies</p>
+                  </div>
+                </div>
+
+                <p className="text-muted-foreground mb-6">
+                  Launch high-performance CTV/OTT campaigns across 500+ premium channels. AI-powered optimization delivers measurable results.
+                </p>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Access to 100M+ monthly US impressions</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Precision audience targeting with 1st party data</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">AI-powered bid optimization & pacing</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Multi-touch attribution & conversion tracking</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-sm">Self-service platform with white-glove support</span>
+                  </div>
+                </div>
+
+                <Link to="/dsp">
+                  <Button className="w-full" size="lg">
+                    Explore DSP
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Technical Excellence */}
+          <div className="mt-16 p-8 bg-black/5 dark:bg-white/5 rounded-2xl border border-primary/10">
+            <h3 className="text-2xl font-bold text-center mb-8">Built for Performance at Scale</h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h4 className="font-semibold mb-2">Enterprise Security</h4>
+                <p className="text-sm text-muted-foreground">SOC 2 Type II certified with end-to-end encryption and fraud detection</p>
+              </div>
+              <div className="text-center">
+                <Zap className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h4 className="font-semibold mb-2">Ultra-Low Latency</h4>
+                <p className="text-sm text-muted-foreground">Sub-50ms bid responses with globally distributed infrastructure</p>
+              </div>
+              <div className="text-center">
+                <BarChart3 className="h-12 w-12 text-primary mx-auto mb-4" />
+                <h4 className="font-semibold mb-2">Real-Time Analytics</h4>
+                <p className="text-sm text-muted-foreground">Live dashboards with granular reporting and actionable insights</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Goals Section */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
@@ -488,8 +684,155 @@ const NewIndex = () => {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Adnexus Studio - Ad Creation Made Easy */}
+      <section className="py-20 px-4 bg-gradient-to-b from-transparent to-primary/5">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-6">
+                Create Premium TV Ads in Minutes
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Adnexus Studio makes professional TV ad creation simple. No expensive production crews or agencies required.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">1</div>
+                  <div>
+                    <h3 className="font-semibold mb-1">Choose Your Template</h3>
+                    <p className="text-sm text-muted-foreground">Select from 100+ professionally designed CTV ad templates</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">2</div>
+                  <div>
+                    <h3 className="font-semibold mb-1">Customize Your Message</h3>
+                    <p className="text-sm text-muted-foreground">Add your brand assets, messaging, and call-to-action</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-bold">3</div>
+                  <div>
+                    <h3 className="font-semibold mb-1">Launch Your Campaign</h3>
+                    <p className="text-sm text-muted-foreground">Deploy to 500+ channels instantly with our DSP</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <Link to="/studio">
+                  <Button size="lg">
+                    Try Adnexus Studio
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+                <a href="https://cal.com/adnexus">
+                  <Button size="lg" variant="outline">
+                    Book a Demo
+                  </Button>
+                </a>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="relative aspect-video bg-black rounded-2xl overflow-hidden border-2 border-primary/20 shadow-2xl">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-purple-600/20" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center">
+                    <Play className="h-20 w-20 text-white mx-auto mb-4 opacity-80" />
+                    <p className="text-white/80 font-medium">Studio Preview</p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground px-6 py-3 rounded-full shadow-lg">
+                <p className="text-sm font-bold">No production costs!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Research & White Paper Section */}
       <section className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">
+              The State of CTV Advertising 2025
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Industry-leading research on the value of premium Connected TV advertising
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <Card className="hover:shadow-xl transition-all">
+              <CardContent className="p-6">
+                <div className="text-3xl font-bold text-primary mb-2">87%</div>
+                <p className="text-sm text-muted-foreground">of consumers trust CTV ads more than social media ads</p>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-xl transition-all">
+              <CardContent className="p-6">
+                <div className="text-3xl font-bold text-primary mb-2">3.2x</div>
+                <p className="text-sm text-muted-foreground">higher brand recall compared to traditional linear TV</p>
+              </CardContent>
+            </Card>
+            <Card className="hover:shadow-xl transition-all">
+              <CardContent className="p-6">
+                <div className="text-3xl font-bold text-primary mb-2">65%</div>
+                <p className="text-sm text-muted-foreground">of CTV viewers take action after seeing relevant ads</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-transparent">
+            <CardContent className="p-12 text-center">
+              <h3 className="text-2xl font-bold mb-4">
+                Download Our Free White Paper
+              </h3>
+              <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Get the complete research report on CTV advertising effectiveness, audience insights, and ROI benchmarks from 10,000+ campaigns.
+              </p>
+
+              <div className="max-w-md mx-auto mb-6">
+                <form onSubmit={handleEmailSubmit} className="flex gap-2">
+                  <Input
+                    type="email"
+                    placeholder="Enter your work email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="flex-1"
+                    required
+                  />
+                  <Button type="submit" size="lg">
+                    Download PDF
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </form>
+              </div>
+
+              <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span>35-page report</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span>Industry benchmarks</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Check className="h-4 w-4 text-primary" />
+                  <span>Case studies</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-transparent to-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">
