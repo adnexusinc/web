@@ -72,6 +72,18 @@ const solutionItems = [
     href: "/publishers",
     description: "Maximize your inventory revenue",
     icon: Globe
+  },
+  {
+    title: "Agency Services",
+    href: "/agency/services",
+    description: "Full-service programmatic advertising",
+    icon: Zap
+  },
+  {
+    title: "Enterprise Retainer",
+    href: "/agency/retainer",
+    description: "$9,999/mo premium service",
+    icon: Shield
   }
 ];
 
