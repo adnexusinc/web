@@ -92,7 +92,7 @@ const ServicesPage = () => {
         <div className="container relative mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-              Full-Service Programmatic Advertising
+              Creative Services & Programmatic Solutions
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               From strategy to execution, we deliver end-to-end advertising solutions

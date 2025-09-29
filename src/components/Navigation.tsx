@@ -74,7 +74,7 @@ const solutionItems = [
     icon: Globe
   },
   {
-    title: "Agency Services",
+    title: "Creative Services",
     href: "/agency/services",
     description: "Full-service programmatic advertising",
     icon: Zap
