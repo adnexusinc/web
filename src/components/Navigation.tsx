@@ -3,6 +3,14 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
@@ -11,10 +19,10 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { 
-  Target, 
-  Globe, 
-  TrendingUp, 
+import {
+  Target,
+  Globe,
+  TrendingUp,
   Cpu,
   BarChart3,
   Shield,
@@ -23,7 +31,9 @@ import {
   ArrowRight,
   ChevronDown,
   Menu,
-  X
+  X,
+  LogIn,
+  Building2
 } from "lucide-react";
 
 const platformItems = [
@@ -226,11 +236,37 @@ export const Navigation = () => {
 
           <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-4">
-              <a href="https://bc-dsp.ad.nexus">
-                <Button variant="ghost" size="sm">
-                  Sign In
-                </Button>
-              </a>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" size="sm" className="flex items-center gap-1">
+                    <LogIn className="h-4 w-4" />
+                    Sign In
+                    <ChevronDown className="h-3 w-3" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-56">
+                  <DropdownMenuLabel>Choose Platform</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem asChild>
+                    <a href="https://dsp.ad.nexus" className="flex items-center gap-2 cursor-pointer">
+                      <Building2 className="h-4 w-4" />
+                      <div>
+                        <div className="font-medium">Login to DSP</div>
+                        <div className="text-xs text-muted-foreground">Demand-Side Platform</div>
+                      </div>
+                    </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <a href="https://ssp.ad.nexus" className="flex items-center gap-2 cursor-pointer">
+                      <Globe className="h-4 w-4" />
+                      <div>
+                        <div className="font-medium">Login to SSP</div>
+                        <div className="text-xs text-muted-foreground">Supply-Side Platform</div>
+                      </div>
+                    </a>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
               <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
                 <Button size="sm" className="group">
                   Book a Demo
@@ -316,9 +352,25 @@ export const Navigation = () => {
 
 
                   <div className="pt-4 border-t space-y-2">
-                    <a href="https://bc-dsp.ad.nexus" onClick={() => setIsMobileMenuOpen(false)}>
-                      <Button variant="ghost" className="w-full justify-start">
-                        Sign In
+                    <div className="px-2 py-1.5 text-sm font-semibold text-muted-foreground">
+                      Sign In
+                    </div>
+                    <a href="https://dsp.ad.nexus" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Button variant="ghost" className="w-full justify-start gap-2">
+                        <Building2 className="h-4 w-4" />
+                        <div className="text-left">
+                          <div>Login to DSP</div>
+                          <div className="text-xs text-muted-foreground">Demand-Side Platform</div>
+                        </div>
+                      </Button>
+                    </a>
+                    <a href="https://ssp.ad.nexus" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Button variant="ghost" className="w-full justify-start gap-2">
+                        <Globe className="h-4 w-4" />
+                        <div className="text-left">
+                          <div>Login to SSP</div>
+                          <div className="text-xs text-muted-foreground">Supply-Side Platform</div>
+                        </div>
                       </Button>
                     </a>
                     <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>

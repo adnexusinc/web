@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 
 const Auth = () => {
   useEffect(() => {
-    // Redirect to the external authentication page
-    window.location.href = 'https://bc-dsp.ad.nexus';
+    // Redirect to DSP authentication page by default
+    window.location.href = 'https://dsp.ad.nexus';
   }, []);
 
   return (
