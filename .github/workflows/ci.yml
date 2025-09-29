@@ -58,11 +58,11 @@ jobs:
         grep -q "path=\"/password-reset\"" src/App.tsx
         grep -q "path=\"/dashboard\"" src/App.tsx
     
-    - name: Check OAuth Providers
+    - name: Check Auth Redirect
       run: |
-        echo "✅ Checking OAuth implementations"
-        grep -q "provider: 'google'" src/pages/Auth.tsx
-        grep -q "provider: 'github'" src/pages/Auth.tsx
+        echo "✅ Checking Auth redirect implementation"
+        grep -q "window.location.href" src/pages/Auth.tsx
+        grep -q "dsp.ad.nexus" src/pages/Auth.tsx
         grep -q "resetPasswordForEmail" src/pages/PasswordReset.tsx
     
     - name: Upload build artifacts
