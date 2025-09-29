@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Slider } from '@/components/ui/slider';
 import { Link } from 'react-router-dom';
+import { Navigation } from '@/components/Navigation';
 import {
   Check,
   ArrowRight,
@@ -19,7 +20,7 @@ import {
 } from 'lucide-react';
 
 const PricingPage = () => {
-  const [budget, setBudget] = useState([5000]);
+  const [budget, setBudget] = useState([750]); // Start at $750/month ($25/day)
 
   // Calculate metrics based on budget
   const cpmMin = 15;
@@ -129,17 +130,20 @@ const PricingPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <Navigation />
+
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative pt-36 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/5 to-background" />
         <div className="container relative mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">
-              Affordable TV Advertising. For everyone.
+              TV Advertising Starting at $25/Day
             </h1>
             <p className="text-xl text-muted-foreground mb-12">
-              The most affordable Streaming and Connected TV Advertising solution
-              built for brands and businesses of all sizes.
+              The most affordable Streaming and Connected TV Advertising solution.<br />
+              Start with as little as $25/day and scale up as you grow.
             </p>
           </div>
         </div>
@@ -150,28 +154,31 @@ const PricingPage = () => {
         <div className="container mx-auto max-w-6xl">
           <Card className="shadow-xl">
             <CardHeader>
-              <CardTitle className="text-2xl">Test your budget</CardTitle>
+              <CardTitle className="text-2xl">Self-Service TV Advertising</CardTitle>
               <CardDescription>
-                Simulate your campaign results by entering your future campaign budgets.
+                Start buying ads instantly with our self-service DSP platform. No minimum spend required.
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-8">
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-3xl font-bold">${budget[0].toLocaleString()}</span>
-                  <span className="text-sm text-muted-foreground">USD</span>
+                  <div>
+                    <span className="text-3xl font-bold">${budget[0].toLocaleString()}</span>
+                    <span className="text-sm text-muted-foreground ml-2">per month</span>
+                  </div>
+                  <span className="text-sm text-muted-foreground">≈ ${Math.floor(budget[0] / 30)}/day</span>
                 </div>
                 <Slider
                   value={budget}
                   onValueChange={setBudget}
-                  min={50}
+                  min={750}
                   max={100000}
                   step={50}
                   className="mb-2"
                 />
                 <div className="flex justify-between text-sm text-muted-foreground">
-                  <span>$50</span>
-                  <span>$100,000</span>
+                  <span>$750/mo ($25/day)</span>
+                  <span>$100,000/mo</span>
                 </div>
               </div>
 
@@ -213,18 +220,18 @@ const PricingPage = () => {
               <div className="bg-muted/50 rounded-lg p-6 text-center">
                 <h3 className="font-semibold mb-2">Start advertising on TV in 5 minutes</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  Starts at only $50/day • No Commitment • Credit Card or Wire Payment
+                  Starts at only $25/day • No Commitment • Credit Card or Wire Payment
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="https://dsp.ad.nexus" target="_blank" rel="noopener noreferrer">
+                    <Button size="lg">
+                      Start Self-Service Now
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
                   <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
                     <Button size="lg" variant="outline">Book a demo</Button>
                   </a>
-                  <Link to="/agency/retainer">
-                    <Button size="lg">
-                      Get started
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </Link>
                 </div>
               </div>
             </CardContent>
@@ -450,6 +457,57 @@ const PricingPage = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="py-12 px-4 border-t">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="font-semibold mb-4">Industries</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link to="/industries" className="hover:text-foreground">Ecommerce</Link></li>
+                <li><Link to="/industries" className="hover:text-foreground">Apps & Gaming</Link></li>
+                <li><Link to="/industries" className="hover:text-foreground">B2B</Link></li>
+                <li><Link to="/agencies" className="hover:text-foreground">Media & Agencies</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4">Features</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link to="/platform/overview" className="hover:text-foreground">Apps & Channels</Link></li>
+                <li><Link to="/platform/plan" className="hover:text-foreground">Audience Targeting</Link></li>
+                <li><Link to="/platform/activate" className="hover:text-foreground">AI Optimization</Link></li>
+                <li><Link to="/platform/measure" className="hover:text-foreground">Measurement</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4">Resources</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link to="/pricing" className="hover:text-foreground">Pricing</Link></li>
+                <li><Link to="/case-studies" className="hover:text-foreground">Case Studies</Link></li>
+                <li><Link to="/resources" className="hover:text-foreground">Blog</Link></li>
+                <li><a href="https://cal.com/adnexus" className="hover:text-foreground">Book Demo</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="font-semibold mb-4">Company</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link to="/about" className="hover:text-foreground">About Us</Link></li>
+                <li><Link to="/company" className="hover:text-foreground">Newsroom</Link></li>
+                <li><Link to="/privacy-policy" className="hover:text-foreground">Privacy Policy</Link></li>
+                <li><Link to="/terms-of-service" className="hover:text-foreground">Terms of Service</Link></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
+            <p>© 2025 Adnexus Technology, Inc.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

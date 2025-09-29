@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
+import { Navigation } from '@/components/Navigation';
 import {
   Target,
   TrendingUp,
@@ -100,35 +101,10 @@ const NewIndex = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="border-b bg-background/95 backdrop-blur-md sticky top-0 z-50">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <Link to="/" className="flex items-center">
-            <img
-              src="/lovable-uploads/ebba7dda-009e-4d3c-b5d4-06707a9a84ad.png"
-              alt="Adnexus"
-              className="h-8 filter invert brightness-0"
-            />
-          </Link>
-
-          <div className="hidden md:flex items-center gap-8">
-            <Link to="/platform/overview" className="text-sm hover:text-primary transition">Product</Link>
-            <Link to="/advertisers" className="text-sm hover:text-primary transition">Industries</Link>
-            <Link to="/agency/retainer" className="text-sm hover:text-primary transition">Pricing</Link>
-            <Link to="/case-studies" className="text-sm hover:text-primary transition">Testimonials</Link>
-            <Link to="/resources" className="text-sm hover:text-primary transition">Resources</Link>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="sm">Book a Demo</Button>
-            </a>
-            <Button size="sm">Log in</Button>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
-      <section className="py-20 px-4 overflow-hidden">
+      <section className="pt-36 pb-20 px-4 overflow-hidden">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center">
             <h1 className="text-5xl lg:text-7xl font-bold mb-6">
