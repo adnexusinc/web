@@ -32,8 +32,13 @@ const NewIndex = () => {
   const [email, setEmail] = useState('');
   const [showStatic, setShowStatic] = useState(false);
   const [showPhoneBanner, setShowPhoneBanner] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false); // Default sound ON
   const [isPiP, setIsPiP] = useState(false);
+  const [showPiP, setShowPiP] = useState(true); // Control PiP visibility
+  const [isFullscreenPiP, setIsFullscreenPiP] = useState(false);
+  const [pipPosition, setPipPosition] = useState({ x: 0, y: 0 });
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const [videoSrc, setVideoSrc] = useState('');
   const videoRef = useRef<HTMLIFrameElement>(null);
   const pipContainerRef = useRef<HTMLDivElement>(null);
@@ -150,6 +155,54 @@ const NewIndex = () => {
     setVideoSrc(`https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${muteParam}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`);
   }, [isMuted]);
 
+  // Handle PiP dragging
+  const handleMouseDown = (e: React.MouseEvent) => {
+    if (isFullscreenPiP) return;
+    setIsDragging(true);
+    setDragStart({
+      x: e.clientX - pipPosition.x,
+      y: e.clientY - pipPosition.y
+    });
+  };
+
+  const handleMouseMove = (e: MouseEvent) => {
+    if (!isDragging || isFullscreenPiP) return;
+    const newX = e.clientX - dragStart.x;
+    const newY = e.clientY - dragStart.y;
+
+    // Constrain to viewport
+    const maxX = window.innerWidth - 320; // PiP width
+    const maxY = window.innerHeight - 180; // PiP height
+
+    setPipPosition({
+      x: Math.max(0, Math.min(newX, maxX)),
+      y: Math.max(0, Math.min(newY, maxY))
+    });
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
+  useEffect(() => {
+    if (isDragging) {
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseup', handleMouseUp);
+      return () => {
+        window.removeEventListener('mousemove', handleMouseMove);
+        window.removeEventListener('mouseup', handleMouseUp);
+      };
+    }
+  }, [isDragging, dragStart, pipPosition, isFullscreenPiP]);
+
+  // Initialize PiP position to bottom-right
+  useEffect(() => {
+    setPipPosition({
+      x: window.innerWidth - 336, // 320px width + 16px margin
+      y: window.innerHeight - 196 // 180px height + 16px margin
+    });
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -174,35 +227,35 @@ const NewIndex = () => {
         </div>
       )}
 
-      {/* Video Hero Section - Clean Modern Design */}
-      <section id="video-section" className={`relative h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden ${showPhoneBanner ? 'pt-10' : ''}`}>
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 1px)',
-            backgroundSize: '40px 40px'
-          }} />
-        </div>
+      {/* Video Hero Section - Pure Black Cinematic */}
+      <section id="video-section" className={`relative min-h-screen flex items-center justify-center bg-black overflow-hidden ${showPhoneBanner ? 'pt-10' : ''}`}>
+        {/* Hollywood-style Cinematic Container */}
+        <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
+          {/* Cinematic Aspect Ratio with Letterbox Effect */}
+          <div className="relative aspect-[21/9] bg-black rounded-sm overflow-hidden shadow-[0_0_100px_rgba(0,0,0,0.9)]">
+            {/* Cinematic Vignette Overlay */}
+            <div className="absolute inset-0 z-20 pointer-events-none"
+              style={{
+                boxShadow: 'inset 0 0 120px 60px rgba(0,0,0,0.8)',
+              }}
+            />
 
-        {/* Video Container - Clean, Modern Frame */}
-        <div className="relative w-full max-w-7xl mx-auto px-8 py-16">
-          <div className="relative aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
-            {/* Static Effect Overlay - Subtle */}
+            {/* Static Effect Overlay - Film Grain */}
             {showStatic && (
-              <div className="absolute inset-0 z-50 pointer-events-none">
-                <div className="h-full w-full bg-white/5 animate-pulse" />
-                <div className="absolute inset-0 opacity-30"
+              <div className="absolute inset-0 z-40 pointer-events-none">
+                <div className="h-full w-full bg-white/3 animate-pulse" />
+                <div className="absolute inset-0 opacity-20"
                   style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence baseFrequency='0.65' seed='5' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.3'/%3E%3C/svg%3E")`,
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='200' height='200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E")`,
                   }}
                 />
               </div>
             )}
 
-            {/* YouTube Video */}
+            {/* YouTube Video - Full Bleed */}
             <iframe
               ref={videoRef}
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-0 w-full h-full scale-105"
               src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
               title="Adnexus Demo"
               frameBorder="0"
@@ -210,54 +263,86 @@ const NewIndex = () => {
               allowFullScreen
             />
 
-            {/* Subtle Scan Lines */}
-            <div className="absolute inset-0 pointer-events-none opacity-5">
+            {/* Subtle Film Grain Overlay */}
+            <div className="absolute inset-0 pointer-events-none opacity-[0.02] z-10">
               <div className="h-full w-full" style={{
-                backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(255,255,255,0.03) 1px, rgba(255,255,255,0.03) 2px)',
+                backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.05) 2px, rgba(255,255,255,0.05) 4px)',
               }} />
             </div>
 
-            {/* Video Controls */}
-            <div className="absolute bottom-4 left-4 flex items-center gap-2">
+            {/* Minimalist Video Controls */}
+            <div className="absolute bottom-6 left-6 flex items-center gap-3 z-30">
               <button
                 onClick={() => setIsMuted(!isMuted)}
-                className="flex items-center gap-2 bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full hover:bg-black/70 transition"
+                className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-sm hover:bg-black transition-all border border-white/10"
               >
                 {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white" />}
-                <span className="text-xs text-white/80 font-medium">{isMuted ? 'Unmute' : 'Mute'}</span>
+                <span className="text-xs text-white/90 font-medium tracking-wider uppercase">{isMuted ? 'Unmute' : 'Mute'}</span>
               </button>
             </div>
 
-            {/* Corner Accent */}
-            <div className="absolute top-4 left-4 flex items-center gap-2 bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full">
-              <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-              <span className="text-xs text-white/80 font-medium">LIVE DEMO</span>
+            {/* Cinematic Live Indicator */}
+            <div className="absolute top-6 left-6 flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-sm border border-white/10 z-30">
+              <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]" />
+              <span className="text-xs text-white/90 font-medium tracking-widest uppercase">Live</span>
             </div>
           </div>
 
-          {/* Clean Caption Below Video */}
-          <div className="text-center mt-8">
-            <h2 className="text-3xl font-bold text-white mb-2">See Adnexus in Action</h2>
-            <p className="text-white/70">Experience the future of TV advertising</p>
+          {/* Cinematic Caption - Bottom Right Fade-In */}
+          <div className="text-right mt-8 animate-slideInRight">
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-2 tracking-wide">See Adnexus in Action</h2>
+            <p className="text-white/50 text-sm md:text-base tracking-wider uppercase">Experience the future of TV advertising</p>
           </div>
         </div>
 
-        {/* Elegant Scroll Indicator - Darker */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="flex flex-col items-center gap-2 text-slate-600">
-            <span className="text-xs uppercase tracking-wider">Scroll to explore</span>
-            <ChevronRight className="h-5 w-5 rotate-90 animate-bounce" />
+        {/* Minimal Scroll Indicator */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30">
+          <div className="flex flex-col items-center gap-3 text-white/30">
+            <span className="text-[10px] uppercase tracking-[0.2em] font-light">Scroll</span>
+            <ChevronRight className="h-4 w-4 rotate-90 animate-bounce opacity-60" />
           </div>
         </div>
       </section>
 
-      {/* Picture-in-Picture Video */}
-      {isPiP && (
-        <div className="fixed bottom-4 right-4 z-50 shadow-2xl" ref={pipContainerRef}>
-          <div className="relative w-80 aspect-video bg-black rounded-lg overflow-hidden ring-1 ring-white/10">
+      {/* Picture-in-Picture Video - Draggable and Interactive */}
+      {isPiP && showPiP && (
+        <div
+          ref={pipContainerRef}
+          className={`fixed z-50 shadow-2xl transition-all duration-300 ${
+            isFullscreenPiP ? 'inset-0 bg-black/95' : ''
+          } ${isDragging ? 'cursor-grabbing' : 'cursor-grab'}`}
+          style={
+            !isFullscreenPiP
+              ? {
+                  left: `${pipPosition.x}px`,
+                  top: `${pipPosition.y}px`,
+                }
+              : {}
+          }
+          onMouseDown={handleMouseDown}
+        >
+          <div
+            className={`relative bg-black overflow-hidden ${
+              isFullscreenPiP
+                ? 'w-full h-full'
+                : 'w-80 aspect-video rounded-lg ring-2 ring-primary/50 shadow-[0_0_30px_rgba(var(--primary),0.3)]'
+            }`}
+          >
+            {/* TV Frame Effect when not fullscreen */}
+            {!isFullscreenPiP && (
+              <div className="absolute inset-0 pointer-events-none z-10">
+                <div className="absolute inset-0 rounded-lg"
+                  style={{
+                    boxShadow: 'inset 0 0 20px rgba(0,0,0,0.5)',
+                  }}
+                />
+              </div>
+            )}
+
+            {/* YouTube Video */}
             <iframe
               className="absolute inset-0 w-full h-full"
-              src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+              src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
               title="Adnexus Demo PiP"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -265,23 +350,56 @@ const NewIndex = () => {
             />
 
             {/* PiP Controls */}
-            <div className="absolute bottom-2 left-2 flex items-center gap-2">
+            <div className={`absolute ${isFullscreenPiP ? 'bottom-8 left-8' : 'bottom-2 left-2'} flex items-center gap-2 z-20`}>
+              {/* Sound Toggle */}
               <button
-                onClick={() => setIsMuted(!isMuted)}
-                className="p-1.5 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition"
-              >
-                {isMuted ? <VolumeX className="h-3 w-3 text-white" /> : <Volume2 className="h-3 w-3 text-white" />}
-              </button>
-              <button
-                onClick={() => {
-                  setIsPiP(false);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsMuted(!isMuted);
                 }}
-                className="p-1.5 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition"
+                className="p-2 bg-black/80 backdrop-blur-sm rounded-full hover:bg-primary/80 transition-all shadow-lg"
+                title={isMuted ? 'Unmute' : 'Mute'}
               >
-                <Maximize2 className="h-3 w-3 text-white" />
+                {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white" />}
+              </button>
+
+              {/* Fullscreen Toggle */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsFullscreenPiP(!isFullscreenPiP);
+                }}
+                className="p-2 bg-black/80 backdrop-blur-sm rounded-full hover:bg-primary/80 transition-all shadow-lg"
+                title={isFullscreenPiP ? 'Minimize' : 'Fullscreen'}
+              >
+                {isFullscreenPiP ? (
+                  <Minimize2 className="h-4 w-4 text-white" />
+                ) : (
+                  <Maximize2 className="h-4 w-4 text-white" />
+                )}
+              </button>
+
+              {/* Close Button */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setShowPiP(false);
+                }}
+                className="p-2 bg-black/80 backdrop-blur-sm rounded-full hover:bg-red-600/80 transition-all shadow-lg"
+                title="Close"
+              >
+                <X className="h-4 w-4 text-white" />
               </button>
             </div>
+
+            {/* Drag Indicator when not fullscreen */}
+            {!isFullscreenPiP && (
+              <div className="absolute top-2 left-1/2 transform -translate-x-1/2 z-20">
+                <div className="flex items-center gap-1 px-3 py-1 bg-black/60 backdrop-blur-sm rounded-full">
+                  <div className="w-8 h-1 bg-white/30 rounded-full" />
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}
@@ -478,51 +596,76 @@ const NewIndex = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-4 border-t">
+      <footer className="py-16 px-4 bg-black border-t border-white/5">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-4 gap-8">
+          {/* TV Platform Logos with Glow */}
+          <div className="mb-16">
+            <h3 className="text-center text-white/40 text-xs uppercase tracking-widest mb-8">Available on Premium TV Platforms</h3>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center">
+              {['Hulu', 'Roku', 'Paramount+', 'Peacock', 'Pluto TV', 'Tubi'].map((platform, idx) => (
+                <div key={idx} className="group relative">
+                  <div className="absolute inset-0 bg-white/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="relative px-4 py-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                    <span className="text-white/80 text-sm font-medium tracking-wide group-hover:text-white transition-colors">{platform}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center mt-6">
+              {['Samsung TV+', 'ESPN', 'Discovery+', 'AMC+', 'Fox News', 'CNN'].map((platform, idx) => (
+                <div key={idx} className="group relative">
+                  <div className="absolute inset-0 bg-white/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="relative px-4 py-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                    <span className="text-white/80 text-sm font-medium tracking-wide group-hover:text-white transition-colors">{platform}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div>
-              <h3 className="font-semibold mb-4">Industries</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/advertisers" className="hover:text-foreground">Ecommerce</Link></li>
-                <li><Link to="/advertisers" className="hover:text-foreground">Apps & Gaming</Link></li>
-                <li><Link to="/advertisers" className="hover:text-foreground">B2B</Link></li>
-                <li><Link to="/agencies" className="hover:text-foreground">Media & Agencies</Link></li>
+              <h3 className="font-semibold mb-4 text-white">Industries</h3>
+              <ul className="space-y-2 text-sm text-white/50">
+                <li><Link to="/advertisers" className="hover:text-white transition-colors">Ecommerce</Link></li>
+                <li><Link to="/advertisers" className="hover:text-white transition-colors">Apps & Gaming</Link></li>
+                <li><Link to="/advertisers" className="hover:text-white transition-colors">B2B</Link></li>
+                <li><Link to="/agencies" className="hover:text-white transition-colors">Media & Agencies</Link></li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Features</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/platform/overview" className="hover:text-foreground">Apps & Channels</Link></li>
-                <li><Link to="/platform/plan" className="hover:text-foreground">Audience Targeting</Link></li>
-                <li><Link to="/platform/activate" className="hover:text-foreground">AI Optimization</Link></li>
-                <li><Link to="/platform/measure" className="hover:text-foreground">Measurement</Link></li>
+              <h3 className="font-semibold mb-4 text-white">Features</h3>
+              <ul className="space-y-2 text-sm text-white/50">
+                <li><Link to="/platform/overview" className="hover:text-white transition-colors">Apps & Channels</Link></li>
+                <li><Link to="/platform/plan" className="hover:text-white transition-colors">Audience Targeting</Link></li>
+                <li><Link to="/platform/activate" className="hover:text-white transition-colors">AI Optimization</Link></li>
+                <li><Link to="/platform/measure" className="hover:text-white transition-colors">Measurement</Link></li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Resources</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/agency" className="hover:text-foreground">Pricing</Link></li>
-                <li><Link to="/case-studies" className="hover:text-foreground">Case Studies</Link></li>
-                <li><Link to="/resources" className="hover:text-foreground">Blog</Link></li>
-                <li><a href="https://cal.com/adnexus" className="hover:text-foreground">Book Demo</a></li>
+              <h3 className="font-semibold mb-4 text-white">Resources</h3>
+              <ul className="space-y-2 text-sm text-white/50">
+                <li><Link to="/agency" className="hover:text-white transition-colors">Pricing</Link></li>
+                <li><Link to="/case-studies" className="hover:text-white transition-colors">Case Studies</Link></li>
+                <li><Link to="/resources" className="hover:text-white transition-colors">Blog</Link></li>
+                <li><a href="https://cal.com/adnexus" className="hover:text-white transition-colors">Book Demo</a></li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold mb-4">Company</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/about" className="hover:text-foreground">About Us</Link></li>
-                <li><Link to="/company" className="hover:text-foreground">Newsroom</Link></li>
-                <li><Link to="/privacy-policy" className="hover:text-foreground">Privacy Policy</Link></li>
-                <li><Link to="/terms-of-service" className="hover:text-foreground">Terms of Service</Link></li>
+              <h3 className="font-semibold mb-4 text-white">Company</h3>
+              <ul className="space-y-2 text-sm text-white/50">
+                <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
+                <li><Link to="/company" className="hover:text-white transition-colors">Newsroom</Link></li>
+                <li><Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+                <li><Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link></li>
               </ul>
             </div>
           </div>
 
-          <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
+          <div className="pt-8 border-t border-white/5 text-center text-sm text-white/40">
             <p>© 2025 Adnexus Technology, Inc.</p>
           </div>
         </div>
