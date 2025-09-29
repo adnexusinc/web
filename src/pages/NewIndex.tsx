@@ -602,7 +602,7 @@ const NewIndex = () => {
           <div className="mb-16">
             <h3 className="text-center text-white/40 text-xs uppercase tracking-widest mb-8">Available on Premium TV Platforms</h3>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center">
-              {['Hulu', 'Roku', 'Paramount+', 'Peacock', 'Pluto TV', 'Tubi'].map((platform, idx) => (
+              {['Apple TV+', 'Hulu', 'Roku', 'Paramount+', 'Peacock', 'Pluto TV'].map((platform, idx) => (
                 <div key={idx} className="group relative">
                   <div className="absolute inset-0 bg-white/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="relative px-4 py-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
@@ -612,7 +612,17 @@ const NewIndex = () => {
               ))}
             </div>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center mt-6">
-              {['Samsung TV+', 'ESPN', 'Discovery+', 'AMC+', 'Fox News', 'CNN'].map((platform, idx) => (
+              {['Tubi', 'Samsung TV+', 'ESPN', 'Discovery+', 'AMC+', 'Fox News'].map((platform, idx) => (
+                <div key={idx} className="group relative">
+                  <div className="absolute inset-0 bg-white/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="relative px-4 py-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                    <span className="text-white/80 text-sm font-medium tracking-wide group-hover:text-white transition-colors">{platform}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center mt-6">
+              {['CNN', 'Bloomberg TV', 'NBC Sports', 'CBS Sports', 'NFL Network', 'NBA TV'].map((platform, idx) => (
                 <div key={idx} className="group relative">
                   <div className="absolute inset-0 bg-white/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="relative px-4 py-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
