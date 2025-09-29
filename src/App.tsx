@@ -3,7 +3,9 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
+import Index from "./pages/NewIndex";
+import Industries from "./pages/Industries";
+import Pricing from "./pages/Pricing";
 import Auth from "./pages/Auth";
 import PasswordReset from "./pages/PasswordReset";
 import Dashboard from "./pages/Dashboard";
@@ -50,6 +52,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/industries" element={<Industries />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/password-reset" element={<PasswordReset />} />
           <Route path="/dashboard" element={<Dashboard />} />
