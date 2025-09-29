@@ -20,13 +20,31 @@ import {
   Play,
   ChevronRight,
   Star,
-  Phone
+  Phone,
+  X,
+  Volume2,
+  VolumeX,
+  Minimize2,
+  Maximize2
 } from 'lucide-react';
 
 const NewIndex = () => {
   const [email, setEmail] = useState('');
   const [showStatic, setShowStatic] = useState(false);
-  const videoRef = useRef<HTMLDivElement>(null);
+  const [showPhoneBanner, setShowPhoneBanner] = useState(true);
+  const [isMuted, setIsMuted] = useState(true);
+  const [isPiP, setIsPiP] = useState(false);
+  const [videoSrc, setVideoSrc] = useState('');
+  const videoRef = useRef<HTMLIFrameElement>(null);
+  const pipContainerRef = useRef<HTMLDivElement>(null);
+
+  const handleEmailSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      // For now, just redirect to DSP with email as param
+      window.location.href = `https://dsp.ad.nexus?email=${encodeURIComponent(email)}`;
+    }
+  };
 
   const channels = [
     'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV',
@@ -82,21 +100,21 @@ const NewIndex = () => {
 
   const testimonials = [
     {
-      quote: "Adnexus transformed our advertising strategy. We achieved 728% ROAS in just 3 months.",
-      author: "Sarah Chen",
-      role: "CMO @ TechStart",
+      quote: "Adnexus transformed our advertising strategy. We achieved remarkable ROAS improvements in just 3 months.",
+      author: "Michael Keling",
+      role: "CMO @ Hanzo AI Inc",
       rating: 5
     },
     {
-      quote: "The easiest-to-use platform we've found. Cut our CPM by 80% while doubling conversions.",
-      author: "Michael Roberts",
-      role: "Marketing Director @ RetailPlus",
+      quote: "Adnexus made us a cult hit in LA! Their TV advertising platform helped Karma become the must-have fashion brand on the West Coast.",
+      author: "Antje Worring",
+      role: "Founder @ Karma Fashion",
       rating: 5
     },
     {
-      quote: "Finally, TV advertising that delivers performance marketing results. Game changer.",
-      author: "Jessica Liu",
-      role: "Growth Lead @ Fashion Brand",
+      quote: "Finally, TV advertising that delivers performance marketing results. Game changer for our industry.",
+      author: "Cyrus Pahlavi",
+      role: "CEO @ Lux Industries Inc",
       rating: 5
     }
   ];
@@ -111,73 +129,162 @@ const NewIndex = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // Handle scroll for PiP
+  useEffect(() => {
+    const handleScroll = () => {
+      const videoSection = document.getElementById('video-section');
+      if (videoSection) {
+        const rect = videoSection.getBoundingClientRect();
+        const shouldShowPiP = rect.bottom < 100;
+        setIsPiP(shouldShowPiP);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Update video source based on mute state
+  useEffect(() => {
+    const muteParam = isMuted ? '1' : '0';
+    setVideoSrc(`https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${muteParam}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`);
+  }, [isMuted]);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <Navigation />
 
-      {/* Phone Number Banner */}
-      <div className="bg-primary text-primary-foreground py-2 text-center">
-        <a href="tel:1-844-236-3987" className="flex items-center justify-center gap-2 hover:opacity-90 transition">
-          <Phone className="h-4 w-4" />
-          <span className="font-semibold">Call us: +1 844 AD-NEXUS (844-236-3987)</span>
-        </a>
-      </div>
+      {/* Phone Number Banner - Dismissible and Fixed */}
+      {showPhoneBanner && (
+        <div className="fixed top-16 left-0 right-0 bg-primary text-primary-foreground py-2 z-40 shadow-lg">
+          <div className="container mx-auto px-4 flex items-center justify-between">
+            <a href="tel:1-844-236-3987" className="flex items-center gap-2 hover:opacity-90 transition mx-auto">
+              <Phone className="h-4 w-4" />
+              <span className="font-semibold">Call us: +1 844 AD-NEXUS (844-236-3987)</span>
+            </a>
+            <button
+              onClick={() => setShowPhoneBanner(false)}
+              className="p-1 hover:bg-white/20 rounded-full transition"
+              aria-label="Close banner"
+            >
+              <X className="h-4 w-4" />
+            </button>
+          </div>
+        </div>
+      )}
 
-      {/* Video Hero Section */}
-      <section className="relative h-screen flex items-center justify-center bg-black overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center p-8">
-          {/* TV Frame */}
-          <div className="relative w-full max-w-6xl aspect-video">
-            {/* Retro TV Border */}
-            <div className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-zinc-900 rounded-3xl p-8 shadow-2xl">
-              <div className="relative w-full h-full bg-black rounded-2xl overflow-hidden">
-                {/* Static Effect Overlay */}
-                {showStatic && (
-                  <div className="absolute inset-0 z-50 opacity-80">
-                    <div className="h-full w-full bg-gradient-to-b from-transparent via-white to-transparent opacity-20 animate-pulse" />
-                    <div
-                      className="absolute inset-0"
-                      style={{
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence baseFrequency='0.9' /%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E")`,
-                        mixBlendMode: 'multiply'
-                      }}
-                    />
-                  </div>
-                )}
+      {/* Video Hero Section - Clean Modern Design */}
+      <section id="video-section" className={`relative h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden ${showPhoneBanner ? 'pt-10' : ''}`}>
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 1px)',
+            backgroundSize: '40px 40px'
+          }} />
+        </div>
 
-                {/* YouTube Video */}
-                <iframe
-                  className="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1"
-                  title="Adnexus Demo"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+        {/* Video Container - Clean, Modern Frame */}
+        <div className="relative w-full max-w-7xl mx-auto px-8 py-16">
+          <div className="relative aspect-video bg-black rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+            {/* Static Effect Overlay - Subtle */}
+            {showStatic && (
+              <div className="absolute inset-0 z-50 pointer-events-none">
+                <div className="h-full w-full bg-white/5 animate-pulse" />
+                <div className="absolute inset-0 opacity-30"
+                  style={{
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence baseFrequency='0.65' seed='5' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.3'/%3E%3C/svg%3E")`,
+                  }}
                 />
-
-                {/* Scan Lines Effect */}
-                <div className="absolute inset-0 pointer-events-none opacity-20">
-                  <div className="h-full w-full" style={{
-                    backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px)',
-                  }} />
-                </div>
               </div>
+            )}
+
+            {/* YouTube Video */}
+            <iframe
+              ref={videoRef}
+              className="absolute inset-0 w-full h-full"
+              src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+              title="Adnexus Demo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+
+            {/* Subtle Scan Lines */}
+            <div className="absolute inset-0 pointer-events-none opacity-5">
+              <div className="h-full w-full" style={{
+                backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(255,255,255,0.03) 1px, rgba(255,255,255,0.03) 2px)',
+              }} />
             </div>
 
-            {/* TV Controls (decorative) */}
-            <div className="absolute bottom-4 right-4 flex gap-2">
-              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-              <div className="w-3 h-3 bg-zinc-600 rounded-full" />
+            {/* Video Controls */}
+            <div className="absolute bottom-4 left-4 flex items-center gap-2">
+              <button
+                onClick={() => setIsMuted(!isMuted)}
+                className="flex items-center gap-2 bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full hover:bg-black/70 transition"
+              >
+                {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white" />}
+                <span className="text-xs text-white/80 font-medium">{isMuted ? 'Unmute' : 'Mute'}</span>
+              </button>
             </div>
+
+            {/* Corner Accent */}
+            <div className="absolute top-4 left-4 flex items-center gap-2 bg-black/50 backdrop-blur-sm px-3 py-1.5 rounded-full">
+              <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+              <span className="text-xs text-white/80 font-medium">LIVE DEMO</span>
+            </div>
+          </div>
+
+          {/* Clean Caption Below Video */}
+          <div className="text-center mt-8">
+            <h2 className="text-3xl font-bold text-white mb-2">See Adnexus in Action</h2>
+            <p className="text-white/70">Experience the future of TV advertising</p>
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-          <ChevronRight className="h-8 w-8 rotate-90" />
+        {/* Elegant Scroll Indicator - Darker */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <div className="flex flex-col items-center gap-2 text-slate-600">
+            <span className="text-xs uppercase tracking-wider">Scroll to explore</span>
+            <ChevronRight className="h-5 w-5 rotate-90 animate-bounce" />
+          </div>
         </div>
       </section>
+
+      {/* Picture-in-Picture Video */}
+      {isPiP && (
+        <div className="fixed bottom-4 right-4 z-50 shadow-2xl" ref={pipContainerRef}>
+          <div className="relative w-80 aspect-video bg-black rounded-lg overflow-hidden ring-1 ring-white/10">
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+              title="Adnexus Demo PiP"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+
+            {/* PiP Controls */}
+            <div className="absolute bottom-2 left-2 flex items-center gap-2">
+              <button
+                onClick={() => setIsMuted(!isMuted)}
+                className="p-1.5 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition"
+              >
+                {isMuted ? <VolumeX className="h-3 w-3 text-white" /> : <Volume2 className="h-3 w-3 text-white" />}
+              </button>
+              <button
+                onClick={() => {
+                  setIsPiP(false);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                className="p-1.5 bg-black/50 backdrop-blur-sm rounded-full hover:bg-black/70 transition"
+              >
+                <Maximize2 className="h-3 w-3 text-white" />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Hero Section */}
       <section className="py-20 px-4 overflow-hidden">
@@ -193,19 +300,20 @@ const NewIndex = () => {
             </p>
 
             <div className="max-w-md mx-auto mb-8">
-              <div className="flex gap-2">
+              <form onSubmit={handleEmailSubmit} className="flex gap-2">
                 <Input
                   type="email"
                   placeholder="What's your work email?"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="flex-1"
+                  required
                 />
-                <Button size="lg" className="px-8">
+                <Button type="submit" size="lg" className="px-8">
                   Get started
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </div>
+              </form>
             </div>
 
             <div className="flex items-center justify-center gap-1 text-sm text-muted-foreground mb-12">
@@ -214,7 +322,7 @@ const NewIndex = () => {
                   <Star key={i} className="h-4 w-4 fill-yellow-500 text-yellow-500" />
                 ))}
               </div>
-              <span>Rated 4.8 out of 5 on G2</span>
+              <span>5.0 on Trustpilot</span>
             </div>
 
             {/* Channel logos ticker */}
@@ -364,7 +472,7 @@ const NewIndex = () => {
                 <Star key={i} className="h-4 w-4 fill-white" />
               ))}
             </div>
-            <span>Rated 4.8 out of 5 on G2</span>
+            <span>5.0 on Trustpilot</span>
           </div>
         </div>
       </section>

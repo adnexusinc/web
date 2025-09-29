@@ -439,7 +439,7 @@ const PricingPage = () => {
                 <Star key={i} className="h-4 w-4 fill-yellow-500 text-yellow-500" />
               ))}
             </div>
-            <span>Rated 4.8 out of 5 on G2</span>
+            <span>5.0 on Trustpilot</span>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
