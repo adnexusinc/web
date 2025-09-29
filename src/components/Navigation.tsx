@@ -3,14 +3,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
@@ -32,7 +24,6 @@ import {
   ChevronDown,
   Menu,
   X,
-  LogIn,
   Building2
 } from "lucide-react";
 
@@ -236,37 +227,35 @@ export const Navigation = () => {
 
           <div className="flex items-center gap-4">
             <div className="hidden md:flex items-center gap-4">
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" size="sm" className="flex items-center gap-1">
-                    <LogIn className="h-4 w-4" />
-                    Sign In
-                    <ChevronDown className="h-3 w-3" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-56">
-                  <DropdownMenuLabel>Choose Platform</DropdownMenuLabel>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem asChild>
-                    <a href="https://dsp.ad.nexus" className="flex items-center gap-2 cursor-pointer">
-                      <Building2 className="h-4 w-4" />
-                      <div>
-                        <div className="font-medium">Login to DSP</div>
-                        <div className="text-xs text-muted-foreground">Demand-Side Platform</div>
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="bg-transparent h-9 px-4 py-2">
+                      Sign In
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <div className="w-56 p-2">
+                        <div className="px-2 py-1.5 text-sm font-semibold">Choose Platform</div>
+                        <div className="h-px bg-border my-1" />
+                        <a href="https://dsp.ad.nexus" className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-accent transition-colors">
+                          <Building2 className="h-4 w-4" />
+                          <div>
+                            <div className="font-medium">Login to DSP</div>
+                            <div className="text-xs text-muted-foreground">Demand-Side Platform</div>
+                          </div>
+                        </a>
+                        <a href="https://ssp.ad.nexus" className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-accent transition-colors">
+                          <Globe className="h-4 w-4" />
+                          <div>
+                            <div className="font-medium">Login to SSP</div>
+                            <div className="text-xs text-muted-foreground">Supply-Side Platform</div>
+                          </div>
+                        </a>
                       </div>
-                    </a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem asChild>
-                    <a href="https://ssp.ad.nexus" className="flex items-center gap-2 cursor-pointer">
-                      <Globe className="h-4 w-4" />
-                      <div>
-                        <div className="font-medium">Login to SSP</div>
-                        <div className="text-xs text-muted-foreground">Supply-Side Platform</div>
-                      </div>
-                    </a>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
               <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
                 <Button size="sm" className="group">
                   Book a Demo
