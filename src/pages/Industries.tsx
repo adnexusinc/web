@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Navigation } from '@/components/Navigation';
 import { Link } from 'react-router-dom';
 import {
   ShoppingCart,
@@ -101,8 +102,9 @@ const IndustriesPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Navigation />
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative pt-36 pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/5 to-background" />
         <div className="container relative mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -114,7 +116,7 @@ const IndustriesPage = () => {
               industry-specific targeting and optimization.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/agency/retainer">
+              <Link to="/agency">
                 <Button size="lg" className="w-full sm:w-auto">
                   Get Started
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -168,7 +170,7 @@ const IndustriesPage = () => {
                     ))}
                   </ul>
 
-                  <Link to="/agency/retainer">
+                  <Link to="/agency">
                     <Button variant="outline" size="sm" className="w-full">
                       Learn More
                       <ArrowRight className="ml-2 h-3 w-3" />
@@ -217,7 +219,7 @@ const IndustriesPage = () => {
             results with Adnexus TV advertising.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/agency/retainer">
+            <Link to="/agency">
               <Button size="lg">
                 Start Your Campaign
                 <ArrowRight className="ml-2 h-4 w-4" />

@@ -99,7 +99,7 @@ const ServicesPage = () => {
               powered by AI and backed by human expertise.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/agency/retainer">
+              <Link to="/agency">
                 <Button size="lg" className="w-full sm:w-auto">
                   Start with $9,999/mo Retainer
                 </Button>
@@ -157,7 +157,7 @@ const ServicesPage = () => {
             Join leading brands who trust Adnexus to deliver exceptional results through
             programmatic excellence.
           </p>
-          <Link to="/agency/retainer">
+          <Link to="/agency">
             <Button size="lg">
               Get Started Today
             </Button>

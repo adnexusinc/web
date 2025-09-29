@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { Navigation } from '@/components/Navigation';
 import { ArrowLeft, ArrowRight, Target, BarChart3, Zap, Users, Globe, Shield, TrendingUp, Eye, MousePointer, Star, CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -86,15 +87,7 @@ const Advertisers = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <div className="container mx-auto px-6 py-8">
-        <Link to="/">
-          <Button variant="ghost" className="mb-8">
-            <ArrowLeft className="mr-2" />
-            Back to Home
-          </Button>
-        </Link>
-      </div>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-16">

@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { 
-  Tv, 
-  DollarSign, 
-  Shield, 
-  Target, 
-  TrendingUp, 
-  Users, 
+import { Navigation } from '@/components/Navigation';
+import {
+  Tv,
+  DollarSign,
+  Shield,
+  Target,
+  TrendingUp,
+  Users,
   CheckCircle,
-  ArrowLeft,
   Star,
   Award
 } from 'lucide-react';
@@ -56,19 +56,10 @@ const Inventory = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <div className="container mx-auto px-6 py-8">
-        <Link 
-          to="/" 
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
-        >
-          <ArrowLeft size={20} />
-          Back to Home
-        </Link>
-      </div>
+      <Navigation />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-6 -mt-24 pt-24">
+      <section className="min-h-screen flex items-center justify-center px-6 pt-20">
         <div className="container mx-auto text-center">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">

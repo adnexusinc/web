@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -19,11 +19,14 @@ import {
   Check,
   Play,
   ChevronRight,
-  Star
+  Star,
+  Phone
 } from 'lucide-react';
 
 const NewIndex = () => {
   const [email, setEmail] = useState('');
+  const [showStatic, setShowStatic] = useState(false);
+  const videoRef = useRef<HTMLDivElement>(null);
 
   const channels = [
     'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV',
@@ -98,13 +101,86 @@ const NewIndex = () => {
     }
   ];
 
+  // TV static effect on loop
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowStatic(true);
+      setTimeout(() => setShowStatic(false), 200);
+    }, 30000); // Show static every 30 seconds (video loop)
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <Navigation />
 
+      {/* Phone Number Banner */}
+      <div className="bg-primary text-primary-foreground py-2 text-center">
+        <a href="tel:1-844-236-3987" className="flex items-center justify-center gap-2 hover:opacity-90 transition">
+          <Phone className="h-4 w-4" />
+          <span className="font-semibold">Call us: +1 844 AD-NEXUS (844-236-3987)</span>
+        </a>
+      </div>
+
+      {/* Video Hero Section */}
+      <section className="relative h-screen flex items-center justify-center bg-black overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center p-8">
+          {/* TV Frame */}
+          <div className="relative w-full max-w-6xl aspect-video">
+            {/* Retro TV Border */}
+            <div className="absolute inset-0 bg-gradient-to-b from-zinc-800 to-zinc-900 rounded-3xl p-8 shadow-2xl">
+              <div className="relative w-full h-full bg-black rounded-2xl overflow-hidden">
+                {/* Static Effect Overlay */}
+                {showStatic && (
+                  <div className="absolute inset-0 z-50 opacity-80">
+                    <div className="h-full w-full bg-gradient-to-b from-transparent via-white to-transparent opacity-20 animate-pulse" />
+                    <div
+                      className="absolute inset-0"
+                      style={{
+                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence baseFrequency='0.9' /%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E")`,
+                        mixBlendMode: 'multiply'
+                      }}
+                    />
+                  </div>
+                )}
+
+                {/* YouTube Video */}
+                <iframe
+                  className="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1"
+                  title="Adnexus Demo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+
+                {/* Scan Lines Effect */}
+                <div className="absolute inset-0 pointer-events-none opacity-20">
+                  <div className="h-full w-full" style={{
+                    backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px)',
+                  }} />
+                </div>
+              </div>
+            </div>
+
+            {/* TV Controls (decorative) */}
+            <div className="absolute bottom-4 right-4 flex gap-2">
+              <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
+              <div className="w-3 h-3 bg-zinc-600 rounded-full" />
+            </div>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+          <ChevronRight className="h-8 w-8 rotate-90" />
+        </div>
+      </section>
+
       {/* Hero Section */}
-      <section className="pt-36 pb-20 px-4 overflow-hidden">
+      <section className="py-20 px-4 overflow-hidden">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center">
             <h1 className="text-5xl lg:text-7xl font-bold mb-6">
@@ -320,7 +396,7 @@ const NewIndex = () => {
             <div>
               <h3 className="font-semibold mb-4">Resources</h3>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link to="/agency/retainer" className="hover:text-foreground">Pricing</Link></li>
+                <li><Link to="/agency" className="hover:text-foreground">Pricing</Link></li>
                 <li><Link to="/case-studies" className="hover:text-foreground">Case Studies</Link></li>
                 <li><Link to="/resources" className="hover:text-foreground">Blog</Link></li>
                 <li><a href="https://cal.com/adnexus" className="hover:text-foreground">Book Demo</a></li>

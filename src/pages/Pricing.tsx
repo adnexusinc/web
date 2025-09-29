@@ -382,7 +382,7 @@ const PricingPage = () => {
                       </li>
                     </ul>
 
-                    <Link to="/agency/retainer">
+                    <Link to="/agency">
                       <Button size="lg" className="w-full">
                         Start Your Premium Experience
                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -443,7 +443,7 @@ const PricingPage = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/agency/retainer">
+            <Link to="/agency">
               <Button size="lg">
                 Get started
                 <ArrowRight className="ml-2 h-4 w-4" />

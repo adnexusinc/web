@@ -86,7 +86,7 @@ const App = () => (
           <Route path="/case-study/trillerfest" element={<TrillerFest />} />
           <Route path="/case-study/unikoin-gold" element={<UnikoinGold />} />
           {/* Agency Routes */}
-          <Route path="/agency/retainer" element={<RetainerPage />} />
+          <Route path="/agency" element={<RetainerPage />} />
           <Route path="/agency/services" element={<ServicesPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

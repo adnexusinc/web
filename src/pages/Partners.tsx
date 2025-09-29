@@ -1,23 +1,16 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Network, Globe, Users } from 'lucide-react';
+import { Navigation } from '@/components/Navigation';
+import { Network, Globe, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Partners = () => {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <div className="container mx-auto px-6 py-8">
-        <Link to="/">
-          <Button variant="ghost" className="mb-8">
-            <ArrowLeft className="mr-2" />
-            Back to Home
-          </Button>
-        </Link>
-      </div>
+      <Navigation />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-6 -mt-24 pt-24">
+      <section className="min-h-screen flex items-center justify-center px-6 pt-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6 text-gradient">
             For AdNetworks & RTB Partners

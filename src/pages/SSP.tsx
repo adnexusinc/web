@@ -1,19 +1,14 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, TrendingUp, Zap, Shield, Play, Monitor, Smartphone, Tv } from 'lucide-react';
+import { Navigation } from '@/components/Navigation';
+import { TrendingUp, Zap, Shield, Play, Monitor, Smartphone, Tv } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const SSP = () => {
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-6 py-12">
-        <Link to="/">
-          <Button variant="ghost" className="mb-8">
-            <ArrowLeft className="mr-2" />
-            Back to Home
-          </Button>
-        </Link>
-
+      <Navigation />
+      <div className="container mx-auto px-6 pt-36 pb-12">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <section className="min-h-screen flex items-center justify-center -mt-12 pt-12">

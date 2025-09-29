@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ArrowRight, TrendingUp, DollarSign, Shield, BarChart3, Zap, Globe, Users, CheckCircle, Star, Target } from 'lucide-react';
+import { Navigation } from '@/components/Navigation';
+import { ArrowRight, TrendingUp, DollarSign, Shield, BarChart3, Zap, Globe, Users, CheckCircle, Star, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Publishers = () => {
@@ -124,18 +125,10 @@ const Publishers = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <div className="container mx-auto px-6 py-8">
-        <Link to="/">
-          <Button variant="ghost" className="mb-8">
-            <ArrowLeft className="mr-2" />
-            Back to Home
-          </Button>
-        </Link>
-      </div>
+      <Navigation />
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-6">
+      <section className="min-h-screen flex items-center justify-center px-6 pt-20">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Maximize Your <span className="text-gradient">Ad Revenue</span>
