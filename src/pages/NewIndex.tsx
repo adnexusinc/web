@@ -323,10 +323,8 @@ const NewIndex = () => {
 
   const handleMouseUp = (e: MouseEvent) => {
     if (isDragging) {
-      // If not dragged (just clicked), open phone call
-      if (!hasDragged) {
-        window.location.href = 'tel:+18442363987';
-      } else {
+      // Only snap if dragged, don't trigger phone call on click
+      if (hasDragged) {
         // Calculate velocity
         const currentTime = Date.now();
         const timeDelta = currentTime - lastMousePosition.time;
