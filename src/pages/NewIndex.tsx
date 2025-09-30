@@ -477,22 +477,10 @@ const NewIndex = () => {
                   e.stopPropagation();
                   setIsMuted(!isMuted);
                 }}
-                className="flex items-center gap-2 backdrop-blur-md px-4 py-2 rounded-full transition-all duration-300 border"
-                style={{
-                  backgroundColor: '#eee',
-                  borderColor: '#eee'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#fff';
-                  e.currentTarget.style.borderColor = '#fff';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#eee';
-                  e.currentTarget.style.borderColor = '#eee';
-                }}
+                className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full hover:bg-black transition-all duration-300 border border-white/10"
               >
-                {isMuted ? <VolumeX className="h-4 w-4 text-black" /> : <Volume2 className="h-4 w-4 text-black" />}
-                <span className="text-xs text-black font-medium tracking-wider uppercase">{isMuted ? 'Unmute' : 'Mute'}</span>
+                {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white" />}
+                <span className="text-xs text-white/90 font-medium tracking-wider uppercase">{isMuted ? 'Unmute' : 'Mute'}</span>
               </button>
 
               <button
@@ -507,22 +495,10 @@ const NewIndex = () => {
                     }
                   }
                 }}
-                className="flex items-center gap-2 backdrop-blur-md px-4 py-2 rounded-full transition-all duration-300 border"
-                style={{
-                  backgroundColor: '#eee',
-                  borderColor: '#eee'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#fff';
-                  e.currentTarget.style.borderColor = '#fff';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#eee';
-                  e.currentTarget.style.borderColor = '#eee';
-                }}
+                className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full hover:bg-black transition-all duration-300 border border-white/10"
               >
-                <Maximize className="h-4 w-4 text-black" />
-                <span className="text-xs text-black font-medium tracking-wider uppercase">Fullscreen</span>
+                <Maximize className="h-4 w-4 text-white" />
+                <span className="text-xs text-white/90 font-medium tracking-wider uppercase">Fullscreen</span>
               </button>
             </div>
 
@@ -638,22 +614,10 @@ const NewIndex = () => {
                   e.stopPropagation();
                   setIsMuted(!isMuted);
                 }}
-                className="relative p-2.5 backdrop-blur-md rounded-full transition-all duration-300 shadow-lg hover:scale-110 border"
-                style={{
-                  backgroundColor: '#eee',
-                  borderColor: '#eee'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#fff';
-                  e.currentTarget.style.borderColor = '#fff';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#eee';
-                  e.currentTarget.style.borderColor = '#eee';
-                }}
+                className="relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-black transition-all duration-300 shadow-lg hover:scale-110 border border-white/10"
                 title={isMuted ? 'Unmute' : 'Mute'}
               >
-                {isMuted ? <VolumeX className="h-4 w-4 text-black" /> : <Volume2 className="h-4 w-4 text-black" />}
+                {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white" />}
               </button>
 
               {/* Size Toggle - cycles through normal -> double -> fullscreen -> normal */}
@@ -668,25 +632,13 @@ const NewIndex = () => {
                     setPipSize('normal');
                   }
                 }}
-                className="relative p-2.5 backdrop-blur-md rounded-full transition-all duration-300 shadow-lg hover:scale-110 border"
-                style={{
-                  backgroundColor: '#eee',
-                  borderColor: '#eee'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#fff';
-                  e.currentTarget.style.borderColor = '#fff';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#eee';
-                  e.currentTarget.style.borderColor = '#eee';
-                }}
+                className="relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-black transition-all duration-300 shadow-lg hover:scale-110 border border-white/10"
                 title={pipSize === 'fullscreen' ? 'Normal Size' : pipSize === 'double' ? 'Fullscreen' : 'Double Size'}
               >
                 {pipSize === 'fullscreen' ? (
-                  <Minimize2 className="h-4 w-4 text-black" />
+                  <Minimize2 className="h-4 w-4 text-white" />
                 ) : (
-                  <Maximize2 className="h-4 w-4 text-black" />
+                  <Maximize2 className="h-4 w-4 text-white" />
                 )}
               </button>
 
@@ -696,22 +648,10 @@ const NewIndex = () => {
                   e.stopPropagation();
                   setShowPiP(false);
                 }}
-                className="relative p-2.5 backdrop-blur-md rounded-full transition-all duration-300 shadow-lg hover:scale-110 border"
-                style={{
-                  backgroundColor: '#eee',
-                  borderColor: '#eee'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#fff';
-                  e.currentTarget.style.borderColor = '#fff';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#eee';
-                  e.currentTarget.style.borderColor = '#eee';
-                }}
+                className="relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-red-600 transition-all duration-300 shadow-lg hover:scale-110 border border-white/10"
                 title="Close"
               >
-                <X className="h-4 w-4 text-black" />
+                <X className="h-4 w-4 text-white group-hover:rotate-90 transition-transform duration-300" />
               </button>
             </div>
 
