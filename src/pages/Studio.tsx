@@ -81,9 +81,12 @@ const Studio = () => {
 
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) {
-      window.location.href = `https://dsp.ad.nexus?email=${encodeURIComponent(email)}&source=studio`;
-    }
+    // Redirect directly to Studio app
+    window.location.href = 'https://studio.ad.nexus';
+  };
+
+  const handleStartCreating = () => {
+    window.location.href = 'https://studio.ad.nexus';
   };
 
   return (
@@ -123,20 +126,10 @@ const Studio = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <form onSubmit={handleEmailSubmit} className="flex gap-2 max-w-md">
-                <Input
-                  type="email"
-                  placeholder="Enter your work email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 rounded-full"
-                  required
-                />
-                <Button type="submit" size="lg" className="rounded-full">
-                  Start Creating
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </form>
+              <Button onClick={handleStartCreating} size="lg" className="rounded-full">
+                Start Creating Free
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
             </div>
 
             <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
@@ -286,22 +279,12 @@ const Studio = () => {
             Join thousands of brands creating professional CTV ads with Adnexus Studio
           </p>
 
-          <form onSubmit={handleEmailSubmit} className="max-w-md mx-auto mb-8">
-            <div className="flex gap-2">
-              <Input
-                type="email"
-                placeholder="Enter your work email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 bg-white text-black"
-                required
-              />
-              <Button size="lg" variant="secondary">
-                Get Started Free
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
-          </form>
+          <div className="mb-8">
+            <Button onClick={handleStartCreating} size="lg" variant="secondary">
+              Launch Studio
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </div>
 
           <p className="text-sm opacity-75">
             No credit card required • 100+ free templates • Deploy to 500+ channels
