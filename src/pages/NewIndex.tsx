@@ -40,7 +40,16 @@ const NewIndex = () => {
   const [isPiP, setIsPiP] = useState(false);
   const [showPiP, setShowPiP] = useState(true); // Control PiP visibility
   const [pipSize, setPipSize] = useState<'normal' | 'double' | 'fullscreen'>('normal'); // PiP size mode
-  const [pipPosition, setPipPosition] = useState({ x: 0, y: 0 });
+  // Initialize PiP position to bottom-right
+  const [pipPosition, setPipPosition] = useState(() => {
+    const pipWidth = 384; // w-96 base width
+    const pipHeight = pipWidth * 9 / 16;
+    const margin = 24;
+    return {
+      x: typeof window !== 'undefined' ? window.innerWidth - pipWidth - margin : 0,
+      y: typeof window !== 'undefined' ? window.innerHeight - pipHeight - margin : 0
+    };
+  });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const [lastMousePosition, setLastMousePosition] = useState({ x: 0, y: 0, time: 0 });
@@ -387,8 +396,11 @@ const NewIndex = () => {
             {/* Underlit glow effect behind video - extended beyond edges */}
             <div className="absolute -inset-16 bg-gradient-radial from-white/30 via-white/10 to-transparent blur-3xl opacity-60" />
 
-            {/* Outer glow ring */}
-            <div className="absolute -inset-1 rounded-[30px] bg-gradient-to-r from-white/40 via-white/20 to-white/40 opacity-75 blur-xl animate-pulse" />
+            {/* Outer glow ring - enhanced */}
+            <div className="absolute -inset-1 rounded-[30px] bg-gradient-to-r from-white/60 via-white/40 to-white/60 opacity-90 blur-xl animate-pulse" />
+
+            {/* Border glow frame */}
+            <div className="absolute inset-0 rounded-[30px] border-2 border-white/20 shadow-[0_0_30px_rgba(255,255,255,0.3)]" />
 
             {/* Inner frame with glass effect */}
             <div className="absolute inset-0 pointer-events-none z-10">
@@ -448,7 +460,7 @@ const NewIndex = () => {
 
               <button
                 onClick={() => {
-                  const elem = document.querySelector('.hero-section');
+                  const elem = document.getElementById('video-section');
                   if (elem) {
                     if (document.fullscreenElement) {
                       document.exitFullscreen();
