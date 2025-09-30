@@ -3,7 +3,7 @@ import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Phone, Mail, MapPin, MessageSquare, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageSquare, Clock, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -27,7 +27,7 @@ const Contact = () => {
       {/* Contact Methods */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <Phone className="h-10 w-10 text-primary mb-4" />
@@ -55,11 +55,31 @@ const Contact = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <a href="mailto:hello@ad.nexus" className="text-xl font-bold hover:text-primary transition-colors">
-                  hello@ad.nexus
+                <a href="mailto:support@ad.nexus" className="text-xl font-bold hover:text-primary transition-colors">
+                  support@ad.nexus
                 </a>
                 <p className="text-sm text-muted-foreground mt-2">
-                  For general inquiries
+                  For support and inquiries
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <MessageCircle className="h-10 w-10 text-primary mb-4" />
+                <CardTitle>WhatsApp</CardTitle>
+                <CardDescription>
+                  Instant messaging support
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <a href="https://wa.me/18442363987" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-green-600 hover:bg-green-700">
+                    Chat on WhatsApp
+                  </Button>
+                </a>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Fast response guaranteed
                 </p>
               </CardContent>
             </Card>
@@ -147,9 +167,9 @@ const Contact = () => {
                 Call: +1 844 AD-NEXUS
               </Button>
             </a>
-            <a href="mailto:hello@ad.nexus">
+            <a href="mailto:support@ad.nexus">
               <Button size="lg" variant="outline">
-                Email: hello@ad.nexus
+                Email: support@ad.nexus
               </Button>
             </a>
           </div>

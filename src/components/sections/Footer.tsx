@@ -47,13 +47,13 @@ export const Footer = () => {
       ]
     },
     resources: {
-      title: "Resources & Company",
+      title: "Resources & Support",
       links: [
-        { text: "Resources Hub", href: "/resources" },
+        { text: "FAQ", href: "/faq" },
+        { text: "Contact Support", href: "/contact" },
         { text: "About Us", href: "/about" },
-        { text: "Leadership Team", href: "/company" },
-        { text: "Inventory List", href: "/inventory" },
-        { text: "Contact Us", href: "/auth" }
+        { text: "Resources Hub", href: "/resources" },
+        { text: "Pricing", href: "/pricing" }
       ]
     }
   };
@@ -156,17 +156,22 @@ export const Footer = () => {
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-center gap-3">
+                  <Phone className="w-5 h-5 text-primary" />
+                  <a href="tel:+18442363987" className="text-foreground hover:text-primary transition-colors">
+                    +1 844 AD-NEXUS (844-236-3987)
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-primary" />
-                  <a href="mailto:hi@ad.nexus" className="text-foreground hover:text-primary transition-colors">
-                    hi@ad.nexus
+                  <a href="mailto:support@ad.nexus" className="text-foreground hover:text-primary transition-colors">
+                    support@ad.nexus
                   </a>
                 </div>
                 <div className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-primary mt-0.5" />
                   <div className="text-muted-foreground">
                     <div>New York, NY</div>
-                    <div>San Francisco, CA</div>
-                    <div>London, UK</div>
+                    <div>United States</div>
                   </div>
                 </div>
               </div>

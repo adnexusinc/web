@@ -48,6 +48,7 @@ import CreativeServices from "./pages/services/CreativeServices";
 import MarketingServices from "./pages/services/MarketingServices";
 import SpecializedProduction from "./pages/services/SpecializedProduction";
 import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
 
 const queryClient = new QueryClient();
 
@@ -101,8 +102,11 @@ const App = () => (
           <Route path="/services/creative" element={<CreativeServices />} />
           <Route path="/services/marketing" element={<MarketingServices />} />
           <Route path="/services/production" element={<SpecializedProduction />} />
-          {/* Contact */}
+          {/* Support Pages */}
           <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/help" element={<FAQ />} />
+          <Route path="/support" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -106,9 +106,9 @@ export const ServiceTemplate: React.FC<ServiceTemplateProps> = ({
                 Call: +1 844 AD-NEXUS (844-236-3987)
               </Button>
             </a>
-            <a href="mailto:hello@ad.nexus">
+            <a href="mailto:support@ad.nexus">
               <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                Email: hello@ad.nexus
+                Email: support@ad.nexus
               </Button>
             </a>
           </div>
