@@ -158,6 +158,26 @@ const NewIndex = () => {
     setVideoSrc(`https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${muteParam}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`);
   }, [isMuted]);
 
+  // Grid-based snapping for PiP
+  const GRID_SIZE = 40; // 40px grid cells
+  const PIP_WIDTH = 384; // w-96 = 384px
+  const PIP_MARGIN = 24; // Minimum margin from edges
+
+  const snapToGrid = (x: number, y: number) => {
+    // Snap to grid
+    const snappedX = Math.round(x / GRID_SIZE) * GRID_SIZE;
+    const snappedY = Math.round(y / GRID_SIZE) * GRID_SIZE;
+
+    // Ensure minimum margin from edges and keep visible
+    const maxX = window.innerWidth - PIP_WIDTH - PIP_MARGIN;
+    const maxY = window.innerHeight - (PIP_WIDTH * 9 / 16) - PIP_MARGIN; // aspect-video height
+
+    return {
+      x: Math.max(PIP_MARGIN, Math.min(snappedX, maxX)),
+      y: Math.max(PIP_MARGIN, Math.min(snappedY, maxY))
+    };
+  };
+
   // Handle PiP dragging
   const handleMouseDown = (e: React.MouseEvent) => {
     if (isFullscreenPiP) return;
@@ -173,17 +193,22 @@ const NewIndex = () => {
     const newX = e.clientX - dragStart.x;
     const newY = e.clientY - dragStart.y;
 
-    // Constrain to viewport
-    const maxX = window.innerWidth - 320; // PiP width
-    const maxY = window.innerHeight - 180; // PiP height
+    // Update position while dragging (no snap yet)
+    const maxX = window.innerWidth - PIP_WIDTH - PIP_MARGIN;
+    const maxY = window.innerHeight - (PIP_WIDTH * 9 / 16) - PIP_MARGIN;
 
     setPipPosition({
-      x: Math.max(0, Math.min(newX, maxX)),
-      y: Math.max(0, Math.min(newY, maxY))
+      x: Math.max(PIP_MARGIN, Math.min(newX, maxX)),
+      y: Math.max(PIP_MARGIN, Math.min(newY, maxY))
     });
   };
 
   const handleMouseUp = () => {
+    if (isDragging) {
+      // Snap to grid when released
+      const snapped = snapToGrid(pipPosition.x, pipPosition.y);
+      setPipPosition(snapped);
+    }
     setIsDragging(false);
   };
 
@@ -198,12 +223,12 @@ const NewIndex = () => {
     }
   }, [isDragging, dragStart, pipPosition, isFullscreenPiP]);
 
-  // Initialize PiP position to bottom-right
+  // Initialize PiP position to bottom-right on grid
   useEffect(() => {
-    setPipPosition({
-      x: window.innerWidth - 336, // 320px width + 16px margin
-      y: window.innerHeight - 196 // 180px height + 16px margin
-    });
+    const defaultX = window.innerWidth - PIP_WIDTH - PIP_MARGIN;
+    const defaultY = window.innerHeight - (PIP_WIDTH * 9 / 16) - PIP_MARGIN;
+    const snapped = snapToGrid(defaultX, defaultY);
+    setPipPosition(snapped);
   }, []);
 
   return (
@@ -332,15 +357,15 @@ const NewIndex = () => {
       {isPiP && showPiP && (
         <div
           ref={pipContainerRef}
-          className={`fixed z-50 transition-all duration-500 ease-out ${
-            isFullscreenPiP ? 'inset-0 bg-black/98 backdrop-blur-xl' : ''
-          } ${isDragging ? 'cursor-grabbing scale-105' : 'cursor-grab hover:scale-105'}`}
+          className={`fixed z-50 transition-all ease-out ${
+            isFullscreenPiP ? 'inset-0 bg-black/98 backdrop-blur-xl duration-500' : isDragging ? 'duration-75' : 'duration-300'
+          } ${isDragging ? 'cursor-grabbing scale-105 shadow-2xl' : 'cursor-grab hover:scale-105'}`}
           style={
             !isFullscreenPiP
               ? {
                   left: `${pipPosition.x}px`,
                   top: `${pipPosition.y}px`,
-                  filter: isDragging ? 'brightness(1.1)' : 'brightness(1)',
+                  filter: isDragging ? 'brightness(1.1) drop-shadow(0 20px 40px rgba(0,0,0,0.5))' : 'brightness(1)',
                 }
               : {}
           }
