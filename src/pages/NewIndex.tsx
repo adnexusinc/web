@@ -401,7 +401,7 @@ const NewIndex = () => {
 
       {/* Video Hero Section - Pure Black Cinematic with Gradient */}
       <section id="video-section" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{
-        background: 'radial-gradient(ellipse at center center, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%)',
+        background: 'radial-gradient(ellipse 120% 80% at center center, rgba(45,45,45,1) 0%, rgba(20,20,20,1) 35%, rgba(0,0,0,1) 70%)',
         paddingTop: showPhoneBanner ? '120px' : '80px' // Dynamic based on banner visibility
       }}>
         {/* Hollywood-style Cinematic Container */}
@@ -412,14 +412,17 @@ const NewIndex = () => {
             onMouseEnter={() => setIsHeroHovered(true)}
             onMouseLeave={() => setIsHeroHovered(false)}
           >
-            {/* Underlit glow effect behind video - extended beyond edges */}
-            <div className="absolute -inset-16 bg-gradient-radial from-white/30 via-white/10 to-transparent blur-3xl opacity-60" />
+            {/* Dramatic underlit glow effect - extended far beyond edges */}
+            <div className="absolute -inset-24 bg-gradient-radial from-white/40 via-white/20 to-transparent blur-[100px] opacity-80" />
 
-            {/* Outer glow ring - enhanced */}
-            <div className="absolute -inset-1 rounded-[30px] bg-gradient-to-r from-white/60 via-white/40 to-white/60 opacity-90 blur-xl animate-pulse" />
+            {/* Secondary glow layer for depth */}
+            <div className="absolute -inset-12 bg-gradient-radial from-white/30 via-white/15 to-transparent blur-[60px] opacity-70" />
 
-            {/* Border glow frame */}
-            <div className="absolute inset-0 rounded-[30px] border-2 border-white/20 shadow-[0_0_30px_rgba(255,255,255,0.3)]" />
+            {/* Outer glow ring - enhanced and more dramatic */}
+            <div className="absolute -inset-2 rounded-[30px] bg-gradient-to-r from-white/80 via-white/60 to-white/80 opacity-100 blur-2xl animate-pulse" />
+
+            {/* Border glow frame - intensified */}
+            <div className="absolute inset-0 rounded-[30px] border-2 border-white/30 shadow-[0_0_60px_rgba(255,255,255,0.5)]" />
 
             {/* Inner frame with glass effect */}
             <div className="absolute inset-0 pointer-events-none z-10">
