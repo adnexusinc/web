@@ -306,10 +306,10 @@ const NewIndex = () => {
             <div className="absolute bottom-6 left-6 flex items-center gap-3 z-30">
               <button
                 onClick={() => setIsMuted(!isMuted)}
-                className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full hover:bg-black transition-all border border-white/10"
+                className="group flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full hover:bg-white transition-all border border-white/10"
               >
-                {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white" />}
-                <span className="text-xs text-white/90 font-medium tracking-wider uppercase">{isMuted ? 'Unmute' : 'Mute'}</span>
+                {isMuted ? <VolumeX className="h-4 w-4 text-white group-hover:text-black transition-colors" /> : <Volume2 className="h-4 w-4 text-white group-hover:text-black transition-colors" />}
+                <span className="text-xs text-white/90 group-hover:text-black font-medium tracking-wider uppercase transition-colors">{isMuted ? 'Unmute' : 'Mute'}</span>
               </button>
 
               <button
@@ -323,10 +323,10 @@ const NewIndex = () => {
                     }
                   }
                 }}
-                className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full hover:bg-black transition-all border border-white/10"
+                className="group flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full hover:bg-white transition-all border border-white/10"
               >
-                <Maximize className="h-4 w-4 text-white" />
-                <span className="text-xs text-white/90 font-medium tracking-wider uppercase">Fullscreen</span>
+                <Maximize className="h-4 w-4 text-white group-hover:text-black transition-colors" />
+                <span className="text-xs text-white/90 group-hover:text-black font-medium tracking-wider uppercase transition-colors">Fullscreen</span>
               </button>
             </div>
 
