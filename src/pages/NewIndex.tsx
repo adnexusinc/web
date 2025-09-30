@@ -34,7 +34,7 @@ import {
 const NewIndex = () => {
   const [email, setEmail] = useState('');
   const [showStatic, setShowStatic] = useState(false);
-  const [showPhoneBanner, setShowPhoneBanner] = useState(true);
+  const [showPhoneBanner, setShowPhoneBanner] = useState(false); // Hidden for now - navbar squishing issue
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMuted, setIsMuted] = useState(true); // Default muted - user must click to unmute
   const [isPiP, setIsPiP] = useState(false);
