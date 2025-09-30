@@ -228,12 +228,16 @@ const NewIndex = () => {
         </div>
       )}
 
-      {/* Video Hero Section - Pure Black Cinematic */}
-      <section id="video-section" className={`relative min-h-screen flex items-center justify-center bg-black overflow-hidden ${showPhoneBanner ? 'pt-10' : ''}`}>
+      {/* Video Hero Section - Pure Black Cinematic with Gradient */}
+      <section id="video-section" className={`relative min-h-screen flex items-center justify-center overflow-hidden ${showPhoneBanner ? 'pt-10' : ''}`} style={{
+        background: 'radial-gradient(ellipse at center top, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%)'
+      }}>
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
-          {/* Cinematic Aspect Ratio with Letterbox Effect */}
-          <div className="relative aspect-[21/9] bg-black rounded-sm overflow-hidden shadow-[0_0_100px_rgba(0,0,0,0.9)]">
+          {/* Cinematic Aspect Ratio with Letterbox Effect + Underlit Glow */}
+          <div className="relative aspect-[21/9] bg-black rounded-sm overflow-hidden">
+            {/* Underlit glow effect behind video */}
+            <div className="absolute -inset-8 bg-gradient-radial from-white/20 via-white/5 to-transparent blur-3xl opacity-40" />
             {/* Cinematic Vignette Overlay */}
             <div className="absolute inset-0 z-20 pointer-events-none"
               style={{
@@ -253,16 +257,28 @@ const NewIndex = () => {
               </div>
             )}
 
-            {/* YouTube Video - Full Bleed */}
-            <iframe
-              ref={videoRef}
-              className="absolute inset-0 w-full h-full scale-105"
-              src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
-              title="Adnexus Demo"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            {/* YouTube Video - Proper 16:9 Aspect Ratio */}
+            <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
+                <iframe
+                  ref={videoRef}
+                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full"
+                  style={{
+                    minWidth: '100%',
+                    minHeight: '100%',
+                    width: '100vw',
+                    height: '56.25vw', /* 16:9 */
+                    maxHeight: '100vh',
+                    maxWidth: '177.78vh', /* 16:9 */
+                  }}
+                  src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+                  title="Adnexus Demo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </div>
+            </div>
 
             {/* Subtle Film Grain Overlay */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.02] z-10">
@@ -327,14 +343,17 @@ const NewIndex = () => {
             className={`relative bg-black overflow-hidden transition-all duration-500 ${
               isFullscreenPiP
                 ? 'w-full h-full'
-                : 'w-96 aspect-video rounded-2xl shadow-[0_0_60px_rgba(139,92,246,0.5),0_20px_40px_rgba(0,0,0,0.8)] hover:shadow-[0_0_80px_rgba(139,92,246,0.7),0_25px_50px_rgba(0,0,0,0.9)]'
+                : 'w-96 aspect-video rounded-2xl'
             }`}
           >
-            {/* Premium TV Frame Effect */}
+            {/* Premium TV Frame Effect with Underlit Glow */}
             {!isFullscreenPiP && (
               <>
+                {/* Underlit radial glow behind PiP - simulates backlight */}
+                <div className="absolute -inset-12 rounded-full bg-gradient-radial from-white/30 via-white/10 to-transparent blur-3xl opacity-60" />
+
                 {/* Outer glow ring */}
-                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-primary via-purple-500 to-primary opacity-75 blur-xl animate-pulse" />
+                <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-white/40 via-white/20 to-white/40 opacity-75 blur-xl animate-pulse" />
 
                 {/* Inner frame with glass effect */}
                 <div className="absolute inset-0 pointer-events-none z-10">
@@ -356,15 +375,20 @@ const NewIndex = () => {
               </>
             )}
 
-            {/* YouTube Video */}
-            <iframe
-              className={`absolute inset-0 w-full h-full ${!isFullscreenPiP ? 'rounded-2xl' : ''}`}
-              src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
-              title="Adnexus Demo PiP"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            {/* YouTube Video - Proper 16:9 Aspect Ratio */}
+            <div className="absolute inset-0 overflow-hidden">
+              <iframe
+                className={`absolute top-0 left-0 w-full h-full object-cover ${!isFullscreenPiP ? 'rounded-2xl' : ''}`}
+                style={{
+                  aspectRatio: '16 / 9',
+                }}
+                src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+                title="Adnexus Demo PiP"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
 
             {/* Enhanced PiP Controls */}
             <div className={`absolute ${isFullscreenPiP ? 'bottom-10 left-10' : 'bottom-3 left-3'} flex items-center gap-2 z-20`}>
