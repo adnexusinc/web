@@ -397,12 +397,12 @@ const NewIndex = () => {
       )}
 
       {/* Navigation - Will render below banner automatically */}
-      <Navigation />
+      <Navigation bannerVisible={showPhoneBanner} />
 
       {/* Video Hero Section - Pure Black Cinematic with Gradient */}
       <section id="video-section" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{
         background: 'radial-gradient(ellipse at center center, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%)',
-        paddingTop: '120px' // 40px banner + 64px navbar + 16px spacing
+        paddingTop: showPhoneBanner ? '120px' : '80px' // Dynamic based on banner visibility
       }}>
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">

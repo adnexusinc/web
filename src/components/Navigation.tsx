@@ -152,7 +152,11 @@ const ListItem = React.forwardRef<
 });
 ListItem.displayName = "ListItem";
 
-export const Navigation = () => {
+interface NavigationProps {
+  bannerVisible?: boolean;
+}
+
+export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -169,7 +173,7 @@ export const Navigation = () => {
       "fixed left-0 right-0 z-40 transition-all duration-300",
       isScrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"
     )}
-    style={{ top: '40px' }} // Position below 40px phone banner
+    style={{ top: bannerVisible ? '40px' : '0' }}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
