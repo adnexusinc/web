@@ -56,6 +56,8 @@ const NewIndex = () => {
   const [hasDragged, setHasDragged] = useState(false);
   const [videoSrc, setVideoSrc] = useState('');
   const [heroVideoPlaying, setHeroVideoPlaying] = useState(true);
+  const [isHeroHovered, setIsHeroHovered] = useState(false);
+  const [isPipHovered, setIsPipHovered] = useState(false);
   const videoRef = useRef<HTMLIFrameElement>(null);
   const heroVideoRef = useRef<HTMLIFrameElement>(null);
   const pipContainerRef = useRef<HTMLDivElement>(null);
@@ -407,7 +409,11 @@ const NewIndex = () => {
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
           {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow */}
-          <div className="relative aspect-video bg-black rounded-[30px] overflow-hidden">
+          <div
+            className="relative aspect-video bg-black rounded-[30px] overflow-hidden group"
+            onMouseEnter={() => setIsHeroHovered(true)}
+            onMouseLeave={() => setIsHeroHovered(false)}
+          >
             {/* Underlit glow effect behind video - extended beyond edges */}
             <div className="absolute -inset-16 bg-gradient-radial from-white/30 via-white/10 to-transparent blur-3xl opacity-60" />
 
@@ -463,8 +469,8 @@ const NewIndex = () => {
               }} />
             </div>
 
-            {/* Minimalist Video Controls */}
-            <div className="absolute bottom-6 left-6 flex items-center gap-3 z-30">
+            {/* Minimalist Video Controls - Fade in on hover */}
+            <div className={`absolute bottom-6 left-6 flex items-center gap-3 z-30 transition-opacity duration-300 ${isHeroHovered ? 'opacity-100' : 'opacity-0'}`}>
               <button
                 onClick={() => setIsMuted(!isMuted)}
                 className="group flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full hover:bg-white transition-all border border-white/10"
@@ -518,7 +524,7 @@ const NewIndex = () => {
       {isPiP && showPiP && (
         <div
           ref={pipContainerRef}
-          className={`fixed z-50 transition-all ease-out ${
+          className={`fixed z-50 transition-all ease-out group ${
             pipSize === 'fullscreen' ? 'inset-0 bg-black/98 backdrop-blur-xl duration-500' : isDragging ? 'duration-75' : 'duration-300'
           } ${isDragging ? 'cursor-grabbing scale-105 shadow-2xl' : pipSize === 'fullscreen' ? '' : 'cursor-grab hover:scale-105'}`}
           style={
@@ -531,6 +537,8 @@ const NewIndex = () => {
               : {}
           }
           onMouseDown={handleMouseDown}
+          onMouseEnter={() => setIsPipHovered(true)}
+          onMouseLeave={() => setIsPipHovered(false)}
         >
           <div
             className={`relative bg-black overflow-hidden transition-all duration-500 ${
@@ -590,8 +598,8 @@ const NewIndex = () => {
               <div className="absolute inset-0 z-5" />
             </div>
 
-            {/* Enhanced PiP Controls - Clean and minimal */}
-            <div className={`absolute ${pipSize === 'fullscreen' ? 'bottom-10' : 'bottom-3'} ${pipSize === 'fullscreen' ? 'right-10' : 'right-3'} flex items-center gap-2 z-30`}>
+            {/* Enhanced PiP Controls - Clean and minimal, fade in on hover */}
+            <div className={`absolute ${pipSize === 'fullscreen' ? 'bottom-10' : 'bottom-3'} ${pipSize === 'fullscreen' ? 'right-10' : 'right-3'} flex items-center gap-2 z-30 transition-opacity duration-300 ${isPipHovered ? 'opacity-100' : 'opacity-0'}`}>
               {/* Sound Toggle */}
               <button
                 onClick={(e) => {
