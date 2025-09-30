@@ -45,7 +45,9 @@ const NewIndex = () => {
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const [lastMousePosition, setLastMousePosition] = useState({ x: 0, y: 0, time: 0 });
   const [videoSrc, setVideoSrc] = useState('');
+  const [heroVideoPlaying, setHeroVideoPlaying] = useState(true);
   const videoRef = useRef<HTMLIFrameElement>(null);
+  const heroVideoRef = useRef<HTMLIFrameElement>(null);
   const pipContainerRef = useRef<HTMLDivElement>(null);
 
   const handleEmailSubmit = (e: React.FormEvent) => {
@@ -148,20 +150,28 @@ const NewIndex = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Handle scroll for PiP
+  // Handle scroll for PiP and video sync
   useEffect(() => {
     const handleScroll = () => {
       const videoSection = document.getElementById('video-section');
       if (videoSection) {
         const rect = videoSection.getBoundingClientRect();
         const shouldShowPiP = rect.bottom < 100;
+        const wasInPiP = isPiP;
+
         setIsPiP(shouldShowPiP);
+
+        // When entering PiP mode, unmute PiP and ensure hero stays muted
+        // When exiting PiP mode (scrolling back to hero), hero can be unmuted manually
+        if (shouldShowPiP !== wasInPiP) {
+          setHeroVideoPlaying(!shouldShowPiP);
+        }
       }
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isPiP]);
 
   // Update video source based on mute state
   useEffect(() => {
@@ -397,9 +407,9 @@ const NewIndex = () => {
 
             {/* YouTube Video - Matches exact video dimensions, no cropping except rounded corners */}
             <iframe
-              ref={videoRef}
+              ref={heroVideoRef}
               className="absolute inset-0 w-full h-full"
-              src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+              src={`https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${isPiP || isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
               title="Adnexus Demo"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -524,11 +534,12 @@ const NewIndex = () => {
             {/* YouTube Video - Proper 16:9 Aspect Ratio */}
             <div className="absolute inset-0 overflow-hidden">
               <iframe
+                ref={videoRef}
                 className={`absolute top-0 left-0 w-full h-full object-cover ${pipSize !== 'fullscreen' ? 'rounded-2xl' : ''}`}
                 style={{
                   aspectRatio: '16 / 9',
                 }}
-                src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+                src={`https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${!isPiP || isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
                 title="Adnexus Demo PiP"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
