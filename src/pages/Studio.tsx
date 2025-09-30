@@ -157,15 +157,17 @@ const Studio = () => {
 
           {/* Video Preview */}
           <div className="relative max-w-4xl mx-auto">
-            <div className="relative aspect-video bg-black rounded-2xl overflow-hidden border-2 border-primary/20 shadow-2xl">
+            <div className="relative aspect-video bg-black rounded-[30px] overflow-hidden border-2 border-primary/20 shadow-2xl">
               {/* Underlit glow */}
               <div className="absolute -inset-8 bg-gradient-radial from-white/20 via-white/5 to-transparent blur-3xl opacity-40" />
 
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-purple-600/10" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
-                  <Play className="h-20 w-20 text-white mx-auto mb-4 opacity-80" />
-                  <p className="text-white/80 font-medium">Watch Studio Demo</p>
+                  <div className="p-6 bg-black/60 backdrop-blur-md rounded-full mb-4 inline-block">
+                    <Play className="h-16 w-16 text-white" />
+                  </div>
+                  <p className="text-white/90 font-medium text-lg">Watch Studio Demo</p>
                 </div>
               </div>
             </div>
