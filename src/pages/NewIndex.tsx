@@ -38,7 +38,7 @@ const NewIndex = () => {
   const [isMuted, setIsMuted] = useState(true); // Default muted - user must click to unmute
   const [isPiP, setIsPiP] = useState(false);
   const [showPiP, setShowPiP] = useState(true); // Control PiP visibility
-  const [isFullscreenPiP, setIsFullscreenPiP] = useState(false);
+  const [pipSize, setPipSize] = useState<'normal' | 'double' | 'fullscreen'>('normal'); // PiP size mode
   const [pipPosition, setPipPosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
@@ -160,8 +160,13 @@ const NewIndex = () => {
 
   // Grid-based snapping for PiP
   const GRID_SIZE = 40; // 40px grid cells
-  const PIP_WIDTH = 384; // w-96 = 384px
+  const PIP_WIDTH_BASE = 384; // w-96 = 384px
   const PIP_MARGIN = 24; // Minimum margin from edges
+
+  // Calculate current PiP width based on size mode
+  const getCurrentPipWidth = () => {
+    return pipSize === 'double' ? PIP_WIDTH_BASE * 2 : PIP_WIDTH_BASE;
+  };
 
   const snapToGrid = (x: number, y: number) => {
     // Snap to grid
@@ -169,8 +174,9 @@ const NewIndex = () => {
     const snappedY = Math.round(y / GRID_SIZE) * GRID_SIZE;
 
     // Ensure minimum margin from edges and keep visible
-    const maxX = window.innerWidth - PIP_WIDTH - PIP_MARGIN;
-    const maxY = window.innerHeight - (PIP_WIDTH * 9 / 16) - PIP_MARGIN; // aspect-video height
+    const pipWidth = getCurrentPipWidth();
+    const maxX = window.innerWidth - pipWidth - PIP_MARGIN;
+    const maxY = window.innerHeight - (pipWidth * 9 / 16) - PIP_MARGIN; // aspect-video height
 
     return {
       x: Math.max(PIP_MARGIN, Math.min(snappedX, maxX)),
@@ -180,7 +186,7 @@ const NewIndex = () => {
 
   // Handle PiP dragging
   const handleMouseDown = (e: React.MouseEvent) => {
-    if (isFullscreenPiP) return;
+    if (pipSize === 'fullscreen') return;
     setIsDragging(true);
     setDragStart({
       x: e.clientX - pipPosition.x,
@@ -189,13 +195,14 @@ const NewIndex = () => {
   };
 
   const handleMouseMove = (e: MouseEvent) => {
-    if (!isDragging || isFullscreenPiP) return;
+    if (!isDragging || pipSize === 'fullscreen') return;
     const newX = e.clientX - dragStart.x;
     const newY = e.clientY - dragStart.y;
 
     // Update position while dragging (no snap yet)
-    const maxX = window.innerWidth - PIP_WIDTH - PIP_MARGIN;
-    const maxY = window.innerHeight - (PIP_WIDTH * 9 / 16) - PIP_MARGIN;
+    const pipWidth = getCurrentPipWidth();
+    const maxX = window.innerWidth - pipWidth - PIP_MARGIN;
+    const maxY = window.innerHeight - (pipWidth * 9 / 16) - PIP_MARGIN;
 
     setPipPosition({
       x: Math.max(PIP_MARGIN, Math.min(newX, maxX)),
@@ -221,15 +228,24 @@ const NewIndex = () => {
         window.removeEventListener('mouseup', handleMouseUp);
       };
     }
-  }, [isDragging, dragStart, pipPosition, isFullscreenPiP]);
+  }, [isDragging, dragStart, pipPosition, pipSize]);
 
   // Initialize PiP position to bottom-right on grid
   useEffect(() => {
-    const defaultX = window.innerWidth - PIP_WIDTH - PIP_MARGIN;
-    const defaultY = window.innerHeight - (PIP_WIDTH * 9 / 16) - PIP_MARGIN;
+    const pipWidth = getCurrentPipWidth();
+    const defaultX = window.innerWidth - pipWidth - PIP_MARGIN;
+    const defaultY = window.innerHeight - (pipWidth * 9 / 16) - PIP_MARGIN;
     const snapped = snapToGrid(defaultX, defaultY);
     setPipPosition(snapped);
   }, []);
+
+  // Recalculate position when size changes
+  useEffect(() => {
+    if (pipSize !== 'fullscreen') {
+      const snapped = snapToGrid(pipPosition.x, pipPosition.y);
+      setPipPosition(snapped);
+    }
+  }, [pipSize]);
 
   return (
     <div className="min-h-screen bg-background">
@@ -358,10 +374,10 @@ const NewIndex = () => {
         <div
           ref={pipContainerRef}
           className={`fixed z-50 transition-all ease-out ${
-            isFullscreenPiP ? 'inset-0 bg-black/98 backdrop-blur-xl duration-500' : isDragging ? 'duration-75' : 'duration-300'
-          } ${isDragging ? 'cursor-grabbing scale-105 shadow-2xl' : 'cursor-grab hover:scale-105'}`}
+            pipSize === 'fullscreen' ? 'inset-0 bg-black/98 backdrop-blur-xl duration-500' : isDragging ? 'duration-75' : 'duration-300'
+          } ${isDragging ? 'cursor-grabbing scale-105 shadow-2xl' : pipSize === 'fullscreen' ? '' : 'cursor-grab hover:scale-105'}`}
           style={
-            !isFullscreenPiP
+            pipSize !== 'fullscreen'
               ? {
                   left: `${pipPosition.x}px`,
                   top: `${pipPosition.y}px`,
@@ -373,13 +389,16 @@ const NewIndex = () => {
         >
           <div
             className={`relative bg-black overflow-hidden transition-all duration-500 ${
-              isFullscreenPiP
+              pipSize === 'fullscreen'
                 ? 'w-full h-full'
+                : pipSize === 'double'
+                ? 'aspect-video rounded-2xl'
                 : 'w-96 aspect-video rounded-2xl'
             }`}
+            style={pipSize === 'double' ? { width: '768px' } : {}}
           >
             {/* Premium TV Frame Effect with Underlit Glow */}
-            {!isFullscreenPiP && (
+            {pipSize !== 'fullscreen' && (
               <>
                 {/* Underlit radial glow behind PiP - simulates backlight */}
                 <div className="absolute -inset-12 rounded-full bg-gradient-radial from-white/30 via-white/10 to-transparent blur-3xl opacity-60" />
@@ -410,7 +429,7 @@ const NewIndex = () => {
             {/* YouTube Video - Proper 16:9 Aspect Ratio */}
             <div className="absolute inset-0 overflow-hidden">
               <iframe
-                className={`absolute top-0 left-0 w-full h-full object-cover ${!isFullscreenPiP ? 'rounded-2xl' : ''}`}
+                className={`absolute top-0 left-0 w-full h-full object-cover ${pipSize !== 'fullscreen' ? 'rounded-2xl' : ''}`}
                 style={{
                   aspectRatio: '16 / 9',
                 }}
@@ -423,7 +442,7 @@ const NewIndex = () => {
             </div>
 
             {/* Enhanced PiP Controls */}
-            <div className={`absolute ${isFullscreenPiP ? 'bottom-10 left-10' : 'bottom-3 left-3'} flex items-center gap-2 z-20`}>
+            <div className={`absolute ${pipSize === 'fullscreen' ? 'bottom-10 left-10' : 'bottom-3 left-3'} flex items-center gap-2 z-20`}>
               {/* Sound Toggle */}
               <button
                 onClick={(e) => {
@@ -436,16 +455,22 @@ const NewIndex = () => {
                 {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white group-hover:scale-110 transition-transform" />}
               </button>
 
-              {/* Fullscreen Toggle */}
+              {/* Size Toggle - cycles through normal -> double -> fullscreen -> normal */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
-                  setIsFullscreenPiP(!isFullscreenPiP);
+                  if (pipSize === 'normal') {
+                    setPipSize('double');
+                  } else if (pipSize === 'double') {
+                    setPipSize('fullscreen');
+                  } else {
+                    setPipSize('normal');
+                  }
                 }}
                 className="group relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-primary transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-110 border border-white/10"
-                title={isFullscreenPiP ? 'Minimize' : 'Fullscreen'}
+                title={pipSize === 'fullscreen' ? 'Normal Size' : pipSize === 'double' ? 'Fullscreen' : 'Double Size'}
               >
-                {isFullscreenPiP ? (
+                {pipSize === 'fullscreen' ? (
                   <Minimize2 className="h-4 w-4 text-white group-hover:scale-110 transition-transform" />
                 ) : (
                   <Maximize2 className="h-4 w-4 text-white group-hover:scale-110 transition-transform" />
@@ -466,7 +491,7 @@ const NewIndex = () => {
             </div>
 
             {/* Enhanced Drag Indicator - Move Icon Only */}
-            {!isFullscreenPiP && (
+            {pipSize !== 'fullscreen' && (
               <div className="absolute top-3 left-3 z-20">
                 <div className="p-2 bg-black/80 backdrop-blur-md rounded-full border border-white/10 shadow-lg cursor-move">
                   <Move className="h-3.5 w-3.5 text-white/60" />
@@ -475,7 +500,7 @@ const NewIndex = () => {
             )}
 
             {/* Live indicator on PiP */}
-            {!isFullscreenPiP && (
+            {pipSize !== 'fullscreen' && (
               <div className="absolute top-3 right-3 z-20">
                 <div className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10">
                   <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]" />

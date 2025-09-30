@@ -96,6 +96,17 @@ const Studio = () => {
       }}>
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
+            {/* Adnexus Studio Logo */}
+            <div className="flex items-center justify-center gap-3 mb-8">
+              <img
+                src="/lovable-uploads/ebba7dda-009e-4d3c-b5d4-06707a9a84ad.png"
+                alt="Adnexus"
+                className="h-10 filter invert brightness-0"
+              />
+              <span className="text-3xl font-light text-white/40">|</span>
+              <span className="text-3xl font-light tracking-tight">Studio</span>
+            </div>
+
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-6">
               <Sparkles className="h-4 w-4 text-primary" />
               <span className="text-sm font-medium">No Production Costs • No Agency Fees</span>
@@ -118,10 +129,10 @@ const Studio = () => {
                   placeholder="Enter your work email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1"
+                  className="flex-1 rounded-full"
                   required
                 />
-                <Button type="submit" size="lg">
+                <Button type="submit" size="lg" className="rounded-full">
                   Start Creating
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
