@@ -42,6 +42,12 @@ import UnikoinGold from "./pages/case-study/UnikoinGold";
 // Agency pages
 import RetainerPage from "./pages/agency/Retainer";
 import ServicesPage from "./pages/agency/Services";
+// Service pages
+import AIServices from "./pages/services/AIServices";
+import CreativeServices from "./pages/services/CreativeServices";
+import MarketingServices from "./pages/services/MarketingServices";
+import SpecializedProduction from "./pages/services/SpecializedProduction";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -90,6 +96,13 @@ const App = () => (
           {/* Agency Routes */}
           <Route path="/agency" element={<RetainerPage />} />
           <Route path="/agency/services" element={<ServicesPage />} />
+          {/* Service Routes */}
+          <Route path="/services/ai" element={<AIServices />} />
+          <Route path="/services/creative" element={<CreativeServices />} />
+          <Route path="/services/marketing" element={<MarketingServices />} />
+          <Route path="/services/production" element={<SpecializedProduction />} />
+          {/* Contact */}
+          <Route path="/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -386,6 +386,19 @@ const NewIndex = () => {
           <div className="relative aspect-video bg-black rounded-[30px] overflow-hidden">
             {/* Underlit glow effect behind video - extended beyond edges */}
             <div className="absolute -inset-16 bg-gradient-radial from-white/30 via-white/10 to-transparent blur-3xl opacity-60" />
+
+            {/* Outer glow ring */}
+            <div className="absolute -inset-1 rounded-[30px] bg-gradient-to-r from-white/40 via-white/20 to-white/40 opacity-75 blur-xl animate-pulse" />
+
+            {/* Inner frame with glass effect */}
+            <div className="absolute inset-0 pointer-events-none z-10">
+              <div className="absolute inset-0 rounded-[30px] border-2 border-white/10 bg-gradient-to-b from-white/5 to-transparent"
+                style={{
+                  boxShadow: 'inset 0 2px 20px rgba(255,255,255,0.1), inset 0 -2px 20px rgba(0,0,0,0.5)',
+                }}
+              />
+            </div>
+
             {/* Cinematic Vignette Overlay */}
             <div className="absolute inset-0 z-20 pointer-events-none"
               style={{
@@ -547,18 +560,18 @@ const NewIndex = () => {
               />
             </div>
 
-            {/* Enhanced PiP Controls */}
-            <div className={`absolute ${pipSize === 'fullscreen' ? 'bottom-10 left-10' : 'bottom-3 left-3'} flex items-center gap-2 z-20`}>
+            {/* Enhanced PiP Controls - Clean and minimal */}
+            <div className={`absolute ${pipSize === 'fullscreen' ? 'bottom-10' : 'bottom-3'} ${pipSize === 'fullscreen' ? 'right-10' : 'right-3'} flex items-center gap-2 z-30`}>
               {/* Sound Toggle */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   setIsMuted(!isMuted);
                 }}
-                className="group relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-primary transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-110 border border-white/10"
+                className="group relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-white transition-all duration-300 shadow-lg hover:scale-110 border border-white/10"
                 title={isMuted ? 'Unmute' : 'Mute'}
               >
-                {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white group-hover:scale-110 transition-transform" />}
+                {isMuted ? <VolumeX className="h-4 w-4 text-white group-hover:text-black transition-colors" /> : <Volume2 className="h-4 w-4 text-white group-hover:text-black transition-colors" />}
               </button>
 
               {/* Size Toggle - cycles through normal -> double -> fullscreen -> normal */}
@@ -573,13 +586,13 @@ const NewIndex = () => {
                     setPipSize('normal');
                   }
                 }}
-                className="group relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-primary transition-all duration-300 shadow-lg hover:shadow-primary/50 hover:scale-110 border border-white/10"
+                className="group relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-white transition-all duration-300 shadow-lg hover:scale-110 border border-white/10"
                 title={pipSize === 'fullscreen' ? 'Normal Size' : pipSize === 'double' ? 'Fullscreen' : 'Double Size'}
               >
                 {pipSize === 'fullscreen' ? (
-                  <Minimize2 className="h-4 w-4 text-white group-hover:scale-110 transition-transform" />
+                  <Minimize2 className="h-4 w-4 text-white group-hover:text-black transition-colors" />
                 ) : (
-                  <Maximize2 className="h-4 w-4 text-white group-hover:scale-110 transition-transform" />
+                  <Maximize2 className="h-4 w-4 text-white group-hover:text-black transition-colors" />
                 )}
               </button>
 
@@ -589,21 +602,12 @@ const NewIndex = () => {
                   e.stopPropagation();
                   setShowPiP(false);
                 }}
-                className="group relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-red-600 transition-all duration-300 shadow-lg hover:shadow-red-600/50 hover:scale-110 border border-white/10"
+                className="group relative p-2.5 bg-black/90 backdrop-blur-md rounded-full hover:bg-red-600 transition-all duration-300 shadow-lg hover:scale-110 border border-white/10"
                 title="Close"
               >
                 <X className="h-4 w-4 text-white group-hover:rotate-90 transition-transform duration-300" />
               </button>
             </div>
-
-            {/* Enhanced Drag Indicator - Overlays YouTube Avatar */}
-            {pipSize !== 'fullscreen' && (
-              <div className="absolute bottom-3 left-3 z-20">
-                <div className="w-10 h-10 bg-black/80 backdrop-blur-md rounded-full border border-white/10 shadow-lg cursor-move flex items-center justify-center hover:bg-black/90 transition-all">
-                  <Move className="h-4 w-4 text-white/70" />
-                </div>
-              </div>
-            )}
 
             {/* Live indicator on PiP */}
             {pipSize !== 'fullscreen' && (
@@ -702,7 +706,7 @@ const NewIndex = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              The Adnexus Ad Exchange
+              Adnexus Ecosystem
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               High-performance programmatic advertising infrastructure connecting premium publishers with performance-driven advertisers
