@@ -225,58 +225,8 @@ const NewIndex = () => {
     const maxX = window.innerWidth - pipWidth - PIP_MARGIN;
     const maxY = window.innerHeight - pipHeight - PIP_MARGIN;
 
-    // Calculate distances to edges
-    const distToLeft = x - PIP_MARGIN;
-    const distToRight = maxX - x;
-    const distToTop = y - PIP_MARGIN;
-    const distToBottom = maxY - y;
-
-    // Check if thrown with velocity
-    const hasVelocity = Math.abs(velocityX) > VELOCITY_THRESHOLD || Math.abs(velocityY) > VELOCITY_THRESHOLD;
-
-    // Determine if near edge/corner
-    const nearLeft = distToLeft < EDGE_SNAP_THRESHOLD;
-    const nearRight = distToRight < EDGE_SNAP_THRESHOLD;
-    const nearTop = distToTop < EDGE_SNAP_THRESHOLD;
-    const nearBottom = distToBottom < EDGE_SNAP_THRESHOLD;
-
-    let targetX = x;
-    let targetY = y;
-
-    if (hasVelocity) {
-      // Snap based on throw direction
-      if (Math.abs(velocityX) > Math.abs(velocityY)) {
-        // Horizontal throw
-        targetX = velocityX < 0 ? PIP_MARGIN : maxX;
-        // Check if also near top/bottom
-        if (nearTop) targetY = PIP_MARGIN;
-        else if (nearBottom) targetY = maxY;
-      } else {
-        // Vertical throw
-        targetY = velocityY < 0 ? PIP_MARGIN : maxY;
-        // Check if also near left/right
-        if (nearLeft) targetX = PIP_MARGIN;
-        else if (nearRight) targetX = maxX;
-      }
-    } else {
-      // Static snap to nearest corner/edge when near threshold
-      if ((nearLeft || nearRight) && (nearTop || nearBottom)) {
-        // Snap to corner
-        targetX = nearLeft ? PIP_MARGIN : maxX;
-        targetY = nearTop ? PIP_MARGIN : maxY;
-      } else if (nearLeft || nearRight) {
-        // Snap to left/right edge
-        targetX = nearLeft ? PIP_MARGIN : maxX;
-      } else if (nearTop || nearBottom) {
-        // Snap to top/bottom edge
-        targetY = nearTop ? PIP_MARGIN : maxY;
-      } else {
-        // Use grid snap if not near edge
-        return snapToGrid(x, y);
-      }
-    }
-
-    return { x: targetX, y: targetY };
+    // Always snap to bottom-right corner for consistent behavior
+    return { x: maxX, y: maxY };
   };
 
   // Handle PiP dragging
