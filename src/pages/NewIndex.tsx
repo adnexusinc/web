@@ -330,17 +330,17 @@ const NewIndex = () => {
       {/* Navigation */}
       <Navigation />
 
-      {/* Phone Number Banner - Dismissible and Sticky */}
+      {/* Phone Number Banner - Dismissible and Sticky with Scroll Effect */}
       {showPhoneBanner && (
-        <div className="sticky top-16 left-0 right-0 bg-primary text-primary-foreground py-2 z-40 shadow-lg">
+        <div className="sticky top-16 left-0 right-0 bg-zinc-800 text-white py-2 z-40 shadow-lg backdrop-blur-md bg-opacity-95 transition-all duration-300">
           <div className="container mx-auto px-4 flex items-center justify-between">
-            <a href="tel:1-844-236-3987" className="flex items-center gap-2 hover:opacity-90 transition mx-auto">
+            <a href="tel:1-844-236-3987" className="flex items-center gap-2 hover:opacity-80 transition mx-auto">
               <Phone className="h-4 w-4" />
               <span className="font-semibold">Call us: +1 844 AD-NEXUS (844-236-3987)</span>
             </a>
             <button
               onClick={() => setShowPhoneBanner(false)}
-              className="p-1 hover:bg-white/20 rounded-full transition"
+              className="p-1 hover:bg-white/10 rounded-full transition"
               aria-label="Close banner"
             >
               <X className="h-4 w-4" />
