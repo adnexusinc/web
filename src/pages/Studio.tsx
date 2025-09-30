@@ -72,35 +72,53 @@ const Studio = () => {
     }
   ];
 
-  const templates = [
-    { name: 'E-commerce Hero', category: 'Product Launch', duration: '30s' },
-    { name: 'App Install', category: 'Mobile Apps', duration: '15s' },
-    { name: 'Brand Awareness', category: 'Lifestyle', duration: '30s' },
-    { name: 'Limited Offer', category: 'Promotions', duration: '15s' },
-    { name: 'Testimonial', category: 'Social Proof', duration: '30s' },
-    { name: 'Event Promo', category: 'Entertainment', duration: '30s' }
+  const comingSoon = [
+    {
+      title: 'QR Code Integration',
+      description: 'Dynamic QR codes that track scans and conversions directly in your ads'
+    },
+    {
+      title: 'Call Tracking (Twilio)',
+      description: '800 numbers, SMS, and phone call tracking for direct response campaigns'
+    },
+    {
+      title: 'Attribution Analytics',
+      description: 'Built-in analytics to measure ad performance and ROI across CTV/OTT platforms'
+    },
+    {
+      title: 'Dynamic Product Feeds',
+      description: 'Auto-generate ads from product catalogs with real-time pricing and inventory'
+    },
+    {
+      title: 'Brand Safety Controls',
+      description: 'Automated compliance checks and approval workflows for regulated industries'
+    },
+    {
+      title: 'A/B Testing Studio',
+      description: 'Create and test multiple ad variations to optimize performance'
+    }
   ];
 
   const steps = [
     {
-      icon: Film,
-      title: 'Choose Your Template',
-      description: 'Browse 100+ professionally designed templates across all industries and select the perfect starting point for your campaign.'
+      icon: Upload,
+      title: 'Upload Your Assets',
+      description: 'Drag and drop video clips, images, audio, and brand assets directly into the browser-based editor'
     },
     {
-      icon: Type,
-      title: 'Customize Content',
-      description: 'Add your brand assets, messaging, and call-to-action. Our AI ensures your content looks professional and performs well.'
+      icon: Scissors,
+      title: 'Edit on Timeline',
+      description: 'Trim, split, and arrange content on the multi-track timeline. Add text, apply filters, and insert transitions'
     },
     {
-      icon: ImageIcon,
-      title: 'Preview & Refine',
-      description: 'See your ad in real-time across different screen sizes and formats. Make adjustments until it\'s perfect.'
+      icon: Users,
+      title: 'Collaborate in Real-Time',
+      description: 'Invite team members to edit together. See changes instantly with WebRTC-powered collaboration'
     },
     {
       icon: Zap,
-      title: 'Launch Campaign',
-      description: 'Deploy instantly to 500+ premium TV channels through our DSP. Start generating results in minutes, not weeks.'
+      title: 'Export & Deploy',
+      description: 'Export in 4K with custom bitrate. Deploy to CTV/OTT platforms through Adnexus DSP integration'
     }
   ];
 
@@ -226,10 +244,10 @@ const Studio = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
-              From Idea to Campaign in 4 Simple Steps
+              Create CTV Ads in 4 Simple Steps
             </h2>
             <p className="text-xl text-muted-foreground">
-              Professional TV advertising made simple
+              Professional browser-based video editing workflow
             </p>
           </div>
 
@@ -254,42 +272,38 @@ const Studio = () => {
         </div>
       </section>
 
-      {/* Template Gallery */}
+      {/* Coming Soon - CTV Features */}
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4">
+              <Sparkles className="h-4 w-4 text-primary" />
+              <span className="text-sm font-medium">Coming Soon</span>
+            </div>
             <h2 className="text-4xl font-bold mb-4">
-              100+ Professional Templates
+              CTV/OTT Advertising Features
             </h2>
             <p className="text-xl text-muted-foreground">
-              Designed for every industry and optimized for performance
+              Advanced tools built specifically for direct response TV advertising
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {templates.map((template, idx) => (
-              <Card key={idx} className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer">
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-purple-600/20 relative">
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                    <Play className="h-12 w-12 text-white" />
-                  </div>
-                </div>
-                <CardContent className="p-4">
-                  <h3 className="font-semibold mb-1">{template.name}</h3>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
-                    <span>{template.category}</span>
-                    <span>{template.duration}</span>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {comingSoon.map((feature, idx) => (
+              <Card key={idx} className="hover:shadow-xl transition-all">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-3">
+                    <div className="p-2 bg-primary/10 rounded-lg">
+                      <Sparkles className="h-5 w-5 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold mb-2">{feature.title}</h3>
+                      <p className="text-sm text-muted-foreground">{feature.description}</p>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          <div className="text-center">
-            <Button size="lg" variant="outline">
-              View All Templates
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
           </div>
         </div>
       </section>
