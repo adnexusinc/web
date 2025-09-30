@@ -18,7 +18,12 @@ import {
   Type,
   Image as ImageIcon,
   Music,
-  Film
+  Film,
+  Scissors,
+  Layers,
+  Sparkle,
+  Users,
+  Shuffle
 } from 'lucide-react';
 
 const Studio = () => {
@@ -26,24 +31,44 @@ const Studio = () => {
 
   const features = [
     {
-      icon: Video,
-      title: '100+ Premium Templates',
-      description: 'Professionally designed CTV ad templates optimized for every industry'
+      icon: Scissors,
+      title: 'Professional Editing',
+      description: 'Trim, split, and arrange video, audio, images, and text with precision timeline controls'
     },
     {
-      icon: Wand2,
-      title: 'AI-Powered Creation',
-      description: 'Smart tools that automatically optimize your ads for performance'
+      icon: Sparkle,
+      title: '7 Animations',
+      description: 'Bring your content to life with smooth, professional animations for any element'
     },
     {
-      icon: Palette,
-      title: 'Brand Customization',
-      description: 'Easily add your logos, colors, fonts, and messaging'
+      icon: Layers,
+      title: '30+ Filters',
+      description: 'Mix and match from 30+ GPU-accelerated filters for stunning visual effects'
+    },
+    {
+      icon: Shuffle,
+      title: '60+ Transitions',
+      description: 'Community-driven GLSL transitions powered by GL Transitions for seamless scene changes'
+    },
+    {
+      icon: Users,
+      title: 'Real-Time Collaboration',
+      description: 'Edit together with your team - see changes instantly across all devices'
     },
     {
       icon: Zap,
-      title: 'Instant Deployment',
-      description: 'Launch to 500+ channels in minutes with our DSP integration'
+      title: 'Export up to 4K',
+      description: 'Blazing-fast exports with WebCodecs API - choose your bitrate and aspect ratio'
+    },
+    {
+      icon: Type,
+      title: 'Local Font Support',
+      description: 'Auto-load fonts from your device for seamless typography'
+    },
+    {
+      icon: Palette,
+      title: 'Resizable Panels',
+      description: 'Customize your workspace exactly how you want it with adjustable panels'
     }
   ];
 
@@ -116,13 +141,13 @@ const Studio = () => {
             </div>
 
             <h1 className="text-5xl lg:text-7xl font-bold mb-6">
-              Create Premium TV Ads<br />
-              <span className="text-primary">in Minutes</span>
+              Powerful Video Editor<br />
+              <span className="text-primary">Right in Your Browser</span>
             </h1>
 
             <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-              Adnexus Studio makes professional CTV advertising accessible to everyone.
-              No expensive production crews or agencies required.
+              Professional CTV ad creation with real-time collaboration, 60+ transitions, 30+ filters, and 4K export.
+              Open-source, privacy-focused, runs everywhere. All your data stays on your device.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -135,15 +160,15 @@ const Studio = () => {
             <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
-                <span>No credit card required</span>
+                <span>100% Free & Open Source</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
-                <span>Free templates</span>
+                <span>Privacy-Focused</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
-                <span>Instant deployment</span>
+                <span>Export up to 4K</span>
               </div>
             </div>
           </div>
@@ -180,15 +205,15 @@ const Studio = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, idx) => (
               <Card key={idx} className="hover:shadow-xl transition-all">
                 <CardContent className="p-6">
                   <div className="p-3 bg-primary/10 rounded-lg w-fit mb-4">
                     <feature.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-sm text-muted-foreground">{feature.description}</p>
+                  <h3 className="font-semibold mb-2 text-sm">{feature.title}</h3>
+                  <p className="text-xs text-muted-foreground">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -287,7 +312,7 @@ const Studio = () => {
           </div>
 
           <p className="text-sm opacity-75">
-            No credit card required • 100+ free templates • Deploy to 500+ channels
+            100% Free & Open Source • Export up to 4K • Real-Time Collaboration
           </p>
         </div>
       </section>
