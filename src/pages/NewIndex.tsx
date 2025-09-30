@@ -500,8 +500,8 @@ const NewIndex = () => {
 
           {/* Cinematic Caption - Bottom Right Fade-In */}
           <div className="text-right mt-8 animate-slideInRight">
-            <h2 className="text-3xl md:text-4xl font-light text-white mb-2 tracking-wide">See AI Ads in Action</h2>
-            <p className="text-white/50 text-sm md:text-base tracking-wider uppercase">Experience the future of TV advertising</p>
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-2 tracking-wide">CTV Ads in Action</h2>
+            <p className="text-white/50 text-sm md:text-base tracking-wider uppercase">Experience the future of advertising</p>
           </div>
         </div>
 
