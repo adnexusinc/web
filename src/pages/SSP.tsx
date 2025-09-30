@@ -53,11 +53,18 @@ const SSP = () => {
           {/* CTA */}
           <div className="text-center mb-16">
             <p className="text-lg mb-6">Experience enterprise-grade SSP technology with personalized support and implementation</p>
-            <Link to="/#contact">
-              <Button variant="cta" size="xl">
-                Get Enterprise Access
-              </Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://ssp.ad.nexus" target="_blank" rel="noopener noreferrer">
+                <Button variant="cta" size="xl">
+                  Sign Up / Sign In to SSP
+                </Button>
+              </a>
+              <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" size="xl">
+                  Book a Demo
+                </Button>
+              </a>
+            </div>
           </div>
 
           {/* Ad Formats */}

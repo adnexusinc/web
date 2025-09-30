@@ -59,17 +59,17 @@ const DSP = () => {
               Built for enterprise advertisers who demand results, not just reach.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/auth">
+              <a href="https://dsp.ad.nexus" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="group">
-                  Start Enterprise Campaign
+                  Sign Up / Sign In to DSP
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
-              </Link>
-              <Link to="/premium">
+              </a>
+              <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" size="lg">
-                  View Premium Inventory
+                  Book a Demo
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

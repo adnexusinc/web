@@ -26,7 +26,9 @@ import {
   Volume2,
   VolumeX,
   Minimize2,
-  Maximize2
+  Maximize2,
+  Move,
+  Maximize
 } from 'lucide-react';
 
 const NewIndex = () => {
@@ -296,6 +298,23 @@ const NewIndex = () => {
                 {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white" />}
                 <span className="text-xs text-white/90 font-medium tracking-wider uppercase">{isMuted ? 'Unmute' : 'Mute'}</span>
               </button>
+
+              <button
+                onClick={() => {
+                  const elem = document.querySelector('.hero-section');
+                  if (elem) {
+                    if (document.fullscreenElement) {
+                      document.exitFullscreen();
+                    } else {
+                      elem.requestFullscreen();
+                    }
+                  }
+                }}
+                className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-sm hover:bg-black transition-all border border-white/10"
+              >
+                <Maximize className="h-4 w-4 text-white" />
+                <span className="text-xs text-white/90 font-medium tracking-wider uppercase">Fullscreen</span>
+              </button>
             </div>
 
             {/* Cinematic Live Indicator */}
@@ -433,16 +452,11 @@ const NewIndex = () => {
               </button>
             </div>
 
-            {/* Enhanced Drag Indicator */}
+            {/* Enhanced Drag Indicator - Move Icon Only */}
             {!isFullscreenPiP && (
-              <div className="absolute top-3 left-1/2 transform -translate-x-1/2 z-20">
-                <div className="flex items-center gap-1.5 px-4 py-2 bg-black/80 backdrop-blur-md rounded-full border border-white/10 shadow-lg">
-                  <div className="flex gap-1">
-                    <div className="w-1 h-1 bg-primary rounded-full animate-pulse" />
-                    <div className="w-1 h-1 bg-primary rounded-full animate-pulse delay-75" />
-                    <div className="w-1 h-1 bg-primary rounded-full animate-pulse delay-150" />
-                  </div>
-                  <span className="text-[10px] text-white/60 uppercase tracking-wider font-medium">Drag me</span>
+              <div className="absolute top-3 left-3 z-20">
+                <div className="p-2 bg-black/80 backdrop-blur-md rounded-full border border-white/10 shadow-lg cursor-move">
+                  <Move className="h-3.5 w-3.5 text-white/60" />
                 </div>
               </div>
             )}

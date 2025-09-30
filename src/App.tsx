@@ -26,6 +26,7 @@ import PlatformMeasure from "./pages/platform/Measure";
 import Premium from "./pages/Premium";
 import DSP from "./pages/DSP";
 import ADX from "./pages/ADX";
+import Studio from "./pages/Studio";
 import Resources from "./pages/Resources";
 import Company from "./pages/Company";
 import TermsOfService from "./pages/TermsOfService";
@@ -73,6 +74,7 @@ const App = () => (
           <Route path="/premium" element={<Premium />} />
           <Route path="/dsp" element={<DSP />} />
           <Route path="/adx" element={<ADX />} />
+          <Route path="/studio" element={<Studio />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/company" element={<Company />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
