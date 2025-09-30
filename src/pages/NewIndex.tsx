@@ -211,9 +211,9 @@ const NewIndex = () => {
       {/* Navigation */}
       <Navigation />
 
-      {/* Phone Number Banner - Dismissible and Fixed */}
+      {/* Phone Number Banner - Dismissible and Sticky */}
       {showPhoneBanner && (
-        <div className="fixed top-16 left-0 right-0 bg-primary text-primary-foreground py-2 z-40 shadow-lg">
+        <div className="sticky top-16 left-0 right-0 bg-primary text-primary-foreground py-2 z-40 shadow-lg">
           <div className="container mx-auto px-4 flex items-center justify-between">
             <a href="tel:1-844-236-3987" className="flex items-center gap-2 hover:opacity-90 transition mx-auto">
               <Phone className="h-4 w-4" />
@@ -232,12 +232,12 @@ const NewIndex = () => {
 
       {/* Video Hero Section - Pure Black Cinematic with Gradient */}
       <section id="video-section" className={`relative min-h-screen flex items-center justify-center overflow-hidden ${showPhoneBanner ? 'pt-10' : ''}`} style={{
-        background: 'radial-gradient(ellipse at center top, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%)'
+        background: 'radial-gradient(ellipse at center bottom, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%)'
       }}>
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
-          {/* Cinematic Aspect Ratio with Letterbox Effect + Underlit Glow */}
-          <div className="relative aspect-[21/9] bg-black rounded-sm overflow-hidden">
+          {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow */}
+          <div className="relative aspect-video bg-black rounded-[30px] overflow-hidden">
             {/* Underlit glow effect behind video */}
             <div className="absolute -inset-8 bg-gradient-radial from-white/20 via-white/5 to-transparent blur-3xl opacity-40" />
             {/* Cinematic Vignette Overlay */}
@@ -293,7 +293,7 @@ const NewIndex = () => {
             <div className="absolute bottom-6 left-6 flex items-center gap-3 z-30">
               <button
                 onClick={() => setIsMuted(!isMuted)}
-                className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-sm hover:bg-black transition-all border border-white/10"
+                className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full hover:bg-black transition-all border border-white/10"
               >
                 {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white" />}
                 <span className="text-xs text-white/90 font-medium tracking-wider uppercase">{isMuted ? 'Unmute' : 'Mute'}</span>
@@ -310,7 +310,7 @@ const NewIndex = () => {
                     }
                   }
                 }}
-                className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-sm hover:bg-black transition-all border border-white/10"
+                className="flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full hover:bg-black transition-all border border-white/10"
               >
                 <Maximize className="h-4 w-4 text-white" />
                 <span className="text-xs text-white/90 font-medium tracking-wider uppercase">Fullscreen</span>
@@ -318,7 +318,7 @@ const NewIndex = () => {
             </div>
 
             {/* Cinematic Live Indicator */}
-            <div className="absolute top-6 left-6 flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-sm border border-white/10 z-30">
+            <div className="absolute top-6 left-6 flex items-center gap-2 bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 z-30">
               <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]" />
               <span className="text-xs text-white/90 font-medium tracking-widest uppercase">Live</span>
             </div>
@@ -326,7 +326,7 @@ const NewIndex = () => {
 
           {/* Cinematic Caption - Bottom Right Fade-In */}
           <div className="text-right mt-8 animate-slideInRight">
-            <h2 className="text-3xl md:text-4xl font-light text-white mb-2 tracking-wide">See Adnexus in Action</h2>
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-2 tracking-wide">See AI Ads in Action</h2>
             <p className="text-white/50 text-sm md:text-base tracking-wider uppercase">Experience the future of TV advertising</p>
           </div>
         </div>
