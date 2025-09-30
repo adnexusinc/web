@@ -19,6 +19,7 @@ import {
   Check,
   Play,
   ChevronRight,
+  ChevronDown,
   Star,
   Phone,
   X,
@@ -299,7 +300,7 @@ const NewIndex = () => {
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30">
           <div className="flex flex-col items-center gap-3 text-white/30">
             <span className="text-[10px] uppercase tracking-[0.2em] font-light">Scroll</span>
-            <ChevronRight className="h-4 w-4 rotate-90 animate-bounce opacity-60" />
+            <ChevronDown className="h-5 w-5 animate-bounce opacity-60" />
           </div>
         </div>
       </section>
@@ -474,14 +475,29 @@ const NewIndex = () => {
               <span>5.0 on Trustpilot</span>
             </div>
 
-            {/* Channel logos ticker */}
-            <div className="relative overflow-hidden py-8">
-              <div className="flex animate-scroll gap-8">
-                {[...channels, ...channels].map((channel, idx) => (
-                  <div key={idx} className="flex-shrink-0 px-4 py-2 bg-muted rounded-lg">
-                    <span className="text-sm font-medium">{channel}</span>
-                  </div>
-                ))}
+            {/* Premium TV Platforms Ticker */}
+            <div className="space-y-6">
+              <div className="text-center">
+                <h3 className="text-sm font-semibold text-muted-foreground mb-2 uppercase tracking-wider">
+                  Available on Premium TV Platforms
+                </h3>
+              </div>
+
+              <div className="relative overflow-hidden py-4">
+                <div className="flex animate-scroll gap-6">
+                  {[...channels, ...channels].map((channel, idx) => (
+                    <div key={idx} className="flex-shrink-0 px-5 py-2.5 bg-gradient-to-br from-primary/10 to-primary/5 rounded-lg border border-primary/20 hover:border-primary/40 transition-all hover:scale-105 hover:shadow-lg">
+                      <span className="text-sm font-semibold text-foreground">{channel}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="text-center">
+                <Link to="/platform/overview" className="inline-flex items-center gap-2 text-primary text-sm font-medium hover:underline">
+                  View all 500+ channels
+                  <ChevronRight className="h-4 w-4" />
+                </Link>
               </div>
             </div>
           </div>
