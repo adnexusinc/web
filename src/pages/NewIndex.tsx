@@ -42,6 +42,7 @@ const NewIndex = () => {
   const [pipPosition, setPipPosition] = useState({ x: 0, y: 0 });
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
+  const [lastMousePosition, setLastMousePosition] = useState({ x: 0, y: 0, time: 0 });
   const [videoSrc, setVideoSrc] = useState('');
   const videoRef = useRef<HTMLIFrameElement>(null);
   const pipContainerRef = useRef<HTMLDivElement>(null);
@@ -162,6 +163,8 @@ const NewIndex = () => {
   const GRID_SIZE = 40; // 40px grid cells
   const PIP_WIDTH_BASE = 384; // w-96 = 384px
   const PIP_MARGIN = 24; // Minimum margin from edges
+  const EDGE_SNAP_THRESHOLD = 100; // Distance from edge to trigger edge snapping
+  const VELOCITY_THRESHOLD = 0.5; // Minimum velocity to trigger throw snap
 
   // Calculate current PiP width based on size mode
   const getCurrentPipWidth = () => {
@@ -184,6 +187,66 @@ const NewIndex = () => {
     };
   };
 
+  const snapToEdgeOrCorner = (x: number, y: number, velocityX: number, velocityY: number) => {
+    const pipWidth = getCurrentPipWidth();
+    const pipHeight = pipWidth * 9 / 16;
+    const maxX = window.innerWidth - pipWidth - PIP_MARGIN;
+    const maxY = window.innerHeight - pipHeight - PIP_MARGIN;
+
+    // Calculate distances to edges
+    const distToLeft = x - PIP_MARGIN;
+    const distToRight = maxX - x;
+    const distToTop = y - PIP_MARGIN;
+    const distToBottom = maxY - y;
+
+    // Check if thrown with velocity
+    const hasVelocity = Math.abs(velocityX) > VELOCITY_THRESHOLD || Math.abs(velocityY) > VELOCITY_THRESHOLD;
+
+    // Determine if near edge/corner
+    const nearLeft = distToLeft < EDGE_SNAP_THRESHOLD;
+    const nearRight = distToRight < EDGE_SNAP_THRESHOLD;
+    const nearTop = distToTop < EDGE_SNAP_THRESHOLD;
+    const nearBottom = distToBottom < EDGE_SNAP_THRESHOLD;
+
+    let targetX = x;
+    let targetY = y;
+
+    if (hasVelocity) {
+      // Snap based on throw direction
+      if (Math.abs(velocityX) > Math.abs(velocityY)) {
+        // Horizontal throw
+        targetX = velocityX < 0 ? PIP_MARGIN : maxX;
+        // Check if also near top/bottom
+        if (nearTop) targetY = PIP_MARGIN;
+        else if (nearBottom) targetY = maxY;
+      } else {
+        // Vertical throw
+        targetY = velocityY < 0 ? PIP_MARGIN : maxY;
+        // Check if also near left/right
+        if (nearLeft) targetX = PIP_MARGIN;
+        else if (nearRight) targetX = maxX;
+      }
+    } else {
+      // Static snap to nearest corner/edge when near threshold
+      if ((nearLeft || nearRight) && (nearTop || nearBottom)) {
+        // Snap to corner
+        targetX = nearLeft ? PIP_MARGIN : maxX;
+        targetY = nearTop ? PIP_MARGIN : maxY;
+      } else if (nearLeft || nearRight) {
+        // Snap to left/right edge
+        targetX = nearLeft ? PIP_MARGIN : maxX;
+      } else if (nearTop || nearBottom) {
+        // Snap to top/bottom edge
+        targetY = nearTop ? PIP_MARGIN : maxY;
+      } else {
+        // Use grid snap if not near edge
+        return snapToGrid(x, y);
+      }
+    }
+
+    return { x: targetX, y: targetY };
+  };
+
   // Handle PiP dragging
   const handleMouseDown = (e: React.MouseEvent) => {
     if (pipSize === 'fullscreen') return;
@@ -196,8 +259,17 @@ const NewIndex = () => {
 
   const handleMouseMove = (e: MouseEvent) => {
     if (!isDragging || pipSize === 'fullscreen') return;
+
+    const currentTime = Date.now();
     const newX = e.clientX - dragStart.x;
     const newY = e.clientY - dragStart.y;
+
+    // Track position and time for velocity calculation
+    setLastMousePosition({
+      x: e.clientX,
+      y: e.clientY,
+      time: currentTime
+    });
 
     // Update position while dragging (no snap yet)
     const pipWidth = getCurrentPipWidth();
@@ -210,10 +282,16 @@ const NewIndex = () => {
     });
   };
 
-  const handleMouseUp = () => {
+  const handleMouseUp = (e: MouseEvent) => {
     if (isDragging) {
-      // Snap to grid when released
-      const snapped = snapToGrid(pipPosition.x, pipPosition.y);
+      // Calculate velocity
+      const currentTime = Date.now();
+      const timeDelta = currentTime - lastMousePosition.time;
+      const velocityX = timeDelta > 0 ? (e.clientX - lastMousePosition.x) / timeDelta : 0;
+      const velocityY = timeDelta > 0 ? (e.clientY - lastMousePosition.y) / timeDelta : 0;
+
+      // Snap to edge/corner or grid based on velocity and position
+      const snapped = snapToEdgeOrCorner(pipPosition.x, pipPosition.y, velocityX, velocityY);
       setPipPosition(snapped);
     }
     setIsDragging(false);
@@ -228,21 +306,21 @@ const NewIndex = () => {
         window.removeEventListener('mouseup', handleMouseUp);
       };
     }
-  }, [isDragging, dragStart, pipPosition, pipSize]);
+  }, [isDragging, dragStart, pipPosition, pipSize, lastMousePosition]);
 
-  // Initialize PiP position to bottom-right on grid
+  // Initialize PiP position to bottom-right corner
   useEffect(() => {
     const pipWidth = getCurrentPipWidth();
+    const pipHeight = pipWidth * 9 / 16;
     const defaultX = window.innerWidth - pipWidth - PIP_MARGIN;
-    const defaultY = window.innerHeight - (pipWidth * 9 / 16) - PIP_MARGIN;
-    const snapped = snapToGrid(defaultX, defaultY);
-    setPipPosition(snapped);
+    const defaultY = window.innerHeight - pipHeight - PIP_MARGIN;
+    setPipPosition({ x: defaultX, y: defaultY });
   }, []);
 
   // Recalculate position when size changes
   useEffect(() => {
     if (pipSize !== 'fullscreen') {
-      const snapped = snapToGrid(pipPosition.x, pipPosition.y);
+      const snapped = snapToEdgeOrCorner(pipPosition.x, pipPosition.y, 0, 0);
       setPipPosition(snapped);
     }
   }, [pipSize]);
