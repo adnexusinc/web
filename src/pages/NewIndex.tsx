@@ -34,7 +34,7 @@ import {
 const NewIndex = () => {
   const [email, setEmail] = useState('');
   const [showStatic, setShowStatic] = useState(false);
-  const [showPhoneBanner, setShowPhoneBanner] = useState(false); // Hidden for now - navbar squishing issue
+  const [showPhoneBanner, setShowPhoneBanner] = useState(true);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMuted, setIsMuted] = useState(true); // Default muted - user must click to unmute
   const [isPiP, setIsPiP] = useState(false);
@@ -396,15 +396,13 @@ const NewIndex = () => {
         </div>
       )}
 
-      {/* Navigation - Below Banner with proper spacing */}
-      <div style={{ paddingTop: showPhoneBanner ? '40px' : '0' }}>
-        <Navigation />
-      </div>
+      {/* Navigation - Will render below banner automatically */}
+      <Navigation />
 
       {/* Video Hero Section - Pure Black Cinematic with Gradient */}
-      <section id="video-section" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24" style={{
+      <section id="video-section" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{
         background: 'radial-gradient(ellipse at center center, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%)',
-        marginTop: showPhoneBanner ? '40px' : '0'
+        paddingTop: '120px' // 40px banner + 64px navbar + 16px spacing
       }}>
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">

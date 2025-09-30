@@ -1,6 +1,6 @@
 import React from 'react';
 import ServiceTemplate from './ServiceTemplate';
-import { Video, FileVideo, Sparkles, Cube, MonitorPlay, Clapperboard } from 'lucide-react';
+import { Video, FileVideo, Sparkles, Box, MonitorPlay, Clapperboard } from 'lucide-react';
 
 const SpecializedProduction = () => {
   return (
@@ -22,7 +22,7 @@ const SpecializedProduction = () => {
         {
           name: "3D & AR Design",
           description: "Innovative solutions for immersive digital experiences",
-          icon: <Cube className="h-8 w-8 text-primary" />
+          icon: <Box className="h-8 w-8 text-primary" />
         },
         {
           name: "CTV Ad Production",
