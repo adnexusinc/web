@@ -1198,7 +1198,7 @@ const NewIndex = () => {
             <div>
               <h3 className="font-semibold mb-4 text-white">Resources</h3>
               <ul className="space-y-2 text-sm text-white/50">
-                <li><Link to="/agency" className="hover:text-white transition-colors">Pricing</Link></li>
+                <li><Link to="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
                 <li><Link to="/case-studies" className="hover:text-white transition-colors">Case Studies</Link></li>
                 <li><Link to="/resources" className="hover:text-white transition-colors">Blog</Link></li>
                 <li><a href="https://cal.com/adnexus" className="hover:text-white transition-colors">Book Demo</a></li>
