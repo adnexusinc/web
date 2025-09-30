@@ -259,28 +259,16 @@ const NewIndex = () => {
               </div>
             )}
 
-            {/* YouTube Video - Proper 16:9 Aspect Ratio */}
-            <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' /* 16:9 aspect ratio */ }}>
-                <iframe
-                  ref={videoRef}
-                  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full"
-                  style={{
-                    minWidth: '100%',
-                    minHeight: '100%',
-                    width: '100vw',
-                    height: '56.25vw', /* 16:9 */
-                    maxHeight: '100vh',
-                    maxWidth: '177.78vh', /* 16:9 */
-                  }}
-                  src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
-                  title="Adnexus Demo"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
+            {/* YouTube Video - Matches exact video dimensions, no cropping except rounded corners */}
+            <iframe
+              ref={videoRef}
+              className="absolute inset-0 w-full h-full"
+              src={videoSrc || `https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+              title="Adnexus Demo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
 
             {/* Subtle Film Grain Overlay */}
             <div className="absolute inset-0 pointer-events-none opacity-[0.02] z-10">
