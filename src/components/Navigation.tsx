@@ -109,10 +109,9 @@ const productItems = [
   },
   {
     title: "Studio (Creative Platform)",
-    href: "https://studio.ad.nexus",
+    href: "/studio",
     description: "Create premium TV ads in minutes",
-    icon: Film,
-    external: true
+    icon: Film
   }
 ];
 
@@ -261,17 +260,24 @@ export const Navigation = () => {
                         <div className="px-2 py-1.5 text-sm font-semibold">Choose Platform</div>
                         <div className="h-px bg-border my-1" />
                         <a href="https://dsp.ad.nexus" className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-accent transition-colors">
-                          <Building2 className="h-4 w-4" />
+                          <Target className="h-4 w-4" />
                           <div>
-                            <div className="font-medium">Login to DSP</div>
+                            <div className="font-medium">DSP Login</div>
                             <div className="text-xs text-muted-foreground">Demand-Side Platform</div>
                           </div>
                         </a>
                         <a href="https://ssp.ad.nexus" className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-accent transition-colors">
                           <Globe className="h-4 w-4" />
                           <div>
-                            <div className="font-medium">Login to SSP</div>
+                            <div className="font-medium">SSP Login</div>
                             <div className="text-xs text-muted-foreground">Supply-Side Platform</div>
+                          </div>
+                        </a>
+                        <a href="https://studio.ad.nexus" className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-accent transition-colors">
+                          <Film className="h-4 w-4" />
+                          <div>
+                            <div className="font-medium">Studio Login</div>
+                            <div className="text-xs text-muted-foreground">Creative Platform</div>
                           </div>
                         </a>
                       </div>
@@ -344,39 +350,20 @@ export const Navigation = () => {
                     <h3 className="font-semibold mb-3">Products</h3>
                     <div className="space-y-2">
                       {productItems.map((item) => (
-                        item.external ? (
-                          <a
-                            key={item.title}
-                            href={item.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="block p-2 rounded-lg hover:bg-accent transition-colors"
-                          >
-                            <div className="flex items-center gap-3">
-                              <item.icon className="w-4 h-4 text-primary" />
-                              <div>
-                                <div className="font-medium">{item.title}</div>
-                                <div className="text-xs text-muted-foreground">{item.description}</div>
-                              </div>
+                        <Link
+                          key={item.title}
+                          to={item.href}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="block p-2 rounded-lg hover:bg-accent transition-colors"
+                        >
+                          <div className="flex items-center gap-3">
+                            <item.icon className="w-4 h-4 text-primary" />
+                            <div>
+                              <div className="font-medium">{item.title}</div>
+                              <div className="text-xs text-muted-foreground">{item.description}</div>
                             </div>
-                          </a>
-                        ) : (
-                          <Link
-                            key={item.title}
-                            to={item.href}
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="block p-2 rounded-lg hover:bg-accent transition-colors"
-                          >
-                            <div className="flex items-center gap-3">
-                              <item.icon className="w-4 h-4 text-primary" />
-                              <div>
-                                <div className="font-medium">{item.title}</div>
-                                <div className="text-xs text-muted-foreground">{item.description}</div>
-                              </div>
-                            </div>
-                          </Link>
-                        )
+                          </div>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -388,9 +375,9 @@ export const Navigation = () => {
                     </div>
                     <a href="https://dsp.ad.nexus" onClick={() => setIsMobileMenuOpen(false)}>
                       <Button variant="ghost" className="w-full justify-start gap-2">
-                        <Building2 className="h-4 w-4" />
+                        <Target className="h-4 w-4" />
                         <div className="text-left">
-                          <div>Login to DSP</div>
+                          <div>DSP Login</div>
                           <div className="text-xs text-muted-foreground">Demand-Side Platform</div>
                         </div>
                       </Button>
@@ -399,8 +386,17 @@ export const Navigation = () => {
                       <Button variant="ghost" className="w-full justify-start gap-2">
                         <Globe className="h-4 w-4" />
                         <div className="text-left">
-                          <div>Login to SSP</div>
+                          <div>SSP Login</div>
                           <div className="text-xs text-muted-foreground">Supply-Side Platform</div>
+                        </div>
+                      </Button>
+                    </a>
+                    <a href="https://studio.ad.nexus" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Button variant="ghost" className="w-full justify-start gap-2">
+                        <Film className="h-4 w-4" />
+                        <div className="text-left">
+                          <div>Studio Login</div>
+                          <div className="text-xs text-muted-foreground">Creative Platform</div>
                         </div>
                       </Button>
                     </a>
