@@ -490,11 +490,11 @@ const NewIndex = () => {
               </button>
             </div>
 
-            {/* Enhanced Drag Indicator - Move Icon Only */}
+            {/* Enhanced Drag Indicator - Overlays YouTube Avatar */}
             {pipSize !== 'fullscreen' && (
-              <div className="absolute top-3 left-3 z-20">
-                <div className="p-2 bg-black/80 backdrop-blur-md rounded-full border border-white/10 shadow-lg cursor-move">
-                  <Move className="h-3.5 w-3.5 text-white/60" />
+              <div className="absolute bottom-3 left-3 z-20">
+                <div className="w-10 h-10 bg-black/80 backdrop-blur-md rounded-full border border-white/10 shadow-lg cursor-move flex items-center justify-center hover:bg-black/90 transition-all">
+                  <Move className="h-4 w-4 text-white/70" />
                 </div>
               </div>
             )}
