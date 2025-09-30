@@ -32,7 +32,7 @@ const NewIndex = () => {
   const [email, setEmail] = useState('');
   const [showStatic, setShowStatic] = useState(false);
   const [showPhoneBanner, setShowPhoneBanner] = useState(true);
-  const [isMuted, setIsMuted] = useState(false); // Default sound ON
+  const [isMuted, setIsMuted] = useState(true); // Default muted - user must click to unmute
   const [isPiP, setIsPiP] = useState(false);
   const [showPiP, setShowPiP] = useState(true); // Control PiP visibility
   const [isFullscreenPiP, setIsFullscreenPiP] = useState(false);
