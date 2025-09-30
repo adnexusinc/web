@@ -35,6 +35,7 @@ const NewIndex = () => {
   const [email, setEmail] = useState('');
   const [showStatic, setShowStatic] = useState(false);
   const [showPhoneBanner, setShowPhoneBanner] = useState(true);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isMuted, setIsMuted] = useState(true); // Default muted - user must click to unmute
   const [isPiP, setIsPiP] = useState(false);
   const [showPiP, setShowPiP] = useState(true); // Control PiP visibility
@@ -127,6 +128,15 @@ const NewIndex = () => {
       rating: 5
     }
   ];
+
+  // Scroll detection for translucent effect
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // TV static effect on loop
   useEffect(() => {
@@ -327,12 +337,14 @@ const NewIndex = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Navigation */}
-      <Navigation />
-
-      {/* Phone Number Banner - Dismissible and Sticky with Scroll Effect */}
+      {/* Phone Number Banner - At Very Top */}
       {showPhoneBanner && (
-        <div className="sticky top-16 left-0 right-0 bg-zinc-800 text-white py-2 z-40 shadow-lg backdrop-blur-md bg-opacity-95 transition-all duration-300">
+        <div
+          className={`fixed top-0 left-0 right-0 text-white py-2 z-50 shadow-lg backdrop-blur-md transition-all duration-500`}
+          style={{
+            backgroundColor: isScrolled ? 'rgba(34, 34, 34, 0.6)' : 'rgba(34, 34, 34, 0.95)'
+          }}
+        >
           <div className="container mx-auto px-4 flex items-center justify-between">
             <a href="tel:1-844-236-3987" className="flex items-center gap-2 hover:opacity-80 transition mx-auto">
               <Phone className="h-4 w-4" />
@@ -349,16 +361,21 @@ const NewIndex = () => {
         </div>
       )}
 
+      {/* Navigation - Below Banner */}
+      <div className={showPhoneBanner ? 'mt-10' : ''}>
+        <Navigation />
+      </div>
+
       {/* Video Hero Section - Pure Black Cinematic with Gradient */}
-      <section id="video-section" className={`relative min-h-screen flex items-center justify-center overflow-hidden ${showPhoneBanner ? 'pt-10' : ''}`} style={{
+      <section id="video-section" className={`relative min-h-screen flex items-center justify-center overflow-hidden ${showPhoneBanner ? 'pt-16' : 'pt-6'}`} style={{
         background: 'radial-gradient(ellipse at center center, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%)'
       }}>
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
           {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow */}
           <div className="relative aspect-video bg-black rounded-[30px] overflow-hidden">
-            {/* Underlit glow effect behind video */}
-            <div className="absolute -inset-8 bg-gradient-radial from-white/20 via-white/5 to-transparent blur-3xl opacity-40" />
+            {/* Underlit glow effect behind video - extended beyond edges */}
+            <div className="absolute -inset-16 bg-gradient-radial from-white/30 via-white/10 to-transparent blur-3xl opacity-60" />
             {/* Cinematic Vignette Overlay */}
             <div className="absolute inset-0 z-20 pointer-events-none"
               style={{
