@@ -24,7 +24,8 @@ import {
   ChevronDown,
   Menu,
   X,
-  Building2
+  Building2,
+  Film
 } from "lucide-react";
 
 const platformItems = [
@@ -105,13 +106,21 @@ const productItems = [
     href: "/adx",
     description: "The fastest exchange with sub-millisecond latency",
     icon: Zap
+  },
+  {
+    title: "Studio (Creative Platform)",
+    href: "https://studio.ad.nexus",
+    description: "Create premium TV ads in minutes",
+    icon: Film,
+    external: true
   }
 ];
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a"> & { icon?: React.ComponentType<{ className?: string }> }
->(({ className, title, children, icon: Icon, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<"a"> & { icon?: React.ComponentType<{ className?: string }>; external?: boolean }
+>(({ className, title, children, icon: Icon, external, ...props }, ref) => {
+  const linkProps = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
   return (
     <li>
       <NavigationMenuLink asChild>
@@ -121,6 +130,7 @@ const ListItem = React.forwardRef<
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group",
             className
           )}
+          {...linkProps}
           {...props}
         >
           <div className="flex items-start gap-3">
@@ -225,6 +235,7 @@ export const Navigation = () => {
                           title={item.title}
                           href={item.href}
                           icon={item.icon}
+                          external={item.external}
                         >
                           {item.description}
                         </ListItem>
@@ -333,20 +344,39 @@ export const Navigation = () => {
                     <h3 className="font-semibold mb-3">Products</h3>
                     <div className="space-y-2">
                       {productItems.map((item) => (
-                        <Link 
-                          key={item.title}
-                          to={item.href} 
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="block p-2 rounded-lg hover:bg-accent transition-colors"
-                        >
-                          <div className="flex items-center gap-3">
-                            <item.icon className="w-4 h-4 text-primary" />
-                            <div>
-                              <div className="font-medium">{item.title}</div>
-                              <div className="text-xs text-muted-foreground">{item.description}</div>
+                        item.external ? (
+                          <a
+                            key={item.title}
+                            href={item.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="block p-2 rounded-lg hover:bg-accent transition-colors"
+                          >
+                            <div className="flex items-center gap-3">
+                              <item.icon className="w-4 h-4 text-primary" />
+                              <div>
+                                <div className="font-medium">{item.title}</div>
+                                <div className="text-xs text-muted-foreground">{item.description}</div>
+                              </div>
                             </div>
-                          </div>
-                        </Link>
+                          </a>
+                        ) : (
+                          <Link
+                            key={item.title}
+                            to={item.href}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="block p-2 rounded-lg hover:bg-accent transition-colors"
+                          >
+                            <div className="flex items-center gap-3">
+                              <item.icon className="w-4 h-4 text-primary" />
+                              <div>
+                                <div className="font-medium">{item.title}</div>
+                                <div className="text-xs text-muted-foreground">{item.description}</div>
+                              </div>
+                            </div>
+                          </Link>
+                        )
                       ))}
                     </div>
                   </div>
