@@ -190,16 +190,17 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="bg-transparent">
-                    Platform
+                    Products
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[500px] gap-3 p-4 md:grid-cols-2">
-                      {platformItems.map((item) => (
+                    <ul className="grid w-[600px] gap-3 p-4">
+                      {productItems.map((item) => (
                         <ListItem
                           key={item.title}
                           title={item.title}
                           href={item.href}
                           icon={item.icon}
+                          external={item.external}
                         >
                           {item.description}
                         </ListItem>
@@ -220,27 +221,6 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                           title={item.title}
                           href={item.href}
                           icon={item.icon}
-                        >
-                          {item.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent">
-                    Products
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[600px] gap-3 p-4">
-                      {productItems.map((item) => (
-                        <ListItem
-                          key={item.title}
-                          title={item.title}
-                          href={item.href}
-                          icon={item.icon}
-                          external={item.external}
                         >
                           {item.description}
                         </ListItem>
@@ -315,12 +295,12 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col gap-6 mt-6">
                   <div>
-                    <h3 className="font-semibold mb-3">Platform</h3>
+                    <h3 className="font-semibold mb-3">Products</h3>
                     <div className="space-y-2">
-                      {platformItems.map((item) => (
-                        <Link 
+                      {productItems.map((item) => (
+                        <Link
                           key={item.title}
-                          to={item.href} 
+                          to={item.href}
                           onClick={() => setIsMobileMenuOpen(false)}
                           className="block p-2 rounded-lg hover:bg-accent transition-colors"
                         >
@@ -340,28 +320,6 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                     <h3 className="font-semibold mb-3">Solutions</h3>
                     <div className="space-y-2">
                       {solutionItems.map((item) => (
-                        <Link 
-                          key={item.title}
-                          to={item.href} 
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="block p-2 rounded-lg hover:bg-accent transition-colors"
-                        >
-                          <div className="flex items-center gap-3">
-                            <item.icon className="w-4 h-4 text-primary" />
-                            <div>
-                              <div className="font-medium">{item.title}</div>
-                              <div className="text-xs text-muted-foreground">{item.description}</div>
-                            </div>
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="font-semibold mb-3">Products</h3>
-                    <div className="space-y-2">
-                      {productItems.map((item) => (
                         <Link
                           key={item.title}
                           to={item.href}
