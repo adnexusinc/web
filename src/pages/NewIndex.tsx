@@ -257,7 +257,7 @@ const NewIndex = () => {
 
       {/* Video Hero Section - Pure Black Cinematic with Gradient */}
       <section id="video-section" className={`relative min-h-screen flex items-center justify-center overflow-hidden ${showPhoneBanner ? 'pt-10' : ''}`} style={{
-        background: 'radial-gradient(ellipse at center bottom, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%)'
+        background: 'radial-gradient(ellipse at center center, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%)'
       }}>
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
