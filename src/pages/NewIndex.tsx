@@ -53,6 +53,7 @@ const NewIndex = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const [lastMousePosition, setLastMousePosition] = useState({ x: 0, y: 0, time: 0 });
+  const [hasDragged, setHasDragged] = useState(false);
   const [videoSrc, setVideoSrc] = useState('');
   const [heroVideoPlaying, setHeroVideoPlaying] = useState(true);
   const videoRef = useRef<HTMLIFrameElement>(null);
@@ -280,6 +281,7 @@ const NewIndex = () => {
   const handleMouseDown = (e: React.MouseEvent) => {
     if (pipSize === 'fullscreen') return;
     setIsDragging(true);
+    setHasDragged(false);
     setDragStart({
       x: e.clientX - pipPosition.x,
       y: e.clientY - pipPosition.y
@@ -292,6 +294,12 @@ const NewIndex = () => {
     const currentTime = Date.now();
     const newX = e.clientX - dragStart.x;
     const newY = e.clientY - dragStart.y;
+
+    // Mark as dragged if moved more than 5px
+    const distanceMoved = Math.sqrt(Math.pow(newX - pipPosition.x, 2) + Math.pow(newY - pipPosition.y, 2));
+    if (distanceMoved > 5) {
+      setHasDragged(true);
+    }
 
     // Track position and time for velocity calculation
     setLastMousePosition({
@@ -313,17 +321,23 @@ const NewIndex = () => {
 
   const handleMouseUp = (e: MouseEvent) => {
     if (isDragging) {
-      // Calculate velocity
-      const currentTime = Date.now();
-      const timeDelta = currentTime - lastMousePosition.time;
-      const velocityX = timeDelta > 0 ? (e.clientX - lastMousePosition.x) / timeDelta : 0;
-      const velocityY = timeDelta > 0 ? (e.clientY - lastMousePosition.y) / timeDelta : 0;
+      // If not dragged (just clicked), open phone call
+      if (!hasDragged) {
+        window.location.href = 'tel:+18442363987';
+      } else {
+        // Calculate velocity
+        const currentTime = Date.now();
+        const timeDelta = currentTime - lastMousePosition.time;
+        const velocityX = timeDelta > 0 ? (e.clientX - lastMousePosition.x) / timeDelta : 0;
+        const velocityY = timeDelta > 0 ? (e.clientY - lastMousePosition.y) / timeDelta : 0;
 
-      // Snap to edge/corner or grid based on velocity and position
-      const snapped = snapToEdgeOrCorner(pipPosition.x, pipPosition.y, velocityX, velocityY);
-      setPipPosition(snapped);
+        // Snap to edge/corner or grid based on velocity and position
+        const snapped = snapToEdgeOrCorner(pipPosition.x, pipPosition.y, velocityX, velocityY);
+        setPipPosition(snapped);
+      }
     }
     setIsDragging(false);
+    setHasDragged(false);
   };
 
   useEffect(() => {
@@ -563,6 +577,7 @@ const NewIndex = () => {
                 className={`absolute top-0 left-0 w-full h-full object-cover ${pipSize !== 'fullscreen' ? 'rounded-2xl' : ''}`}
                 style={{
                   aspectRatio: '16 / 9',
+                  pointerEvents: 'none', // Disable iframe clicks to allow dragging
                 }}
                 src={`https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${!isPiP || isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
                 title="Adnexus Demo PiP"
@@ -570,6 +585,8 @@ const NewIndex = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
+              {/* Transparent overlay for easier clicking and dragging */}
+              <div className="absolute inset-0 z-5" />
             </div>
 
             {/* Enhanced PiP Controls - Clean and minimal */}
