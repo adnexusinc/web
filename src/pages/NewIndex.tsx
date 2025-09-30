@@ -373,12 +373,12 @@ const NewIndex = () => {
       {/* Phone Number Banner - At Very Top */}
       {showPhoneBanner && (
         <div
-          className={`fixed top-0 left-0 right-0 text-white py-2 z-50 shadow-lg backdrop-blur-md transition-all duration-500`}
+          className={`fixed top-0 left-0 right-0 h-10 text-white py-2 z-[100] shadow-lg backdrop-blur-md transition-all duration-500`}
           style={{
             backgroundColor: isScrolled ? 'rgba(34, 34, 34, 0.6)' : 'rgba(34, 34, 34, 0.95)'
           }}
         >
-          <div className="container mx-auto px-4 flex items-center justify-between">
+          <div className="container mx-auto px-4 flex items-center justify-between h-full">
             <a href="tel:1-844-236-3987" className="flex items-center gap-2 hover:opacity-80 transition mx-auto">
               <Phone className="h-4 w-4" />
               <span className="font-semibold">Call us: +1 844 AD-NEXUS (844-236-3987)</span>
@@ -394,14 +394,15 @@ const NewIndex = () => {
         </div>
       )}
 
-      {/* Navigation - Below Banner */}
-      <div className={showPhoneBanner ? 'mt-10' : ''}>
+      {/* Navigation - Below Banner with proper spacing */}
+      <div style={{ paddingTop: showPhoneBanner ? '40px' : '0' }}>
         <Navigation />
       </div>
 
       {/* Video Hero Section - Pure Black Cinematic with Gradient */}
-      <section id="video-section" className={`relative min-h-screen flex items-center justify-center overflow-hidden ${showPhoneBanner ? 'pt-16' : 'pt-6'}`} style={{
-        background: 'radial-gradient(ellipse at center center, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%)'
+      <section id="video-section" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24" style={{
+        background: 'radial-gradient(ellipse at center center, rgba(30,30,30,1) 0%, rgba(0,0,0,1) 50%)',
+        marginTop: showPhoneBanner ? '40px' : '0'
       }}>
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
