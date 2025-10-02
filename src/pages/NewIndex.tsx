@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent } from '@/components/ui/card';
@@ -199,9 +199,9 @@ const NewIndex = () => {
   const VELOCITY_THRESHOLD = 0.5; // Minimum velocity to trigger throw snap
 
   // Calculate current PiP width based on size mode
-  const getCurrentPipWidth = () => {
+  const getCurrentPipWidth = useCallback(() => {
     return pipSize === 'double' ? PIP_WIDTH_BASE * 2 : PIP_WIDTH_BASE;
-  };
+  }, [pipSize]);
 
   const snapToGrid = (x: number, y: number) => {
     // Snap to grid
@@ -219,7 +219,7 @@ const NewIndex = () => {
     };
   };
 
-  const snapToEdgeOrCorner = (x: number, y: number, velocityX: number, velocityY: number) => {
+  const snapToEdgeOrCorner = useCallback((x: number, y: number, velocityX: number, velocityY: number) => {
     const pipWidth = getCurrentPipWidth();
     const pipHeight = pipWidth * 9 / 16;
     const maxX = window.innerWidth - pipWidth - PIP_MARGIN;
@@ -227,7 +227,7 @@ const NewIndex = () => {
 
     // Always snap to bottom-right corner for consistent behavior
     return { x: maxX, y: maxY };
-  };
+  }, [getCurrentPipWidth]);
 
   // Handle PiP dragging
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -240,7 +240,7 @@ const NewIndex = () => {
     });
   };
 
-  const handleMouseMove = (e: MouseEvent) => {
+  const handleMouseMove = useCallback((e: MouseEvent) => {
     if (!isDragging || pipSize === 'fullscreen') return;
 
     const currentTime = Date.now();
@@ -269,9 +269,9 @@ const NewIndex = () => {
       x: Math.max(PIP_MARGIN, Math.min(newX, maxX)),
       y: Math.max(PIP_MARGIN, Math.min(newY, maxY))
     });
-  };
+  }, [isDragging, pipSize, dragStart.x, dragStart.y, pipPosition.x, pipPosition.y, getCurrentPipWidth]);
 
-  const handleMouseUp = (e: MouseEvent) => {
+  const handleMouseUp = useCallback((e: MouseEvent) => {
     if (isDragging) {
       // Only snap if dragged, don't trigger phone call on click
       if (hasDragged) {
@@ -288,7 +288,7 @@ const NewIndex = () => {
     }
     setIsDragging(false);
     setHasDragged(false);
-  };
+  }, [isDragging, hasDragged, lastMousePosition, pipPosition.x, pipPosition.y, snapToEdgeOrCorner]);
 
   useEffect(() => {
     if (isDragging) {
@@ -299,7 +299,7 @@ const NewIndex = () => {
         window.removeEventListener('mouseup', handleMouseUp);
       };
     }
-  }, [isDragging, dragStart, pipPosition, pipSize, lastMousePosition]);
+  }, [isDragging, dragStart, pipPosition, pipSize, lastMousePosition, handleMouseMove, handleMouseUp]);
 
   // Initialize PiP position to bottom-right corner
   useEffect(() => {
@@ -308,7 +308,7 @@ const NewIndex = () => {
     const defaultX = window.innerWidth - pipWidth - PIP_MARGIN;
     const defaultY = window.innerHeight - pipHeight - PIP_MARGIN;
     setPipPosition({ x: defaultX, y: defaultY });
-  }, []);
+  }, [getCurrentPipWidth]);
 
   // Recalculate position when size changes
   useEffect(() => {
@@ -316,7 +316,7 @@ const NewIndex = () => {
       const snapped = snapToEdgeOrCorner(pipPosition.x, pipPosition.y, 0, 0);
       setPipPosition(snapped);
     }
-  }, [pipSize]);
+  }, [pipSize, pipPosition.x, pipPosition.y, snapToEdgeOrCorner]);
 
   return (
     <div className="min-h-screen bg-background">
