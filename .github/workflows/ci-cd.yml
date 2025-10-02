@@ -120,7 +120,7 @@ jobs:
 
       - name: Upload coverage reports
         uses: actions/upload-artifact@v4
-        if: matrix.node-version == 18
+        if: matrix.node-version == 24
         with:
           name: coverage-report-node-${{ matrix.node-version }}
           path: coverage/
@@ -169,7 +169,7 @@ jobs:
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
-        if: matrix.node-version == 18
+        if: matrix.node-version == 24
         with:
           name: dist-node-${{ matrix.node-version }}
           path: dist/
@@ -177,7 +177,7 @@ jobs:
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
-        if: matrix.node-version == 18 && github.ref == 'refs/heads/main' && github.event_name == 'push'
+        if: matrix.node-version == 24 && github.ref == 'refs/heads/main' && github.event_name == 'push'
         with:
           path: ./dist
 
