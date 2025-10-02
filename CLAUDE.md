@@ -12,7 +12,7 @@ Adnexus is an enterprise programmatic advertising platform offering DSP (Demand-
 ## Tech Stack
 
 - **Framework**: React 18 + TypeScript + Vite
-- **UI Library**: shadcn/ui (Radix UI primitives + Tailwind CSS)
+- **UI Library**: @hanzo/ui (Hanzo's fork of Radix UI primitives + Tailwind CSS)
 - **Routing**: React Router DOM v6
 - **State Management**: TanStack Query (React Query)
 - **Backend**: Supabase
@@ -66,7 +66,7 @@ src/
 │   │   ├── Footer.tsx
 │   │   ├── HeroSection.tsx
 │   │   └── ...
-│   └── ui/                   # shadcn/ui components (DO NOT EDIT MANUALLY)
+│   └── ui/                   # @hanzo/ui components (DO NOT EDIT MANUALLY)
 │       ├── button.tsx
 │       ├── card.tsx
 │       └── ...
@@ -136,10 +136,10 @@ git push origin main
 
 ## Important Patterns
 
-### shadcn/ui Components
+### @hanzo/ui Components
 
-The `/components/ui/` directory contains shadcn/ui components. These are:
-- Auto-generated from shadcn/ui CLI
+The `/components/ui/` directory contains @hanzo/ui components. These are:
+- Hanzo's fork of Radix UI components
 - Should NOT be manually edited
 - Use composition to customize (wrap in new components)
 - Import from `@/components/ui/*`
@@ -187,7 +187,7 @@ Edit `src/components/Navigation.tsx`:
 
 ### Working with Forms
 
-Use shadcn/ui form components with react-hook-form + zod:
+Use @hanzo/ui form components with react-hook-form + zod:
 ```typescript
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"

@@ -15,7 +15,7 @@ Adnexus is an enterprise-grade programmatic advertising platform offering DSP, S
 
 ## 🛠 Tech Stack
 - **Frontend**: React, TypeScript, Vite
-- **UI**: shadcn-ui, Tailwind CSS
+- **UI**: @hanzo/ui, Tailwind CSS
 - **Backend**: Supabase
 - **Payments**: Stripe (Adnexus Enterprise subscription)
 - **Deployment**: Lovable (auto-deploys on push to main)
