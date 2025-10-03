@@ -86,7 +86,7 @@ const App = () => (
             <Route path="/industries" element={<UnifiedPage config={pageConfigs['/industries']} />} />
             <Route path="/resources" element={<UnifiedPage config={pageConfigs['/resources']} />} />
             <Route path="/premium" element={<UnifiedPage config={pageConfigs['/premium']} />} />
-            <Route path="/white-label-adexchange" element={<UnifiedPage config={pageConfigs['/white-label-adexchange']} />} />
+            <Route path="/ctv" element={<UnifiedPage config={pageConfigs['/ctv']} />} />
 
             {/* Agency */}
             <Route path="/agency" element={<UnifiedPage config={pageConfigs['/agency']} />} />

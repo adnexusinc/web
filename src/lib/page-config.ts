@@ -68,7 +68,7 @@ export const pageConfigs: Record<string, PageConfig> = {
   '/ssp': {
     title: 'Supply Side Platform',
     subtitle: 'Run more formats, and earn more cash',
-    description: 'Our white-label supply-side platform ships with a universal VAST adapter that connects every video player in minutes and keeps media management smooth. We built a future-ready SSP that hands full control to publishers.',
+    description: 'Our supply-side platform ships with a universal VAST adapter that connects every video player in minutes and keeps media management smooth. We built a future-ready SSP that hands full control to publishers.',
     heroButtonText: 'Contact Us',
     heroButtonLink: '/#contact',
     stats: [
@@ -340,7 +340,7 @@ export const pageConfigs: Record<string, PageConfig> = {
   '/agencies': {
     title: 'Solutions for Agencies',
     subtitle: 'Scale your agency with enterprise tools',
-    description: 'White-label programmatic platform designed for agencies. Manage multiple clients with advanced tools and dedicated support.',
+    description: 'Programmatic platform designed for agencies. Manage multiple clients with advanced tools and dedicated support.',
     heroButtonText: 'Partner With Us',
     heroButtonLink: '/#contact',
     features: [
@@ -358,7 +358,7 @@ export const pageConfigs: Record<string, PageConfig> = {
       },
       {
         icon: BarChart3,
-        title: 'White-Label Reports',
+        title: 'Branded Reports',
         description: 'Branded reporting dashboards for your clients with custom KPIs.',
         metric: 'Your Brand'
       },
@@ -508,30 +508,30 @@ export const pageConfigs: Record<string, PageConfig> = {
     showFooter: true
   },
 
-  '/white-label-adexchange': {
-    title: 'White-Label Ad Exchange',
-    subtitle: 'Launch your own programmatic marketplace',
-    description: 'Fully customizable ad exchange platform. Your brand, your rules, our technology.',
+  '/ctv': {
+    title: 'Premium CTV Advertising',
+    subtitle: 'The platform for performance marketers to run CTV ads',
+    description: 'Access premium Connected TV inventory with AI-powered optimization. Reach engaged audiences on the biggest streaming platforms with Adnexus.',
     heroButtonText: 'Request Demo',
     heroButtonLink: '/#contact',
     features: [
       {
-        icon: Shield,
-        title: 'Your Brand',
-        description: 'Fully white-labeled with your branding and domain.',
-        metric: '100% Custom'
+        icon: Tv,
+        title: 'Premium Inventory',
+        description: 'Access tier-1 CTV inventory from major streaming platforms.',
+        metric: '85% Completion'
       },
       {
         icon: Zap,
-        title: 'Instant Launch',
-        description: 'Go to market in weeks, not months.',
-        metric: '< 4 Weeks'
+        title: 'Real-Time Optimization',
+        description: 'AI-powered bidding optimizes performance across all CTV inventory.',
+        metric: '<1ms Response'
       },
       {
         icon: BarChart3,
-        title: 'Full Control',
-        description: 'Set your own fees, rules, and partnerships.',
-        metric: 'Total Control'
+        title: 'Performance Analytics',
+        description: 'Comprehensive reporting with real-time insights and attribution.',
+        metric: 'Real-Time Data'
       }
     ],
     showFooter: true

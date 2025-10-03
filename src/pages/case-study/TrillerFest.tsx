@@ -43,8 +43,8 @@ const TrillerFest = () => {
                 </div>
                 
                 <div className="gradient-card p-8 rounded-2xl border border-primary/20">
-                  <img 
-                    src="/lovable-uploads/b81bd43c-c312-4c2d-b235-002b7bf718d1.png" 
+                  <img
+                    src="/case-study-triller.png"
                     alt="TrillerFest"
                     className="w-full h-64 object-cover rounded-lg mb-6"
                   />

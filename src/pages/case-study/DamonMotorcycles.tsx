@@ -43,8 +43,8 @@ const DamonMotorcycles = () => {
                 </div>
                 
                 <div className="gradient-card p-8 rounded-2xl border border-primary/20">
-                  <img 
-                    src="/lovable-uploads/ebba7dda-009e-4d3c-b5d4-06707a9a84ad.png" 
+                  <img
+                    src="/logo.png"
                     alt="Damon Motorcycles"
                     className="w-full h-64 object-cover rounded-lg mb-6"
                   />

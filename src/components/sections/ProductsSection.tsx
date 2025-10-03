@@ -1,17 +1,17 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, TrendingUp, Users, Zap, Globe } from 'lucide-react';
+import { ArrowRight, TrendingUp, Users, Zap, Tv } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const ProductsSection = () => {
   const products = [
     {
-      icon: <Globe className="w-8 h-8" />,
-      title: "White Label AdExchange",
-      description: "Launch an advertising business and earn money from day one with our comprehensive ad exchange platform.",
-      features: ["Real-time bidding", "Multi-format support", "Advanced analytics", "Fraud protection"],
+      icon: <Tv className="w-8 h-8" />,
+      title: "Premium CTV Advertising",
+      description: "The platform for performance marketers to run CTV ads with access to tier-1 streaming inventory.",
+      features: ["Premium streaming inventory", "AI-powered optimization", "Real-time analytics", "Performance tracking"],
       color: "from-blue-500 to-cyan-500",
-      link: "/white-label-adexchange"
+      link: "/ctv"
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
@@ -55,7 +55,7 @@ export const ProductsSection = () => {
             Advertising Ecosystem
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Choose from our suite of white-label solutions designed to maximize your revenue 
+            Choose from our suite of solutions designed to maximize your revenue
             and streamline your advertising operations.
           </p>
         </div>

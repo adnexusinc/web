@@ -43,8 +43,8 @@ const UnikoinGold = () => {
                 </div>
                 
                 <div className="gradient-card p-8 rounded-2xl border border-primary/20">
-                  <img 
-                    src="/lovable-uploads/b6c119ca-2228-4f91-8cde-0c3abf83e9f7.png" 
+                  <img
+                    src="/case-study-unikoin.png"
                     alt="Unikoin Gold"
                     className="w-full h-64 object-cover rounded-lg mb-6"
                   />

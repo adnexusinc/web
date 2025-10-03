@@ -19,31 +19,31 @@ export const AboutSection = () => {
           </h2>
 
           <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
-            developing a cutting-edge AdTech ecosystem that connects advertisers and publishers 
-            through advanced programmatic platforms and white-label solutions.
+            developing a cutting-edge AdTech ecosystem that connects advertisers and publishers
+            through advanced programmatic platforms.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* White Label AdExchange */}
+            {/* Premium CTV Advertising */}
             <div className="gradient-card rounded-xl p-6 backdrop-blur-sm border border-primary/20 hover:shadow-primary transition-smooth group">
               <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <ArrowRight className="text-primary-foreground" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">White Label AdExchange</h3>
+              <h3 className="text-lg font-semibold mb-2">Premium CTV Advertising</h3>
               <p className="text-sm text-muted-foreground mb-4">
-                Launch an advertising business and earn money from day one
+                The platform for performance marketers to run CTV ads
               </p>
               <div className="flex items-center text-accent text-sm font-medium">
                 Learn More <ArrowRight size={16} className="ml-1 group-hover:translate-x-1 transition-transform" />
               </div>
             </div>
 
-            {/* White Label DSP Platform */}
+            {/* DSP Platform */}
             <div className="gradient-card rounded-xl p-6 backdrop-blur-sm border border-primary/20 hover:shadow-primary transition-smooth group">
               <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <ArrowRight className="text-primary-foreground" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">White Label DSP Platform</h3>
+              <h3 className="text-lg font-semibold mb-2">Demand-Side Platform</h3>
               <p className="text-sm text-muted-foreground mb-4">
                 Grow your brand's performance with proven advertising software
               </p>
@@ -52,14 +52,14 @@ export const AboutSection = () => {
               </div>
             </div>
 
-            {/* White Label SSP Platform */}
+            {/* SSP Platform */}
             <div className="gradient-card rounded-xl p-6 backdrop-blur-sm border border-primary/20 hover:shadow-primary transition-smooth group">
               <div className="w-12 h-12 gradient-primary rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <ArrowRight className="text-primary-foreground" />
               </div>
-              <h3 className="text-lg font-semibold mb-2">White Label SSP Platform</h3>
+              <h3 className="text-lg font-semibold mb-2">Supply-Side Platform</h3>
               <p className="text-sm text-muted-foreground mb-4">
-                If you want to make money by placing ads on your websites and applications
+                Make money by placing ads on your websites and applications
               </p>
               <div className="flex items-center text-accent text-sm font-medium">
                 Learn More <ArrowRight size={16} className="ml-1 group-hover:translate-x-1 transition-transform" />

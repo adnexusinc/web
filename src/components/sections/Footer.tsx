@@ -39,11 +39,11 @@ export const Footer = () => {
     products: {
       title: "Products",
       links: [
-        { text: "Premium CTV Inventory", href: "/premium" },
-        { text: "Supply Side Platform", href: "/ssp" }, 
+        { text: "Premium CTV Advertising", href: "/ctv" },
+        { text: "Supply Side Platform", href: "/ssp" },
         { text: "Demand Side Platform", href: "/dsp" },
         { text: "Ad Exchange", href: "/adx" },
-        { text: "White Label AdExchange", href: "/white-label-adexchange" }
+        { text: "Creative Studio", href: "/studio" }
       ]
     },
     resources: {

@@ -179,10 +179,10 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-8">
             <Link to="/" className="flex items-center group">
-              <img 
-                src="/lovable-uploads/ebba7dda-009e-4d3c-b5d4-06707a9a84ad.png" 
-                alt="Adnexus" 
-                className="h-8 filter invert brightness-0 group-hover:brightness-100 transition-all duration-300" 
+              <img
+                src="/logo.png"
+                alt="Adnexus"
+                className="h-8 filter invert brightness-0 group-hover:brightness-100 transition-all duration-300"
               />
             </Link>
 

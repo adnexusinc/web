@@ -25,7 +25,7 @@ export const WhyUsSection = () => {
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Immediate Results",
-      description: "Launch your advertising business and start earning from day one with our white-label solutions and established partnerships.",
+      description: "Launch your advertising campaigns and start seeing results from day one with our platform and established partnerships.",
       color: "from-orange-500 to-red-500"
     }
   ];
