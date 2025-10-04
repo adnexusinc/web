@@ -37,7 +37,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Cache node_modules
         uses: actions/cache@v4
@@ -79,7 +79,7 @@ jobs:
             ${{ runner.os }}-node-${{ matrix.node-version }}-
 
       - name: Install dependencies (if cache miss)
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Run ESLint
         run: npm run lint
@@ -113,7 +113,7 @@ jobs:
             ${{ runner.os }}-node-${{ matrix.node-version }}-
 
       - name: Install dependencies (if cache miss)
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Run tests with coverage
         run: npm run test:coverage
@@ -155,7 +155,7 @@ jobs:
             ${{ runner.os }}-node-${{ matrix.node-version }}-
 
       - name: Install dependencies (if cache miss)
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Build production bundle
         run: npm run build

@@ -32,6 +32,9 @@ import {
 } from 'lucide-react';
 
 const NewIndex = () => {
+  // Video rotation state - cycle between two videos
+  const videoIds = ['kQl6FrmA1tQ', 'o_McZxpeaEc'];
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [email, setEmail] = useState('');
   const [showStatic, setShowStatic] = useState(false);
   const [showPhoneBanner, setShowPhoneBanner] = useState(true);
@@ -185,11 +188,21 @@ const NewIndex = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isPiP]);
 
-  // Update video source based on mute state
+  // Cycle videos every 30 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentVideoIndex((prev) => (prev + 1) % videoIds.length);
+    }, 30000); // 30 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Update video source based on current video and mute state
   useEffect(() => {
     const muteParam = isMuted ? '1' : '0';
-    setVideoSrc(`https://www.youtube.com/embed/kQl6FrmA1tQ?autoplay=1&loop=1&playlist=kQl6FrmA1tQ&mute=${muteParam}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`);
-  }, [isMuted]);
+    const currentVideoId = videoIds[currentVideoIndex];
+    setVideoSrc(`https://www.youtube.com/embed/${currentVideoId}?autoplay=1&mute=${muteParam}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`);
+  }, [isMuted, currentVideoIndex]);
 
   // Grid-based snapping for PiP
   const GRID_SIZE = 40; // 40px grid cells
@@ -404,7 +417,7 @@ const NewIndex = () => {
             <iframe
               ref={heroVideoRef}
               className="absolute inset-0 w-full h-full"
-              src={`https://www.youtube.com/embed/kQl6FrmA1tQ?autoplay=1&loop=1&playlist=kQl6FrmA1tQ&mute=${isPiP || isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+              src={`https://www.youtube.com/embed/${videoIds[currentVideoIndex]}?autoplay=1&mute=${isPiP || isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
               title="Adnexus Demo"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -544,7 +557,7 @@ const NewIndex = () => {
                   aspectRatio: '16 / 9',
                   pointerEvents: 'none', // Disable iframe clicks to allow dragging
                 }}
-                src={`https://www.youtube.com/embed/kQl6FrmA1tQ?autoplay=1&loop=1&playlist=kQl6FrmA1tQ&mute=${!isPiP || isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+                src={`https://www.youtube.com/embed/${videoIds[currentVideoIndex]}?autoplay=1&mute=${!isPiP || isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
                 title="Adnexus Demo PiP"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
