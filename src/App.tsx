@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { UnifiedPage } from "@/components/UnifiedPage";
 import { pageConfigs } from "@/lib/page-config";
+import { usePageTracking } from "@/hooks/usePageTracking";
 
 // Lazy load special/unique page components that need custom handling
 const Index = lazy(() => import("./pages/NewIndex"));
@@ -43,12 +44,19 @@ const LoadingFallback = () => (
   </div>
 );
 
+// Page tracking component
+const PageTracker = () => {
+  usePageTracking();
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <PageTracker />
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
             {/* Special pages with unique layouts */}
