@@ -630,14 +630,7 @@ export const pageConfigs: Record<string, PageConfig> = {
   },
 
   // Other pages
-  '/pricing': {
-    title: 'Transparent Pricing',
-    subtitle: 'Simple, competitive rates',
-    description: 'No hidden fees, no surprises. Choose the plan that fits your needs.',
-    heroButtonText: 'Get Custom Quote',
-    heroButtonLink: '/#contact',
-    showFooter: true
-  },
+  // Note: /pricing uses a custom Pricing.tsx page component, not UnifiedPage
 
   '/our-work': {
     title: 'Our Work',
