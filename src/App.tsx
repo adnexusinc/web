@@ -15,6 +15,7 @@ const Dashboard = lazy(() => import("./pages/Dashboard"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const Contact = lazy(() => import("./pages/Contact"));
 const FAQ = lazy(() => import("./pages/FAQ"));
+const Pricing = lazy(() => import("./pages/Pricing"));
 
 // Case study pages (unique layouts)
 const DamonMotorcycles = lazy(() => import("./pages/case-study/DamonMotorcycles"));
@@ -106,7 +107,7 @@ const App = () => (
             <Route path="/gdpr-compliance" element={<UnifiedPage config={pageConfigs['/gdpr-compliance']} />} />
 
             {/* Other */}
-            <Route path="/pricing" element={<UnifiedPage config={pageConfigs['/pricing']} />} />
+            <Route path="/pricing" element={<Pricing />} />
             <Route path="/our-work" element={<UnifiedPage config={pageConfigs['/our-work']} />} />
             <Route path="/case-studies" element={<UnifiedPage config={pageConfigs['/case-studies']} />} />
 
