@@ -25,7 +25,15 @@ import {
   Menu,
   X,
   Building2,
-  Film
+  Film,
+  BookOpen,
+  Calendar,
+  HelpCircle,
+  Briefcase,
+  Newspaper,
+  Sparkles,
+  FileText,
+  Lightbulb
 } from "lucide-react";
 
 const platformItems = [
@@ -115,10 +123,79 @@ const productItems = [
   }
 ];
 
+const resourcesItems = [
+  {
+    title: "Case Studies",
+    href: "/case-studies",
+    description: "Real results from real campaigns",
+    icon: FileText,
+    badge: "New"
+  },
+  {
+    title: "What's New",
+    href: "/resources#whats-new",
+    description: "Latest platform updates and features",
+    icon: Sparkles
+  },
+  {
+    title: "How To",
+    href: "/resources#how-to",
+    description: "Step-by-step guides and tutorials",
+    icon: Lightbulb
+  },
+  {
+    title: "Product Updates",
+    href: "/resources#product-updates",
+    description: "See what we're building",
+    icon: BookOpen
+  },
+  {
+    title: "Newsletter",
+    href: "/#newsletter",
+    description: "The latest news about CTV, case studies, and how-to guides",
+    icon: Newspaper
+  }
+];
+
+const companyItems = [
+  {
+    title: "Events",
+    href: "/company/events",
+    description: "Join us at industry conferences",
+    icon: Calendar,
+    badge: "New"
+  },
+  {
+    title: "About Us",
+    href: "/about",
+    description: "Our story and mission",
+    icon: Building2
+  },
+  {
+    title: "Help Center",
+    href: "/faq",
+    description: "Get answers to common questions",
+    icon: HelpCircle
+  },
+  {
+    title: "Jobs",
+    href: "/company/careers",
+    description: "Join our growing team",
+    icon: Briefcase,
+    badge: "We're hiring"
+  },
+  {
+    title: "Newsletter",
+    href: "/#newsletter",
+    description: "News & Insights delivered weekly",
+    icon: Newspaper
+  }
+];
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a"> & { icon?: React.ComponentType<{ className?: string }>; external?: boolean }
->(({ className, title, children, icon: Icon, external, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<"a"> & { icon?: React.ComponentType<{ className?: string }>; external?: boolean; badge?: string }
+>(({ className, title, children, icon: Icon, external, badge, ...props }, ref) => {
   const linkProps = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
   return (
     <li>
@@ -139,7 +216,14 @@ const ListItem = React.forwardRef<
               </div>
             )}
             <div className="flex-1">
-              <div className="text-sm font-medium leading-none mb-1">{title}</div>
+              <div className="flex items-center gap-2 mb-1">
+                <div className="text-sm font-medium leading-none">{title}</div>
+                {badge && (
+                  <span className="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded-full font-semibold">
+                    {badge}
+                  </span>
+                )}
+              </div>
               <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                 {children}
               </p>
@@ -201,6 +285,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                           href={item.href}
                           icon={item.icon}
                           external={item.external}
+                          badge={item.badge}
                         >
                           {item.description}
                         </ListItem>
@@ -221,6 +306,49 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                           title={item.title}
                           href={item.href}
                           icon={item.icon}
+                          badge={item.badge}
+                        >
+                          {item.description}
+                        </ListItem>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="bg-transparent">
+                    Resources
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[500px] gap-3 p-4">
+                      {resourcesItems.map((item) => (
+                        <ListItem
+                          key={item.title}
+                          title={item.title}
+                          href={item.href}
+                          icon={item.icon}
+                          badge={item.badge}
+                        >
+                          {item.description}
+                        </ListItem>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="bg-transparent">
+                    Company
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[500px] gap-3 p-4">
+                      {companyItems.map((item) => (
+                        <ListItem
+                          key={item.title}
+                          title={item.title}
+                          href={item.href}
+                          icon={item.icon}
+                          badge={item.badge}
                         >
                           {item.description}
                         </ListItem>
