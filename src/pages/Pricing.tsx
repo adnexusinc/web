@@ -225,271 +225,126 @@ export default function Pricing() {
             </div>
           </div>
 
-          {/* Subscription Plans */}
+          {/* Enterprise Agency Plan */}
           <div className="mb-24">
-            <h2 className="text-3xl font-bold text-center mb-4">Monthly Subscription Plans</h2>
+            <h2 className="text-3xl font-bold text-center mb-4">Enterprise Agency Services</h2>
             <p className="text-center text-white/60 mb-2 max-w-2xl mx-auto">
-              Flexible monthly plans for every business.
+              Full-service creative agency support for premium TV advertising with unlimited video production.
             </p>
             <p className="text-center text-white/80 mb-8 max-w-2xl mx-auto font-semibold">
-              💎 Save 10-20% per tier • Up to 30% with Plus & annual commitment
+              💎 White-glove service with dedicated creative team • $9 minimum for CTV ads
             </p>
 
-            <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
-              {/* Basic Plan */}
-              <Card className="p-6 bg-card/40 backdrop-blur-sm border-border/20 hover:border-white/40 transition-all">
-                <div className="mb-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold">Basic</h3>
-                    <span className="text-xs bg-green-600/20 text-green-400 px-2 py-1 rounded-full font-semibold">Save 10%</span>
-                  </div>
-                  <p className="text-sm text-white/60">For solo entrepreneurs</p>
+            <div className="max-w-lg mx-auto">
+              {/* Enterprise Agency Plan */}
+              <Card className="p-8 bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-sm border-2 border-white/40 hover:border-white/60 transition-all relative">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-yellow-600 to-orange-600 text-white px-4 py-1.5 rounded-full text-sm font-bold shadow-lg">
+                  🎬 Full Creative Agency
                 </div>
                 <div className="mb-6">
+                  <h3 className="text-2xl font-bold mb-2">Plus</h3>
+                  <p className="text-white/60">
+                    Premium TV advertising with full creative production
+                  </p>
+                </div>
+                <div className="mb-8">
                   <div className="text-sm text-white/60 mb-1">Starting at</div>
                   <div className="flex items-baseline gap-1 mb-1">
-                    <span className="text-4xl font-bold">$299</span>
+                    <span className="text-5xl font-bold">$9,999</span>
                     <span className="text-white/60">/month</span>
                   </div>
-                  <div className="text-xs text-white/50">billed monthly</div>
-                </div>
-                <div className="mb-6 p-3 bg-white/5 rounded-lg border border-white/10">
-                  <div className="text-xs text-white/60 mb-1">CPM rates starting at</div>
-                  <div className="text-sm font-semibold">$15 - $25 USD</div>
-                </div>
-                <div className="mb-6">
-                  <div className="text-sm font-semibold text-white/80 mb-3">Platform features</div>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Dashboard & campaigns</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Creatives library</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Basic targeting filters</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">General reports</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Email support</span>
-                    </li>
-                  </ul>
-                </div>
-                <a
-                  href="/auth"
-                  className="block w-full text-center rounded-full px-4 py-2.5 text-sm font-medium border border-white/20 hover:bg-white/10 transition-colors"
-                >
-                  Try for free
-                </a>
-                <p className="text-xs text-center text-white/50 mt-3">$25 for your first month</p>
-              </Card>
-
-              {/* Grow Plan - Most Popular */}
-              <Card className="p-6 bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-sm border-2 border-white/40 hover:border-white/60 transition-all relative">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-white text-black px-3 py-1 rounded-full text-xs font-semibold">
-                  Most Popular
-                </div>
-                <div className="mb-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold">Grow</h3>
-                    <span className="text-xs bg-blue-600/20 text-blue-400 px-2 py-1 rounded-full font-semibold">Save 15%</span>
-                  </div>
-                  <p className="text-sm text-white/60">For small teams</p>
-                </div>
-                <div className="mb-6">
-                  <div className="text-sm text-white/60 mb-1">Starting at</div>
-                  <div className="flex items-baseline gap-1 mb-1">
-                    <span className="text-4xl font-bold">$799</span>
-                    <span className="text-white/60">/month</span>
-                  </div>
-                  <div className="text-xs text-white/50">billed monthly</div>
-                </div>
-                <div className="mb-6 p-3 bg-white/5 rounded-lg border border-white/10">
-                  <div className="text-xs text-white/60 mb-1">CPM rates starting at</div>
-                  <div className="text-sm font-semibold">$18 - $28 USD</div>
-                </div>
-                <div className="mb-6">
-                  <div className="text-sm font-semibold text-white/80 mb-3">Platform features</div>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Everything in Basic</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Advanced targeting & audiences</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Media planning tools</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">AI optimization</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">5 staff accounts</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">24/7 chat support</span>
-                    </li>
-                  </ul>
-                </div>
-                <a
-                  href="/auth"
-                  className="block w-full text-center rounded-full px-4 py-2.5 text-sm font-medium bg-white text-black hover:bg-white/90 transition-colors"
-                >
-                  Try for free
-                </a>
-                <p className="text-xs text-center text-white/50 mt-3">$25 for your first month</p>
-              </Card>
-
-              {/* Advanced Plan */}
-              <Card className="p-6 bg-card/40 backdrop-blur-sm border-border/20 hover:border-white/40 transition-all">
-                <div className="mb-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold">Advanced</h3>
-                    <span className="text-xs bg-purple-600/20 text-purple-400 px-2 py-1 rounded-full font-semibold">Save 20%</span>
-                  </div>
-                  <p className="text-sm text-white/60">As your business scales</p>
-                </div>
-                <div className="mb-6">
-                  <div className="text-sm text-white/60 mb-1">Starting at</div>
-                  <div className="flex items-baseline gap-1 mb-1">
-                    <span className="text-4xl font-bold">$2,999</span>
-                    <span className="text-white/60">/month</span>
-                  </div>
-                  <div className="text-xs text-white/50">billed monthly</div>
-                </div>
-                <div className="mb-6 p-3 bg-white/5 rounded-lg border border-white/10">
-                  <div className="text-xs text-white/60 mb-1">CPM rates starting at</div>
-                  <div className="text-sm font-semibold">$20 - $30 USD</div>
-                </div>
-                <div className="mb-6">
-                  <div className="text-sm font-semibold text-white/80 mb-3">Platform features</div>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Everything in Grow</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Profit dashboard</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Discrepancy monitoring</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">System monitoring tools</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">15 staff accounts</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Enhanced 24/7 support</span>
-                    </li>
-                  </ul>
-                </div>
-                <a
-                  href="/auth"
-                  className="block w-full text-center rounded-full px-4 py-2.5 text-sm font-medium border border-white/20 hover:bg-white/10 transition-colors"
-                >
-                  Try for free
-                </a>
-                <p className="text-xs text-center text-white/50 mt-3">$399 for your first month</p>
-              </Card>
-
-              {/* Plus/Enterprise Plan */}
-              <Card className="p-6 bg-card/40 backdrop-blur-sm border-border/20 hover:border-white/40 transition-all relative">
-                <div className="absolute -top-3 right-4 bg-gradient-to-r from-yellow-600 to-orange-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
-                  30% OFF Annual
-                </div>
-                <div className="mb-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <h3 className="text-xl font-bold">Plus</h3>
-                    <span className="text-xs bg-yellow-600/20 text-yellow-400 px-2 py-1 rounded-full font-semibold">Save 30%</span>
-                  </div>
-                  <p className="text-sm text-white/60">For complex businesses</p>
-                </div>
-                <div className="mb-6">
-                  <div className="text-sm text-white/60 mb-1">Starting at</div>
-                  <div className="flex items-baseline gap-1 mb-1">
-                    <span className="text-4xl font-bold">$9,999</span>
-                    <span className="text-white/60">/month</span>
-                  </div>
-                  <div className="text-xs text-white/50">on a 3-year term</div>
+                  <div className="text-xs text-white/50">3-month minimum commitment</div>
                   <div className="text-xs text-green-400 font-semibold mt-1">💎 Credits rollover until used</div>
                 </div>
-                <div className="mb-6 p-3 bg-white/5 rounded-lg border border-white/10">
-                  <div className="text-xs text-white/60 mb-1">CPM rates</div>
-                  <div className="text-sm font-semibold">Competitive rates for high-volume</div>
-                  <div className="text-xs text-yellow-400 mt-1">Up to 30% off with annual pricing</div>
+
+                <div className="mb-6 p-4 bg-white/5 rounded-lg border border-white/10">
+                  <div className="text-xs text-white/60 mb-1">CTV Advertising Minimum</div>
+                  <div className="text-2xl font-bold text-green-400">$9 minimum</div>
+                  <div className="text-xs text-white/50 mt-1">Premium inventory access with enterprise rates</div>
                 </div>
-                <div className="mb-6">
-                  <div className="text-sm font-semibold text-white/80 mb-3">Platform features</div>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Everything in Advanced</span>
+
+                <div className="mb-8">
+                  <div className="text-sm font-semibold text-white/80 mb-4">Creative Agency Services</div>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <div className="text-white font-medium">Unlimited Video Production</div>
+                        <div className="text-white/60 text-xs">Concept, scripting, filming & editing for TV</div>
+                      </div>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Unlimited staff accounts</span>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <div className="text-white font-medium">Dedicated Creative Team</div>
+                        <div className="text-white/60 text-xs">Art directors, copywriters, video producers</div>
+                      </div>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Custom integrations & API</span>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <div className="text-white font-medium">Campaign Strategy & Planning</div>
+                        <div className="text-white/60 text-xs">Media planning, audience research, optimization</div>
+                      </div>
                     </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">White-label options</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Dedicated account team</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <Check className="w-4 h-4 text-white/60 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/70">Priority 24/7 phone support</span>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <div className="text-white font-medium">White-Label Solutions</div>
+                        <div className="text-white/60 text-xs">Custom branding & white-label platform access</div>
+                      </div>
                     </li>
                   </ul>
                 </div>
+
+                <div className="mb-8">
+                  <div className="text-sm font-semibold text-white/80 mb-4">Platform Features</div>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-white/60 mt-0.5 flex-shrink-0" />
+                      <span className="text-white/70">Unlimited staff accounts</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-white/60 mt-0.5 flex-shrink-0" />
+                      <span className="text-white/70">Custom integrations & API access</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-white/60 mt-0.5 flex-shrink-0" />
+                      <span className="text-white/70">Premium CTV inventory access</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-white/60 mt-0.5 flex-shrink-0" />
+                      <span className="text-white/70">Dedicated account manager</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-white/60 mt-0.5 flex-shrink-0" />
+                      <span className="text-white/70">Priority 24/7 support</span>
+                    </li>
+                  </ul>
+                </div>
+
                 <a
                   href="https://cal.com/adnexus"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center rounded-full px-4 py-2.5 text-sm font-medium border border-white/20 hover:bg-white/10 transition-colors"
+                  className="block w-full text-center rounded-full px-6 py-3.5 text-base font-semibold bg-white text-black hover:bg-white/90 transition-colors"
                 >
-                  Try Plus
+                  Book a Strategy Call
                 </a>
-                <p className="text-xs text-center text-white/50 mt-3">Learn more</p>
+                <p className="text-xs text-center text-white/50 mt-3">Speak with our creative team to get started</p>
               </Card>
             </div>
 
-            {/* Annual savings note */}
-            <div className="text-center mt-8 p-6 bg-gradient-to-r from-yellow-600/10 to-orange-600/10 rounded-lg border border-yellow-600/20">
+            {/* Benefits note */}
+            <div className="text-center mt-8 p-6 bg-gradient-to-r from-yellow-600/10 to-orange-600/10 rounded-lg border border-yellow-600/20 max-w-3xl mx-auto">
               <p className="text-lg font-semibold text-white mb-2">
-                🎯 Maximum Savings with Annual Commitment
+                🎯 Why Choose Enterprise Agency Services?
               </p>
               <p className="text-sm text-white/70 mb-3">
-                Lock in your rate and save up to <span className="font-bold text-yellow-400">30% annually</span> on enterprise plans.
-                Contact sales for custom bundle pricing and volume discounts.
+                Skip the hassle of hiring a full creative team. Get <span className="font-bold text-yellow-400">unlimited TV ad production</span> with professional quality at a fraction of the cost. Perfect for brands running continuous CTV campaigns.
               </p>
               <p className="text-xs text-white/60">
-                ✨ <span className="font-semibold">Bonus:</span> All unused credits rollover until fully utilized—no waste, maximum value.
+                ✨ <span className="font-semibold">Bonus:</span> All unused credits rollover until fully utilized—no waste, maximum value. Plus, $9 minimum for CTV ads gives you unbeatable flexibility.
               </p>
             </div>
           </div>
@@ -508,15 +363,16 @@ export default function Pricing() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Is there a minimum spending requirement?</h3>
                 <p className="text-white/70">
-                  Yes, the minimum spending requirement is $25 per day. This allows businesses of all sizes to access our
-                  advertising platform while maintaining flexibility in their budget.
+                  For our Enterprise Agency tier at $9,999/month, the minimum for CTV ads is just $9. This gives you maximum
+                  flexibility to test campaigns and scale as needed while receiving full creative agency support.
                 </p>
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Can I switch between plans?</h3>
+                <h3 className="text-xl font-semibold mb-2">What's included in the $9,999/month plan?</h3>
                 <p className="text-white/70">
-                  Yes! You can upgrade or downgrade between plans at any time. Annual commitments offer up to 50% savings.
-                  Contact our sales team to discuss custom enterprise solutions and bundle pricing.
+                  Everything you need for premium CTV advertising: unlimited video production, dedicated creative team,
+                  campaign strategy & planning, white-label solutions, unlimited staff accounts, and 24/7 priority support.
+                  Plus, just $9 minimum for CTV ads with credits that rollover until used.
                 </p>
               </div>
             </div>
