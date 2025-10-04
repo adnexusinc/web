@@ -16,6 +16,11 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 const Contact = lazy(() => import("./pages/Contact"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const Pricing = lazy(() => import("./pages/Pricing"));
+const StudioPage = lazy(() => import("./pages/StudioPage"));
+const CaseStudies = lazy(() => import("./pages/CaseStudies"));
+const Company = lazy(() => import("./pages/Company"));
+const About = lazy(() => import("./pages/About"));
+const Resources = lazy(() => import("./pages/Resources"));
 
 // Case study pages (unique layouts)
 const DamonMotorcycles = lazy(() => import("./pages/case-study/DamonMotorcycles"));
@@ -66,7 +71,7 @@ const App = () => (
             <Route path="/dsp" element={<UnifiedPage config={pageConfigs['/dsp']} />} />
             <Route path="/ssp" element={<UnifiedPage config={pageConfigs['/ssp']} />} />
             <Route path="/adx" element={<UnifiedPage config={pageConfigs['/adx']} />} />
-            <Route path="/studio" element={<UnifiedPage config={pageConfigs['/studio']} />} />
+            <Route path="/studio" element={<StudioPage />} />
 
             {/* Platform */}
             <Route path="/platform/overview" element={<UnifiedPage config={pageConfigs['/platform/overview']} />} />
@@ -80,12 +85,12 @@ const App = () => (
             <Route path="/publishers" element={<UnifiedPage config={pageConfigs['/publishers']} />} />
 
             {/* Company */}
-            <Route path="/company" element={<UnifiedPage config={pageConfigs['/company']} />} />
-            <Route path="/about" element={<UnifiedPage config={pageConfigs['/about']} />} />
+            <Route path="/company" element={<Company />} />
+            <Route path="/about" element={<About />} />
             <Route path="/partners" element={<UnifiedPage config={pageConfigs['/partners']} />} />
             <Route path="/inventory" element={<UnifiedPage config={pageConfigs['/inventory']} />} />
             <Route path="/industries" element={<UnifiedPage config={pageConfigs['/industries']} />} />
-            <Route path="/resources" element={<UnifiedPage config={pageConfigs['/resources']} />} />
+            <Route path="/resources" element={<Resources />} />
             <Route path="/premium" element={<UnifiedPage config={pageConfigs['/premium']} />} />
             <Route path="/ctv" element={<UnifiedPage config={pageConfigs['/ctv']} />} />
 
@@ -109,7 +114,7 @@ const App = () => (
             {/* Other */}
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/our-work" element={<UnifiedPage config={pageConfigs['/our-work']} />} />
-            <Route path="/case-studies" element={<UnifiedPage config={pageConfigs['/case-studies']} />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
 
             {/* 404 - Must be last */}
             <Route path="*" element={<NotFound />} />
