@@ -254,7 +254,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
 
   return (
     <header className={cn(
-      "fixed left-0 right-0 z-40 transition-all duration-300",
+      "fixed left-0 right-0 z-50 transition-all duration-300",
       isScrolled ? "bg-background/95 backdrop-blur-md border-b border-border" : "bg-transparent"
     )}
     style={{ top: bannerVisible ? '40px' : '0' }}
