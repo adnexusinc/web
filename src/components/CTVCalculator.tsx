@@ -47,96 +47,108 @@ export function CTVCalculator() {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
-      <div className="mb-8">
-        <h3 className="text-2xl font-bold mb-2">Test your budget</h3>
-        <p className="text-foreground/70">
-          Simulate your campaign results by entering your future campaign budgets.
-        </p>
-      </div>
+    <div className="w-full max-w-7xl mx-auto">
+      <div className="grid lg:grid-cols-2 gap-8 items-start">
+        {/* Left side - Budget input */}
+        <div className="bg-white rounded-3xl p-12 text-black">
+          <h3 className="text-3xl font-bold mb-4 text-black">Test your budget</h3>
+          <p className="text-gray-600 mb-8">
+            Simulate your campaign results by entering your future campaign budgets.
+          </p>
 
-      {/* Budget Slider */}
-      <div className="mb-12">
-        <div className="flex items-baseline gap-2 mb-4">
-          <span className="text-4xl font-bold">${budget.toLocaleString()}</span>
-          <span className="text-foreground/60">USD</span>
+          <div className="mb-8">
+            <div className="flex items-baseline gap-2 mb-6">
+              <span className="text-2xl">$</span>
+              <input
+                type="number"
+                value={budget}
+                onChange={(e) => setBudget(Number(e.target.value))}
+                className="text-5xl font-normal border-b-2 border-gray-300 focus:border-blue-500 outline-none bg-transparent w-full"
+              />
+              <span className="text-gray-500 text-sm">USD</span>
+            </div>
+
+            <Slider
+              value={[budget]}
+              onValueChange={(value) => setBudget(value[0])}
+              min={50}
+              max={100000}
+              step={50}
+              className="w-full mb-4"
+            />
+
+            <div className="flex justify-between text-sm text-gray-600">
+              <span>$50</span>
+              <span>$100,000</span>
+            </div>
+          </div>
         </div>
-        <Slider
-          value={[budget]}
-          onValueChange={(value) => setBudget(value[0])}
-          min={50}
-          max={100000}
-          step={50}
-          className="w-full"
-        />
-        <div className="flex justify-between text-sm text-foreground/60 mt-2">
-          <span>$50</span>
-          <span>$100,000</span>
+
+        {/* Right side - Metrics */}
+        <div className="bg-white rounded-3xl p-12 text-black">
+          <div className="grid grid-cols-2 gap-8">
+            <div>
+              <div className="text-sm text-blue-600 font-semibold mb-2 uppercase tracking-wide">CPM</div>
+              <div className="text-4xl font-bold text-black">${minCPM}-${maxCPM}</div>
+            </div>
+
+            <div>
+              <div className="text-sm text-blue-600 font-semibold mb-2 uppercase tracking-wide">Impressions</div>
+              <div className="text-4xl font-bold text-black">{formatRange(minImpressions, maxImpressions)}</div>
+            </div>
+
+            <div>
+              <div className="text-sm text-blue-600 font-semibold mb-2 uppercase tracking-wide">Cost per View</div>
+              <div className="text-4xl font-bold text-black">${minCostPerView}-${maxCostPerView}</div>
+            </div>
+
+            <div>
+              <div className="text-sm text-blue-600 font-semibold mb-2 uppercase tracking-wide">Households</div>
+              <div className="text-4xl font-bold text-black">{formatRange(minHouseholds, maxHouseholds)}</div>
+            </div>
+
+            <div>
+              <div className="text-sm text-blue-600 font-semibold mb-2 uppercase tracking-wide">Web Visits</div>
+              <div className="text-4xl font-bold text-black">{formatRange(minWebVisits, maxWebVisits)}</div>
+            </div>
+
+            <div>
+              <div className="text-sm text-blue-600 font-semibold mb-2 uppercase tracking-wide">App Installs</div>
+              <div className="text-4xl font-bold text-black">{formatRange(minAppInstalls, maxAppInstalls)}</div>
+            </div>
+
+            <div>
+              <div className="text-sm text-blue-600 font-semibold mb-2 uppercase tracking-wide">Sales</div>
+              <div className="text-4xl font-bold text-black">{formatRange(minSales, maxSales)}</div>
+            </div>
+
+            <div>
+              <div className="text-sm text-blue-600 font-semibold mb-2 uppercase tracking-wide">Foot Traffic</div>
+              <div className="text-4xl font-bold text-black">{formatRange(minFootTraffic, maxFootTraffic)}</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Metrics Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-        <Card className="p-4 bg-card/40 backdrop-blur-sm border-border/20">
-          <div className="text-sm text-foreground/60 mb-1">CPM</div>
-          <div className="text-xl font-bold">${minCPM}-${maxCPM}</div>
-        </Card>
-
-        <Card className="p-4 bg-card/40 backdrop-blur-sm border-border/20">
-          <div className="text-sm text-foreground/60 mb-1">Impressions</div>
-          <div className="text-xl font-bold">{formatRange(minImpressions, maxImpressions)}</div>
-        </Card>
-
-        <Card className="p-4 bg-card/40 backdrop-blur-sm border-border/20">
-          <div className="text-sm text-foreground/60 mb-1">Cost per View</div>
-          <div className="text-xl font-bold">${minCostPerView}-${maxCostPerView}</div>
-        </Card>
-
-        <Card className="p-4 bg-card/40 backdrop-blur-sm border-border/20">
-          <div className="text-sm text-foreground/60 mb-1">Households</div>
-          <div className="text-xl font-bold">{formatRange(minHouseholds, maxHouseholds)}</div>
-        </Card>
-
-        <Card className="p-4 bg-card/40 backdrop-blur-sm border-border/20">
-          <div className="text-sm text-foreground/60 mb-1">Web Visits</div>
-          <div className="text-xl font-bold">{formatRange(minWebVisits, maxWebVisits)}</div>
-        </Card>
-
-        <Card className="p-4 bg-card/40 backdrop-blur-sm border-border/20">
-          <div className="text-sm text-foreground/60 mb-1">App Installs</div>
-          <div className="text-xl font-bold">{formatRange(minAppInstalls, maxAppInstalls)}</div>
-        </Card>
-
-        <Card className="p-4 bg-card/40 backdrop-blur-sm border-border/20">
-          <div className="text-sm text-foreground/60 mb-1">Sales</div>
-          <div className="text-xl font-bold">{formatRange(minSales, maxSales)}</div>
-        </Card>
-
-        <Card className="p-4 bg-card/40 backdrop-blur-sm border-border/20">
-          <div className="text-sm text-foreground/60 mb-1">Foot Traffic</div>
-          <div className="text-xl font-bold">{formatRange(minFootTraffic, maxFootTraffic)}</div>
-        </Card>
-      </div>
-
-      <div className="text-center">
-        <p className="text-sm text-foreground/60 mb-4">
-          Start advertising on TV in 5 minutes
+      {/* CTA Section */}
+      <div className="text-center mt-12">
+        <h4 className="text-2xl font-bold mb-4 text-white">Start advertising on TV in 5 minutes</h4>
+        <p className="text-white/70 mb-8">
+          Starts at only $50/d - No Commitment - Credit Card or Wire Payment
         </p>
-        <p className="text-sm text-foreground/70 mb-6">
-          Starts at only $50/day - No Commitment - Credit Card or Wire Payment
-        </p>
-        <div className="flex gap-4 justify-center">
+        <div className="flex gap-4 justify-center flex-wrap">
           <a
             href="https://cal.com/adnexus"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-full px-8 py-3 text-base font-medium bg-white text-black hover:bg-white/90 transition-colors"
+            className="inline-flex items-center justify-center rounded-full px-8 py-3 text-base font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors"
           >
             Book a demo
           </a>
+          <span className="text-white/60 self-center">OR</span>
           <a
             href="/auth"
-            className="inline-flex items-center justify-center rounded-full px-8 py-3 text-base font-medium border border-white/20 hover:bg-white/10 transition-colors"
+            className="inline-flex items-center justify-center rounded-full px-8 py-3 text-base font-medium bg-blue-600 text-white hover:bg-blue-700 transition-colors"
           >
             Get started
           </a>

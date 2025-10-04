@@ -133,19 +133,19 @@ const resourcesItems = [
   },
   {
     title: "What's New",
-    href: "/resources#whats-new",
+    href: "/resources",
     description: "Latest platform updates and features",
     icon: Sparkles
   },
   {
     title: "How To",
-    href: "/resources#how-to",
+    href: "/resources",
     description: "Step-by-step guides and tutorials",
     icon: Lightbulb
   },
   {
     title: "Product Updates",
-    href: "/resources#product-updates",
+    href: "/resources",
     description: "See what we're building",
     icon: BookOpen
   },
@@ -160,7 +160,7 @@ const resourcesItems = [
 const companyItems = [
   {
     title: "Events",
-    href: "/company/events",
+    href: "/company",
     description: "Join us at industry conferences",
     icon: Calendar,
     badge: "New"
@@ -179,7 +179,7 @@ const companyItems = [
   },
   {
     title: "Jobs",
-    href: "/company/careers",
+    href: "/contact",
     description: "Join our growing team",
     icon: Briefcase,
     badge: "We're hiring"
