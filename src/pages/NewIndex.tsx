@@ -188,7 +188,7 @@ const NewIndex = () => {
   // Update video source based on mute state
   useEffect(() => {
     const muteParam = isMuted ? '1' : '0';
-    setVideoSrc(`https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${muteParam}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`);
+    setVideoSrc(`https://www.youtube.com/embed/UvWAHSm8Kvs?autoplay=1&loop=1&playlist=UvWAHSm8Kvs&mute=${muteParam}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`);
   }, [isMuted]);
 
   // Grid-based snapping for PiP
@@ -404,7 +404,7 @@ const NewIndex = () => {
             <iframe
               ref={heroVideoRef}
               className="absolute inset-0 w-full h-full"
-              src={`https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${isPiP || isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+              src={`https://www.youtube.com/embed/UvWAHSm8Kvs?autoplay=1&loop=1&playlist=UvWAHSm8Kvs&mute=${isPiP || isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
               title="Adnexus Demo"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -544,7 +544,7 @@ const NewIndex = () => {
                   aspectRatio: '16 / 9',
                   pointerEvents: 'none', // Disable iframe clicks to allow dragging
                 }}
-                src={`https://www.youtube.com/embed/o_McZxpeaEc?autoplay=1&loop=1&playlist=o_McZxpeaEc&mute=${!isPiP || isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
+                src={`https://www.youtube.com/embed/UvWAHSm8Kvs?autoplay=1&loop=1&playlist=UvWAHSm8Kvs&mute=${!isPiP || isMuted ? '1' : '0'}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`}
                 title="Adnexus Demo PiP"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
