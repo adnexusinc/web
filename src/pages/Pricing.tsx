@@ -28,6 +28,59 @@ export default function Pricing() {
             <CTVCalculator />
           </div>
 
+          {/* CTA Sections */}
+          <div className="mb-24">
+            <div className="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+              {/* Get Started CTA */}
+              <div className="relative h-[400px] rounded-3xl overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800">
+                  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800')] bg-cover bg-center opacity-40"></div>
+                </div>
+                <div className="relative h-full flex flex-col items-center justify-center text-center p-8">
+                  <h3 className="text-4xl md:text-5xl font-bold mb-8 text-white">
+                    Get started with<br />Adnexus<br />in minutes.
+                  </h3>
+                  <div className="flex gap-4 items-center">
+                    <input
+                      type="email"
+                      placeholder="What's your work email?"
+                      className="px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder:text-white/60 focus:outline-none focus:border-white/40 w-64"
+                    />
+                    <a
+                      href="/auth"
+                      className="px-8 py-3 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors"
+                    >
+                      Get started
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Talk to Expert CTA */}
+              <div className="relative h-[400px] rounded-3xl overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800">
+                  <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800')] bg-cover bg-center opacity-40"></div>
+                </div>
+                <div className="relative h-full flex flex-col items-center justify-center text-center p-8">
+                  <h3 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+                    Need help<br />defining your<br />budget?
+                  </h3>
+                  <p className="text-white/80 mb-8 text-lg">
+                    Talk to our experts for detailed and accurate<br />information.
+                  </p>
+                  <a
+                    href="https://cal.com/adnexus"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:bg-white/90 transition-colors"
+                  >
+                    Talk to a TV expert
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* What's Included */}
           <div className="mb-24">
             <h2 className="text-3xl font-bold text-center mb-12">What's included</h2>
@@ -448,15 +501,15 @@ export default function Pricing() {
               <div>
                 <h3 className="text-xl font-semibold mb-2">What is the price to advertise on top channels?</h3>
                 <p className="text-white/70">
-                  Pricing varies by channel and inventory quality. Our platform provides access to premium CTV inventory
-                  with CPMs typically ranging from $15-$35. The calculator above shows estimated costs based on your budget.
+                  Our cost per thousand impressions (CPM) ranges from $15 to $40, depending on the channel and time of placement.
+                  This competitive pricing ensures affordable access to premium audiences.
                 </p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Is there a minimum spending requirement?</h3>
                 <p className="text-white/70">
-                  You can start with as little as $25 for your first month on any plan. Monthly subscriptions range from $299/month (Basic)
-                  to $9,999/month (Plus). We also offer pay-as-you-go options with no monthly commitment.
+                  Yes, the minimum spending requirement is $25 per day. This allows businesses of all sizes to access our
+                  advertising platform while maintaining flexibility in their budget.
                 </p>
               </div>
               <div>
