@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Check } from 'lucide-react';
-import Navigation from '@/components/Navigation';
+import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/sections/Footer';
 import { CTVCalculator } from '@/components/CTVCalculator';
 import { Card } from '@/components/ui/card';
