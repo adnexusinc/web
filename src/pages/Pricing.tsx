@@ -360,7 +360,10 @@ export default function Pricing() {
               </Card>
 
               {/* Plus/Enterprise Plan */}
-              <Card className="p-6 bg-card/40 backdrop-blur-sm border-border/20 hover:border-white/40 transition-all">
+              <Card className="p-6 bg-card/40 backdrop-blur-sm border-border/20 hover:border-white/40 transition-all relative">
+                <div className="absolute -top-3 right-4 bg-gradient-to-r from-yellow-600 to-orange-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg">
+                  50% OFF Annual
+                </div>
                 <div className="mb-4">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-xl font-bold">Plus</h3>
@@ -375,10 +378,12 @@ export default function Pricing() {
                     <span className="text-white/60">/month</span>
                   </div>
                   <div className="text-xs text-white/50">on a 3-year term</div>
+                  <div className="text-xs text-green-400 font-semibold mt-1">💎 Credits rollover until used</div>
                 </div>
                 <div className="mb-6 p-3 bg-white/5 rounded-lg border border-white/10">
                   <div className="text-xs text-white/60 mb-1">CPM rates</div>
                   <div className="text-sm font-semibold">Competitive rates for high-volume</div>
+                  <div className="text-xs text-yellow-400 mt-1">Up to 50% off with annual pricing</div>
                 </div>
                 <div className="mb-6">
                   <div className="text-sm font-semibold text-white/80 mb-3">Platform features</div>
@@ -426,9 +431,12 @@ export default function Pricing() {
               <p className="text-lg font-semibold text-white mb-2">
                 🎯 Maximum Savings with Annual Commitment
               </p>
-              <p className="text-sm text-white/70">
-                Lock in your rate and save up to <span className="font-bold text-yellow-400">50% annually</span> on any plan.
-                Contact sales for custom bundle pricing and enterprise discounts.
+              <p className="text-sm text-white/70 mb-3">
+                Lock in your rate and save up to <span className="font-bold text-yellow-400">50% annually</span> on enterprise plans.
+                Contact sales for custom bundle pricing and volume discounts.
+              </p>
+              <p className="text-xs text-white/60">
+                ✨ <span className="font-semibold">Bonus:</span> All unused credits rollover until fully utilized—no waste, maximum value.
               </p>
             </div>
           </div>
