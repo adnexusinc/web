@@ -8,8 +8,8 @@ Adnexus is an enterprise-grade programmatic advertising platform offering DSP, S
 
 ### Key Features
 - **Premium CTV Inventory**: Premium CPM pricing
-- **Enterprise Platform**: DSP, SSP, ADX in one integrated solution  
-- **AI-Powered**: Machine learning optimization for 340% average ROI
+- **Enterprise Platform**: DSP, SSP, and Video Studio in one integrated solution  
+- **AI-Powered**: Machine learning optimization for above average ROI
 - **Monochrome Moon Branding**: Custom moon logo with animated stars
 - **Enterprise Subscription**: Enterprise-only model with white-glove service
 
