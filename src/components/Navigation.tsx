@@ -382,14 +382,14 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                         <a href="https://dsp.ad.nexus" className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-accent transition-colors">
                           <Target className="h-4 w-4" />
                           <div>
-                            <div className="font-medium">DSP Login</div>
+                            <div className="font-medium">Advertiser Login</div>
                             <div className="text-xs text-muted-foreground">Demand-Side Platform</div>
                           </div>
                         </a>
                         <a href="https://ssp.ad.nexus" className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-accent transition-colors">
                           <Globe className="h-4 w-4" />
                           <div>
-                            <div className="font-medium">SSP Login</div>
+                            <div className="font-medium">Publisher Login</div>
                             <div className="text-xs text-muted-foreground">Supply-Side Platform</div>
                           </div>
                         </a>
@@ -475,7 +475,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                       <Button variant="ghost" className="w-full justify-start gap-2">
                         <Target className="h-4 w-4" />
                         <div className="text-left">
-                          <div>DSP Login</div>
+                          <div>Advertiser Login</div>
                           <div className="text-xs text-muted-foreground">Demand-Side Platform</div>
                         </div>
                       </Button>
@@ -484,7 +484,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                       <Button variant="ghost" className="w-full justify-start gap-2">
                         <Globe className="h-4 w-4" />
                         <div className="text-left">
-                          <div>SSP Login</div>
+                          <div>Publisher Login</div>
                           <div className="text-xs text-muted-foreground">Supply-Side Platform</div>
                         </div>
                       </Button>
