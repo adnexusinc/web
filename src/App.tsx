@@ -148,10 +148,15 @@ const App = () => (
 
             {/* Legal */}
             <Route path="/terms-of-service" element={<UnifiedPage config={pageConfigs['/terms-of-service']} />} />
+            <Route path="/terms" element={<Navigate to="/terms-of-service" replace />} />
             <Route path="/privacy-policy" element={<UnifiedPage config={pageConfigs['/privacy-policy']} />} />
+            <Route path="/privacy" element={<Navigate to="/privacy-policy" replace />} />
             <Route path="/cookie-policy" element={<UnifiedPage config={pageConfigs['/cookie-policy']} />} />
+            <Route path="/cookies" element={<Navigate to="/cookie-policy" replace />} />
             <Route path="/data-processing-addendum" element={<UnifiedPage config={pageConfigs['/data-processing-addendum']} />} />
+            <Route path="/dpa" element={<Navigate to="/data-processing-addendum" replace />} />
             <Route path="/gdpr-compliance" element={<UnifiedPage config={pageConfigs['/gdpr-compliance']} />} />
+            <Route path="/gdpr" element={<Navigate to="/gdpr-compliance" replace />} />
 
             {/* Other */}
             <Route path="/pricing" element={<Pricing />} />
