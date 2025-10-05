@@ -1,13 +1,12 @@
 
-import { Navigation } from '@/components/Navigation';
-import { Footer } from '@/components/sections/Footer';
+
+import Footer from '@/agency/components/Footer';
 import { ArrowUpRight, Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <>
-      <Navigation bannerVisible={false} />
-      <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col">
+      {/* <Navbar /> removed - using global NewHeader */}
       
       <main className="flex-grow container-custom py-32">
         <div className="max-w-3xl mx-auto">
@@ -43,16 +42,16 @@ const Contact = () => {
               
               <h2 className="text-2xl font-bold mt-8 mb-4">Follow Us</h2>
               <div className="flex space-x-4">
-                <a href="#" className="geometric-circle border border-black/20 aspect-square w-12 h-12 flex items-center justify-center hover:bg-accent/20 transition-colors">
+                <a href="https://www.instagram.com/hanzoai" target="_blank" rel="noopener noreferrer" className="geometric-circle border border-black/20 aspect-square w-12 h-12 flex items-center justify-center hover:bg-accent/20 transition-colors">
                   <Instagram size={20} />
                 </a>
-                <a href="#" className="geometric-circle border border-black/20 aspect-square w-12 h-12 flex items-center justify-center hover:bg-accent/20 transition-colors">
+                <a href="https://www.facebook.com/hanzo-inc" target="_blank" rel="noopener noreferrer" className="geometric-circle border border-black/20 aspect-square w-12 h-12 flex items-center justify-center hover:bg-accent/20 transition-colors">
                   <Facebook size={20} />
                 </a>
-                <a href="#" className="geometric-circle border border-black/20 aspect-square w-12 h-12 flex items-center justify-center hover:bg-accent/20 transition-colors">
+                <a href="https://x.com/hanzoai" target="_blank" rel="noopener noreferrer" className="geometric-circle border border-black/20 aspect-square w-12 h-12 flex items-center justify-center hover:bg-accent/20 transition-colors">
                   <Twitter size={20} />
                 </a>
-                <a href="#" className="geometric-circle border border-black/20 aspect-square w-12 h-12 flex items-center justify-center hover:bg-accent/20 transition-colors">
+                <a href="https://www.linkedin.com/company/hanzoai" target="_blank" rel="noopener noreferrer" className="geometric-circle border border-black/20 aspect-square w-12 h-12 flex items-center justify-center hover:bg-accent/20 transition-colors">
                   <Linkedin size={20} />
                 </a>
               </div>
@@ -63,7 +62,6 @@ const Contact = () => {
       
       <Footer />
     </div>
-    </>
   );
 };
 

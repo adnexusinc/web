@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
-import { Navigation } from '@/components/Navigation';
 import Hero from '@/agency/components/Hero';
 import Services from '@/agency/components/Services';
-import WhyHanzo from '@/agency/components/WhyHanzo';
+import WhyAdnexus from '@/agency/components/WhyAdnexus';
 import CaseStudy from '@/agency/components/CaseStudy';
 import Testimonials from '@/agency/components/Testimonials';
 import Process from '@/agency/components/Process';
 import Pricing from '@/agency/components/Pricing';
 import FAQ from '@/agency/components/FAQ';
-import { Footer } from '@/components/sections/Footer';
+import Footer from '@/agency/components/Footer';
 import ScrollReveal from '@/agency/utils/ScrollReveal';
 import AICapabilities from '@/agency/components/AICapabilities';
 // import ModernTestimonials from '@/agency/components/ModernTestimonials';
@@ -69,13 +68,12 @@ const Index = () => {
   return (
     <ScrollReveal>
       <div className="min-h-screen flex flex-col">
-        <Navigation bannerVisible={false} />
         <Hero />
         <Services />
         <AICapabilities />
-        <StatsSection />
-        <WhyHanzo />
+        <WhyAdnexus />
         <CaseStudy />
+        <StatsSection />
         <Process />
         <Footer />
       </div>

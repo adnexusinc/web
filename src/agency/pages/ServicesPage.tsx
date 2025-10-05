@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Navigation } from '@/components/Navigation';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check } from 'lucide-react';
-import { Footer } from '@/components/sections/Footer';
+import Footer from '@/agency/components/Footer';
 import { services } from '@/agency/data/services';
 import ServiceTemplate from './services/ServiceTemplate';
 
@@ -41,19 +40,31 @@ const ServicesPage: React.FC = () => {
 
   // If a specific service is requested, render the ServiceTemplate component
   if (serviceParam) {
-    const serviceId = serviceParam.split('/').pop() || '';
-    const service = Object.values(services).find(s => s.id === serviceId);
+    // Extract the service ID from the URL path
+    const serviceId = serviceParam;
+    const service = services[serviceId];
 
     if (service) {
       return <ServiceTemplate service={service} />;
+    } else {
+      // Return a 404 page for unknown service
+      return (
+        <div className="min-h-screen bg-black text-white flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold mb-4">Service Not Found</h1>
+            <p className="text-gray-400 mb-8">The service "{serviceId}" could not be found.</p>
+            <Link to="/services" className="text-blue-400 hover:underline">
+              ← Back to Services
+            </Link>
+          </div>
+        </div>
+      );
     }
   }
 
   // Otherwise render the main services overview page
   return (
-    <>
-      <Navigation bannerVisible={false} />
-      <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white">
       {/* Navbar removed since it's now global */}
 
       <main className="pt-24">
@@ -66,9 +77,9 @@ const ServicesPage: React.FC = () => {
                 Transforming traditional creative paradigms with an AI-enhanced approach that delivers measurable outcomes.
               </p>
 
-              <Link to="/login" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
+              <a href="https://auth.ad.nexus" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
                 Get Started Today <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -119,7 +130,7 @@ const ServicesPage: React.FC = () => {
             <div className="max-w-lg mx-auto">
               <div className="bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden">
                 <div className="p-8 bg-blue-600 text-center">
-                  <h3 className="text-3xl font-bold mb-2">Agency Services</h3>
+                  <h3 className="text-3xl font-bold mb-2">Enterprise Plan</h3>
                   <div className="text-5xl font-bold my-6">$9,999<span className="text-xl font-normal">/month</span></div>
                   <p className="text-lg opacity-90">Billed monthly. Cancel anytime.</p>
                 </div>
@@ -153,9 +164,9 @@ const ServicesPage: React.FC = () => {
                   </ul>
 
                   <div className="mt-8">
-                    <Link to="/login" className="block w-full bg-white text-black py-4 rounded-full text-center font-medium hover:bg-white/90 transition-colors text-lg">
+                    <a href="https://auth.ad.nexus" className="block w-full bg-white text-black py-4 rounded-full text-center font-medium hover:bg-white/90 transition-colors text-lg">
                       Sign Up Now
-                    </Link>
+                    </a>
                     <p className="text-center mt-4 text-gray-400">No credit card required to start</p>
                   </div>
                 </div>
@@ -218,9 +229,9 @@ const ServicesPage: React.FC = () => {
               </p>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <Link to="/login" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
+                <a href="https://auth.ad.nexus" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
                   Sign Up for $9,999/month <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </a>
                 <a href="https://cal.com/adnexus/z1YsZQrqR4s6jQqD8" className="border border-white px-8 py-4 rounded-full font-medium hover:bg-white/10 inline-flex items-center text-lg">
                   Schedule a Consultation
                 </a>
@@ -232,7 +243,6 @@ const ServicesPage: React.FC = () => {
 
       <Footer />
     </div>
-    </>
   );
 };
 

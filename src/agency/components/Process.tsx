@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Code, ArrowUpRight, BarChart3, Layers, Zap } from 'lucide-react';
 
 const Process = () => {
@@ -62,24 +63,24 @@ const Process = () => {
 
           <div className="mt-8 text-center">
             <p className="text-white/70 mb-4">Our versatile development capabilities extend across the full technology spectrum</p>
-            <a href="/technology-stack" className="inline-flex items-center text-primary hover:underline">
+            <Link to="/capabilities" className="inline-flex items-center text-primary hover:underline">
               View our technology stack
               <ArrowUpRight className="ml-1 h-4 w-4" />
-            </a>
+            </Link>
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-blue-900/40 to-purple-900/40 p-8 md:p-12 rounded-2xl border border-white/10">
+        <div className="bg-gradient-to-r from-gray-900 to-black p-8 md:p-12 rounded-2xl border border-white/10">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-bold mb-4">Unlock Unlimited AI Acceleration</h3>
               <p className="text-white/70 mb-6">
                 Augment your high-value teams with AI-powered workflows that multiply productivity, enhance capabilities, and drive innovation at unprecedented speed and scale.
               </p>
-              <a href="/solutions" className="inline-flex items-center bg-white text-black hover:bg-white/90 py-3 px-6 rounded-full font-medium transition-colors">
+              <Link to="/solutions" className="inline-flex items-center bg-white text-black hover:bg-white/90 py-3 px-6 rounded-full font-medium transition-colors">
                 Accelerate your business
                 <ArrowUpRight className="ml-2 h-4 w-4" />
-              </a>
+              </Link>
             </div>
 
             <div className="space-y-4">

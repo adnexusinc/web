@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useToast } from "@/hooks/use-toast";
 import { CreditCard, Mail, Lock, Tag, Check, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Footer } from '@/components/sections/Footer';
+
+import Footer from '@/agency/components/Footer';
 import {
   Tooltip,
   TooltipContent,
@@ -81,6 +82,22 @@ const Subscribe = () => {
   const { toast } = useToast();
   const navigate = useNavigate();
   const [isProcessing, setIsProcessing] = useState(false);
+  
+  // Check if user has already subscribed
+  useEffect(() => {
+    const hasSubscribed = localStorage.getItem('trialUsed');
+    if (hasSubscribed === 'true') {
+      toast({
+        title: "Already Subscribed",
+        description: "You already have an active subscription. Redirecting to login...",
+        variant: "default"
+      });
+      setTimeout(() => {
+        window.location.href = 'https://auth.ad.nexus';
+      }, 2000);
+    }
+  }, [toast]);
+  
   const [formData, setFormData] = useState<FormData>({
     fullName: '',
     email: '',
@@ -172,6 +189,7 @@ const Subscribe = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-black text-white">
+      {/* <Navbar /> removed - using global NewHeader */}
       
       <main className="flex-grow py-16 pt-32">
         <div className="container-custom">

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { Navigation } from '@/components/Navigation';
-import { Footer } from '@/components/sections/Footer';
+
+import Footer from '@/agency/components/Footer';
 import { Button } from '@/components/ui/button';
 import { ArrowUpRight, Check, Shield, Clock, Star, Users, Database, Lock, Globe } from 'lucide-react';
 import { buttonModifiers } from '@/agency/lib/button-utils';
@@ -20,8 +20,8 @@ const Enterprise = () => {
 
   return (
     <ScrollReveal>
-      <Navigation bannerVisible={false} />
       <div className="min-h-screen bg-black text-white">
+        {/* <Navbar /> removed - using global NewHeader */}
         <GlobalMuteButton />
         
         <main className="pt-24">
@@ -105,7 +105,7 @@ const Enterprise = () => {
           <section className="py-16 bg-neutral-900">
             <div className="container-custom">
               <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold mb-6">Agency Services Features</h2>
+                <h2 className="text-3xl font-bold mb-6">Enterprise Plan Features</h2>
                 <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
                   Choose a flex or dedicated team subscription to get access to all of our creative services in one place.
                 </p>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Navigation } from '@/components/Navigation';
-import { Footer } from '@/components/sections/Footer';
+import Footer from '@/agency/components/Footer';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

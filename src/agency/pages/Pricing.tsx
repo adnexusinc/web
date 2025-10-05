@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Navigation } from '@/components/Navigation';
-import { Footer } from '@/components/sections/Footer';
+
+import Footer from '@/agency/components/Footer';
 import { PricingCard } from '@/components/ui/pricing-card';
 import { PricingToggle } from '@/components/ui/pricing-toggle';
 import GradientBackground from '@/agency/components/GradientBackground';
@@ -78,7 +78,7 @@ export default function Pricing() {
   
   return (
     <>
-      <Navigation bannerVisible={false} />
+      {/* <NewHeader /> removed - using global NewHeader */}
       <main className="pt-32 pb-20 bg-black text-white">
         <div className="container-custom">
           <div className="text-center mb-16">
@@ -89,30 +89,82 @@ export default function Pricing() {
             </p>
           </div>
           
-          <div className="max-w-2xl mx-auto mb-12">
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+            {/* Instant Site */}
+            <div className="flex flex-col h-full border-2 border-green-800 hover:border-green-700 rounded-xl overflow-hidden bg-gradient-to-b from-black to-green-950/30 backdrop-blur-sm relative shadow-lg shadow-green-900/10 transition-all duration-300">
+              <div className="p-6 border-b border-border/20">
+                <h3 className="text-xl font-semibold mb-1">Instant Site</h3>
+                <p className="text-sm text-foreground/70 font-semibold">Fast, polished 3-page website in 24 hours</p>
+                <div className="flex items-baseline gap-1 mt-2">
+                  <span className="text-3xl font-bold">$500</span>
+                  <span className="text-foreground/60 text-sm">/one-time</span>
+                </div>
+                <p className="text-sm text-foreground/60 mt-2 font-bold">No subscription. No delays. Just results.</p>
+              </div>
+
+              <div className="p-6 flex-grow">
+                <ul className="space-y-3">
+                  <li className="flex gap-3 items-start">
+                    <Check size={16} className="text-foreground/80 mt-1 flex-shrink-0" />
+                    <span className="text-foreground/80 text-sm">Custom-built 3-page website, tailored to your brand</span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <Check size={16} className="text-foreground/80 mt-1 flex-shrink-0" />
+                    <span className="text-foreground/80 text-sm">Up to 10 premium images or product photos included</span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <Check size={16} className="text-foreground/80 mt-1 flex-shrink-0" />
+                    <span className="text-foreground/80 text-sm">24-hour guaranteed turnaround from kickoff</span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <Check size={16} className="text-foreground/80 mt-1 flex-shrink-0" />
+                    <span className="text-foreground/80 text-sm">1 design revision to fine-tune the final look</span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <Check size={16} className="text-foreground/80 mt-1 flex-shrink-0" />
+                    <span className="text-foreground/80 text-sm">Built with Framer, Webflow, or no-code export for easy updates</span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <Check size={16} className="text-foreground/80 mt-1 flex-shrink-0" />
+                    <span className="text-foreground/80 text-sm">Fully mobile-responsive and lightning fast</span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <Check size={16} className="text-foreground/80 mt-1 flex-shrink-0" />
+                    <span className="text-foreground/80 text-sm">SEO-ready structure to boost your visibility</span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <Check size={16} className="text-foreground/80 mt-1 flex-shrink-0" />
+                    <span className="text-foreground/80 text-sm">Domain + hosting setup guidance (or we'll do it for you)</span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <Check size={16} className="text-foreground/80 mt-1 flex-shrink-0" />
+                    <span className="text-foreground/80 text-sm">Lifetime ownership — no recurring fees</span>
+                  </li>
+                  <li className="flex gap-3 items-start">
+                    <Check size={16} className="text-foreground/80 mt-1 flex-shrink-0" />
+                    <span className="text-foreground/80 text-sm">Ideal for creators, events, popups, and new businesses</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="p-6 pt-2 mt-auto">
+                <Link to="/payment?plan=instant-site" className="w-full inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium bg-white text-black hover:bg-white/90 transition-colors focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-2">
+                  Get your site in 24 hours
+                </Link>
+              </div>
+            </div>
+
             {/* Agency Service */}
             <div className="flex flex-col h-full border-2 border-blue-800 hover:border-blue-700 rounded-xl overflow-hidden bg-gradient-to-b from-black to-blue-950/30 backdrop-blur-sm relative shadow-lg shadow-blue-900/10 transition-all duration-300">
 
               <div className="p-6 border-b border-border/20">
-                <h3 className="text-xl font-semibold mb-1">Agency Services</h3>
-                <p className="text-sm text-foreground/70">Creative + Marketing on-demand with AI</p>
+                <h3 className="text-xl font-semibold mb-1">Agency Service</h3>
+                <p className="text-sm text-foreground/70">Full-service creative & marketing team</p>
                 <div className="flex items-baseline gap-1 mt-2">
                   <span className="text-3xl font-bold">$9,999</span>
                   <span className="text-foreground/60 text-sm">/month</span>
                 </div>
-                <p className="text-xs text-foreground/60 mt-2">3-month minimum commitment</p>
-
-                <div className="mt-4 p-3 bg-blue-600/10 rounded-lg border border-blue-600/20">
-                  <div className="text-xs font-semibold text-blue-400 mb-2">Monthly Credits Breakdown:</div>
-                  <div className="flex justify-between text-xs text-foreground/80">
-                    <span>• $4,999 Hanzo AI Credits</span>
-                    <span className="text-blue-400">50%</span>
-                  </div>
-                  <div className="flex justify-between text-xs text-foreground/80 mt-1">
-                    <span>• $4,999 Creative Retainer Hours</span>
-                    <span className="text-green-400">50%</span>
-                  </div>
-                </div>
+                <p className="text-sm text-foreground/60 mt-2 font-bold">1 quarter minimum commitment</p>
               </div>
               
               <div className="p-6 flex-grow">

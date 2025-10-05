@@ -1,5 +1,5 @@
 import caseStudies from '@/agency/data/caseStudies';
-import { CaseStudyData, RelatedProject } from '@/types/caseStudy';
+import { CaseStudyData, RelatedProject } from '@/agency/types/caseStudy';
 
 /**
  * Get a specific number of related projects that are different from the current project

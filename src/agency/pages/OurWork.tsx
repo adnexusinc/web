@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
-import { Navigation } from '@/components/Navigation';
 // Remove Navbar import since it's now global
-import { Footer } from '@/components/sections/Footer';
+import Footer from '@/agency/components/Footer';
 import VideoCard from '@/agency/components/VideoCard';
 import { BentoGrid, BentoCard } from '@/agency/components/BentoGrid';
 import ParallaxItem from '@/agency/components/ParallaxItem';
@@ -59,7 +58,6 @@ const OurWork = () => {
 
   return (
     <ScrollReveal>
-      <Navigation bannerVisible={false} />
       <div className="min-h-screen bg-black text-white">
         {/* Navbar removed since it's now global */}
         <GlobalMuteButton />
@@ -71,7 +69,7 @@ const OurWork = () => {
                 OUR WORK
               </h1>
               <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto md:mx-0">
-                Showcasing our most impactful digital campaigns and creative work
+                Showcasing our most impactful digital campaigns and creative work.
               </p>
             </ParallaxItem>
           </header>

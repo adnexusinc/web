@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { Footer } from '@/components/sections/Footer';
+
+import Footer from '@/agency/components/Footer';
 import VideoCard from '@/agency/components/VideoCard';
 import { BentoGrid, BentoCard } from '@/agency/components/BentoGrid';
 import ParallaxItem from '@/agency/components/ParallaxItem';
@@ -58,6 +59,7 @@ const CaseStudies = () => {
   return (
     <ScrollReveal>
       <div className="min-h-screen bg-black text-white">
+        {/* <Navbar /> removed - using global NewHeader */}
         <GlobalMuteButton />
         
         <main className="pt-24">
@@ -67,7 +69,7 @@ const CaseStudies = () => {
                 CASE STUDIES
               </h1>
               <p className="text-white/80 text-lg md:text-xl max-w-2xl mx-auto md:mx-0">
-                Showcasing our most impactful digital campaigns and creative work
+                Showcasing our most impactful digital campaigns and creative work.
               </p>
             </ParallaxItem>
           </header>
