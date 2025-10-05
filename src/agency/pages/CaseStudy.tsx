@@ -13,16 +13,11 @@ const CaseStudy = () => {
   const { id } = useParams<{ id: string }>();
   const [isBannerVisible, setIsBannerVisible] = useState(false);
 
-  // If no ID is found, or the ID doesn't match any case study, redirect to our work page
-  if (!id || !caseStudies[id]) {
-    return <Navigate to="/our-work" replace />;
-  }
-
-  // Get the case study data
-  const data = caseStudies[id];
+  // Get the case study data (before conditional return)
+  const data = id && caseStudies[id] ? caseStudies[id] : null;
 
   // Always use dynamically generated related projects to ensure correct image paths
-  const relatedProjects = getRelatedProjects(id, 3);
+  const relatedProjects = id ? getRelatedProjects(id, 3) : [];
 
   useEffect(() => {
     // Set the body to dark theme
@@ -63,6 +58,11 @@ const CaseStudy = () => {
       window.removeEventListener('bannerVisibilityChanged', handleBannerVisibilityChanged);
     };
   }, []);
+
+  // If no valid data found after hooks, redirect
+  if (!data) {
+    return <Navigate to="/agency/our-work" replace />;
+  }
 
   // Function to render social links
   const renderSocialLinks = () => {
