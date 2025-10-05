@@ -377,8 +377,6 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <div className="w-56 p-2">
-                        <div className="px-2 py-1.5 text-sm font-semibold">Choose Platform</div>
-                        <div className="h-px bg-border my-1" />
                         <a href="https://dsp.ad.nexus" className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-accent transition-colors">
                           <Target className="h-4 w-4" />
                           <div>
