@@ -1,0 +1,175 @@
+{
+  "url": "https://www.vibe.co/industry/entertainment",
+  "title": "Entertainment TV Advertising Solutions | Vibe",
+  "meta": {
+    "industry": "entertainment",
+    "category": "industry-solutions"
+  },
+  "headings": {
+    "h1": [
+      "Sell out Shows with TV Ads"
+    ],
+    "h2": [
+      "Generate high-intent traffic and leads with Vibe"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "Sell out Shows with TV Ads",
+      "content": "Generate high-intent traffic and leads with Vibe"
+    },
+    {
+      "id": "key-features",
+      "heading": "Entertainment Solutions",
+      "content": "Industry-specific features for entertainment brands"
+    },
+    {
+      "id": "customer-logos",
+      "heading": "Brands Using Vibe",
+      "content": "Entertainment brands successfully using Vibe platform"
+    },
+    {
+      "id": "testimonials",
+      "heading": "Customer Success Stories",
+      "content": "Real results from entertainment advertisers"
+    },
+    {
+      "id": "integrations",
+      "heading": "Entertainment Integrations",
+      "content": "Connect with your entertainment stack"
+    }
+  ],
+  "features": [
+    {
+      "title": "Direct-to-Ticket Sales",
+      "description": "Drive clicks that convert",
+      "details": [
+        "Integration with Ticketmaster",
+        "Track ticket sales in real-time",
+        "Optimize for conversion events"
+      ]
+    },
+    {
+      "title": "Stream to Sold Out",
+      "description": "Convert awareness into action, fast",
+      "details": [
+        "Unskippable CTV campaigns",
+        "Digital campaigns across devices",
+        "Drive immediate ticket purchases"
+      ]
+    },
+    {
+      "title": "Real-Time Audience Sync",
+      "description": "Retarget fans across screens",
+      "details": [
+        "Target based on intent and location",
+        "Reach fans by past event behavior",
+        "Cross-device retargeting"
+      ]
+    }
+  ],
+  "customerLogos": [],
+  "testimonials": [],
+  "caseStudies": [
+    {
+      "company": "Entertainment Brand",
+      "industry": "Entertainment",
+      "metric": "689 tickets sold",
+      "title": "689 tickets sold via Tubi and Roku",
+      "href": null
+    },
+    {
+      "company": "Entertainment Event",
+      "industry": "Entertainment",
+      "metric": "458% Household Reach",
+      "title": "458% Household Reach Increase",
+      "href": null
+    },
+    {
+      "company": "Entertainment Venue",
+      "industry": "Entertainment",
+      "metric": "30% Acquisition Lift",
+      "title": "30% Acquisition Lift",
+      "href": null
+    },
+    {
+      "company": "Entertainment Organization",
+      "industry": "Entertainment",
+      "metric": "728% ROAS",
+      "title": "728% Return on Ad Spend",
+      "href": null
+    }
+  ],
+  "integrations": [
+    {
+      "name": "Ticketmaster",
+      "category": "Ticketing Platform",
+      "description": "Direct integration for ticket sales tracking and conversion optimization"
+    },
+    {
+      "name": "Klaviyo",
+      "category": "CRM & Email Marketing",
+      "description": "Create custom campaign audiences and sync customer data"
+    },
+    {
+      "name": "Shopify",
+      "category": "E-commerce Platform",
+      "description": "Track sales and conversions for merchandise and tickets"
+    },
+    {
+      "name": "Google Analytics",
+      "category": "Analytics",
+      "description": "Monitor campaign performance and user behavior"
+    },
+    {
+      "name": "Triple Whale",
+      "category": "Analytics & Attribution",
+      "description": "Advanced analytics and attribution for entertainment brands"
+    },
+    {
+      "name": "Northbeam",
+      "category": "Analytics & Attribution",
+      "description": "Multi-touch attribution and media mix modeling"
+    }
+  ],
+  "platforms": [
+    "Tubi",
+    "Roku"
+  ],
+  "socialProof": {
+    "userCount": "10,000+ performance marketers",
+    "brandCount": "5,000 brands using platform",
+    "revenue": "millions in revenue generated",
+    "rating": "G2 ratings across multiple categories"
+  },
+  "callToAction": [
+    {
+      "text": "Get started",
+      "href": "https://www.vibe.co/get-started",
+      "type": "primary"
+    },
+    {
+      "text": "Book a demo",
+      "href": "https://www.vibe.co/book-a-demo",
+      "type": "secondary"
+    }
+  ],
+  "valueProp": [
+    "Direct-to-ticket sales integration",
+    "Unskippable CTV advertising",
+    "Real-time audience targeting",
+    "Location-based targeting",
+    "Past event behavior tracking",
+    "Cross-screen retargeting"
+  ],
+  "targetAudience": "Entertainment businesses looking to sell out shows and events through streaming TV advertising",
+  "keyBenefits": [
+    "Drive direct ticket sales through Ticketmaster integration",
+    "Convert awareness into ticket purchases quickly",
+    "Retarget fans based on intent, location, and past event behavior",
+    "Reach audiences on unskippable CTV platforms",
+    "Track ticket sales and ROAS in real-time",
+    "Scale campaigns from local shows to major events"
+  ]
+}

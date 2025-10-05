@@ -1,0 +1,186 @@
+{
+  "url": "https://www.vibe.co/features/ai-creatives",
+  "scrapeDate": "2025-10-05",
+  "pageTitle": "AI Creatives - Vibe Features",
+  "description": "AI-powered creative studio for instant TV ad generation from business URLs, featuring GenAI technology, custom voiceovers, and zero-cost creative production",
+  "platform": {
+    "rating": "4.8/5",
+    "ratingSource": "G2",
+    "features": [
+      "AI Creatives",
+      "Apps & Channels",
+      "Audience Targeting",
+      "AI Optimization",
+      "Measurement & Reporting",
+      "Integrations & API"
+    ]
+  },
+  "aiCreativeTools": {
+    "instantGeneration": {
+      "name": "AI Ad Generation",
+      "description": "Instant ad creation by entering a business URL or Google Maps address",
+      "generationTime": "Under 2 minutes",
+      "technology": "GenAI",
+      "features": [
+        "Automatic content extraction from websites",
+        "On-brand ad creation",
+        "No scripting required",
+        "No manual editing required",
+        "TV-ready output"
+      ]
+    },
+    "contentExtraction": {
+      "name": "Smart Content Analysis",
+      "description": "AI automatically extracts and analyzes site content",
+      "capabilities": [
+        "Color scheme extraction",
+        "Site element identification",
+        "Video content extraction",
+        "Brand consistency maintenance"
+      ]
+    },
+    "voiceoverStudio": {
+      "name": "Custom Voiceover",
+      "description": "Add custom voiceovers to generated ads",
+      "capabilities": [
+        "Voiceover addition to existing videos",
+        "Integration with AI-generated content"
+      ]
+    }
+  },
+  "studioCapabilities": {
+    "uploadFeatures": {
+      "name": "Creative Upload & Processing",
+      "features": [
+        "Drag and drop video file upload",
+        "Automatic video compression",
+        "Multiple creative uploads simultaneously",
+        "Proprietary ACR software for asset scanning",
+        "Asset validation"
+      ]
+    },
+    "editingTools": {
+      "name": "Creative Editing & Customization",
+      "features": [
+        "Creative preview functionality",
+        "A/B testing support",
+        "Multiple creative comparison",
+        "Strategy attachment"
+      ]
+    },
+    "outputFormats": {
+      "name": "Video Format Support",
+      "formats": [
+        "Horizontal video",
+        "TV-formatted video",
+        "Connected TV (CTV) optimized"
+      ]
+    }
+  },
+  "workflow": {
+    "steps": [
+      {
+        "step": 1,
+        "action": "Input business URL or Google Maps address",
+        "description": "Enter your business website or location"
+      },
+      {
+        "step": 2,
+        "action": "AI analyzes site content",
+        "description": "GenAI technology pulls best content from your site"
+      },
+      {
+        "step": 3,
+        "action": "Automatic ad generation",
+        "description": "Creates horizontal, TV-formatted video in under 2 minutes"
+      },
+      {
+        "step": 4,
+        "action": "Preview and customize",
+        "description": "Review creative and attach to strategy"
+      },
+      {
+        "step": 5,
+        "action": "Deploy and test",
+        "description": "Launch with A/B testing and comparison capabilities"
+      }
+    ]
+  },
+  "keyBenefits": [
+    "Zero cost creative generation",
+    "Under 2 minutes turnaround time",
+    "Maintains brand consistency",
+    "No creative expertise required",
+    "Studio-quality output",
+    "Free service with no hidden fees",
+    "Supports diverse ad content strategies",
+    "Instant TV ad production"
+  ],
+  "technicalSpecifications": {
+    "generationSpeed": "Under 2 minutes",
+    "aiTechnology": "GenAI",
+    "videoFormat": "Horizontal, TV-ready",
+    "platform": "Connected TV (CTV) and Streaming",
+    "contentSource": "Business URL or Google Maps",
+    "assetScanning": "Proprietary ACR software"
+  },
+  "pricing": {
+    "creativeGeneration": "Free",
+    "fees": "No fees",
+    "trials": "No trials required",
+    "hiddenCosts": "None"
+  },
+  "testimonials": [
+    {
+      "company": "Sota Clothing",
+      "quote": "I took the video that we had and used Vibe Studio to add a custom voiceover...",
+      "metric": "$0.70 CPPV",
+      "metricType": "Cost Per Page View"
+    },
+    {
+      "company": "Sijo Home",
+      "quote": "Having the creative studio with Vibe is a lot of help...",
+      "metric": "3.2x Average Order Value",
+      "metricType": "AOV Increase"
+    },
+    {
+      "company": "Petfolk",
+      "quote": "Vibe's reporting is so detailed and transparent...",
+      "metric": "534% ROAS",
+      "metricType": "Return on Ad Spend"
+    }
+  ],
+  "supportedIndustries": [
+    "Apps",
+    "Ecommerce",
+    "Education",
+    "Automotive",
+    "B2B",
+    "Travel & Hospitality",
+    "Healthcare",
+    "Finance"
+  ],
+  "useCases": [
+    "Build Awareness",
+    "Attract Traffic",
+    "Generate Leads",
+    "Increase Sales",
+    "Retarget Prospects",
+    "Promote Your App"
+  ],
+  "uniqueSellingPoints": [
+    "No Creative? No Problem.",
+    "Instant studio-quality ad generation",
+    "Completely free service",
+    "AI-powered creative that feels like your brand",
+    "No scripting or editing required",
+    "Smart and accurate ad representation"
+  ],
+  "platformHighlights": [
+    "Rated 4.8/5 on G2",
+    "G2 badge for Video Advertising",
+    "G2 badge for Connected TV Advertising Platforms",
+    "AI-powered optimization and creative generation",
+    "Comprehensive targeting and measurement tools"
+  ]
+}

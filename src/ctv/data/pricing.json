@@ -1,0 +1,153 @@
+{
+  "url": "https://www.vibe.co/pricing",
+  "scraped_at": "2025-10-05",
+  "page_title": "Affordable TV Advertising. For everyone.",
+  "meta": {
+    "headline": "Affordable TV Advertising. For everyone.",
+    "subheadline": "The most affordable Streaming and Connected TV Advertising solution built for brands and businesses of all sizes.",
+    "minimum_budget": "$50/day",
+    "commitment": "No commitment required"
+  },
+  "pricing_tiers": [
+    {
+      "name": "Self-Service",
+      "starting_price": "$50",
+      "billing_period": "per day",
+      "minimum_budget": 50,
+      "maximum_budget": 100000,
+      "cpm_range": "$15-$35",
+      "description": "Affordable Streaming and Connected TV Advertising solution",
+      "features": [
+        "Interest Targeting",
+        "Socio-Demo Targeting",
+        "Geo Targeting",
+        "Retargeting",
+        "Email Targeting",
+        "Vibe Studio",
+        "Creative Hosting",
+        "Compression & Resampling",
+        "A/B Testing",
+        "Delivery Reporting",
+        "Performance Measurement",
+        "Tracking (Google Analytics, MMPs, Pixel)",
+        "Forecasting",
+        "Streaming Apps",
+        "TV Channels",
+        "Live Sports",
+        "Live Shows & Movies",
+        "Automatic Bidding",
+        "Manual Bidding",
+        "Frequency Capping",
+        "24/7 Support",
+        "Multi Account",
+        "Credit Card & Wire Transfer Payment",
+        "Campaign Management (On Demand)"
+      ]
+    }
+  ],
+  "pricing_simulator": {
+    "budget_range": {
+      "min": 50,
+      "max": 100000,
+      "currency": "USD"
+    },
+    "cpm": {
+      "min": 15,
+      "max": 35,
+      "currency": "USD"
+    },
+    "estimated_results": {
+      "impressions": {
+        "min": 143000,
+        "max": 333000
+      },
+      "cost_per_view": {
+        "min": 0.01,
+        "max": 0.04,
+        "currency": "USD"
+      },
+      "households_reached": {
+        "min": 28000,
+        "max": 108000
+      },
+      "web_visits": {
+        "min": 956,
+        "max": 4900
+      },
+      "app_installs": {
+        "min": 486,
+        "max": 2100
+      },
+      "sales": {
+        "min": 82,
+        "max": 208
+      },
+      "foot_traffic": {
+        "min": 156,
+        "max": 833
+      }
+    }
+  },
+  "features": {
+    "targeting": [
+      "Interest Targeting",
+      "Socio-Demo Targeting",
+      "Geo Targeting",
+      "Retargeting",
+      "Email Targeting"
+    ],
+    "creatives": [
+      "Vibe Studio",
+      "Hosting",
+      "Compression & Resampling",
+      "A/B Testing"
+    ],
+    "reporting": [
+      "Delivery Reporting",
+      "Performance Measurement",
+      "Tracking (Google Analytics, MMPs, Pixel)",
+      "Forecasting"
+    ],
+    "content": [
+      "Streaming Apps",
+      "TV Channels",
+      "Live Sports",
+      "Live Shows & Movies"
+    ],
+    "optimization": [
+      "Automatic Bidding",
+      "Manual Bidding",
+      "Frequency Capping"
+    ],
+    "support": [
+      "24/7 Support",
+      "Multi Account",
+      "Credit Card & Wire Transfer Payment",
+      "Campaign Management (On Demand)"
+    ]
+  },
+  "ctas": [
+    {
+      "text": "Book a demo",
+      "type": "primary",
+      "action": "schedule_demo"
+    },
+    {
+      "text": "Get started",
+      "type": "primary",
+      "action": "signup"
+    },
+    {
+      "text": "Starts at $50/day with no commitment",
+      "type": "informational",
+      "action": "none"
+    }
+  ],
+  "testimonials": [
+    {
+      "type": "customer_testimonial",
+      "content": "Multiple testimonials from various business professionals highlighting ease of use, campaign performance, and customer support"
+    }
+  ],
+  "faqs": []
+}

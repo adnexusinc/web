@@ -1,0 +1,280 @@
+{
+  "url": "https://www.vibe.co/features/ai-optimization",
+  "title": "Vibe: AI Optimization for Connected TV Advertising",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1",
+    "description": "AI-powered optimization for streaming TV advertising. Maximize ROAS with smarter bidding, audience targeting, and performance-driven media buying.",
+    "og:title": "AI Optimization - Vibe Connected TV Advertising Platform",
+    "og:description": "Optimize your campaign outcomes with AI-powered solutions for smarter bidding, audience targeting, and performance-driven media buying.",
+    "og:url": "https://www.vibe.co/features/ai-optimization"
+  },
+  "headings": {
+    "h1": [
+      "AI Optimization"
+    ],
+    "h2": [
+      "Smarter Bidding",
+      "Audience Targeting",
+      "Performance-Driven Media Buying",
+      "Goal-Based Optimization"
+    ],
+    "h3": []
+  },
+  "aiFeatures": [
+    {
+      "name": "Smarter Bidding",
+      "description": "AI dynamically adjusts bids in real-time to optimize based on conversion probability, audience quality, and campaign objectives.",
+      "category": "Bidding Optimization",
+      "keyBenefits": [
+        "Real-time bid adjustments",
+        "Conversion probability analysis",
+        "Audience quality assessment",
+        "Campaign objective alignment",
+        "ROAS tracking and optimization"
+      ],
+      "technicalDetails": {
+        "optimization": "Real-time AI-powered",
+        "metrics": [
+          "Conversion probability",
+          "Audience quality",
+          "Campaign objectives",
+          "Return on Ad Spend (ROAS)"
+        ],
+        "approach": "Dynamic bidding"
+      }
+    },
+    {
+      "name": "Audience Targeting",
+      "description": "Uses signals from website, CRM (Klaviyo, email), first-party data, and past campaign performance to identify ideal customer profile and find the right people at the right time on the right channels.",
+      "category": "Targeting & Segmentation",
+      "keyBenefits": [
+        "Ideal customer profile (ICP) identification",
+        "Multi-source data integration",
+        "Right people, right channels, right time targeting",
+        "CRM and email integration",
+        "First-party data utilization",
+        "Historical campaign performance analysis"
+      ],
+      "technicalDetails": {
+        "dataSources": [
+          "Website signals",
+          "CRM data (Klaviyo)",
+          "Email data",
+          "First-party data",
+          "Past campaign performance"
+        ],
+        "optimization": "AI-powered ICP identification",
+        "approach": "Multi-signal targeting"
+      }
+    },
+    {
+      "name": "Performance-Driven Media Buying",
+      "description": "Powered by Vibe Connect integrated SSP to ensure premium publisher placements with real-time data injection. Retrieval model targets most likely converters.",
+      "category": "Media Buying & Placement",
+      "keyBenefits": [
+        "Premium publisher placements",
+        "Real-time data injection",
+        "High-conversion targeting",
+        "Integrated SSP technology",
+        "Retrieval model optimization"
+      ],
+      "technicalDetails": {
+        "platform": "Vibe Connect integrated SSP",
+        "optimization": "Real-time data injection",
+        "targeting": "Retrieval model for likely converters",
+        "approach": "Performance-driven placement"
+      }
+    },
+    {
+      "name": "Goal-Based Optimization",
+      "description": "Automatic optimization across audience segmentation, channel selection, and creative format based on campaign objectives including sales, traffic, and leads.",
+      "category": "Campaign Optimization",
+      "keyBenefits": [
+        "Automatic cross-dimensional optimization",
+        "Audience segmentation optimization",
+        "Channel selection optimization",
+        "Creative format optimization",
+        "Multi-objective support (sales, traffic, leads)"
+      ],
+      "technicalDetails": {
+        "optimizationDimensions": [
+          "Audience segmentation",
+          "Channel selection",
+          "Creative format"
+        ],
+        "campaignObjectives": [
+          "Sales",
+          "Traffic",
+          "Leads"
+        ],
+        "approach": "Automatic goal-based optimization"
+      }
+    }
+  ],
+  "technicalCapabilities": [
+    {
+      "capability": "AI & Machine Learning Optimization",
+      "description": "Core AI/ML engine powering all optimization features",
+      "components": [
+        "Real-time bidding algorithms",
+        "Predictive conversion modeling",
+        "Audience quality scoring",
+        "Performance forecasting"
+      ]
+    },
+    {
+      "capability": "Real-Time Bidding",
+      "description": "Dynamic bid adjustment system responding to market conditions",
+      "components": [
+        "Conversion probability calculation",
+        "Audience quality assessment",
+        "Campaign objective tracking",
+        "ROAS optimization"
+      ]
+    },
+    {
+      "capability": "Manual Bidding Controls",
+      "description": "Override options for advertisers who want direct control",
+      "components": [
+        "Custom bid adjustments",
+        "Manual campaign management",
+        "Budget controls"
+      ]
+    },
+    {
+      "capability": "Performance Measurement",
+      "description": "Comprehensive tracking and analytics integration",
+      "components": [
+        "Pixel/MMP campaign feedback tracking",
+        "Google Analytics integration",
+        "Real-time performance metrics",
+        "Attribution modeling"
+      ]
+    }
+  ],
+  "optimizationBenefits": [
+    {
+      "benefit": "Maximize Advertising ROI",
+      "description": "AI-driven optimization ensures every dollar spent delivers maximum return on investment",
+      "impact": "Higher ROAS and improved campaign efficiency"
+    },
+    {
+      "benefit": "Reduce Manual Campaign Management",
+      "description": "Automated optimization reduces time spent on manual bid adjustments and campaign tweaking",
+      "impact": "Increased productivity and reduced operational overhead"
+    },
+    {
+      "benefit": "Intelligent Audience Targeting",
+      "description": "Multi-source data integration and AI analysis identify and target high-value audiences",
+      "impact": "Better conversion rates and lower customer acquisition costs"
+    },
+    {
+      "benefit": "Adaptive Campaign Optimization",
+      "description": "Continuous learning and adaptation based on real-time performance data",
+      "impact": "Improved campaign performance over time"
+    }
+  ],
+  "integrations": [
+    "Klaviyo",
+    "Google Analytics",
+    "Shopify",
+    "Custom CRM systems",
+    "Email platforms",
+    "Pixel tracking",
+    "MMP (Mobile Measurement Partners)",
+    "First-party data sources"
+  ],
+  "supportedIndustries": [
+    "Apps & Gaming",
+    "Ecommerce",
+    "Education",
+    "Automotive",
+    "Media & Agencies",
+    "Legal",
+    "Politics",
+    "Home Improvement",
+    "Retail",
+    "B2B",
+    "Entertainment"
+  ],
+  "keyMetrics": [
+    {
+      "metric": "Return on Ad Spend (ROAS)",
+      "description": "Primary optimization target for campaign performance"
+    },
+    {
+      "metric": "Conversion Probability",
+      "description": "AI-calculated likelihood of user conversion"
+    },
+    {
+      "metric": "Audience Quality",
+      "description": "Score indicating value and relevance of targeted audience"
+    },
+    {
+      "metric": "Campaign Objectives",
+      "description": "Custom goals including sales, traffic, leads, awareness"
+    }
+  ],
+  "platformRating": {
+    "source": "G2",
+    "score": "4.8",
+    "maxScore": "5"
+  },
+  "callsToAction": [
+    {
+      "text": "Get started",
+      "type": "primary",
+      "action": "Sign up for Vibe platform"
+    },
+    {
+      "text": "Book a demo",
+      "type": "secondary",
+      "action": "Schedule product demonstration"
+    }
+  ],
+  "valueProposition": "Optimize your campaign outcomes with AI-powered solutions for smarter bidding, audience targeting, and performance-driven media buying. Get started with Vibe in minutes.",
+  "useCases": [
+    {
+      "useCase": "E-commerce ROAS Optimization",
+      "description": "Use AI bidding and audience targeting to maximize return on ad spend for online stores",
+      "objectives": ["Increase sales", "Reduce cost per acquisition", "Improve conversion rates"]
+    },
+    {
+      "useCase": "Lead Generation Optimization",
+      "description": "Optimize campaigns to generate high-quality leads through intelligent targeting and bidding",
+      "objectives": ["Generate leads", "Lower cost per lead", "Improve lead quality"]
+    },
+    {
+      "useCase": "Traffic Acquisition",
+      "description": "Drive convertible traffic to websites and landing pages through optimized media buying",
+      "objectives": ["Attract traffic", "Increase site visits", "Lower cost per session"]
+    },
+    {
+      "useCase": "Brand Awareness",
+      "description": "Build brand awareness through optimized reach and frequency across premium channels",
+      "objectives": ["Build awareness", "Increase reach", "Improve brand recall"]
+    },
+    {
+      "useCase": "App Promotion",
+      "description": "Optimize app install campaigns and in-app conversion through AI-powered targeting",
+      "objectives": ["Promote app", "Increase installs", "Drive app revenue"]
+    },
+    {
+      "useCase": "Retargeting Optimization",
+      "description": "Re-engage website visitors and convert them into customers through intelligent retargeting",
+      "objectives": ["Retarget prospects", "Improve conversion rates", "Maximize lifetime value"]
+    }
+  ],
+  "competitiveDifferentiators": [
+    "Real-time AI bidding optimization",
+    "Multi-source data integration (website, CRM, first-party)",
+    "Integrated SSP for premium placements",
+    "Retrieval model for high-conversion targeting",
+    "Automatic multi-dimensional optimization",
+    "Goal-based campaign management",
+    "No wasted views targeting approach"
+  ],
+  "scraped": "2025-10-05",
+  "scrapedBy": "Vibe Scraper",
+  "dataVersion": "1.0"
+}

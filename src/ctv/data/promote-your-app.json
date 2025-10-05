@@ -1,0 +1,113 @@
+{
+  "url": "https://www.vibe.co/goals/promote-your-app",
+  "title": "Promote Your App | Vibe",
+  "meta": {
+    "description": "Drive app revenue with TV Streaming",
+    "ogTitle": "Promote Your App | Vibe",
+    "ogDescription": "Drive app revenue with TV Streaming",
+    "ogImage": "https://www.vibe.co/goals/promote-your-app/opengraph-image"
+  },
+  "hero": {
+    "heading": "Drive app revenue",
+    "subheading": "Promote your app with TV Streaming."
+  },
+  "features": [
+    {
+      "heading": "In-Market Audiences",
+      "description": "Define your ideal audience and control exactly who sees your brand based on geo, demo, and behavioral targeting."
+    },
+    {
+      "heading": "Premium Inventory",
+      "description": "Access 120M households across 500+ premium apps and channels—from Tubi to Roku to DirectTv."
+    },
+    {
+      "heading": "Impactful Creatives",
+      "description": "Capture attention with 4K CTV ads shown on full screens in relaxed, lean-back environments—where your message sticks."
+    },
+    {
+      "heading": "App Measurement",
+      "description": "Boost campaign performance with mobile tracking integrations such as AppsFlyer and Gamesight."
+    },
+    {
+      "heading": "Web Analytics",
+      "description": "Track user behavior across web and Streaming TV environments to measure campaign performance by connecting with Shopify, Wix, Squarespace and more."
+    },
+    {
+      "heading": "ROI Optimization",
+      "description": "Use Vibe's AI-powered bidder to continuously optimize your campaign."
+    }
+  ],
+  "integrations": {
+    "appMeasurement": [
+      "Adjust",
+      "AppsFlyer",
+      "Singular",
+      "Kochava",
+      "Airbridge",
+      "Gamesight"
+    ],
+    "webAnalytics": [
+      "Google Tag Manager",
+      "Shopify",
+      "Javascript",
+      "WordPress",
+      "Wix",
+      "WooCommerce",
+      "Squarespace",
+      "Go HighLevel",
+      "BigCommerce"
+    ]
+  },
+  "channels": [
+    "DirectTv",
+    "CNN",
+    "Fubo",
+    "NFL",
+    "Roku",
+    "MLB",
+    "Paramount Streaming",
+    "NBA",
+    "Peacock",
+    "Tubi",
+    "NHL",
+    "Fox News",
+    "CBS",
+    "PlutoTV",
+    "Samsung TV Plus",
+    "Sling",
+    "Philo",
+    "Haystack TV",
+    "AMC",
+    "CBS Sports",
+    "Bloomberg",
+    "Telly",
+    "Comedy Central",
+    "Plex",
+    "FanDuel TV Plus",
+    "TCL",
+    "Frndly TV",
+    "The Weather Channel",
+    "NASCAR"
+  ],
+  "stats": {
+    "appInstalls": "+35% (+12.5K)",
+    "costPerInstall": "-18% ($2.80)"
+  },
+  "successStories": [
+    {
+      "company": "BagelCode",
+      "metric": "x2+ D7 ROI",
+      "url": "https://www.vibe.co/blog/bagelcode-wins-big-with-club-vegas-campaign"
+    },
+    {
+      "company": "Meshki",
+      "metric": "$0.93 Cost Per Session",
+      "url": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+    },
+    {
+      "company": "Abuelos",
+      "metric": "-80% Cost Per Session",
+      "url": "https://www.vibe.co/blog/abuelo-s-x-vibe-case-study"
+    }
+  ]
+}

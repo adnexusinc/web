@@ -1,0 +1,143 @@
+{
+  "url": "https://help.vibe.co/en/collections/5792804-troubleshooting",
+  "title": "Troubleshooting",
+  "description": "Find help quickly.",
+  "scraped_at": "2025-10-05",
+  "collection_id": "5792804",
+  "article_count": 6,
+  "authors": ["Nicolas Hemidy", "Vincent Paoli"],
+  "articles": [
+    {
+      "title": "My Campaign Isn't Running",
+      "url": "https://help.vibe.co/en/articles/8280114-my-campaign-isn-t-running",
+      "author": "Nicolas Hemidy",
+      "last_updated": "Over a year ago",
+      "description": "Troubleshooting tips and strategies to get your campaigns live again.",
+      "troubleshooting_steps": [
+        {
+          "issue": "Campaign Timing",
+          "details": "It can take up to 12 hours for campaigns to start sending results. If longer than 12 hours, contact Vibe team support."
+        },
+        {
+          "issue": "Creative Flagging",
+          "details": "Check if ads have been flagged for inappropriate content. Look for email from Vibe team about creative compliance."
+        },
+        {
+          "issue": "Deliverability Range",
+          "details": "Narrow targeting can limit IP address availability. Look for delivery estimator warning on strategy page. Widen your targeting dimensions until the delivery estimator turns green."
+        },
+        {
+          "issue": "CPM Bidding",
+          "details": "Recommended to use Automatic Bidding. If using Manual Bidding, set max CPM to $18 or above to maximize campaign deliverability."
+        }
+      ],
+      "final_recommendation": "If none of these scenarios apply to you, please contact a Vibe team member for support via the chat box at the bottom left of your screen.",
+      "related_articles": ["Campaign Targeting", "Video Creative Compliance"]
+    },
+    {
+      "title": "I Can't Register with my Email Address",
+      "url": "https://help.vibe.co/en/articles/8280098-i-can-t-register-with-my-email-address",
+      "author": "Nicolas Hemidy",
+      "last_updated": "Over a year ago",
+      "description": "We can help you get your email address approved.",
+      "content": {
+        "issue": "Vibe only accepts business emails for platform signups and does not accept emails from common personal domains like @gmail, @yahoo, or @aol.",
+        "solution": "If you only have a personal email address, Vibe can manually create an account for you. Send a quick message via the chatbot with your email address and receive a confirmation shortly."
+      },
+      "related_articles": ["Create Your Account"]
+    },
+    {
+      "title": "My Video Won't Upload",
+      "url": "https://help.vibe.co/en/articles/8280070-my-video-won-t-upload",
+      "author": "Nicolas Hemidy",
+      "last_updated": "Over 2 years ago",
+      "description": "Troubleshooting guide for uploading videos to the Vibe platform",
+      "video_specifications": {
+        "size_ratio": "16:9, 1920×1080",
+        "length": "30 seconds max (15 or 30 second slots)",
+        "file_format": ".mp4",
+        "file_size": "Max 200MB",
+        "frame_rate": "Constant (23.98, 25, or 29.97 FPS)",
+        "bit_rate": "≥ 2500 KBPS"
+      },
+      "important_note": "Be careful, if your file is even 1 second too long, it will not upload.",
+      "video_reduction_tools": [
+        "VLC (Windows, Mac, Linux)",
+        "Shortcut (Windows, Mac, Linux)",
+        "QuickTime Player (Mac)",
+        "VEED.IO (Web)",
+        "VideoSmaller (Web)",
+        "Clipchamp (Web)"
+      ],
+      "audio_specifications": {
+        "overall_mix_level": "10db to -14db",
+        "dialogue": "-12db to -15db",
+        "music": "-18db to -22db",
+        "sound_effects": "-10db to -20db (occasional spikes to -8db)"
+      },
+      "support_contact": "Still having trouble? Contact a Vibe support team member through the chat box."
+    },
+    {
+      "title": "Video Formatting",
+      "url": "https://help.vibe.co/en/articles/6310411-video-formatting",
+      "author": "Nicolas Hemidy",
+      "last_updated": "Over a year ago",
+      "description": "The days of million dollar mini movie ads are over. Both content and format are now so much simpler",
+      "video_specifications": {
+        "size_ratio": "16:9, 1920×1080",
+        "length": "30 seconds max, 15 or 30 second slots",
+        "file_format": ".mp4",
+        "file_size": "Max 500MB",
+        "frame_rate": "Constant; 23.98, 25, or 29.97 FPS",
+        "bit_rate": "Greater or equal to 2500 KBPS"
+      },
+      "audio_specifications": {
+        "overall_mix_level": "10db to -14db",
+        "dialogue": "-12db to -15db",
+        "music": "-18db to -22db",
+        "sound_effects": "-10db to -20db with occasional spikes up to -8db"
+      },
+      "additional_note": "For optimal compatibility and acceptance by our premium publishers, any video uploaded with a resolution lower than 1080 pixels (HD quality) will need to be modified by the Vibe team.",
+      "support_contact": "Still having trouble? Contact support through the chat box."
+    },
+    {
+      "title": "Improve Deliverability Range",
+      "url": "https://help.vibe.co/en/articles/6154797-improve-deliverability-range",
+      "author": "Vincent Paoli",
+      "last_updated": "Over 2 years ago",
+      "description": "How to optimize campaign deliverability when the delivery gauge reads 'Average' and the campaign struggles to spend its entire budget.",
+      "troubleshooting_steps": [
+        {
+          "area": "Age and Gender Targeting",
+          "details": "Check how targeting impacts delivery. A campaign with just 1 or 2 age segments may have a very limited audience size."
+        },
+        {
+          "area": "Apps & Channels",
+          "details": "Verify daily estimated reach. If not, try to add more channels."
+        },
+        {
+          "area": "Bidding Strategy",
+          "details": "If using automatic bidding, try manual mode. Try to increase your CPM by switching to the manual mode for a few hours."
+        },
+        {
+          "area": "Additional Filters",
+          "details": "Consider geo-targeting and delivery time slots. These can affect campaign delivery."
+        }
+      ],
+      "final_recommendation": "If you've checked all the above and delivery still doesn't improve, please contact your Account Manager to ask for assistance."
+    },
+    {
+      "title": "I have a question and can't find the Vibe chatbot",
+      "url": "https://help.vibe.co/en/articles/8867359-i-have-a-question-and-can-t-find-the-vibe-chatbot",
+      "author": "Nicolas Hemidy",
+      "last_updated": "Over a year ago",
+      "description": "Troubleshooting guide for users who cannot locate the Vibe customer support chatbot",
+      "issue": "Ad blockers can interfere with Vibe's customer support chat feature.",
+      "solutions": [
+        "Temporarily disable ad blockers",
+        "Contact support via email at support@vibe.co"
+      ],
+      "key_point": "If you are running Ad Blockers on your computer, they can sometimes interfere with Vibe's customer support chat feature."
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "url": "https://www.vibe.co/industry/home-improvement",
+  "title": "Home Improvement | Vibe",
+  "meta": {
+    "industry": "home-improvement",
+    "category": "industry-solutions"
+  },
+  "headings": {
+    "h1": [
+      "Drive Sales with TV Ads"
+    ],
+    "h2": [
+      "Target high-intent home owners and generate leads with Vibe",
+      "Why 3,000 local businesses choose Vibe",
+      "Integrated with the tools you know and love",
+      "Success Stories"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "Drive Sales with TV Ads",
+      "content": "Target high-intent home owners and generate leads with Vibe"
+    },
+    {
+      "id": "key-features",
+      "heading": "Why 3,000 local businesses choose Vibe",
+      "content": "Industry-specific features for home improvement businesses"
+    },
+    {
+      "id": "customer-logos",
+      "heading": "Brands Using Vibe",
+      "content": "Home improvement and local businesses successfully using Vibe platform"
+    },
+    {
+      "id": "testimonials",
+      "heading": "Success Stories",
+      "content": "Real results from home improvement advertisers"
+    },
+    {
+      "id": "integrations",
+      "heading": "Integrated with the tools you know and love",
+      "content": "Connect with your business stack"
+    }
+  ],
+  "features": [
+    {
+      "title": "Be Discovered",
+      "description": "Reach homeowners through TV advertising",
+      "details": [
+        "Connect with high-intent homeowners",
+        "Build brand awareness in your service area",
+        "Reach customers on premium streaming platforms"
+      ]
+    },
+    {
+      "title": "Target Home Owners",
+      "description": "Precision targeting for home improvement",
+      "details": [
+        "Cable supply targeting is not working",
+        "Use CTV targeting to reach high-intent homeowners",
+        "Target specific demographics and interests"
+      ]
+    },
+    {
+      "title": "Track Results",
+      "description": "Measure performance in real-time",
+      "details": [
+        "Monitor campaign performance",
+        "Track leads and conversions",
+        "Optimize for better results"
+      ]
+    }
+  ],
+  "targetAudienceSegments": [
+    {
+      "segment": "Home Owners",
+      "size": "150M households"
+    },
+    {
+      "segment": "Shoppers",
+      "size": "63M households"
+    },
+    {
+      "segment": "Couples",
+      "size": "234M households"
+    }
+  ],
+  "customerLogos": [
+    "Village Green",
+    "Meshki",
+    "Petfolk",
+    "CarStickers",
+    "Branded Bills",
+    "Farm and Home",
+    "King Kanine",
+    "Sota Clothing",
+    "Sijo",
+    "Pamos",
+    "Zoriz",
+    "AirDog",
+    "TruHeight"
+  ],
+  "testimonials": [
+    {
+      "company": "Village Green",
+      "author": "Ken Hyatt, Owner",
+      "quote": "We're very focused on a small number of zip codes... and we only need to reach those folks so, it's very, very targeted.",
+      "result": "-16% CPM",
+      "metric": "-16% CPM"
+    }
+  ],
+  "integrations": [
+    {
+      "name": "Klaviyo",
+      "category": "CRM & Email Marketing",
+      "description": "Create custom campaign audiences and sync customer data"
+    },
+    {
+      "name": "Shopify",
+      "category": "E-commerce Platform",
+      "description": "Track sales and conversions directly from your Shopify store"
+    },
+    {
+      "name": "Google Analytics",
+      "category": "Analytics",
+      "description": "Monitor campaign performance and user behavior"
+    },
+    {
+      "name": "Triple Whale",
+      "category": "Analytics & Attribution",
+      "description": "Advanced analytics and attribution for e-commerce brands"
+    },
+    {
+      "name": "Northbeam",
+      "category": "Analytics & Attribution",
+      "description": "Multi-touch attribution and media mix modeling"
+    },
+    {
+      "name": "Haus Analytics",
+      "category": "Analytics & Attribution",
+      "description": "Incrementality testing and marketing measurement"
+    }
+  ],
+  "platforms": [
+    "DirectTV",
+    "CNN",
+    "Fubo",
+    "NFL",
+    "Roku",
+    "MLB",
+    "Paramount Streaming",
+    "NBA",
+    "Peacock",
+    "Tubi"
+  ],
+  "socialProof": {
+    "userCount": "10,000+ performance marketers",
+    "rating": "4.8/5 on G2",
+    "localBusinesses": "3,000+ local businesses"
+  },
+  "callToAction": [
+    {
+      "text": "Get started",
+      "href": "https://www.vibe.co/get-started",
+      "type": "primary"
+    },
+    {
+      "text": "Book a demo",
+      "href": "https://www.vibe.co/book-a-demo",
+      "type": "secondary"
+    },
+    {
+      "text": "Learn more",
+      "href": "#",
+      "type": "tertiary"
+    },
+    {
+      "text": "Browse all integrations",
+      "href": "https://www.vibe.co/integrations",
+      "type": "link"
+    }
+  ],
+  "valueProp": [
+    "Target high-intent homeowners",
+    "Precision zip code targeting",
+    "Real-time performance tracking",
+    "Integration with business tools",
+    "Premium streaming platform reach",
+    "Local business focus"
+  ],
+  "targetAudience": "Home improvement businesses looking to reach homeowners and generate leads through streaming TV advertising",
+  "keyBenefits": [
+    "Reach 150M homeowner households",
+    "Target specific zip codes and service areas",
+    "Cable supply targeting alternative with CTV",
+    "Connect with high-intent homeowners",
+    "Track leads and conversions in real-time",
+    "Integrate with existing business tools",
+    "Lower CPM compared to traditional cable",
+    "Scale campaigns from local to regional"
+  ]
+}

@@ -1,0 +1,650 @@
+{
+  "url": "https://www.vibe.co/",
+  "title": "Vibe: Streaming & Connected TV Advertising Platform",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1",
+    "description": "Generate business outcomes with the easiest-to-use Streaming TV Ad Platform. Built for brands of all sizes.",
+    "og:title": "Vibe: Streaming & Connected TV Advertising Platform",
+    "og:description": "Generate business outcomes with the easiest-to-use Streaming TV Ad Platform. Built for brands of all sizes.",
+    "og:url": "https://www.vibe.co",
+    "twitter:card": "summary_large_image"
+  },
+  "headings": {
+    "h1": [
+      "Grow your brand with TV Ads"
+    ],
+    "h2": [
+      "Achieve your business goals with TV Ads",
+      "Made for marketers. Built for outcomes.",
+      "For startups, large companies, and everyone in between",
+      "Success Stories",
+      "Get started with Vibe in minutes."
+    ],
+    "h3": [
+      "Industries",
+      "Features",
+      "Resources",
+      "Company"
+    ]
+  },
+  "paragraphs": [
+    "Generate business outcomes with the easiest-to-use Streaming TV Ad Platform. Built for brands of all sizes.",
+    "10,000+ performance marketers have generated millions in revenue with Vibe",
+    "Rated 4.8 out of 5 on G2",
+    "Target viewers where they watch most by picking from our 500+ channels. Engage with your audience during their favorite shows and live events.",
+    "No wasted views, target those who matter for your brand.",
+    "Optimize your campaign outcomes with AI-powered solutions.",
+    "Integrate with products you know and love: Klaviyo, Shopify, Google Analytics and more. From targeting to web and app tracking, Vibe connects with over 20 partners.",
+    "Create TV-ready and customizable ads in less than 10 seconds at no extra cost with Vibe Studio. Putting your brand on TV has never been this easy.",
+    "Track performance across every screen. Clear metrics, smarter decisions.",
+    "Grow your brand with TV Ads."
+  ],
+  "navigation": {
+    "header": [
+      {
+        "text": "Vibe",
+        "href": "https://www.vibe.co/"
+      },
+      {
+        "text": "Product",
+        "href": "#"
+      },
+      {
+        "text": "Industries",
+        "href": "#"
+      },
+      {
+        "text": "Pricing",
+        "href": "https://www.vibe.co/pricing"
+      },
+      {
+        "text": "Testimonials",
+        "href": "https://www.vibe.co/testimonials"
+      },
+      {
+        "text": "resources",
+        "href": "#"
+      },
+      {
+        "text": "Book a demo",
+        "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2F"
+      },
+      {
+        "text": "Log in",
+        "href": "https://www.vibe.co/sign-in"
+      }
+    ],
+    "footer": [
+      {
+        "text": "Apps & Gaming",
+        "href": "https://www.vibe.co/industry/apps-gaming"
+      },
+      {
+        "text": "Ecommerce",
+        "href": "https://www.vibe.co/industry/ecommerce"
+      },
+      {
+        "text": "Education & Non-profit",
+        "href": "https://www.vibe.co/industry/education-non-profit"
+      },
+      {
+        "text": "Automotive",
+        "href": "https://www.vibe.co/industry/automotive"
+      },
+      {
+        "text": "Media & Agencies",
+        "href": "https://www.vibe.co/industry/media-agencies"
+      },
+      {
+        "text": "Legal",
+        "href": "https://www.vibe.co/industry/legal"
+      },
+      {
+        "text": "Politics",
+        "href": "https://www.vibe.co/industry/politics"
+      },
+      {
+        "text": "Home Improvement",
+        "href": "https://www.vibe.co/industry/home-improvement"
+      },
+      {
+        "text": "Retail",
+        "href": "https://www.vibe.co/industry/retail"
+      },
+      {
+        "text": "B2B",
+        "href": "https://www.vibe.co/industry/b2b"
+      },
+      {
+        "text": "Entertainment",
+        "href": "https://www.vibe.co/industry/entertainment"
+      },
+      {
+        "text": "Apps & Channels",
+        "href": "https://www.vibe.co/features/apps-channels"
+      },
+      {
+        "text": "Audience Targeting",
+        "href": "https://www.vibe.co/features/audience-targeting"
+      },
+      {
+        "text": "AI Optimization",
+        "href": "https://www.vibe.co/features/ai-optimization"
+      },
+      {
+        "text": "Measurement & Reporting",
+        "href": "https://www.vibe.co/features/measurement-reporting"
+      },
+      {
+        "text": "AI Creatives",
+        "href": "https://www.vibe.co/features/ai-creatives"
+      },
+      {
+        "text": "Integrations & API",
+        "href": "https://www.vibe.co/features/integrations-api"
+      },
+      {
+        "text": "Video Generator",
+        "href": "https://www.vibe.co/studio"
+      },
+      {
+        "text": "Pricing",
+        "href": "https://www.vibe.co/pricing"
+      },
+      {
+        "text": "Testimonials",
+        "href": "https://www.vibe.co/testimonials"
+      },
+      {
+        "text": "Case Studies",
+        "href": "https://www.vibe.co/blog/case-studies"
+      },
+      {
+        "text": "Apps & Channels",
+        "href": "https://www.vibe.co/apps-and-channels"
+      },
+      {
+        "text": "Integrations",
+        "href": "https://www.vibe.co/integrations"
+      },
+      {
+        "text": "Help center",
+        "href": "https://help.vibe.co/en/"
+      },
+      {
+        "text": "Blog",
+        "href": "https://www.vibe.co/blog"
+      },
+      {
+        "text": "Newsletter",
+        "href": "https://www.vibe.co/newsletter"
+      },
+      {
+        "text": "About us",
+        "href": "https://www.vibe.co/about"
+      },
+      {
+        "text": "Events",
+        "href": "https://www.vibe.co/events/vibe-stream-2024"
+      },
+      {
+        "text": "Jobs",
+        "href": "https://jobs.ashbyhq.com/vibe"
+      },
+      {
+        "text": "Newsroom",
+        "href": "https://www.vibe.co/blog/whats-new"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "https://www.vibe.co/legal/privacy-policy"
+      },
+      {
+        "text": "Terms of Service",
+        "href": "https://www.vibe.co/legal/terms-of-service"
+      }
+    ]
+  },
+  "buttons": [
+    {
+      "text": "Get started",
+      "href": "https://www.vibe.co/get-started",
+      "type": "link"
+    },
+    {
+      "text": "Book a demo",
+      "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2F",
+      "type": "link"
+    },
+    {
+      "text": "Log in",
+      "href": "https://www.vibe.co/sign-in",
+      "type": "link"
+    },
+    {
+      "text": "Learn more",
+      "href": null,
+      "type": "button"
+    },
+    {
+      "text": "All",
+      "href": null,
+      "type": "button"
+    },
+    {
+      "text": "Enterprise",
+      "href": null,
+      "type": "button"
+    },
+    {
+      "text": "Mid Market",
+      "href": null,
+      "type": "button"
+    },
+    {
+      "text": "Small Business",
+      "href": null,
+      "type": "button"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://www.vibe.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvibe-logo.svg",
+      "alt": "Vibe Logo",
+      "title": ""
+    },
+    {
+      "src": "https://www.vibe.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftv-advertising-platform.png",
+      "alt": "TV advertising platform interface",
+      "title": ""
+    }
+  ],
+  "forms": [
+    {
+      "fields": [
+        {
+          "name": "email",
+          "type": "email",
+          "placeholder": "What's your work email?",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "Grow your brand with TV Ads",
+      "content": "Generate business outcomes with the easiest-to-use Streaming TV Ad Platform. Built for brands of all sizes."
+    },
+    {
+      "id": "social-proof",
+      "heading": "",
+      "content": "10,000+ performance marketers have generated millions in revenue with Vibe"
+    },
+    {
+      "id": "business-goals",
+      "heading": "Achieve your business goals with TV Ads",
+      "content": "Business goal cards with options for Build Awareness, Attract Traffic, Generate Leads, Increase Sales, Retarget Prospects, and Promote Your App"
+    },
+    {
+      "id": "features",
+      "heading": "Made for marketers. Built for outcomes.",
+      "content": "Platform features including Apps & Channels (500+ channels), Audience Targeting, AI Optimization, Integrations & API, Creative Solutions, and Measurement & Reporting"
+    },
+    {
+      "id": "testimonials",
+      "heading": "For startups, large companies, and everyone in between",
+      "content": "Customer testimonials carousel featuring success stories from various companies"
+    },
+    {
+      "id": "success-stories",
+      "heading": "Success Stories",
+      "content": "Grid of case studies showing results like ROAS improvements, cost reductions, and traffic increases"
+    },
+    {
+      "id": "cta-footer",
+      "heading": "Get started with Vibe in minutes.",
+      "content": "Final call-to-action with email signup form and G2 rating display"
+    }
+  ],
+  "businessGoals": [
+    {
+      "title": "Build Awareness",
+      "subtitle": "Stay top of mind",
+      "href": "https://www.vibe.co/goals/build-awareness"
+    },
+    {
+      "title": "Attract Traffic",
+      "subtitle": "Drive convertible traffic",
+      "href": "https://www.vibe.co/goals/attract-traffic"
+    },
+    {
+      "title": "Generate Leads",
+      "subtitle": "Turn Viewers into Buyers",
+      "href": "https://www.vibe.co/goals/generate-leads"
+    },
+    {
+      "title": "Increase Sales",
+      "subtitle": "Generate measurable sales",
+      "href": "https://www.vibe.co/goals/increase-sales"
+    },
+    {
+      "title": "Retarget Prospects",
+      "subtitle": "Make every visit count",
+      "href": "https://www.vibe.co/goals/retarget-prospects"
+    },
+    {
+      "title": "Promote Your App",
+      "subtitle": "Drive app revenue",
+      "href": "https://www.vibe.co/goals/promote-your-app"
+    }
+  ],
+  "features": [
+    {
+      "title": "Apps & Channels",
+      "description": "Target viewers where they watch most by picking from our 500+ channels. Engage with your audience during their favorite shows and live events.",
+      "href": "https://www.vibe.co/features/apps-channels"
+    },
+    {
+      "title": "Audience Targeting",
+      "description": "No wasted views, target those who matter for your brand.",
+      "href": "https://www.vibe.co/features/audience-targeting"
+    },
+    {
+      "title": "AI Optimization",
+      "description": "Optimize your campaign outcomes with AI-powered solutions.",
+      "href": "https://www.vibe.co/features/ai-optimization"
+    },
+    {
+      "title": "Integrations & API",
+      "description": "Integrate with products you know and love: Klaviyo, Shopify, Google Analytics and more. From targeting to web and app tracking, Vibe connects with over 20 partners.",
+      "href": "https://www.vibe.co/features/integrations-api"
+    },
+    {
+      "title": "Creative Solutions",
+      "description": "Create TV-ready and customizable ads in less than 10 seconds at no extra cost with Vibe Studio. Putting your brand on TV has never been this easy.",
+      "href": "https://www.vibe.co/features/ai-creatives"
+    },
+    {
+      "title": "Measurement & Reporting",
+      "description": "Track performance across every screen. Clear metrics, smarter decisions.",
+      "href": "https://www.vibe.co/features/measurement-reporting"
+    }
+  ],
+  "channelLogos": [
+    "DirectTv",
+    "CNN",
+    "Fubo",
+    "NFL",
+    "Roku",
+    "MLB",
+    "ParamountStreaming",
+    "NBA",
+    "Peacock",
+    "Tubi",
+    "NHL",
+    "FoxNews",
+    "CBS",
+    "PlutoTV",
+    "SamsungTVPlus",
+    "Sling",
+    "Philo",
+    "HaystackTV",
+    "AMC",
+    "CBSSports",
+    "Bloomberg",
+    "Telly",
+    "ComedyCentral",
+    "Plex",
+    "FanDuelTVPlus",
+    "TCL",
+    "FrndlyTV",
+    "TheWeatherChannel",
+    "NASCAR"
+  ],
+  "partnerLogos": [
+    "SotaClothing",
+    "KingKanine",
+    "FarmAndHome",
+    "BagelCode",
+    "Meshki",
+    "Samford",
+    "Petfolk",
+    "Abuelos",
+    "CarStickers",
+    "SmartLiner",
+    "TruHeight",
+    "Hoodsly",
+    "BrandedBills",
+    "Sijo",
+    "Zoriz",
+    "HerbJones",
+    "AirDog",
+    "VillageGreen",
+    "Nyxt",
+    "MorrisMedia",
+    "Pamos"
+  ],
+  "integrationLogos": [
+    "Adjust",
+    "Adobe Commerce",
+    "Airbridge",
+    "AppsFlyer",
+    "BigCommerce",
+    "Funnel",
+    "Gamesight",
+    "GoDaddy Website Builder",
+    "GoHighLevel",
+    "Google Analytics",
+    "Google Tag Manager",
+    "Haus",
+    "Hubspot",
+    "INCRMNTAL",
+    "Klaviyo",
+    "JavaScript",
+    "Shopify",
+    "WordPress",
+    "Wix",
+    "WooCommerce",
+    "Squarespace"
+  ],
+  "testimonials": [
+    {
+      "quote": "Partnering with Vibe for our OTT advertising has been an absolute game-changer.",
+      "author": "Lauren Jones",
+      "position": "Owner @ Herb Jones",
+      "company": "Herb Jones"
+    },
+    {
+      "quote": "Increasing our social media spend felt like a race to the bottom, especially as Meta KPIs and costs kept shifting.",
+      "author": "Bridgette Coyne",
+      "position": "Content Manager @ Car Stickers",
+      "company": "Car Stickers"
+    },
+    {
+      "quote": "We don't have a big team that can spin up made-for-TV creative. Being able to reuse and adapt what we already have — that's been huge.",
+      "author": "Jasmine Abney",
+      "position": "Sr Manager Paid Social @ Sijo",
+      "company": "Sijo"
+    },
+    {
+      "quote": "Vibe's account management team was super helpful in getting us on board and the platform is so easy to use and transparent. I can really drill down on the data I'm actually interested in.",
+      "author": "Michael Schneider",
+      "position": "Marketing Lead @ Branded Bills",
+      "company": "Branded Bills"
+    },
+    {
+      "quote": "With Vibe, site visits, real engagement and evidence. For a team built on results, Vibe turned TV into a performance channel they can trust.",
+      "author": "JJ Quest",
+      "position": "Chief Strategist @ Conquest",
+      "company": "Conquest"
+    }
+  ],
+  "successStories": [
+    {
+      "company": "Meshki",
+      "metric": "$0.93 Cost Per Session",
+      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
+      "href": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+    },
+    {
+      "company": "Abuelos",
+      "metric": "-80% Cost Per Session",
+      "title": "Abuelo's Lowers Cost Per Session by 80%",
+      "href": "https://www.vibe.co/blog/abuelo-s-x-vibe-case-study"
+    },
+    {
+      "company": "Eden Prairie Center",
+      "metric": "458% Household Reach",
+      "title": "How an Iconic Mall Increased Household Reach by 458% with CTV",
+      "href": "https://www.vibe.co/blog/how-an-iconic-mall-increased-household-reach-by-458-with-ctv"
+    },
+    {
+      "company": "Food Distributor",
+      "metric": "85% Engagement Rate",
+      "title": "How a Food Distributor Authentically Engaged a Hispanic Audience",
+      "href": "https://www.vibe.co/blog/how-a-food-distributor-authentically-engaged-a-hispanic-audience"
+    },
+    {
+      "company": "Petfolk",
+      "metric": "30% Acquisition Lift",
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
+      "href": "https://www.vibe.co/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+    },
+    {
+      "company": "Farm & Home",
+      "metric": "$28 CPM",
+      "title": "How Farm & Home Supply Advertised on Top TV Channels for under $28/CPM",
+      "href": "https://www.vibe.co/blog/ctv-ads-turned-this-farm-store-into-a-goldmine"
+    },
+    {
+      "company": "Samford",
+      "metric": "<$2 Cost Per Session",
+      "title": "Nonprofit University Exceeds Growth Targets with Streaming TV",
+      "href": "https://www.vibe.co/blog/non-profit-university-exceeds-growth-targets-with-streaming-tv"
+    },
+    {
+      "company": "TruHeight",
+      "metric": "728% ROAS",
+      "title": "How TruHeight Reached 728% ROAS with CTV",
+      "href": "https://www.vibe.co/blog/vibe-x-truheight-vitamins-case-study"
+    },
+    {
+      "company": "Hoodsly",
+      "metric": "409% ROAS",
+      "title": "409% ROAS for Hoodsly with Vibe",
+      "href": "https://www.vibe.co/blog/case-study-vibe-hoodsly"
+    },
+    {
+      "company": "Sota Clothing",
+      "metric": "$0.70 CPPV",
+      "title": "How Sota Clothing Got their CPPV Below $0.70 with Vibe & Klaviyo",
+      "href": "https://www.vibe.co/blog/apparel-brand-crushes-roi-goals-with-ctv"
+    },
+    {
+      "company": "King Kanine",
+      "metric": "165% ROAS",
+      "title": "How King Kanine Reached 165% ROAS with Vibe's ML",
+      "href": "https://www.vibe.co/blog/pet-brand-reaches-new-highs-with-ctv"
+    },
+    {
+      "company": "Bagelcode",
+      "metric": "x2+ D7 ROI",
+      "title": "Bagelcode Wins Big with Club Vegas Campaign",
+      "href": "https://www.vibe.co/blog/bagelcode-wins-big-with-club-vegas-campaign"
+    },
+    {
+      "company": "Branded Bills",
+      "metric": "2,000% ROAS",
+      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
+      "href": "https://www.vibe.co/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+    },
+    {
+      "company": "Car Stickers",
+      "metric": "275% ROAS on Mobile",
+      "title": "Car Stickers Reaches 275% ROAS on Mobile",
+      "href": "https://www.vibe.co/blog/car-stickers-reaches-275-roas-on-mobile"
+    },
+    {
+      "company": "SmartLiner",
+      "metric": "1,635% ROAS",
+      "title": "SmartLiner Experiments and Wins with Vibe.co",
+      "href": "https://www.vibe.co/blog/smartliner-experiments-and-wins-with-vibe-co"
+    },
+    {
+      "company": "Morris Media",
+      "metric": "70% Web Traffic Increase",
+      "title": "How a Full Service Agency Boosted Web Traffic by 70% with CTV",
+      "href": "https://www.vibe.co/blog/how-a-full-service-agency-boosted-web-traffic-by-70-with-ctv"
+    },
+    {
+      "company": "Pamos",
+      "metric": "<$2 Cost Per Session",
+      "title": "How a Disruptor Brand Hit CPS <$2",
+      "href": "https://www.vibe.co/blog/how-a-disruptor-brand-hit-cps-2"
+    },
+    {
+      "company": "Sijo",
+      "metric": "3.2x Average Order Value",
+      "title": "Sijo Home Upsells with Klaviyo and Vibe",
+      "href": "https://www.vibe.co/blog/sijo-home-upsells-with-klaviyo-and-vibe"
+    },
+    {
+      "company": "Zoriz",
+      "metric": "600% ROAS",
+      "title": "How Zoriz Golf Surpassed 600% ROAS with CTV",
+      "href": "https://www.vibe.co/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
+    },
+    {
+      "company": "Herb Jones",
+      "metric": "800% Web Traffic Increase",
+      "title": "How this Car Dealership Increased Web Traffic by 800%",
+      "href": "https://www.vibe.co/blog/how-this-car-dealership-increased-web-traffic-by-800"
+    },
+    {
+      "company": "AirDog",
+      "metric": "450% ROAS",
+      "title": "How an E-Comm Brand Reached 450% ROAS for their New Product Launch",
+      "href": "https://www.vibe.co/blog/how-an-e-comm-brand-reached-450-roas-for-their-new-product-launch"
+    },
+    {
+      "company": "Village Green",
+      "metric": "100% Household Coverage",
+      "title": "How Village Green Achieved Full Household Coverage with CTV",
+      "href": "https://www.vibe.co/blog/how-village-green-achieved-full-household-coverage-with-ctv"
+    },
+    {
+      "company": "NYXT",
+      "metric": "$0.85 Cost Per Lead",
+      "title": "How NYXT Reduced their Cost per Lead to a $0.85 Avg.",
+      "href": "https://www.vibe.co/blog/how-nyxt-reduced-their-cost-per-lead-to-a-0-85-avg"
+    },
+    {
+      "company": "Political Consultancy",
+      "metric": "192% Favorability Score",
+      "title": "How a Political Consultancy Increased Candidates' Favorability Score by 192%",
+      "href": "https://www.vibe.co/blog/how-a-political-consultancy-increased-candidates-favorability-score-by-192"
+    }
+  ],
+  "g2Rating": "4.8 out of 5 on G2",
+  "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "href": "https://www.linkedin.com/company/vibedotco"
+    },
+    {
+      "platform": "YouTube",
+      "href": "https://www.youtube.com/channel/UCjWSpAgoRvtySAlM_Mysk7g"
+    },
+    {
+      "platform": "Facebook",
+      "href": "https://www.facebook.com/p/Vibeco-100087504983744/"
+    },
+    {
+      "platform": "X",
+      "href": "https://twitter.com/vibedotco"
+    }
+  ],
+  "copyright": "© 2025 Vibe, Inc."
+}

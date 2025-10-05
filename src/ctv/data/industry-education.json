@@ -1,0 +1,355 @@
+{
+  "url": "https://www.vibe.co/industry/education-non-profit",
+  "title": "Education & Non-profit | Vibe",
+  "meta": {
+    "industry": "education-non-profit",
+    "category": "industry-solutions"
+  },
+  "headings": {
+    "h1": [
+      "Raise Awareness with TV Ads"
+    ],
+    "h2": [
+      "Engage and convert stakeholders and students in minutes.",
+      "Hear from leaders in your industry",
+      "Why educational institutions choose Vibe",
+      "Integrated with the tools you know and love",
+      "Success Stories"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "Raise Awareness with TV Ads",
+      "content": "Engage and convert stakeholders and students in minutes."
+    },
+    {
+      "id": "testimonial",
+      "heading": "Hear from leaders in your industry",
+      "content": "Featured testimonial from educational institution leaders"
+    },
+    {
+      "id": "key-features",
+      "heading": "Why educational institutions choose Vibe",
+      "content": "Industry-specific features for educational institutions and non-profits"
+    },
+    {
+      "id": "integrations",
+      "heading": "Integrated with the tools you know and love",
+      "content": "Connect with your education and CRM stack"
+    },
+    {
+      "id": "success-stories",
+      "heading": "Success Stories",
+      "content": "Case studies across various industries"
+    }
+  ],
+  "features": [
+    {
+      "title": "Affordable Primetime",
+      "description": "Access 500+ premium CTV channels",
+      "details": [
+        "Target future students or donors for under $18 CPM",
+        "Premium inventory placement",
+        "Direct investment without processing fees"
+      ]
+    },
+    {
+      "title": "Trackable Conversions",
+      "description": "Measure web conversions from TV in real time",
+      "details": [
+        "Vibe's pixel technology for tracking",
+        "Real-time conversion measurement",
+        "Optimize every dollar spent"
+      ]
+    },
+    {
+      "title": "Incremental Reach",
+      "description": "Find and engage high-intent audiences outside your CRM",
+      "details": [
+        "Reach audiences beyond existing CRM",
+        "High-intent targeting",
+        "Grow your pipeline with incremental reach"
+      ]
+    }
+  ],
+  "customerLogos": [
+    "Samford",
+    "Southwest University",
+    "CNM",
+    "Tiger Schulmans",
+    "Meshki",
+    "Petfolk",
+    "CarStickers",
+    "BrandedBills",
+    "Farm & Home",
+    "King Kanine",
+    "Sota Clothing",
+    "Sijo",
+    "Pamos",
+    "Zoriz",
+    "AirDog",
+    "TruHeight"
+  ],
+  "testimonials": [
+    {
+      "company": "Samford University",
+      "name": "Madison Barker",
+      "title": "Digital Marketing Manager",
+      "quote": "Knowing our investment was going directly to premium inventory placement versus processing fees was huge for us, as a nonprofit organization.",
+      "result": "275% ROAS",
+      "metric": "275% ROAS"
+    }
+  ],
+  "caseStudies": [
+    {
+      "company": "Samford University",
+      "industry": "Education & Non-profit",
+      "metric": "<$2 Cost Per Session",
+      "title": "Nonprofit University Exceeds Growth Targets with Streaming TV",
+      "href": "https://www.vibe.co/blog/non-profit-university-exceeds-growth-targets-with-streaming-tv"
+    },
+    {
+      "company": "Meshki",
+      "industry": "E-commerce",
+      "metric": "$0.93 Cost Per Session",
+      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
+      "href": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+    },
+    {
+      "company": "Abuelos",
+      "industry": "Restaurant",
+      "metric": "-80% Cost Per Session",
+      "title": "Abuelo's Lowers Cost Per Session by 80%",
+      "href": "https://www.vibe.co/blog/abuelo-s-x-vibe-case-study"
+    },
+    {
+      "company": "Eden Prairie Center",
+      "industry": "Retail",
+      "metric": "458% Household Reach",
+      "title": "How an Iconic Mall Increased Household Reach by 458% with CTV",
+      "href": "https://www.vibe.co/blog/how-an-iconic-mall-increased-household-reach-by-458-with-ctv"
+    },
+    {
+      "company": "Food Distributor",
+      "industry": "Food & Beverage",
+      "metric": "85% Engagement Rate",
+      "title": "How a Food Distributor Authentically Engaged a Hispanic Audience",
+      "href": "https://www.vibe.co/blog/how-a-food-distributor-authentically-engaged-a-hispanic-audience"
+    },
+    {
+      "company": "Petfolk",
+      "industry": "E-commerce",
+      "metric": "30% Acquisition Lift",
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
+      "href": "https://www.vibe.co/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+    },
+    {
+      "company": "Farm & Home",
+      "industry": "Retail",
+      "metric": "$28 CPM",
+      "title": "How Farm & Home Supply Advertised on Top TV Channels for under $28/CPM",
+      "href": "https://www.vibe.co/blog/ctv-ads-turned-this-farm-store-into-a-goldmine"
+    },
+    {
+      "company": "TruHeight Vitamins",
+      "industry": "E-commerce",
+      "metric": "728% ROAS",
+      "title": "How TruHeight Reached 728% ROAS with CTV",
+      "href": "https://www.vibe.co/blog/vibe-x-truheight-vitamins-case-study"
+    },
+    {
+      "company": "Hoodsly",
+      "industry": "E-commerce",
+      "metric": "409% ROAS",
+      "title": "409% ROAS for Hoodsly with Vibe",
+      "href": "https://www.vibe.co/blog/case-study-vibe-hoodsly"
+    },
+    {
+      "company": "Sota Clothing",
+      "industry": "E-commerce",
+      "metric": "$0.70 CPPV",
+      "title": "How Sota Clothing Got their CPPV Below $0.70 with Vibe & Klaviyo",
+      "href": "https://www.vibe.co/blog/apparel-brand-crushes-roi-goals-with-ctv"
+    },
+    {
+      "company": "King Kanine",
+      "industry": "E-commerce",
+      "metric": "165% ROAS",
+      "title": "How King Kanine Reached 165% ROAS with Vibe's ML",
+      "href": "https://www.vibe.co/blog/pet-brand-reaches-new-highs-with-ctv"
+    },
+    {
+      "company": "Bagelcode",
+      "industry": "Apps & Gaming",
+      "metric": "x2+ D7 ROI",
+      "title": "Bagelcode Wins Big with Club Vegas Campaign",
+      "href": "https://www.vibe.co/blog/bagelcode-wins-big-with-club-vegas-campaign"
+    },
+    {
+      "company": "Branded Bills",
+      "industry": "E-commerce",
+      "metric": "2,000% ROAS",
+      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
+      "href": "https://www.vibe.co/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+    },
+    {
+      "company": "Car Stickers",
+      "industry": "E-commerce",
+      "metric": "275% ROAS on Mobile",
+      "title": "Car Stickers Reaches 275% ROAS on Mobile",
+      "href": "https://www.vibe.co/blog/car-stickers-reaches-275-roas-on-mobile"
+    },
+    {
+      "company": "SmartLiner",
+      "industry": "E-commerce",
+      "metric": "1,635% ROAS",
+      "title": "SmartLiner Experiments and Wins with Vibe.co",
+      "href": "https://www.vibe.co/blog/smartliner-experiments-and-wins-with-vibe-co"
+    },
+    {
+      "company": "Morris Media",
+      "industry": "Media & Agencies",
+      "metric": "70% Web Traffic Increase",
+      "title": "How a Full Service Agency Boosted Web Traffic by 70% with CTV",
+      "href": "https://www.vibe.co/blog/how-a-full-service-agency-boosted-web-traffic-by-70-with-ctv"
+    },
+    {
+      "company": "Pamos",
+      "industry": "E-commerce",
+      "metric": "<$2 Cost Per Session",
+      "title": "How a Disruptor Brand Hit CPS <$2",
+      "href": "https://www.vibe.co/blog/how-a-disruptor-brand-hit-cps-2"
+    },
+    {
+      "company": "Sijo",
+      "industry": "E-commerce",
+      "metric": "3.2x Average Order Value",
+      "title": "Sijo Home Upsells with Klaviyo and Vibe",
+      "href": "https://www.vibe.co/blog/sijo-home-upsells-with-klaviyo-and-vibe"
+    },
+    {
+      "company": "Zoriz",
+      "industry": "E-commerce",
+      "metric": "600% ROAS",
+      "title": "How Zoriz Golf Surpassed 600% ROAS with CTV",
+      "href": "https://www.vibe.co/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
+    },
+    {
+      "company": "Herb Jones",
+      "industry": "Automotive",
+      "metric": "800% Web Traffic Increase",
+      "title": "How this Car Dealership Increased Web Traffic by 800%",
+      "href": "https://www.vibe.co/blog/how-this-car-dealership-increased-web-traffic-by-800"
+    },
+    {
+      "company": "AirDog",
+      "industry": "E-commerce",
+      "metric": "450% ROAS",
+      "title": "How an E-Comm Brand Reached 450% ROAS for their New Product Launch",
+      "href": "https://www.vibe.co/blog/how-an-e-comm-brand-reached-450-roas-for-their-new-product-launch"
+    },
+    {
+      "company": "Village Green",
+      "industry": "Real Estate",
+      "metric": "100% Household Coverage",
+      "title": "How Village Green Achieved Full Household Coverage with CTV",
+      "href": "https://www.vibe.co/blog/how-village-green-achieved-full-household-coverage-with-ctv"
+    },
+    {
+      "company": "NYXT",
+      "industry": "B2B",
+      "metric": "$0.85 Cost Per Lead",
+      "title": "How NYXT Reduced their Cost per Lead to a $0.85 Avg.",
+      "href": "https://www.vibe.co/blog/how-nyxt-reduced-their-cost-per-lead-to-a-0-85-avg"
+    },
+    {
+      "company": "Political Consultancy",
+      "industry": "Politics",
+      "metric": "192% Favorability Score",
+      "title": "How a Political Consultancy Increased Candidates' Favorability Score by 192%",
+      "href": "https://www.vibe.co/blog/how-a-political-consultancy-increased-candidates-favorability-score-by-192"
+    }
+  ],
+  "integrations": [
+    {
+      "name": "Klaviyo",
+      "category": "CRM & Email Marketing",
+      "description": "Sync customer data for email & SMS marketing. To engage with customers at every step of the funnel."
+    },
+    {
+      "name": "Shopify",
+      "category": "E-commerce Platform",
+      "description": "Track conversions and customer behavior on your Shopify store."
+    },
+    {
+      "name": "Google Analytics",
+      "category": "Analytics",
+      "description": "Track the direct influence of your TV ads on online behavior."
+    }
+  ],
+  "platforms": [
+    "DirectTV",
+    "CNN",
+    "Fubo",
+    "NFL",
+    "Roku",
+    "MLB",
+    "Paramount Streaming",
+    "NBA",
+    "Peacock",
+    "Tubi",
+    "NHL",
+    "Fox News",
+    "CBS",
+    "Pluto TV",
+    "Samsung TV Plus",
+    "Sling",
+    "Philo",
+    "Haystack TV",
+    "AMC",
+    "CBS Sports",
+    "Bloomberg",
+    "Telly",
+    "Comedy Central",
+    "Plex",
+    "FanDuel TV Plus",
+    "TCL",
+    "Frndly TV",
+    "The Weather Channel",
+    "NASCAR"
+  ],
+  "socialProof": {
+    "userCount": "10,000+ performance marketers",
+    "rating": "4.8/5 on G2"
+  },
+  "callToAction": [
+    {
+      "text": "Get started",
+      "href": "https://www.vibe.co/get-started",
+      "type": "primary"
+    },
+    {
+      "text": "Book a demo",
+      "href": "https://www.vibe.co/book-a-demo",
+      "type": "secondary"
+    }
+  ],
+  "valueProp": [
+    "Affordable primetime TV advertising under $18 CPM",
+    "Real-time conversion tracking with pixel technology",
+    "500+ premium CTV channels access",
+    "Incremental reach outside existing CRM",
+    "Direct investment to premium inventory",
+    "High-intent audience targeting"
+  ],
+  "targetAudience": "Educational institutions and non-profit organizations looking to raise awareness and engage stakeholders through streaming TV advertising",
+  "keyBenefits": [
+    "Access 500+ premium CTV channels for under $18 CPM",
+    "Measure web conversions from TV in real time with Vibe's pixel tech",
+    "Find and engage high-intent audiences outside your CRM",
+    "Investment goes directly to premium inventory placement",
+    "Optimize every dollar with real-time tracking",
+    "Grow your pipeline with incremental reach"
+  ]
+}

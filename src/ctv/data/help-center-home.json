@@ -1,0 +1,62 @@
+{
+  "url": "https://help.vibe.co/en/",
+  "title": "Vibe Help Center",
+  "description": "TV Advertising platform help and documentation",
+  "scraped_at": "2025-10-05",
+  "categories": [
+    {
+      "name": "Getting Started",
+      "description": "Here's how to build and launch your 1st campaign in minutes.",
+      "article_count": 12,
+      "url": "https://help.vibe.co/en/collections/5792737-getting-started",
+      "authors": ["Nicolas Hemidy", "Vincent Paoli"]
+    },
+    {
+      "name": "Measurement and Reporting",
+      "description": "Learn how to measure and optimize your campaigns in real time.",
+      "article_count": 25,
+      "url": "https://help.vibe.co/en/collections/5792742-measurement-and-reporting",
+      "authors": ["Nicolas Hemidy", "Vincent Paoli"]
+    },
+    {
+      "name": "Account Management and Admin",
+      "description": "Easily manage your team permissions and account settings.",
+      "article_count": 7,
+      "url": "https://help.vibe.co/en/collections/5792768-account-management-and-admin",
+      "authors": ["Nicolas Hemidy"]
+    },
+    {
+      "name": "Troubleshooting",
+      "description": "Find help quickly.",
+      "article_count": 6,
+      "url": "https://help.vibe.co/en/collections/5792804-troubleshooting",
+      "authors": ["Nicolas Hemidy", "Vincent Paoli"]
+    },
+    {
+      "name": "FAQ",
+      "description": "Learn more about the platform.",
+      "article_count": 17,
+      "url": "https://help.vibe.co/en/collections/5792831-faq",
+      "authors": ["Nicolas Hemidy", "Vincent Paoli"]
+    },
+    {
+      "name": "Tips and Tricks",
+      "description": "Learn to use Vibe like a pro",
+      "article_count": 4,
+      "url": "https://help.vibe.co/en/collections/5824575-tips-and-tricks",
+      "authors": ["Nicolas Hemidy", "Vincent Paoli"]
+    }
+  ],
+  "navigation": [
+    "Book a meeting with a CTV expert",
+    "Getting Started",
+    "Measurement and Reporting",
+    "Account Management and Admin",
+    "Troubleshooting",
+    "FAQ",
+    "What's New?",
+    "Tips and Tricks"
+  ],
+  "total_categories": 6,
+  "total_articles": 71
+}

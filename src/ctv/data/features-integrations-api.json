@@ -1,0 +1,529 @@
+{
+  "url": "https://www.vibe.co/features/integrations-api",
+  "title": "Integrations & API | Vibe",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1",
+    "description": "Integrate with products you know and love: Klaviyo, Shopify, Google Analytics and more. From targeting to web and app tracking, Vibe connects with over 20 partners.",
+    "og:title": "Integrations & API | Vibe",
+    "og:description": "Integrate with products you know and love: Klaviyo, Shopify, Google Analytics and more. From targeting to web and app tracking, Vibe connects with over 20 partners.",
+    "og:url": "https://www.vibe.co/features/integrations-api",
+    "twitter:card": "summary_large_image"
+  },
+  "headings": {
+    "h1": [
+      "Vibe Integrations & API"
+    ],
+    "h2": [
+      "Apps Analytics",
+      "Audience Partners",
+      "Dashboarding",
+      "MMM & Incrementality",
+      "Web Analytics",
+      "Need More? Unlock the power of our API"
+    ],
+    "h3": []
+  },
+  "paragraphs": [
+    "Connect Vibe with your favorite tools to boost campaign performance.",
+    "Sync third-party data, measure CTV data, and track user behavior across web and Streaming TV.",
+    "Seamlessly integrate Vibe with your existing workflow to automate ad placements, optimize campaigns, and maximize reach."
+  ],
+  "integrationCategories": [
+    {
+      "category": "Apps Analytics",
+      "description": "Track app installs, user behavior, and attribution across mobile platforms",
+      "partners": [
+        {
+          "name": "Adjust",
+          "type": "Mobile Measurement Partner",
+          "capabilities": ["Attribution", "Analytics", "Fraud Prevention"]
+        },
+        {
+          "name": "Airbridge",
+          "type": "Mobile Measurement Partner",
+          "capabilities": ["Attribution", "Analytics", "Deep Linking"]
+        },
+        {
+          "name": "AppsFlyer",
+          "type": "Mobile Measurement Partner",
+          "capabilities": ["Attribution", "Analytics", "Fraud Protection"]
+        },
+        {
+          "name": "Gamesight",
+          "type": "Gaming Analytics Platform",
+          "capabilities": ["Game Marketing", "Attribution", "Analytics"]
+        },
+        {
+          "name": "Kochava",
+          "type": "Mobile Measurement Partner",
+          "capabilities": ["Attribution", "Analytics", "Fraud Detection"]
+        },
+        {
+          "name": "Singular",
+          "type": "Marketing Analytics Platform",
+          "capabilities": ["Attribution", "Analytics", "ROI Analysis"]
+        }
+      ]
+    },
+    {
+      "category": "Audience Partners",
+      "description": "Enhance targeting with CRM and marketing automation platforms",
+      "partners": [
+        {
+          "name": "HubSpot",
+          "type": "CRM & Marketing Automation",
+          "capabilities": ["CRM Integration", "Lead Management", "Marketing Automation"]
+        },
+        {
+          "name": "Klaviyo",
+          "type": "Email Marketing Platform",
+          "capabilities": ["Email Marketing", "Customer Data", "Segmentation"]
+        }
+      ]
+    },
+    {
+      "category": "Dashboarding",
+      "description": "Centralize and visualize campaign data across platforms",
+      "partners": [
+        {
+          "name": "Funnel",
+          "type": "Marketing Data Hub",
+          "capabilities": ["Data Integration", "Reporting", "Analytics"]
+        },
+        {
+          "name": "Supermetrics",
+          "type": "Marketing Data Platform",
+          "capabilities": ["Data Integration", "Reporting", "Analytics"]
+        },
+        {
+          "name": "Triple Whale",
+          "type": "E-commerce Analytics",
+          "capabilities": ["E-commerce Metrics", "Attribution", "Reporting"]
+        },
+        {
+          "name": "Windsor.ai",
+          "type": "Marketing Attribution",
+          "capabilities": ["Attribution", "Data Integration", "Analytics"]
+        }
+      ]
+    },
+    {
+      "category": "MMM & Incrementality",
+      "description": "Measure marketing mix modeling and incremental impact",
+      "partners": [
+        {
+          "name": "Funnel",
+          "type": "Marketing Data Hub",
+          "capabilities": ["MMM", "Data Integration", "Analytics"]
+        },
+        {
+          "name": "Haus",
+          "type": "Marketing Mix Modeling",
+          "capabilities": ["MMM", "Incrementality Testing", "Analytics"]
+        },
+        {
+          "name": "INCRMNTAL",
+          "type": "Incrementality Platform",
+          "capabilities": ["Incrementality Testing", "Attribution", "Analytics"]
+        },
+        {
+          "name": "Lifesight",
+          "type": "Marketing Analytics",
+          "capabilities": ["MMM", "Attribution", "Analytics"]
+        },
+        {
+          "name": "Triple Whale",
+          "type": "E-commerce Analytics",
+          "capabilities": ["Incrementality", "Attribution", "Analytics"]
+        },
+        {
+          "name": "WorkMagic",
+          "type": "Marketing Analytics",
+          "capabilities": ["MMM", "Attribution", "Analytics"]
+        }
+      ]
+    },
+    {
+      "category": "Web Analytics",
+      "description": "Track website behavior and e-commerce platform integration",
+      "partners": [
+        {
+          "name": "Adobe Commerce",
+          "type": "E-commerce Platform",
+          "capabilities": ["E-commerce Tracking", "Pixel Integration", "Conversion Tracking"]
+        },
+        {
+          "name": "BigCommerce",
+          "type": "E-commerce Platform",
+          "capabilities": ["E-commerce Tracking", "Pixel Integration", "Conversion Tracking"]
+        },
+        {
+          "name": "GoDaddy Website Builder",
+          "type": "Website Builder",
+          "capabilities": ["Website Tracking", "Pixel Integration", "Analytics"]
+        },
+        {
+          "name": "GoHighLevel",
+          "type": "Marketing Platform",
+          "capabilities": ["CRM Integration", "Marketing Automation", "Tracking"]
+        },
+        {
+          "name": "Google Analytics",
+          "type": "Web Analytics",
+          "capabilities": ["Website Analytics", "Conversion Tracking", "User Behavior"]
+        },
+        {
+          "name": "Google Tag Manager",
+          "type": "Tag Management",
+          "capabilities": ["Tag Management", "Pixel Deployment", "Event Tracking"]
+        },
+        {
+          "name": "Shopify",
+          "type": "E-commerce Platform",
+          "capabilities": ["E-commerce Tracking", "Pixel Integration", "Conversion Tracking"]
+        },
+        {
+          "name": "Squarespace",
+          "type": "Website Builder",
+          "capabilities": ["Website Tracking", "Pixel Integration", "Analytics"]
+        },
+        {
+          "name": "Ticketmaster",
+          "type": "Ticketing Platform",
+          "capabilities": ["Event Tracking", "Conversion Tracking", "Analytics"]
+        },
+        {
+          "name": "Wix",
+          "type": "Website Builder",
+          "capabilities": ["Website Tracking", "Pixel Integration", "Analytics"]
+        },
+        {
+          "name": "WooCommerce",
+          "type": "E-commerce Platform",
+          "capabilities": ["E-commerce Tracking", "Pixel Integration", "Conversion Tracking"]
+        },
+        {
+          "name": "WordPress",
+          "type": "Content Management System",
+          "capabilities": ["Website Tracking", "Pixel Integration", "Analytics"]
+        }
+      ]
+    }
+  ],
+  "apiDetails": {
+    "heading": "Need More? Unlock the power of our API",
+    "description": "Seamlessly integrate Vibe with your existing workflow to automate ad placements, optimize campaigns, and maximize reach.",
+    "features": [
+      "Automate ad placements",
+      "Optimize campaigns programmatically",
+      "Maximize reach across platforms",
+      "Custom integration capabilities",
+      "Advanced campaign management"
+    ],
+    "cta": {
+      "text": "Book a call",
+      "action": "Schedule API consultation"
+    }
+  },
+  "platformConnections": {
+    "totalPartners": "20+",
+    "connectionTypes": [
+      "Mobile Measurement Partners (MMPs)",
+      "CRM & Marketing Automation",
+      "E-commerce Platforms",
+      "Website Builders",
+      "Analytics Platforms",
+      "Tag Management Systems",
+      "Marketing Data Hubs",
+      "MMM & Incrementality Tools"
+    ],
+    "capabilities": [
+      "Third-party data synchronization",
+      "CTV data measurement",
+      "Cross-platform user behavior tracking",
+      "Attribution tracking",
+      "Conversion tracking",
+      "Pixel integration",
+      "Event tracking",
+      "ROI analysis",
+      "Marketing mix modeling",
+      "Incrementality testing"
+    ]
+  },
+  "useCases": [
+    {
+      "title": "E-commerce Tracking",
+      "description": "Integrate with Shopify, BigCommerce, WooCommerce, and other e-commerce platforms to track conversions and sales",
+      "platforms": ["Shopify", "BigCommerce", "WooCommerce", "Adobe Commerce"]
+    },
+    {
+      "title": "Mobile App Attribution",
+      "description": "Connect with mobile measurement partners to track app installs and in-app events",
+      "platforms": ["AppsFlyer", "Adjust", "Airbridge", "Kochava", "Singular", "Gamesight"]
+    },
+    {
+      "title": "Marketing Automation",
+      "description": "Sync audience data with CRM and email marketing platforms for enhanced targeting",
+      "platforms": ["HubSpot", "Klaviyo", "GoHighLevel"]
+    },
+    {
+      "title": "Analytics & Reporting",
+      "description": "Centralize campaign data across platforms for comprehensive reporting",
+      "platforms": ["Google Analytics", "Funnel", "Supermetrics", "Triple Whale", "Windsor.ai"]
+    },
+    {
+      "title": "Marketing Mix Modeling",
+      "description": "Measure incrementality and optimize marketing spend across channels",
+      "platforms": ["Haus", "INCRMNTAL", "Lifesight", "WorkMagic"]
+    },
+    {
+      "title": "Website Tracking",
+      "description": "Deploy tracking pixels and measure website behavior across various platforms",
+      "platforms": ["WordPress", "Wix", "Squarespace", "GoDaddy Website Builder", "Google Tag Manager"]
+    }
+  ],
+  "benefits": [
+    "Seamless workflow integration",
+    "Enhanced campaign performance",
+    "Cross-platform data synchronization",
+    "Comprehensive attribution tracking",
+    "Automated ad placement and optimization",
+    "Unified reporting and analytics",
+    "Improved targeting with CRM data",
+    "Real-time performance measurement",
+    "Reduced manual data management",
+    "Scalable integration infrastructure"
+  ],
+  "buttons": [
+    {
+      "text": "Book a call",
+      "href": "https://www.vibe.co/book-a-demo",
+      "type": "link",
+      "purpose": "API consultation"
+    },
+    {
+      "text": "Get started",
+      "href": "https://www.vibe.co/get-started",
+      "type": "link",
+      "purpose": "Platform onboarding"
+    },
+    {
+      "text": "Book a demo",
+      "href": "https://www.vibe.co/book-a-demo",
+      "type": "link",
+      "purpose": "Product demonstration"
+    }
+  ],
+  "navigation": {
+    "header": [
+      {
+        "text": "Vibe",
+        "href": "https://www.vibe.co/"
+      },
+      {
+        "text": "Product",
+        "href": "#"
+      },
+      {
+        "text": "Industries",
+        "href": "#"
+      },
+      {
+        "text": "Pricing",
+        "href": "https://www.vibe.co/pricing"
+      },
+      {
+        "text": "Testimonials",
+        "href": "https://www.vibe.co/testimonials"
+      },
+      {
+        "text": "Resources",
+        "href": "#"
+      },
+      {
+        "text": "Book a demo",
+        "href": "https://www.vibe.co/book-a-demo"
+      },
+      {
+        "text": "Log in",
+        "href": "https://www.vibe.co/sign-in"
+      }
+    ],
+    "footer": [
+      {
+        "text": "Apps & Gaming",
+        "href": "https://www.vibe.co/industry/apps-gaming"
+      },
+      {
+        "text": "Ecommerce",
+        "href": "https://www.vibe.co/industry/ecommerce"
+      },
+      {
+        "text": "Education & Non-profit",
+        "href": "https://www.vibe.co/industry/education-non-profit"
+      },
+      {
+        "text": "Automotive",
+        "href": "https://www.vibe.co/industry/automotive"
+      },
+      {
+        "text": "Media & Agencies",
+        "href": "https://www.vibe.co/industry/media-agencies"
+      },
+      {
+        "text": "Apps & Channels",
+        "href": "https://www.vibe.co/features/apps-channels"
+      },
+      {
+        "text": "Audience Targeting",
+        "href": "https://www.vibe.co/features/audience-targeting"
+      },
+      {
+        "text": "AI Optimization",
+        "href": "https://www.vibe.co/features/ai-optimization"
+      },
+      {
+        "text": "Measurement & Reporting",
+        "href": "https://www.vibe.co/features/measurement-reporting"
+      },
+      {
+        "text": "AI Creatives",
+        "href": "https://www.vibe.co/features/ai-creatives"
+      },
+      {
+        "text": "Integrations & API",
+        "href": "https://www.vibe.co/features/integrations-api"
+      },
+      {
+        "text": "Help center",
+        "href": "https://help.vibe.co/en/"
+      },
+      {
+        "text": "Blog",
+        "href": "https://www.vibe.co/blog"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "https://www.vibe.co/legal/privacy-policy"
+      },
+      {
+        "text": "Terms of Service",
+        "href": "https://www.vibe.co/legal/terms-of-service"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "Vibe Integrations & API",
+      "content": "Connect Vibe with your favorite tools to boost campaign performance. Sync third-party data, measure CTV data, and track user behavior across web and Streaming TV."
+    },
+    {
+      "id": "apps-analytics",
+      "heading": "Apps Analytics",
+      "content": "Integration partners for mobile app tracking and attribution including Adjust, Airbridge, AppsFlyer, Gamesight, Kochava, and Singular."
+    },
+    {
+      "id": "audience-partners",
+      "heading": "Audience Partners",
+      "content": "CRM and marketing automation integrations including HubSpot and Klaviyo for enhanced audience targeting."
+    },
+    {
+      "id": "dashboarding",
+      "heading": "Dashboarding",
+      "content": "Marketing data hub integrations including Funnel, Supermetrics, Triple Whale, and Windsor.ai for centralized reporting."
+    },
+    {
+      "id": "mmm-incrementality",
+      "heading": "MMM & Incrementality",
+      "content": "Marketing mix modeling and incrementality partners including Funnel, Haus, INCRMNTAL, Lifesight, Triple Whale, and WorkMagic."
+    },
+    {
+      "id": "web-analytics",
+      "heading": "Web Analytics",
+      "content": "Website and e-commerce platform integrations including Adobe Commerce, BigCommerce, GoDaddy, GoHighLevel, Google Analytics, Google Tag Manager, Shopify, Squarespace, Ticketmaster, Wix, WooCommerce, and WordPress."
+    },
+    {
+      "id": "api-cta",
+      "heading": "Need More? Unlock the power of our API",
+      "content": "Seamlessly integrate Vibe with your existing workflow to automate ad placements, optimize campaigns, and maximize reach."
+    }
+  ],
+  "integrationLogos": [
+    "Adjust",
+    "Airbridge",
+    "AppsFlyer",
+    "Gamesight",
+    "Kochava",
+    "Singular",
+    "HubSpot",
+    "Klaviyo",
+    "Funnel",
+    "Supermetrics",
+    "Triple Whale",
+    "Windsor.ai",
+    "Haus",
+    "INCRMNTAL",
+    "Lifesight",
+    "WorkMagic",
+    "Adobe Commerce",
+    "BigCommerce",
+    "GoDaddy Website Builder",
+    "GoHighLevel",
+    "Google Analytics",
+    "Google Tag Manager",
+    "Shopify",
+    "Squarespace",
+    "Ticketmaster",
+    "Wix",
+    "WooCommerce",
+    "WordPress"
+  ],
+  "technicalDetails": {
+    "integrationMethods": [
+      "Pixel-based tracking",
+      "Server-to-server (S2S) integration",
+      "API connections",
+      "Tag management",
+      "SDK integration",
+      "Webhook callbacks"
+    ],
+    "dataTypes": [
+      "Conversion events",
+      "User behavior data",
+      "Attribution data",
+      "Campaign performance metrics",
+      "Audience segments",
+      "Transaction data",
+      "App install data",
+      "Engagement metrics"
+    ],
+    "supportedFlows": [
+      "Audience sync from CRM to Vibe",
+      "Conversion tracking from web/app to Vibe",
+      "Campaign data export to dashboarding tools",
+      "Attribution data to MMPs",
+      "Performance data to MMM platforms"
+    ]
+  },
+  "g2Rating": "4.8 out of 5 on G2",
+  "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "href": "https://www.linkedin.com/company/vibedotco"
+    },
+    {
+      "platform": "YouTube",
+      "href": "https://www.youtube.com/channel/UCjWSpAgoRvtySAlM_Mysk7g"
+    },
+    {
+      "platform": "Facebook",
+      "href": "https://www.facebook.com/p/Vibeco-100087504983744/"
+    },
+    {
+      "platform": "X",
+      "href": "https://twitter.com/vibedotco"
+    }
+  ],
+  "copyright": "© 2025 Vibe, Inc."
+}

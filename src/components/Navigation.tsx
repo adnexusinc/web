@@ -325,57 +325,56 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                     Product
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="w-[700px] p-6">
-                      <div className="grid grid-cols-[2fr_1fr] gap-6">
-                        {/* Left side - By Goal and By Feature */}
-                        <div className="space-y-6">
-                          {/* By Goal Section */}
-                          <div>
-                            <h3 className="text-sm font-semibold text-muted-foreground mb-3 px-2">By Goal</h3>
-                            <ul className="grid grid-cols-2 gap-2">
-                              {goalItems.map((item) => (
-                                <ListItem
-                                  key={item.title}
-                                  title={item.title}
-                                  href={item.href}
-                                  icon={item.icon}
-                                >
-                                  {item.description}
-                                </ListItem>
-                              ))}
-                            </ul>
-                          </div>
-
-                          {/* By Feature Section */}
-                          <div>
-                            <h3 className="text-sm font-semibold text-muted-foreground mb-3 px-2">By Feature</h3>
-                            <ul className="grid grid-cols-2 gap-2">
-                              {featureItems.map((item) => (
-                                <ListItem
-                                  key={item.title}
-                                  title={item.title}
-                                  href={item.href}
-                                  icon={item.icon}
-                                >
-                                  {item.description}
-                                </ListItem>
-                              ))}
-                            </ul>
-                          </div>
+                    <div className="w-screen max-w-5xl p-8">
+                      <div className="grid md:grid-cols-3 gap-8">
+                        {/* By Goal Panel */}
+                        <div className="md:col-span-1">
+                          <h3 className="text-xs font-semibold text-muted-foreground/60 uppercase tracking-wider mb-4 px-2">By Goal</h3>
+                          <ul className="space-y-1">
+                            {goalItems.map((item) => (
+                              <ListItem
+                                key={item.title}
+                                title={item.title}
+                                href={item.href}
+                                icon={item.icon}
+                                className="opacity-75 hover:opacity-100"
+                              >
+                                {item.description}
+                              </ListItem>
+                            ))}
+                          </ul>
                         </div>
 
-                        {/* Right side - Studio CTA */}
-                        <div className="flex flex-col justify-center p-4 bg-gradient-to-br from-purple-600/10 to-blue-600/10 rounded-lg border border-purple-600/20">
-                          <Film className="h-12 w-12 text-purple-400 mx-auto mb-3" />
-                          <h3 className="text-lg font-bold mb-2 text-center">Ad Studio</h3>
-                          <p className="text-sm text-muted-foreground mb-4 text-center">
+                        {/* By Feature Panel */}
+                        <div className="md:col-span-1">
+                          <h3 className="text-xs font-semibold text-muted-foreground/60 uppercase tracking-wider mb-4 px-2">By Feature</h3>
+                          <ul className="space-y-1">
+                            {featureItems.map((item) => (
+                              <ListItem
+                                key={item.title}
+                                title={item.title}
+                                href={item.href}
+                                icon={item.icon}
+                                className="opacity-75 hover:opacity-100"
+                              >
+                                {item.description}
+                              </ListItem>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {/* Studio CTA Panel */}
+                        <div className="md:col-span-1 flex flex-col justify-center p-6 bg-gradient-to-br from-purple-600/10 to-blue-600/10 rounded-lg border border-purple-600/20">
+                          <Film className="h-14 w-14 text-purple-400 mx-auto mb-4" />
+                          <h3 className="text-xl font-bold mb-2 text-center">Ad Studio</h3>
+                          <p className="text-sm text-muted-foreground mb-6 text-center">
                             Create a TV ad spot for free in 2 minutes.
                           </p>
                           <a
                             href="https://studio.ad.nexus"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-medium text-center transition-colors"
+                            className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg text-sm font-semibold text-center transition-colors"
                           >
                             Open Studio →
                           </a>

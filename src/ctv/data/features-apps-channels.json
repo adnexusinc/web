@@ -1,0 +1,118 @@
+{
+  "url": "https://www.vibe.co/features/apps-channels",
+  "scrapeDate": "2025-10-05",
+  "pageTitle": "Apps & Channels - Vibe Features",
+  "description": "Streaming and connected TV advertising solution with extensive channel coverage and advanced targeting capabilities",
+  "platform": {
+    "rating": "4.8/5",
+    "ratingSource": "G2",
+    "features": [
+      "Apps & Channels",
+      "Audience Targeting",
+      "AI Optimization",
+      "Measurement & Reporting",
+      "AI Creatives",
+      "Integrations & API"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Anime",
+      "channelCount": 5
+    },
+    {
+      "name": "Movies & TV Shows",
+      "channelCount": 91
+    },
+    {
+      "name": "Hispanic Focus",
+      "channelCount": 22
+    },
+    {
+      "name": "Local News",
+      "channelCount": 195
+    },
+    {
+      "name": "Sports",
+      "channelCount": 58
+    },
+    {
+      "name": "Music",
+      "channelCount": 11
+    },
+    {
+      "name": "Lifestyle",
+      "channelCount": 24
+    },
+    {
+      "name": "Documentary",
+      "channelCount": 32
+    },
+    {
+      "name": "Premium",
+      "channelCount": 67
+    },
+    {
+      "name": "Comedy",
+      "channelCount": 20
+    },
+    {
+      "name": "Business, News & Weather",
+      "channelCount": 35
+    },
+    {
+      "name": "African American Focus",
+      "channelCount": 15
+    },
+    {
+      "name": "Food",
+      "channelCount": 13
+    },
+    {
+      "name": "Family Friendly",
+      "channelCount": 17
+    }
+  ],
+  "totalCategories": 14,
+  "totalChannels": 605,
+  "notableChannels": [
+    {
+      "name": "AMC",
+      "categories": ["Premium", "Movies & TV Shows"]
+    },
+    {
+      "name": "BET",
+      "categories": ["Premium", "Movies & TV Shows", "Music", "African American Focus"]
+    },
+    {
+      "name": "ESPN",
+      "categories": ["Premium", "Sports"]
+    },
+    {
+      "name": "Comedy Central",
+      "categories": ["Premium", "Movies & TV Shows", "Comedy"]
+    },
+    {
+      "name": "Discovery+",
+      "categories": ["Premium", "Documentary"]
+    },
+    {
+      "name": "Food Network",
+      "categories": ["Premium", "Food"]
+    },
+    {
+      "name": "Hallmark Channel",
+      "categories": ["Premium", "Movies & TV Shows"]
+    },
+    {
+      "name": "MTV",
+      "categories": ["Music", "African American Focus", "Comedy"]
+    }
+  ],
+  "platformHighlights": [
+    "Rated 4.8/5 on G2",
+    "Supports multiple industry verticals",
+    "AI-powered optimization and creative generation",
+    "Comprehensive targeting and measurement tools"
+  ]
+}

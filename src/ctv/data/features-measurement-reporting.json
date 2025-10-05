@@ -1,0 +1,169 @@
+{
+  "url": "https://www.vibe.co/features/measurement-reporting",
+  "scrapeDate": "2025-10-05",
+  "pageTitle": "Measurement & Reporting - Vibe Features",
+  "description": "Measure results in real time. Instant answers. Zero blind spots.",
+  "platform": {
+    "rating": "4.8/5",
+    "ratingSource": "G2",
+    "minimumDailyCost": "$50",
+    "features": [
+      "Apps & Channels",
+      "Audience Targeting",
+      "AI Optimization",
+      "Measurement & Reporting",
+      "AI Creatives",
+      "Integrations & API"
+    ]
+  },
+  "reportingFeatures": {
+    "realTimeTracking": {
+      "enabled": true,
+      "description": "Real-time performance tracking"
+    },
+    "customizableDashboard": {
+      "enabled": true,
+      "description": "Fully customizable reporting dashboard"
+    },
+    "multiLevelReporting": {
+      "enabled": true,
+      "description": "Multi-level reporting with selectable KPIs"
+    },
+    "metricsAvailable": {
+      "count": "12+",
+      "description": "Over a dozen metrics available for detailed analysis"
+    }
+  },
+  "metrics": [
+    {
+      "name": "Conversions",
+      "description": "Track user conversions"
+    },
+    {
+      "name": "Impressions",
+      "description": "Total ad impressions"
+    },
+    {
+      "name": "CVR",
+      "description": "Conversion Rate"
+    },
+    {
+      "name": "CPA",
+      "description": "Cost Per Acquisition"
+    },
+    {
+      "name": "Web visits",
+      "description": "Website traffic from campaigns"
+    },
+    {
+      "name": "ROAS",
+      "description": "Return on Ad Spend"
+    },
+    {
+      "name": "App installs",
+      "description": "Mobile app installation tracking"
+    },
+    {
+      "name": "In-app revenue",
+      "description": "Revenue generated from app users"
+    }
+  ],
+  "integrations": {
+    "thirdPartyMeasurement": {
+      "enabled": true,
+      "partners": [
+        {
+          "name": "Google Tag Manager",
+          "category": "Analytics"
+        },
+        {
+          "name": "Google Analytics",
+          "category": "Analytics"
+        },
+        {
+          "name": "Funnel",
+          "category": "Analytics"
+        },
+        {
+          "name": "BigCommerce",
+          "category": "E-commerce"
+        },
+        {
+          "name": "Adjust",
+          "category": "Mobile Measurement"
+        },
+        {
+          "name": "AppsFlyer",
+          "category": "Mobile Measurement"
+        },
+        {
+          "name": "Singular",
+          "category": "Mobile Measurement"
+        },
+        {
+          "name": "Kochava",
+          "category": "Mobile Measurement"
+        },
+        {
+          "name": "Airbridge",
+          "category": "Mobile Measurement"
+        },
+        {
+          "name": "Gamesight",
+          "category": "Gaming Analytics"
+        }
+      ]
+    }
+  },
+  "technicalSpecifications": {
+    "pixelImplementation": {
+      "enabled": true,
+      "placement": "Website header",
+      "description": "Pixel installed on website header"
+    },
+    "attributionWindow": {
+      "configurable": true,
+      "range": "1-7 days",
+      "description": "Attribution window configurable from 1-7 days"
+    },
+    "trackingCapabilities": [
+      "User visits",
+      "Clicks",
+      "Shopping behavior"
+    ]
+  },
+  "keyBenefits": [
+    "Measure results in real time",
+    "Comprehensive campaign performance insights",
+    "Flexible dashboard customization",
+    "Holistic view of TV campaign performance",
+    "Zero blind spots in reporting",
+    "Instant answers to campaign questions"
+  ],
+  "useCases": [
+    {
+      "type": "TV Advertising",
+      "description": "Performance tracking for TV campaigns"
+    },
+    {
+      "type": "App Install Campaigns",
+      "description": "App install campaign measurement"
+    },
+    {
+      "type": "Cross-Channel Marketing",
+      "description": "Cross-channel marketing analytics"
+    },
+    {
+      "type": "Performance Optimization",
+      "description": "Performance optimization for various industries (apps, e-commerce, etc.)"
+    }
+  ],
+  "valueProposition": "Instant answers. Zero blind spots.",
+  "ctaButtons": [
+    "Get started",
+    "Book a demo"
+  ],
+  "platformRecognition": [
+    "G2 Award: Most Implementable"
+  ]
+}

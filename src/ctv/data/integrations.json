@@ -1,0 +1,534 @@
+{
+  "metadata": {
+    "source": "https://www.vibe.co/integrations",
+    "scraped_at": "2025-10-05",
+    "total_integrations": 38,
+    "categories": [
+      "Apps Analytics",
+      "Audience Partners",
+      "Dashboarding",
+      "MMM & Incrementality",
+      "Web Analytics"
+    ]
+  },
+  "integrations": [
+    {
+      "name": "Adjust",
+      "categories": ["Apps Analytics"],
+      "description": "Measure and optimize app campaigns",
+      "website": "adjust.com",
+      "urlPath": "/integrations/adjust",
+      "setupGuide": {
+        "steps": [
+          "Link Accounts - Connect your Adjust account with Vibe",
+          "Set Up Tracking - Configure event tracking and attribution settings",
+          "Implement SDK - Add the Adjust SDK to your mobile app",
+          "Analyze Results - Monitor campaign performance and user behavior"
+        ]
+      }
+    },
+    {
+      "name": "Airbridge",
+      "categories": ["Apps Analytics"],
+      "description": "Attribute app installs and events with Airbridge",
+      "website": "airbridge.io",
+      "urlPath": "/integrations/airbridge",
+      "setupGuide": {
+        "steps": [
+          "Connect Airbridge account to Vibe platform",
+          "Configure attribution settings",
+          "Implement tracking SDK in mobile app",
+          "Monitor app install attribution"
+        ]
+      }
+    },
+    {
+      "name": "AppsFlyer",
+      "categories": ["Apps Analytics"],
+      "description": "Track installs and user engagement",
+      "website": "appsflyer.com",
+      "urlPath": "/integrations/appsflyer",
+      "overview": "Integrating AppsFlyer with Vibe empowers advertisers to seamlessly measure and optimize their Streaming TV campaigns by linking mobile attribution and analytics capabilities.",
+      "benefits": [
+        "Comprehensive insights into user engagement",
+        "Accurate attribution of app installs and in-app events",
+        "Data-driven optimization of return on ad spend (ROAS)",
+        "Enhanced user lifetime value (LTV) tracking",
+        "Robust fraud protection"
+      ],
+      "setupGuide": {
+        "steps": [
+          "Link Accounts - Connect your AppsFlyer account with Vibe",
+          "Set Up Tracking - Configure event tracking and attribution settings",
+          "Implement SDK - Add the AppsFlyer SDK to your mobile app",
+          "Analyze Results - Monitor campaign performance and user behavior"
+        ],
+        "technicalRequirements": [
+          "AppsFlyer account",
+          "Mobile app with SDK integration"
+        ]
+      }
+    },
+    {
+      "name": "Gamesight",
+      "categories": ["Apps Analytics"],
+      "description": "Track installs and events using Gamesight",
+      "website": "gamesight.io",
+      "urlPath": "/integrations/gamesight",
+      "setupGuide": {
+        "steps": [
+          "Connect Gamesight account with Vibe",
+          "Configure game install tracking",
+          "Set up event tracking for in-game actions",
+          "Monitor campaign performance"
+        ]
+      }
+    },
+    {
+      "name": "Kochava",
+      "categories": ["Apps Analytics"],
+      "description": "Use Kochava for attribution with Vibe campaigns",
+      "website": "kochava.com",
+      "urlPath": "/integrations/kochava",
+      "setupGuide": {
+        "steps": [
+          "Link Kochava account to Vibe",
+          "Configure attribution settings",
+          "Implement Kochava SDK",
+          "Track and analyze campaign results"
+        ]
+      }
+    },
+    {
+      "name": "Singular",
+      "categories": ["Apps Analytics"],
+      "description": "Analyze mobile marketing performance",
+      "website": "singular.net",
+      "urlPath": "/integrations/singular",
+      "setupGuide": {
+        "steps": [
+          "Connect Singular account to Vibe",
+          "Set up attribution tracking",
+          "Configure analytics settings",
+          "Review performance metrics"
+        ]
+      }
+    },
+    {
+      "name": "HubSpot",
+      "categories": ["Audience Partners"],
+      "description": "Connect your HubSpot CRM for seamless audience targeting and performance tracking on Streaming TV",
+      "website": "hubspot.com",
+      "urlPath": "/integrations/hubspot",
+      "features": [
+        "Import contact lists",
+        "Import segments",
+        "Import lifecycle data",
+        "Build precise Streaming TV audiences"
+      ],
+      "benefits": [
+        "Centralize customer engagement data",
+        "Create targeted advertising campaigns",
+        "Seamless CRM integration",
+        "Performance tracking"
+      ],
+      "setupGuide": {
+        "steps": [
+          "Connect HubSpot - Start the integration from the Vibe Marketplace and approve access in HubSpot",
+          "Select lists - Choose the contact lists you want to sync",
+          "Activate audiences - Synced lists appear in Vibe under Custom Audiences, ready for campaigns",
+          "Run & track - Use these audiences in your campaigns and monitor performance in Vibe"
+        ],
+        "technicalRequirements": [
+          "Active HubSpot CRM account",
+          "Vibe platform access",
+          "Permission to sync contact lists"
+        ]
+      }
+    },
+    {
+      "name": "Klaviyo",
+      "categories": ["Audience Partners"],
+      "description": "Sync customer data with your Streaming TV campaigns",
+      "website": "klaviyo.com",
+      "urlPath": "/integrations/klaviyo",
+      "setupGuide": {
+        "steps": [
+          "Connect Klaviyo account to Vibe",
+          "Select customer segments to sync",
+          "Configure audience targeting",
+          "Launch campaigns with synced data"
+        ]
+      }
+    },
+    {
+      "name": "Funnel",
+      "categories": ["Dashboarding", "MMM & Incrementality"],
+      "description": "Marketing Intelligence Platform that helps marketers go from data to intelligence",
+      "website": "funnel.io",
+      "urlPath": "/integrations/funnel",
+      "setupGuide": {
+        "steps": [
+          "Connect Funnel account to Vibe",
+          "Configure data sync settings",
+          "Set up dashboards and reports",
+          "Monitor marketing performance"
+        ]
+      }
+    },
+    {
+      "name": "Supermetrics",
+      "categories": ["Dashboarding"],
+      "description": "Leading Marketing Intelligence Platform",
+      "website": "supermetrics.com",
+      "urlPath": "/integrations/supermetrics",
+      "setupGuide": {
+        "steps": [
+          "Connect Supermetrics to Vibe",
+          "Select data sources",
+          "Configure reporting templates",
+          "Analyze campaign data"
+        ]
+      }
+    },
+    {
+      "name": "Triple Whale",
+      "categories": ["Dashboarding", "MMM & Incrementality"],
+      "description": "Agent-powered intelligence platform",
+      "website": "triplewhale.com",
+      "urlPath": "/integrations/triple-whale",
+      "setupGuide": {
+        "steps": [
+          "Link Triple Whale account to Vibe",
+          "Configure data integration",
+          "Set up performance dashboards",
+          "Monitor metrics and insights"
+        ]
+      }
+    },
+    {
+      "name": "Windsor.ai",
+      "categories": ["Dashboarding"],
+      "description": "Sync data from 325+ sources",
+      "website": "windsor.ai",
+      "urlPath": "/integrations/windsor-ai",
+      "setupGuide": {
+        "steps": [
+          "Connect Windsor.ai to Vibe",
+          "Select data sources to integrate",
+          "Configure sync schedules",
+          "Access unified reporting"
+        ]
+      }
+    },
+    {
+      "name": "Haus",
+      "categories": ["MMM & Incrementality"],
+      "description": "Marketing Science & Incrementality",
+      "website": "haus.com",
+      "urlPath": "/integrations/haus",
+      "setupGuide": {
+        "steps": [
+          "Connect Haus platform to Vibe",
+          "Configure incrementality measurement",
+          "Set up experiment tracking",
+          "Analyze incremental impact"
+        ]
+      }
+    },
+    {
+      "name": "INCRMNTAL",
+      "categories": ["MMM & Incrementality"],
+      "description": "AI-powered incrementality measurement",
+      "website": "incrmntal.com",
+      "urlPath": "/integrations/incrmntal",
+      "setupGuide": {
+        "steps": [
+          "Link INCRMNTAL account to Vibe",
+          "Configure measurement parameters",
+          "Set up AI-powered analysis",
+          "Review incrementality reports"
+        ]
+      }
+    },
+    {
+      "name": "Lifesight",
+      "categories": ["MMM & Incrementality"],
+      "description": "Unified Marketing Measurement Platform",
+      "website": "lifesight.io",
+      "urlPath": "/integrations/lifesight",
+      "setupGuide": {
+        "steps": [
+          "Connect Lifesight to Vibe",
+          "Configure marketing mix modeling",
+          "Set up attribution tracking",
+          "Analyze unified measurements"
+        ]
+      }
+    },
+    {
+      "name": "WorkMagic",
+      "categories": ["MMM & Incrementality"],
+      "description": "Reveal campaigns' incremental lift",
+      "website": "workmagic.com",
+      "urlPath": "/integrations/workmagic",
+      "setupGuide": {
+        "steps": [
+          "Link WorkMagic to Vibe",
+          "Configure lift measurement",
+          "Set up test and control groups",
+          "Review incremental lift results"
+        ]
+      }
+    },
+    {
+      "name": "Adobe Commerce",
+      "categories": ["Web Analytics"],
+      "description": "Add Vibe pixel to websites",
+      "website": "business.adobe.com/products/magento/magento-commerce.html",
+      "urlPath": "/integrations/adobe-commerce",
+      "setupGuide": {
+        "steps": [
+          "Access Vibe pixel settings",
+          "Copy pixel code",
+          "Add pixel to Adobe Commerce site",
+          "Verify tracking implementation"
+        ]
+      }
+    },
+    {
+      "name": "BigCommerce",
+      "categories": ["Web Analytics"],
+      "description": "Set up tracking from dashboard",
+      "website": "bigcommerce.com",
+      "urlPath": "/integrations/bigcommerce",
+      "setupGuide": {
+        "steps": [
+          "Access Vibe tracking settings",
+          "Configure BigCommerce integration",
+          "Install tracking pixel",
+          "Monitor e-commerce events"
+        ]
+      }
+    },
+    {
+      "name": "GoDaddy Website Builder",
+      "categories": ["Web Analytics"],
+      "description": "Track website conversions from Streaming TV campaigns",
+      "website": "godaddy.com",
+      "urlPath": "/integrations/godaddy",
+      "setupGuide": {
+        "steps": [
+          "Access Vibe pixel settings",
+          "Copy tracking code",
+          "Add to GoDaddy Website Builder",
+          "Test conversion tracking"
+        ]
+      }
+    },
+    {
+      "name": "GoHighLevel",
+      "categories": ["Web Analytics"],
+      "description": "Marketing automation platform integration",
+      "website": "gohighlevel.com",
+      "urlPath": "/integrations/gohighlevel",
+      "setupGuide": {
+        "steps": [
+          "Connect GoHighLevel to Vibe",
+          "Configure tracking settings",
+          "Set up conversion events",
+          "Monitor campaign performance"
+        ]
+      }
+    },
+    {
+      "name": "Google Analytics",
+      "categories": ["Web Analytics"],
+      "description": "Measure the impact of your Streaming TV campaigns on website traffic and conversions",
+      "website": "marketingplatform.google.com",
+      "urlPath": "/integrations/google-analytics",
+      "benefits": [
+        "Comprehensive Customer Insights",
+        "Predictive Analytics",
+        "Seamless Integration with Google Solutions",
+        "User-Friendly Interface"
+      ],
+      "features": [
+        "Track how TV ads influence online behavior",
+        "Demonstrate marketing ROI",
+        "Analyze customer interactions across devices",
+        "Utilize machine learning for trend prediction"
+      ],
+      "setupGuide": {
+        "method": "Connect Google Analytics account to Vibe",
+        "primaryPurpose": "Measure Connected TV (Streaming TV) advertising campaign performance",
+        "technicalRequirements": [
+          "Active Google Analytics account",
+          "Vibe advertising campaign"
+        ]
+      }
+    },
+    {
+      "name": "Google Tag Manager",
+      "categories": ["Web Analytics"],
+      "description": "Manage tracking pixels and tags",
+      "website": "marketingplatform.google.com/about/tag-manager",
+      "urlPath": "/integrations/google-tag-manager",
+      "setupGuide": {
+        "steps": [
+          "Access Vibe pixel code",
+          "Create new tag in Google Tag Manager",
+          "Configure tag settings",
+          "Publish container changes"
+        ]
+      }
+    },
+    {
+      "name": "Shopify",
+      "categories": ["Web Analytics"],
+      "description": "Streamlines pixel installation on merchants' websites",
+      "website": "shopify.com",
+      "urlPath": "/integrations/shopify",
+      "features": [
+        "Track page views, leads, and purchases in real-time",
+        "Track lead events like product views and product added to cart",
+        "Track purchase events for successful checkout transactions"
+      ],
+      "benefits": [
+        "Measure effectiveness of advertising campaigns",
+        "Optimize marketing efforts",
+        "Real-time tracking of customer behavior"
+      ],
+      "setupGuide": {
+        "steps": [
+          "Log into your Vibe.co account",
+          "Navigate to Settings menu to set up web tracking code",
+          "Choose Shopify as implementation method",
+          "Copy your Pixel ID",
+          "Open Vibe app in Shopify store",
+          "Paste Pixel ID to complete setup"
+        ],
+        "technicalRequirements": [
+          "Active Vibe.co account",
+          "Shopify store",
+          "Access to Shopify app settings"
+        ]
+      }
+    },
+    {
+      "name": "Squarespace",
+      "categories": ["Web Analytics"],
+      "description": "Track website performance from TV campaigns",
+      "website": "squarespace.com",
+      "urlPath": "/integrations/squarespace",
+      "setupGuide": {
+        "steps": [
+          "Access Vibe pixel settings",
+          "Copy tracking code",
+          "Add to Squarespace site header",
+          "Verify tracking is active"
+        ]
+      }
+    },
+    {
+      "name": "Ticketmaster",
+      "categories": ["Web Analytics"],
+      "description": "Track ticket sales and event conversions",
+      "website": "ticketmaster.com",
+      "urlPath": "/integrations/ticketmaster",
+      "setupGuide": {
+        "steps": [
+          "Connect Ticketmaster account to Vibe",
+          "Configure event tracking",
+          "Set up conversion pixels",
+          "Monitor ticket sales attribution"
+        ]
+      }
+    },
+    {
+      "name": "Wix",
+      "categories": ["Web Analytics"],
+      "description": "Track Wix website conversions",
+      "website": "wix.com",
+      "urlPath": "/integrations/wix",
+      "setupGuide": {
+        "steps": [
+          "Access Vibe tracking pixel",
+          "Open Wix site settings",
+          "Add tracking code to site",
+          "Test conversion tracking"
+        ]
+      }
+    },
+    {
+      "name": "WooCommerce",
+      "categories": ["Web Analytics"],
+      "description": "E-commerce tracking for WordPress",
+      "website": "woocommerce.com",
+      "urlPath": "/integrations/woocommerce",
+      "setupGuide": {
+        "steps": [
+          "Access Vibe pixel code",
+          "Install tracking plugin or add code manually",
+          "Configure e-commerce events",
+          "Verify purchase tracking"
+        ]
+      }
+    },
+    {
+      "name": "WordPress",
+      "categories": ["Web Analytics"],
+      "description": "Track WordPress website performance",
+      "website": "wordpress.org",
+      "urlPath": "/integrations/wordpress",
+      "setupGuide": {
+        "steps": [
+          "Copy Vibe tracking pixel",
+          "Add to WordPress theme header",
+          "Configure tracking events",
+          "Monitor website conversions"
+        ]
+      }
+    }
+  ],
+  "categoryDetails": {
+    "Apps Analytics": {
+      "description": "Mobile attribution and analytics platforms for tracking app installs, user engagement, and in-app events",
+      "integrationCount": 6,
+      "partners": ["Adjust", "Airbridge", "AppsFlyer", "Gamesight", "Kochava", "Singular"]
+    },
+    "Audience Partners": {
+      "description": "CRM and customer data platforms for audience targeting and segmentation",
+      "integrationCount": 2,
+      "partners": ["HubSpot", "Klaviyo"]
+    },
+    "Dashboarding": {
+      "description": "Marketing intelligence and reporting platforms for data visualization and analysis",
+      "integrationCount": 4,
+      "partners": ["Funnel", "Supermetrics", "Triple Whale", "Windsor.ai"]
+    },
+    "MMM & Incrementality": {
+      "description": "Marketing mix modeling and incrementality measurement platforms",
+      "integrationCount": 5,
+      "partners": ["Funnel", "Haus", "INCRMNTAL", "Lifesight", "WorkMagic", "Triple Whale"]
+    },
+    "Web Analytics": {
+      "description": "Website tracking and analytics platforms for measuring digital conversions",
+      "integrationCount": 11,
+      "partners": [
+        "Adobe Commerce",
+        "BigCommerce",
+        "GoDaddy Website Builder",
+        "GoHighLevel",
+        "Google Analytics",
+        "Google Tag Manager",
+        "Shopify",
+        "Squarespace",
+        "Ticketmaster",
+        "Wix",
+        "WooCommerce",
+        "WordPress"
+      ]
+    }
+  }
+}

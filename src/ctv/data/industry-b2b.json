@@ -1,0 +1,310 @@
+{
+  "url": "https://www.vibe.co/industry/b2b",
+  "title": "B2B | Vibe",
+  "meta": {
+    "industry": "b2b",
+    "category": "industry-solutions"
+  },
+  "headings": {
+    "h1": [
+      "Generate Leads with TV Ads"
+    ],
+    "h2": [
+      "Why thousands of businesses choose Vibe",
+      "Integrated with the tools you know and love",
+      "Success Stories"
+    ],
+    "h3": [
+      "Engage Decision-Makers",
+      "Turn Awareness Into Revenue",
+      "Measurable ROI"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "Generate Leads with TV Ads",
+      "content": "Create B2B campaigns that build a qualified pipeline."
+    },
+    {
+      "id": "key-features",
+      "heading": "Why thousands of businesses choose Vibe",
+      "content": "B2B-specific features for lead generation"
+    },
+    {
+      "id": "integrations",
+      "heading": "Integrated with the tools you know and love",
+      "content": "Connect with your B2B tech stack"
+    },
+    {
+      "id": "testimonials",
+      "heading": "Success Stories",
+      "content": "Real results from B2B advertisers"
+    }
+  ],
+  "features": [
+    {
+      "title": "Engage Decision-Makers",
+      "description": "Leverage in-market and lookalike audiences to reach your ICP in minutes.",
+      "details": [
+        "In-market audience targeting",
+        "Lookalike audience creation",
+        "Reach your ideal customer profile (ICP)",
+        "Target decision-makers effectively"
+      ]
+    },
+    {
+      "title": "Turn Awareness Into Revenue",
+      "description": "Drive demand with unskippable creative and real-time optimization built for B2B conversion cycles.",
+      "details": [
+        "Unskippable ad formats",
+        "Real-time campaign optimization",
+        "Built for long B2B conversion cycles",
+        "Drive qualified demand"
+      ]
+    },
+    {
+      "title": "Measurable ROI",
+      "description": "Track real-time performance using granular reporting and measurement tools.",
+      "details": [
+        "Real-time performance tracking",
+        "Granular reporting dashboard",
+        "Measure campaign effectiveness",
+        "Track ROI and attribution"
+      ]
+    }
+  ],
+  "integrations": [
+    {
+      "name": "Triple Whale",
+      "category": "Analytics & Attribution",
+      "description": "Determine which channels are driving the most incremental value to your business."
+    },
+    {
+      "name": "Northbeam",
+      "category": "Analytics & Attribution",
+      "description": "Achieve multi touch attribution and media mix modeling using machine learning."
+    },
+    {
+      "name": "Haus Analytics",
+      "category": "Analytics & Attribution",
+      "description": "Launch advertising campaigns while measuring incrementality every step of the way."
+    }
+  ],
+  "caseStudies": [
+    {
+      "company": "Meshki",
+      "industry": "B2B",
+      "metric": "$0.93 Cost Per Session",
+      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
+      "href": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+    },
+    {
+      "company": "Abuelo's",
+      "industry": "B2B",
+      "metric": "-80% Cost Per Session",
+      "title": "Abuelo's Lowers Cost Per Session by 80%",
+      "href": "https://www.vibe.co/blog/abuelo-s-x-vibe-case-study"
+    },
+    {
+      "company": "Eden Prairie Center",
+      "industry": "B2B",
+      "metric": "458% Household Reach",
+      "title": "How an Iconic Mall Increased Household Reach by 458% with CTV",
+      "href": "https://www.vibe.co/blog/how-an-iconic-mall-increased-household-reach-by-458-with-ctv"
+    },
+    {
+      "company": "Food Distributor",
+      "industry": "B2B",
+      "metric": "85% Engagement Rate",
+      "title": "How a Food Distributor Authentically Engaged a Hispanic Audience",
+      "href": "https://www.vibe.co/blog/how-a-food-distributor-authentically-engaged-a-hispanic-audience"
+    },
+    {
+      "company": "Petfolk",
+      "industry": "B2B",
+      "metric": "30% Acquisition Lift",
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
+      "href": "https://www.vibe.co/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+    },
+    {
+      "company": "Farm & Home",
+      "industry": "B2B",
+      "metric": "$28 CPM",
+      "title": "How Farm & Home Supply Advertised on Top TV Channels for under $28/CPM",
+      "href": "https://www.vibe.co/blog/ctv-ads-turned-this-farm-store-into-a-goldmine"
+    },
+    {
+      "company": "Samford University",
+      "industry": "B2B",
+      "metric": "<$2 Cost Per Session",
+      "title": "Nonprofit University Exceeds Growth Targets with Streaming TV",
+      "href": "https://www.vibe.co/blog/non-profit-university-exceeds-growth-targets-with-streaming-tv"
+    },
+    {
+      "company": "TruHeight",
+      "industry": "B2B",
+      "metric": "728% ROAS",
+      "title": "How TruHeight Reached 728% ROAS with CTV",
+      "href": "https://www.vibe.co/blog/vibe-x-truheight-vitamins-case-study"
+    },
+    {
+      "company": "Hoodsly",
+      "industry": "B2B",
+      "metric": "409% ROAS",
+      "title": "409% ROAS for Hoodsly with Vibe",
+      "href": "https://www.vibe.co/blog/case-study-vibe-hoodsly"
+    },
+    {
+      "company": "Sota Clothing",
+      "industry": "B2B",
+      "metric": "$0.70 CPPV",
+      "title": "How Sota Clothing Got their CPPV Below $0.70 with Vibe & Klaviyo",
+      "href": "https://www.vibe.co/blog/apparel-brand-crushes-roi-goals-with-ctv"
+    },
+    {
+      "company": "King Kanine",
+      "industry": "B2B",
+      "metric": "165% ROAS",
+      "title": "How King Kanine Reached 165% ROAS with Vibe's ML",
+      "href": "https://www.vibe.co/blog/pet-brand-reaches-new-highs-with-ctv"
+    },
+    {
+      "company": "Bagelcode",
+      "industry": "B2B",
+      "metric": "x2+ D7 ROI",
+      "title": "Bagelcode Wins Big with Club Vegas Campaign",
+      "href": "https://www.vibe.co/blog/bagelcode-wins-big-with-club-vegas-campaign"
+    },
+    {
+      "company": "Branded Bills",
+      "industry": "B2B",
+      "metric": "2,000% ROAS",
+      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
+      "href": "https://www.vibe.co/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+    },
+    {
+      "company": "Car Stickers",
+      "industry": "B2B",
+      "metric": "275% ROAS on Mobile",
+      "title": "Car Stickers Reaches 275% ROAS on Mobile",
+      "href": "https://www.vibe.co/blog/car-stickers-reaches-275-roas-on-mobile"
+    },
+    {
+      "company": "SmartLiner",
+      "industry": "B2B",
+      "metric": "1,635% ROAS",
+      "title": "SmartLiner Experiments and Wins with Vibe.co",
+      "href": "https://www.vibe.co/blog/smartliner-experiments-and-wins-with-vibe-co"
+    },
+    {
+      "company": "Morris Media",
+      "industry": "B2B",
+      "metric": "70% Web Traffic Increase",
+      "title": "How a Full Service Agency Boosted Web Traffic by 70% with CTV",
+      "href": "https://www.vibe.co/blog/how-a-full-service-agency-boosted-web-traffic-by-70-with-ctv"
+    },
+    {
+      "company": "Pamos",
+      "industry": "B2B",
+      "metric": "<$2 Cost Per Session",
+      "title": "How a Disruptor Brand Hit CPS <$2",
+      "href": "https://www.vibe.co/blog/how-a-disruptor-brand-hit-cps-2"
+    },
+    {
+      "company": "Sijo",
+      "industry": "B2B",
+      "metric": "3.2x Average Order Value",
+      "title": "Sijo Home Upsells with Klaviyo and Vibe",
+      "href": "https://www.vibe.co/blog/sijo-home-upsells-with-klaviyo-and-vibe"
+    },
+    {
+      "company": "Zoriz",
+      "industry": "B2B",
+      "metric": "600% ROAS",
+      "title": "How Zoriz Golf Surpassed 600% ROAS with CTV",
+      "href": "https://www.vibe.co/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
+    },
+    {
+      "company": "Herb Jones",
+      "industry": "B2B",
+      "metric": "800% Web Traffic Increase",
+      "title": "How this Car Dealership Increased Web Traffic by 800%",
+      "href": "https://www.vibe.co/blog/how-this-car-dealership-increased-web-traffic-by-800"
+    },
+    {
+      "company": "AirDog",
+      "industry": "B2B",
+      "metric": "450% ROAS",
+      "title": "How an E-Comm Brand Reached 450% ROAS for their New Product Launch",
+      "href": "https://www.vibe.co/blog/how-an-e-comm-brand-reached-450-roas-for-their-new-product-launch"
+    },
+    {
+      "company": "Village Green",
+      "industry": "B2B",
+      "metric": "100% Household Coverage",
+      "title": "How Village Green Achieved Full Household Coverage with CTV",
+      "href": "https://www.vibe.co/blog/how-village-green-achieved-full-household-coverage-with-ctv"
+    },
+    {
+      "company": "NYXT",
+      "industry": "B2B",
+      "metric": "$0.85 Cost Per Lead",
+      "title": "How NYXT Reduced their Cost per Lead to a $0.85 Avg.",
+      "href": "https://www.vibe.co/blog/how-nyxt-reduced-their-cost-per-lead-to-a-0-85-avg"
+    },
+    {
+      "company": "Political Consultancy",
+      "industry": "B2B",
+      "metric": "192% Favorability Score",
+      "title": "How a Political Consultancy Increased Candidates' Favorability Score by 192%",
+      "href": "https://www.vibe.co/blog/how-a-political-consultancy-increased-candidates-favorability-score-by-192"
+    }
+  ],
+  "platforms": [
+    "Tubi",
+    "Roku"
+  ],
+  "socialProof": {
+    "userCount": "10,000+ performance marketers",
+    "rating": "4.8/5 on G2"
+  },
+  "callToAction": [
+    {
+      "text": "Get started",
+      "href": "https://www.vibe.co/get-started",
+      "type": "primary"
+    },
+    {
+      "text": "Book a demo",
+      "href": "https://www.vibe.co/book-a-demo",
+      "type": "secondary"
+    }
+  ],
+  "valueProp": [
+    "Real-time lead tracking",
+    "ICP-focused audience targeting",
+    "B2B conversion cycle optimization",
+    "Granular reporting and analytics",
+    "Incrementality measurement",
+    "Unskippable ad formats"
+  ],
+  "targetAudience": "B2B companies looking to generate qualified leads through streaming TV advertising",
+  "keyBenefits": [
+    "Leverage in-market and lookalike audiences to reach your ICP",
+    "Drive demand with unskippable creative formats",
+    "Real-time optimization built for B2B conversion cycles",
+    "Track performance using granular reporting tools",
+    "Measure incrementality and multi-touch attribution",
+    "Engage decision-makers on premium CTV inventory",
+    "Build qualified pipeline through targeted campaigns"
+  ],
+  "notification": {
+    "type": "New demos booked",
+    "content": "Buyer from Tubi, Roku via Vibe"
+  },
+  "liveData": {
+    "metric": "789",
+    "label": "B2B Prospects on your website"
+  }
+}

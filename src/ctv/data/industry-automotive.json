@@ -1,0 +1,415 @@
+{
+  "url": "https://www.vibe.co/industry/automotive",
+  "title": "Automotive | Vibe",
+  "meta": {
+    "industry": "automotive",
+    "category": "industry-solutions"
+  },
+  "headings": {
+    "h1": [
+      "Increase Car Sales with TV Ads"
+    ],
+    "h2": [
+      "Hear from leaders in your industry",
+      "Why cars get sold with Vibe",
+      "Integrated with the tools you know and love",
+      "Success Stories"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "Increase Car Sales with TV Ads",
+      "content": "Convert your TV ads to car dealership traffic."
+    },
+    {
+      "id": "social-proof",
+      "heading": "Customer Base",
+      "content": "10,000+ performance marketers have generated millions in revenue with Vibe"
+    },
+    {
+      "id": "testimonials",
+      "heading": "Hear from leaders in your industry",
+      "content": "Real results from automotive advertisers"
+    },
+    {
+      "id": "key-features",
+      "heading": "Why cars get sold with Vibe",
+      "content": "Industry-specific features for automotive brands"
+    },
+    {
+      "id": "integrations",
+      "heading": "Integrated with the tools you know and love",
+      "content": "Connect with your marketing stack"
+    },
+    {
+      "id": "case-studies",
+      "heading": "Success Stories",
+      "content": "Customer success stories across industries"
+    }
+  ],
+  "features": [
+    {
+      "title": "Optimized Reach",
+      "description": "Your buyers don't look for cars on social",
+      "details": [
+        "Put your brand in front of those who care",
+        "Stop wasting your money on Google Ad words and linear TV",
+        "Reach car buyers: 150M households",
+        "Target shoppers: 63M households",
+        "Engage couples: 234M households"
+      ]
+    },
+    {
+      "title": "Target Car Buyers",
+      "description": "Reach in-market car buyers with Vibe's granular targeting capabilities",
+      "details": [
+        "From car profiles to custom build audiences",
+        "Pick the most optimal strategy for your brand",
+        "Demographic targeting (age, gender, income)",
+        "Interest-based targeting",
+        "Geographic targeting",
+        "Vehicle ownership targeting"
+      ]
+    },
+    {
+      "title": "Measure Your Buys",
+      "description": "Measure your buys in real-time using customized multi-level reporting",
+      "details": [
+        "Real-time tracking",
+        "Customized multi-level reporting",
+        "Website traffic attribution",
+        "Performance analytics"
+      ]
+    }
+  ],
+  "targetingOptions": {
+    "carBuyers": {
+      "reach": "150M households"
+    },
+    "shoppers": {
+      "reach": "63M households"
+    },
+    "couples": {
+      "reach": "234M households"
+    },
+    "demographics": [
+      "45 to 54 years old",
+      "Men",
+      "Women",
+      "65+ years old",
+      "35 to 44 years old",
+      "55 to 64 years old",
+      "18 to 24 years old"
+    ],
+    "interests": [
+      "Beauty and Style",
+      "American Football fan",
+      "Baseball fan",
+      "Vegetarian & Vegan",
+      "Gamers"
+    ],
+    "income": [
+      "$20,000 to $49,999",
+      "$100,000 to $499,999",
+      "$250,000 to $499,999"
+    ],
+    "characteristics": [
+      "Homeowner",
+      "African American",
+      "Hispanic",
+      "Asian",
+      "Spanish Speaking",
+      "Pet Owner",
+      "Shopper",
+      "Democrats",
+      "Republicans"
+    ],
+    "geographic": [
+      "In San Francisco",
+      "In Chicago"
+    ],
+    "vehicle": [
+      "With a luxury cars",
+      "With an SUV or Crossovers"
+    ],
+    "device": [
+      "On TV or Tablet"
+    ]
+  },
+  "customerLogos": [
+    "Ace",
+    "ASC",
+    "EnduroCross",
+    "Ford",
+    "Hyundai",
+    "Janus",
+    "LineX",
+    "Meineke",
+    "MetalCarPort",
+    "PriceDealerShip",
+    "SmartLiner"
+  ],
+  "testimonials": [
+    {
+      "company": "SmartLiner",
+      "quote": "We started as a very popular brand on Amazon, but that hadn't given us the recognition we wanted. Our goal for this campaign was to increase brand awareness and web traffic across the board.",
+      "author": "Antonieta Lairet",
+      "title": "Lead Project Manager @ SmartLiner",
+      "result": "275% ROAS",
+      "metric": "275% ROAS"
+    }
+  ],
+  "caseStudies": [
+    {
+      "company": "SmartLiner",
+      "industry": "Automotive",
+      "metric": "1,635% ROAS",
+      "title": "SmartLiner Experiments and Wins with Vibe.co",
+      "href": "https://www.vibe.co/blog/smartliner-experiments-and-wins-with-vibe-co"
+    },
+    {
+      "company": "HerbJones",
+      "industry": "Automotive",
+      "metric": "800% Web Traffic Increase",
+      "title": "How this Car Dealership Increased Web Traffic by 800%",
+      "href": "https://www.vibe.co/blog/how-this-car-dealership-increased-web-traffic-by-800"
+    },
+    {
+      "company": "Meshki",
+      "industry": "E-commerce",
+      "metric": "$0.93 Cost Per Session",
+      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
+      "href": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+    },
+    {
+      "company": "Abuelos",
+      "industry": "Restaurant/Retail",
+      "metric": "-80% Cost Per Session",
+      "title": "Abuelo's Lowers Cost Per Session by 80%",
+      "href": "https://www.vibe.co/blog/abuelo-s-x-vibe-case-study"
+    },
+    {
+      "company": "EdenPrairieCenter",
+      "industry": "Retail",
+      "metric": "458% Household Reach",
+      "title": "How an Iconic Mall Increased Household Reach by 458% with CTV",
+      "href": "https://www.vibe.co/blog/how-an-iconic-mall-increased-household-reach-by-458-with-ctv"
+    },
+    {
+      "company": "Food Distributor",
+      "industry": "Food & Beverage",
+      "metric": "85% Engagement Rate",
+      "title": "How a Food Distributor Authentically Engaged a Hispanic Audience",
+      "href": "https://www.vibe.co/blog/how-a-food-distributor-authentically-engaged-a-hispanic-audience"
+    },
+    {
+      "company": "Petfolk",
+      "industry": "E-commerce",
+      "metric": "30% Acquisition Lift",
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
+      "href": "https://www.vibe.co/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+    },
+    {
+      "company": "FarmAndHome",
+      "industry": "Retail",
+      "metric": "$28 CPM",
+      "title": "How Farm & Home Supply Advertised on Top TV Channels for under $28/CPM",
+      "href": "https://www.vibe.co/blog/ctv-ads-turned-this-farm-store-into-a-goldmine"
+    },
+    {
+      "company": "Samford",
+      "industry": "Education",
+      "metric": "<$2 Cost Per Session",
+      "title": "Nonprofit University Exceeds Growth Targets with Streaming TV",
+      "href": "https://www.vibe.co/blog/non-profit-university-exceeds-growth-targets-with-streaming-tv"
+    },
+    {
+      "company": "TruHeight Vitamins",
+      "industry": "E-commerce",
+      "metric": "728% ROAS",
+      "title": "How TruHeight Reached 728% ROAS with CTV",
+      "href": "https://www.vibe.co/blog/vibe-x-truheight-vitamins-case-study"
+    },
+    {
+      "company": "Hoodsly",
+      "industry": "E-commerce",
+      "metric": "409% ROAS",
+      "title": "409% ROAS for Hoodsly with Vibe",
+      "href": "https://www.vibe.co/blog/case-study-vibe-hoodsly"
+    },
+    {
+      "company": "Sota Clothing",
+      "industry": "E-commerce",
+      "metric": "$0.70 CPPV",
+      "title": "How Sota Clothing Got their CPPV Below $0.70 with Vibe & Klaviyo",
+      "href": "https://www.vibe.co/blog/apparel-brand-crushes-roi-goals-with-ctv"
+    },
+    {
+      "company": "King Kanine",
+      "industry": "E-commerce",
+      "metric": "165% ROAS",
+      "title": "How King Kanine Reached 165% ROAS with Vibe's ML",
+      "href": "https://www.vibe.co/blog/pet-brand-reaches-new-highs-with-ctv"
+    },
+    {
+      "company": "BagelCode",
+      "industry": "Apps & Gaming",
+      "metric": "x2+ D7 ROI",
+      "title": "Bagelcode Wins Big with Club Vegas Campaign",
+      "href": "https://www.vibe.co/blog/bagelcode-wins-big-with-club-vegas-campaign"
+    },
+    {
+      "company": "Branded Bills",
+      "industry": "E-commerce",
+      "metric": "2,000% ROAS",
+      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
+      "href": "https://www.vibe.co/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+    },
+    {
+      "company": "Car Stickers",
+      "industry": "E-commerce",
+      "metric": "275% ROAS on Mobile",
+      "title": "Car Stickers Reaches 275% ROAS on Mobile",
+      "href": "https://www.vibe.co/blog/car-stickers-reaches-275-roas-on-mobile"
+    },
+    {
+      "company": "Morris Media",
+      "industry": "Agency",
+      "metric": "70% Web Traffic Increase",
+      "title": "How a Full Service Agency Boosted Web Traffic by 70% with CTV",
+      "href": "https://www.vibe.co/blog/how-a-full-service-agency-boosted-web-traffic-by-70-with-ctv"
+    },
+    {
+      "company": "Pamos",
+      "industry": "E-commerce",
+      "metric": "<$2 Cost Per Session",
+      "title": "How a Disruptor Brand Hit CPS <$2",
+      "href": "https://www.vibe.co/blog/how-a-disruptor-brand-hit-cps-2"
+    },
+    {
+      "company": "Sijo",
+      "industry": "E-commerce",
+      "metric": "3.2x Average Order Value",
+      "title": "Sijo Home Upsells with Klaviyo and Vibe",
+      "href": "https://www.vibe.co/blog/sijo-home-upsells-with-klaviyo-and-vibe"
+    },
+    {
+      "company": "Zoriz",
+      "industry": "E-commerce",
+      "metric": "600% ROAS",
+      "title": "How Zoriz Golf Surpassed 600% ROAS with CTV",
+      "href": "https://www.vibe.co/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
+    },
+    {
+      "company": "AirDog",
+      "industry": "E-commerce",
+      "metric": "450% ROAS",
+      "title": "How an E-Comm Brand Reached 450% ROAS for their New Product Launch",
+      "href": "https://www.vibe.co/blog/how-an-e-comm-brand-reached-450-roas-for-their-new-product-launch"
+    },
+    {
+      "company": "Village Green",
+      "industry": "Retail",
+      "metric": "100% Household Coverage",
+      "title": "How Village Green Achieved Full Household Coverage with CTV",
+      "href": "https://www.vibe.co/blog/how-village-green-achieved-full-household-coverage-with-ctv"
+    },
+    {
+      "company": "Nyxt",
+      "industry": "B2B",
+      "metric": "$0.85 Cost Per Lead",
+      "title": "How NYXT Reduced their Cost per Lead to a $0.85 Avg.",
+      "href": "https://www.vibe.co/blog/how-nyxt-reduced-their-cost-per-lead-to-a-0-85-avg"
+    },
+    {
+      "company": "Political Consultancy",
+      "industry": "Politics",
+      "metric": "192% Favorability Score",
+      "title": "How a Political Consultancy Increased Candidates' Favorability Score by 192%",
+      "href": "https://www.vibe.co/blog/how-a-political-consultancy-increased-candidates-favorability-score-by-192"
+    }
+  ],
+  "integrations": [
+    {
+      "name": "Klaviyo",
+      "category": "CRM & Email Marketing",
+      "description": "Sync customer data for email & SMS marketing. To engage with customers at every step of the funnel."
+    },
+    {
+      "name": "Google Tag Manager",
+      "category": "Tag Management",
+      "description": "Manage and deploy tags without editing code."
+    },
+    {
+      "name": "Google Analytics",
+      "category": "Analytics",
+      "description": "Track the direct influence of your TV ads on online behavior."
+    }
+  ],
+  "platforms": [
+    "DirectTv",
+    "CNN",
+    "Fubo",
+    "NFL",
+    "Roku",
+    "MLB",
+    "Paramount",
+    "NBA",
+    "Peacock",
+    "Tubi",
+    "NHL",
+    "FoxNews",
+    "CBS",
+    "PlutoTV",
+    "SamsungTVPlus",
+    "Sling",
+    "Philo",
+    "HaystackTV",
+    "AMC",
+    "CBSSports",
+    "Bloomberg",
+    "Telly",
+    "ComedyCentral",
+    "Plex",
+    "FanDuelTVPlus",
+    "TCL",
+    "FrndlyTV",
+    "TheWeatherChannel",
+    "NASCAR"
+  ],
+  "socialProof": {
+    "userCount": "10,000+ performance marketers",
+    "rating": "4.8/5 on G2"
+  },
+  "callToAction": [
+    {
+      "text": "Get started",
+      "href": "https://www.vibe.co/get-started",
+      "type": "primary"
+    },
+    {
+      "text": "Book a demo",
+      "href": "https://www.vibe.co/book-a-demo",
+      "type": "secondary"
+    }
+  ],
+  "valueProp": [
+    "Optimized reach for car buyers",
+    "Granular targeting capabilities",
+    "Real-time performance tracking",
+    "Premium streaming inventory",
+    "Stop wasting money on Google Ads and linear TV",
+    "Target in-market car buyers"
+  ],
+  "targetAudience": "Automotive dealerships, car manufacturers, and automotive accessory brands looking to drive dealership traffic through streaming TV advertising",
+  "keyBenefits": [
+    "Reach 150M households of car buyers",
+    "Target in-market car buyers with granular targeting",
+    "Stop wasting money on Google Ad words and linear TV",
+    "Measure your buys in real-time",
+    "Access premium streaming channels",
+    "Custom build audiences based on car profiles",
+    "Track website traffic and conversions"
+  ]
+}

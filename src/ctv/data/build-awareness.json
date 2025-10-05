@@ -1,0 +1,337 @@
+{
+  "url": "https://www.vibe.co/goals/build-awareness",
+  "title": "Build Awareness | Vibe",
+  "goal": "Build Awareness",
+  "hero": {
+    "headline": "Stay top of mind",
+    "description": "Put your brand in front of those who care by launching high-impact TV ads across 120M households and 500+ channels.",
+    "cta": {
+      "text": "Get started",
+      "placeholder": "What's your work email?"
+    }
+  },
+  "stats": {
+    "social_media_reach": {
+      "value": "+1.2M",
+      "change": "+15%",
+      "label": "Social Media Reach"
+    },
+    "brand_mentions": {
+      "value": "+2.4K",
+      "change": "+42%",
+      "label": "Brand Mentions"
+    }
+  },
+  "platforms": [
+    "Roku",
+    "Tubi",
+    "DirectTv"
+  ],
+  "customer_count": "10,000+ performance marketers have generated millions in revenue with Vibe",
+  "main_heading": "5,000+ brands raise awareness with Vibe",
+  "features": [
+    {
+      "title": "Real-Time Impressions",
+      "description": "Track ad visibility as it happens. Get live data on how many people are seeing your brand and where.",
+      "type": "live_data",
+      "stat": "789 people are seeing your ads right now"
+    },
+    {
+      "title": "Premium Inventory",
+      "description": "Access 120M households across 500+ premium apps and channels—from Tubi to Roku to DirectTv.",
+      "type": "inventory",
+      "channels": [
+        "DirectTv",
+        "CNN",
+        "Fubo",
+        "NFL",
+        "Roku",
+        "MLB",
+        "ParamountStreaming",
+        "NBA",
+        "Peacock",
+        "Tubi",
+        "NHL",
+        "FoxNews",
+        "CBS",
+        "PlutoTV",
+        "SamsungTVPlus",
+        "Sling",
+        "Philo",
+        "HaystackTV",
+        "AMC",
+        "CBSSports",
+        "Bloomberg",
+        "Telly",
+        "ComedyCentral",
+        "Plex",
+        "FanDuelTVPlus",
+        "TCL",
+        "FrndlyTV",
+        "TheWeatherChannel",
+        "NASCAR"
+      ]
+    },
+    {
+      "title": "Impactful Creatives",
+      "description": "Capture attention with 4K CTV ads shown on full screens in relaxed, lean-back environments—where your message sticks.",
+      "type": "creative",
+      "highlight": "Reach people directly in their living rooms"
+    },
+    {
+      "title": "In-Market Audiences",
+      "description": "Define your ideal audience and control exactly who sees your brand based on geo, demo, and behavioral targeting.",
+      "type": "targeting",
+      "targeting_options": [
+        "Age (18-24, 25-34, 35-44, 45-54, 55-64, 65+)",
+        "Gender (Men, Women)",
+        "Income levels",
+        "Interests (Beauty and Style, Sports fans, Shoppers, Gamers, etc.)",
+        "Location (Geographic targeting)",
+        "Homeownership",
+        "Ethnicity",
+        "Language",
+        "Pet ownership",
+        "Vehicle type",
+        "Political affiliation",
+        "Device type (TV or Tablet)"
+      ]
+    },
+    {
+      "title": "Lookalike Audiences",
+      "description": "Turn real-time audience data into actionable targeting insights to scale your CTV campaigns without wasting ad spend.",
+      "type": "lookalike"
+    },
+    {
+      "title": "Multi-Dimensional Reporting",
+      "description": "Learn which channels, audiences, time slots, device types, etc. work best for your various strategies to drive awareness.",
+      "type": "reporting"
+    }
+  ],
+  "success_stories": [
+    {
+      "company": "VillageGreen",
+      "metric": "100%",
+      "metric_label": "Household Coverage",
+      "title": "How Village Green Achieved Full Household Coverage with CTV",
+      "url": "/blog/how-village-green-achieved-full-household-coverage-with-ctv"
+    },
+    {
+      "company": "Meshki",
+      "metric": "$0.93",
+      "metric_label": "Cost Per Session",
+      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
+      "url": "/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+    },
+    {
+      "company": "Abuelos",
+      "metric": "-80%",
+      "metric_label": "Cost Per Session",
+      "title": "Abuelo's Lowers Cost Per Session by 80%",
+      "url": "/blog/abuelo-s-x-vibe-case-study"
+    },
+    {
+      "company": "EdenPrairieCenter",
+      "metric": "458%",
+      "metric_label": "Household Reach",
+      "title": "How an Iconic Mall Increased Household Reach by 458% with CTV",
+      "url": "/blog/how-an-iconic-mall-increased-household-reach-by-458-with-ctv"
+    },
+    {
+      "company": "CaseStudyGeneral",
+      "metric": "85%",
+      "metric_label": "Engagement Rate",
+      "title": "How a Food Distributor Authentically Engaged a Hispanic Audience",
+      "url": "/blog/how-a-food-distributor-authentically-engaged-a-hispanic-audience"
+    },
+    {
+      "company": "Petfolk",
+      "metric": "30%",
+      "metric_label": "Acquisition Lift",
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
+      "url": "/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+    },
+    {
+      "company": "FarmAndHome",
+      "metric": "$28",
+      "metric_label": "CPM",
+      "title": "How Farm & Home Supply Advertised on Top TV Channels for under $28/CPM",
+      "url": "/blog/ctv-ads-turned-this-farm-store-into-a-goldmine"
+    },
+    {
+      "company": "Samford",
+      "metric": "<$2",
+      "metric_label": "Cost Per Session",
+      "title": "Nonprofit University Exceeds Growth Targets with Streaming TV",
+      "url": "/blog/non-profit-university-exceeds-growth-targets-with-streaming-tv"
+    },
+    {
+      "company": "TruHeight",
+      "metric": "728%",
+      "metric_label": "ROAS",
+      "title": "How TruHeight Reached 728% ROAS with CTV",
+      "url": "/blog/vibe-x-truheight-vitamins-case-study"
+    },
+    {
+      "company": "Hoodsly",
+      "metric": "409%",
+      "metric_label": "ROAS",
+      "title": "409% ROAS for Hoodsly with Vibe",
+      "url": "/blog/case-study-vibe-hoodsly"
+    },
+    {
+      "company": "SotaClothing",
+      "metric": "$0.70",
+      "metric_label": "CPPV",
+      "title": "How Sota Clothing Got their CPPV Below $0.70 with Vibe & Klaviyo",
+      "url": "/blog/apparel-brand-crushes-roi-goals-with-ctv"
+    },
+    {
+      "company": "KingKanine",
+      "metric": "165%",
+      "metric_label": "ROAS",
+      "title": "How King Kanine Reached 165% ROAS with Vibe's ML",
+      "url": "/blog/pet-brand-reaches-new-highs-with-ctv"
+    },
+    {
+      "company": "BagelCode",
+      "metric": "x2+",
+      "metric_label": "D7 ROI",
+      "title": "Bagelcode Wins Big with Club Vegas Campaign",
+      "url": "/blog/bagelcode-wins-big-with-club-vegas-campaign"
+    },
+    {
+      "company": "BrandedBills",
+      "metric": "2,000%",
+      "metric_label": "ROAS",
+      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
+      "url": "/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+    },
+    {
+      "company": "CarStickers",
+      "metric": "275%",
+      "metric_label": "ROAS on Mobile",
+      "title": "Car Stickers Reaches 275% ROAS on Mobile",
+      "url": "/blog/car-stickers-reaches-275-roas-on-mobile"
+    },
+    {
+      "company": "SmartLiner",
+      "metric": "1,635%",
+      "metric_label": "ROAS",
+      "title": "SmartLiner Experiments and Wins with Vibe.co",
+      "url": "/blog/smartliner-experiments-and-wins-with-vibe-co"
+    },
+    {
+      "company": "MorrisMedia",
+      "metric": "70%",
+      "metric_label": "Web Traffic Increase",
+      "title": "How a Full Service Agency Boosted Web Traffic by 70% with CTV",
+      "url": "/blog/how-a-full-service-agency-boosted-web-traffic-by-70-with-ctv"
+    },
+    {
+      "company": "Pamos",
+      "metric": "<$2",
+      "metric_label": "Cost Per Session",
+      "title": "How a Disruptor Brand Hit CPS <$2",
+      "url": "/blog/how-a-disruptor-brand-hit-cps-2"
+    },
+    {
+      "company": "Sijo",
+      "metric": "3.2x",
+      "metric_label": "Average Order Value",
+      "title": "Sijo Home Upsells with Klaviyo and Vibe",
+      "url": "/blog/sijo-home-upsells-with-klaviyo-and-vibe"
+    },
+    {
+      "company": "Zoriz",
+      "metric": "600%",
+      "metric_label": "ROAS",
+      "title": "How Zoriz Golf Surpassed 600% ROAS with CTV",
+      "url": "/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
+    },
+    {
+      "company": "HerbJones",
+      "metric": "800%",
+      "metric_label": "Web Traffic Increase",
+      "title": "How this Car Dealership Increased Web Traffic by 800%",
+      "url": "/blog/how-this-car-dealership-increased-web-traffic-by-800"
+    },
+    {
+      "company": "AirDog",
+      "metric": "450%",
+      "metric_label": "ROAS",
+      "title": "How an E-Comm Brand Reached 450% ROAS for their New Product Launch",
+      "url": "/blog/how-an-e-comm-brand-reached-450-roas-for-their-new-product-launch"
+    },
+    {
+      "company": "Nyxt",
+      "metric": "$0.85",
+      "metric_label": "Cost Per Lead",
+      "title": "How NYXT Reduced their Cost per Lead to a $0.85 Avg.",
+      "url": "/blog/how-nyxt-reduced-their-cost-per-lead-to-a-0-85-avg"
+    },
+    {
+      "company": "CaseStudyGeneral",
+      "metric": "192%",
+      "metric_label": "Favorability Score",
+      "title": "How a Political Consultancy Increased Candidates' Favorability Score by 192%",
+      "url": "/blog/how-a-political-consultancy-increased-candidates-favorability-score-by-192"
+    }
+  ],
+  "related_goals": [
+    {
+      "name": "Attract Traffic",
+      "url": "/goals/attract-traffic"
+    },
+    {
+      "name": "Generate Leads",
+      "url": "/goals/generate-leads"
+    },
+    {
+      "name": "Increase Sales",
+      "url": "/goals/increase-sales"
+    },
+    {
+      "name": "Retarget Prospects",
+      "url": "/goals/retarget-prospects"
+    },
+    {
+      "name": "Promote Your App",
+      "url": "/goals/promote-your-app"
+    }
+  ],
+  "g2_awards": [
+    "Most Implementable - Video Advertising",
+    "Momentum Leader - Video Advertising",
+    "Leader - Video Advertising",
+    "High Performer Mid-Market - Video Advertising",
+    "Fastest Implementation - Video Advertising",
+    "Easiest To Use - Video Advertising",
+    "Easiest To Do Business With Mid-Market - Video Advertising",
+    "Easiest Setup Small-Business - Video Advertising",
+    "Best Usability - Video Advertising",
+    "Best Estimated ROI - Video Advertising",
+    "Users Most Likely To Recommend - CTV Advertising Platforms",
+    "Most Implementable - CTV Advertising Platforms",
+    "High Performer - CTV Advertising Platforms",
+    "Fastest Implementation - CTV Advertising Platforms",
+    "Easiest To Use - CTV Advertising Platforms",
+    "Easiest To Do Business With - CTV Advertising Platforms",
+    "Easiest Setup - CTV Advertising Platforms",
+    "Easiest Admin - CTV Advertising Platforms",
+    "Best Usability - CTV Advertising Platforms",
+    "Best Estimated ROI - CTV Advertising Platforms"
+  ],
+  "rating": {
+    "score": "4.8",
+    "platform": "G2",
+    "text": "Rated 4.8 out of 5 on G2"
+  },
+  "value_proposition": {
+    "reach": "120M households",
+    "channels": "500+ premium apps and channels",
+    "customers": "10,000+ performance marketers",
+    "brands": "5,000+ brands raise awareness with Vibe"
+  },
+  "scraped_at": "2025-10-05"
+}

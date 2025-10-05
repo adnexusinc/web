@@ -1,0 +1,28 @@
+{
+  "collection": "Tips and Tricks",
+  "description": "Learn to use Vibe like a pro",
+  "url": "https://help.vibe.co/en/collections/5824575-tips-and-tricks",
+  "total_articles": 4,
+  "articles": [
+    {
+      "title": "Video Creative Best Practices",
+      "url": "https://help.vibe.co/en/articles/8279974-video-creative-best-practices",
+      "description": ""
+    },
+    {
+      "title": "Glossary",
+      "url": "https://help.vibe.co/en/articles/6326307-glossary",
+      "description": "A glossary of CTV and OTT advertising terms"
+    },
+    {
+      "title": "Frequency Capping Best Practices",
+      "url": "https://help.vibe.co/en/articles/7979808-frequency-capping-best-practices",
+      "description": "Learn how to change your frequency capping and its best practices."
+    },
+    {
+      "title": "Manage your Campaign Status",
+      "url": "https://help.vibe.co/en/articles/6171878-manage-your-campaign-status",
+      "description": ""
+    }
+  ]
+}

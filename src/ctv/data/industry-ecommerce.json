@@ -1,0 +1,266 @@
+{
+  "url": "https://www.vibe.co/industry/ecommerce",
+  "title": "E-commerce TV Advertising Solutions | Vibe",
+  "meta": {
+    "industry": "ecommerce",
+    "category": "industry-solutions"
+  },
+  "headings": {
+    "h1": [
+      "Drive Online Sales with TV Ads"
+    ],
+    "h2": [
+      "Grow revenue with Vibe. See how your ads drive sales in real-time."
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "Drive Online Sales with TV Ads",
+      "content": "Grow revenue with Vibe. See how your ads drive sales in real-time."
+    },
+    {
+      "id": "key-features",
+      "heading": "E-commerce Solutions",
+      "content": "Industry-specific features for e-commerce brands"
+    },
+    {
+      "id": "customer-logos",
+      "heading": "Brands Using Vibe",
+      "content": "E-commerce brands successfully using Vibe platform"
+    },
+    {
+      "id": "testimonials",
+      "heading": "Customer Success Stories",
+      "content": "Real results from e-commerce advertisers"
+    },
+    {
+      "id": "integrations",
+      "heading": "E-commerce Integrations",
+      "content": "Connect with your e-commerce stack"
+    }
+  ],
+  "features": [
+    {
+      "title": "Increase Sales",
+      "description": "Set optimization goals",
+      "details": [
+        "Measure sales, page views, sessions in real-time",
+        "Use first-party pixels for tracking",
+        "Track ROI and ROAS in real-time"
+      ]
+    },
+    {
+      "title": "Optimize Reach",
+      "description": "Connect with CRM tools",
+      "details": [
+        "Create custom campaign audiences",
+        "Integrate with platforms like Klaviyo",
+        "Sync customer data for better targeting"
+      ]
+    },
+    {
+      "title": "High-Intent Targeting",
+      "description": "50+ demographic and interest targeting options",
+      "details": [
+        "Customize audience segments",
+        "Flexible targeting from hyper-focused to broad",
+        "Reach shoppers ready to buy"
+      ]
+    }
+  ],
+  "customerLogos": [
+    "Meshki",
+    "Petfolk",
+    "CarStickers",
+    "BrandedBills",
+    "Farm & Home",
+    "King Kanine",
+    "Sota Clothing",
+    "Sijo",
+    "Pamos",
+    "Zoriz"
+  ],
+  "testimonials": [
+    {
+      "company": "TruHeight Vitamins",
+      "quote": "Once we saw how simple the platform was to use and how surprisingly good the results were, we never looked back.",
+      "result": "728% ROAS with CTV",
+      "metric": "728% ROAS"
+    },
+    {
+      "company": "Car Stickers",
+      "quote": "Increasing our social media spend felt like a race to the bottom.",
+      "result": "275% ROAS",
+      "metric": "275% ROAS"
+    },
+    {
+      "company": "Sota Clothing",
+      "quote": "Being able to maximize reach and impact within our state has been amazing.",
+      "result": "$0.70 Cost Per Page View",
+      "metric": "$0.70 CPPV"
+    }
+  ],
+  "caseStudies": [
+    {
+      "company": "TruHeight Vitamins",
+      "industry": "E-commerce",
+      "metric": "728% ROAS",
+      "title": "How TruHeight Reached 728% ROAS with CTV",
+      "href": "https://www.vibe.co/blog/vibe-x-truheight-vitamins-case-study"
+    },
+    {
+      "company": "Car Stickers",
+      "industry": "E-commerce",
+      "metric": "275% ROAS on Mobile",
+      "title": "Car Stickers Reaches 275% ROAS on Mobile",
+      "href": "https://www.vibe.co/blog/car-stickers-reaches-275-roas-on-mobile"
+    },
+    {
+      "company": "Sota Clothing",
+      "industry": "E-commerce",
+      "metric": "$0.70 CPPV",
+      "title": "How Sota Clothing Got their CPPV Below $0.70 with Vibe & Klaviyo",
+      "href": "https://www.vibe.co/blog/apparel-brand-crushes-roi-goals-with-ctv"
+    },
+    {
+      "company": "Meshki",
+      "industry": "E-commerce",
+      "metric": "$0.93 Cost Per Session",
+      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
+      "href": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+    },
+    {
+      "company": "Petfolk",
+      "industry": "E-commerce",
+      "metric": "30% Acquisition Lift",
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
+      "href": "https://www.vibe.co/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+    },
+    {
+      "company": "King Kanine",
+      "industry": "E-commerce",
+      "metric": "165% ROAS",
+      "title": "How King Kanine Reached 165% ROAS with Vibe's ML",
+      "href": "https://www.vibe.co/blog/pet-brand-reaches-new-highs-with-ctv"
+    },
+    {
+      "company": "Branded Bills",
+      "industry": "E-commerce",
+      "metric": "2,000% ROAS",
+      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
+      "href": "https://www.vibe.co/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+    },
+    {
+      "company": "SmartLiner",
+      "industry": "E-commerce",
+      "metric": "1,635% ROAS",
+      "title": "SmartLiner Experiments and Wins with Vibe.co",
+      "href": "https://www.vibe.co/blog/smartliner-experiments-and-wins-with-vibe-co"
+    },
+    {
+      "company": "Pamos",
+      "industry": "E-commerce",
+      "metric": "<$2 Cost Per Session",
+      "title": "How a Disruptor Brand Hit CPS <$2",
+      "href": "https://www.vibe.co/blog/how-a-disruptor-brand-hit-cps-2"
+    },
+    {
+      "company": "Sijo",
+      "industry": "E-commerce",
+      "metric": "3.2x Average Order Value",
+      "title": "Sijo Home Upsells with Klaviyo and Vibe",
+      "href": "https://www.vibe.co/blog/sijo-home-upsells-with-klaviyo-and-vibe"
+    },
+    {
+      "company": "Zoriz",
+      "industry": "E-commerce",
+      "metric": "600% ROAS",
+      "title": "How Zoriz Golf Surpassed 600% ROAS with CTV",
+      "href": "https://www.vibe.co/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
+    },
+    {
+      "company": "AirDog",
+      "industry": "E-commerce",
+      "metric": "450% ROAS",
+      "title": "How an E-Comm Brand Reached 450% ROAS for their New Product Launch",
+      "href": "https://www.vibe.co/blog/how-an-e-comm-brand-reached-450-roas-for-their-new-product-launch"
+    },
+    {
+      "company": "Hoodsly",
+      "industry": "E-commerce",
+      "metric": "409% ROAS",
+      "title": "409% ROAS for Hoodsly with Vibe",
+      "href": "https://www.vibe.co/blog/case-study-vibe-hoodsly"
+    }
+  ],
+  "integrations": [
+    {
+      "name": "Klaviyo",
+      "category": "CRM & Email Marketing",
+      "description": "Create custom campaign audiences and sync customer data"
+    },
+    {
+      "name": "Shopify",
+      "category": "E-commerce Platform",
+      "description": "Track sales and conversions directly from your Shopify store"
+    },
+    {
+      "name": "Google Analytics",
+      "category": "Analytics",
+      "description": "Monitor campaign performance and user behavior"
+    },
+    {
+      "name": "Triple Whale",
+      "category": "Analytics & Attribution",
+      "description": "Advanced analytics and attribution for e-commerce brands"
+    },
+    {
+      "name": "Northbeam",
+      "category": "Analytics & Attribution",
+      "description": "Multi-touch attribution and media mix modeling"
+    },
+    {
+      "name": "Haus Analytics",
+      "category": "Analytics & Attribution",
+      "description": "Incrementality testing and marketing measurement"
+    }
+  ],
+  "platforms": [
+    "Tubi",
+    "Roku"
+  ],
+  "socialProof": {
+    "userCount": "10,000+ performance marketers",
+    "rating": "4.8/5 on G2"
+  },
+  "callToAction": [
+    {
+      "text": "Get started",
+      "href": "https://www.vibe.co/get-started",
+      "type": "primary"
+    },
+    {
+      "text": "Book a demo",
+      "href": "https://www.vibe.co/book-a-demo",
+      "type": "secondary"
+    }
+  ],
+  "valueProp": [
+    "Real-time sales tracking",
+    "Customizable audience targeting",
+    "First-party pixel integration",
+    "E-commerce platform integrations",
+    "Performance-based optimization",
+    "Measurable ROI and ROAS"
+  ],
+  "targetAudience": "E-commerce brands looking to drive online sales through streaming TV advertising",
+  "keyBenefits": [
+    "Measure sales, page views, and sessions in real-time",
+    "Integrate with e-commerce platforms like Shopify",
+    "Connect with CRM tools like Klaviyo for custom audiences",
+    "50+ targeting options for reaching high-intent shoppers",
+    "Track ROAS and optimize campaigns automatically",
+    "Scale campaigns from small tests to major initiatives"
+  ]
+}

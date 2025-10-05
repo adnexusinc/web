@@ -1,0 +1,132 @@
+{
+  "url": "https://www.vibe.co/features/audience-targeting",
+  "scrapeDate": "2025-10-05",
+  "pageTitle": "Audience Targeting - Vibe Features",
+  "description": "Target those who matter for your brand. Let your brand resonate with your audience and launch impactful campaigns.",
+  "platform": {
+    "rating": "4.8/5",
+    "ratingSource": "G2",
+    "minimumDailyCost": "$50",
+    "features": [
+      "Apps & Channels",
+      "Audience Targeting",
+      "AI Optimization",
+      "Measurement & Reporting",
+      "AI Creatives",
+      "Integrations & API"
+    ]
+  },
+  "targetingOptions": {
+    "demographics": {
+      "enabled": true,
+      "options": [
+        "Age ranges (18-64 years old)",
+        "Gender",
+        "Income brackets"
+      ]
+    },
+    "geographic": {
+      "enabled": true,
+      "options": [
+        "Location-based targeting"
+      ]
+    },
+    "interestBased": {
+      "enabled": true,
+      "categories": [
+        "Beauty",
+        "Style",
+        "Sports",
+        "Automotive",
+        "Pets",
+        "Philanthropy"
+      ],
+      "description": "Target based on search query data"
+    },
+    "customAudience": {
+      "enabled": true,
+      "categoryCount": "50+",
+      "description": "Choose from 50+ categories"
+    },
+    "contextTargeting": {
+      "enabled": true,
+      "description": "Context-based ad placement"
+    },
+    "retargeting": {
+      "enabled": true,
+      "description": "Follow your web visitors, customers, or app users into their living rooms"
+    }
+  },
+  "campaignControl": {
+    "frequencyCapping": {
+      "enabled": true,
+      "description": "Control how often ads are shown to users"
+    },
+    "customCPMCap": {
+      "enabled": true,
+      "description": "Set custom CPM limits"
+    },
+    "preciseAdPlacement": {
+      "enabled": true,
+      "description": "Precise ad placement control"
+    }
+  },
+  "crmIntegration": {
+    "enabled": true,
+    "features": [
+      "Connect your CRM with Vibe",
+      "Create your own customer list"
+    ]
+  },
+  "campaignTypes": [
+    "Awareness",
+    "Web Traffic",
+    "App Downloads",
+    "Retargeting"
+  ],
+  "audienceSegments": [
+    {
+      "type": "Demographics",
+      "description": "Choose from demographics, geo, interests and more"
+    },
+    {
+      "type": "Interest Targeting",
+      "description": "Target based on search query data",
+      "examples": ["Automotive", "Sports", "Pets", "Philanthropy"],
+      "benefit": "Reach high-value audiences"
+    },
+    {
+      "type": "Retargeting",
+      "description": "Follow your web visitors, customers, or app users into their living rooms"
+    }
+  ],
+  "supportedChannels": [
+    "Multiple streaming platforms",
+    "Sports leagues",
+    "News networks",
+    "Entertainment channels"
+  ],
+  "testimonials": [
+    {
+      "quote": "We chose Vibe because I really like a nimble platform able to do different targeting for different creatives.",
+      "author": "Nathaniel Jones",
+      "role": "Marketing Director",
+      "company": "Farm and Home Supply"
+    }
+  ],
+  "platformRecognition": [
+    "G2 Award: Most Implementable"
+  ],
+  "ctaButtons": [
+    "Get started",
+    "Book a demo"
+  ],
+  "keyBenefits": [
+    "Target high-value audiences with precision",
+    "Choose from 50+ audience categories",
+    "Connect CRM for custom audience creation",
+    "Retarget across connected TV platforms",
+    "Control frequency and CPM caps",
+    "Flexible campaign types for any goal"
+  ]
+}

@@ -1,0 +1,372 @@
+{
+  "url": "https://www.vibe.co/studio",
+  "title": "Vibe Studio - Video Generator",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1",
+    "description": "Create TV-ready ads in less than 30 seconds with Vibe Studio. AI-powered video generation tool for businesses of all sizes.",
+    "og:title": "Vibe Studio - AI Video Generator for TV Ads",
+    "og:description": "Generate professional TV commercials instantly with AI. No creative skills required.",
+    "og:url": "https://www.vibe.co/studio"
+  },
+  "headings": {
+    "h1": [
+      "Vibe Studio - AI Video Generator"
+    ],
+    "h2": [
+      "Create TV-Ready Ads in Seconds",
+      "Video Creation Features",
+      "Input Methods",
+      "Targeting Capabilities",
+      "Available Channels"
+    ]
+  },
+  "videoCreationTools": {
+    "aiFeatures": [
+      {
+        "name": "Instant TV Ad Generation",
+        "description": "AI-powered automatic TV commercial generation",
+        "speed": "Less than 30 seconds",
+        "requirements": "No creative skills required",
+        "cost": "100% free"
+      },
+      {
+        "name": "Customizable Content",
+        "description": "Customizable based on business details",
+        "features": [
+          "Automatic content generation",
+          "Business-specific customization",
+          "TV-ready output format"
+        ]
+      },
+      {
+        "name": "Business Intelligence",
+        "description": "Automatically generates commercials based on business information",
+        "inputs": [
+          "Business URL",
+          "Google Maps business name"
+        ]
+      }
+    ],
+    "inputMethods": [
+      {
+        "type": "URL-based creation",
+        "description": "Enter business website URL to automatically generate ad content"
+      },
+      {
+        "type": "Google Maps Integration",
+        "description": "Business name suggestion from Google Maps for local businesses"
+      }
+    ],
+    "outputCapabilities": [
+      {
+        "format": "TV-ready video",
+        "quality": "Broadcast quality",
+        "customization": "Full customization available",
+        "speed": "Under 30 seconds generation time"
+      }
+    ],
+    "creativeRequirements": {
+      "skills": "None required",
+      "professionalHelp": "Not needed",
+      "cost": "Free to create",
+      "time": "Less than 30 seconds"
+    }
+  },
+  "templates": {
+    "automated": true,
+    "types": [
+      {
+        "name": "Business-based templates",
+        "description": "AI generates template based on business type and details",
+        "customization": "Fully customizable after generation"
+      }
+    ],
+    "industries": "All business types supported",
+    "businessSizes": [
+      "Small Business",
+      "Mid Market",
+      "Enterprise"
+    ]
+  },
+  "targetingCapabilities": {
+    "audienceReach": [
+      "Nationwide",
+      "Local markets"
+    ],
+    "targetingOptions": [
+      {
+        "category": "Demographics",
+        "options": [
+          "Age groups",
+          "Income levels"
+        ]
+      },
+      {
+        "category": "Interests",
+        "options": [
+          "Custom interests",
+          "Behavioral targeting"
+        ]
+      },
+      {
+        "category": "Geographic",
+        "options": [
+          "Location-based targeting",
+          "DMA/market selection"
+        ]
+      },
+      {
+        "category": "Device",
+        "options": [
+          "Device type targeting",
+          "Connected TV",
+          "Mobile",
+          "Desktop"
+        ]
+      }
+    ]
+  },
+  "channelsAndApps": {
+    "totalChannels": "500+",
+    "categories": [
+      {
+        "name": "Sports",
+        "count": 35,
+        "channels": [
+          "NFL",
+          "MLB",
+          "NBA",
+          "NHL",
+          "CBS Sports",
+          "NASCAR",
+          "FanDuel TV Plus"
+        ]
+      },
+      {
+        "name": "Movies & TV Shows",
+        "count": 127,
+        "channels": [
+          "Paramount Streaming",
+          "Peacock",
+          "Tubi",
+          "Pluto TV",
+          "AMC",
+          "Comedy Central",
+          "Plex"
+        ]
+      },
+      {
+        "name": "News",
+        "count": 56,
+        "channels": [
+          "CNN",
+          "Fox News",
+          "CBS",
+          "Bloomberg"
+        ]
+      },
+      {
+        "name": "Local News",
+        "count": 156
+      },
+      {
+        "name": "Hispanic Content",
+        "count": 15
+      }
+    ],
+    "streamingPlatforms": [
+      "Roku",
+      "Samsung TV Plus",
+      "Fubo",
+      "DirectTV",
+      "Sling",
+      "Philo",
+      "Haystack TV",
+      "Telly",
+      "Frndly TV",
+      "TCL",
+      "The Weather Channel"
+    ]
+  },
+  "measurement": {
+    "realTimeTracking": true,
+    "thirdPartySupport": true,
+    "metrics": [
+      "Campaign performance",
+      "Audience engagement",
+      "Conversion tracking",
+      "ROI measurement"
+    ],
+    "reportingFeatures": [
+      "Real-time dashboard",
+      "Custom reports",
+      "Performance analytics"
+    ]
+  },
+  "technicalSpecifications": {
+    "generationSpeed": "Under 30 seconds",
+    "videoFormat": "TV-ready broadcast quality",
+    "aiTechnology": "Automated video generation",
+    "businessIntegration": [
+      "URL scraping",
+      "Google Maps API integration"
+    ],
+    "customizationLevel": "Full",
+    "skillRequired": "None"
+  },
+  "pricing": {
+    "videoCreation": "Free",
+    "description": "100% free to create TV-ready videos",
+    "additionalCosts": "Ad placement campaigns require budget"
+  },
+  "features": [
+    {
+      "title": "Instant TV Ad Generation",
+      "description": "Create professional TV commercials in less than 30 seconds with AI-powered automation",
+      "category": "AI Video Creation"
+    },
+    {
+      "title": "No Creative Skills Required",
+      "description": "Anyone can create broadcast-quality ads without professional design or video production experience",
+      "category": "Ease of Use"
+    },
+    {
+      "title": "100% Free Video Creation",
+      "description": "Generate unlimited TV-ready videos at no cost",
+      "category": "Pricing"
+    },
+    {
+      "title": "URL-Based Generation",
+      "description": "Simply enter your business website URL and AI creates your commercial automatically",
+      "category": "Input Methods"
+    },
+    {
+      "title": "Google Maps Integration",
+      "description": "Pull business information directly from Google Maps for accurate local business ads",
+      "category": "Input Methods"
+    },
+    {
+      "title": "Full Customization",
+      "description": "Customize AI-generated videos based on your specific business details and preferences",
+      "category": "Customization"
+    },
+    {
+      "title": "500+ Channel Distribution",
+      "description": "Deploy your videos across 500+ streaming channels and apps",
+      "category": "Distribution"
+    },
+    {
+      "title": "Advanced Audience Targeting",
+      "description": "Target by age, demographics, interests, income, location, and device type",
+      "category": "Targeting"
+    },
+    {
+      "title": "Real-Time Performance Tracking",
+      "description": "Monitor campaign performance with real-time analytics and measurement",
+      "category": "Analytics"
+    },
+    {
+      "title": "Third-Party Measurement Support",
+      "description": "Integrate with third-party analytics and measurement platforms",
+      "category": "Analytics"
+    }
+  ],
+  "useCases": [
+    {
+      "businessType": "Local Business",
+      "description": "Create TV ads using Google Maps business information for local market reach"
+    },
+    {
+      "businessType": "E-commerce",
+      "description": "Generate product-focused ads from website URLs with automated content extraction"
+    },
+    {
+      "businessType": "Service Business",
+      "description": "Build awareness with customized TV commercials targeting specific demographics"
+    },
+    {
+      "businessType": "Nationwide Brand",
+      "description": "Scale TV advertising with AI-generated videos across 500+ channels"
+    }
+  ],
+  "workflow": [
+    {
+      "step": 1,
+      "action": "Input Business Information",
+      "details": "Enter URL or select business from Google Maps"
+    },
+    {
+      "step": 2,
+      "action": "AI Generation",
+      "details": "AI creates TV-ready commercial in under 30 seconds"
+    },
+    {
+      "step": 3,
+      "action": "Customize",
+      "details": "Adjust video content based on business needs"
+    },
+    {
+      "step": 4,
+      "action": "Target Audience",
+      "details": "Select targeting parameters (age, location, interests, etc.)"
+    },
+    {
+      "step": 5,
+      "action": "Select Channels",
+      "details": "Choose from 500+ apps and channels for distribution"
+    },
+    {
+      "step": 6,
+      "action": "Launch & Track",
+      "details": "Deploy campaign and monitor real-time performance"
+    }
+  ],
+  "integrations": [
+    "Klaviyo",
+    "Shopify",
+    "Google Analytics",
+    "Google Tag Manager",
+    "HubSpot",
+    "BigCommerce",
+    "WooCommerce",
+    "WordPress",
+    "Wix",
+    "Squarespace",
+    "Adobe Commerce",
+    "GoDaddy Website Builder",
+    "GoHighLevel",
+    "AppsFlyer",
+    "Adjust",
+    "Airbridge",
+    "Gamesight",
+    "Funnel",
+    "Haus",
+    "INCRMNTAL"
+  ],
+  "benefits": [
+    {
+      "benefit": "Speed",
+      "description": "Generate broadcast-quality videos in under 30 seconds"
+    },
+    {
+      "benefit": "Cost Efficiency",
+      "description": "100% free video creation eliminates production costs"
+    },
+    {
+      "benefit": "Accessibility",
+      "description": "No creative skills or professional help required"
+    },
+    {
+      "benefit": "Scale",
+      "description": "Distribute across 500+ channels and streaming platforms"
+    },
+    {
+      "benefit": "Performance",
+      "description": "Real-time tracking and optimization with AI-powered solutions"
+    },
+    {
+      "benefit": "Flexibility",
+      "description": "Full customization capabilities for brand alignment"
+    }
+  ]
+}

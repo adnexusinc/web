@@ -1,0 +1,372 @@
+{
+  "url": "https://www.vibe.co/about",
+  "title": "About Vibe - Making Television Advertising Simple",
+  "meta": {
+    "viewport": "width=device-width, initial-scale=1",
+    "description": "Learn about Vibe, the team behind the easiest-to-use Streaming TV Ad Platform. Our mission is to make television advertising crazy simple for brands of all sizes.",
+    "og:title": "About Vibe - Making Television Advertising Simple",
+    "og:description": "Learn about Vibe, the team behind the easiest-to-use Streaming TV Ad Platform. Our mission is to make television advertising crazy simple for brands of all sizes.",
+    "og:url": "https://www.vibe.co/about",
+    "twitter:card": "summary_large_image"
+  },
+  "headings": {
+    "h1": [
+      "About Vibe"
+    ],
+    "h2": [
+      "Our Mission",
+      "Our Story",
+      "Leadership Team",
+      "Board Members",
+      "Join Us"
+    ],
+    "h3": [
+      "Company",
+      "Resources",
+      "Product",
+      "Industries"
+    ]
+  },
+  "paragraphs": [
+    "We come to work every day with one goal: to make television advertising crazy simple.",
+    "We are a passionate, competitive bunch focused on one thing: allowing any marketer, any brand, of any size, to advertise on TV in under 5 minutes.",
+    "We think fast, act fast, grow fast so advertisers can safely and precisely reach TV audiences, the largest digital audience in the US!",
+    "Democratizing TV advertising for small and medium enterprises by removing barriers to entry in streaming TV advertising.",
+    "Our goal is to become the #1 TV Ad Platform by 2025."
+  ],
+  "navigation": {
+    "header": [
+      {
+        "text": "Vibe",
+        "href": "https://www.vibe.co/"
+      },
+      {
+        "text": "Product",
+        "href": "#"
+      },
+      {
+        "text": "Industries",
+        "href": "#"
+      },
+      {
+        "text": "Pricing",
+        "href": "https://www.vibe.co/pricing"
+      },
+      {
+        "text": "Testimonials",
+        "href": "https://www.vibe.co/testimonials"
+      },
+      {
+        "text": "resources",
+        "href": "#"
+      },
+      {
+        "text": "Book a demo",
+        "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fabout"
+      },
+      {
+        "text": "Log in",
+        "href": "https://www.vibe.co/sign-in"
+      }
+    ],
+    "footer": [
+      {
+        "text": "Apps & Gaming",
+        "href": "https://www.vibe.co/industry/apps-gaming"
+      },
+      {
+        "text": "Ecommerce",
+        "href": "https://www.vibe.co/industry/ecommerce"
+      },
+      {
+        "text": "Education & Non-profit",
+        "href": "https://www.vibe.co/industry/education-non-profit"
+      },
+      {
+        "text": "Automotive",
+        "href": "https://www.vibe.co/industry/automotive"
+      },
+      {
+        "text": "Media & Agencies",
+        "href": "https://www.vibe.co/industry/media-agencies"
+      },
+      {
+        "text": "Legal",
+        "href": "https://www.vibe.co/industry/legal"
+      },
+      {
+        "text": "Politics",
+        "href": "https://www.vibe.co/industry/politics"
+      },
+      {
+        "text": "Home Improvement",
+        "href": "https://www.vibe.co/industry/home-improvement"
+      },
+      {
+        "text": "Retail",
+        "href": "https://www.vibe.co/industry/retail"
+      },
+      {
+        "text": "B2B",
+        "href": "https://www.vibe.co/industry/b2b"
+      },
+      {
+        "text": "Entertainment",
+        "href": "https://www.vibe.co/industry/entertainment"
+      },
+      {
+        "text": "Apps & Channels",
+        "href": "https://www.vibe.co/features/apps-channels"
+      },
+      {
+        "text": "Audience Targeting",
+        "href": "https://www.vibe.co/features/audience-targeting"
+      },
+      {
+        "text": "AI Optimization",
+        "href": "https://www.vibe.co/features/ai-optimization"
+      },
+      {
+        "text": "Measurement & Reporting",
+        "href": "https://www.vibe.co/features/measurement-reporting"
+      },
+      {
+        "text": "AI Creatives",
+        "href": "https://www.vibe.co/features/ai-creatives"
+      },
+      {
+        "text": "Integrations & API",
+        "href": "https://www.vibe.co/features/integrations-api"
+      },
+      {
+        "text": "Video Generator",
+        "href": "https://www.vibe.co/studio"
+      },
+      {
+        "text": "Pricing",
+        "href": "https://www.vibe.co/pricing"
+      },
+      {
+        "text": "Testimonials",
+        "href": "https://www.vibe.co/testimonials"
+      },
+      {
+        "text": "Case Studies",
+        "href": "https://www.vibe.co/blog/case-studies"
+      },
+      {
+        "text": "Apps & Channels",
+        "href": "https://www.vibe.co/apps-and-channels"
+      },
+      {
+        "text": "Integrations",
+        "href": "https://www.vibe.co/integrations"
+      },
+      {
+        "text": "Help center",
+        "href": "https://help.vibe.co/en/"
+      },
+      {
+        "text": "Blog",
+        "href": "https://www.vibe.co/blog"
+      },
+      {
+        "text": "Newsletter",
+        "href": "https://www.vibe.co/newsletter"
+      },
+      {
+        "text": "About us",
+        "href": "https://www.vibe.co/about"
+      },
+      {
+        "text": "Events",
+        "href": "https://www.vibe.co/events/vibe-stream-2024"
+      },
+      {
+        "text": "Jobs",
+        "href": "https://jobs.ashbyhq.com/vibe"
+      },
+      {
+        "text": "Newsroom",
+        "href": "https://www.vibe.co/blog/whats-new"
+      },
+      {
+        "text": "Privacy Policy",
+        "href": "https://www.vibe.co/legal/privacy-policy"
+      },
+      {
+        "text": "Terms of Service",
+        "href": "https://www.vibe.co/legal/terms-of-service"
+      }
+    ]
+  },
+  "buttons": [
+    {
+      "text": "Get started",
+      "href": "https://www.vibe.co/get-started",
+      "type": "link"
+    },
+    {
+      "text": "Book a demo",
+      "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fabout",
+      "type": "link"
+    },
+    {
+      "text": "Log in",
+      "href": "https://www.vibe.co/sign-in",
+      "type": "link"
+    },
+    {
+      "text": "Follow us on LinkedIn",
+      "href": "https://www.linkedin.com/company/vibedotco",
+      "type": "link"
+    },
+    {
+      "text": "Join our team",
+      "href": "https://jobs.ashbyhq.com/vibe",
+      "type": "link"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://www.vibe.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvibe-logo.svg",
+      "alt": "Vibe Logo",
+      "title": ""
+    }
+  ],
+  "forms": [],
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "About Vibe",
+      "content": "Learn about Vibe, the team behind the easiest-to-use Streaming TV Ad Platform."
+    },
+    {
+      "id": "mission",
+      "heading": "Our Mission",
+      "content": "We come to work every day with one goal: to make television advertising crazy simple. We are a passionate, competitive bunch focused on one thing: allowing any marketer, any brand, of any size, to advertise on TV in under 5 minutes. We think fast, act fast, grow fast so advertisers can safely and precisely reach TV audiences, the largest digital audience in the US!"
+    },
+    {
+      "id": "vision",
+      "heading": "Our Vision",
+      "content": "Democratizing TV advertising for small and medium enterprises by removing barriers to entry in streaming TV advertising. Our goal is to become the #1 TV Ad Platform by 2025."
+    },
+    {
+      "id": "story",
+      "heading": "Our Story",
+      "content": "Timeline of Vibe's growth from founding to Series A funding, showcasing our rapid development and market success."
+    },
+    {
+      "id": "leadership",
+      "heading": "Leadership Team",
+      "content": "Meet the experienced founders and executives who are building the future of TV advertising."
+    },
+    {
+      "id": "board",
+      "heading": "Board Members",
+      "content": "Our board brings deep expertise in ad tech, streaming TV, and venture capital."
+    },
+    {
+      "id": "join",
+      "heading": "Join Us",
+      "content": "Be part of the team revolutionizing TV advertising for brands of all sizes."
+    }
+  ],
+  "companyInfo": {
+    "name": "Vibe",
+    "tagline": "Making television advertising crazy simple",
+    "mission": "We come to work every day with one goal: to make television advertising crazy simple. We are a passionate, competitive bunch focused on one thing: allowing any marketer, any brand, of any size, to advertise on TV in under 5 minutes.",
+    "vision": "Democratizing TV advertising for small and medium enterprises by removing barriers to entry in streaming TV advertising. Our goal is to become the #1 TV Ad Platform by 2025.",
+    "values": [
+      "Think fast, act fast, grow fast",
+      "Passionate and competitive",
+      "Focused on simplicity and accessibility",
+      "Democratizing TV advertising"
+    ],
+    "founded": "August 2021",
+    "headquarters": "United States"
+  },
+  "timeline": [
+    {
+      "date": "Aug 2021",
+      "event": "Vibe founded",
+      "description": "Team starts developing the platform"
+    },
+    {
+      "date": "Sept 2022",
+      "event": "Launched in US",
+      "description": "Vibe launches in the US after 12 months of development"
+    },
+    {
+      "date": "Sept 2023",
+      "event": "1,000+ Clients",
+      "description": "Crossed 1,000 client milestone"
+    },
+    {
+      "date": "Feb 2024",
+      "event": "Series A Funding",
+      "description": "Raised $22.5M in Series A funding"
+    }
+  ],
+  "team": [
+    {
+      "name": "Arthur Querou",
+      "role": "CEO & Co-Founder",
+      "bio": "Ex-founder at MotionLead (YC W14, Acquired by Adikteev)",
+      "type": "leadership"
+    },
+    {
+      "name": "Franck Tetzlaff",
+      "role": "CTO & Co-Founder",
+      "bio": "Ex-founder at Doctolib ($6B Valuation)",
+      "type": "leadership"
+    },
+    {
+      "name": "Ben Antier",
+      "role": "Board Member",
+      "bio": "Ex-founder & CEO at Publica",
+      "type": "board"
+    },
+    {
+      "name": "Ari Paparo",
+      "role": "Board Member",
+      "bio": "Ex-founder & CEO at Beeswax",
+      "type": "board"
+    },
+    {
+      "name": "Pauline Roux",
+      "role": "Board Member",
+      "bio": "Partner at Elaia (Criteo, Teads, Mirakl)",
+      "type": "board"
+    }
+  ],
+  "stats": {
+    "channels": "500+",
+    "clients": "1,000+",
+    "g2Rating": "4.9/5",
+    "funding": "$22.5M Series A"
+  },
+  "socialLinks": [
+    {
+      "platform": "LinkedIn",
+      "href": "https://www.linkedin.com/company/vibedotco"
+    },
+    {
+      "platform": "YouTube",
+      "href": "https://www.youtube.com/channel/UCjWSpAgoRvtySAlM_Mysk7g"
+    },
+    {
+      "platform": "Facebook",
+      "href": "https://www.facebook.com/p/Vibeco-100087504983744/"
+    },
+    {
+      "platform": "X",
+      "href": "https://twitter.com/vibedotco"
+    }
+  ],
+  "careers": {
+    "url": "https://jobs.ashbyhq.com/vibe",
+    "callToAction": "Join our team"
+  },
+  "copyright": "© 2025 Vibe, Inc."
+}

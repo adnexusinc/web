@@ -1,0 +1,163 @@
+{
+  "url": "https://www.vibe.co/goals/retarget-prospects",
+  "scraped_at": "2025-10-05",
+  "page_title": "Retarget Prospects | Vibe",
+  "meta": {
+    "headline": "Make every visit count",
+    "subheadline": "Retarget your prospects by launching convertible campaigns.",
+    "goal_type": "Retarget Prospects"
+  },
+  "performance_metrics": [
+    {
+      "metric": "Return Visitors",
+      "value": "+28%"
+    },
+    {
+      "metric": "Engagement Rate",
+      "value": "+15%",
+      "absolute_value": "68%"
+    },
+    {
+      "metric": "Conversion Rate",
+      "value": "+24%",
+      "absolute_value": "3.8%"
+    }
+  ],
+  "campaign_goals": [
+    {
+      "name": "Retarget Prospects",
+      "active": true
+    },
+    {
+      "name": "Build Awareness",
+      "active": false
+    },
+    {
+      "name": "Attract Traffic",
+      "active": false
+    }
+  ],
+  "platform_features": [
+    {
+      "title": "Real-Time Reporting",
+      "description": "Learn which channels, audiences, time slots, device types, etc. work best for your various strategies to drive awareness.",
+      "category": "analytics"
+    },
+    {
+      "title": "CRM Audiences",
+      "description": "Connect with CRM tools you know or create your own campaign audiences using existing customer data.",
+      "category": "targeting"
+    },
+    {
+      "title": "ROAS Optimization",
+      "description": "Use Vibe's AI-powered bidder to continuously optimize your campaign.",
+      "category": "optimization"
+    },
+    {
+      "title": "Lookalike Audiences",
+      "description": "Turn real-time audience data into actionable targeting insights to scale your CTV campaigns without wasting ad spend.",
+      "category": "targeting"
+    },
+    {
+      "title": "Impactful Creatives",
+      "description": "Capture attention with 4K CTV ads shown on full screens in relaxed, lean-back environments—where your message sticks.",
+      "category": "creative"
+    },
+    {
+      "title": "Premium Inventory",
+      "description": "Access 120M households across 500+ premium apps and channels including Tubi, Roku, DirectTV and more.",
+      "category": "inventory"
+    }
+  ],
+  "inventory_stats": {
+    "households": "120M",
+    "apps_and_channels": "500+",
+    "featured_platforms": [
+      "Tubi",
+      "Roku",
+      "DirectTV"
+    ]
+  },
+  "supported_channels": [
+    "DirectTV",
+    "CNN",
+    "Fubo",
+    "NFL",
+    "Roku",
+    "MLB",
+    "Paramount Streaming",
+    "NBA",
+    "Peacock",
+    "Tubi",
+    "NHL",
+    "Fox News",
+    "CBS",
+    "Pluto TV",
+    "Samsung TV Plus",
+    "Sling",
+    "Philo",
+    "Haystack TV",
+    "AMC",
+    "CBS Sports",
+    "Bloomberg",
+    "Telly",
+    "Comedy Central",
+    "Plex",
+    "FanDuel TV Plus"
+  ],
+  "value_propositions": [
+    {
+      "stat": "10,000+",
+      "description": "Performance marketers using the platform"
+    },
+    {
+      "stat": "4.8/5",
+      "description": "Rating on G2",
+      "platform": "G2"
+    }
+  ],
+  "ctas": [
+    {
+      "text": "Get started",
+      "type": "primary",
+      "action": "signup"
+    },
+    {
+      "text": "Book a demo",
+      "type": "primary",
+      "action": "schedule_demo"
+    }
+  ],
+  "navigation": {
+    "main_sections": [
+      "Product",
+      "Industries",
+      "Pricing",
+      "Testimonials",
+      "Resources"
+    ],
+    "footer_sections": [
+      "Industries",
+      "Features",
+      "Resources",
+      "Company"
+    ]
+  },
+  "key_benefits": [
+    "Retarget website visitors with precision",
+    "Increase return visitor rate by 28%",
+    "Boost engagement rate by 15%",
+    "Improve conversion rate by 24%",
+    "Access premium CTV inventory across 120M households",
+    "Leverage AI-powered ROAS optimization",
+    "Create lookalike audiences from existing data",
+    "Display 4K ads on full-screen premium devices"
+  ],
+  "use_cases": [
+    "Retargeting website visitors who didn't convert",
+    "Re-engaging past prospects with new offers",
+    "Building brand awareness with warm audiences",
+    "Driving conversions from interested prospects",
+    "Scaling campaigns with lookalike audiences"
+  ]
+}

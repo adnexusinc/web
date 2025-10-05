@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { UnifiedPage } from "@/components/UnifiedPage";
 import { pageConfigs } from "@/lib/page-config";
 import { usePageTracking } from "@/hooks/usePageTracking";
@@ -38,6 +38,9 @@ const AgencyOnboardingSuccess = lazy(() => import("./agency/pages/OnboardingSucc
 const AgencyPayment = lazy(() => import("./agency/pages/Payment"));
 const AgencyServicesPage = lazy(() => import("./agency/pages/ServicesPage"));
 const AgencySolutionsPage = lazy(() => import("./agency/pages/SolutionsPage"));
+
+// CTV Platform pages
+import { ctvRoutes } from "./ctv-platform/routes";
 
 // Case study pages (unique layouts) - CTV advertising
 const DamonMotorcycles = lazy(() => import("./pages/case-study/DamonMotorcycles"));
@@ -136,7 +139,8 @@ const App = () => (
             <Route path="/agency/capabilities/*" element={<AgencySolutionsPage />} />
             <Route path="/enterprise" element={<Enterprise />} />
 
-            {/* Services */}
+            {/* Services - Redirect to Agency Services */}
+            <Route path="/services" element={<Navigate to="/agency/services" replace />} />
             <Route path="/services/ai" element={<UnifiedPage config={pageConfigs['/services/ai']} />} />
             <Route path="/services/creative" element={<UnifiedPage config={pageConfigs['/services/creative']} />} />
             <Route path="/services/marketing" element={<UnifiedPage config={pageConfigs['/services/marketing']} />} />
@@ -153,6 +157,11 @@ const App = () => (
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/our-work" element={<UnifiedPage config={pageConfigs['/our-work']} />} />
             <Route path="/case-studies" element={<CaseStudies />} />
+
+            {/* CTV Platform - Streaming TV advertising */}
+            {ctvRoutes.map(({ path, element: Element }) => (
+              <Route key={path} path={path} element={<Element />} />
+            ))}
 
             {/* 404 - Must be last */}
             <Route path="*" element={<NotFound />} />

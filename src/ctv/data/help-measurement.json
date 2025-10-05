@@ -1,0 +1,157 @@
+{
+  "url": "https://help.vibe.co/en/collections/5792742-measurement-and-reporting",
+  "title": "Measurement and Reporting",
+  "description": "Learn how to measure and optimize your campaigns in real time.",
+  "scraped_at": "2025-10-05",
+  "authors": ["Nicolas Hemidy", "Vincent Paoli"],
+  "article_count": 25,
+  "subcollections": [
+    {
+      "name": "Web Tracking",
+      "description": "Pixel tracking web users",
+      "url": "https://help.vibe.co/en/collections/5929361-web-tracking",
+      "articles": [
+        {
+          "title": "Vibe Pixel",
+          "url": "https://help.vibe.co/en/articles/6530668-vibe-pixel",
+          "description": "Learn how to install the Vibe Pixel."
+        },
+        {
+          "title": "Install Vibe Pixel in Google Tag Manager",
+          "url": "https://help.vibe.co/en/articles/7884040-install-vibe-pixel-in-google-tag-manager",
+          "description": "Learn how to install a Vibe Pixel on GTM."
+        },
+        {
+          "title": "Vibe Pixel Tracking with Wix",
+          "url": "https://help.vibe.co/en/articles/8077992-vibe-pixel-tracking-with-wix",
+          "description": "Learn how to install the Vibe Pixel on your Wix website."
+        },
+        {
+          "title": "Vibe Pixel Tracking on Shopify",
+          "url": "https://help.vibe.co/en/articles/8062548-vibe-pixel-tracking-on-shopify",
+          "description": "Learn how to install the Vibe Pixel on your Shopify website."
+        },
+        {
+          "title": "Vibe Pixel Tracking with WordPress/Elementor/WooCommerce",
+          "url": "https://help.vibe.co/en/articles/8065185-vibe-pixel-tracking-with-wordpress-elementor-woocommerce",
+          "description": "Learn how to install the Vibe Pixel on your Wordpress website."
+        },
+        {
+          "title": "Vibe Pixel Tracking on BigCommerce",
+          "url": "https://help.vibe.co/en/articles/8912490-vibe-pixel-tracking-on-bigcommerce",
+          "description": "Learn how to install the Vibe Pixel on your BigCommerce website."
+        },
+        {
+          "title": "Install Vibe Pixel on Go High Level website",
+          "url": "https://help.vibe.co/en/articles/10673851-install-vibe-pixel-on-go-high-level-website",
+          "description": "Vibe.co provides a JavaScript-based pixel to help you track page views, leads, and purchases on your website. This guide will walk you through implementing the pixel on your Go High…"
+        },
+        {
+          "title": "Understanding Pixel Data in Vibe",
+          "url": "https://help.vibe.co/en/articles/10700353-understanding-pixel-data-in-vibe",
+          "description": "This article explains how the Pixel page in Vibe works, clarifies common misunderstandings about tracked events, and provides guidance on verifying pixel functionality."
+        },
+        {
+          "title": "Vibe Pixel Tracking on SquareSpace",
+          "url": "https://help.vibe.co/en/articles/11051324-vibe-pixel-tracking-on-squarespace",
+          "description": "Learn how to install the Vibe Pixel on your SquareSpace website."
+        },
+        {
+          "title": "Vibe Pixel Tracking on Ticketmaster",
+          "url": "https://help.vibe.co/en/articles/9952686-vibe-pixel-tracking-on-ticketmaster",
+          "description": "Learn how to install the Vibe Pixel on Ticketmaster."
+        },
+        {
+          "title": "Install Vibe Pixel on Adobe Commerce (previously Magento)",
+          "url": "https://help.vibe.co/en/articles/11864212-install-vibe-pixel-on-adobe-commerce-previously-magento",
+          "description": "This guide will help you manually add the Vibe Pixel to your Adobe Commerce store (previously Magento)."
+        },
+        {
+          "title": "Install Vibe Pixel On GoDaddy Website Builder",
+          "url": "https://help.vibe.co/en/articles/11864492-install-vibe-pixel-on-godaddy-website-builder",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Mobile Tracking",
+      "description": "Tracking app and mobile users",
+      "url": "https://help.vibe.co/en/collections/5929365-mobile-tracking",
+      "articles": [
+        {
+          "title": "AppsFlyer Integration",
+          "url": "https://help.vibe.co/en/articles/6560678-appsflyer-integration",
+          "description": "Vibe easily integrates with AppsFlyer to let you run your campaigns with Vibe while using the AppsFlyer SDK for attribution and reporting."
+        },
+        {
+          "title": "Adjust Integration",
+          "url": "https://help.vibe.co/en/articles/6530649-adjust-integration",
+          "description": "Vibe easily integrates with Adjust to let you run your campaigns with Vibe while using the Adjust SDK for attribution and reporting."
+        },
+        {
+          "title": "Singular Integration",
+          "url": "https://help.vibe.co/en/articles/8075931-singular-integration",
+          "description": "Vibe easily integrates with Singular to let you run your campaigns with Vibe while using the Singular SDK for attribution and reporting."
+        },
+        {
+          "title": "Airbridge Integration",
+          "url": "https://help.vibe.co/en/articles/10343439-airbridge-integration",
+          "description": "Vibe easily integrates with Airbridge to let you run your campaigns with Vibe while using the Airbridge SDK for attribution and reporting."
+        },
+        {
+          "title": "Gamesight Integration",
+          "url": "https://help.vibe.co/en/articles/10806904-gamesight-integration",
+          "description": "Vibe easily integrates with Gamesight to let you run your campaigns with Vibe while using the Gamesight SDK for attribution and reporting."
+        },
+        {
+          "title": "Kochava Integration",
+          "url": "https://help.vibe.co/en/articles/10627681-kochava-integration",
+          "description": "Vibe easily integrates with Kochava to let you run your campaigns with Vibe while using the Kochava SDK for attribution and reporting."
+        }
+      ]
+    },
+    {
+      "name": "Reporting",
+      "description": "Find and measure campaign results",
+      "url": "https://help.vibe.co/en/collections/5929413-reporting",
+      "articles": [
+        {
+          "title": "Measure your Campaign Performance",
+          "url": "https://help.vibe.co/en/articles/6134948-measure-your-campaign-performance",
+          "description": ""
+        },
+        {
+          "title": "Web Attribution and Attribution Windows",
+          "url": "https://help.vibe.co/en/articles/6615168-web-attribution-and-attribution-windows",
+          "description": "How do we attribute web visits to your campaigns."
+        },
+        {
+          "title": "How to Download Reports",
+          "url": "https://help.vibe.co/en/articles/8279686-how-to-download-reports",
+          "description": ""
+        },
+        {
+          "title": "GA4 Integration",
+          "url": "https://help.vibe.co/en/articles/6855563-ga4-integration",
+          "description": "Track your CTV campaign results with Vibe's GA4 integration (Google Analytics 4)."
+        },
+        {
+          "title": "Vibe API reporting",
+          "url": "https://help.vibe.co/en/articles/8943325-vibe-api-reporting",
+          "description": "This page helps you get started with Vibe Reporting API."
+        },
+        {
+          "title": "Vibe API reporting and Singular",
+          "url": "https://help.vibe.co/en/articles/9551956-vibe-api-reporting-and-singular",
+          "description": "This page helps you understand the Vibe Reporting API and Singular integration."
+        },
+        {
+          "title": "Triple Whale Integration",
+          "url": "https://help.vibe.co/en/articles/11883226-triple-whale-integration",
+          "description": "Easily connect your Vibe account to Triple Whale."
+        }
+      ]
+    }
+  ],
+  "total_articles": 25
+}

@@ -1,0 +1,149 @@
+{
+  "url": "https://www.vibe.co/industry/legal",
+  "title": "Grow your Law Firm with TV Ads | Vibe",
+  "meta": {
+    "industry": "legal",
+    "category": "industry-solutions"
+  },
+  "headings": {
+    "h1": [
+      "Grow your Law Firm with TV Ads"
+    ],
+    "h2": [
+      "Smarter Reach. Stronger Results. Legal Marketing That Works.",
+      "Why law firms trust Vibe",
+      "Integrated with the tools you know and love",
+      "Hear from leaders in your industry"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "Grow your Law Firm with TV Ads",
+      "content": "Smarter Reach. Stronger Results. Legal Marketing That Works."
+    },
+    {
+      "id": "key-features",
+      "heading": "Why law firms trust Vibe",
+      "content": "Core features for legal marketing success"
+    },
+    {
+      "id": "integrations",
+      "heading": "Integrated with the tools you know and love",
+      "content": "Connect with your marketing stack"
+    },
+    {
+      "id": "testimonials",
+      "heading": "Hear from leaders in your industry",
+      "content": "Real results from law firms using Vibe"
+    }
+  ],
+  "features": [
+    {
+      "title": "More Calls, More Clicks",
+      "description": "Test creative, optimize CTAs, and track results in real time",
+      "details": [
+        "Track results in real-time",
+        "Test creative variations",
+        "Optimize call-to-actions",
+        "Drive real growth"
+      ]
+    },
+    {
+      "title": "AI Optimization",
+      "description": "Vibe's programmatic engine keeps CPMs low and impact high",
+      "details": [
+        "Programmatic engine optimization",
+        "Low CPMs",
+        "High impact delivery",
+        "Automated bidding strategies"
+      ]
+    },
+    {
+      "title": "Reliable Targeting",
+      "description": "Reach future clients at the right time and place",
+      "details": [
+        "In-market audiences",
+        "Lookalike audiences",
+        "Precise targeting capabilities",
+        "Right time and place delivery"
+      ]
+    }
+  ],
+  "customerLogos": [],
+  "testimonials": [
+    {
+      "company": "Rue & Ziffra",
+      "quote": "Boosted site traffic and call volume while maintaining $18 CPM",
+      "result": "$18 CPM",
+      "metric": "$18 CPM"
+    }
+  ],
+  "caseStudies": [
+    {
+      "company": "Rue & Ziffra",
+      "industry": "Legal",
+      "metric": "$18 CPM",
+      "title": "How Rue & Ziffra Boosted Site Traffic and Call Volume",
+      "description": "Reduced waste through smart targeting and frequency capping",
+      "href": null
+    }
+  ],
+  "integrations": [
+    {
+      "name": "Klaviyo",
+      "category": "CRM & Email Marketing",
+      "description": "Create custom campaign audiences and sync customer data"
+    },
+    {
+      "name": "Google Tag Manager",
+      "category": "Tag Management",
+      "description": "Track conversions and manage marketing tags"
+    },
+    {
+      "name": "Google Analytics",
+      "category": "Analytics",
+      "description": "Monitor campaign performance and user behavior"
+    }
+  ],
+  "platforms": [
+    "Tubi",
+    "Roku"
+  ],
+  "socialProof": {
+    "userCount": "10,000+ performance marketers",
+    "liveViews": "789 people seeing ads in real-time"
+  },
+  "callToAction": [
+    {
+      "text": "Get started",
+      "href": "https://www.vibe.co/get-started",
+      "type": "primary"
+    },
+    {
+      "text": "Book a demo",
+      "href": "https://www.vibe.co/book-a-demo",
+      "type": "secondary"
+    }
+  ],
+  "valueProp": [
+    "More calls and clicks",
+    "AI-powered optimization",
+    "Reliable targeting",
+    "Real-time tracking",
+    "Low CPMs",
+    "Smart targeting and frequency capping"
+  ],
+  "targetAudience": "Law firms seeking to expand marketing reach and generate more leads through connected TV advertising",
+  "keyBenefits": [
+    "Test creative and optimize CTAs in real-time",
+    "Track results and drive measurable growth",
+    "Programmatic engine keeps CPMs low",
+    "Reach future clients with in-market audiences",
+    "Lookalike audience targeting",
+    "Reduce waste through smart targeting",
+    "Frequency capping for efficient spend",
+    "Boost site traffic and call volume",
+    "Integration with marketing tools"
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "url": "https://www.vibe.co/industry/apps-gaming",
+  "title": "Apps & Gaming TV Advertising Solutions | Vibe",
+  "meta": {
+    "industry": "apps-gaming",
+    "category": "industry-solutions"
+  },
+  "headings": {
+    "h1": [
+      "Drive App Installs with TV Ads"
+    ],
+    "h2": [
+      "Track app installs and revenue directly from Vibe"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "heading": "Drive App Installs with TV Ads",
+      "content": "Track app installs and revenue directly from Vibe"
+    },
+    {
+      "id": "key-features",
+      "heading": "Apps & Gaming Solutions",
+      "content": "Industry-specific features for app and gaming companies"
+    },
+    {
+      "id": "customer-logos",
+      "heading": "Brands Using Vibe",
+      "content": "Gaming and app companies successfully using Vibe platform"
+    },
+    {
+      "id": "testimonials",
+      "heading": "Customer Success Stories",
+      "content": "Real results from app and gaming advertisers"
+    },
+    {
+      "id": "integrations",
+      "heading": "Mobile Attribution Integrations",
+      "content": "Connect with your attribution stack"
+    }
+  ],
+  "features": [
+    {
+      "title": "Increase App Installs",
+      "description": "Measure cost per install with trusted tools",
+      "details": [
+        "Directly measure cost per install",
+        "Integration with AppsFlyer, Adjust, Singular",
+        "Track app installs and revenue in real-time"
+      ]
+    },
+    {
+      "title": "High-Intent Targeting",
+      "description": "Build audience trust with TV advertising",
+      "details": [
+        "Put ads on TV to build trust",
+        "Choose from 500+ channels",
+        "Reach targeted audience ready to install"
+      ]
+    },
+    {
+      "title": "Reliable Support",
+      "description": "Tailored consultative approach",
+      "details": [
+        "Customize trackable events",
+        "Measure specific KPIs",
+        "Dedicated support for app marketers"
+      ]
+    }
+  ],
+  "customerLogos": [
+    "BagelCode",
+    "DoubleDown",
+    "Huuuge",
+    "SciPlay",
+    "Scopely",
+    "TripleDot",
+    "Lyft"
+  ],
+  "testimonials": [
+    {
+      "company": "BagelCode",
+      "quote": "Vibe has been significantly over our net D7 ROAS goal",
+      "result": "2x+ D7 ROI",
+      "metric": "2x+ D7 ROI"
+    }
+  ],
+  "caseStudies": [
+    {
+      "company": "BagelCode",
+      "industry": "Apps & Gaming",
+      "metric": "2x+ D7 ROI",
+      "title": "BagelCode Exceeds D7 ROAS Goals with Vibe",
+      "href": "https://www.vibe.co/blog/bagelcode-case-study"
+    }
+  ],
+  "integrations": [
+    {
+      "name": "AppsFlyer",
+      "category": "Mobile Attribution",
+      "description": "Track app installs and attribution from Vibe campaigns"
+    },
+    {
+      "name": "Adjust",
+      "category": "Mobile Attribution",
+      "description": "Measure mobile app performance and user acquisition"
+    },
+    {
+      "name": "Singular",
+      "category": "Mobile Attribution",
+      "description": "Unified marketing analytics and attribution"
+    }
+  ],
+  "platforms": [
+    "Tubi",
+    "Roku"
+  ],
+  "statistics": [
+    {
+      "metric": "10,000,000+",
+      "description": "App Installs generated"
+    },
+    {
+      "metric": "680",
+      "description": "New app installs from Tubi and Roku"
+    }
+  ],
+  "socialProof": {
+    "userCount": "10,000+ performance marketers",
+    "appInstalls": "10,000,000+"
+  },
+  "callToAction": [
+    {
+      "text": "Get started",
+      "href": "https://www.vibe.co/get-started",
+      "type": "primary"
+    },
+    {
+      "text": "Book a demo",
+      "href": "https://www.vibe.co/book-a-demo",
+      "type": "secondary"
+    }
+  ],
+  "valueProp": [
+    "Direct app install measurement",
+    "Trusted mobile attribution platform integrations",
+    "High-intent TV audience targeting",
+    "Real-time performance tracking",
+    "Customizable event tracking",
+    "Scalable user acquisition"
+  ],
+  "targetAudience": "App developers and gaming companies looking to drive installs through streaming TV advertising",
+  "keyBenefits": [
+    "Measure cost per install using trusted attribution tools",
+    "Integration with AppsFlyer, Adjust, and Singular",
+    "Reach audiences across 500+ streaming channels",
+    "Build trust with TV advertising",
+    "Customize trackable events and KPIs",
+    "Track D7 ROAS and ROI metrics",
+    "Scale from test campaigns to major user acquisition initiatives"
+  ]
+}

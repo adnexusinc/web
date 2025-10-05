@@ -1,0 +1,308 @@
+{
+  "pageTitle": "Vibe: Streaming & Connected TV Advertising Platform",
+  "pageUrl": "https://www.vibe.co/features/apps-channels",
+  "scrapedDate": "2025-10-05",
+  "heading": "The best streaming has to offer",
+  "description": "Engage with your audience during their favorite shows and live events.",
+  "inventorySection": {
+    "title": "Apps & Channels inventory",
+    "subtitle": "Explore Vibe's streaming inventory.",
+    "searchFunctionality": {
+      "enabled": true,
+      "placeholder": "Search for a channel",
+      "features": ["Text search", "Category filtering", "Featured channels toggle"]
+    },
+    "filters": {
+      "featuredOnly": {
+        "type": "toggle",
+        "label": "Featured channels only",
+        "defaultState": "checked"
+      }
+    }
+  },
+  "categories": [
+    {
+      "name": "Anime",
+      "channelCount": 5
+    },
+    {
+      "name": "Movies & TV Shows",
+      "channelCount": 91
+    },
+    {
+      "name": "Hispanic Focus",
+      "channelCount": 22
+    },
+    {
+      "name": "Local News",
+      "channelCount": 195
+    },
+    {
+      "name": "Sports",
+      "channelCount": 58
+    },
+    {
+      "name": "Music",
+      "channelCount": 11
+    },
+    {
+      "name": "Lifestyle",
+      "channelCount": 24
+    },
+    {
+      "name": "Documentary",
+      "channelCount": 32
+    },
+    {
+      "name": "Premium",
+      "channelCount": 67
+    },
+    {
+      "name": "Comedy",
+      "channelCount": 20
+    },
+    {
+      "name": "Business, News & Weather",
+      "channelCount": 35
+    },
+    {
+      "name": "African American Focus",
+      "channelCount": 15
+    },
+    {
+      "name": "Food",
+      "channelCount": 13
+    },
+    {
+      "name": "Family Friendly",
+      "channelCount": 17
+    }
+  ],
+  "channels": [
+    {
+      "name": "AMC",
+      "categories": ["Premium", "Movies & TV Shows"],
+      "letter": "A"
+    },
+    {
+      "name": "A&E",
+      "categories": ["Premium"],
+      "letter": "A"
+    },
+    {
+      "name": "ABC News Live",
+      "categories": ["Premium", "Business, News & Weather"],
+      "letter": "A"
+    },
+    {
+      "name": "BET",
+      "categories": ["Premium", "Movies & TV Shows", "Music", "African American Focus"],
+      "letter": "B"
+    },
+    {
+      "name": "Bravo",
+      "categories": ["Premium"],
+      "letter": "B"
+    },
+    {
+      "name": "Bloomberg",
+      "categories": ["Premium", "Business, News & Weather"],
+      "letter": "B"
+    },
+    {
+      "name": "Comedy Central",
+      "categories": ["Premium", "Movies & TV Shows", "Comedy"],
+      "letter": "C"
+    },
+    {
+      "name": "CNN",
+      "categories": ["Premium", "Business, News & Weather"],
+      "letter": "C"
+    },
+    {
+      "name": "Discovery+",
+      "categories": ["Premium", "Documentary"],
+      "letter": "D"
+    },
+    {
+      "name": "ESPN",
+      "categories": ["Premium", "Sports"],
+      "letter": "E"
+    },
+    {
+      "name": "E!",
+      "categories": ["Premium", "Documentary", "Movies & TV Shows"],
+      "letter": "E"
+    },
+    {
+      "name": "fuboTV",
+      "categories": ["Premium", "Sports"],
+      "letter": "F"
+    },
+    {
+      "name": "Food Network",
+      "categories": ["Premium", "Food"],
+      "letter": "F"
+    },
+    {
+      "name": "FXNOW",
+      "categories": ["Premium", "Movies & TV Shows"],
+      "letter": "F"
+    },
+    {
+      "name": "FailArmy",
+      "categories": ["Comedy"],
+      "letter": "F"
+    },
+    {
+      "name": "Fox News",
+      "categories": ["Premium", "Business, News & Weather"],
+      "letter": "F"
+    },
+    {
+      "name": "FilmRise",
+      "categories": ["Premium", "Movies & TV Shows"],
+      "letter": "F"
+    },
+    {
+      "name": "Hallmark Channel",
+      "categories": ["Premium", "Movies & TV Shows"],
+      "letter": "H"
+    },
+    {
+      "name": "HISTORY",
+      "categories": ["Premium"],
+      "letter": "H"
+    },
+    {
+      "name": "HGTV Channel",
+      "categories": ["Lifestyle"],
+      "letter": "H"
+    },
+    {
+      "name": "ID",
+      "categories": ["Documentary"],
+      "letter": "I"
+    },
+    {
+      "name": "IFC",
+      "categories": ["Premium", "Comedy"],
+      "letter": "I"
+    },
+    {
+      "name": "Law & Crime",
+      "categories": ["Documentary"],
+      "letter": "L"
+    },
+    {
+      "name": "Lifetime",
+      "categories": ["Premium", "Movies & TV Shows"],
+      "letter": "L"
+    },
+    {
+      "name": "MLB",
+      "categories": ["Premium", "Sports"],
+      "letter": "M"
+    },
+    {
+      "name": "Magnolia Network",
+      "categories": ["Lifestyle"],
+      "letter": "M"
+    },
+    {
+      "name": "MTV",
+      "categories": ["Music", "African American Focus", "Comedy"],
+      "letter": "M"
+    },
+    {
+      "name": "Paramount Network",
+      "categories": ["Premium"],
+      "letter": "P"
+    },
+    {
+      "name": "Pluto TV",
+      "categories": ["Premium"],
+      "letter": "P"
+    },
+    {
+      "name": "Sling TV",
+      "categories": ["Premium"],
+      "letter": "S"
+    },
+    {
+      "name": "Samsung TV Plus",
+      "categories": ["Premium"],
+      "letter": "S"
+    },
+    {
+      "name": "SYFY",
+      "categories": ["Movies & TV Shows"],
+      "letter": "S"
+    },
+    {
+      "name": "TNT",
+      "categories": ["Premium", "Movies & TV Shows", "Sports"],
+      "letter": "T"
+    },
+    {
+      "name": "TLC",
+      "categories": ["Premium", "Lifestyle"],
+      "letter": "T"
+    },
+    {
+      "name": "Travel Channel GO",
+      "categories": [],
+      "letter": "T"
+    },
+    {
+      "name": "Tubi",
+      "categories": ["Premium", "Movies & TV Shows"],
+      "letter": "T"
+    },
+    {
+      "name": "The Pet Collective",
+      "categories": ["Lifestyle"],
+      "letter": "T"
+    },
+    {
+      "name": "Tastemade",
+      "categories": ["Food", "Lifestyle"],
+      "letter": "T"
+    },
+    {
+      "name": "USA Network",
+      "categories": ["Premium"],
+      "letter": "U"
+    },
+    {
+      "name": "VH1",
+      "categories": ["Music", "African American Focus"],
+      "letter": "V"
+    },
+    {
+      "name": "WETV",
+      "categories": [],
+      "letter": "W"
+    },
+    {
+      "name": "Watch TBS",
+      "categories": ["Premium", "African American Focus", "Comedy"],
+      "letter": "W"
+    },
+    {
+      "name": "XUMO",
+      "categories": ["Premium"],
+      "letter": "X"
+    }
+  ],
+  "totalFeaturedChannels": 43,
+  "directory": {
+    "alphabeticalSections": ["A", "B", "C", "D", "E", "F", "H", "I", "L", "M", "P", "S", "T", "U", "V", "W", "X"],
+    "layout": "Alphabetically organized with letter headers"
+  },
+  "metadata": {
+    "note": "This data represents featured channels only. Total inventory includes 195+ local news channels and additional channels across all categories.",
+    "totalCategorizedChannels": 548,
+    "dataSource": "Vibe.co Apps & Channels page"
+  }
+}
