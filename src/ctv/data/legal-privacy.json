@@ -1,0 +1,300 @@
+{
+  "title": "Privacy Policy",
+  "company": "Vibe Advertising Inc",
+  "operatingAs": "Vibe.co",
+  "website": "www.Vibe.co.com",
+  "lastUpdated": "2025-10-05",
+  "contactEmail": "support@vibe.co",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "content": "Vibe Advertising Inc, operating as Vibe.co (\"we,\" \"us,\" or \"our\"), have designed this Vibe.co Website Privacy Policy (this \"Website Privacy Policy\") to help you understand how we may collect, use, and share information through, or in relation to, our corporate website, www.Vibe.co.com, and any other websites owned or operated by us (each, this \"Website\")."
+    },
+    {
+      "id": "information-collection",
+      "title": "Information We Collect and Use",
+      "subsections": [
+        {
+          "id": "directly-provided",
+          "title": "1. Information You Directly and Voluntarily Provide to Us",
+          "content": "We collect personal information (e.g., email address and similar identifiers) that you provide to us when filling out the fields on our Contact Us page or otherwise submitting your contact information to us (such as by signing up for a newsletter). We may use this information to investigate and respond to your inquiries, to communicate with you, and to enhance the Website. The information may be stored into our customer relationship management databases (CRMs) for purposes such as sales and marketing. With respect to email marketing, please follow the instructions within our messages and review the Online Privacy Choices section below.",
+          "dataCollected": [
+            "Email addresses",
+            "Contact information from Contact Us page",
+            "Newsletter sign-up information"
+          ],
+          "usage": [
+            "Investigate and respond to inquiries",
+            "Communication with users",
+            "Enhance the Website",
+            "Sales and marketing (stored in CRM databases)"
+          ]
+        },
+        {
+          "id": "automatically-collected",
+          "title": "2. Information Automatically Collected Through This Website",
+          "content": "We collect certain personal information (primarily, digital identifiers, such as IP address) automatically when you visit the Website, including:",
+          "dataCollected": [
+            "IP addresses",
+            "Browser type and version",
+            "Device and connection information",
+            "Web log data"
+          ],
+          "technologies": [
+            {
+              "name": "Web logs",
+              "description": "Our web servers keep log files that record data every time a device accesses those servers. As such, when you access this Website, we will automatically collect information such as your browser type and version, device and connection information, the Internet Protocol (IP) address used to connect your device to the Internet, and standard web log information."
+            },
+            {
+              "name": "Cookies and Pixel Tags",
+              "description": "We may automatically collect information about you and your use of this Website (or enable a third-party to do the same) via \"cookies.\" Cookies are small data files stored within your device's browser. They are created by pixel tags, which are essentially lines of JavaScript code that will create (and store onto your browser), read, and write information into the cookie and collect other information about you in relation to your Website visit.",
+              "types": [
+                {
+                  "type": "First-party cookies",
+                  "description": "Cookies that are stored by us"
+                },
+                {
+                  "type": "Third-party cookies",
+                  "description": "Cookies that are stored by third parties (via their own pixel tags)"
+                }
+              ],
+              "purpose": [
+                "Recognize you",
+                "Customize or personalize your experience",
+                "Advertise products or services to you",
+                "Analyze your use of the Website",
+                "Collect demographic and statistical data"
+              ],
+              "control": "Most internet browsers allow you to remove or manage cookie functions and adjust your privacy and security preferences. For information on how to do this, access the 'help' menu on your internet browser, or access http://www.aboutcookies.org/how-to-control-cookies. Please note, however, that disabling our cookies may mean that you will not be able to take full advantage of the Website."
+            },
+            {
+              "name": "Google Analytics",
+              "description": "We use \"Google Analytics\" to collect information about your use of the Website. Google Analytics collects information such as how often users access the Website, what pages they access when they do so, and what other sites they used prior to using the Website. Google uses the data collected to track and examine the use of the Website and to prepare reports relating thereto and share them with us and other Google services.",
+              "optOut": "To learn more about the use of data collection technologies by Google for analytics and to exercise choice regarding those technologies, please visit the Google Analytics Opt-Out browser add-on page.",
+              "optOutUrl": "https://tools.google.com/dlpage/gaoptout"
+            },
+            {
+              "name": "Profile Pictures (Gravatar)",
+              "description": "Upon user registration, our platform securely shares a hashed version of the email address with the Gravatar service to retrieve profile pictures associated with the provided email. Gravatar is a third-party service that provides avatars linked to email addresses. It's important to note that only the hashed version of the email address is shared with Gravatar for the sole purpose of obtaining profile pictures. No other identifiable user information is exchanged. By using our platform, you acknowledge and agree that your profile picture may be obtained from Gravatar based on the hashed email address used for registration. Your use of Gravatar is subject to Gravatar's terms of service and privacy policy.",
+              "dataShared": "Hashed email address only",
+              "purpose": "Retrieve profile pictures"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "other-uses",
+      "title": "Other Uses of Personal Information",
+      "content": "In addition to the uses described above, we may collect and use personal information for the following purposes:",
+      "purposes": [
+        "To create, maintain, improve, and operate the Website",
+        "To personalize your user experience",
+        "To communicate with you to provide technical or administrative support",
+        "To conduct, manage, and grow our organization",
+        "To market and advertise to you, such as to provide information and updates on our Website or other news or information about Vibe.co",
+        "To analyze, research, investigate, and improve the use of the Website",
+        "To prevent, investigate, and provide fraud notifications, unlawful or criminal activity, unauthorized access to or use of personal information, our data system services, and to meet governmental and institutional policy obligations",
+        "To investigate and resolve disputes and security issues",
+        "For any other lawful, legitimate business purpose"
+      ]
+    },
+    {
+      "id": "information-sharing",
+      "title": "How We Share Your Personal Information",
+      "content": "In addition to any sharing described elsewhere in this Website Privacy Policy, we may share your information with third parties in some circumstances as follows:",
+      "sharingCategories": [
+        {
+          "category": "Service Providers",
+          "description": "We share personal information with third-party service providers who perform services on our behalf, such as technology providers (including web platforms and hosting providers, email communications providers, analytics providers, and data storage providers)."
+        },
+        {
+          "category": "Business Transaction or Reorganization",
+          "description": "We may take part in or be involved with a corporate business transaction, such as a merger, acquisition, joint venture, or financing or sale of company assets. We may disclose personal information to a third party during negotiation of, in connection with or as an asset in such a corporate business transaction. Personal information may also be disclosed in the event of insolvency, bankruptcy, or receivership."
+        },
+        {
+          "category": "Legal Obligations and Rights",
+          "description": "We may disclose personal information to third parties, such as legal advisors and law enforcement:",
+          "circumstances": [
+            "in connection with the establishment, exercise, or defense of legal claims",
+            "to comply with laws or to respond to lawful requests and legal process",
+            "to protect the rights and property of us, our agents, customers, and others, including to enforce our agreements, policies, and terms of use",
+            "to detect, suppress, or prevent fraud",
+            "to reduce credit risk and collect debts owed to us",
+            "to protect the health and safety of us, our customers, or any person",
+            "as otherwise required by applicable law"
+          ]
+        },
+        {
+          "category": "Consent",
+          "description": "Without limiting the foregoing, we may disclose personal information about you to certain other third parties with your consent."
+        }
+      ]
+    },
+    {
+      "id": "user-controls",
+      "title": "Control Over Your Information",
+      "subsections": [
+        {
+          "id": "online-privacy-choices",
+          "title": "Online Privacy Choices",
+          "content": "We may work with advertisers, advertising networks, advertising servers, and analytics companies (\"Ad Partners\") that use data collection technologies to understand how our Website is being used and to analyze your browsing history in order to deliver advertising relevant to your interests, as well as to provide advertising-related insights. These advertisements may appear on other websites or services, including through social media networks. These Ad Partners may be able to associate devices across third-party websites or services over time and link various devices used by the same individual.",
+          "optOut": {
+            "description": "For more information about how Ad Partners use the information collected by these technologies and your options for restricting cookies placed by some of these Ad Partners, please visit the DAA's opt-out page. The DAA's opt-outs are device- and browser-specific and may not work on all devices. If you choose to opt-out through the DAA's tools it does not mean you will cease to see advertising. Rather, the ads you see will be based on the website you are visiting and not your interests.",
+            "url": "http://optout.aboutads.info/",
+            "limitations": [
+              "Device- and browser-specific",
+              "May not work on all devices",
+              "Will still see advertising, but not interest-based"
+            ]
+          }
+        },
+        {
+          "id": "communications-preferences",
+          "title": "Communications Preferences",
+          "content": "You can stop receiving promotional email communications from us by clicking on the \"unsubscribe link\" provided in the email. You may not opt-out of service-related communications (e.g., account verification, transactional communications, changes/updates to features of the Website, technical and security notices).",
+          "optOutOptions": [
+            "Click unsubscribe link in promotional emails"
+          ],
+          "cannotOptOut": [
+            "Account verification",
+            "Transactional communications",
+            "Changes/updates to features of the Website",
+            "Technical and security notices"
+          ]
+        },
+        {
+          "id": "third-party-properties",
+          "title": "Information You Share on Third-Party Digital Properties",
+          "content": "The Website may include links to third-party websites, plug-ins, and applications. This Website Privacy Policy does not apply to, and we are not responsible for, any personal information practices of third-party websites and online services or the practices of other third parties. To learn about the personal information practices of third parties, please visit their respective privacy notices."
+        }
+      ]
+    },
+    {
+      "id": "policy-updates",
+      "title": "Updates to This Website Privacy Policy",
+      "content": "From time to time, we may revise this Website Privacy Policy to reflect changes to this Website or for other reasons. Therefore, it is important to check this Website Privacy Policy periodically. If we make any material revisions to this Website Privacy Policy, we will update this Website Privacy Policy and change the 'Last Updated' date accordingly. It is the obligation of those visiting this Website to learn of changes to this Website Privacy Policy since their last visit. Any change to this Website Privacy Policy shall be effective once the modified Website Privacy Policy is made available on this website (or as otherwise stated by us)."
+    },
+    {
+      "id": "contact",
+      "title": "Contact Us",
+      "content": "If you have any questions about this Website Privacy Policy, please contact us at: support@vibe.co",
+      "email": "support@vibe.co"
+    }
+  ],
+  "dataCollectionSummary": {
+    "directlyProvided": [
+      "Email addresses",
+      "Contact information",
+      "Newsletter sign-ups"
+    ],
+    "automaticallyCollected": [
+      "IP addresses",
+      "Browser type and version",
+      "Device and connection information",
+      "Web log data",
+      "Cookie data",
+      "Browsing history and behavior"
+    ],
+    "thirdPartyData": [
+      "Gravatar profile pictures (via hashed email)"
+    ]
+  },
+  "usagePurposes": [
+    "Create, maintain, improve, and operate the Website",
+    "Personalize user experience",
+    "Provide technical or administrative support",
+    "Conduct, manage, and grow organization",
+    "Marketing and advertising",
+    "Analyze and research Website usage",
+    "Prevent fraud and unauthorized access",
+    "Investigate and resolve disputes and security issues",
+    "Meet governmental and institutional policy obligations",
+    "Lawful business purposes"
+  ],
+  "thirdPartySharing": {
+    "serviceProviders": [
+      "Technology providers",
+      "Web platforms and hosting providers",
+      "Email communications providers",
+      "Analytics providers",
+      "Data storage providers"
+    ],
+    "otherRecipients": [
+      "Business transaction parties (mergers, acquisitions, etc.)",
+      "Legal advisors",
+      "Law enforcement",
+      "Third parties with user consent"
+    ]
+  },
+  "userRights": {
+    "optOut": {
+      "advertising": {
+        "method": "DAA opt-out page",
+        "url": "http://optout.aboutads.info/",
+        "limitations": "Device- and browser-specific"
+      },
+      "emails": {
+        "method": "Click unsubscribe link in promotional emails",
+        "exceptions": [
+          "Service-related communications",
+          "Account verification",
+          "Transactional communications",
+          "Technical and security notices"
+        ]
+      },
+      "cookies": {
+        "method": "Browser settings or http://www.aboutcookies.org/how-to-control-cookies",
+        "impact": "May not be able to take full advantage of the Website"
+      },
+      "googleAnalytics": {
+        "method": "Google Analytics Opt-Out browser add-on",
+        "url": "https://tools.google.com/dlpage/gaoptout"
+      }
+    }
+  },
+  "technologies": [
+    {
+      "name": "Cookies",
+      "type": "First-party and third-party",
+      "purpose": "Recognition, personalization, advertising, analytics"
+    },
+    {
+      "name": "Pixel Tags",
+      "type": "JavaScript code",
+      "purpose": "Create, read, and write cookie information"
+    },
+    {
+      "name": "Google Analytics",
+      "type": "Analytics service",
+      "purpose": "Track and analyze Website usage"
+    },
+    {
+      "name": "Gravatar",
+      "type": "Profile picture service",
+      "purpose": "Retrieve user profile pictures via hashed email"
+    },
+    {
+      "name": "Web Logs",
+      "type": "Server logs",
+      "purpose": "Record device access data"
+    }
+  ],
+  "legalBases": [
+    "Consent (for certain marketing activities)",
+    "Legitimate business interests",
+    "Legal obligations",
+    "Contract performance"
+  ],
+  "retentionPolicy": "Not explicitly stated in the privacy policy",
+  "internationalTransfers": "Not explicitly stated in the privacy policy",
+  "childrenPrivacy": "Not explicitly stated in the privacy policy",
+  "securityMeasures": "Not explicitly stated in the privacy policy",
+  "metadata": {
+    "scrapedDate": "2025-10-05",
+    "sourceUrl": "https://www.vibe.co/legal/privacy-policy",
+    "policyType": "Website Privacy Policy",
+    "jurisdiction": "Not specified"
+  }
+}

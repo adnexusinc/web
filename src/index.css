@@ -243,3 +243,48 @@
     padding-right: 6rem;
   }
 }
+
+/* Navigation Menu Animations - Glossy fade in/out */
+[data-radix-navigation-menu-viewport] {
+  animation-duration: 300ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-state="open"] > [data-radix-navigation-menu-viewport] {
+  animation-name: fadeInScale;
+}
+
+[data-state="closed"] > [data-radix-navigation-menu-viewport] {
+  animation-name: fadeOutScale;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fadeOutScale {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.96) translateY(-8px);
+  }
+}
+
+/* Glossy glass effect on navigation dropdowns */
+[data-radix-navigation-menu-viewport] {
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+              0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+}
