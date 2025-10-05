@@ -22,6 +22,7 @@ const CaseStudies = lazy(() => import("./pages/CaseStudies"));
 const Company = lazy(() => import("./pages/Company"));
 const About = lazy(() => import("./pages/About"));
 const Resources = lazy(() => import("./pages/Resources"));
+const Enterprise = lazy(() => import("./pages/Enterprise"));
 
 // Case study pages (unique layouts)
 const DamonMotorcycles = lazy(() => import("./pages/case-study/DamonMotorcycles"));
@@ -105,6 +106,7 @@ const App = () => (
             {/* Agency */}
             <Route path="/agency" element={<UnifiedPage config={pageConfigs['/agency']} />} />
             <Route path="/agency/services" element={<UnifiedPage config={pageConfigs['/agency/services']} />} />
+            <Route path="/enterprise" element={<Enterprise />} />
 
             {/* Services */}
             <Route path="/services/ai" element={<UnifiedPage config={pageConfigs['/services/ai']} />} />
