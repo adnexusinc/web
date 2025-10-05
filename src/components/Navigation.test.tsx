@@ -11,7 +11,7 @@ describe('Navigation', () => {
 
   it('renders main navigation links', () => {
     render(<Navigation />);
-    expect(screen.getByText('Products')).toBeInTheDocument();
+    expect(screen.getByText('Product')).toBeInTheDocument();
     expect(screen.getByText('Solutions')).toBeInTheDocument();
     expect(screen.getByText('Pricing')).toBeInTheDocument();
   });
