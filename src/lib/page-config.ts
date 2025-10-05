@@ -34,8 +34,8 @@ export const pageConfigs: Record<string, PageConfig> = {
     title: 'Demand Side Platform',
     subtitle: 'Enterprise-grade programmatic buying platform powered by AI ✨',
     description: 'Execute campaigns with precision targeting across 100M+ daily auctions. Our DSP combines machine learning with real-time optimization for superior performance.',
-    heroButtonText: 'Contact Sales',
-    heroButtonLink: '/#contact',
+    heroButtonText: 'Book a Demo',
+    heroButtonLink: 'https://cal.com/adnexus',
     features: [
       {
         icon: Brain,
