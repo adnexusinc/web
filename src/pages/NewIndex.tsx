@@ -369,7 +369,7 @@ const NewIndex = () => {
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
           {/* Title with Network Ticker */}
           <div className="mb-12 flex items-center gap-6">
-            <h2 className="text-3xl md:text-5xl font-bold text-white whitespace-nowrap">
+            <h2 className="text-base md:text-lg font-medium text-white whitespace-nowrap">
               Stream on the most popular networks!
             </h2>
             <div className="overflow-hidden flex-1">
