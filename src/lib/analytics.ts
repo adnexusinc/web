@@ -2,9 +2,9 @@
 
 declare global {
   interface Window {
-    gtag?: (...args: any[]) => void;
-    fbq?: (...args: any[]) => void;
-    dataLayer?: any[];
+    gtag?: (...args: unknown[]) => void;
+    fbq?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
   }
 }
 
@@ -34,7 +34,7 @@ export interface AnalyticsEventData {
   label?: string;
   value?: number;
   page?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 class Analytics {
@@ -278,7 +278,7 @@ class Analytics {
   /**
    * Set user properties (for GA4)
    */
-  setUserProperty(property: string, value: any) {
+  setUserProperty(property: string, value: string | number | boolean) {
     if (typeof window === 'undefined' || !window.gtag) return;
 
     window.gtag('set', 'user_properties', {

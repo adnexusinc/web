@@ -79,8 +79,14 @@ export const StudioLeadForm: React.FC<StudioLeadFormProps> = ({
       if (error) throw error;
 
       // Track event (can be connected to PostHog later)
-      if (typeof window !== 'undefined' && (window as any).posthog) {
-        (window as any).posthog.capture('studio_lead_form_submitted', {
+      interface WindowWithPostHog extends Window {
+        posthog?: {
+          capture: (event: string, properties?: Record<string, unknown>) => void;
+        };
+      }
+      const windowWithPostHog = window as WindowWithPostHog;
+      if (typeof window !== 'undefined' && windowWithPostHog.posthog) {
+        windowWithPostHog.posthog.capture('studio_lead_form_submitted', {
           use_case: values.useCase,
           has_company: !!values.company,
           has_message: !!values.message,
@@ -104,8 +110,14 @@ export const StudioLeadForm: React.FC<StudioLeadFormProps> = ({
       });
 
       // Track error
-      if (typeof window !== 'undefined' && (window as any).posthog) {
-        (window as any).posthog.capture('studio_lead_form_error', {
+      interface WindowWithPostHog extends Window {
+        posthog?: {
+          capture: (event: string, properties?: Record<string, unknown>) => void;
+        };
+      }
+      const windowWithPostHog = window as WindowWithPostHog;
+      if (typeof window !== 'undefined' && windowWithPostHog.posthog) {
+        windowWithPostHog.posthog.capture('studio_lead_form_error', {
           error: error instanceof Error ? error.message : 'Unknown error',
         });
       }
