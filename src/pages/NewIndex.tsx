@@ -368,14 +368,14 @@ const NewIndex = () => {
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
           {/* Title with Network Ticker */}
-          <div className="mb-8 flex items-center justify-center gap-4 flex-wrap">
-            <h2 className="text-3xl md:text-4xl font-bold text-white whitespace-nowrap">
+          <div className="mb-12 flex items-center gap-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-white whitespace-nowrap">
               Stream on the most popular networks!
             </h2>
-            <div className="overflow-hidden max-w-2xl">
+            <div className="overflow-hidden flex-1">
               <div className="flex animate-ticker whitespace-nowrap">
                 {['CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi'].map((network, index) => (
-                  <span key={index} className="text-2xl md:text-3xl font-bold text-white/80 mx-6">
+                  <span key={index} className="text-2xl md:text-3xl text-white mx-8 inline-block">
                     {network}
                   </span>
                 ))}
