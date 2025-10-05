@@ -1,8 +1,5 @@
 # Adnexus - Enterprise Programmatic Advertising Platform
 
-## 🚀 Production URL
-**Live Site**: https://lovable.dev/projects/74ffa50d-c765-4188-8d31-34db3e546d99
-
 ## 🌙 Overview
 Adnexus is an enterprise-grade programmatic advertising platform offering DSP, SSP, and ADX capabilities with a focus on premium CTV inventory. Built with Quantcast-level sophistication and AI-powered optimization.
 
