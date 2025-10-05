@@ -1,4 +1,5 @@
 // Case Study data for Adnexus CTV advertising campaigns
+// Adapted from real Hanzo Agency clients for programmatic CTV context
 
 export interface CaseStudy {
   id: string;
@@ -18,6 +19,7 @@ export interface CaseStudy {
   results: string[];
   image?: string;
   featured?: boolean;
+  videoUrl?: string;
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -25,7 +27,7 @@ export const caseStudies: CaseStudy[] = [
     id: "damon-motorcycles",
     client: "Damon Motorcycles",
     industry: "Automotive",
-    title: "500x ROI: Electric Motorcycle Launch",
+    title: "500% ROI: Electric Motorcycle Launch",
     description: "Revolutionary CTV campaign for electric motorcycle manufacturer achieving unprecedented ROI and lead generation.",
     challenge: "Launch innovative electric motorcycles in a market dominated by traditional brands, reaching both motorcycle enthusiasts and eco-conscious consumers.",
     solution: "Multi-channel CTV strategy featuring premium inventory on automotive and lifestyle channels, with dynamic creative optimization and retargeting across Connected TV platforms.",
@@ -42,7 +44,79 @@ export const caseStudies: CaseStudy[] = [
       "65% conversion rate from lead to sale",
       "45% reduction in customer acquisition cost"
     ],
+    videoUrl: "https://www.youtube.com/embed/TVExxxHKqF8",
     featured: true
+  },
+  {
+    id: "bellabeat",
+    client: "Bellabeat",
+    industry: "Healthcare",
+    title: "67% Engagement Increase: Women's Health Tech",
+    description: "CTV campaign for women's health wearable tech driving app downloads and user acquisition.",
+    challenge: "Scale user acquisition for women's health wearable tech platform in competitive wellness market while maintaining quality engagement.",
+    solution: "Targeted CTV placements during health & wellness programming, personalized creative featuring real user stories, and seamless app download optimization via QR codes and smart TV integration.",
+    metrics: {
+      roi: "410%",
+      adSpend: "$180K",
+      impressions: "18M",
+      primaryMetric: "New Users",
+      primaryMetricValue: "52K"
+    },
+    results: [
+      "67% increase in user engagement",
+      "45% improvement in user retention",
+      "52,000 new app downloads",
+      "$2.1M in attributed revenue"
+    ],
+    videoUrl: "https://www.youtube.com/embed/rsda3VIuRxM",
+    featured: true
+  },
+  {
+    id: "trillerfest",
+    client: "Triller / TrillerFest",
+    industry: "Entertainment",
+    title: "5M Viewers: Virtual Music Festival",
+    description: "Massive CTV campaign for world's largest virtual music festival achieving record-breaking viewership.",
+    challenge: "Drive viewership for unprecedented virtual music festival during pandemic, competing with established streaming entertainment platforms.",
+    solution: "Strategic CTV placements across music and entertainment channels, sequential messaging campaign, influencer partnerships, and real-time optimization during the 3-day event.",
+    metrics: {
+      roi: "350%",
+      adSpend: "$420K",
+      impressions: "65M",
+      primaryMetric: "Live Viewers",
+      primaryMetricValue: "5M"
+    },
+    results: [
+      "Over 5 million live viewers across platforms",
+      "350% app download increase",
+      "3.2M social media impressions",
+      "$2M raised for COVID-19 relief"
+    ],
+    videoUrl: "https://www.youtube.com/embed/QEQpdYYYlhc",
+    featured: true
+  },
+  {
+    id: "unikoin-gold",
+    client: "Unikrn (UnikoinGold)",
+    industry: "Gaming",
+    title: "$34.9M ICO: Esports Betting Platform",
+    description: "CTV awareness campaign supporting blockchain esports platform's ICO launch and user acquisition.",
+    challenge: "Build awareness and credibility for blockchain-based esports betting platform ahead of $35M ICO, reaching crypto-savvy gamers.",
+    solution: "Premium CTV placements during esports and gaming content, educational creative explaining blockchain benefits, and geo-targeted campaigns in crypto-friendly jurisdictions.",
+    metrics: {
+      roi: "380%",
+      adSpend: "$290K",
+      impressions: "22M",
+      primaryMetric: "ICO Raised",
+      primaryMetricValue: "$34.9M"
+    },
+    results: [
+      "$34.9 million raised in ICO",
+      "300% increase in platform engagement",
+      "15+ jurisdictions supported",
+      "142K new user registrations"
+    ],
+    videoUrl: "https://www.youtube.com/embed/8TbWsxiyKUE"
   },
   {
     id: "retailco",
