@@ -52,7 +52,7 @@ const Payment = () => {
     // Default to agency plan
     return {
       name: 'Agency Service',
-      price: '$5,000',
+      price: '$9,999',
       billing: 'per month',
       features: [
         'Dedicated Creative Director',

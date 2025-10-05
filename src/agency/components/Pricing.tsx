@@ -85,7 +85,7 @@ const Pricing = () => {
             </CardFooter>
           </Card>
           
-          {/* Enterprise Plan */}
+          {/* Agency Services */}
           <Card className="border border-black/10 overflow-hidden flex flex-col h-full bg-[#282828]">
             <CardHeader className="bg-black p-8 text-white text-center">
               <h3 className="text-2xl font-bold mb-2 uppercase">Enterprise</h3>

@@ -105,7 +105,7 @@ const Enterprise = () => {
           <section className="py-16 bg-neutral-900">
             <div className="container-custom">
               <div className="text-center mb-16">
-                <h2 className="text-3xl font-bold mb-6">Enterprise Plan Features</h2>
+                <h2 className="text-3xl font-bold mb-6">Agency Services Features</h2>
                 <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
                   Choose a flex or dedicated team subscription to get access to all of our creative services in one place.
                 </p>
@@ -237,7 +237,7 @@ const Enterprise = () => {
                       </li>
                     </ul>
                     <p className="text-sm text-foreground/70 mt-4">
-                      Flex subscriptions range from $5,000 to $100,000 USD/month.
+                      Flex subscriptions range from $9,999 to $100,000 USD/month.
                     </p>
                   </div>
                 </div>

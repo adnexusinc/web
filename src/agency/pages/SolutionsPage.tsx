@@ -313,7 +313,7 @@ const SolutionsPage = () => {
               <div className="p-1 bg-gradient-to-r from-blue-600 via-purple-600 to-emerald-600 rounded-xl">
                 <div className="bg-gray-900 p-8 rounded-lg">
                   <h3 className="text-2xl font-bold mb-6">Enterprise Solutions Package</h3>
-                  <div className="text-4xl font-bold mb-4">$5,000<span className="text-xl font-normal">/month</span></div>
+                  <div className="text-4xl font-bold mb-4">$9,999<span className="text-xl font-normal">/month</span></div>
                   <p className="text-gray-300 mb-8">Comprehensive access to our full suite of capabilities and industry expertise.</p>
 
                   <ul className="space-y-4 mb-8">

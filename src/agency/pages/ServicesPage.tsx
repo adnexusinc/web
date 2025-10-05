@@ -119,8 +119,8 @@ const ServicesPage: React.FC = () => {
             <div className="max-w-lg mx-auto">
               <div className="bg-gray-800 border border-gray-700 rounded-2xl overflow-hidden">
                 <div className="p-8 bg-blue-600 text-center">
-                  <h3 className="text-3xl font-bold mb-2">Enterprise Plan</h3>
-                  <div className="text-5xl font-bold my-6">$5,000<span className="text-xl font-normal">/month</span></div>
+                  <h3 className="text-3xl font-bold mb-2">Agency Services</h3>
+                  <div className="text-5xl font-bold my-6">$9,999<span className="text-xl font-normal">/month</span></div>
                   <p className="text-lg opacity-90">Billed monthly. Cancel anytime.</p>
                 </div>
 
@@ -219,7 +219,7 @@ const ServicesPage: React.FC = () => {
 
               <div className="flex flex-wrap justify-center gap-4">
                 <Link to="/login" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
-                  Sign Up for $5,000/month <ArrowRight className="ml-2 h-5 w-5" />
+                  Sign Up for $9,999/month <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <a href="https://cal.com/adnexus/z1YsZQrqR4s6jQqD8" className="border border-white px-8 py-4 rounded-full font-medium hover:bg-white/10 inline-flex items-center text-lg">
                   Schedule a Consultation
