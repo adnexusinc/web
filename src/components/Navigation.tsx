@@ -505,9 +505,9 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col gap-6 mt-6">
                   <div>
-                    <h3 className="font-semibold mb-3">Products</h3>
+                    <h3 className="font-semibold mb-3">By Goal</h3>
                     <div className="space-y-2">
-                      {productItems.map((item) => (
+                      {goalItems.map((item) => (
                         <Link
                           key={item.title}
                           to={item.href}
@@ -524,6 +524,46 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                         </Link>
                       ))}
                     </div>
+                  </div>
+
+                  <div>
+                    <h3 className="font-semibold mb-3">By Feature</h3>
+                    <div className="space-y-2">
+                      {featureItems.slice(0, 3).map((item) => (
+                        <Link
+                          key={item.title}
+                          to={item.href}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="block p-2 rounded-lg hover:bg-accent transition-colors"
+                        >
+                          <div className="flex items-center gap-3">
+                            <item.icon className="w-4 h-4 text-primary" />
+                            <div>
+                              <div className="font-medium">{item.title}</div>
+                              <div className="text-xs text-muted-foreground">{item.description}</div>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Studio CTA for Mobile */}
+                  <div className="p-4 bg-gradient-to-br from-purple-600/10 to-blue-600/10 rounded-lg border border-purple-600/20">
+                    <Film className="h-8 w-8 text-purple-400 mb-2" />
+                    <h3 className="font-bold mb-1">Ad Studio</h3>
+                    <p className="text-xs text-muted-foreground mb-3">
+                      Create a TV ad spot for free in 2 minutes
+                    </p>
+                    <a
+                      href="https://studio.ad.nexus"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-medium text-center transition-colors"
+                    >
+                      Open Studio →
+                    </a>
                   </div>
 
                   <div>
