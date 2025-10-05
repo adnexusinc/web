@@ -24,7 +24,21 @@ const About = lazy(() => import("./pages/About"));
 const Resources = lazy(() => import("./pages/Resources"));
 const Enterprise = lazy(() => import("./pages/Enterprise"));
 
-// Case study pages (unique layouts)
+// Agency pages (full Hanzo Agency site under /agency)
+const AgencyIndex = lazy(() => import("./agency/pages/Index"));
+const AgencyOurWork = lazy(() => import("./agency/pages/OurWork"));
+const AgencyCaseStudy = lazy(() => import("./agency/pages/CaseStudy"));
+const AgencyPricing = lazy(() => import("./agency/pages/Pricing"));
+const AgencyContact = lazy(() => import("./agency/pages/Contact"));
+const AgencyFAQ = lazy(() => import("./agency/pages/FAQ"));
+const AgencyEnterprise = lazy(() => import("./agency/pages/Enterprise"));
+const AgencyOnboarding = lazy(() => import("./agency/pages/Onboarding"));
+const AgencyOnboardingSuccess = lazy(() => import("./agency/pages/OnboardingSuccess"));
+const AgencyPayment = lazy(() => import("./agency/pages/Payment"));
+const AgencyServicesPage = lazy(() => import("./agency/pages/ServicesPage"));
+const AgencySolutionsPage = lazy(() => import("./agency/pages/SolutionsPage"));
+
+// Case study pages (unique layouts) - CTV advertising
 const DamonMotorcycles = lazy(() => import("./pages/case-study/DamonMotorcycles"));
 const TrillerFest = lazy(() => import("./pages/case-study/TrillerFest"));
 const UnikoinGold = lazy(() => import("./pages/case-study/UnikoinGold"));
@@ -103,9 +117,21 @@ const App = () => (
             <Route path="/premium" element={<UnifiedPage config={pageConfigs['/premium']} />} />
             <Route path="/ctv" element={<UnifiedPage config={pageConfigs['/ctv']} />} />
 
-            {/* Agency */}
-            <Route path="/agency" element={<UnifiedPage config={pageConfigs['/agency']} />} />
-            <Route path="/agency/services" element={<UnifiedPage config={pageConfigs['/agency/services']} />} />
+            {/* Agency - Full Hanzo Agency site */}
+            <Route path="/agency" element={<AgencyIndex />} />
+            <Route path="/agency/our-work" element={<AgencyOurWork />} />
+            <Route path="/agency/case-study/:id" element={<AgencyCaseStudy />} />
+            <Route path="/agency/pricing" element={<AgencyPricing />} />
+            <Route path="/agency/contact" element={<AgencyContact />} />
+            <Route path="/agency/faq" element={<AgencyFAQ />} />
+            <Route path="/agency/enterprise" element={<AgencyEnterprise />} />
+            <Route path="/agency/onboarding" element={<AgencyOnboarding />} />
+            <Route path="/agency/onboarding-success" element={<AgencyOnboardingSuccess />} />
+            <Route path="/agency/payment" element={<AgencyPayment />} />
+            <Route path="/agency/services" element={<AgencyServicesPage />} />
+            <Route path="/agency/services/*" element={<AgencyServicesPage />} />
+            <Route path="/agency/solutions" element={<AgencySolutionsPage />} />
+            <Route path="/agency/capabilities/*" element={<AgencySolutionsPage />} />
             <Route path="/enterprise" element={<Enterprise />} />
 
             {/* Services */}
