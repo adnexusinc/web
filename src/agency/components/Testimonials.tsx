@@ -7,28 +7,28 @@ const testimonials = [
     title: "Co-founder & CTO, Finch",
     avatar: "SL",
     quote:
-      "As a startup, the flexibility, speed, and quality of Hanzo's designs are fantastic. They have saved us the need to recruit and hire a full-time designer.",
+      "As a startup, the flexibility, speed, and quality of Adnexus's designs are fantastic. They have saved us the need to recruit and hire a full-time designer.",
   },
   {
     name: "Mike H",
     title: "Founder & CEO at AdLib",
     avatar: "MH",
     quote:
-      "Had a great experience redesigning marketing assets with Rich and Hanzo. Their work is really premium and made a huge difference.",
+      "Had a great experience redesigning marketing assets with Rich and Adnexus. Their work is really premium and made a huge difference.",
   },
   {
     name: "Matthew D",
     title: "Founder & CEO at Data Daddy",
     avatar: "MD",
     quote:
-      "We connected with Rich. Impressed by their growth-focused approach and commitment to results, we chose Hanzo and look forward to ongoing collaboration.",
+      "We connected with Rich. Impressed by their growth-focused approach and commitment to results, we chose Adnexus and look forward to ongoing collaboration.",
   },
   {
     name: "Danny K",
     title: "Founder, EZ-Oil",
     avatar: "DK",
     quote:
-      "It's been a wonderful experience working with Hanzo. They offer great flexibility and quality work, truly exceeding our expectations. A premium, yet approachable choice.",
+      "It's been a wonderful experience working with Adnexus. They offer great flexibility and quality work, truly exceeding our expectations. A premium, yet approachable choice.",
   },
   {
     name: "Laura Liles",

@@ -22,18 +22,18 @@ const unikoinGold: CaseStudyData = {
   videoId: "unikoingold-hero",
   overview: [
     "Unikrn, established in 2014, is a leading esports entertainment and betting platform. To enhance its offerings, Unikrn introduced UnikoinGold (UKG), an ERC20 token on the Ethereum blockchain.",
-    "The token aimed to create a decentralized, community-driven virtual economy for esports enthusiasts. Hanzo partnered with Unikrn to address regulatory challenges, implement blockchain solutions, and enhance user engagement."
+    "The token aimed to create a decentralized, community-driven virtual economy for esports enthusiasts. Adnexus partnered with Unikrn to address regulatory challenges, implement blockchain solutions, and enhance user engagement."
   ],
   challenge: [
     "The integration of blockchain technology into Unikrn's platform presented several challenges including regulatory compliance across various jurisdictions and technological integration of blockchain systems.",
     "Developing features that would drive adoption of UnikoinGold among the esports community was also crucial for the success of the project."
   ],
   solution: [
-    "Hanzo collaborated with Unikrn to develop a sophisticated compliance framework, distinguishing between Full Service Jurisdictions and Limited Jurisdictions to navigate the complex regulatory landscape.",
+    "Adnexus collaborated with Unikrn to develop a sophisticated compliance framework, distinguishing between Full Service Jurisdictions and Limited Jurisdictions to navigate the complex regulatory landscape.",
     "Our team assisted in designing and implementing Ethereum smart contracts, ensuring that transactions were publicly accessible, open, and transparent. We created secure API endpoints to connect Unikrn's existing platform with the Ethereum blockchain."
   ],
   testimonial: {
-    quote: "Hanzo's expertise in blockchain technology and regulatory compliance was instrumental in bringing UnikoinGold to market. Their strategic insights helped us navigate complex challenges while their technical implementation enabled us to create a truly decentralized ecosystem for our users.",
+    quote: "Adnexus's expertise in blockchain technology and regulatory compliance was instrumental in bringing UnikoinGold to market. Their strategic insights helped us navigate complex challenges while their technical implementation enabled us to create a truly decentralized ecosystem for our users.",
     author: "Rahul Sood",
     role: "CEO at Unikrn"
   },

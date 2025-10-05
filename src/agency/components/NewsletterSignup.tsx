@@ -90,7 +90,7 @@ const NewsletterSignup = () => {
         
         <div className="mt-6 flex justify-center space-x-4">
           <a 
-            href="https://twitter.com/intent/tweet?text=Check%20out%20Hanzo%20AI%20-%20accelerating%20business%20with%20AI%20innovation&url=https://hanzo.ai" 
+            href="https://twitter.com/intent/tweet?text=Check%20out%20Adnexus%20AI%20-%20accelerating%20business%20with%20AI%20innovation&url=https://ad.nexus" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors"
@@ -100,7 +100,7 @@ const NewsletterSignup = () => {
             </svg>
           </a>
           <a 
-            href="https://www.linkedin.com/sharing/share-offsite/?url=https://hanzo.ai" 
+            href="https://www.linkedin.com/sharing/share-offsite/?url=https://ad.nexus" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-white transition-colors"

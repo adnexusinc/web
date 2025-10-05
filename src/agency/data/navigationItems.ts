@@ -296,14 +296,14 @@ export const navigationItems: NavigationItem[] = [
     featured: [
       {
         title: "AI Cloud Platform",
-        href: "https://cloud.hanzo.ai",
+        href: "https://cloud.ad.nexus",
         description: "Our enterprise AI platform for scalable, secure solutions.",
         cta: "Explore platform",
         isExternal: true
       },
       {
         title: "DX Platform",
-        href: "https://hanzo.ai",
+        href: "https://ad.nexus",
         description: "Our digital experience platform for enterprise transformation",
         cta: "Learn more",
         isExternal: true

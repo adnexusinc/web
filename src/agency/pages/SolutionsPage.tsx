@@ -260,7 +260,7 @@ const SolutionsPage = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6">Why Choose Hanzo Solutions</h2>
+              <h2 className="text-4xl font-bold mb-6">Why Choose Adnexus Solutions</h2>
               <p className="text-lg text-gray-300 mb-8">
                 Our unique approach combines deep industry expertise with cutting-edge technology to deliver measurable results.
               </p>
@@ -456,7 +456,7 @@ const SolutionsPage = () => {
               <Link to="/login" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
                 Get Started Today <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-              <a href="https://calendar.app.google/z1YsZQrqR4s6jQqD8" className="border border-white px-8 py-4 rounded-full font-medium hover:bg-white/10 inline-flex items-center text-lg">
+              <a href="https://cal.com/adnexus/z1YsZQrqR4s6jQqD8" className="border border-white px-8 py-4 rounded-full font-medium hover:bg-white/10 inline-flex items-center text-lg">
                 Schedule a Consultation
               </a>
             </div>

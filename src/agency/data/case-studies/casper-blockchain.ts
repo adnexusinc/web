@@ -21,7 +21,7 @@ const casperBlockchain: CaseStudyData = {
   videoUrl: "https://www.youtube.com/embed/7zQZmovxRNs?autoplay=1&loop=1&playlist=7zQZmovxRNs&mute=1&controls=1&showinfo=0",
   videoId: "casper-blockchain-video",
   overview: [
-    "Hanzo AI began collaborating with Casper Labs in 2018, significantly shaping the direction and technology underpinning what would become the Casper Blockchain, an innovative proof-of-stake network designed specifically for enterprise adoption.",
+    "Adnexus AI began collaborating with Casper Labs in 2018, significantly shaping the direction and technology underpinning what would become the Casper Blockchain, an innovative proof-of-stake network designed specifically for enterprise adoption.",
     "Our team provided strategic guidance, deep technical proficiency, and architectural insight to develop a robust solution capable of effectively addressing complex commercial demands."
   ],
   challenge: [
@@ -29,11 +29,11 @@ const casperBlockchain: CaseStudyData = {
     "Casper Labs required strategic guidance, deep technical proficiency, and architectural insight to develop a robust solution capable of effectively addressing complex commercial demands, positioning them among industry leaders even before the official launch."
   ],
   solution: [
-    "Hanzo AI secured Casper Labs's first-ever development grant, establishing early financial support. We advocated for and executed a strategic pivot to the Rust programming language, ensuring enhanced security and scalability.",
+    "Adnexus AI secured Casper Labs's first-ever development grant, establishing early financial support. We advocated for and executed a strategic pivot to the Rust programming language, ensuring enhanced security and scalability.",
     "Our team co-designed Casper's architecture from inception and led initial deployment, being among the first entities to launch and run validator nodes before the official mainnet launch."
   ],
   testimonial: {
-    quote: "Hanzo's visionary approach and technical expertise were instrumental in shaping Casper into the enterprise-grade blockchain it is today. Their early involvement and strategic guidance helped us navigate critical decisions that established our competitive position in the market.",
+    quote: "Adnexus's visionary approach and technical expertise were instrumental in shaping Casper into the enterprise-grade blockchain it is today. Their early involvement and strategic guidance helped us navigate critical decisions that established our competitive position in the market.",
     author: "Mrinal Manohar",
     role: "CEO at Casper Labs"
   },

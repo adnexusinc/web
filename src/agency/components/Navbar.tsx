@@ -98,8 +98,8 @@ const Navbar = () => {
         <div className="container-custom">
           <div className="flex items-center justify-between w-full">
             <Link to="/" className="flex items-center gap-3 py-1">
-              <img src="/images/logo/logo.png" alt="Hanzo" className="h-8 w-auto" />
-              <span className="text-xl font-semibold tracking-tight">Hanzo</span>
+              <img src="/images/logo/logo.png" alt="Adnexus" className="h-8 w-auto" />
+              <span className="text-xl font-semibold tracking-tight">Adnexus</span>
             </Link>
             
             <div className="container mx-auto max-w-screen-2xl px-6 flex justify-center">
@@ -421,7 +421,7 @@ const Navbar = () => {
             </div>
             
             <div className="hidden lg:flex items-center gap-4">
-              <a href="https://cloud.hanzo.ai" className="border border-white/60 hover:border-white px-6 py-2.5 rounded-full text-foreground/90 hover:text-white font-medium transition">
+              <a href="https://cloud.ad.nexus" className="border border-white/60 hover:border-white px-6 py-2.5 rounded-full text-foreground/90 hover:text-white font-medium transition">
                 Console
               </a>
               <Link to="/login" className="bg-white text-black px-7 py-2.5 rounded-full font-medium hover:bg-white/90 inline-flex items-center whitespace-nowrap">
@@ -559,7 +559,7 @@ const Navbar = () => {
               
               <Link to="/help" className="text-foreground/90 hover:text-foreground py-2 font-medium transition" onClick={() => setIsMenuOpen(false)}>Help</Link>
               <Link to="/pricing" className="text-foreground/90 hover:text-foreground py-2 font-medium transition" onClick={() => setIsMenuOpen(false)}>Pricing</Link>
-              <a href="https://cloud.hanzo.ai" className="text-foreground/90 hover:text-white py-2 font-medium transition border border-white/60 hover:border-white rounded-full px-6 py-2.5 inline-block mt-4" onClick={handleMobileLinkClick}>Console</a>
+              <a href="https://cloud.ad.nexus" className="text-foreground/90 hover:text-white py-2 font-medium transition border border-white/60 hover:border-white rounded-full px-6 py-2.5 inline-block mt-4" onClick={handleMobileLinkClick}>Console</a>
               <Link to="/login" className="bg-white text-black px-7 py-2.5 rounded-full font-medium hover:bg-white/90 inline-flex items-center whitespace-nowrap mt-4" onClick={() => setIsMenuOpen(false)}>
                 Sign Up
               </Link>

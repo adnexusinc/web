@@ -177,7 +177,7 @@ const ServicesPage: React.FC = () => {
                   <img src="/images/casper/logo.png" alt="Casper" className="h-8" />
                 </div>
                 <p className="text-gray-300 mb-4">
-                  "Hanzo's AI-enhanced creative approach helped us increase our conversion rates by 65% while maintaining our brand identity."
+                  "Adnexus's AI-enhanced creative approach helped us increase our conversion rates by 65% while maintaining our brand identity."
                 </p>
                 <p className="font-medium">Marketing Director, Casper</p>
               </div>
@@ -187,7 +187,7 @@ const ServicesPage: React.FC = () => {
                   <img src="/images/triller/logo.png" alt="Triller" className="h-8" />
                 </div>
                 <p className="text-gray-300 mb-4">
-                  "The team at Hanzo delivered exceptional creative assets that helped us stand out in a crowded marketplace."
+                  "The team at Adnexus delivered exceptional creative assets that helped us stand out in a crowded marketplace."
                 </p>
                 <p className="font-medium">CMO, Triller</p>
               </div>
@@ -197,7 +197,7 @@ const ServicesPage: React.FC = () => {
                   <img src="/images/damon/logo.png" alt="Damon Motorcycles" className="h-8" />
                 </div>
                 <p className="text-gray-300 mb-4">
-                  "Hanzo's work on our brand and marketing materials directly contributed to our successful launch and funding rounds."
+                  "Adnexus's work on our brand and marketing materials directly contributed to our successful launch and funding rounds."
                 </p>
                 <p className="font-medium">CEO, Damon Motorcycles</p>
               </div>
@@ -218,7 +218,7 @@ const ServicesPage: React.FC = () => {
                 <Link to="/login" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
                   Sign Up for $5,000/month <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-                <a href="https://calendar.app.google/z1YsZQrqR4s6jQqD8" className="border border-white px-8 py-4 rounded-full font-medium hover:bg-white/10 inline-flex items-center text-lg">
+                <a href="https://cal.com/adnexus/z1YsZQrqR4s6jQqD8" className="border border-white px-8 py-4 rounded-full font-medium hover:bg-white/10 inline-flex items-center text-lg">
                   Schedule a Consultation
                 </a>
               </div>

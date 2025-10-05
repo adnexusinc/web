@@ -69,7 +69,7 @@ const AICapabilities = () => {
         </div>
         
         <div className="text-center mb-16">
-          <a href="https://calendar.app.google/z1YsZQrqR4s6jQqD8">
+          <a href="https://cal.com/adnexus/z1YsZQrqR4s6jQqD8">
             <Button 
               variant="primary" 
               size="lg" 

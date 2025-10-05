@@ -96,8 +96,8 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-4 space-y-6">
             <div className="flex items-center gap-3 group transition-all duration-300 ease-in-out transform hover:translate-x-1">
-              <img src="/images/logo/logo.png" alt="Hanzo" className="h-10 w-auto" />
-              <span className="text-2xl font-semibold tracking-tight text-white">Hanzo</span>
+              <img src="/images/logo/logo.png" alt="Adnexus" className="h-10 w-auto" />
+              <span className="text-2xl font-semibold tracking-tight text-white">Adnexus</span>
             </div>
 
             <p className="text-gray-400 text-lg max-w-md leading-relaxed">
@@ -105,7 +105,7 @@ const Footer = () => {
             </p>
 
             <div className="pt-4 flex flex-wrap gap-4">
-              <a href="https://calendar.app.google/z1YsZQrqR4s6jQqD8"
+              <a href="https://cal.com/adnexus/z1YsZQrqR4s6jQqD8"
                 className="group bg-black text-white border border-white px-8 py-3.5 rounded-full font-medium hover:bg-white hover:text-black transition-all duration-200 ease-in-out inline-flex items-center">
                 Schedule a Consultation
                 <ArrowUpRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -197,18 +197,18 @@ const Footer = () => {
               <li className="flex items-start gap-3 group hover:translate-x-1 transition-transform duration-200">
                 <MapPin size={20} className="text-gray-400 mt-1 flex-shrink-0 group-hover:text-primary transition-colors duration-200" />
                 <span className="text-gray-400 group-hover:text-white transition-colors duration-200">
-                  Hanzo Industries, Inc.<br />
-                  1828 Golden Gate Ave<br />
-                  San Francisco, CA 94115
+                  Adnexus Technology Inc<br />
+                  Los Angeles, California<br />
+                  
                 </span>
               </li>
               <li className="flex items-center gap-3 group hover:translate-x-1 transition-transform duration-200">
                 <Mail size={20} className="text-gray-400 flex-shrink-0 group-hover:text-primary transition-colors duration-200" />
-                <a href="mailto:hi@hanzo.agency" className="text-gray-400 group-hover:text-white transition-colors duration-200">hi@hanzo.agency</a>
+                <a href="mailto:hi@ad.nexus" className="text-gray-400 group-hover:text-white transition-colors duration-200">hi@ad.nexus</a>
               </li>
               <li className="flex items-center gap-3 group hover:translate-x-1 transition-transform duration-200">
                 <Phone size={20} className="text-gray-400 flex-shrink-0 group-hover:text-primary transition-colors duration-200" />
-                <a href="tel:+14153732496" className="text-gray-400 group-hover:text-white transition-colors duration-200">+1 415 373 2496</a>
+                <a href="tel:+14153732496" className="text-gray-400 group-hover:text-white transition-colors duration-200">+1 844 AD-NEXUS (844-236-3987)</a>
               </li>
             </ul>
           </div>
@@ -217,7 +217,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 mb-6 md:mb-0 flex items-center">
-            <span>© {currentYear} Hanzo Industries Inc.</span>
+            <span>© {currentYear} Adnexus Industries Inc.</span>
             <span className="mx-2 text-gray-700">•</span>
             <span className="flex items-center text-primary/80">
               <span className="mr-1">Made with</span>

@@ -33,7 +33,7 @@ const damonMotorcycles: CaseStudyData = {
     "Our strategy incorporated influencer partnerships with respected motorcycle enthusiasts and sustainability advocates to build trust with multiple audience segments."
   ],
   testimonial: {
-    quote: "The campaign Hanzo created for us exceeded all expectations. Not only did they help us reach new customers, but they truly understood our technology and brand values. The ROI speaks for itself.",
+    quote: "The campaign Adnexus created for us exceeded all expectations. Not only did they help us reach new customers, but they truly understood our technology and brand values. The ROI speaks for itself.",
     author: "Jay Giraud",
     role: "CEO at Damon Motorcycles"
   },

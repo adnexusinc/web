@@ -220,7 +220,7 @@ const Subscribe = () => {
                             Free trial not available
                           </span>
                           <a 
-                            href="https://calendar.app.google/dHbVXQP6g7GvB6fj9" 
+                            href="https://cal.com/adnexus/dHbVXQP6g7GvB6fj9" 
                             target="_blank" 
                             rel="noopener noreferrer" 
                             className="text-white underline mt-1 block hover:text-accent transition-colors"
@@ -507,9 +507,9 @@ const Subscribe = () => {
       <Dialog open={agreementOpen} onOpenChange={setAgreementOpen}>
         <DialogContent className="bg-black border border-white/20 text-white max-w-3xl max-h-[80vh] overflow-auto">
           <DialogHeader>
-            <DialogTitle className="text-xl text-white">Hanzo Free Trial Terms of Service Agreement</DialogTitle>
+            <DialogTitle className="text-xl text-white">Adnexus Free Trial Terms of Service Agreement</DialogTitle>
             <DialogDescription className="text-white/70">
-              This Terms of Service Agreement ("Agreement") governs the relationship between you ("Subscriber") and Hanzo.
+              This Terms of Service Agreement ("Agreement") governs the relationship between you ("Subscriber") and Adnexus.
             </DialogDescription>
           </DialogHeader>
           
@@ -532,7 +532,7 @@ const Subscribe = () => {
             </div>
             
             <p>
-              Subscriber authorizes Hanzo to automatically charge the provided payment method for the monthly subscription fee immediately upon completion of the free trial unless the subscription is explicitly canceled during the trial.
+              Subscriber authorizes Adnexus to automatically charge the provided payment method for the monthly subscription fee immediately upon completion of the free trial unless the subscription is explicitly canceled during the trial.
             </p>
             
             <div>
@@ -545,28 +545,28 @@ const Subscribe = () => {
             <div>
               <h3 className="font-semibold">Cancellation Policy</h3>
               <p>
-                Subscriber agrees to proactively cancel the subscription before the end of the free trial period to avoid automatic billing. Cancellations after this period will apply to the subsequent billing cycle. Subscriber must communicate intent to cancel clearly and explicitly to Hanzo.
+                Subscriber agrees to proactively cancel the subscription before the end of the free trial period to avoid automatic billing. Cancellations after this period will apply to the subsequent billing cycle. Subscriber must communicate intent to cancel clearly and explicitly to Adnexus.
               </p>
             </div>
             
             <div>
               <h3 className="font-semibold">Project Workflow</h3>
               <p>
-                Subscriber will submit requests clearly. Hanzo will deliver designs sequentially, offering unlimited revisions. Subscriber receives full rights and ownership of completed designs and source files upon project completion.
+                Subscriber will submit requests clearly. Adnexus will deliver designs sequentially, offering unlimited revisions. Subscriber receives full rights and ownership of completed designs and source files upon project completion.
               </p>
             </div>
             
             <div>
               <h3 className="font-semibold">Limitation of Liability</h3>
               <p>
-                Hanzo shall not be held liable for any indirect, incidental, special, consequential, or punitive damages resulting from service usage or project outcomes.
+                Adnexus shall not be held liable for any indirect, incidental, special, consequential, or punitive damages resulting from service usage or project outcomes.
               </p>
             </div>
             
             <div>
               <h3 className="font-semibold">Indemnification</h3>
               <p>
-                Subscriber agrees to indemnify Hanzo against claims or liabilities arising from their use of the services, ensuring Hanzo is free from legal repercussions related to subscriber's project content or intended use.
+                Subscriber agrees to indemnify Adnexus against claims or liabilities arising from their use of the services, ensuring Adnexus is free from legal repercussions related to subscriber's project content or intended use.
               </p>
             </div>
           </div>

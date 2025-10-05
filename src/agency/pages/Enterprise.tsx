@@ -38,7 +38,7 @@ const Enterprise = () => {
                 <div className="bg-background/5 rounded-xl p-8 border border-border/20">
                   <h2 className="text-3xl font-bold mb-6">Your creative team's creative team™</h2>
                   <p className="text-lg mb-8">
-                    85% of enterprise creative teams are stretched to their limit. Hanzo expands capabilities and boosts your team's capacity—all through a custom subscription. No hiring required.
+                    85% of enterprise creative teams are stretched to their limit. Adnexus expands capabilities and boosts your team's capacity—all through a custom subscription. No hiring required.
                   </p>
                   <ul className="space-y-4 mb-8">
                     <li className="flex">

@@ -42,18 +42,18 @@ const NewHeader = () => {
   // Links for the logo context menu
   const logoMenuLinks = [
     {
-      title: "Hanzo.ai Main Site",
-      href: "https://hanzo.ai",
+      title: "Adnexus Main Site",
+      href: "https://ad.nexus",
       icon: <ArrowUpRight className="h-4 w-4" />
     },
     {
       title: "Branding Kit",
-      href: "https://hanzo.ai/brand",
+      href: "https://ad.nexus/brand",
       icon: <FileImage className="h-4 w-4" />
     },
     {
       title: "Press Page",
-      href: "https://hanzo.ai/press",
+      href: "https://ad.nexus/press",
       icon: <Book className="h-4 w-4" />
     },
     {
@@ -63,12 +63,12 @@ const NewHeader = () => {
     },
     {
       title: "Brand Page",
-      href: "https://hanzo.ai/brand",
+      href: "https://ad.nexus/brand",
       icon: <Palette className="h-4 w-4" />
     },
     {
-      title: "Zen of Hanzo",
-      href: "https://hanzo.ai/zen",
+      title: "Zen of Adnexus",
+      href: "https://ad.nexus/zen",
       icon: <Coffee className="h-4 w-4" />
     }
   ];
@@ -81,11 +81,11 @@ const NewHeader = () => {
             <img
               ref={logoRef}
               src="/images/logo/logo.png"
-              alt="Hanzo"
+              alt="Adnexus"
               className="h-10 w-auto object-contain"
               onContextMenu={handleLogoContextMenu}
             />
-            <span className="font-bold text-xl text-white">Hanzo</span>
+            <span className="font-bold text-xl text-white">Adnexus</span>
           </Link>
 
           {/* Logo context menu */}
@@ -96,7 +96,7 @@ const NewHeader = () => {
               style={{ boxShadow: '0 10px 25px rgba(0, 0, 0, 0.2)' }}
             >
               <div className="py-2">
-                <div className="px-4 py-2 text-xs text-gray-500 uppercase">Hanzo Resources</div>
+                <div className="px-4 py-2 text-xs text-gray-500 uppercase">Adnexus Resources</div>
                 {logoMenuLinks.map((link, index) => (
                   <a
                     key={index}

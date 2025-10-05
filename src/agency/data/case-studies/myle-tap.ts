@@ -33,7 +33,7 @@ const myleTap: CaseStudyData = {
     "The solution included a simplified user interface that made complex voice command programming accessible to non-technical users, while maintaining powerful functionality for advanced users."
   ],
   testimonial: {
-    quote: "Hanzo understood exactly what was needed to make Myle Tap accessible and appealing to a broad audience. Their work on our mobile app and digital presence significantly contributed to our successful launch and the enthusiastic reception from both media and customers.",
+    quote: "Adnexus understood exactly what was needed to make Myle Tap accessible and appealing to a broad audience. Their work on our mobile app and digital presence significantly contributed to our successful launch and the enthusiastic reception from both media and customers.",
     author: "Pavel Bondarev",
     role: "Founder at Myle Tap"
   },

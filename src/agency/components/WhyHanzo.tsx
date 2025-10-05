@@ -15,7 +15,7 @@ const features = [
   },
 ];
 
-const WhyHanzo = () => {
+const WhyAdnexus = () => {
   return (
     <section id="why-hanzo" className="section-padding bg-beige-100 relative overflow-hidden">
       <div className="absolute -bottom-16 -right-16 w-96 h-96 rounded-full bg-beige-200/50 -z-10"></div>
@@ -26,7 +26,7 @@ const WhyHanzo = () => {
             Pioneering the future of AI-powered solutions
           </h2>
           <p className="text-lg text-primary/80 reveal">
-            Hanzo combines advanced AI research with practical business applications, delivering transformative solutions that drive measurable growth.
+            Adnexus combines advanced AI research with practical business applications, delivering transformative solutions that drive measurable growth.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ const WhyHanzo = () => {
         </div>
 
         <div className="mt-14 text-center md:text-left reveal flex flex-wrap gap-4">
-          <a href="https://calendar.app.google/z1YsZQrqR4s6jQqD8" className="lets-talk-btn">
+          <a href="https://cal.com/adnexus/z1YsZQrqR4s6jQqD8" className="lets-talk-btn">
             Let's talk
             <ArrowUpRight size={16} className="ml-1" />
           </a>
@@ -61,4 +61,4 @@ const WhyHanzo = () => {
   );
 };
 
-export default WhyHanzo;
+export default WhyAdnexus;

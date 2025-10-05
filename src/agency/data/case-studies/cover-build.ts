@@ -33,7 +33,7 @@ const coverBuild: CaseStudyData = {
     "Our strategy included highlighting the technological innovation behind the manufacturing process and emphasizing the sustainability benefits of the precision-engineered approach."
   ],
   testimonial: {
-    quote: "Hanzo transformed how potential customers experience our homes before they're built. The visualization tools and clear communication of our value proposition have dramatically improved our conversion rates and reduced our sales cycle.",
+    quote: "Adnexus transformed how potential customers experience our homes before they're built. The visualization tools and clear communication of our value proposition have dramatically improved our conversion rates and reduced our sales cycle.",
     author: "Alexis Rivas",
     role: "CEO at Cover Build"
   },

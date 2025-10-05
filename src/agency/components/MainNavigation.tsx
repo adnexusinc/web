@@ -39,8 +39,8 @@ function MainNavigation() {
     <div className="w-full bg-black fixed top-0 z-50 border-b border-border/40" role="banner">
       <div className="w-full max-w-full px-4 mx-auto flex h-16 items-center">
         <Link to="/" className="mr-6 flex items-center space-x-2">
-          <img src="/images/logo/logo.png" alt="Hanzo" className="h-7 w-auto" />
-          <span className="font-bold text-xl truncate">Hanzo</span>
+          <img src="/images/logo/logo.png" alt="Adnexus" className="h-7 w-auto" />
+          <span className="font-bold text-xl truncate">Adnexus</span>
         </Link>
         
         <NavigationMenu className="w-full bg-black text-white">
@@ -123,7 +123,7 @@ function MainNavigation() {
                               <h3 className="font-medium text-white text-sm mb-4">AI & DX Platforms</h3>
                               <ul className="space-y-4">
                                 <li>
-                                  <a href="https://hanzo.ai" className="block select-none rounded-md py-2 px-3 no-underline outline-none transition-colors hover:bg-gray-800 text-white focus:bg-gray-800">
+                                  <a href="https://ad.nexus" className="block select-none rounded-md py-2 px-3 no-underline outline-none transition-colors hover:bg-gray-800 text-white focus:bg-gray-800">
                                     <div className="flex items-center gap-2 mb-1">
                                       <div className="text-sm font-medium leading-none flex items-center">
                                         AI Cloud
@@ -136,7 +136,7 @@ function MainNavigation() {
                                   </a>
                                 </li>
                                 <li>
-                                  <a href="https://hanzo.ai" className="block select-none rounded-md py-2 px-3 no-underline outline-none transition-colors hover:bg-gray-800 text-white focus:bg-gray-800">
+                                  <a href="https://ad.nexus" className="block select-none rounded-md py-2 px-3 no-underline outline-none transition-colors hover:bg-gray-800 text-white focus:bg-gray-800">
                                     <div className="flex items-center gap-2 mb-1">
                                       <div className="text-sm font-medium leading-none flex items-center">
                                         DX Platform
@@ -310,7 +310,7 @@ function MainNavigation() {
 
         <div className="ml-auto flex items-center space-x-4">
           <a
-            href="https://auth.hanzo.ai"
+            href="https://auth.ad.nexus"
             className="text-sm font-medium transition-colors hover:text-primary mr-2"
           >
             Login
@@ -337,8 +337,8 @@ function MainNavigation() {
         <div className="lg:hidden fixed inset-0 top-0 left-0 right-0 bottom-0 w-full h-full bg-black/95 backdrop-blur-lg z-[999] overflow-auto transition-all duration-300">
           <div className="flex items-center justify-between p-4 border-b border-white/10">
             <Link to="/" className="flex items-center space-x-2" onClick={() => setIsMenuOpen(false)}>
-              <img src="/images/logo/logo.png" alt="Hanzo" className="h-7 w-auto" />
-              <span className="font-bold text-xl text-white">Hanzo</span>
+              <img src="/images/logo/logo.png" alt="Adnexus" className="h-7 w-auto" />
+              <span className="font-bold text-xl text-white">Adnexus</span>
             </Link>
             <button 
               className="p-2 text-primary hover:text-white" 
@@ -460,8 +460,8 @@ function MainNavigation() {
                     <div>
                       <h4 className="font-semibold text-sm mb-2">Platforms</h4>
                       <ul className="space-y-2 ml-2">
-                        <li><a href="https://hanzo.ai" target="_blank" className="text-foreground/80 hover:text-foreground text-sm flex items-center gap-1" onClick={handleMobileLinkClick}>AI Cloud <ExternalLink className="h-3 w-3" /></a></li>
-                        <li><a href="https://hanzo.ai" target="_blank" className="text-foreground/80 hover:text-foreground text-sm flex items-center gap-1" onClick={handleMobileLinkClick}>DX Platform <ExternalLink className="h-3 w-3" /></a></li>
+                        <li><a href="https://ad.nexus" target="_blank" className="text-foreground/80 hover:text-foreground text-sm flex items-center gap-1" onClick={handleMobileLinkClick}>AI Cloud <ExternalLink className="h-3 w-3" /></a></li>
+                        <li><a href="https://ad.nexus" target="_blank" className="text-foreground/80 hover:text-foreground text-sm flex items-center gap-1" onClick={handleMobileLinkClick}>DX Platform <ExternalLink className="h-3 w-3" /></a></li>
                       </ul>
                     </div>
                     

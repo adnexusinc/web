@@ -33,7 +33,7 @@ const trillerfest: CaseStudyData = {
     "Our team coordinated with over 100 artists to produce high-quality performances and promoted the event through multi-channel digital marketing campaigns."
   ],
   testimonial: {
-    quote: "Hanzo turned an impossible situation into our biggest success. TrillerFest became a landmark moment for virtual events and connected our platform with millions of new users while supporting an important cause.",
+    quote: "Adnexus turned an impossible situation into our biggest success. TrillerFest became a landmark moment for virtual events and connected our platform with millions of new users while supporting an important cause.",
     author: "Mike Lu",
     role: "CEO at Triller"
   },

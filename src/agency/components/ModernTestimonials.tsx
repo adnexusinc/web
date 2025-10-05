@@ -4,19 +4,19 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "Hanzo transformed our approach to customer data, building an AI solution that revealed patterns we'd never seen before. Their team bridged our business knowledge with cutting-edge technology.",
+    quote: "Adnexus transformed our approach to customer data, building an AI solution that revealed patterns we'd never seen before. Their team bridged our business knowledge with cutting-edge technology.",
     author: "Sarah Chen",
     title: "CTO, Fintech Innovators",
     image: "/images/placeholder.svg" // This would be replaced with actual images
   },
   {
-    quote: "Working with Hanzo feels like having an AI R&D department that actually understands our business goals. They don't just implement technology—they solve real problems.",
+    quote: "Working with Adnexus feels like having an AI R&D department that actually understands our business goals. They don't just implement technology—they solve real problems.",
     author: "Marcus Johnson",
     title: "VP of Innovation, Enterprise Solutions",
     image: "/images/placeholder.svg"
   },
   {
-    quote: "The Hanzo team delivered a custom AI solution in half the time we expected, with better results than we imagined possible. They're the perfect blend of technical brilliance and practical business sense.",
+    quote: "The Adnexus team delivered a custom AI solution in half the time we expected, with better results than we imagined possible. They're the perfect blend of technical brilliance and practical business sense.",
     author: "Alicia Rodriguez",
     title: "Director of Operations, Global Retail",
     image: "/images/placeholder.svg"

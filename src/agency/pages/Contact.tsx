@@ -17,7 +17,7 @@ const Contact = () => {
               <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
               <div className="space-y-3 mb-8 text-primary/80">
                 <p>
-                  Hanzo Industries, Inc.<br/>
+                  Adnexus Technology Inc<br/>
                   500 Market Street, Suite 800<br/>
                   San Francisco, CA 94105<br/>
                   United States
@@ -27,7 +27,7 @@ const Contact = () => {
                   (+65) 13370-9976
                 </p>
               </div>
-              <a href="https://calendar.app.google/z1YsZQrqR4s6jQqD8" className="lets-talk-btn">
+              <a href="https://cal.com/adnexus/z1YsZQrqR4s6jQqD8" className="lets-talk-btn">
                 Send an email
                 <ArrowUpRight size={16} className="ml-1" />
               </a>
