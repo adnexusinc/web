@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Navigation } from '@/components/Navigation';
 import Hero from '@/agency/components/Hero';
 import Services from '@/agency/components/Services';
-import WhyAdnexus from '@/agency/components/WhyAdnexus';
+import WhyHanzo from '@/agency/components/WhyHanzo';
 import CaseStudy from '@/agency/components/CaseStudy';
 import Testimonials from '@/agency/components/Testimonials';
 import Process from '@/agency/components/Process';
@@ -74,7 +74,7 @@ const Index = () => {
         <Services />
         <AICapabilities />
         <StatsSection />
-        <WhyAdnexus />
+        <WhyHanzo />
         <CaseStudy />
         <Process />
         <Footer />
