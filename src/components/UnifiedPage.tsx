@@ -86,7 +86,7 @@ export const UnifiedPage: React.FC<UnifiedPageProps> = ({ config }) => {
 
       {/* Features Section */}
       {features && features.length > 0 && (
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 pb-32">
           <div className="container mx-auto">
             <div className={`grid gap-8 max-w-6xl mx-auto ${
               features.length <= 3 ? 'md:grid-cols-3' :
