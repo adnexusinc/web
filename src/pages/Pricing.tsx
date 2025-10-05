@@ -386,7 +386,7 @@ export default function Pricing() {
           <h2 className="text-3xl font-bold mb-4">Stay Ahead of the AdTech Revolution</h2>
           <p className="text-white/70 mb-8">
             Get exclusive insights, industry reports, and platform updates delivered to your inbox.
-            Join 5,000+ AdTech professionals already subscribed.
+            Join over 100 high-growth startups.
           </p>
           <div className="flex gap-4 max-w-md mx-auto">
             <input

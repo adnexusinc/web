@@ -132,7 +132,7 @@ export default function Resources() {
               </Button>
             </div>
             <p className="text-sm text-white/50 mt-4">
-              Join 5,000+ AdTech professionals. Unsubscribe anytime.
+              Join over 100 high-growth startups. Unsubscribe anytime.
             </p>
           </div>
         </div>

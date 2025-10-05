@@ -83,8 +83,8 @@ export const Footer = () => {
                 Stay Ahead of the <span className="performance-number">AdTech Revolution</span>
               </h2>
               <p className="text-muted-foreground text-lg mb-6">
-                Get exclusive insights, industry reports, and platform updates delivered to your inbox. 
-                Join 5,000+ AdTech professionals already subscribed.
+                Get exclusive insights, industry reports, and platform updates delivered to your inbox.
+                Join over 100 high-growth startups.
               </p>
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
