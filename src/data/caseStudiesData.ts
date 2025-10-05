@@ -1,6 +1,37 @@
 // Case Study data for Adnexus CTV advertising campaigns
 // Adapted from real Hanzo Agency clients for programmatic CTV context
 
+// Import detailed case studies
+import mobilityStartup from './case-studies/mobility-startup';
+import healthtechStartup from './case-studies/healthtech-startup';
+import entertainmentPlatform from './case-studies/entertainment-platform';
+import gamingPlatform from './case-studies/gaming-platform';
+import insurtechStartup from './case-studies/insurtech-startup';
+import blockchainPlatform from './case-studies/blockchain-platform';
+import cannabisTechStartup from './case-studies/cannabis-tech-startup';
+
+// Export detailed case studies
+export {
+  mobilityStartup,
+  healthtechStartup,
+  entertainmentPlatform,
+  gamingPlatform,
+  insurtechStartup,
+  blockchainPlatform,
+  cannabisTechStartup
+};
+
+// Export all detailed case studies as array
+export const detailedCaseStudies = [
+  mobilityStartup,
+  healthtechStartup,
+  entertainmentPlatform,
+  gamingPlatform,
+  insurtechStartup,
+  blockchainPlatform,
+  cannabisTechStartup
+];
+
 export interface CaseStudy {
   id: string;
   client: string;
