@@ -367,9 +367,9 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                         {/* Right side - Studio CTA */}
                         <div className="flex flex-col justify-center p-4 bg-gradient-to-br from-purple-600/10 to-blue-600/10 rounded-lg border border-purple-600/20">
                           <Film className="h-12 w-12 text-purple-400 mx-auto mb-3" />
-                          <h3 className="text-lg font-bold mb-2 text-center">Studio</h3>
+                          <h3 className="text-lg font-bold mb-2 text-center">Ad Studio</h3>
                           <p className="text-sm text-muted-foreground mb-4 text-center">
-                            Create premium TV ads in minutes with AI
+                            Create a TV ad spot for free in 2 minutes.
                           </p>
                           <a
                             href="https://studio.ad.nexus"
