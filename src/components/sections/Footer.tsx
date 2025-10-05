@@ -86,20 +86,6 @@ export const Footer = () => {
                 Get exclusive insights, industry reports, and platform updates delivered to your inbox.
                 Join over 100 high-growth startups.
               </p>
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>Weekly industry insights</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>Platform updates</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span>Exclusive reports</span>
-                </div>
-              </div>
             </div>
 
             <div className="gradient-card p-6 rounded-2xl">
