@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Navigation } from '@/components/Navigation';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check } from 'lucide-react';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { services } from '@/agency/data/services';
 import ServiceTemplate from './services/ServiceTemplate';
 
@@ -50,7 +51,9 @@ const ServicesPage: React.FC = () => {
 
   // Otherwise render the main services overview page
   return (
-    <div className="min-h-screen bg-black text-white">
+    <>
+      <Navigation bannerVisible={false} />
+      <div className="min-h-screen bg-black text-white">
       {/* Navbar removed since it's now global */}
 
       <main className="pt-24">
@@ -229,6 +232,7 @@ const ServicesPage: React.FC = () => {
 
       <Footer />
     </div>
+    </>
   );
 };
 

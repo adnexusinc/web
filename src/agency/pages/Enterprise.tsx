@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import Navbar from '@/agency/components/Navbar';
-import Footer from '@/agency/components/Footer';
+import { Navigation } from '@/components/Navigation';
+import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/button';
 import { ArrowUpRight, Check, Shield, Clock, Star, Users, Database, Lock, Globe } from 'lucide-react';
 import { buttonModifiers } from '@/agency/lib/button-utils';
@@ -20,8 +20,8 @@ const Enterprise = () => {
 
   return (
     <ScrollReveal>
+      <Navigation bannerVisible={false} />
       <div className="min-h-screen bg-black text-white">
-        <Navbar />
         <GlobalMuteButton />
         
         <main className="pt-24">

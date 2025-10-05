@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
+import { Navigation } from '@/components/Navigation';
 import { Link, useSearchParams } from 'react-router-dom';
 import { ArrowRight, Check } from 'lucide-react';
-import Navbar from '@/agency/components/Navbar';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 
 // Category interface
 interface Category {
@@ -154,8 +154,9 @@ const SolutionsPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      <Navbar />
+    <>
+      <Navigation bannerVisible={false} />
+      <div className="min-h-screen bg-black text-white">
 
       {/* Hero Section */}
       <div className="pt-32 pb-20">
@@ -466,6 +467,7 @@ const SolutionsPage = () => {
 
       <Footer />
     </div>
+    </>
   );
 };
 

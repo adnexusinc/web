@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import Navbar from '@/agency/components/Navbar';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import VideoCard from '@/agency/components/VideoCard';
 import { BentoGrid, BentoCard } from '@/agency/components/BentoGrid';
 import ParallaxItem from '@/agency/components/ParallaxItem';
@@ -59,7 +58,6 @@ const CaseStudies = () => {
   return (
     <ScrollReveal>
       <div className="min-h-screen bg-black text-white">
-        <Navbar />
         <GlobalMuteButton />
         
         <main className="pt-24">

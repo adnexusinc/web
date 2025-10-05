@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '@/agency/components/Navbar';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Check, Lock } from 'lucide-react';
 import { buttonModifiers } from '@/agency/lib/button-utils';
@@ -74,7 +73,6 @@ const Payment = () => {
 
   return (
     <>
-      <Navbar />
       <main className="pt-32 pb-20 bg-black text-white">
         <div className="container-custom max-w-5xl">
           <div className="text-center mb-12">

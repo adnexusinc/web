@@ -3,8 +3,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useToast } from "@/hooks/use-toast";
 import { Button } from '@/components/ui/button';
-import Navbar from '@/agency/components/Navbar';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import FormSection from '@/agency/components/onboarding/FormSection';
 import ProgressBar from '@/agency/components/onboarding/ProgressBar';
 import FormNavigation from '@/agency/components/onboarding/FormNavigation';
@@ -77,7 +76,6 @@ const OnboardingForm = () => {
   
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       
       <main className="flex-grow bg-beige-50 py-16">
         <div className="container-custom">

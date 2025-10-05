@@ -3,8 +3,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Navbar from '@/agency/components/Navbar';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 
 const OnboardingSuccess = () => {
   const navigate = useNavigate();
@@ -20,7 +19,6 @@ const OnboardingSuccess = () => {
   
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       
       <main className="flex-grow bg-beige-50 py-16">
         <div className="container-custom">

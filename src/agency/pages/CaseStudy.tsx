@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
-import Navbar from '@/agency/components/Navbar';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { ArrowLeft, Globe, Linkedin, Instagram, Facebook, Twitter, ArrowUpRight } from 'lucide-react';
 import GlobalMuteButton from '@/agency/components/GlobalMuteButton';
 import VideoMuteButton from '@/agency/components/VideoMuteButton';
@@ -111,7 +110,6 @@ const CaseStudy = () => {
   return (
     <ScrollReveal>
       <div className="min-h-screen bg-black text-white">
-        <Navbar />
         <GlobalMuteButton />
 
         <main className={`${isBannerVisible ? 'pt-36' : 'pt-32'}`}>

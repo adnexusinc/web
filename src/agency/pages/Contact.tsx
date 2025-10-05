@@ -1,12 +1,13 @@
 
-import Navbar from '@/agency/components/Navbar';
-import Footer from '@/agency/components/Footer';
+import { Navigation } from '@/components/Navigation';
+import { Footer } from '@/components/sections/Footer';
 import { ArrowUpRight, Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
+    <>
+      <Navigation bannerVisible={false} />
+      <div className="min-h-screen flex flex-col">
       
       <main className="flex-grow container-custom py-32">
         <div className="max-w-3xl mx-auto">
@@ -62,6 +63,7 @@ const Contact = () => {
       
       <Footer />
     </div>
+    </>
   );
 };
 

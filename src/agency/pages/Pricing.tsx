@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import NewHeader from '@/agency/components/NewHeader';
-import Footer from '@/agency/components/Footer';
+import { Navigation } from '@/components/Navigation';
+import { Footer } from '@/components/sections/Footer';
 import { PricingCard } from '@/components/ui/pricing-card';
 import { PricingToggle } from '@/components/ui/pricing-toggle';
 import GradientBackground from '@/agency/components/GradientBackground';
@@ -78,7 +78,7 @@ export default function Pricing() {
   
   return (
     <>
-      <NewHeader />
+      <Navigation bannerVisible={false} />
       <main className="pt-32 pb-20 bg-black text-white">
         <div className="container-custom">
           <div className="text-center mb-16">
