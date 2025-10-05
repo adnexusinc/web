@@ -367,6 +367,21 @@ const NewIndex = () => {
       }}>
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
+          {/* Title with Network Ticker */}
+          <div className="mb-8 flex items-center justify-center gap-4 flex-wrap">
+            <h2 className="text-3xl md:text-4xl font-bold text-white whitespace-nowrap">
+              Stream on the most popular networks!
+            </h2>
+            <div className="overflow-hidden max-w-2xl">
+              <div className="flex animate-ticker whitespace-nowrap">
+                {['CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi'].map((network, index) => (
+                  <span key={index} className="text-2xl md:text-3xl font-bold text-white/80 mx-6">
+                    {network}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
           {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow */}
           <div
             className="relative aspect-video bg-black rounded-[30px] overflow-hidden group"
