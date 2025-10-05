@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Check } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/sections/Footer';
 import { CTVCalculator } from '@/components/CTVCalculator';
 import { Card } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 
 export default function Pricing() {
   return (
@@ -225,9 +226,75 @@ export default function Pricing() {
             </div>
           </div>
 
+          {/* CTV Self-Serve Platform */}
+          <div className="mb-32">
+            <h2 className="text-3xl font-bold text-center mb-4">CTV Self-Serve Platform</h2>
+            <p className="text-center text-white/60 mb-12 max-w-2xl mx-auto">
+              Launch and manage your own Connected TV advertising campaigns with our self-serve DSP platform.
+            </p>
+
+            <div className="max-w-md mx-auto">
+              <Card className="p-8 bg-white/5 border-white/10 hover:border-white/30 transition-all">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold mb-2">Self-Serve DSP</h3>
+                  <p className="text-white/60">
+                    Full platform access with flexible pay-as-you-go pricing
+                  </p>
+                </div>
+                <div className="mb-8">
+                  <div className="text-sm text-white/60 mb-1">Starting at</div>
+                  <div className="flex items-baseline gap-1 mb-1">
+                    <span className="text-5xl font-bold">$9</span>
+                    <span className="text-white/60">minimum</span>
+                  </div>
+                  <div className="text-xs text-white/50">Pay only for what you use • No monthly fees</div>
+                </div>
+
+                <div className="mb-6 p-4 bg-white/5 rounded-lg border border-white/10">
+                  <div className="text-xs text-white/60 mb-1">CPM Pricing</div>
+                  <div className="text-2xl font-bold text-blue-400">$15-$40</div>
+                  <div className="text-xs text-white/50 mt-1">Based on targeting and inventory selection</div>
+                </div>
+
+                <div className="mb-8">
+                  <div className="text-sm font-semibold text-white/80 mb-4">Platform Features</div>
+                  <ul className="space-y-3 text-sm">
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-white/60 mt-0.5 flex-shrink-0" />
+                      <span className="text-white/70">500+ Premium CTV channels</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-white/60 mt-0.5 flex-shrink-0" />
+                      <span className="text-white/70">Advanced targeting & audiences</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-white/60 mt-0.5 flex-shrink-0" />
+                      <span className="text-white/70">Real-time analytics dashboard</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-white/60 mt-0.5 flex-shrink-0" />
+                      <span className="text-white/70">Studio creative tools</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-white/60 mt-0.5 flex-shrink-0" />
+                      <span className="text-white/70">24/7 platform support</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <a href="/auth">
+                  <Button className="w-full" size="lg">
+                    Start Campaign
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+              </Card>
+            </div>
+          </div>
+
           {/* Enterprise Agency Plan */}
           <div className="mb-24">
-            <h2 className="text-3xl font-bold text-center mb-4">Enterprise Agency Services</h2>
+            <h2 className="text-3xl font-bold text-center mb-4">Full-Service Agency</h2>
             <p className="text-center text-white/60 mb-2 max-w-2xl mx-auto">
               Full-service creative agency support for premium TV advertising with unlimited video production.
             </p>
