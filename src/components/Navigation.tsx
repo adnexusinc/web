@@ -91,18 +91,83 @@ const solutionItems = [
   }
 ];
 
-const productItems = [
+// Goal-based product items
+const goalItems = [
   {
-    title: "Advertiser Platform (DSP)",
-    href: "/dsp",
-    description: "Launch and manage CTV advertising campaigns",
+    title: "Build Awareness",
+    href: "/dsp?goal=awareness",
+    description: "Reach new audiences at scale",
+    icon: Users
+  },
+  {
+    title: "Attract Traffic",
+    href: "/dsp?goal=traffic",
+    description: "Drive visitors to your site or app",
+    icon: TrendingUp
+  },
+  {
+    title: "Generate Leads",
+    href: "/dsp?goal=leads",
+    description: "Capture qualified prospects",
     icon: Target
   },
   {
-    title: "Studio (Creative Platform)",
+    title: "Increase Sales",
+    href: "/dsp?goal=sales",
+    description: "Drive conversions and revenue",
+    icon: BarChart3
+  },
+  {
+    title: "Retarget Prospects",
+    href: "/dsp?goal=retargeting",
+    description: "Re-engage interested audiences",
+    icon: Zap
+  },
+  {
+    title: "Promote Your App",
+    href: "/dsp?goal=app",
+    description: "Boost downloads and engagement",
+    icon: Cpu
+  }
+];
+
+// Feature-based product items
+const featureItems = [
+  {
+    title: "Apps & Channels",
+    href: "/platform/overview",
+    description: "500+ premium CTV channels",
+    icon: Globe
+  },
+  {
+    title: "Audience Targeting",
+    href: "/platform/plan",
+    description: "Precision demographic & behavioral targeting",
+    icon: Target
+  },
+  {
+    title: "Measurement & Reporting",
+    href: "/platform/measure",
+    description: "Real-time analytics & attribution",
+    icon: BarChart3
+  },
+  {
+    title: "Integrations & API",
+    href: "/dsp",
+    description: "Connect with your existing tools",
+    icon: Cpu
+  },
+  {
+    title: "AI Creatives",
     href: "/studio",
-    description: "Create premium TV ads in minutes with AI",
+    description: "Generate video ads with AI",
     icon: Film
+  },
+  {
+    title: "AI Optimization",
+    href: "/platform/activate",
+    description: "Automated bid & budget optimization",
+    icon: Zap
   }
 ];
 
@@ -257,23 +322,66 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="bg-transparent">
-                    Products
+                    Product
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[600px] gap-3 p-4">
-                      {productItems.map((item) => (
-                        <ListItem
-                          key={item.title}
-                          title={item.title}
-                          href={item.href}
-                          icon={item.icon}
-                          external={item.external}
-                          badge={item.badge}
-                        >
-                          {item.description}
-                        </ListItem>
-                      ))}
-                    </ul>
+                    <div className="w-[700px] p-6">
+                      <div className="grid grid-cols-[2fr_1fr] gap-6">
+                        {/* Left side - By Goal and By Feature */}
+                        <div className="space-y-6">
+                          {/* By Goal Section */}
+                          <div>
+                            <h3 className="text-sm font-semibold text-muted-foreground mb-3 px-2">By Goal</h3>
+                            <ul className="grid grid-cols-2 gap-2">
+                              {goalItems.map((item) => (
+                                <ListItem
+                                  key={item.title}
+                                  title={item.title}
+                                  href={item.href}
+                                  icon={item.icon}
+                                >
+                                  {item.description}
+                                </ListItem>
+                              ))}
+                            </ul>
+                          </div>
+
+                          {/* By Feature Section */}
+                          <div>
+                            <h3 className="text-sm font-semibold text-muted-foreground mb-3 px-2">By Feature</h3>
+                            <ul className="grid grid-cols-2 gap-2">
+                              {featureItems.map((item) => (
+                                <ListItem
+                                  key={item.title}
+                                  title={item.title}
+                                  href={item.href}
+                                  icon={item.icon}
+                                >
+                                  {item.description}
+                                </ListItem>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+
+                        {/* Right side - Studio CTA */}
+                        <div className="flex flex-col justify-center p-4 bg-gradient-to-br from-purple-600/10 to-blue-600/10 rounded-lg border border-purple-600/20">
+                          <Film className="h-12 w-12 text-purple-400 mx-auto mb-3" />
+                          <h3 className="text-lg font-bold mb-2 text-center">Studio</h3>
+                          <p className="text-sm text-muted-foreground mb-4 text-center">
+                            Create premium TV ads in minutes with AI
+                          </p>
+                          <a
+                            href="https://studio.ad.nexus"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-medium text-center transition-colors"
+                          >
+                            Open Studio →
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
 
