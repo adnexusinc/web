@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Check, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight, Target, Film, Zap } from 'lucide-react';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/sections/Footer';
 import { CTVCalculator } from '@/components/CTVCalculator';
@@ -24,28 +24,32 @@ export default function Pricing() {
             </p>
           </div>
 
-          {/* Product Overview */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            <Card className="p-6 bg-white/5 border-white/10 text-center">
-              <h3 className="text-xl font-bold mb-2">Advertiser Platform (DSP)</h3>
-              <p className="text-white/60 text-sm mb-4">Launch CTV campaigns</p>
-              <a href="/dsp" className="text-blue-400 hover:underline text-sm">Learn More →</a>
+          {/* Product Overview - 2 Products Only */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-16">
+            <Card className="p-8 bg-white/5 border-white/10 hover:border-blue-600/50 transition-all text-center">
+              <Target className="h-12 w-12 text-blue-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-2">Advertiser Platform</h3>
+              <p className="text-white/60 mb-4">Self-serve DSP for CTV campaigns</p>
+              <a href="/dsp" className="text-blue-400 hover:underline">Learn More →</a>
             </Card>
-            <Card className="p-6 bg-white/5 border-white/10 text-center">
-              <h3 className="text-xl font-bold mb-2">Publisher Platform (SSP)</h3>
-              <p className="text-white/60 text-sm mb-4">Monetize your inventory</p>
-              <a href="/ssp" className="text-blue-400 hover:underline text-sm">Learn More →</a>
+            <Card className="p-8 bg-white/5 border-white/10 hover:border-purple-600/50 transition-all text-center">
+              <Film className="h-12 w-12 text-purple-400 mx-auto mb-4" />
+              <h3 className="text-2xl font-bold mb-2">Studio</h3>
+              <p className="text-white/60 mb-4">Create TV ads in minutes with AI</p>
+              <a href="/studio" className="text-blue-400 hover:underline">Learn More →</a>
             </Card>
-            <Card className="p-6 bg-white/5 border-white/10 text-center">
-              <h3 className="text-xl font-bold mb-2">Studio</h3>
-              <p className="text-white/60 text-sm mb-4">Create video ads with AI</p>
-              <a href="/studio" className="text-blue-400 hover:underline text-sm">Learn More →</a>
-            </Card>
-            <Card className="p-6 bg-white/5 border-white/10 text-center border-blue-600">
-              <h3 className="text-xl font-bold mb-2">Agency Services</h3>
-              <p className="text-white/60 text-sm mb-4">Full-service on-demand</p>
-              <a href="/agency" className="text-blue-400 hover:underline text-sm">Learn More →</a>
-            </Card>
+          </div>
+
+          {/* Agency Services Callout */}
+          <div className="max-w-2xl mx-auto mb-16 p-6 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-2xl border border-blue-600/20 text-center">
+            <Zap className="h-10 w-10 text-yellow-400 mx-auto mb-3" />
+            <h3 className="text-2xl font-bold mb-2">Need Full-Service?</h3>
+            <p className="text-white/70 mb-4">
+              Get our Agency Services: $9,999/month for on-demand creative + marketing with Hanzo AI credits
+            </p>
+            <a href="/agency" className="text-blue-400 hover:underline font-semibold">
+              Explore Agency Services →
+            </a>
           </div>
 
           {/* CTV Calculator */}

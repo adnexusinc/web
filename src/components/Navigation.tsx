@@ -93,27 +93,15 @@ const solutionItems = [
 
 const productItems = [
   {
-    title: "DSP (Demand-Side Platform)",
+    title: "Advertiser Platform (DSP)",
     href: "/dsp",
-    description: "AI-powered buying platform for advertisers",
-    icon: Cpu
-  },
-  {
-    title: "SSP (Supply-Side Platform)",
-    href: "/ssp",
-    description: "Intelligent yield optimization for publishers",
-    icon: Shield
-  },
-  {
-    title: "ADX (Ad Exchange)",
-    href: "/adx",
-    description: "The fastest exchange with sub-millisecond latency",
-    icon: Zap
+    description: "Launch and manage CTV advertising campaigns",
+    icon: Target
   },
   {
     title: "Studio (Creative Platform)",
     href: "/studio",
-    description: "Create premium TV ads in minutes",
+    description: "Create premium TV ads in minutes with AI",
     icon: Film
   }
 ];
@@ -379,13 +367,6 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                             <div className="text-xs text-muted-foreground">Demand-Side Platform</div>
                           </div>
                         </a>
-                        <a href="https://ssp.ad.nexus" className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-accent transition-colors">
-                          <Globe className="h-4 w-4" />
-                          <div>
-                            <div className="font-medium">Publisher Login</div>
-                            <div className="text-xs text-muted-foreground">Supply-Side Platform</div>
-                          </div>
-                        </a>
                         <a href="https://studio.ad.nexus" className="flex items-center gap-2 px-2 py-2 rounded-md hover:bg-accent transition-colors">
                           <Film className="h-4 w-4" />
                           <div>
@@ -470,15 +451,6 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                         <div className="text-left">
                           <div>Advertiser Login</div>
                           <div className="text-xs text-muted-foreground">Demand-Side Platform</div>
-                        </div>
-                      </Button>
-                    </a>
-                    <a href="https://ssp.ad.nexus" onClick={() => setIsMobileMenuOpen(false)}>
-                      <Button variant="ghost" className="w-full justify-start gap-2">
-                        <Globe className="h-4 w-4" />
-                        <div className="text-left">
-                          <div>Publisher Login</div>
-                          <div className="text-xs text-muted-foreground">Supply-Side Platform</div>
                         </div>
                       </Button>
                     </a>
