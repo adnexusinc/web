@@ -102,9 +102,9 @@ const CaseStudy = () => {
                       <p className="text-gray-400 text-sm leading-[1.6]">
                         {study.description}
                       </p>
-                      <div className="mt-6 inline-flex items-center text-white hover:text-gray-300 transition-colors">
+                      <div className="mt-6 inline-flex items-center gap-1 text-white hover:text-gray-300 transition-colors">
                         <span className="text-sm font-medium">Explore Case Study</span>
-                        <ArrowUpRight size={16} className="ml-1" />
+                        <ArrowUpRight size={16} className="mt-0.5" />
                       </div>
                     </div>
                   </Link>

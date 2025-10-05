@@ -190,8 +190,8 @@ const VideoCard: React.FC<VideoCardProps> = ({ title, youtubeId, description, in
             </div>
             <div className="mb-4">
               <Link to={`/case-study/${projectId}`}>
-                <Button className="bg-gray-700 hover:bg-gray-800 text-white font-medium rounded-full px-6 py-2 transition-all duration-300">
-                  Explore <ArrowRight className="ml-1 h-4 w-4" />
+                <Button className="bg-gray-700 hover:bg-gray-800 text-white font-medium rounded-full px-6 py-2 transition-all duration-300 inline-flex items-center gap-1">
+                  Explore <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
             </div>
