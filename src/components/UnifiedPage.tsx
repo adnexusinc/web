@@ -28,7 +28,7 @@ export const UnifiedPage: React.FC<UnifiedPageProps> = ({ config }) => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-40 pb-16 px-4">
+      <section className="pt-80 pb-16 px-4">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
