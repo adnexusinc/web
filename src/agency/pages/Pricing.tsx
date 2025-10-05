@@ -94,13 +94,25 @@ export default function Pricing() {
             <div className="flex flex-col h-full border-2 border-blue-800 hover:border-blue-700 rounded-xl overflow-hidden bg-gradient-to-b from-black to-blue-950/30 backdrop-blur-sm relative shadow-lg shadow-blue-900/10 transition-all duration-300">
 
               <div className="p-6 border-b border-border/20">
-                <h3 className="text-xl font-semibold mb-1">Agency Service</h3>
-                <p className="text-sm text-foreground/70">Full-service creative & marketing team</p>
+                <h3 className="text-xl font-semibold mb-1">Agency Services</h3>
+                <p className="text-sm text-foreground/70">Creative + Marketing on-demand with AI</p>
                 <div className="flex items-baseline gap-1 mt-2">
                   <span className="text-3xl font-bold">$9,999</span>
                   <span className="text-foreground/60 text-sm">/month</span>
                 </div>
-                <p className="text-xs text-foreground/60 mt-2">1 quarter minimum commitment</p>
+                <p className="text-xs text-foreground/60 mt-2">3-month minimum commitment</p>
+
+                <div className="mt-4 p-3 bg-blue-600/10 rounded-lg border border-blue-600/20">
+                  <div className="text-xs font-semibold text-blue-400 mb-2">Monthly Credits Breakdown:</div>
+                  <div className="flex justify-between text-xs text-foreground/80">
+                    <span>• $4,999 Hanzo AI Credits</span>
+                    <span className="text-blue-400">50%</span>
+                  </div>
+                  <div className="flex justify-between text-xs text-foreground/80 mt-1">
+                    <span>• $4,999 Creative Retainer Hours</span>
+                    <span className="text-green-400">50%</span>
+                  </div>
+                </div>
               </div>
               
               <div className="p-6 flex-grow">

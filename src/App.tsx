@@ -23,6 +23,7 @@ const Company = lazy(() => import("./pages/Company"));
 const About = lazy(() => import("./pages/About"));
 const Resources = lazy(() => import("./pages/Resources"));
 const Enterprise = lazy(() => import("./pages/Enterprise"));
+const Newsletter = lazy(() => import("./pages/Newsletter"));
 
 // Agency pages (full Hanzo Agency site under /agency)
 const AgencyIndex = lazy(() => import("./agency/pages/Index"));
@@ -114,6 +115,7 @@ const App = () => (
             <Route path="/inventory" element={<UnifiedPage config={pageConfigs['/inventory']} />} />
             <Route path="/industries" element={<UnifiedPage config={pageConfigs['/industries']} />} />
             <Route path="/resources" element={<Resources />} />
+            <Route path="/newsletter" element={<Newsletter />} />
             <Route path="/premium" element={<UnifiedPage config={pageConfigs['/premium']} />} />
             <Route path="/ctv" element={<UnifiedPage config={pageConfigs['/ctv']} />} />
 

@@ -17,11 +17,35 @@ export default function Pricing() {
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Pricing</h1>
             <p className="text-xl md:text-2xl text-white/80 mb-2">
-              Affordable TV Advertising. For everyone.
+              4 Products. Choose what fits your needs.
             </p>
             <p className="text-lg text-white/60 max-w-3xl mx-auto">
-              The most affordable Streaming and Connected TV Advertising solution built for brands and businesses of all sizes.
+              Self-serve programmatic platforms (DSP, SSP), AI-powered creative studio, and full-service agency.
             </p>
+          </div>
+
+          {/* Product Overview */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            <Card className="p-6 bg-white/5 border-white/10 text-center">
+              <h3 className="text-xl font-bold mb-2">Advertiser Platform (DSP)</h3>
+              <p className="text-white/60 text-sm mb-4">Launch CTV campaigns</p>
+              <a href="/dsp" className="text-blue-400 hover:underline text-sm">Learn More →</a>
+            </Card>
+            <Card className="p-6 bg-white/5 border-white/10 text-center">
+              <h3 className="text-xl font-bold mb-2">Publisher Platform (SSP)</h3>
+              <p className="text-white/60 text-sm mb-4">Monetize your inventory</p>
+              <a href="/ssp" className="text-blue-400 hover:underline text-sm">Learn More →</a>
+            </Card>
+            <Card className="p-6 bg-white/5 border-white/10 text-center">
+              <h3 className="text-xl font-bold mb-2">Studio</h3>
+              <p className="text-white/60 text-sm mb-4">Create video ads with AI</p>
+              <a href="/studio" className="text-blue-400 hover:underline text-sm">Learn More →</a>
+            </Card>
+            <Card className="p-6 bg-white/5 border-white/10 text-center border-blue-600">
+              <h3 className="text-xl font-bold mb-2">Agency Services</h3>
+              <p className="text-white/60 text-sm mb-4">Full-service on-demand</p>
+              <a href="/agency" className="text-blue-400 hover:underline text-sm">Learn More →</a>
+            </Card>
           </div>
 
           {/* CTV Calculator */}

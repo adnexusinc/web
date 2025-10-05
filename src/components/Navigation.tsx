@@ -83,16 +83,11 @@ const solutionItems = [
     icon: Globe
   },
   {
-    title: "Creative Services",
-    href: "/agency/services",
-    description: "Full-service programmatic advertising",
-    icon: Zap
-  },
-  {
-    title: "Enterprise Retainer",
+    title: "Agency Services",
     href: "/agency",
-    description: "$9,999/mo premium service",
-    icon: Shield
+    description: "$9,999/mo creative + marketing on-demand",
+    icon: Zap,
+    badge: "AI-Powered"
   }
 ];
 
@@ -151,8 +146,8 @@ const resourcesItems = [
   },
   {
     title: "Newsletter",
-    href: "/#newsletter",
-    description: "The latest news about CTV, case studies, and how-to guides",
+    href: "/newsletter",
+    description: "CTV smarts delivered twice weekly to your inbox",
     icon: Newspaper
   }
 ];
