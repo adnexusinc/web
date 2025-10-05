@@ -77,7 +77,7 @@ export const Footer = () => {
       <div className="container mx-auto px-6 relative z-10">
         {/* Newsletter Section */}
         <div className="py-16 border-b border-primary/10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Stay Ahead of the <span className="performance-number">AdTech Revolution</span>
@@ -101,7 +101,7 @@ export const Footer = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="gradient-card p-6 rounded-2xl">
               <form onSubmit={handleNewsletterSignup} className="space-y-4">
                 <div>
@@ -118,9 +118,9 @@ export const Footer = () => {
                     required
                   />
                 </div>
-                <Button 
-                  type="submit" 
-                  className="w-full group"
+                <Button
+                  type="submit"
+                  className="w-full group border-2 border-white/20"
                   disabled={isSubscribed}
                 >
                   {isSubscribed ? (
@@ -133,7 +133,7 @@ export const Footer = () => {
                   )}
                 </Button>
               </form>
-              <p className="text-xs text-muted-foreground mt-3 text-center">
+              <p className="text-xs text-muted-foreground mt-3">
                 No spam, unsubscribe at any time. We respect your privacy.
               </p>
             </div>
@@ -206,24 +206,24 @@ export const Footer = () => {
         <div className="border-t border-primary/10 py-12">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h4 className="text-lg font-semibold mb-6">
+              <h4 className="text-lg font-semibold mb-6 text-muted-foreground">
                 Partnerships & Certifications
               </h4>
               <div className="flex flex-wrap gap-3">
                 {certifications.map((cert, index) => {
                   const linkMap: { [key: string]: string } = {
                     "Terms of Service": "/terms-of-service",
-                    "Privacy Policy": "/privacy-policy", 
+                    "Privacy Policy": "/privacy-policy",
                     "Cookie Policy": "/cookie-policy",
                     "Data Processing Addendum": "/data-processing-addendum",
                     "GDPR Compliance": "/gdpr-compliance"
                   };
-                  
+
                   return (
-                    <Link 
+                    <Link
                       key={index}
                       to={linkMap[cert] || "#"}
-                      className="px-3 py-2 gradient-secondary rounded-lg text-xs text-muted-foreground hover:text-primary transition-colors backdrop-blur-sm border border-primary/10"
+                      className="px-3 py-2 gradient-secondary rounded-lg text-xs text-muted-foreground hover:text-muted-foreground/80 transition-colors backdrop-blur-sm border border-primary/10"
                     >
                       {cert}
                     </Link>
@@ -231,25 +231,21 @@ export const Footer = () => {
                 })}
               </div>
             </div>
-            
+
             <div>
-              <h4 className="text-lg font-semibold mb-6">Platform Performance</h4>
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-2xl font-bold performance-number mb-1">250M+</div>
-                  <div className="text-xs text-muted-foreground">Monthly CTV Impressions</div>
+              <h4 className="text-lg font-semibold mb-6 text-muted-foreground">Platform Performance</h4>
+              <div className="flex flex-wrap gap-3">
+                <div className="px-3 py-2 gradient-secondary rounded-lg text-xs text-muted-foreground backdrop-blur-sm border border-primary/10">
+                  250M+ Monthly CTV Impressions
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold performance-number mb-1">99.8%</div>
-                  <div className="text-xs text-muted-foreground">Fill Rate</div>
+                <div className="px-3 py-2 gradient-secondary rounded-lg text-xs text-muted-foreground backdrop-blur-sm border border-primary/10">
+                  99.8% Fill Rate
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold performance-number mb-1">2ms</div>
-                  <div className="text-xs text-muted-foreground">Response Time</div>
+                <div className="px-3 py-2 gradient-secondary rounded-lg text-xs text-muted-foreground backdrop-blur-sm border border-primary/10">
+                  2ms Response Time
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold performance-number mb-1">Premium</div>
-                  <div className="text-xs text-muted-foreground">Avg CPM</div>
+                <div className="px-3 py-2 gradient-secondary rounded-lg text-xs text-muted-foreground backdrop-blur-sm border border-primary/10">
+                  Premium Avg CPM
                 </div>
               </div>
             </div>

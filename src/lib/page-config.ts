@@ -32,7 +32,7 @@ export const pageConfigs: Record<string, PageConfig> = {
   // Product pages
   '/dsp': {
     title: 'Demand Side Platform',
-    subtitle: 'Enterprise-grade programmatic buying platform powered by AI',
+    subtitle: 'Enterprise-grade programmatic buying platform powered by AI ✨',
     description: 'Execute campaigns with precision targeting across 100M+ daily auctions. Our DSP combines machine learning with real-time optimization for superior performance.',
     heroButtonText: 'Contact Sales',
     heroButtonLink: '/#contact',
@@ -51,14 +51,14 @@ export const pageConfigs: Record<string, PageConfig> = {
       },
       {
         icon: Zap,
-        title: 'Real-Time Optimization',
+        title: 'Instant Optimization',
         description: 'Sub-millisecond decision making with continuous campaign optimization across all channels.',
         metric: '<1ms Response'
       },
       {
         icon: BarChart3,
         title: 'Advanced Analytics',
-        description: 'Executive dashboards with custom attribution modeling and cross-device tracking.',
+        description: 'Executive dashboards with dynamic attribution modeling and unified cross-device tracking.',
         metric: 'Real-Time Insights'
       }
     ],
