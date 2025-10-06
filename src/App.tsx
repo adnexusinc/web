@@ -39,8 +39,8 @@ const AgencyPayment = lazy(() => import("./agency/pages/Payment"));
 const AgencyServicesPage = lazy(() => import("./agency/pages/ServicesPage"));
 const AgencySolutionsPage = lazy(() => import("./agency/pages/SolutionsPage"));
 
-// CTV Platform pages
-// import { ctvRoutes } from "./ctv/routes"; // Disabled - incomplete components
+// CTV Platform pages (disabled - needs @hanzo/ui/primitives and /blocks exports)
+// import { ctvRoutes } from "./ctv/routes";
 
 // Case study pages (unique layouts) - CTV advertising
 const DamonMotorcycles = lazy(() => import("./pages/case-study/DamonMotorcycles"));
@@ -78,7 +78,7 @@ const App = () => (
         <PageTracker />
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
-            {/* CTV Platform routes - Disabled until components complete */}
+            {/* CTV Platform routes - Disabled (requires @hanzo/ui/primitives export) */}
             {/* {ctvRoutes.filter(r => !r.override).map(({ path, element: Element }) => (
               <Route key={path} path={path} element={<Element />} />
             ))} */}
