@@ -806,9 +806,9 @@ const Home = () => {
         </div>
       </section>
       <footer className="relative py-20 px-4 bg-black border-t border-white/10 overflow-hidden">
-        {/* Large Adnexus Logo Fixed to Bottom - Centered, Faded */}
+        {/* Large Adnexus Logo Fixed to Bottom - Centered, Faded, Responsive */}
         <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center opacity-[0.03] pointer-events-none overflow-hidden">
-          <div className="text-[25rem] font-black text-white leading-none pb-8">
+          <div className="text-[8rem] sm:text-[12rem] md:text-[16rem] lg:text-[20rem] xl:text-[25rem] font-black text-white leading-none pb-4">
             adnexus
           </div>
         </div>
