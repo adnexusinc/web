@@ -367,21 +367,6 @@ const NewIndex = () => {
       }}>
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
-          {/* Title with Network Ticker - Constrained to container */}
-          <div className="mb-12 flex items-center gap-6 overflow-hidden">
-            <h2 className="text-2xl font-medium text-white whitespace-nowrap flex-shrink-0">
-              Stream on the most popular networks!
-            </h2>
-            <div className="overflow-hidden flex-1 min-w-0">
-              <div className="flex animate-ticker whitespace-nowrap">
-                {['CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi'].map((network, index) => (
-                  <span key={index} className="text-2xl text-white mx-8 inline-block">
-                    {network}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </div>
           {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow */}
           <div
             className="relative aspect-video bg-black rounded-[30px] overflow-hidden group"
@@ -492,6 +477,22 @@ const NewIndex = () => {
           <div className="text-right mt-8 animate-slideInRight">
             <h2 className="text-3xl md:text-4xl font-light text-white mb-2 tracking-wide">CTV Ads in Action</h2>
             <p className="text-white/50 text-sm md:text-base tracking-wider uppercase">Experience the future of advertising</p>
+          </div>
+
+          {/* Network Ticker - Below Video */}
+          <div className="mt-12 flex items-center gap-6 overflow-hidden">
+            <h2 className="text-2xl font-medium text-white whitespace-nowrap flex-shrink-0">
+              Stream on the most popular networks!
+            </h2>
+            <div className="overflow-hidden flex-1 min-w-0">
+              <div className="flex animate-ticker whitespace-nowrap">
+                {['CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi'].map((network, index) => (
+                  <span key={index} className="text-2xl text-white mx-8 inline-block">
+                    {network}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -706,7 +707,7 @@ const NewIndex = () => {
 
               <div className="text-center">
                 <Link to="/platform/overview" className="inline-flex items-center gap-2 text-primary text-sm font-medium hover:underline">
-                  View all 500+ channels
+                  Learn more
                   <ChevronRight className="h-4 w-4" />
                 </Link>
               </div>
