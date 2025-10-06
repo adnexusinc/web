@@ -18,7 +18,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 const FAQ = lazy(() => import("./pages/FAQ"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const StudioPage = lazy(() => import("./pages/StudioPage"));
-const CaseStudies = lazy(() => import("./pages/CaseStudies"));
+// Case Studies page removed - redirect to agency case studies
 const Company = lazy(() => import("./pages/Company"));
 const About = lazy(() => import("./pages/About"));
 const Resources = lazy(() => import("./pages/Resources"));
@@ -170,7 +170,7 @@ const App = () => (
             {/* Other */}
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/our-work" element={<UnifiedPage config={pageConfigs['/our-work']} />} />
-            <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/case-studies" element={<Navigate to="/agency/our-work" replace />} />
 
             {/* 404 - Must be last */}
             <Route path="*" element={<NotFound />} />

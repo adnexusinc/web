@@ -16,7 +16,7 @@ export default function BookDemo() {
 
   const industries = ['Ecommerce', 'Apps & Gaming', 'B2B/SaaS', 'Finance', 'Healthcare', 'Automotive', 'Education', 'Entertainment', 'Retail', 'Other'];
   const budgets = ['Under $1K/mo', '$1K-$5K/mo', '$5K-$10K/mo', '$10K-$25K/mo', '$25K-$50K/mo', '$50K+/mo'];
-  const clientLogos = ['MIXTILES', 'HYUNDAI', 'JOHN DEERE', 'blink fitness', 'LAWBOSS', 'OCTOPUS', 'HUNTSVILLE HOSPITAL', 'ACE RENT A CAR', 'SCOPELY', 'JibJab'];
+  const clientLogos = ['Microsoft', 'Google', 'NVIDIA', 'Damon Motorcycles', 'Bellabeat', 'Triller', 'Unikrn', 'Cover.Build', 'Casper Labs', 'Myle'];
 
   return (
     <div className="min-h-screen grid md:grid-cols-2">
