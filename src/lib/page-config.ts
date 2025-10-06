@@ -377,7 +377,7 @@ export const pageConfigs: Record<string, PageConfig> = {
     subtitle: 'Maximize your revenue potential',
     description: 'Advanced yield optimization platform for publishers. Increase fill rates, maximize CPMs, and protect your inventory.',
     heroButtonText: 'Start Monetizing',
-    heroButtonLink: '/#contact',
+    heroButtonLink: 'https://cal.com/adnexus',
     features: [
       {
         icon: TrendingUp,
