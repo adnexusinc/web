@@ -34,11 +34,27 @@ const channelStyles: Record<string, { bg: string; text: string; font?: string }>
 };
 
 export const ChannelLogo = ({ name, className = '' }: ChannelLogoProps) => {
-  const style = channelStyles[name] || { bg: 'bg-gray-800', text: 'text-white' };
+  // Convert name to filename (e.g., "Fox News" -> "fox-news")
+  const filename = name.toLowerCase().replace(/\s+/g, '-').replace(/\+/g, '');
+  const logoPath = `/images/channels/${filename}.svg`;
 
+  // Try to load image, fallback to styled text
   return (
-    <div className={`${style.bg} ${style.text} ${style.font || 'font-semibold'} px-6 py-3 rounded-lg flex items-center justify-center text-center min-h-[60px] ${className}`}>
-      <span className="text-sm md:text-base whitespace-nowrap">{name}</span>
+    <div className={`overflow-hidden rounded-lg ${className}`}>
+      <img
+        src={logoPath}
+        alt={name}
+        className="w-full h-[60px] object-cover"
+        onError={(e) => {
+          // Fallback to styled text if image not found
+          const style = channelStyles[name] || { bg: 'bg-gray-800', text: 'text-white' };
+          const target = e.target as HTMLImageElement;
+          const parent = target.parentElement;
+          if (parent) {
+            parent.innerHTML = `<div class="${style.bg} ${style.text} ${style.font || 'font-semibold'} px-6 py-3 flex items-center justify-center h-[60px]"><span class="text-sm whitespace-nowrap">${name}</span></div>`;
+          }
+        }}
+      />
     </div>
   );
 };
