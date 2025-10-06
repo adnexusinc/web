@@ -4,7 +4,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter } from 'react-router-dom';
 
 // Mock all lazy-loaded page components to avoid async loading issues
-vi.mock('../pages/NewIndex', () => ({
+vi.mock('../pages/Home', () => ({
   default: () => <div>Premium Programmatic Advertising Platform</div>
 }));
 
@@ -32,11 +32,11 @@ describe('Routing', () => {
   });
 
   it('renders home page component', async () => {
-    const { default: NewIndex } = await import('../pages/NewIndex');
+    const { default: Home } = await import('../pages/Home');
     render(
       <QueryClientProvider client={queryClient}>
         <BrowserRouter>
-          <NewIndex />
+          <Home />
         </BrowserRouter>
       </QueryClientProvider>
     );
