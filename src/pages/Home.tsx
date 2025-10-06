@@ -800,9 +800,9 @@ const Home = () => {
         </div>
       </section>
       <footer className="relative py-20 px-4 bg-black border-t border-white/10 overflow-hidden">
-        {/* Large Adnexus Logo Watermark Background */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none">
-          <div className="text-[20rem] font-black text-white transform -rotate-12">
+        {/* Large Adnexus Logo Fixed to Bottom - Centered, Faded */}
+        <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center opacity-[0.03] pointer-events-none overflow-hidden">
+          <div className="text-[25rem] font-black text-white leading-none pb-8">
             adnexus
           </div>
         </div>
@@ -873,25 +873,23 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Newsletter Signup */}
-          <div className="py-12 border-y border-white/5 mb-12">
-            <div className="text-center mb-6">
-              <h3 className="text-2xl font-bold text-white mb-2">Stay Updated</h3>
-              <p className="text-white/60">Get CTV insights and platform updates delivered weekly</p>
+          {/* Newsletter CTA - Inverted Colors */}
+          <div className="py-16 border-y border-white/5 mb-12 bg-white/5 rounded-2xl">
+            <div className="text-center">
+              <h3 className="text-3xl font-bold text-white mb-4">Stay ahead of the curve</h3>
+              <p className="text-white/70 mb-8 max-w-2xl mx-auto">
+                Get exclusive CTV insights, platform updates, and industry trends delivered twice weekly
+              </p>
+              <Link to="/newsletter">
+                <Button size="lg" className="bg-white text-black hover:bg-gray-100 px-12">
+                  Subscribe to Newsletter
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <p className="text-white/40 text-sm mt-4">
+                Join 100+ high-growth startups • Unsubscribe anytime
+              </p>
             </div>
-            <form onSubmit={handleEmailSubmit} className="max-w-md mx-auto flex gap-3">
-              <Input
-                type="email"
-                placeholder="Enter your work email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 bg-white/10 border-white/20 text-white placeholder:text-white/50"
-                required
-              />
-              <Button type="submit" className="bg-blue-600 hover:bg-blue-700">
-                Subscribe
-              </Button>
-            </form>
           </div>
 
           <div className="text-center text-sm text-white/40 space-y-2">
