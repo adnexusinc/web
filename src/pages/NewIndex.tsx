@@ -369,7 +369,7 @@ const NewIndex = () => {
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
           {/* Cinematic Title - Above Video, Left Aligned */}
           <div className="mb-8 animate-fadeInUp">
-            <h2 className="text-3xl md:text-4xl font-light text-white mb-2 tracking-wide">CTV Ads in Action</h2>
+            <h2 className="text-sm font-bold text-white mb-2 tracking-wide">CTV Ads in Action</h2>
             <p className="text-white/50 text-sm md:text-base tracking-wider uppercase">Experience the future of advertising</p>
           </div>
 
