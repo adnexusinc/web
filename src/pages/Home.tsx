@@ -377,12 +377,13 @@ const Home = () => {
       <Navigation bannerVisible={showPhoneBanner} />
 
       {/* Video Hero Section - Pure Black Cinematic with Gradient */}
-      <section id="video-section" className="relative min-h-screen flex items-start justify-center overflow-hidden" style={{
+      <section id="video-section" className="relative h-screen flex items-center justify-center overflow-hidden" style={{
         background: 'radial-gradient(ellipse 120% 80% at center center, rgba(45,45,45,1) 0%, rgba(20,20,20,1) 35%, rgba(0,0,0,1) 70%)',
-        paddingTop: showPhoneBanner ? '80px' : '64px' // Reduced padding - video closer to top
+        paddingTop: showPhoneBanner ? '50px' : '10px', // Minimal top padding
+        paddingBottom: '10px' // Minimal bottom padding
       }}>
         {/* Hollywood-style Cinematic Container */}
-        <div className="relative w-full max-w-7xl mx-auto px-4 pt-8 animate-fadeInUp">
+        <div className="relative w-full max-w-7xl mx-auto px-4 animate-fadeInUp">
           {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow - Scales larger when banner dismissed */}
           <div
             className={`relative aspect-video bg-black rounded-[30px] overflow-hidden group transition-all duration-500 ${
@@ -489,12 +490,6 @@ const Home = () => {
               <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]" />
               <span className="text-xs text-white/90 font-medium tracking-widest uppercase">Live</span>
             </div>
-          </div>
-
-          {/* Minimal Scroll Indicator */}
-          <div className="mt-16 flex flex-col items-center gap-3 text-white/30">
-            <span className="text-[10px] uppercase tracking-[0.2em] font-light">Scroll</span>
-            <ChevronDown className="h-5 w-5 animate-bounce opacity-60" />
           </div>
         </div>
       </section>
