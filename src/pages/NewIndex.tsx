@@ -361,12 +361,12 @@ const NewIndex = () => {
       <Navigation bannerVisible={showPhoneBanner} />
 
       {/* Video Hero Section - Pure Black Cinematic with Gradient */}
-      <section id="video-section" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{
+      <section id="video-section" className="relative min-h-screen flex items-start justify-center overflow-hidden" style={{
         background: 'radial-gradient(ellipse 120% 80% at center center, rgba(45,45,45,1) 0%, rgba(20,20,20,1) 35%, rgba(0,0,0,1) 70%)',
-        paddingTop: showPhoneBanner ? '120px' : '80px' // Dynamic based on banner visibility
+        paddingTop: showPhoneBanner ? '100px' : '64px' // Dynamic based on banner visibility - reduced padding
       }}>
         {/* Hollywood-style Cinematic Container */}
-        <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
+        <div className="relative w-full max-w-7xl mx-auto px-4 pt-4 animate-fadeInUp">
           {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow */}
           <div
             className="relative aspect-video bg-black rounded-[30px] overflow-hidden group"
