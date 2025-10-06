@@ -377,12 +377,12 @@ const Home = () => {
       <Navigation bannerVisible={showPhoneBanner} />
 
       {/* Video Hero Section - Pure Black Cinematic with Gradient */}
-      <section id="video-section" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{
+      <section id="video-section" className="relative min-h-screen flex items-start justify-center overflow-hidden" style={{
         background: 'radial-gradient(ellipse 120% 80% at center center, rgba(45,45,45,1) 0%, rgba(20,20,20,1) 35%, rgba(0,0,0,1) 70%)',
-        paddingTop: showPhoneBanner ? '120px' : '80px' // Dynamic based on banner visibility
+        paddingTop: showPhoneBanner ? '80px' : '64px' // Reduced padding - video closer to top
       }}>
         {/* Hollywood-style Cinematic Container */}
-        <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
+        <div className="relative w-full max-w-7xl mx-auto px-4 pt-8 animate-fadeInUp">
           {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow - Scales larger when banner dismissed */}
           <div
             className={`relative aspect-video bg-black rounded-[30px] overflow-hidden group transition-all duration-500 ${
@@ -491,26 +491,26 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Network Ticker - Below Video */}
-          <div className="mt-12">
-            <h2 className="text-2xl font-medium text-white mb-6 text-center">
-              Stream on the most popular networks!
-            </h2>
-            <div className="overflow-hidden">
-              <div className="flex animate-ticker gap-4">
-                {['CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi', 'TNT', 'BET', 'Comedy Central', 'Discovery+', 'AMC', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku'].map((network, index) => (
-                  <div key={index} className="flex-shrink-0">
-                    <ChannelLogo name={network} className="scale-90" />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
           {/* Minimal Scroll Indicator */}
           <div className="mt-16 flex flex-col items-center gap-3 text-white/30">
             <span className="text-[10px] uppercase tracking-[0.2em] font-light">Scroll</span>
             <ChevronDown className="h-5 w-5 animate-bounce opacity-60" />
+          </div>
+        </div>
+      </section>
+
+      {/* Network Ticker - Full Width */}
+      <section className="py-12 bg-black overflow-hidden border-y border-white/5">
+        <h2 className="text-2xl font-medium text-white mb-8 text-center">
+          Stream on the most popular networks!
+        </h2>
+        <div className="overflow-hidden">
+          <div className="flex animate-ticker gap-6">
+            {['Apple TV+', 'Vizio', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'TNT', 'TLC', 'Comedy Central', 'fuboTV', 'BET', 'Food Network', 'CBS Sports', 'AMC', 'Discovery+', 'Peacock', 'Paramount+', 'Pluto TV', 'Apple TV+', 'Vizio', 'CNN', 'Fox News'].map((ch, i) => (
+              <div key={i} className="flex-shrink-0">
+                <ChannelLogo name={ch} />
+              </div>
+            ))}
           </div>
         </div>
       </section>
