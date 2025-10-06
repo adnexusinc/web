@@ -70,7 +70,7 @@ const ServicesPage: React.FC = () => {
 
       <main className="pt-24">
         {/* Hero Section */}
-        <div className="pt-32 pb-20 border-b border-gray-800">
+        <div className="pt-32 pb-20">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-5xl md:text-6xl font-bold mb-6">AI-ENABLED CREATIVE SOLUTIONS</h1>
@@ -86,7 +86,7 @@ const ServicesPage: React.FC = () => {
         </div>
 
         {/* Pricing Section */}
-        <div className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <div className="py-40 bg-gradient-to-b from-black to-gray-900">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto text-center mb-16">
               <h2 className="text-4xl font-bold mb-4">Transparent Pricing</h2>
