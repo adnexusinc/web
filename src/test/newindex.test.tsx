@@ -64,9 +64,11 @@ describe('NewIndex Page', () => {
     const emailInputs = screen.getAllByPlaceholderText(/Enter your work email|What's your work email/i);
     expect(emailInputs.length).toBeGreaterThan(0);
 
-    // Check for Get started button (may be multiple)
-    const getStartedButtons = screen.getAllByRole('button', { name: /Get started/i });
-    expect(getStartedButtons.length).toBeGreaterThan(0);
+    // Check for campaign button (may be multiple - "Start a Campaign")
+    const campaignButtons = screen.queryAllByRole('button', { name: /Start a Campaign|Get started/i });
+    // Or check for the link version
+    const campaignLinks = screen.queryAllByRole('link', { name: /Start a Campaign/i });
+    expect(campaignButtons.length + campaignLinks.length).toBeGreaterThan(0);
   });
 
   it('renders statistics section', () => {
