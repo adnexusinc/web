@@ -33,7 +33,7 @@ export const Footer = () => {
         { text: "For Publishers", href: "/publishers" },
         { text: "For Advertisers", href: "/advertisers" }, 
         { text: "For Agencies", href: "/agencies" },
-        { text: "Enterprise Partners", href: "/partners" }
+        { text: "Enterprise Partners", href: "https://cal.com/adnexus" }
       ]
     },
     products: {
