@@ -68,14 +68,16 @@ export function CTVCalculator() {
               <span className="text-gray-500 text-sm">USD</span>
             </div>
 
-            <Slider
-              value={[budget]}
-              onValueChange={(value) => setBudget(value[0])}
-              min={50}
-              max={100000}
-              step={50}
-              className="w-full mb-4"
-            />
+            <div className="relative mb-4">
+              <Slider
+                value={[budget]}
+                onValueChange={(value) => setBudget(value[0])}
+                min={50}
+                max={100000}
+                step={50}
+                className="w-full [&_[role=slider]]:bg-blue-600 [&_[role=slider]]:border-4 [&_[role=slider]]:border-white [&_[role=slider]]:shadow-lg [&_[role=slider]]:w-6 [&_[role=slider]]:h-6"
+              />
+            </div>
 
             <div className="flex justify-between text-sm text-gray-600">
               <span>$50</span>
