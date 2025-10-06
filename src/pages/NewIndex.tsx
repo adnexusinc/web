@@ -982,7 +982,7 @@ const NewIndex = () => {
       {/* Research & White Paper Section */}
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-12">
+          <div className="text-center mb-24">
             <h2 className="text-3xl font-bold mb-4">
               The State of CTV Advertising 2025
             </h2>
@@ -991,7 +991,7 @@ const NewIndex = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-3 gap-8 mb-24">
             <Card className="hover:shadow-xl transition-all">
               <CardContent className="p-6">
                 <div className="text-3xl font-bold text-primary mb-2">87%</div>
