@@ -738,7 +738,7 @@ const NewIndex = () => {
           </div>
 
           {/* Key Metrics */}
-          <div className="grid md:grid-cols-4 gap-6 mb-16">
+          <div className="grid md:grid-cols-4 gap-6 mb-32">
             <Card className="text-center hover:shadow-xl transition-all hover:scale-105">
               <CardContent className="p-6">
                 <div className="text-4xl font-bold text-primary mb-2">100M+</div>
