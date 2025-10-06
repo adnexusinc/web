@@ -827,7 +827,7 @@ const Home = () => {
                   Read Reviews on Trustpilot
                 </Button>
               </a>
-              <a href="https://x.com/adnexus" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/adnexusinc" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="border-white/20 text-white hover:bg-white/10">
                   Follow us on X
                 </Button>
