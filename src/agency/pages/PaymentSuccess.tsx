@@ -11,7 +11,7 @@ const PaymentSuccess = () => {
   const [searchParams] = useSearchParams();
   const [isProcessing, setIsProcessing] = useState(true);
   const [error, setError] = useState(false);
-  const [purchaseDetails, setPurchaseDetails] = useState<any>(null);
+  const [purchaseDetails, setPurchaseDetails] = useState<Record<string, unknown> | null>(null);
   
   const sessionId = searchParams.get('session_id');
 

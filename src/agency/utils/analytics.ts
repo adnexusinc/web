@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // Analytics utility for tracking ecommerce events with Google Analytics and Facebook Pixel
 
 declare global {

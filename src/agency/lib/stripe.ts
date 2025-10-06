@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { loadStripe } from '@stripe/stripe-js';
 import { analytics } from '@/agency/utils/analytics';
 

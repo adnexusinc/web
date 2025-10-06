@@ -67,7 +67,7 @@ const AdminDashboard = () => {
         const email = key.replace('creditHistory_', '');
         const history = JSON.parse(localStorage.getItem(key) || '[]');
         
-        history.forEach((item: any) => {
+        history.forEach((item: Record<string, unknown>) => {
           allOrders.push({
             ...item,
             userEmail: email,
@@ -84,7 +84,7 @@ const AdminDashboard = () => {
     const currentEmail = localStorage.getItem('userEmail') || '';
     const currentName = localStorage.getItem('userName') || '';
     
-    currentHistory.forEach((item: any) => {
+    currentHistory.forEach((item: Record<string, unknown>) => {
       allOrders.push({
         ...item,
         userEmail: currentEmail,

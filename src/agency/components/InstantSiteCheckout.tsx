@@ -6,8 +6,8 @@ import { Label } from '@/components/ui/label';
 import { CreditCard, Shield, Tag } from 'lucide-react';
 
 interface InstantSiteCheckoutProps {
-  formData: any;
-  onSubmit: (paymentData: any) => void;
+  formData: Record<string, unknown>;
+  onSubmit: (paymentData: Record<string, unknown>) => void;
 }
 
 const InstantSiteCheckout = ({ formData, onSubmit }: InstantSiteCheckoutProps) => {

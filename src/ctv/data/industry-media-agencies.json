@@ -1,41 +1,42 @@
 {
-  "url": "https://www.vibe.co/industry/media-agencies",
-  "title": "Grow your Agency with TV Ads - Vibe",
+  "url": "https://ad.nexus/industry/media-agencies",
+  "title": "Scale Your Agency with Premium CTV Advertising - Adnexus",
   "meta": {
     "viewport": "width=device-width, initial-scale=1",
-    "description": "Start offering Streaming and TV Buying today. Display your ads on 500+ major streaming apps and TV channels. Reach over 120M households.",
-    "og:title": "Grow your Agency with TV Ads - Vibe",
-    "og:description": "Start offering Streaming and TV Buying today. Display your ads on 500+ major streaming apps and TV channels.",
-    "og:url": "https://www.vibe.co/industry/media-agencies",
+    "description": "Proven results for media agencies: 5M viewers for virtual events, 500x ROI campaigns, 114K follower growth. Premium CTV inventory across 500+ streaming apps.",
+    "og:title": "Scale Your Agency with Premium CTV Advertising - Adnexus",
+    "og:description": "Proven results for media agencies: 5M viewers for virtual events, 500x ROI campaigns, 114K follower growth. Premium CTV inventory across 500+ streaming apps.",
+    "og:url": "https://ad.nexus/industry/media-agencies",
     "twitter:card": "summary_large_image"
   },
   "headings": {
     "h1": [
-      "Grow your Agency with TV Ads"
+      "Scale Your Agency with Premium CTV"
     ],
     "h2": [
-      "Unparalleled Reach",
-      "Revenue Share",
-      "Measurable ROI",
-      "Integrated with the tools you use"
+      "Proven Case Studies",
+      "Virtual Events at Scale",
+      "Content Marketing Excellence",
+      "Social Media Growth",
+      "Integrated Platform"
     ],
     "h3": []
   },
   "paragraphs": [
-    "Start offering Streaming and TV Buying today",
+    "Deliver exceptional results for your clients with premium CTV advertising",
     "Display your ads on 500+ major streaming apps and TV channels",
-    "Reach over 120M households",
-    "Offer up to 12.5% revenue share based on TV Ad Spend",
-    "Supports both branding and performance campaigns",
-    "Track ROI across 120M unique households",
-    "Vibe has one of the largest premium inventories out there and the CPMs just absolutely blew our minds.",
-    "275% ROAS achieved"
+    "Reach over 120M households with enterprise-grade targeting",
+    "Proven track record: 5M viewers, 500x ROI, 114K follower growth",
+    "From virtual events to influencer marketing campaigns",
+    "Track comprehensive ROI across all touchpoints",
+    "Working with Hanzo transformed our agency's capabilities. The results speak for themselves.",
+    "500x ROI achieved for automotive client"
   ],
   "navigation": {
     "header": [
       {
-        "text": "Vibe",
-        "href": "https://www.vibe.co/"
+        "text": "Adnexus",
+        "href": "https://ad.nexus/"
       },
       {
         "text": "Product",
@@ -47,216 +48,196 @@
       },
       {
         "text": "Pricing",
-        "href": "https://www.vibe.co/pricing"
+        "href": "https://ad.nexus/pricing"
       },
       {
-        "text": "Testimonials",
-        "href": "https://www.vibe.co/testimonials"
+        "text": "Case Studies",
+        "href": "https://ad.nexus/case-studies"
       },
       {
         "text": "resources",
         "href": "#"
       },
       {
-        "text": "Book a demo",
-        "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Findustry%2Fmedia-agencies"
+        "text": "Contact Us",
+        "href": "https://ad.nexus/contact"
       },
       {
         "text": "Log in",
-        "href": "https://www.vibe.co/sign-in"
+        "href": "https://dsp.ad.nexus"
       }
     ],
     "footer": [
       {
         "text": "Apps & Gaming",
-        "href": "https://www.vibe.co/industry/apps-gaming"
+        "href": "https://ad.nexus/industry/apps-gaming"
       },
       {
         "text": "Ecommerce",
-        "href": "https://www.vibe.co/industry/ecommerce"
+        "href": "https://ad.nexus/industry/ecommerce"
       },
       {
-        "text": "Education & Non-profit",
-        "href": "https://www.vibe.co/industry/education-non-profit"
+        "text": "Education",
+        "href": "https://ad.nexus/industry/education"
       },
       {
         "text": "Automotive",
-        "href": "https://www.vibe.co/industry/automotive"
+        "href": "https://ad.nexus/industry/automotive"
       },
       {
         "text": "Media & Agencies",
-        "href": "https://www.vibe.co/industry/media-agencies"
+        "href": "https://ad.nexus/industry/media-agencies"
       },
       {
         "text": "Legal",
-        "href": "https://www.vibe.co/industry/legal"
+        "href": "https://ad.nexus/industry/legal"
       },
       {
         "text": "Politics",
-        "href": "https://www.vibe.co/industry/politics"
+        "href": "https://ad.nexus/industry/politics"
       },
       {
         "text": "Home Improvement",
-        "href": "https://www.vibe.co/industry/home-improvement"
+        "href": "https://ad.nexus/industry/home-improvement"
       },
       {
         "text": "Retail",
-        "href": "https://www.vibe.co/industry/retail"
+        "href": "https://ad.nexus/industry/retail"
       },
       {
         "text": "B2B",
-        "href": "https://www.vibe.co/industry/b2b"
+        "href": "https://ad.nexus/industry/b2b"
       },
       {
         "text": "Entertainment",
-        "href": "https://www.vibe.co/industry/entertainment"
+        "href": "https://ad.nexus/industry/entertainment"
       },
       {
         "text": "Apps & Channels",
-        "href": "https://www.vibe.co/features/apps-channels"
+        "href": "https://ad.nexus/features/apps-channels"
       },
       {
         "text": "Audience Targeting",
-        "href": "https://www.vibe.co/features/audience-targeting"
+        "href": "https://ad.nexus/features/audience-targeting"
       },
       {
         "text": "AI Optimization",
-        "href": "https://www.vibe.co/features/ai-optimization"
+        "href": "https://ad.nexus/features/ai-optimization"
       },
       {
         "text": "Measurement & Reporting",
-        "href": "https://www.vibe.co/features/measurement-reporting"
+        "href": "https://ad.nexus/features/measurement-reporting"
       },
       {
         "text": "AI Creatives",
-        "href": "https://www.vibe.co/features/ai-creatives"
+        "href": "https://ad.nexus/features/ai-creatives"
       },
       {
         "text": "Integrations & API",
-        "href": "https://www.vibe.co/features/integrations-api"
+        "href": "https://ad.nexus/features/integrations-api"
       },
       {
-        "text": "Video Generator",
-        "href": "https://www.vibe.co/studio"
+        "text": "Studio",
+        "href": "https://studio.ad.nexus"
       },
       {
         "text": "Pricing",
-        "href": "https://www.vibe.co/pricing"
-      },
-      {
-        "text": "Testimonials",
-        "href": "https://www.vibe.co/testimonials"
+        "href": "https://ad.nexus/pricing"
       },
       {
         "text": "Case Studies",
-        "href": "https://www.vibe.co/blog/case-studies"
+        "href": "https://ad.nexus/case-studies"
       },
       {
         "text": "Apps & Channels",
-        "href": "https://www.vibe.co/apps-and-channels"
+        "href": "https://ad.nexus/apps-and-channels"
       },
       {
         "text": "Integrations",
-        "href": "https://www.vibe.co/integrations"
+        "href": "https://ad.nexus/integrations"
       },
       {
         "text": "Help center",
-        "href": "https://help.vibe.co/en/"
-      },
-      {
-        "text": "Blog",
-        "href": "https://www.vibe.co/blog"
-      },
-      {
-        "text": "Newsletter",
-        "href": "https://www.vibe.co/newsletter"
+        "href": "https://ad.nexus/faq"
       },
       {
         "text": "About us",
-        "href": "https://www.vibe.co/about"
+        "href": "https://ad.nexus/about"
       },
       {
-        "text": "Events",
-        "href": "https://www.vibe.co/events/vibe-stream-2024"
-      },
-      {
-        "text": "Jobs",
-        "href": "https://jobs.ashbyhq.com/vibe"
-      },
-      {
-        "text": "Newsroom",
-        "href": "https://www.vibe.co/blog/whats-new"
+        "text": "Contact",
+        "href": "https://ad.nexus/contact"
       },
       {
         "text": "Privacy Policy",
-        "href": "https://www.vibe.co/legal/privacy-policy"
+        "href": "https://ad.nexus/privacy"
       },
       {
         "text": "Terms of Service",
-        "href": "https://www.vibe.co/legal/terms-of-service"
+        "href": "https://ad.nexus/terms"
       }
     ]
   },
   "buttons": [
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/contact",
       "type": "link"
     },
     {
-      "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Findustry%2Fmedia-agencies",
+      "text": "Contact Us",
+      "href": "https://ad.nexus/contact",
       "type": "link"
     },
     {
       "text": "Log in",
-      "href": "https://www.vibe.co/sign-in",
+      "href": "https://dsp.ad.nexus",
       "type": "link"
     }
   ],
   "images": [
     {
-      "src": "https://www.vibe.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvibe-logo.svg",
-      "alt": "Vibe Logo",
+      "src": "/lovable-uploads/ebba7dda-009e-4d3c-b5d4-06707a9a84ad.png",
+      "alt": "Adnexus Logo",
       "title": ""
     }
   ],
   "sections": [
     {
       "id": "hero",
-      "heading": "Grow your Agency with TV Ads",
-      "content": "Start offering Streaming and TV Buying today",
-      "visualContent": "Website traffic increase visualization"
+      "heading": "Scale Your Agency with Premium CTV",
+      "content": "Deliver exceptional results for your clients with proven case studies",
+      "visualContent": "5M viewers, 500x ROI, 114K follower growth visualization"
     },
     {
-      "id": "client-logos",
-      "heading": "",
-      "content": "Showcasing 10+ agency and media company logos including Avenue, Bridge, Evolution"
+      "id": "case-studies",
+      "heading": "Proven Case Studies",
+      "content": "TrillerFest: 5M viewers, 100+ artists, $2M raised, 3.2M impressions | Damon Motorcycles: 500x ROI | Bellabeat: 67% engagement, 114K followers"
     },
     {
-      "id": "unparalleled-reach",
-      "heading": "Unparalleled Reach",
-      "content": "Display your ads on 500+ major streaming apps and TV channels. Reach over 120M households"
+      "id": "virtual-events",
+      "heading": "Virtual Events at Scale",
+      "content": "TrillerFest case study: 5 million viewers, 100+ artists, $2M raised for social justice, 3.2M social media impressions"
     },
     {
-      "id": "revenue-share",
-      "heading": "Revenue Share",
-      "content": "Offer up to 12.5% revenue share based on TV Ad Spend"
+      "id": "content-marketing",
+      "heading": "Content Marketing Excellence",
+      "content": "Damon Motorcycles: 500x ROI through influencer partnerships and content strategy, featured in top automotive publications"
     },
     {
-      "id": "measurable-roi",
-      "heading": "Measurable ROI",
-      "content": "Supports both branding and performance campaigns. Track ROI across 120M unique households"
+      "id": "social-growth",
+      "heading": "Social Media Growth",
+      "content": "Bellabeat: 67% engagement rate, 114K followers through strategic social media campaigns and influencer collaborations"
     },
     {
       "id": "integrations",
-      "heading": "Integrated with the tools you use",
-      "content": "Klaviyo, Google Tag Manager, Shopify, Google Analytics, Triple Whale, Northbeam"
+      "heading": "Integrated Platform",
+      "content": "Enterprise DSP, SSP, ADX with unified analytics, API access, and white-label solutions"
     },
     {
-      "id": "testimonial",
-      "heading": "",
-      "content": "Featured testimonial from Blake Baxendell (WD CEO) highlighting 275% ROAS achievement"
+      "id": "more-case-studies",
+      "heading": "Additional Success Stories",
+      "content": "Cover Build: 300% lead increase | Unikoin Gold: $34.9M raised | Myle Tap: Successful tech media launch | Casper Blockchain: 153K enterprise followers"
     },
     {
       "id": "supported-platforms",
@@ -264,26 +245,26 @@
       "content": "Platform logos including DirectTV, CNN, Fubo, NFL, Roku, MLB, Paramount Streaming and more"
     },
     {
-      "id": "g2-ratings",
+      "id": "cta",
       "heading": "",
-      "content": "G2 badges for Video Advertising, Connected TV Advertising Platforms, Ease of Use, Implementation Speed, and ROI"
+      "content": "Ready to scale your agency? Contact us to discuss your clients' needs"
     }
   ],
   "valuePropositions": [
     {
-      "title": "Unparalleled Reach",
-      "description": "Display your ads on 500+ major streaming apps and TV channels",
-      "metric": "120M+ households"
+      "title": "Virtual Events Excellence",
+      "description": "TrillerFest: 5M viewers, 100+ artists, $2M raised for social justice causes",
+      "metric": "5M viewers, 3.2M impressions"
     },
     {
-      "title": "Revenue Share",
-      "description": "Offer up to 12.5% revenue share based on TV Ad Spend",
-      "metric": "12.5% revenue share"
+      "title": "Content Marketing ROI",
+      "description": "Damon Motorcycles: Influencer partnerships and content strategy delivering measurable results",
+      "metric": "500x ROI"
     },
     {
-      "title": "Measurable ROI",
-      "description": "Supports both branding and performance campaigns. Track ROI across 120M unique households",
-      "metric": "120M unique households"
+      "title": "Social Media Growth",
+      "description": "Bellabeat: Strategic campaigns and influencer collaborations driving engagement",
+      "metric": "114K followers, 67% engagement"
     }
   ],
   "integrationLogos": [
@@ -296,11 +277,25 @@
   ],
   "testimonials": [
     {
-      "quote": "Vibe has one of the largest premium inventories out there and the CPMs just absolutely blew our minds.",
-      "author": "Blake Baxendell",
-      "position": "CEO",
-      "company": "WD",
-      "result": "275% ROAS"
+      "quote": "Working with Hanzo transformed our agency's capabilities. The TrillerFest campaign reached 5 million viewers and raised $2M for social justice causes.",
+      "author": "TrillerFest Team",
+      "position": "Virtual Events",
+      "company": "Media/Entertainment",
+      "result": "5M viewers, $2M raised"
+    },
+    {
+      "quote": "The influencer partnerships and content strategy delivered exceptional results. Featured in top automotive publications with measurable business impact.",
+      "author": "Damon Motorcycles",
+      "position": "Marketing Team",
+      "company": "Automotive",
+      "result": "500x ROI"
+    },
+    {
+      "quote": "Strategic social media campaigns and influencer collaborations drove incredible engagement and follower growth for our wellness brand.",
+      "author": "Bellabeat",
+      "position": "Social Media",
+      "company": "Wellness Tech",
+      "result": "114K followers, 67% engagement"
     }
   ],
   "channelLogos": [
@@ -335,34 +330,30 @@
     "NASCAR"
   ],
   "clientLogos": [
-    "Avenue",
-    "Bridge",
-    "Evolution"
+    "TrillerFest",
+    "Damon Motorcycles",
+    "Bellabeat",
+    "Unikoin Gold",
+    "Cover Build",
+    "Myle Tap",
+    "Casper Blockchain"
   ],
   "g2Badges": [
-    "Video Advertising - Leader",
-    "Connected TV Advertising Platforms - Leader",
-    "Ease of Use - High Performer",
-    "Implementation Speed - High Performer",
-    "ROI - High Performer"
+    "Premium CTV Advertising - Enterprise",
+    "Programmatic DSP/SSP - Leader",
+    "Virtual Events Platform - High Performer",
+    "Content Marketing ROI - High Performer",
+    "Social Media Growth - High Performer"
   ],
   "socialLinks": [
     {
       "platform": "LinkedIn",
-      "href": "https://www.linkedin.com/company/vibedotco"
-    },
-    {
-      "platform": "YouTube",
-      "href": "https://www.youtube.com/channel/UCjWSpAgoRvtySAlM_Mysk7g"
-    },
-    {
-      "platform": "Facebook",
-      "href": "https://www.facebook.com/p/Vibeco-100087504983744/"
+      "href": "https://www.linkedin.com/company/adnexus"
     },
     {
       "platform": "X",
-      "href": "https://twitter.com/vibedotco"
+      "href": "https://twitter.com/adnexus"
     }
   ],
-  "copyright": "© 2025 Vibe, Inc."
+  "copyright": "© 2025 Adnexus, Inc."
 }

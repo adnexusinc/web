@@ -93,172 +93,144 @@
   ],
   "caseStudies": [
     {
-      "company": "Meshki",
+      "company": "Casper Blockchain",
       "industry": "B2B",
-      "metric": "$0.93 Cost Per Session",
-      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
-      "href": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+      "metric": "Mainnet Launch Success",
+      "title": "First Ever Enterprise-Ready Blockchain",
+      "href": "https://ad.nexus/agency/case-study/casper-blockchain"
     },
     {
-      "company": "Abuelo's",
+      "company": "Cover Build",
       "industry": "B2B",
-      "metric": "-80% Cost Per Session",
-      "title": "Abuelo's Lowers Cost Per Session by 80%",
-      "href": "https://www.vibe.co/blog/abuelo-s-x-vibe-case-study"
+      "metric": "300% Lead Increase",
+      "title": "Cover Build Transforms Prefab Housing Marketing",
+      "href": "https://ad.nexus/agency/case-study/cover-build"
     },
     {
-      "company": "Eden Prairie Center",
+      "company": "Unikoin Gold",
       "industry": "B2B",
-      "metric": "458% Household Reach",
-      "title": "How an Iconic Mall Increased Household Reach by 458% with CTV",
-      "href": "https://www.vibe.co/blog/how-an-iconic-mall-increased-household-reach-by-458-with-ctv"
+      "metric": "$34.9M Raised",
+      "title": "Unikoin Gold Raises $34.9M in ICO",
+      "href": "https://ad.nexus/case-study/unikoin-gold"
     },
     {
-      "company": "Food Distributor",
+      "company": "Casper Blockchain",
       "industry": "B2B",
-      "metric": "85% Engagement Rate",
-      "title": "How a Food Distributor Authentically Engaged a Hispanic Audience",
-      "href": "https://www.vibe.co/blog/how-a-food-distributor-authentically-engaged-a-hispanic-audience"
+      "metric": "First Dev Grant",
+      "title": "Strategic Pivot to Rust Programming Language",
+      "href": "https://ad.nexus/agency/case-study/casper-blockchain"
     },
     {
-      "company": "Petfolk",
+      "company": "Damon Motorcycles",
       "industry": "B2B",
-      "metric": "30% Acquisition Lift",
-      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
-      "href": "https://www.vibe.co/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+      "metric": "500x ROI",
+      "title": "Damon Motorcycles Achieves 500x Return on Investment",
+      "href": "https://ad.nexus/case-study/damon-motorcycles"
     },
     {
-      "company": "Farm & Home",
+      "company": "Cover Build",
       "industry": "B2B",
-      "metric": "$28 CPM",
-      "title": "How Farm & Home Supply Advertised on Top TV Channels for under $28/CPM",
-      "href": "https://www.vibe.co/blog/ctv-ads-turned-this-farm-store-into-a-goldmine"
+      "metric": "40% Sales Cycle Reduction",
+      "title": "How Cover Build Reduced Sales Cycle by 40%",
+      "href": "https://ad.nexus/agency/case-study/cover-build"
     },
     {
-      "company": "Samford University",
+      "company": "Unikoin Gold",
       "industry": "B2B",
-      "metric": "<$2 Cost Per Session",
-      "title": "Nonprofit University Exceeds Growth Targets with Streaming TV",
-      "href": "https://www.vibe.co/blog/non-profit-university-exceeds-growth-targets-with-streaming-tv"
+      "metric": "300% Engagement Increase",
+      "title": "Blockchain Integration Drives Platform Engagement",
+      "href": "https://ad.nexus/case-study/unikoin-gold"
     },
     {
-      "company": "TruHeight",
+      "company": "Damon Motorcycles",
       "industry": "B2B",
-      "metric": "728% ROAS",
-      "title": "How TruHeight Reached 728% ROAS with CTV",
-      "href": "https://www.vibe.co/blog/vibe-x-truheight-vitamins-case-study"
+      "metric": "230% Lead Increase",
+      "title": "Highly Converting Campaign for Electric Motorcycles",
+      "href": "https://ad.nexus/case-study/damon-motorcycles"
     },
     {
-      "company": "Hoodsly",
+      "company": "Casper Blockchain",
       "industry": "B2B",
-      "metric": "409% ROAS",
-      "title": "409% ROAS for Hoodsly with Vibe",
-      "href": "https://www.vibe.co/blog/case-study-vibe-hoodsly"
+      "metric": "DEVxDAO Co-founded",
+      "title": "Building Swiss Blockchain Association",
+      "href": "https://ad.nexus/agency/case-study/casper-blockchain"
     },
     {
-      "company": "Sota Clothing",
+      "company": "Bellabeat",
       "industry": "B2B",
-      "metric": "$0.70 CPPV",
-      "title": "How Sota Clothing Got their CPPV Below $0.70 with Vibe & Klaviyo",
-      "href": "https://www.vibe.co/blog/apparel-brand-crushes-roi-goals-with-ctv"
+      "metric": "67% Engagement Increase",
+      "title": "Bellabeat Transforms Women's Health Tech",
+      "href": "https://ad.nexus/agency/case-study/bellabeat"
     },
     {
-      "company": "King Kanine",
+      "company": "Cover Build",
       "industry": "B2B",
-      "metric": "165% ROAS",
-      "title": "How King Kanine Reached 165% ROAS with Vibe's ML",
-      "href": "https://www.vibe.co/blog/pet-brand-reaches-new-highs-with-ctv"
+      "metric": "70% Used 3D Tools",
+      "title": "3D Visualization Drives Customer Understanding",
+      "href": "https://ad.nexus/agency/case-study/cover-build"
     },
     {
-      "company": "Bagelcode",
+      "company": "Damon Motorcycles",
       "industry": "B2B",
-      "metric": "x2+ D7 ROI",
-      "title": "Bagelcode Wins Big with Club Vegas Campaign",
-      "href": "https://www.vibe.co/blog/bagelcode-wins-big-with-club-vegas-campaign"
+      "metric": "65% Conversion Rate",
+      "title": "Lead to Sale Conversion Excellence",
+      "href": "https://ad.nexus/case-study/damon-motorcycles"
     },
     {
-      "company": "Branded Bills",
+      "company": "Unikoin Gold",
       "industry": "B2B",
-      "metric": "2,000% ROAS",
-      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
-      "href": "https://www.vibe.co/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+      "metric": "15+ Jurisdictions",
+      "title": "Global Regulatory Compliance Framework",
+      "href": "https://ad.nexus/case-study/unikoin-gold"
     },
     {
-      "company": "Car Stickers",
+      "company": "Bellabeat",
       "industry": "B2B",
-      "metric": "275% ROAS on Mobile",
-      "title": "Car Stickers Reaches 275% ROAS on Mobile",
-      "href": "https://www.vibe.co/blog/car-stickers-reaches-275-roas-on-mobile"
+      "metric": "45% Retention Improvement",
+      "title": "Data-Driven User Retention Strategy",
+      "href": "https://ad.nexus/agency/case-study/bellabeat"
     },
     {
-      "company": "SmartLiner",
+      "company": "Casper Blockchain",
       "industry": "B2B",
-      "metric": "1,635% ROAS",
-      "title": "SmartLiner Experiments and Wins with Vibe.co",
-      "href": "https://www.vibe.co/blog/smartliner-experiments-and-wins-with-vibe-co"
+      "metric": "Validator Node Leader",
+      "title": "First to Launch and Run Validator Nodes",
+      "href": "https://ad.nexus/agency/case-study/casper-blockchain"
     },
     {
-      "company": "Morris Media",
+      "company": "Damon Motorcycles",
       "industry": "B2B",
-      "metric": "70% Web Traffic Increase",
-      "title": "How a Full Service Agency Boosted Web Traffic by 70% with CTV",
-      "href": "https://www.vibe.co/blog/how-a-full-service-agency-boosted-web-traffic-by-70-with-ctv"
+      "metric": "45% CAC Reduction",
+      "title": "Reducing Customer Acquisition Cost",
+      "href": "https://ad.nexus/case-study/damon-motorcycles"
     },
     {
-      "company": "Pamos",
+      "company": "Bellabeat",
       "industry": "B2B",
-      "metric": "<$2 Cost Per Session",
-      "title": "How a Disruptor Brand Hit CPS <$2",
-      "href": "https://www.vibe.co/blog/how-a-disruptor-brand-hit-cps-2"
+      "metric": "$35M Revenue Estimate",
+      "title": "Scaling Women's Health Platform to $35M",
+      "href": "https://ad.nexus/agency/case-study/bellabeat"
     },
     {
-      "company": "Sijo",
+      "company": "Cover Build",
       "industry": "B2B",
-      "metric": "3.2x Average Order Value",
-      "title": "Sijo Home Upsells with Klaviyo and Vibe",
-      "href": "https://www.vibe.co/blog/sijo-home-upsells-with-klaviyo-and-vibe"
+      "metric": "Enhanced Customization",
+      "title": "Immersive Digital Experience for Prefab Homes",
+      "href": "https://ad.nexus/agency/case-study/cover-build"
     },
     {
-      "company": "Zoriz",
+      "company": "Unikoin Gold",
       "industry": "B2B",
-      "metric": "600% ROAS",
-      "title": "How Zoriz Golf Surpassed 600% ROAS with CTV",
-      "href": "https://www.vibe.co/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
+      "metric": "Ethereum Integration",
+      "title": "Smart Contract Implementation Success",
+      "href": "https://ad.nexus/case-study/unikoin-gold"
     },
     {
-      "company": "Herb Jones",
+      "company": "Casper Blockchain",
       "industry": "B2B",
-      "metric": "800% Web Traffic Increase",
-      "title": "How this Car Dealership Increased Web Traffic by 800%",
-      "href": "https://www.vibe.co/blog/how-this-car-dealership-increased-web-traffic-by-800"
-    },
-    {
-      "company": "AirDog",
-      "industry": "B2B",
-      "metric": "450% ROAS",
-      "title": "How an E-Comm Brand Reached 450% ROAS for their New Product Launch",
-      "href": "https://www.vibe.co/blog/how-an-e-comm-brand-reached-450-roas-for-their-new-product-launch"
-    },
-    {
-      "company": "Village Green",
-      "industry": "B2B",
-      "metric": "100% Household Coverage",
-      "title": "How Village Green Achieved Full Household Coverage with CTV",
-      "href": "https://www.vibe.co/blog/how-village-green-achieved-full-household-coverage-with-ctv"
-    },
-    {
-      "company": "NYXT",
-      "industry": "B2B",
-      "metric": "$0.85 Cost Per Lead",
-      "title": "How NYXT Reduced their Cost per Lead to a $0.85 Avg.",
-      "href": "https://www.vibe.co/blog/how-nyxt-reduced-their-cost-per-lead-to-a-0-85-avg"
-    },
-    {
-      "company": "Political Consultancy",
-      "industry": "B2B",
-      "metric": "192% Favorability Score",
-      "title": "How a Political Consultancy Increased Candidates' Favorability Score by 192%",
-      "href": "https://www.vibe.co/blog/how-a-political-consultancy-increased-candidates-favorability-score-by-192"
+      "metric": "Enterprise-Grade Security",
+      "title": "Proof-of-Stake Architecture for Enterprise",
+      "href": "https://ad.nexus/agency/case-study/casper-blockchain"
     }
   ],
   "platforms": [
