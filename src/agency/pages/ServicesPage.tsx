@@ -77,9 +77,9 @@ const ServicesPage: React.FC = () => {
                 Transforming traditional creative paradigms with an AI-enhanced approach that delivers measurable outcomes.
               </p>
 
-              <a href="https://auth.ad.nexus" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
+              <Link to="/agency/payment?plan=enterprise" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
                 Get Started Today <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -164,10 +164,10 @@ const ServicesPage: React.FC = () => {
                   </ul>
 
                   <div className="mt-8">
-                    <a href="https://auth.ad.nexus" className="block w-full bg-white text-black py-4 rounded-full text-center font-medium hover:bg-white/90 transition-colors text-lg">
+                    <Link to="/agency/payment?plan=enterprise" className="block w-full bg-white text-black py-4 rounded-full text-center font-medium hover:bg-white/90 transition-colors text-lg">
                       Sign Up Now
-                    </a>
-                    <p className="text-center mt-4 text-gray-400">No credit card required to start</p>
+                    </Link>
+                    <p className="text-center mt-4 text-gray-400">Start with credit card payment</p>
                   </div>
                 </div>
               </div>
@@ -187,8 +187,8 @@ const ServicesPage: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gray-800 p-8 rounded-lg border border-gray-700">
-                <div className="flex items-center gap-3 mb-6">
-                  <img src="/images/casper/logo.png" alt="Casper" className="h-8" />
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-white">Casper</h3>
                 </div>
                 <p className="text-gray-300 mb-4">
                   "Adnexus's AI-enhanced creative approach helped us increase our conversion rates by 65% while maintaining our brand identity."
@@ -197,8 +197,8 @@ const ServicesPage: React.FC = () => {
               </div>
 
               <div className="bg-gray-800 p-8 rounded-lg border border-gray-700">
-                <div className="flex items-center gap-3 mb-6">
-                  <img src="/images/triller/logo.png" alt="Triller" className="h-8" />
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-white">Triller</h3>
                 </div>
                 <p className="text-gray-300 mb-4">
                   "The team at Adnexus delivered exceptional creative assets that helped us stand out in a crowded marketplace."
@@ -207,8 +207,8 @@ const ServicesPage: React.FC = () => {
               </div>
 
               <div className="bg-gray-800 p-8 rounded-lg border border-gray-700">
-                <div className="flex items-center gap-3 mb-6">
-                  <img src="/images/damon/logo.png" alt="Damon Motorcycles" className="h-8" />
+                <div className="mb-6">
+                  <h3 className="text-xl font-bold text-white">Damon Motorcycles</h3>
                 </div>
                 <p className="text-gray-300 mb-4">
                   "Adnexus's work on our brand and marketing materials directly contributed to our successful launch and funding rounds."
@@ -229,9 +229,9 @@ const ServicesPage: React.FC = () => {
               </p>
 
               <div className="flex flex-wrap justify-center gap-4">
-                <a href="https://auth.ad.nexus" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
+                <Link to="/agency/payment?plan=enterprise" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
                   Sign Up for $9,999/month <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
+                </Link>
                 <a href="https://cal.com/adnexus/z1YsZQrqR4s6jQqD8" className="border border-white px-8 py-4 rounded-full font-medium hover:bg-white/10 inline-flex items-center text-lg">
                   Schedule a Consultation
                 </a>

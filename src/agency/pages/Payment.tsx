@@ -70,7 +70,23 @@ const Payment = () => {
         ]
       };
     }
-    
+
+    if (plan === 'enterprise') {
+      return {
+        name: 'Enterprise Plan',
+        price: 9999,
+        description: '$9,999/month billed monthly',
+        features: [
+          'Access to all creative services with unlimited revisions',
+          'Dedicated creative team for your projects',
+          'AI-powered creative solutions and optimization',
+          'Priority support and fast turnaround times',
+          'Regular strategy meetings and performance reports',
+          'Complete asset ownership and source files'
+        ]
+      };
+    }
+
     return {
       name: 'Agency Service',
       price: 5000,
@@ -419,9 +435,9 @@ const Payment = () => {
                         ${finalPrice.toLocaleString()}
                       </span>
                     </div>
-                    {plan === 'agency' && (
+                    {(plan === 'agency' || plan === 'enterprise') && (
                       <p className="text-sm text-gray-400 text-right mt-1">
-                        Billed monthly • 3 month minimum
+                        {plan === 'enterprise' ? 'Billed monthly • Cancel anytime' : 'Billed monthly • 3 month minimum'}
                       </p>
                     )}
                   </div>
