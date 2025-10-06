@@ -805,33 +805,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* Final CTA - Before Footer */}
-      <section className="py-20 px-4 bg-gradient-to-b from-black to-blue-900">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-5xl font-bold text-white mb-6">
-            Ready to launch your first CTV campaign?
-          </h2>
-          <p className="text-xl text-white/80 mb-8">
-            Join 100+ brands advertising on premium streaming TV
-          </p>
-          <div className="flex gap-4 justify-center">
-            <a href="/book-demo">
-              <Button size="lg" className="bg-white text-black hover:bg-gray-100 px-12 h-14 text-lg">
-                Book a Demo
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
-            <a href="https://dsp.ad.nexus">
-              <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10 px-12 h-14 text-lg">
-                Get Started
-              </Button>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <footer className="relative py-16 px-4 bg-black border-t border-white/10 overflow-hidden">
-        {/* Large Adnexus Logo Watermark */}
+      <footer className="relative py-20 px-4 bg-black border-t border-white/10 overflow-hidden">
+        {/* Large Adnexus Logo Fixed to Bottom - Centered, Faded */}
         <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center opacity-[0.03] pointer-events-none overflow-hidden">
           <div className="text-[25rem] font-black text-white leading-none pb-8">
             adnexus
@@ -839,33 +814,25 @@ const Home = () => {
         </div>
 
         <div className="container mx-auto max-w-6xl relative z-10">
-          {/* Newsletter + Social */}
-          <div className="grid md:grid-cols-2 gap-12 mb-12 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-4">Stay Updated</h3>
-              <p className="text-white/60 mb-6">Get CTV insights delivered twice weekly</p>
-              <form onSubmit={(e) => { e.preventDefault(); window.location.href = '/newsletter'; }} className="flex gap-3">
-                <Input
-                  type="email"
-                  placeholder="Enter your work email"
-                  className="flex-1 bg-white/10 border-white/20 text-white placeholder:text-white/50"
-                  required
-                />
-                <Button type="submit" className="bg-blue-600 hover:bg-blue-700">
-                  Subscribe
-                </Button>
-              </form>
+          {/* Trustpilot Reviews Section */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-3 mb-4">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-8 w-8 fill-green-500 text-green-500" />
+              ))}
             </div>
-            <div className="flex items-center justify-end gap-4">
-              <a href="https://x.com/adnexusinc" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition">
-                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <h3 className="text-3xl font-bold text-white mb-2">Rated 4.9/5 on Trustpilot</h3>
+            <p className="text-white/60 mb-6">Join 100+ high-growth startups seeing results</p>
+            <div className="flex gap-4 justify-center">
+              <a href="https://www.trustpilot.com/review/ad.nexus" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10">
+                  Read Reviews on Trustpilot
+                </Button>
               </a>
-              <a href="https://www.linkedin.com/company/adnexus" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition">
-                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-              </a>
-              <a href="https://www.trustpilot.com/review/ad.nexus" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-white/60 hover:text-white transition">
-                <Star className="h-5 w-5 fill-green-500 text-green-500" />
-                <span className="text-sm">4.9/5</span>
+              <a href="https://x.com/adnexusinc" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10">
+                  Follow us on X
+                </Button>
               </a>
             </div>
           </div>
@@ -912,6 +879,22 @@ const Home = () => {
             </div>
           </div>
 
+          {/* Newsletter CTA - Inverted Colors */}
+          <div className="py-16 border-y border-white/5 mb-12 bg-white/5 rounded-2xl">
+            <div className="text-center">
+              <h3 className="text-3xl font-bold text-white mb-4">Stay ahead of the curve</h3>
+              <p className="text-white/70 mb-8 max-w-2xl mx-auto">
+                Get exclusive CTV insights, platform updates, and industry trends delivered twice weekly
+              </p>
+              <Link to="/newsletter">
+                <Button size="lg" className="bg-white text-black hover:bg-gray-100 px-12">
+                  Subscribe to Newsletter
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <p className="text-white/40 text-sm mt-4">
+                Join 100+ high-growth startups • Unsubscribe anytime
+              </p>
             </div>
           </div>
 
