@@ -37,10 +37,8 @@ describe('NewIndex Page', () => {
     );
 
     // Check for main headline text
-    expect(screen.getByText(/Grow your brand/i)).toBeInTheDocument();
-    // Multiple instances of "with TV Ads" exist, verify at least one
-    const tvAdsTexts = screen.getAllByText(/with TV Ads/i);
-    expect(tvAdsTexts.length).toBeGreaterThan(0);
+    expect(screen.getByText(/Programmatic CTV Advertising/i)).toBeInTheDocument();
+    expect(screen.getByText(/Made Simple/i)).toBeInTheDocument();
   });
 
   it('renders tagline', () => {
@@ -50,7 +48,7 @@ describe('NewIndex Page', () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByText(/Generate business outcomes/i)).toBeInTheDocument();
+    expect(screen.getByText(/Launch premium Connected TV campaigns/i)).toBeInTheDocument();
   });
 
   it('renders email input and CTA button', () => {
