@@ -17,39 +17,11 @@ export default function Pricing() {
           <div className="text-center mb-16">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Pricing</h1>
             <p className="text-xl md:text-2xl text-white/80 mb-2">
-              4 Products. Choose what fits your needs.
+              Affordable TV Advertising. For everyone.
             </p>
             <p className="text-lg text-white/60 max-w-3xl mx-auto">
-              Self-serve programmatic platforms (DSP, SSP), AI-powered creative studio, and full-service agency.
+              The most affordable Streaming and Connected TV Advertising solution built for brands and businesses of all sizes.
             </p>
-          </div>
-
-          {/* Product Overview - 2 Products Only */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-16">
-            <Card className="p-8 bg-white/5 border-white/10 hover:border-blue-600/50 transition-all text-center">
-              <Target className="h-12 w-12 text-blue-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-2">Advertiser Platform</h3>
-              <p className="text-white/60 mb-4">Self-serve DSP for CTV campaigns</p>
-              <a href="/dsp" className="text-blue-400 hover:underline">Learn More →</a>
-            </Card>
-            <Card className="p-8 bg-white/5 border-white/10 hover:border-purple-600/50 transition-all text-center">
-              <Film className="h-12 w-12 text-purple-400 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-2">Studio</h3>
-              <p className="text-white/60 mb-4">Create TV ads in minutes with AI</p>
-              <a href="/studio" className="text-blue-400 hover:underline">Learn More →</a>
-            </Card>
-          </div>
-
-          {/* Agency Services Callout */}
-          <div className="max-w-2xl mx-auto mb-16 p-6 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-2xl border border-blue-600/20 text-center">
-            <Zap className="h-10 w-10 text-yellow-400 mx-auto mb-3" />
-            <h3 className="text-2xl font-bold mb-2">Need Full-Service?</h3>
-            <p className="text-white/70 mb-4">
-              Get our Agency Services: $9,999/month for on-demand creative + marketing with Hanzo AI credits
-            </p>
-            <a href="/agency" className="text-blue-400 hover:underline font-semibold">
-              Explore Agency Services →
-            </a>
           </div>
 
           {/* CTV Calculator */}
