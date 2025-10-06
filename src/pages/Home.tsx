@@ -389,7 +389,7 @@ const Home = () => {
             className={`relative w-full max-h-full aspect-video bg-black rounded-[30px] overflow-hidden group transition-all duration-500 ${
               !showPhoneBanner ? 'scale-105' : 'scale-100'
             }`}
-            style={{ maxWidth: '90vw', maxHeight: showPhoneBanner ? 'calc(100vh - 140px)' : 'calc(100vh - 80px)' }}
+            style={{ maxWidth: '85vw', maxHeight: showPhoneBanner ? 'calc(100vh - 200px)' : 'calc(100vh - 160px)' }}
             onMouseEnter={() => setIsHeroHovered(true)}
             onMouseLeave={() => setIsHeroHovered(false)}
           >
@@ -493,26 +493,18 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 z-40">
-            <span className="text-[10px] uppercase tracking-[0.2em] font-light">Scroll</span>
-            <ChevronDown className="h-5 w-5 animate-bounce opacity-60" />
-          </div>
         </div>
-      </section>
 
-      {/* Network Ticker - Full Width */}
-      <section className="py-12 bg-black overflow-hidden border-y border-white/5">
-        <h2 className="text-2xl font-medium text-white mb-8 text-center">
-          Stream on the most popular networks!
-        </h2>
-        <div className="overflow-hidden">
-          <div className="flex animate-ticker gap-6">
-            {['Apple TV+', 'Vizio', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'TNT', 'TLC', 'Comedy Central', 'fuboTV', 'BET', 'Food Network', 'CBS Sports', 'AMC', 'Discovery+', 'Peacock', 'Paramount+', 'Pluto TV', 'Apple TV+', 'Vizio', 'CNN', 'Fox News'].map((ch, i) => (
-              <div key={i} className="flex-shrink-0">
-                <ChannelLogo name={ch} />
-              </div>
-            ))}
+        {/* Network Ticker - Fixed at Bottom of Hero Viewport */}
+        <div className="absolute bottom-0 left-0 right-0 py-6 bg-gradient-to-t from-black via-black/95 to-transparent backdrop-blur-sm border-t border-white/5 z-30">
+          <div className="overflow-hidden">
+            <div className="flex animate-ticker gap-6">
+              {['Apple TV+', 'Vizio', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'TNT', 'TLC', 'Comedy Central', 'fuboTV', 'BET', 'Food Network', 'CBS Sports', 'AMC', 'Discovery+', 'Peacock', 'Paramount+', 'Pluto TV', 'Apple TV+', 'Vizio', 'CNN', 'Fox News'].map((ch, i) => (
+                <div key={i} className="flex-shrink-0">
+                  <ChannelLogo name={ch} className="scale-75" />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -805,39 +797,17 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <footer className="relative py-20 px-4 bg-black border-t border-white/10 overflow-hidden">
-        {/* Large Adnexus Logo Fixed to Bottom - Centered, Faded, Responsive */}
-        <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center opacity-[0.03] pointer-events-none overflow-hidden">
-          <div className="text-[8rem] sm:text-[12rem] md:text-[16rem] lg:text-[20rem] xl:text-[25rem] font-black text-white leading-none pb-4">
+      <footer className="relative py-16 bg-black border-t border-white/5">
+        {/* Large Adnexus Logo Watermark - Full Width */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none">
+          <div className="text-[15rem] sm:text-[18rem] md:text-[22rem] lg:text-[28rem] font-black text-white whitespace-nowrap">
             adnexus
           </div>
         </div>
 
-        <div className="container mx-auto max-w-6xl relative z-10">
-          {/* Trustpilot Reviews Section */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 mb-4">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-8 w-8 fill-green-500 text-green-500" />
-              ))}
-            </div>
-            <h3 className="text-3xl font-bold text-white mb-2">Rated 4.9/5 on Trustpilot</h3>
-            <p className="text-white/60 mb-6">Join 100+ high-growth startups seeing results</p>
-            <div className="flex gap-4 justify-center">
-              <a href="https://www.trustpilot.com/review/ad.nexus" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10">
-                  Read Reviews on Trustpilot
-                </Button>
-              </a>
-              <a href="https://x.com/adnexusinc" target="_blank" rel="noopener noreferrer">
-                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10">
-                  Follow us on X
-                </Button>
-              </a>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-4 gap-8 mb-12">
+        {/* Footer Content - Full Width */}
+        <div className="relative z-10 px-8">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-[1fr_1fr_1fr_400px] gap-12 mb-12">
             <div>
               <h3 className="font-semibold mb-4 text-white">Industries</h3>
               <ul className="space-y-2 text-sm text-white/50">
@@ -879,28 +849,44 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Newsletter CTA - Inverted Colors */}
-          <div className="py-16 border-y border-white/5 mb-12 bg-white/5 rounded-2xl">
-            <div className="text-center">
-              <h3 className="text-3xl font-bold text-white mb-4">Stay ahead of the curve</h3>
-              <p className="text-white/70 mb-8 max-w-2xl mx-auto">
-                Get exclusive CTV insights, platform updates, and industry trends delivered twice weekly
-              </p>
-              <Link to="/newsletter">
-                <Button size="lg" className="bg-white text-black hover:bg-gray-100 px-12">
-                  Subscribe to Newsletter
-                  <ArrowRight className="ml-2 h-5 w-5" />
+            {/* Contact + Newsletter Column */}
+            <div>
+              <h3 className="font-semibold mb-4 text-white">Contact</h3>
+              <div className="space-y-3 text-sm text-white/50 mb-6">
+                <p>Los Angeles, California</p>
+                <a href="tel:+18442363987" className="block hover:text-white transition">+1 844 AD-NEXUS</a>
+                <a href="mailto:support@ad.nexus" className="block hover:text-white transition">support@ad.nexus</a>
+              </div>
+              <div className="flex gap-3">
+                <a href="https://x.com/adnexusinc" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition">
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/company/adnexus" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-white transition">
+                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Newsletter Signup - Far Right */}
+            <div>
+              <h3 className="font-semibold mb-4 text-white">Newsletter</h3>
+              <p className="text-sm text-white/60 mb-4">Get CTV insights twice weekly</p>
+              <form onSubmit={(e) => { e.preventDefault(); window.location.href = '/newsletter'; }} className="space-y-3">
+                <Input
+                  type="email"
+                  placeholder="Your work email"
+                  className="bg-white/10 border-white/20 text-white placeholder:text-white/40 h-10"
+                  required
+                />
+                <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
+                  Subscribe
                 </Button>
-              </Link>
-              <p className="text-white/40 text-sm mt-4">
-                Join 100+ high-growth startups • Unsubscribe anytime
-              </p>
+              </form>
             </div>
           </div>
 
-          <div className="text-center text-sm text-white/40 space-y-2">
-            <p>© 2025 Adnexus Technology, Inc. All rights reserved.</p>
-            <p>Los Angeles, California | +1 844 AD-NEXUS (844-236-3987) | support@ad.nexus</p>
+          <div className="text-center text-sm text-white/30 pt-8 border-t border-white/5">
+            <p>© 2025 Adnexus Technology, Inc.</p>
           </div>
         </div>
       </footer>

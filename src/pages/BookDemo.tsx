@@ -24,7 +24,7 @@ export default function BookDemo() {
       <div className="bg-white text-black p-12 flex flex-col justify-center">
         <div className="max-w-md mx-auto w-full">
           <div className="mb-8">
-            <span className="text-2xl font-bold text-black">adnexus</span>
+            <img src="/logo.png" alt="Adnexus" className="h-8" />
           </div>
 
           {step === 1 && (
