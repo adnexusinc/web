@@ -497,7 +497,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                   </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
-              <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
+              <a href="/book-demo">
                 <Button size="sm" className="group">
                   Book a Demo
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -635,7 +635,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                         Sign Up for Agency
                       </Button>
                     </a>
-                    <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
+                    <a href="/book-demo" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
                       <Button variant="outline" className="w-full">
                         Book a Demo
                       </Button>
