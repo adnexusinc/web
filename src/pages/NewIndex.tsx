@@ -651,12 +651,12 @@ const NewIndex = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center">
             <h1 className="text-5xl lg:text-7xl font-bold mb-6">
-              Grow your brand<br />
-              <span className="text-primary">with TV Ads</span>
+              Programmatic CTV Advertising<br />
+              <span className="text-primary">Made Simple</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Generate business outcomes with the easiest-to-use Streaming TV Ad Platform.
-              Built for brands of all sizes.
+              Launch premium Connected TV campaigns in minutes. Access 500+ streaming channels with $9 minimum spend.
+              Built for performance marketers who demand results.
             </p>
 
             <div className="max-w-md mx-auto mb-8">
