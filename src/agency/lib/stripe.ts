@@ -2,10 +2,9 @@
 import { loadStripe } from '@stripe/stripe-js';
 import { analytics } from '@/agency/utils/analytics';
 
-// Initialize Stripe with your publishable key
+// Initialize Stripe with your publishable key (from environment variable)
 const stripePromise = loadStripe(
-  import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY || 
-  'pk_live_51Qv57WJ03IK6WYmUum87SddG7ofxE9uACRSRUfsMSkfpeBCorljB0T99XV1D9OeYQsfVDBa19VwUmUik2cr4Osyw00DIPd0X92'
+  import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY!
 );
 
 // API endpoint (will use relative URL in production)
