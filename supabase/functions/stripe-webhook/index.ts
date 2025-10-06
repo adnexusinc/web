@@ -22,7 +22,7 @@ serve(async (req) => {
 
     // Handle the event
     switch (event.type) {
-      case 'checkout.session.completed':
+      case 'checkout.session.completed': {
         const session = event.data.object
         console.log('Payment successful:', session.id)
 
@@ -33,15 +33,18 @@ serve(async (req) => {
         //   .eq('email', session.customer_email)
 
         break
+      }
 
       case 'customer.subscription.created':
-      case 'customer.subscription.updated':
+      case 'customer.subscription.updated': {
         console.log('Subscription updated:', event.data.object.id)
         break
+      }
 
-      case 'customer.subscription.deleted':
+      case 'customer.subscription.deleted': {
         console.log('Subscription cancelled:', event.data.object.id)
         break
+      }
 
       default:
         console.log(`Unhandled event type: ${event.type}`)
