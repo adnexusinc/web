@@ -494,11 +494,9 @@ const NewIndex = () => {
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Minimal Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30">
-          <div className="flex flex-col items-center gap-3 text-white/30">
+          {/* Minimal Scroll Indicator */}
+          <div className="mt-16 flex flex-col items-center gap-3 text-white/30">
             <span className="text-[10px] uppercase tracking-[0.2em] font-light">Scroll</span>
             <ChevronDown className="h-5 w-5 animate-bounce opacity-60" />
           </div>
