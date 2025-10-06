@@ -389,7 +389,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                     Solutions
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[500px] gap-3 p-4">
+                    <ul className="grid w-screen max-w-3xl gap-3 p-4">
                       {solutionItems.map((item) => (
                         <ListItem
                           key={item.title}
@@ -410,7 +410,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                     Resources
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[500px] gap-3 p-4">
+                    <ul className="grid w-screen max-w-3xl gap-3 p-4">
                       {resourcesItems.map((item) => (
                         <ListItem
                           key={item.title}
@@ -431,7 +431,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                     Company
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[500px] gap-3 p-4">
+                    <ul className="grid w-screen max-w-3xl gap-3 p-4">
                       {companyItems.map((item) => (
                         <ListItem
                           key={item.title}
