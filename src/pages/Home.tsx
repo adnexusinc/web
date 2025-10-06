@@ -696,7 +696,7 @@ const Home = () => {
 
           <div className="relative overflow-hidden py-8">
             <div className="flex animate-ticker gap-6">
-              {['CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'TNT', 'TLC', 'Comedy Central', 'fuboTV', 'BET', 'Food Network', 'CBS Sports', 'AMC', 'Discovery+', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku'].map((ch, i) => (
+              {['Apple TV+', 'Vizio', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'TNT', 'TLC', 'Comedy Central', 'fuboTV', 'BET', 'Food Network', 'CBS Sports', 'AMC', 'Discovery+', 'Peacock', 'Paramount+', 'Pluto TV'].map((ch, i) => (
                 <div key={i} className="flex-shrink-0">
                   <ChannelLogo name={ch} />
                 </div>

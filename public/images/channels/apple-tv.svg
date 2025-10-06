@@ -1,0 +1,8 @@
+<svg viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="80" fill="#000000"/>
+  <!-- Apple icon -->
+  <g transform="translate(50, 25)">
+    <path d="M 15,8 Q 15,2 10,0 Q 13,-2 15,0 M 10,5 Q 5,5 2,10 Q 0,15 0,20 Q 0,30 5,35 Q 8,38 12,35 Q 15,33 15,28 L 15,20 Q 15,10 10,5" fill="white"/>
+  </g>
+  <text x="82" y="45" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="24" font-weight="600" fill="white">tv+</text>
+</svg>

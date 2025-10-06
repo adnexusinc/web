@@ -34,8 +34,11 @@ const channelStyles: Record<string, { bg: string; text: string; font?: string }>
 };
 
 export const ChannelLogo = ({ name, className = '' }: ChannelLogoProps) => {
-  // Convert name to filename (e.g., "Fox News" -> "fox-news")
-  const filename = name.toLowerCase().replace(/\s+/g, '-').replace(/\+/g, '');
+  // Convert name to filename (e.g., "Fox News" -> "fox-news", "Apple TV+" -> "apple-tv")
+  const filename = name.toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/\+/g, '')
+    .replace('tv-', 'tv');
   const logoPath = `/images/channels/${filename}.svg`;
 
   // Try to load image, fallback to styled text
