@@ -38,6 +38,9 @@ const AgencyOnboardingSuccess = lazy(() => import("./agency/pages/OnboardingSucc
 const AgencyPayment = lazy(() => import("./agency/pages/Payment"));
 const AgencyServicesPage = lazy(() => import("./agency/pages/ServicesPage"));
 const AgencySolutionsPage = lazy(() => import("./agency/pages/SolutionsPage"));
+const AgencyLogin = lazy(() => import("./agency/pages/Login"));
+const AgencySignup = lazy(() => import("./agency/pages/Signup"));
+const AgencyDashboard = lazy(() => import("./agency/pages/Dashboard"));
 
 // CTV Platform pages (disabled - needs @hanzo/ui/primitives and /blocks exports)
 // import { ctvRoutes } from "./ctv/routes";
@@ -134,6 +137,12 @@ const App = () => (
             <Route path="/agency/services/*" element={<AgencyServicesPage />} />
             <Route path="/agency/solutions" element={<AgencySolutionsPage />} />
             <Route path="/agency/capabilities/*" element={<AgencySolutionsPage />} />
+
+            {/* Agency Authentication */}
+            <Route path="/agency/login" element={<AgencyLogin />} />
+            <Route path="/agency/signup" element={<AgencySignup />} />
+            <Route path="/agency/dashboard" element={<AgencyDashboard />} />
+
             <Route path="/enterprise" element={<Enterprise />} />
 
             {/* Services & Solutions - Redirect to Agency */}
