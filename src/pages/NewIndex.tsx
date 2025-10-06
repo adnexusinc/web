@@ -32,12 +32,23 @@ import {
 } from 'lucide-react';
 
 const NewIndex = () => {
-  // Video rotation state - cycle between videos
-  const videoIds = ['uF3f2BEctdU', '4shT4lBNeAg', 'o_McZxpeaEc'];
+  // Video rotation state - cycle between two videos
+  const videoIds = ['kQl6FrmA1tQ', '3ymfbDqsQs0', '4shT4lBNeAg'];
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [email, setEmail] = useState('');
   const [showStatic, setShowStatic] = useState(false);
-  const [showPhoneBanner, setShowPhoneBanner] = useState(true);
+  const [showPhoneBanner, setShowPhoneBanner] = useState(() => {
+    // Check if banner was dismissed in last 24 hours
+    if (typeof window !== 'undefined') {
+      const dismissed = localStorage.getItem('phoneBannerDismissed');
+      if (dismissed) {
+        const dismissedTime = parseInt(dismissed);
+        const hoursSince = (Date.now() - dismissedTime) / (1000 * 60 * 60);
+        return hoursSince >= 24; // Show again after 24 hours
+      }
+    }
+    return true;
+  });
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMuted, setIsMuted] = useState(true); // Default muted - user must click to unmute
   const [isPiP, setIsPiP] = useState(false);
@@ -201,7 +212,7 @@ const NewIndex = () => {
   useEffect(() => {
     const muteParam = isMuted ? '1' : '0';
     const currentVideoId = videoIds[currentVideoIndex];
-    setVideoSrc(`https://www.youtube.com/embed/${currentVideoId}?autoplay=1&mute=${muteParam}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&disablekb=1&fs=0&cc_load_policy=0&loop=1&playlist=${currentVideoId}`);
+    setVideoSrc(`https://www.youtube.com/embed/${currentVideoId}?autoplay=1&mute=${muteParam}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`);
   }, [isMuted, currentVideoIndex]);
 
   // Grid-based snapping for PiP
@@ -347,7 +358,10 @@ const NewIndex = () => {
               <span className="font-semibold">Call us: +1 844 AD-NEXUS (844-236-3987)</span>
             </a>
             <button
-              onClick={() => setShowPhoneBanner(false)}
+              onClick={() => {
+                setShowPhoneBanner(false);
+                localStorage.setItem('phoneBannerDismissed', Date.now().toString());
+              }}
               className="p-1 hover:bg-white/10 rounded-full transition"
               aria-label="Close banner"
             >
@@ -361,15 +375,23 @@ const NewIndex = () => {
       <Navigation bannerVisible={showPhoneBanner} />
 
       {/* Video Hero Section - Pure Black Cinematic with Gradient */}
-      <section id="video-section" className="relative min-h-screen flex items-start justify-center overflow-hidden" style={{
+      <section id="video-section" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{
         background: 'radial-gradient(ellipse 120% 80% at center center, rgba(45,45,45,1) 0%, rgba(20,20,20,1) 35%, rgba(0,0,0,1) 70%)',
-        paddingTop: showPhoneBanner ? '100px' : '64px' // Dynamic based on banner visibility - reduced padding
+        paddingTop: showPhoneBanner ? '120px' : '80px' // Dynamic based on banner visibility
       }}>
         {/* Hollywood-style Cinematic Container */}
-        <div className="relative w-full max-w-7xl mx-auto px-4 pt-4 animate-fadeInUp">
-          {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow */}
+        <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
+          {/* Cinematic Title - Above Video, Left Aligned */}
+          <div className="mb-8 animate-fadeInUp">
+            <h2 className="text-sm font-bold text-white mb-2 tracking-wide">CTV Ads in Action</h2>
+            <p className="text-white/50 text-sm md:text-base tracking-wider uppercase">Experience the future of advertising</p>
+          </div>
+
+          {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow - Scales larger when banner dismissed */}
           <div
-            className="relative aspect-video bg-black rounded-[30px] overflow-hidden group"
+            className={`relative aspect-video bg-black rounded-[30px] overflow-hidden group transition-all duration-500 ${
+              !showPhoneBanner ? 'scale-110' : 'scale-100'
+            }`}
             onMouseEnter={() => setIsHeroHovered(true)}
             onMouseLeave={() => setIsHeroHovered(false)}
           >
@@ -474,7 +496,7 @@ const NewIndex = () => {
           </div>
 
           {/* Network Ticker - Below Video */}
-          <div className="mt-6 flex items-center gap-6 overflow-hidden">
+          <div className="mt-12 flex items-center gap-6 overflow-hidden">
             <h2 className="text-2xl font-medium text-white whitespace-nowrap flex-shrink-0">
               Stream on the most popular networks!
             </h2>
