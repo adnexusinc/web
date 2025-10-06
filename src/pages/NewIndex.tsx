@@ -660,20 +660,12 @@ const NewIndex = () => {
             </p>
 
             <div className="max-w-md mx-auto mb-8">
-              <form onSubmit={handleEmailSubmit} className="flex gap-2">
-                <Input
-                  type="email"
-                  placeholder="What's your work email?"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1"
-                  required
-                />
-                <Button type="submit" size="lg" className="px-8">
-                  Get started
+              <a href="https://dsp.ad.nexus">
+                <Button size="lg" className="px-8">
+                  Start a Campaign
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-              </form>
+              </a>
             </div>
 
             <div className="flex items-center justify-center gap-1 text-sm text-muted-foreground mb-12">
@@ -1138,19 +1130,12 @@ const NewIndex = () => {
           </p>
 
           <div className="max-w-md mx-auto">
-            <div className="flex gap-2">
-              <Input
-                type="email"
-                placeholder="What's your work email?"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 bg-white text-black"
-              />
+            <a href="https://dsp.ad.nexus">
               <Button size="lg" variant="secondary" className="px-8">
-                Get started
+                Start a Campaign
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-            </div>
+            </a>
           </div>
 
           <div className="flex items-center justify-center gap-1 text-sm mt-6 opacity-90">
