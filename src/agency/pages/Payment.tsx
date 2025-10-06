@@ -6,6 +6,10 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Check, CreditCard, Lock, Mail } from 'lucide-react';
 import { useLocation, Link } from 'react-router-dom';
+import { loadStripe } from '@stripe/stripe-js';
+
+// Initialize Stripe - Replace with your actual publishable key
+const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY || 'pk_test_placeholder');
 
 const Payment = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -41,18 +45,63 @@ const Payment = () => {
     };
   }, []);
 
-  const handlePayment = (e: React.FormEvent) => {
+  const handlePayment = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
 
-    // Simulate payment processing
-    setTimeout(() => {
-      if (plan === 'instant-site') {
-        window.location.href = '/instant-site-form';
-      } else {
-        window.location.href = '/onboarding-success';
+    try {
+      const stripe = await stripePromise;
+
+      if (!stripe) {
+        throw new Error('Stripe failed to load');
       }
-    }, 1500);
+
+      // Get the price based on plan type
+      let priceId = '';
+
+      if (plan === 'enterprise') {
+        // Replace with your actual Stripe Price ID for $9,999/month recurring subscription
+        priceId = import.meta.env.VITE_STRIPE_PRICE_ID_ENTERPRISE || 'price_placeholder_enterprise';
+      } else if (plan === 'instant-site') {
+        // One-time payment for instant site
+        priceId = import.meta.env.VITE_STRIPE_PRICE_ID_INSTANT_SITE || 'price_placeholder_instant_site';
+      } else {
+        // Agency plan
+        priceId = import.meta.env.VITE_STRIPE_PRICE_ID_AGENCY || 'price_placeholder_agency';
+      }
+
+      // Create a checkout session
+      const response = await fetch('/.netlify/functions/create-checkout-session', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          priceId,
+          email: formData.email,
+          plan,
+          successUrl: `${window.location.origin}/agency/onboarding-success`,
+          cancelUrl: window.location.href,
+        }),
+      });
+
+      const session = await response.json();
+
+      // Redirect to Stripe Checkout
+      const result = await stripe.redirectToCheckout({
+        sessionId: session.id,
+      });
+
+      if (result.error) {
+        console.error(result.error.message);
+        alert('Payment failed. Please try again.');
+        setIsLoading(false);
+      }
+    } catch (error) {
+      console.error('Payment error:', error);
+      alert('An error occurred. Please try again.');
+      setIsLoading(false);
+    }
   };
 
   const getPlanDetails = () => {

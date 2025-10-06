@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check } from 'lucide-react';
 import Footer from '@/agency/components/Footer';
+import { Navigation } from '@/components/Navigation';
 import { services } from '@/agency/data/services';
 import ServiceTemplate from './services/ServiceTemplate';
 
@@ -65,7 +66,7 @@ const ServicesPage: React.FC = () => {
   // Otherwise render the main services overview page
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Navbar removed since it's now global */}
+      <Navigation />
 
       <main className="pt-24">
         {/* Hero Section */}
@@ -80,39 +81,6 @@ const ServicesPage: React.FC = () => {
               <Link to="/agency/payment?plan=enterprise" className="bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-white/90 inline-flex items-center text-lg">
                 Get Started Today <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* Services Categories Tab */}
-        <div className="py-16 border-b border-gray-800 bg-black">
-          <div className="container-custom">
-            <div className="flex flex-wrap justify-center gap-4 mb-16">
-              {serviceCategories.map((category) => (
-                <button
-                  key={category.title}
-                  className={`px-6 py-3 rounded-full font-medium text-base transition-colors ${activeCategory.toLowerCase() === category.title.toLowerCase().split(' ')[0].toLowerCase()
-                    ? `bg-${category.color} text-black`
-                    : 'bg-gray-800 text-white hover:bg-gray-700'
-                    }`}
-                  onClick={() => setActiveCategory(category.title.toLowerCase().split(' ')[0])}
-                >
-                  {category.title}
-                </button>
-              ))}
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredServices.map((service) => (
-                <div key={service.name} className="bg-gray-900 rounded-lg p-8 border border-gray-800 hover:border-gray-700 transition-all">
-                  <div className="text-4xl mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-bold mb-2">{service.name}</h3>
-                  <p className="text-gray-400 mb-6">{service.description}</p>
-                  <Link to={service.link} className="text-white hover:text-blue-400 inline-flex items-center">
-                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
-                  </Link>
-                </div>
-              ))}
             </div>
           </div>
         </div>
