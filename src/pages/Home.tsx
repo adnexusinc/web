@@ -389,7 +389,7 @@ const Home = () => {
             className={`relative w-full max-h-full aspect-video bg-black rounded-[30px] overflow-hidden group transition-all duration-500 ${
               !showPhoneBanner ? 'scale-105' : 'scale-100'
             }`}
-            style={{ maxWidth: '95vw', maxHeight: showPhoneBanner ? 'calc(100vh - 100px)' : 'calc(100vh - 30px)' }}
+            style={{ maxWidth: '90vw', maxHeight: showPhoneBanner ? 'calc(100vh - 140px)' : 'calc(100vh - 80px)' }}
             onMouseEnter={() => setIsHeroHovered(true)}
             onMouseLeave={() => setIsHeroHovered(false)}
           >
@@ -491,6 +491,12 @@ const Home = () => {
               <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]" />
               <span className="text-xs text-white/90 font-medium tracking-widest uppercase">Live</span>
             </div>
+          </div>
+
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 z-40">
+            <span className="text-[10px] uppercase tracking-[0.2em] font-light">Scroll</span>
+            <ChevronDown className="h-5 w-5 animate-bounce opacity-60" />
           </div>
         </div>
       </section>
