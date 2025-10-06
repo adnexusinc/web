@@ -33,7 +33,7 @@ import {
 
 const NewIndex = () => {
   // Video rotation state - cycle between two videos
-  const videoIds = ['kQl6FrmA1tQ', 'o_McZxpeaEc'];
+  const videoIds = ['kQl6FrmA1tQ', 'o_McZxpeaEc', '4shT4lBNeAg'];
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [email, setEmail] = useState('');
   const [showStatic, setShowStatic] = useState(false);
