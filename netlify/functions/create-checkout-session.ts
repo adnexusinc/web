@@ -64,7 +64,7 @@ export const handler: Handler = async (event) => {
       },
       body: JSON.stringify({ id: session.id }),
     };
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Stripe error:', error);
     return {
       statusCode: 500,
