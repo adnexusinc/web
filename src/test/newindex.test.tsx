@@ -61,7 +61,7 @@ describe('NewIndex Page', () => {
     );
 
     // Multiple email inputs exist on the page
-    const emailInputs = screen.getAllByPlaceholderText(/What's your work email/i);
+    const emailInputs = screen.getAllByPlaceholderText(/Enter your work email|What's your work email/i);
     expect(emailInputs.length).toBeGreaterThan(0);
 
     // Check for Get started button (may be multiple)

@@ -8,8 +8,6 @@ const About = lazy(() => import('./components/About'));
 const Studio = lazy(() => import('./components/Studio'));
 const AppsAndChannels = lazy(() => import('./components/AppsAndChannels'));
 const Integrations = lazy(() => import('./components/Integrations'));
-const Contact = lazy(() => import('./components/Contact'));
-const Careers = lazy(() => import('./components/Careers'));
 
 // Goals
 const BuildAwareness = lazy(() => import('./components/BuildAwareness'));
@@ -50,10 +48,6 @@ const HelpFaq = lazy(() => import('./components/HelpFaq'));
 const HelpTips = lazy(() => import('./components/HelpTips'));
 
 // Legal
-const LegalTerms = lazy(() => import('./components/LegalTerms'));
-const LegalPrivacy = lazy(() => import('./components/LegalPrivacy'));
-const LegalCookies = lazy(() => import('./components/LegalCookies'));
-const LegalAcceptableUse = lazy(() => import('./components/LegalAcceptableUse'));
 
 // Blog
 const BlogHome = lazy(() => import('./components/BlogHome'));
@@ -70,8 +64,6 @@ export const ctvRoutes = [
   { path: '/studio', element: Studio, override: true },
   { path: '/apps-and-channels', element: AppsAndChannels },
   { path: '/integrations', element: Integrations },
-  { path: '/contact', element: Contact, override: true },
-  { path: '/careers', element: Careers },
 
   // Goals
   { path: '/goals/build-awareness', element: BuildAwareness },
@@ -112,13 +104,6 @@ export const ctvRoutes = [
   { path: '/help/tips', element: HelpTips },
 
   // Legal - override existing routes
-  { path: '/legal/terms-of-service', element: LegalTerms },
-  { path: '/terms-of-service', element: LegalTerms, override: true },
-  { path: '/legal/privacy-policy', element: LegalPrivacy },
-  { path: '/privacy-policy', element: LegalPrivacy, override: true },
-  { path: '/legal/cookie-policy', element: LegalCookies },
-  { path: '/cookie-policy', element: LegalCookies, override: true },
-  { path: '/legal/acceptable-use', element: LegalAcceptableUse },
 
   // Blog
   { path: '/blog', element: BlogHome },
