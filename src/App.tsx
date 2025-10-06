@@ -49,18 +49,12 @@ const UnikoinGold = lazy(() => import("./pages/case-study/UnikoinGold"));
 
 const queryClient = new QueryClient();
 
-// Simple loading component
+// Minimal loading - black screen, no flash
 const LoadingFallback = () => (
   <div style={{
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
     height: '100vh',
-    backgroundColor: '#000',
-    color: '#fff'
-  }}>
-    <div>Loading...</div>
-  </div>
+    backgroundColor: '#000'
+  }} />
 );
 
 // Page tracking component
