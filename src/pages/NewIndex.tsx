@@ -720,7 +720,7 @@ const NewIndex = () => {
       <section className="py-12 bg-muted/50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
-            <p className="text-lg font-semibold">
+            <p className="text-2xl font-medium">
               10,000+ performance marketers have generated millions in revenue with Adnexus
             </p>
           </div>
