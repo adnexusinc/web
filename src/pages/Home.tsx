@@ -803,40 +803,35 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <footer className="py-16 px-4 bg-black border-t border-white/5">
-        <div className="container mx-auto max-w-6xl">
-          {/* TV Platform Logos with Glow */}
-          <div className="mb-16">
-            <h3 className="text-center text-white/40 text-xs uppercase tracking-widest mb-8">Available on Premium TV Platforms</h3>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center">
-              {['Apple TV+', 'Hulu', 'Roku', 'Paramount+', 'Peacock', 'Pluto TV'].map((platform, idx) => (
-                <div key={idx} className="group relative">
-                  <div className="absolute inset-0 bg-white/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="relative px-4 py-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
-                    <span className="text-white/80 text-sm font-medium tracking-wide group-hover:text-white transition-colors">{platform}</span>
-                  </div>
-                </div>
+      <footer className="relative py-20 px-4 bg-black border-t border-white/10 overflow-hidden">
+        {/* Large Adnexus Logo Watermark Background */}
+        <div className="absolute inset-0 flex items-center justify-center opacity-[0.02] pointer-events-none">
+          <div className="text-[20rem] font-black text-white transform -rotate-12">
+            adnexus
+          </div>
+        </div>
+
+        <div className="container mx-auto max-w-6xl relative z-10">
+          {/* Trustpilot Reviews Section */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-3 mb-4">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-8 w-8 fill-green-500 text-green-500" />
               ))}
             </div>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center mt-6">
-              {['Tubi', 'Samsung TV+', 'ESPN', 'Discovery+', 'AMC+', 'Fox News'].map((platform, idx) => (
-                <div key={idx} className="group relative">
-                  <div className="absolute inset-0 bg-white/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="relative px-4 py-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
-                    <span className="text-white/80 text-sm font-medium tracking-wide group-hover:text-white transition-colors">{platform}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center justify-items-center mt-6">
-              {['CNN', 'Bloomberg TV', 'NBC Sports', 'CBS Sports', 'NFL Network', 'NBA TV'].map((platform, idx) => (
-                <div key={idx} className="group relative">
-                  <div className="absolute inset-0 bg-white/10 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="relative px-4 py-3 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-white/30 transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,255,255,0.2)]">
-                    <span className="text-white/80 text-sm font-medium tracking-wide group-hover:text-white transition-colors">{platform}</span>
-                  </div>
-                </div>
-              ))}
+            <h3 className="text-3xl font-bold text-white mb-2">Rated 4.9/5 on Trustpilot</h3>
+            <p className="text-white/60 mb-6">Join 100+ high-growth startups seeing results</p>
+            <div className="flex gap-4 justify-center">
+              <a href="https://www.trustpilot.com/review/ad.nexus" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10">
+                  Read Reviews on Trustpilot
+                </Button>
+              </a>
+              <a href="https://x.com/adnexus" target="_blank" rel="noopener noreferrer">
+                <Button variant="outline" className="border-white/20 text-white hover:bg-white/10">
+                  Follow us on X
+                </Button>
+              </a>
             </div>
           </div>
 
@@ -882,8 +877,30 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="pt-8 border-t border-white/5 text-center text-sm text-white/40">
-            <p>© 2025 Adnexus Technology, Inc.</p>
+          {/* Newsletter Signup */}
+          <div className="py-12 border-y border-white/5 mb-12">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl font-bold text-white mb-2">Stay Updated</h3>
+              <p className="text-white/60">Get CTV insights and platform updates delivered weekly</p>
+            </div>
+            <form onSubmit={handleEmailSubmit} className="max-w-md mx-auto flex gap-3">
+              <Input
+                type="email"
+                placeholder="Enter your work email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="flex-1 bg-white/10 border-white/20 text-white placeholder:text-white/50"
+                required
+              />
+              <Button type="submit" className="bg-blue-600 hover:bg-blue-700">
+                Subscribe
+              </Button>
+            </form>
+          </div>
+
+          <div className="text-center text-sm text-white/40 space-y-2">
+            <p>© 2025 Adnexus Technology, Inc. All rights reserved.</p>
+            <p>Los Angeles, California | +1 844 AD-NEXUS (844-236-3987) | support@ad.nexus</p>
           </div>
         </div>
       </footer>
