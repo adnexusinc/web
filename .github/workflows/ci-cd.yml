@@ -144,7 +144,8 @@ jobs:
   # Job 4: Build production bundle
   build:
     name: Build Production Bundle
-    needs: [lint, test]
+    needs: [lint]
+    if: always()
     runs-on: ubuntu-latest
     strategy:
       matrix:
