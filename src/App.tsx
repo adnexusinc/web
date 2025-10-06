@@ -9,8 +9,7 @@ import { pageConfigs } from "@/lib/page-config";
 import { usePageTracking } from "@/hooks/usePageTracking";
 
 // Lazy load special/unique page components that need custom handling
-const Index = lazy(() => import("./pages/Index")); // Apple-inspired 6-step flow
-const NewIndex = lazy(() => import("./pages/NewIndex")); // Old video hero (available at /video)
+const Index = lazy(() => import("./pages/Home")); // Video hero + 6-step flow
 const Auth = lazy(() => import("./pages/Auth"));
 const PasswordReset = lazy(() => import("./pages/PasswordReset"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
@@ -81,7 +80,6 @@ const App = () => (
           <Routes>
             {/* Home */}
             <Route path="/" element={<Index />} />
-            <Route path="/video" element={<NewIndex />} />
 
             {/* CTV Platform routes - Disabled (requires @hanzo/ui/primitives export) */}
             {/* {ctvRoutes.filter(r => !r.override).map(({ path, element: Element }) => (

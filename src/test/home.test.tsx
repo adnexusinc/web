@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import NewIndex from '../pages/NewIndex';
+import Home from '../pages/Home';
 
 // Mock window.YT for YouTube player
 interface MockYTPlayer {
@@ -28,11 +28,11 @@ global.window.YT = {
   },
 } as typeof window.YT;
 
-describe('NewIndex Page', () => {
+describe('Home Page', () => {
   it('renders main headline', () => {
     render(
       <MemoryRouter>
-        <NewIndex />
+        <Home />
       </MemoryRouter>
     );
 
@@ -44,7 +44,7 @@ describe('NewIndex Page', () => {
   it('renders tagline', () => {
     render(
       <MemoryRouter>
-        <NewIndex />
+        <Home />
       </MemoryRouter>
     );
 
@@ -54,7 +54,7 @@ describe('NewIndex Page', () => {
   it('renders email input and CTA button', () => {
     render(
       <MemoryRouter>
-        <NewIndex />
+        <Home />
       </MemoryRouter>
     );
 
@@ -72,7 +72,7 @@ describe('NewIndex Page', () => {
   it('renders statistics section', () => {
     render(
       <MemoryRouter>
-        <NewIndex />
+        <Home />
       </MemoryRouter>
     );
 
