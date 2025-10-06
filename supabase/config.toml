@@ -1,1 +1,21 @@
-project_id = "uxuhclrodqpdyrhzypiv"
+# Supabase Configuration for Adnexus
+project_id = "cabgbiwjybwmvaekgkct"
+
+[api]
+enabled = true
+port = 54321
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+[auth]
+site_url = "https://ad.nexus"
+additional_redirect_urls = ["http://localhost:8080"]
+
+[functions]
+# Edge Functions - No JWT verification for webhooks

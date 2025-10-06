@@ -40,6 +40,7 @@ const AgencyServicesPage = lazy(() => import("./agency/pages/ServicesPage"));
 const AgencySolutionsPage = lazy(() => import("./agency/pages/SolutionsPage"));
 
 // CTV Platform pages
+import { ctvRoutes } from "./ctv/routes";
 
 // Case study pages (unique layouts) - CTV advertising
 const DamonMotorcycles = lazy(() => import("./pages/case-study/DamonMotorcycles"));
@@ -77,15 +78,15 @@ const App = () => (
         <PageTracker />
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
+            {/* CTV Platform routes - Insert first for overrides */}
+            {ctvRoutes.filter(r => !r.override).map(({ path, element: Element }) => (
+              <Route key={path} path={path} element={<Element />} />
+            ))}
+
             {/* Special pages with unique layouts */}
-            <Route path="/" element={<Index />} />
             <Route path="/auth" element={<Auth />} />
             <Route path="/password-reset" element={<PasswordReset />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/help" element={<FAQ />} />
-            <Route path="/support" element={<Contact />} />
 
             {/* Case study pages with unique layouts */}
             <Route path="/case-study/damon-motorcycles" element={<DamonMotorcycles />} />
@@ -162,8 +163,6 @@ const App = () => (
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/our-work" element={<UnifiedPage config={pageConfigs['/our-work']} />} />
             <Route path="/case-studies" element={<CaseStudies />} />
-
-            {/* CTV Platform - Streaming TV advertising */}
 
             {/* 404 - Must be last */}
             <Route path="*" element={<NotFound />} />

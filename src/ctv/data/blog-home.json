@@ -1,0 +1,79 @@
+{
+  "url": "https://www.vibe.co/blog",
+  "title": "Vibe Blog - CTV Advertising Insights & Best Practices",
+  "meta": {
+    "description": "Discover the latest insights, trends, and best practices in Connected TV advertising. Learn how to maximize your CTV campaigns with Vibe.",
+    "og:title": "Vibe Blog - CTV Advertising Insights & Best Practices",
+    "og:description": "Discover the latest insights, trends, and best practices in Connected TV advertising."
+  },
+  "heading": "Vibe Blog",
+  "subheading": "Insights, trends, and best practices in CTV advertising",
+  "posts": [
+    {
+      "id": "ctv-advertising-trends-2025",
+      "title": "CTV Advertising Trends to Watch in 2025",
+      "excerpt": "Explore the emerging trends shaping the future of Connected TV advertising and how brands can stay ahead.",
+      "image": "/images/blog/ctv-trends-2025.jpg",
+      "category": "Trends",
+      "date": "2025-10-01",
+      "author": "Sarah Johnson",
+      "readTime": "5 min read",
+      "href": "https://www.vibe.co/blog/ctv-advertising-trends-2025"
+    },
+    {
+      "id": "maximizing-roas-ctv",
+      "title": "Maximizing ROAS with CTV Advertising",
+      "excerpt": "Learn proven strategies to optimize your CTV campaigns and achieve higher return on ad spend.",
+      "image": "/images/blog/maximizing-roas.jpg",
+      "category": "Strategy",
+      "date": "2025-09-28",
+      "author": "Michael Chen",
+      "readTime": "7 min read",
+      "href": "https://www.vibe.co/blog/maximizing-roas-ctv"
+    },
+    {
+      "id": "ai-powered-creative-optimization",
+      "title": "AI-Powered Creative Optimization for CTV",
+      "excerpt": "Discover how AI is revolutionizing creative development and optimization for streaming TV ads.",
+      "image": "/images/blog/ai-creative-optimization.jpg",
+      "category": "Innovation",
+      "date": "2025-09-25",
+      "author": "Emily Rodriguez",
+      "readTime": "6 min read",
+      "href": "https://www.vibe.co/blog/ai-powered-creative-optimization"
+    },
+    {
+      "id": "audience-targeting-best-practices",
+      "title": "Audience Targeting Best Practices for CTV",
+      "excerpt": "Master the art of precision targeting in Connected TV to reach your ideal customers effectively.",
+      "image": "/images/blog/audience-targeting.jpg",
+      "category": "Best Practices",
+      "date": "2025-09-22",
+      "author": "David Kim",
+      "readTime": "8 min read",
+      "href": "https://www.vibe.co/blog/audience-targeting-best-practices"
+    },
+    {
+      "id": "measuring-ctv-campaign-success",
+      "title": "Measuring CTV Campaign Success: Key Metrics",
+      "excerpt": "Understand the essential metrics and KPIs to track for measuring your CTV advertising performance.",
+      "image": "/images/blog/measuring-success.jpg",
+      "category": "Analytics",
+      "date": "2025-09-19",
+      "author": "Lisa Park",
+      "readTime": "6 min read",
+      "href": "https://www.vibe.co/blog/measuring-ctv-campaign-success"
+    },
+    {
+      "id": "cross-channel-attribution-ctv",
+      "title": "Cross-Channel Attribution in CTV Campaigns",
+      "excerpt": "Learn how to properly attribute conversions and understand the full impact of your CTV advertising.",
+      "image": "/images/blog/cross-channel-attribution.jpg",
+      "category": "Analytics",
+      "date": "2025-09-15",
+      "author": "James Wilson",
+      "readTime": "9 min read",
+      "href": "https://www.vibe.co/blog/cross-channel-attribution-ctv"
+    }
+  ]
+}

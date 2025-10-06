@@ -1,6 +1,9 @@
 export { default as About } from './About';
 export { default as AppsAndChannels } from './AppsAndChannels';
 export { default as AttractTraffic } from './AttractTraffic';
+export { default as BlogCaseStudies } from './BlogCaseStudies';
+export { default as BlogHome } from './BlogHome';
+export { default as BlogWhatsNew } from './BlogWhatsNew';
 export { default as BuildAwareness } from './BuildAwareness';
 export { default as FeaturesAiCreatives } from './FeaturesAiCreatives';
 export { default as FeaturesAiOptimization } from './FeaturesAiOptimization';

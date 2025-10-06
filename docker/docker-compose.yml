@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  # Frontend - Adnexus Web
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - NODE_ENV=production
+    env_file:
+      - .env.production
+    restart: unless-stopped
+    networks:
+      - adnexus-network
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Supabase Local (optional - for development)
+  # Uncomment if you want to run Supabase locally
+  # supabase:
+  #   image: supabase/postgres:15
+  #   environment:
+  #     POSTGRES_PASSWORD: ${SUPABASE_DB_PASSWORD}
+  #     POSTGRES_DB: postgres
+  #   ports:
+  #     - "54322:5432"
+  #   volumes:
+  #     - supabase-db:/var/lib/postgresql/data
+  #   networks:
+  #     - adnexus-network
+
+networks:
+  adnexus-network:
+    driver: bridge
+
+# volumes:
+#   supabase-db:

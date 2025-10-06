@@ -1,0 +1,148 @@
+{
+  "url": "https://www.vibe.co/blog/case-studies",
+  "title": "CTV Advertising Case Studies - Success Stories | Vibe",
+  "meta": {
+    "description": "Explore real success stories and proven results from brands using Vibe's CTV advertising platform.",
+    "og:title": "CTV Advertising Case Studies - Success Stories | Vibe",
+    "og:description": "Explore real success stories and proven results from brands using Vibe's CTV advertising platform."
+  },
+  "heading": "Case Studies",
+  "subheading": "Real results from brands using Vibe",
+  "stories": [
+    {
+      "company": "Meshki",
+      "logo": "/images/logos/meshki.svg",
+      "metric": "$0.93 Cost Per Session",
+      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
+      "description": "Fashion retailer Meshki achieved exceptional cost efficiency and exceeded their ROAS targets using Vibe's CTV platform.",
+      "image": "/images/case-studies/meshki.jpg",
+      "industry": "Fashion & Retail",
+      "results": [
+        "$0.93 cost per session",
+        "250% ROAS achieved",
+        "45% lower CPV than target"
+      ],
+      "href": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+    },
+    {
+      "company": "Abuelos",
+      "logo": "/images/logos/abuelos.svg",
+      "metric": "-80% Cost Per Session",
+      "title": "Abuelo's Lowers Cost Per Session by 80%",
+      "description": "Restaurant chain Abuelo's dramatically reduced acquisition costs while driving foot traffic through targeted CTV campaigns.",
+      "image": "/images/case-studies/abuelos.jpg",
+      "industry": "Food & Beverage",
+      "results": [
+        "80% reduction in cost per session",
+        "3x increase in location visits",
+        "500K+ households reached"
+      ],
+      "href": "https://www.vibe.co/blog/abuelo-s-x-vibe-case-study"
+    },
+    {
+      "company": "TruHeight",
+      "logo": "/images/logos/truheight.svg",
+      "metric": "728% ROAS",
+      "title": "How TruHeight Reached 728% ROAS with CTV",
+      "description": "Health supplement brand TruHeight achieved remarkable return on ad spend using Vibe's AI-powered optimization.",
+      "image": "/images/case-studies/truheight.jpg",
+      "industry": "Health & Wellness",
+      "results": [
+        "728% ROAS achieved",
+        "$2.3M in attributed revenue",
+        "4.2x better than Meta campaigns"
+      ],
+      "href": "https://www.vibe.co/blog/vibe-x-truheight-vitamins-case-study"
+    },
+    {
+      "company": "Branded Bills",
+      "logo": "/images/logos/branded-bills.svg",
+      "metric": "2,000% ROAS",
+      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
+      "description": "Apparel brand achieved extraordinary results by integrating Vibe's CTV advertising with Klaviyo's email marketing.",
+      "image": "/images/case-studies/branded-bills.jpg",
+      "industry": "Apparel",
+      "results": [
+        "2,000% ROAS achieved",
+        "$5M+ in attributed sales",
+        "92% brand lift"
+      ],
+      "href": "https://www.vibe.co/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+    },
+    {
+      "company": "SmartLiner",
+      "logo": "/images/logos/smartliner.svg",
+      "metric": "1,635% ROAS",
+      "title": "SmartLiner Experiments and Wins with Vibe.co",
+      "description": "Automotive accessory brand SmartLiner tested CTV and achieved industry-leading return on investment.",
+      "image": "/images/case-studies/smartliner.jpg",
+      "industry": "Automotive",
+      "results": [
+        "1,635% ROAS",
+        "$1.2M in revenue",
+        "67% new customer acquisition"
+      ],
+      "href": "https://www.vibe.co/blog/smartliner-experiments-and-wins-with-vibe-co"
+    },
+    {
+      "company": "Hoodsly",
+      "logo": "/images/logos/hoodsly.svg",
+      "metric": "409% ROAS",
+      "title": "409% ROAS for Hoodsly with Vibe",
+      "description": "Streetwear brand Hoodsly scaled profitably using Vibe's audience targeting and creative optimization tools.",
+      "image": "/images/case-studies/hoodsly.jpg",
+      "industry": "Fashion",
+      "results": [
+        "409% ROAS achieved",
+        "$850K in sales",
+        "3.1x AOV increase"
+      ],
+      "href": "https://www.vibe.co/blog/case-study-vibe-hoodsly"
+    },
+    {
+      "company": "Zoriz Golf",
+      "logo": "/images/logos/zoriz.svg",
+      "metric": "600% ROAS",
+      "title": "How Zoriz Golf Surpassed 600% ROAS with CTV",
+      "description": "Golf accessories brand Zoriz Golf exceeded performance goals by leveraging CTV's precision targeting capabilities.",
+      "image": "/images/case-studies/zoriz.jpg",
+      "industry": "Sports & Recreation",
+      "results": [
+        "600% ROAS achieved",
+        "$1.8M in revenue",
+        "450K+ golfers reached"
+      ],
+      "href": "https://www.vibe.co/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
+    },
+    {
+      "company": "Petfolk",
+      "logo": "/images/logos/petfolk.svg",
+      "metric": "30% Acquisition Lift",
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
+      "description": "Pet care subscription service Petfolk drove significant new customer growth through strategic CTV campaigns.",
+      "image": "/images/case-studies/petfolk.jpg",
+      "industry": "Pet Care",
+      "results": [
+        "30% acquisition lift",
+        "280% subscriber growth",
+        "$0.45 cost per acquisition"
+      ],
+      "href": "https://www.vibe.co/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+    },
+    {
+      "company": "Herb Jones",
+      "logo": "/images/logos/herb-jones.svg",
+      "metric": "800% Web Traffic Increase",
+      "title": "How this Car Dealership Increased Web Traffic by 800%",
+      "description": "Auto dealership Herb Jones transformed their digital presence with targeted CTV advertising campaigns.",
+      "image": "/images/case-studies/herb-jones.jpg",
+      "industry": "Automotive",
+      "results": [
+        "800% web traffic increase",
+        "450 qualified leads",
+        "$28 cost per lead"
+      ],
+      "href": "https://www.vibe.co/blog/how-this-car-dealership-increased-web-traffic-by-800"
+    }
+  ]
+}
