@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { Navigation } from '@/components/Navigation';
 import { CTVCalculator } from '@/components/CTVCalculator';
+import { ChannelLogo } from '@/components/ChannelLogo';
 import {
   Target,
   TrendingUp,
@@ -491,16 +492,16 @@ const Home = () => {
           </div>
 
           {/* Network Ticker - Below Video */}
-          <div className="mt-12 flex items-center gap-6 overflow-hidden">
-            <h2 className="text-2xl font-medium text-white whitespace-nowrap flex-shrink-0">
+          <div className="mt-12">
+            <h2 className="text-2xl font-medium text-white mb-6 text-center">
               Stream on the most popular networks!
             </h2>
-            <div className="overflow-hidden flex-1 min-w-0">
-              <div className="flex animate-ticker whitespace-nowrap">
-                {['CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi'].map((network, index) => (
-                  <span key={index} className="text-2xl text-white mx-8 inline-block">
-                    {network}
-                  </span>
+            <div className="overflow-hidden">
+              <div className="flex animate-ticker gap-4">
+                {['CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'Pluto TV', 'Paramount+', 'Peacock', 'Tubi', 'TNT', 'BET', 'Comedy Central', 'Discovery+', 'AMC', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku'].map((network, index) => (
+                  <div key={index} className="flex-shrink-0">
+                    <ChannelLogo name={network} className="scale-90" />
+                  </div>
                 ))}
               </div>
             </div>
@@ -696,8 +697,8 @@ const Home = () => {
           <div className="relative overflow-hidden py-8">
             <div className="flex animate-ticker gap-6">
               {['CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku', 'Samsung TV+', 'TNT', 'TLC', 'Comedy Central', 'fuboTV', 'BET', 'Food Network', 'CBS Sports', 'AMC', 'Discovery+', 'CNN', 'Fox News', 'ESPN', 'Hulu', 'Roku'].map((ch, i) => (
-                <div key={i} className="flex-shrink-0 px-6 py-4 bg-white/10 rounded-lg border border-white/20 backdrop-blur-sm">
-                  <span className="text-white font-semibold whitespace-nowrap">{ch}</span>
+                <div key={i} className="flex-shrink-0">
+                  <ChannelLogo name={ch} />
                 </div>
               ))}
             </div>
