@@ -367,6 +367,12 @@ const NewIndex = () => {
       }}>
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
+          {/* Cinematic Title - Above Video, Left Aligned */}
+          <div className="mb-8 animate-fadeInUp">
+            <h2 className="text-3xl md:text-4xl font-light text-white mb-2 tracking-wide">CTV Ads in Action</h2>
+            <p className="text-white/50 text-sm md:text-base tracking-wider uppercase">Experience the future of advertising</p>
+          </div>
+
           {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow */}
           <div
             className="relative aspect-video bg-black rounded-[30px] overflow-hidden group"
@@ -471,12 +477,6 @@ const NewIndex = () => {
               <div className="w-2 h-2 bg-red-600 rounded-full animate-pulse shadow-[0_0_10px_rgba(220,38,38,0.8)]" />
               <span className="text-xs text-white/90 font-medium tracking-widest uppercase">Live</span>
             </div>
-          </div>
-
-          {/* Cinematic Caption - Bottom Right Fade-In */}
-          <div className="text-right mt-8 animate-slideInRight">
-            <h2 className="text-3xl md:text-4xl font-light text-white mb-2 tracking-wide">CTV Ads in Action</h2>
-            <p className="text-white/50 text-sm md:text-base tracking-wider uppercase">Experience the future of advertising</p>
           </div>
 
           {/* Network Ticker - Below Video */}
