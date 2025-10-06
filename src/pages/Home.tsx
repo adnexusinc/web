@@ -382,13 +382,14 @@ const Home = () => {
         paddingTop: showPhoneBanner ? '50px' : '10px', // Minimal top padding
         paddingBottom: '10px' // Minimal bottom padding
       }}>
-        {/* Hollywood-style Cinematic Container */}
-        <div className="relative w-full max-w-7xl mx-auto px-4 animate-fadeInUp">
-          {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow - Scales larger when banner dismissed */}
+        {/* Hollywood-style Cinematic Container - Maximized */}
+        <div className="relative w-full h-full flex items-center justify-center px-2 animate-fadeInUp">
+          {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow - Fill as much as possible */}
           <div
-            className={`relative aspect-video bg-black rounded-[30px] overflow-hidden group transition-all duration-500 ${
-              !showPhoneBanner ? 'scale-110' : 'scale-100'
+            className={`relative w-full max-h-full aspect-video bg-black rounded-[30px] overflow-hidden group transition-all duration-500 ${
+              !showPhoneBanner ? 'scale-105' : 'scale-100'
             }`}
+            style={{ maxWidth: '95vw', maxHeight: showPhoneBanner ? 'calc(100vh - 100px)' : 'calc(100vh - 30px)' }}
             onMouseEnter={() => setIsHeroHovered(true)}
             onMouseLeave={() => setIsHeroHovered(false)}
           >
