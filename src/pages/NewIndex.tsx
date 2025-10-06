@@ -367,12 +367,6 @@ const NewIndex = () => {
       }}>
         {/* Hollywood-style Cinematic Container */}
         <div className="relative w-full max-w-7xl mx-auto px-4 py-8 animate-fadeInUp">
-          {/* Cinematic Title - Above Video, Left Aligned */}
-          <div className="mb-8 animate-fadeInUp">
-            <h2 className="text-sm font-bold text-white mb-2 tracking-wide">CTV Ads in Action</h2>
-            <p className="text-white/50 text-sm md:text-base tracking-wider uppercase">Experience the future of advertising</p>
-          </div>
-
           {/* 16:9 Aspect Ratio for YouTube Video + Underlit Glow */}
           <div
             className="relative aspect-video bg-black rounded-[30px] overflow-hidden group"
@@ -480,7 +474,7 @@ const NewIndex = () => {
           </div>
 
           {/* Network Ticker - Below Video */}
-          <div className="mt-12 flex items-center gap-6 overflow-hidden">
+          <div className="mt-6 flex items-center gap-6 overflow-hidden">
             <h2 className="text-2xl font-medium text-white whitespace-nowrap flex-shrink-0">
               Stream on the most popular networks!
             </h2>
