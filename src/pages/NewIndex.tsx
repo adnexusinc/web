@@ -728,7 +728,7 @@ const NewIndex = () => {
       {/* Ad Exchange Network Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-primary/5 to-transparent">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
+          <div className="text-center mb-32">
             <h2 className="text-4xl font-bold mb-4">
               Adnexus Ecosystem
             </h2>
@@ -738,7 +738,7 @@ const NewIndex = () => {
           </div>
 
           {/* Key Metrics */}
-          <div className="grid md:grid-cols-4 gap-6 mb-32">
+          <div className="grid md:grid-cols-4 gap-6 mb-64">
             <Card className="text-center hover:shadow-xl transition-all hover:scale-105">
               <CardContent className="p-6">
                 <div className="text-4xl font-bold text-primary mb-2">100M+</div>
