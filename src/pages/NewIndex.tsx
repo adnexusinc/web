@@ -201,7 +201,7 @@ const NewIndex = () => {
   useEffect(() => {
     const muteParam = isMuted ? '1' : '0';
     const currentVideoId = videoIds[currentVideoIndex];
-    setVideoSrc(`https://www.youtube.com/embed/${currentVideoId}?autoplay=1&mute=${muteParam}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1`);
+    setVideoSrc(`https://www.youtube.com/embed/${currentVideoId}?autoplay=1&mute=${muteParam}&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3&disablekb=1&fs=0&cc_load_policy=0&loop=1&playlist=${currentVideoId}`);
   }, [isMuted, currentVideoIndex]);
 
   // Grid-based snapping for PiP
