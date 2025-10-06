@@ -78,6 +78,9 @@ const App = () => (
         <PageTracker />
         <Suspense fallback={<LoadingFallback />}>
           <Routes>
+            {/* Home */}
+            <Route path="/" element={<Index />} />
+
             {/* CTV Platform routes - Disabled (requires @hanzo/ui/primitives export) */}
             {/* {ctvRoutes.filter(r => !r.override).map(({ path, element: Element }) => (
               <Route key={path} path={path} element={<Element />} />

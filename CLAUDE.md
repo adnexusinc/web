@@ -113,7 +113,7 @@ src/
 - Consistent use throughout with `font-family: 'Inter', sans-serif`
 
 **Branding Assets**:
-- Logo: `/lovable-uploads/ebba7dda-009e-4d3c-b5d4-06707a9a84ad.png`
+- Logo: `/favicon.png` (also used as favicon)
 - Favicon: `/favicon.ico` and `/favicon.png`
 - OG Image: `/og-image.png` (1200x630)
 

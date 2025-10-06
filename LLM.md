@@ -16,7 +16,7 @@ Marketing site with 956KB bundle, 1.1GB node_modules, 46 page components, and un
 **Solution**:
 ```bash
 # Remove unused dependencies
-npm uninstall next next-themes @anthropic-ai/claude-code jsdom lovable-tagger
+npm uninstall next next-themes @anthropic-ai/claude-code jsdom
 
 # Consolidate Radix UI to essentials only
 # Keep: dialog, dropdown-menu, sheet, tooltip, button
@@ -109,7 +109,6 @@ describe('Critical User Flows', () => {
    - next, next-themes (not used in Vite app)
    - @anthropic-ai/claude-code (development only)
    - jsdom (use happy-dom)
-   - lovable-tagger (development only)
    - Unused Radix UI components
 
 2. Consolidate overlapping functionality:
@@ -233,7 +232,6 @@ if ('PerformanceObserver' in window) {
     "@anthropic-ai/claude-code",
     "@tanstack/react-query",
     "jsdom",
-    "lovable-tagger",
     "@radix-ui/react-accordion",
     "@radix-ui/react-aspect-ratio",
     "@radix-ui/react-avatar",

@@ -52,20 +52,15 @@ Configure these webhooks in your Stripe dashboard:
 ## 🚀 Deployment
 
 ### Automatic Deployment
-The site auto-deploys via Lovable when you push to the main branch:
+The site auto-deploys via GitHub Actions when you push to the main branch:
 ```bash
 git push origin main
 ```
 
-### Manual Deployment
-1. Open [Lovable Project](https://lovable.dev/projects/74ffa50d-c765-4188-8d31-34db3e546d99)
-2. Click Share → Publish
+The GitHub Actions workflow builds the site and deploys to GitHub Pages automatically.
 
 ### Custom Domain
-To connect a custom domain:
-1. Navigate to Project > Settings > Domains
-2. Click "Connect Domain"
-3. Follow the DNS configuration steps
+The custom domain `ad.nexus` is configured via CNAME in the repository settings
 
 ## 🔧 Local Development
 
@@ -149,8 +144,8 @@ For technical support or questions about the platform:
 - Dashboard: Access via `/dashboard` after authentication
 
 ## 🚦 Status
-- **Production**: ✅ Live
-- **Staging**: N/A (direct to production via Lovable)
+- **Production**: ✅ Live at https://ad.nexus
+- **Staging**: N/A (direct to production via GitHub Actions)
 - **Development**: Local only
 
 ## 📝 License
