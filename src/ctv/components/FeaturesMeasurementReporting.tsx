@@ -1,30 +1,85 @@
-import React from 'react';
-import { Container, Box, Heading, Text, Button, Link, Stack, Grid } from '@hanzo/ui/primitives';
+import { Navigation } from '@/components/Navigation';
+import { Footer } from '@/components/sections/Footer';
+import { Sparkles, Zap } from 'lucide-react';
+import data from '../data/features-measurement-reporting.json';
+import { Link } from 'react-router-dom';
 
 export default function FeaturesMeasurementReporting() {
   return (
-    <Container maxWidth="7xl" className="vibe-page">
-      <Box as="header" className="py-4 border-b">
-        <Stack direction="row" spacing={6} align="center">
-          <Link href="/" className="text-2xl font-bold">Vibe</Link>
-          <Stack direction="row" spacing={4}>
-            
-          </Stack>
-        </Stack>
-      </Box>
-
-      <Box as="main" className="py-12">
-        <Heading level={1} className="text-5xl mb-6">
-          Vibe
-        </Heading>
-
-        {/* Content sections will be added here */}
-        <Text>Page content from features-measurement-reporting</Text>
-      </Box>
-
-      <Box as="footer" className="py-8 border-t mt-16">
-        <Text className="text-sm text-gray-600">© 2025 Vibe, Inc.</Text>
-      </Box>
-    </Container>
+    <div className="min-h-screen bg-black text-white">
+      <Navigation />
+      <main className="pt-24">
+        <section className="pt-32 pb-20 bg-gradient-to-b from-black via-gray-900 to-black">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-sky-100 to-sky-200 bg-clip-text text-transparent">
+                {data.hero.headline}
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
+                {data.hero.description}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://auth.ad.nexus" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-full bg-white text-black hover:bg-gray-100 transition-colors">
+                  {data.hero.cta.text}
+                </a>
+                <a href="https://cal.com/adnexus" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-full border border-white text-white hover:bg-white/10 transition-colors">
+                  Schedule a Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="py-20 bg-black">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">{data.main_heading || 'Platform Features'}</h2>
+              <p className="text-gray-400 text-lg max-w-3xl mx-auto">{data.customer_count || 'Trusted by thousands of advertisers'}</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {data.features && data.features.map((feature: any, index: number) => (
+                <div key={index} className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-gray-700 transition-all duration-300 hover:shadow-2xl hover:shadow-sky-900/20">
+                  <div className="mb-4"><Sparkles className="h-10 w-10 text-sky-400" /></div>
+                  <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
+                  <p className="text-gray-400 leading-relaxed">{feature.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-4">Proven Results</h2>
+              <p className="text-gray-400 text-lg">Real brands, real performance</p>
+            </div>
+            {data.success_stories && (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {data.success_stories.slice(0, 9).map((story: any, index: number) => (
+                  <div key={index} className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-sky-600 transition-all duration-300">
+                    <div className="text-5xl font-bold text-sky-400 mb-2">{story.metric}</div>
+                    <div className="text-sm text-gray-500 mb-4">{story.metric_label}</div>
+                    <h3 className="text-lg font-semibold mb-3 line-clamp-2">{story.title}</h3>
+                    <div className="text-sm text-gray-400">{story.company}</div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </section>
+        <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Get Started?</h2>
+              <p className="text-xl text-gray-400 mb-12">Start reaching 120M households across 500+ premium CTV channels today</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://auth.ad.nexus" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-full bg-white text-black hover:bg-gray-100 transition-colors">Get Started Free</a>
+                <a href="https://cal.com/adnexus" className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-full border border-white text-white hover:bg-white/10 transition-colors">Talk to Sales</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
   );
 }
