@@ -68,10 +68,10 @@ export const Footer = () => {
                 <button
                   type="submit"
                   disabled={subscribeStatus === 'loading' || subscribeStatus === 'success'}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white p-3 rounded-full hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition duration-150 ease-in-out"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-black p-3 rounded-full hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition duration-150 ease-in-out"
                 >
                   {subscribeStatus === 'loading' ? (
-                    <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                    <div className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin"></div>
                   ) : subscribeStatus === 'success' ? (
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -232,15 +232,6 @@ export const Footer = () => {
           <div className="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6 py-8">
             <div className="text-gray-500 flex items-center flex-wrap justify-center md:justify-start gap-2">
               <span>© {currentYear} Adnexus Technology Inc.</span>
-              <span className="mx-2 text-gray-700">•</span>
-              <span className="flex items-center text-primary/80">
-                <span className="mr-1">Powered by</span>
-                <span className="relative inline-flex h-3 w-3 mx-1">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
-                </span>
-                <span className="ml-1">AI Technology</span>
-              </span>
             </div>
 
             <div className="flex space-x-6">
