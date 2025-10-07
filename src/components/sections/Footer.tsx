@@ -216,12 +216,14 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Section with Big Logo Watermark */}
-        <div className="relative min-h-[300px]">
-          {/* Big Adnexus Logo Watermark */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
-            <div className="text-[25vw] md:text-[20vw] font-black text-white/[0.05] tracking-tighter leading-none whitespace-nowrap select-none">
-              ADNEXUS
-            </div>
+        <div className="relative min-h-[300px] -mt-32">
+          {/* Big Adnexus Logo Watermark - bleeds into section above */}
+          <div className="absolute -top-64 left-1/2 -translate-x-1/2 w-[120vw] pointer-events-none">
+            <img
+              src="/favicon.png"
+              alt=""
+              className="w-full h-auto opacity-[0.03] brightness-0 invert blur-[2px]"
+            />
           </div>
 
           {/* Content on top of watermark */}
