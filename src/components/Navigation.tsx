@@ -488,10 +488,6 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                             <div className="text-xs text-muted-foreground">Creative Platform</div>
                           </div>
                         </a>
-                        <div className="h-px bg-border my-2" />
-                        <a href="/agency/signup" className="block px-2 py-2 text-center rounded-md bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors">
-                          Sign Up for Agency
-                        </a>
                       </div>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
@@ -628,11 +624,6 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                           <div>Studio Login</div>
                           <div className="text-xs text-muted-foreground">Creative Platform</div>
                         </div>
-                      </Button>
-                    </a>
-                    <a href="/agency/signup" onClick={() => setIsMobileMenuOpen(false)}>
-                      <Button className="w-full bg-blue-600 hover:bg-blue-700">
-                        Sign Up for Agency
                       </Button>
                     </a>
                     <a href="/book-demo" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>

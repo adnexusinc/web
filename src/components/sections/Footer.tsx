@@ -220,9 +220,9 @@ export const Footer = () => {
           {/* Big Adnexus Logo Watermark - bleeds into section above */}
           <div className="absolute -top-64 left-1/2 -translate-x-1/2 w-[120vw] pointer-events-none">
             <img
-              src="/favicon.png"
+              src="/logo.png"
               alt=""
-              className="w-full h-auto opacity-[0.03] brightness-0 invert blur-[2px]"
+              className="w-full h-auto opacity-50 brightness-0 invert"
             />
           </div>
 
