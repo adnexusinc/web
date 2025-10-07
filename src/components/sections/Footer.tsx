@@ -34,7 +34,7 @@ export const Footer = () => {
       </div>
 
       {/* Big Adnexus Logo Watermark - pinned to absolute bottom of footer */}
-      <div className="absolute -bottom-40 left-1/2 -translate-x-1/2 w-[120vw] pointer-events-none">
+      <div className="absolute -bottom-40 left-0 right-0 w-full pointer-events-none overflow-hidden">
         <img
           src="/logo.png"
           alt=""
