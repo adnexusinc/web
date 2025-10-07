@@ -62,7 +62,7 @@ export const Footer = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="your@email.com"
-                  className="w-full bg-gray-900 border border-gray-700 text-white px-6 py-4 rounded-full pr-12 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  className="w-full bg-gray-900 border border-gray-700 text-white px-6 py-4 rounded-full pr-12 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent"
                   disabled={subscribeStatus === 'loading' || subscribeStatus === 'success'}
                 />
                 <button

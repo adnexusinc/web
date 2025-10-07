@@ -43,8 +43,21 @@ const AgencyLogin = lazy(() => import("./agency/pages/Login"));
 const AgencySignup = lazy(() => import("./agency/pages/Signup"));
 const AgencyDashboard = lazy(() => import("./agency/pages/Dashboard"));
 
-// CTV Platform pages (disabled - needs @hanzo/ui/primitives and /blocks exports)
-// import { ctvRoutes } from "./ctv/routes";
+// CTV Platform pages - Goal-based landing pages
+const BuildAwareness = lazy(() => import("./ctv/components/BuildAwareness"));
+const AttractTraffic = lazy(() => import("./ctv/components/AttractTraffic"));
+const GenerateLeads = lazy(() => import("./ctv/components/GenerateLeads"));
+const IncreaseSales = lazy(() => import("./ctv/components/IncreaseSales"));
+const RetargetProspects = lazy(() => import("./ctv/components/RetargetProspects"));
+const PromoteYourApp = lazy(() => import("./ctv/components/PromoteYourApp"));
+
+// CTV Platform pages - Feature-based landing pages
+const FeaturesAppsChannels = lazy(() => import("./ctv/components/FeaturesAppsChannels"));
+const FeaturesAudienceTargeting = lazy(() => import("./ctv/components/FeaturesAudienceTargeting"));
+const FeaturesAiOptimization = lazy(() => import("./ctv/components/FeaturesAiOptimization"));
+const FeaturesMeasurementReporting = lazy(() => import("./ctv/components/FeaturesMeasurementReporting"));
+const FeaturesAiCreatives = lazy(() => import("./ctv/components/FeaturesAiCreatives"));
+const FeaturesIntegrationsApi = lazy(() => import("./ctv/components/FeaturesIntegrationsApi"));
 
 // Case study pages (unique layouts) - CTV advertising
 const DamonMotorcycles = lazy(() => import("./pages/case-study/DamonMotorcycles"));
@@ -79,10 +92,21 @@ const App = () => (
             {/* Home */}
             <Route path="/" element={<Index />} />
 
-            {/* CTV Platform routes - Disabled (requires @hanzo/ui/primitives export) */}
-            {/* {ctvRoutes.filter(r => !r.override).map(({ path, element: Element }) => (
-              <Route key={path} path={path} element={<Element />} />
-            ))} */}
+            {/* CTV Goal Pages */}
+            <Route path="/goals/build-awareness" element={<BuildAwareness />} />
+            <Route path="/goals/attract-traffic" element={<AttractTraffic />} />
+            <Route path="/goals/generate-leads" element={<GenerateLeads />} />
+            <Route path="/goals/increase-sales" element={<IncreaseSales />} />
+            <Route path="/goals/retarget-prospects" element={<RetargetProspects />} />
+            <Route path="/goals/promote-your-app" element={<PromoteYourApp />} />
+
+            {/* CTV Feature Pages */}
+            <Route path="/features/apps-channels" element={<FeaturesAppsChannels />} />
+            <Route path="/features/audience-targeting" element={<FeaturesAudienceTargeting />} />
+            <Route path="/features/ai-optimization" element={<FeaturesAiOptimization />} />
+            <Route path="/features/measurement-reporting" element={<FeaturesMeasurementReporting />} />
+            <Route path="/features/ai-creatives" element={<FeaturesAiCreatives />} />
+            <Route path="/features/integrations-api" element={<FeaturesIntegrationsApi />} />
 
             {/* Special pages with unique layouts */}
             <Route path="/auth" element={<Auth />} />
