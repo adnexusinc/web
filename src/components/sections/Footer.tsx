@@ -101,15 +101,14 @@ export const Footer = () => {
         </div>
 
         {/* Main Footer Navigation */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-x-10 gap-y-12 mb-20">
           {/* Brand Section */}
           <div className="lg:col-span-4 space-y-6">
-            <Link to="/" className="flex items-center gap-3 group transition-all duration-300 ease-in-out transform hover:translate-x-1">
-              <img src="/favicon.png" alt="Adnexus" className="h-10 w-auto brightness-0 invert" />
-              <span className="text-2xl font-semibold tracking-tight text-white">Adnexus</span>
+            <Link to="/" className="flex items-center group transition-all duration-300 ease-in-out transform hover:translate-x-1">
+              <img src="/logo.png" alt="Adnexus" className="h-8 w-auto brightness-0 invert" />
             </Link>
 
-            <p className="text-gray-400 text-lg max-w-md leading-relaxed">
+            <p className="text-gray-400 text-base max-w-md leading-relaxed">
               Unified programmatic advertising platform for CTV, display, and video. AI-powered campaign optimization across all channels.
             </p>
 
@@ -127,8 +126,10 @@ export const Footer = () => {
             </div>
           </div>
 
-          {/* Products */}
-          <div className="lg:col-span-2 space-y-6">
+          {/* Products & Solutions - side by side on mobile */}
+          <div className="grid grid-cols-2 gap-x-10 gap-y-6 lg:col-span-4 lg:grid-cols-2">
+            {/* Products */}
+            <div className="space-y-6">
             <h3 className="text-white text-lg font-medium">Products</h3>
             <ul className="space-y-3">
               <li>
@@ -164,9 +165,9 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Solutions */}
-          <div className="lg:col-span-2 space-y-6">
-            <h3 className="text-white text-lg font-medium">Solutions</h3>
+            {/* Solutions */}
+            <div className="space-y-6">
+              <h3 className="text-white text-lg font-medium">Solutions</h3>
             <ul className="space-y-3">
               <li>
                 <Link to="/advertisers" className="text-gray-400 hover:text-white transition-colors inline-flex items-center group">
@@ -199,6 +200,7 @@ export const Footer = () => {
                 </Link>
               </li>
             </ul>
+            </div>
           </div>
 
           {/* Contact */}
