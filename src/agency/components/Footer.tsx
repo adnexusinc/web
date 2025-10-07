@@ -59,10 +59,10 @@ const Footer = () => {
                 <button
                   type="submit"
                   disabled={subscribeStatus === 'loading' || subscribeStatus === 'success'}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-primary text-white p-3 rounded-full hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition duration-150 ease-in-out"
+                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-white text-black p-3 rounded-full hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition duration-150 ease-in-out"
                 >
                   {subscribeStatus === 'loading' ? (
-                    <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                    <div className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin"></div>
                   ) : subscribeStatus === 'success' ? (
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -93,14 +93,27 @@ const Footer = () => {
 
         {/* Main Footer Navigation */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-20">
-          {/* Brand Section */}
+          {/* Social Links Section */}
           <div className="lg:col-span-4 space-y-6">
-            <div className="flex items-center gap-3 group transition-all duration-300 ease-in-out transform hover:translate-x-1">
-              <img src="/images/logo/logo.png" alt="Adnexus" className="h-10 w-auto" />
-              <span className="text-2xl font-semibold tracking-tight text-white">Adnexus</span>
+            <div className="flex space-x-6">
+              <a href="https://www.instagram.com/adnexusinc" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
+                <Instagram size={24} />
+              </a>
+              <a href="https://www.facebook.com/adnexusinc" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
+                <Facebook size={24} />
+              </a>
+              <a href="https://x.com/adnexusinc" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
+                <Twitter size={24} />
+              </a>
+              <a href="https://github.com/adnexusinc" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
+                <Github size={24} />
+              </a>
+              <a href="https://discord.gg/adnexus" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
+                <MessageSquare size={24} />
+              </a>
             </div>
 
-            <p className="text-gray-400 text-lg max-w-md leading-relaxed">
+            <p className="text-gray-400 text-base max-w-md leading-relaxed">
               Intelligent collaboration between human expertise and AI innovation. Transforming traditional creative paradigms.
             </p>
 
@@ -216,38 +229,11 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="text-gray-500 mb-6 md:mb-0 flex items-center">
-            <span>© {currentYear} Adnexus Industries Inc.</span>
-            <span className="mx-2 text-gray-700">•</span>
-            <span className="flex items-center text-primary/80">
-              <span className="mr-1">Made with</span>
-              <span className="relative inline-flex h-3 w-3 mx-1">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
-              </span>
-              <span className="ml-1">AI + Human Creativity</span>
-            </span>
+          <div className="text-gray-500 mb-6 md:mb-0">
+            <span>© {currentYear} Adnexus Technology Inc.</span>
           </div>
 
-          <div className="flex space-x-6">
-            <a href="https://www.instagram.com/hanzoai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
-              <Instagram size={20} />
-            </a>
-            <a href="https://www.facebook.com/hanzo-inc" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
-              <Facebook size={20} />
-            </a>
-            <a href="https://x.com/hanzoai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
-              <Twitter size={20} />
-            </a>
-            <a href="https://github.com/hanzoai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
-              <Github size={20} />
-            </a>
-            <a href="https://discord.com/invite/Xxxxxxx" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
-              <MessageSquare size={20} />
-            </a>
-          </div>
-
-          <div className="hidden md:flex space-x-6 text-sm">
+          <div className="flex space-x-6 text-sm">
             <Link to="/terms" className="text-gray-500 hover:text-white transition-colors">Terms</Link>
             <Link to="/privacy" className="text-gray-500 hover:text-white transition-colors">Privacy</Link>
             <Link to="/cookies" className="text-gray-500 hover:text-white transition-colors">Cookies</Link>
