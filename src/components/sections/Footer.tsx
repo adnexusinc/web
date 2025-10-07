@@ -33,6 +33,15 @@ export const Footer = () => {
         <div className="absolute -bottom-[30%] -left-[20%] w-[60%] h-[60%] bg-gradient-to-tr from-blue-500/10 via-cyan-500/5 to-transparent rounded-full blur-3xl transform rotate-12 animate-pulse-glow"></div>
       </div>
 
+      {/* Big Adnexus Logo Watermark - pinned to absolute bottom of footer */}
+      <div className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-[120vw] pointer-events-none">
+        <img
+          src="/logo.png"
+          alt=""
+          className="w-full h-auto opacity-[0.08] brightness-0 invert"
+        />
+      </div>
+
       <div className="container mx-auto px-6 relative z-10">
         {/* Top Section with Newsletter */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16 pb-16 border-b border-gray-800">
@@ -215,17 +224,8 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Section with Big Logo Watermark */}
-        <div className="relative min-h-[300px] -mt-32">
-          {/* Big Adnexus Logo Watermark - pinned to bottom */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[120vw] pointer-events-none">
-            <img
-              src="/logo.png"
-              alt=""
-              className="w-full h-auto opacity-[0.08] brightness-0 invert"
-            />
-          </div>
-
+        {/* Bottom Section */}
+        <div className="relative min-h-[200px]">
           {/* Content on top of watermark */}
           <div className="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6 py-8">
             <div className="text-gray-500 flex items-center flex-wrap justify-center md:justify-start gap-2">
