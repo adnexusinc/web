@@ -95,37 +95,37 @@ const solutionItems = [
 const goalItems = [
   {
     title: "Build Awareness",
-    href: "/dsp?goal=awareness",
+    href: "/goals/build-awareness",
     description: "Reach new audiences at scale",
     icon: Users
   },
   {
     title: "Attract Traffic",
-    href: "/dsp?goal=traffic",
+    href: "/goals/attract-traffic",
     description: "Drive visitors to your site or app",
     icon: TrendingUp
   },
   {
     title: "Generate Leads",
-    href: "/dsp?goal=leads",
+    href: "/goals/generate-leads",
     description: "Capture qualified prospects",
     icon: Target
   },
   {
     title: "Increase Sales",
-    href: "/dsp?goal=sales",
+    href: "/goals/increase-sales",
     description: "Drive conversions and revenue",
     icon: BarChart3
   },
   {
     title: "Retarget Prospects",
-    href: "/dsp?goal=retargeting",
+    href: "/goals/retarget-prospects",
     description: "Re-engage interested audiences",
     icon: Zap
   },
   {
     title: "Promote Your App",
-    href: "/dsp?goal=app",
+    href: "/goals/promote-your-app",
     description: "Boost downloads and engagement",
     icon: Cpu
   }
@@ -135,37 +135,37 @@ const goalItems = [
 const featureItems = [
   {
     title: "Apps & Channels",
-    href: "/platform/overview",
+    href: "/features/apps-channels",
     description: "500+ premium CTV channels",
     icon: Globe
   },
   {
     title: "Audience Targeting",
-    href: "/platform/plan",
+    href: "/features/audience-targeting",
     description: "Precision demographic & behavioral targeting",
     icon: Target
   },
   {
     title: "Measurement & Reporting",
-    href: "/platform/measure",
+    href: "/features/measurement-reporting",
     description: "Real-time analytics & attribution",
     icon: BarChart3
   },
   {
     title: "Integrations & API",
-    href: "/dsp",
+    href: "/features/integrations-api",
     description: "Connect with your existing tools",
     icon: Cpu
   },
   {
     title: "AI Creatives",
-    href: "/studio",
+    href: "/features/ai-creatives",
     description: "Generate video ads with AI",
     icon: Film
   },
   {
     title: "AI Optimization",
-    href: "/platform/activate",
+    href: "/features/ai-optimization",
     description: "Automated bid & budget optimization",
     icon: Zap
   }
