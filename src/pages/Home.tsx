@@ -731,6 +731,91 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Why CTV? Education Section */}
+      <section className="py-32 px-4 bg-black border-y border-white/10">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+              Like Meta for TV Ads
+            </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              Self-serve CTV advertising that performance marketers love. Run campaigns like Facebook Ads, but on the biggest screen in the home.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <Card className="p-8 bg-white/5 border-white/10">
+              <div className="w-12 h-12 bg-green-500/20 rounded-full flex items-center justify-center mb-4">
+                <Shield className="h-6 w-6 text-green-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">No Ad Blockers</h3>
+              <p className="text-white/60">
+                100% viewability. Your ads can't be blocked on streaming TVs—every impression is guaranteed delivered.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-white/5 border-white/10">
+              <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center mb-4">
+                <Play className="h-6 w-6 text-blue-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Non-Skippable</h3>
+              <p className="text-white/60">
+                Premium inventory means captive audiences. Most CTV ads cannot be skipped, ensuring complete message delivery.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-white/5 border-white/10">
+              <div className="w-12 h-12 bg-purple-500/20 rounded-full flex items-center justify-center mb-4">
+                <BarChart3 className="h-6 w-6 text-purple-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Better Attribution</h3>
+              <p className="text-white/60">
+                Track every impression to conversion. See exactly which channels, shows, and time slots drive ROI.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-white/5 border-white/10">
+              <div className="w-12 h-12 bg-yellow-500/20 rounded-full flex items-center justify-center mb-4">
+                <Star className="h-6 w-6 text-yellow-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Premium Environment</h3>
+              <p className="text-white/60">
+                Brand-safe content on Hulu, Roku, Peacock. Your ads appear alongside premium shows, not sketchy websites.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-white/5 border-white/10">
+              <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center mb-4">
+                <Tv className="h-6 w-6 text-red-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Big Screen Impact</h3>
+              <p className="text-white/60">
+                65" TVs in living rooms, not 6" phones in bathrooms. Full-screen ads in lean-back viewing environments.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-white/5 border-white/10">
+              <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mb-4">
+                <Target className="h-6 w-6 text-cyan-400" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Household Targeting</h3>
+              <p className="text-white/60">
+                Target entire households, not just individuals. Reach decision-makers with $100K+ household incomes.
+              </p>
+            </Card>
+          </div>
+
+          <div className="text-center">
+            <a href="/get-started/" className="inline-block">
+              <Button size="lg" className="bg-white text-black hover:bg-gray-100 px-12 py-6 text-lg">
+                Start Your First Campaign
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Step 3: Target Audience */}
       <section className="py-20 px-4 bg-black">
         <div className="container mx-auto max-w-6xl">

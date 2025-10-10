@@ -31,6 +31,7 @@ const routes = [
   '/resources',
   '/newsletter',
   '/book-demo',
+  '/get-started',
   '/enterprise',
 
   // Products
