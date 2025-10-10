@@ -454,74 +454,72 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-full sm:max-w-md">
-                <div className="flex flex-col gap-6 mt-6">
-                  <Link
-                    to="/platform/overview"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-lg font-semibold hover:text-primary transition-colors"
-                  >
-                    Product
-                  </Link>
-                  <Link
-                    to="/pricing"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-lg font-semibold hover:text-primary transition-colors"
-                  >
-                    Pricing
-                  </Link>
-                  <Link
-                    to="/case-studies"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-lg font-semibold hover:text-primary transition-colors"
-                  >
-                    Case Studies
-                  </Link>
-                  <Link
-                    to="/help"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-lg font-semibold hover:text-primary transition-colors"
-                  >
-                    Help
+              <SheetContent side="right" className="w-[320px]">
+                <div className="flex flex-col h-full pt-4">
+                  {/* Logo */}
+                  <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="mb-8">
+                    <img src="/logo.png" alt="Adnexus" className="h-8 filter invert brightness-0" />
                   </Link>
 
-                  <div className="pt-4 border-t space-y-2">
-                    <div className="px-2 py-1.5 text-sm font-semibold text-muted-foreground">
-                      Sign In
-                    </div>
-                    <a href="https://dsp.ad.nexus" onClick={() => setIsMobileMenuOpen(false)}>
-                      <Button variant="ghost" className="w-full justify-start gap-2">
-                        <Target className="h-4 w-4" />
-                        <div className="text-left">
-                          <div>Advertiser Login</div>
-                          <div className="text-xs text-muted-foreground">Demand-Side Platform</div>
-                        </div>
-                      </Button>
-                    </a>
-                    <a href="/agency/login" onClick={() => setIsMobileMenuOpen(false)}>
-                      <Button variant="ghost" className="w-full justify-start gap-2">
-                        <Zap className="h-4 w-4" />
-                        <div className="text-left">
-                          <div>Agency Login</div>
-                          <div className="text-xs text-muted-foreground">Creative & Marketing Services</div>
-                        </div>
-                      </Button>
-                    </a>
-                    <a href="https://studio.ad.nexus" onClick={() => setIsMobileMenuOpen(false)}>
-                      <Button variant="ghost" className="w-full justify-start gap-2">
-                        <Film className="h-4 w-4" />
-                        <div className="text-left">
-                          <div>Studio Login</div>
-                          <div className="text-xs text-muted-foreground">Creative Platform</div>
-                        </div>
-                      </Button>
-                    </a>
-                    <Link to="/book-demo/" onClick={() => setIsMobileMenuOpen(false)}>
-                      <Button className="w-full">
-                        Get Started
-                      </Button>
+                  {/* Main Nav - Tight Spacing */}
+                  <nav className="space-y-1">
+                    <Link
+                      to="/platform/overview"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block px-3 py-2.5 text-sm font-medium hover:bg-accent rounded-md transition-colors"
+                    >
+                      Product
                     </Link>
-                  </div>
+                    <Link
+                      to="/pricing"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block px-3 py-2.5 text-sm font-medium hover:bg-accent rounded-md transition-colors"
+                    >
+                      Pricing
+                    </Link>
+                    <Link
+                      to="/case-studies"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block px-3 py-2.5 text-sm font-medium hover:bg-accent rounded-md transition-colors"
+                    >
+                      Case Studies
+                    </Link>
+                    <Link
+                      to="/help"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block px-3 py-2.5 text-sm font-medium hover:bg-accent rounded-md transition-colors"
+                    >
+                      Help
+                    </Link>
+
+                    {/* Collapsible Sign In */}
+                    <details className="group">
+                      <summary className="block px-3 py-2.5 text-sm font-medium hover:bg-accent rounded-md transition-colors cursor-pointer list-none flex items-center justify-between">
+                        <span>Sign In</span>
+                        <ChevronDown className="h-4 w-4 transition-transform group-open:rotate-180" />
+                      </summary>
+                      <div className="mt-1 ml-3 space-y-1">
+                        <a href="https://dsp.ad.nexus" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-xs hover:bg-accent rounded-md">
+                          DSP
+                        </a>
+                        <a href="/agency/login" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-xs hover:bg-accent rounded-md">
+                          Agency
+                        </a>
+                        <a href="https://studio.ad.nexus" onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-2 text-xs hover:bg-accent rounded-md">
+                          Studio
+                        </a>
+                      </div>
+                    </details>
+
+                    {/* Get Started - Same Size */}
+                    <Link
+                      to="/book-demo/"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="block px-3 py-2.5 text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 rounded-md transition-colors"
+                    >
+                      Get Started
+                    </Link>
+                  </nav>
                 </div>
               </SheetContent>
             </Sheet>
