@@ -321,9 +321,65 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
             <NavigationMenu className="hidden lg:flex">
               <NavigationMenuList className="gap-2">
                 <NavigationMenuItem>
-                  <Link to="/platform/overview" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
+                  <NavigationMenuTrigger className="bg-transparent">
                     Product
-                  </Link>
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="w-screen max-w-5xl p-8">
+                      <div className="grid md:grid-cols-3 gap-8">
+                        {/* By Goal */}
+                        <div>
+                          <h3 className="text-xs font-semibold text-muted-foreground/60 uppercase tracking-wider mb-4 px-2">By Goal</h3>
+                          <ul className="space-y-1">
+                            {goalItems.map((item) => (
+                              <ListItem
+                                key={item.title}
+                                title={item.title}
+                                href={item.href}
+                                icon={item.icon}
+                              >
+                                {item.description}
+                              </ListItem>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {/* By Feature */}
+                        <div>
+                          <h3 className="text-xs font-semibold text-muted-foreground/60 uppercase tracking-wider mb-4 px-2">By Feature</h3>
+                          <ul className="space-y-1">
+                            {featureItems.map((item) => (
+                              <ListItem
+                                key={item.title}
+                                title={item.title}
+                                href={item.href}
+                                icon={item.icon}
+                              >
+                                {item.description}
+                              </ListItem>
+                            ))}
+                          </ul>
+                        </div>
+
+                        {/* Platform */}
+                        <div>
+                          <h3 className="text-xs font-semibold text-muted-foreground/60 uppercase tracking-wider mb-4 px-2">Platform</h3>
+                          <ul className="space-y-1">
+                            {platformItems.map((item) => (
+                              <ListItem
+                                key={item.title}
+                                title={item.title}
+                                href={item.href}
+                                icon={item.icon}
+                              >
+                                {item.description}
+                              </ListItem>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </NavigationMenuContent>
                 </NavigationMenuItem>
 
                 <NavigationMenuItem>
@@ -398,7 +454,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetContent side="right" className="w-full sm:max-w-md">
                 <div className="flex flex-col gap-6 mt-6">
                   <Link
                     to="/platform/overview"
