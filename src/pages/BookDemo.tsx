@@ -10,9 +10,11 @@ export default function BookDemo() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     email: '',
+    name: '',
+    userType: '', // Advertiser, Agency, or Brand
+    companySize: '',
     industry: '',
-    budget: '',
-    name: ''
+    budget: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -23,30 +25,33 @@ export default function BookDemo() {
 
     try {
       // Save to contacts table
-      const { error } = await supabase
+      const { error} = await supabase
         .from('contacts')
         .insert({
           name: formData.name,
           email: formData.email,
           company: formData.industry,
-          interest_area: 'demo_request',
-          message: `Budget: ${formData.budget}`,
+          company_size: formData.companySize,
+          interest_area: formData.userType.toLowerCase(),
+          message: `Budget: ${formData.budget} | Type: ${formData.userType}`,
         });
 
       if (error) console.error('Error saving:', error);
 
       // Move to choice page
-      setStep(4);
+      setStep(5);
     } catch (error) {
       console.error('Error:', error);
-      setStep(4); // Continue anyway
+      setStep(5); // Continue anyway
     } finally {
       setIsSubmitting(false);
     }
   };
 
+  const userTypes = ['Advertiser', 'Agency', 'Brand'];
+  const companySizes = ['1-10 employees', '11-50 employees', '51-200 employees', '201-500 employees', '501+ employees'];
   const industries = ['Ecommerce', 'Apps & Gaming', 'B2B/SaaS', 'Finance', 'Healthcare', 'Automotive', 'Education', 'Entertainment', 'Retail', 'Other'];
-  const budgets = ['Under $1K/mo', '$1K-$5K/mo', '$5K-$10K/mo', '$10K-$25K/mo', '$25K-$50K/mo', '$50K+/mo'];
+  const budgets = ['$25-$100/day', '$100-$500/day', '$500-$1K/day', '$1K-$5K/day', '$5K-$10K/day', '$10K+/day'];
   const clientLogos = ['Microsoft', 'Google', 'NVIDIA', 'Damon Motorcycles', 'Bellabeat', 'Triller', 'Unikrn', 'Cover.Build', 'Casper Labs', 'Myle'];
 
   return (
@@ -94,19 +99,19 @@ export default function BookDemo() {
                   placeholder="Your Name"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="h-12 border-gray-300"
+                  className="h-12 border-gray-300 !bg-white !text-black"
                 />
-                <Select value={formData.industry} onValueChange={(value) => setFormData({ ...formData, industry: value })}>
-                  <SelectTrigger className="h-12 border-gray-300">
-                    <SelectValue placeholder="Select your industry" />
+                <Select value={formData.userType} onValueChange={(value) => setFormData({ ...formData, userType: value })}>
+                  <SelectTrigger className="h-12 border-gray-300 !bg-white !text-black">
+                    <SelectValue placeholder="I am a/an..." />
                   </SelectTrigger>
                   <SelectContent>
-                    {industries.map((ind) => <SelectItem key={ind} value={ind}>{ind}</SelectItem>)}
+                    {userTypes.map((type) => <SelectItem key={type} value={type}>{type}</SelectItem>)}
                   </SelectContent>
                 </Select>
                 <Button
                   onClick={() => setStep(3)}
-                  disabled={!formData.name || !formData.industry}
+                  disabled={!formData.name || !formData.userType}
                   className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white"
                 >
                   Continue <ArrowRight className="ml-2" />
@@ -116,6 +121,37 @@ export default function BookDemo() {
           )}
 
           {step === 3 && (
+            <div>
+              <h2 className="text-4xl font-bold mb-6 text-black">About your company</h2>
+              <div className="space-y-4">
+                <Select value={formData.companySize} onValueChange={(value) => setFormData({ ...formData, companySize: value })}>
+                  <SelectTrigger className="h-12 border-gray-300 !bg-white !text-black">
+                    <SelectValue placeholder="Company size" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {companySizes.map((size) => <SelectItem key={size} value={size}>{size}</SelectItem>)}
+                  </SelectContent>
+                </Select>
+                <Select value={formData.industry} onValueChange={(value) => setFormData({ ...formData, industry: value })}>
+                  <SelectTrigger className="h-12 border-gray-300 !bg-white !text-black">
+                    <SelectValue placeholder="Industry" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {industries.map((ind) => <SelectItem key={ind} value={ind}>{ind}</SelectItem>)}
+                  </SelectContent>
+                </Select>
+                <Button
+                  onClick={() => setStep(4)}
+                  disabled={!formData.companySize || !formData.industry}
+                  className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white"
+                >
+                  Continue <ArrowRight className="ml-2" />
+                </Button>
+              </div>
+            </div>
+          )}
+
+          {step === 4 && (
             <div>
               <h2 className="text-4xl font-bold mb-6 text-black">What's your budget?</h2>
               <div className="space-y-4">
@@ -138,7 +174,7 @@ export default function BookDemo() {
             </div>
           )}
 
-          {step === 4 && (
+          {step === 5 && (
             <div>
               <h2 className="text-3xl font-bold mb-4 text-black">Choose Your Path</h2>
               <p className="text-gray-600 mb-8">How would you like to get started?</p>
@@ -156,7 +192,7 @@ export default function BookDemo() {
                 </Button>
 
                 <Button
-                  onClick={() => setStep(5)}
+                  onClick={() => setStep(6)}
                   variant="outline"
                   className="w-full h-auto py-6 border-2 border-gray-300 hover:border-gray-400 hover:bg-gray-50 text-left flex flex-col items-start"
                 >
@@ -170,7 +206,7 @@ export default function BookDemo() {
             </div>
           )}
 
-          {step === 5 && (
+          {step === 6 && (
             <div className="h-full">
               <CalComEmbed
                 calLink="adnexus/15min"
