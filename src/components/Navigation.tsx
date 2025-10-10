@@ -383,7 +383,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                   </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
-              <Link to="/get-started">
+              <Link to="/book-demo/">
                 <Button size="sm" className="group">
                   Get Started
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -400,6 +400,13 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col gap-6 mt-6">
+                  <Link
+                    to="/platform/overview"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg font-semibold hover:text-primary transition-colors"
+                  >
+                    Product
+                  </Link>
                   <Link
                     to="/pricing"
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -453,8 +460,8 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                         </div>
                       </Button>
                     </a>
-                    <Link to="/get-started" onClick={() => setIsMobileMenuOpen(false)}>
-                      <Button variant="outline" className="w-full">
+                    <Link to="/book-demo/" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Button className="w-full">
                         Get Started
                       </Button>
                     </Link>
