@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Check, Calendar, Clock } from 'lucide-react';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 
 const InstantSiteSuccess = () => {
   return (

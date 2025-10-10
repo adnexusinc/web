@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { XCircle, ArrowLeft } from 'lucide-react';
 
 const PaymentCancel = () => {

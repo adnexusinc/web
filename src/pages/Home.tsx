@@ -57,6 +57,7 @@ const Home = () => {
   const [isPiP, setIsPiP] = useState(false);
   const [showPiP, setShowPiP] = useState(true); // Control PiP visibility
   const [pipSize, setPipSize] = useState<'normal' | 'double' | 'fullscreen'>('normal'); // PiP size mode
+  const [isMobile, setIsMobile] = useState(false); // Track if device is mobile
   // Initialize PiP position to bottom-right
   const [pipPosition, setPipPosition] = useState(() => {
     const pipWidth = 384; // w-96 base width
@@ -167,6 +168,17 @@ const Home = () => {
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Mobile detection - hide PiP on mobile devices
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768); // Tablets and desktop >= 768px
+    };
+
+    checkMobile(); // Check on mount
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   // TV static effect on loop
@@ -497,8 +509,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Picture-in-Picture Video - Enhanced Draggable TV */}
-      {isPiP && showPiP && (
+      {/* Picture-in-Picture Video - Enhanced Draggable TV - Not on mobile */}
+      {isPiP && showPiP && !isMobile && (
         <div
           ref={pipContainerRef}
           className={`fixed z-50 transition-all ease-out group ${

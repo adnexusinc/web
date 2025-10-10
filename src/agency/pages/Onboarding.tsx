@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useToast } from "@/hooks/use-toast";
 import { Button } from '@/components/ui/button';
 
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import FormSection from '@/agency/components/onboarding/FormSection';
 import ProgressBar from '@/agency/components/onboarding/ProgressBar';
 import FormNavigation from '@/agency/components/onboarding/FormNavigation';

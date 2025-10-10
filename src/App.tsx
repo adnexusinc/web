@@ -170,14 +170,19 @@ const App = () => (
             <Route path="/agency/dashboard" element={<AgencyDashboard />} />
 
             <Route path="/enterprise" element={<Enterprise />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/faq" element={<FAQ />} />
 
             {/* Services & Solutions - Redirect to Agency */}
             <Route path="/services" element={<Navigate to="/agency/services" replace />} />
             <Route path="/solutions" element={<Navigate to="/agency/solutions" replace />} />
             <Route path="/services/ai" element={<UnifiedPage config={pageConfigs['/services/ai']} />} />
+            <Route path="/services/ai-services" element={<UnifiedPage config={pageConfigs['/services/ai']} />} />
             <Route path="/services/creative" element={<UnifiedPage config={pageConfigs['/services/creative']} />} />
+            <Route path="/services/creative-design" element={<UnifiedPage config={pageConfigs['/services/creative']} />} />
             <Route path="/services/marketing" element={<UnifiedPage config={pageConfigs['/services/marketing']} />} />
             <Route path="/services/production" element={<UnifiedPage config={pageConfigs['/services/production']} />} />
+            <Route path="/services/specialized-production" element={<UnifiedPage config={pageConfigs['/services/production']} />} />
 
             {/* Legal */}
             <Route path="/terms-of-service" element={<UnifiedPage config={pageConfigs['/terms-of-service']} />} />

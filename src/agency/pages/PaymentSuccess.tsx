@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useSearchParams, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { CheckCircle, ArrowRight, Loader2, AlertCircle } from 'lucide-react';
 import { trackPurchaseSuccess } from '@/agency/lib/stripe';
 import { analytics } from '@/agency/utils/analytics';

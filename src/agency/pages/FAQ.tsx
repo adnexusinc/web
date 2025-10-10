@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 import { Link } from 'react-router-dom';
 

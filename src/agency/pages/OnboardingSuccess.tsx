@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 
 const OnboardingSuccess = () => {
   const navigate = useNavigate();

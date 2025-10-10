@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { ArrowUpRight, Check } from 'lucide-react';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/button';
 import { buttonModifiers } from '@/agency/lib/button-utils';
 

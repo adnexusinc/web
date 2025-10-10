@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { ArrowLeft, CreditCard, Lock } from 'lucide-react';
 
 const AddPaymentMethod = () => {

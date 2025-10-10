@@ -4,7 +4,7 @@ import { useToast } from "@/hooks/use-toast";
 import { CreditCard, Mail, Lock, Tag, Check, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import {
   Tooltip,
   TooltipContent,

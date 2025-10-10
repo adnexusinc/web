@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import {
   ArrowLeft,
   Check,

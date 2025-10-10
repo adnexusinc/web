@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check } from 'lucide-react';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { Navigation } from '@/components/Navigation';
 import { services } from '@/agency/data/services';
 import ServiceTemplate from './services/ServiceTemplate';

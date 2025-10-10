@@ -8,7 +8,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Checkbox } from '@/components/ui/checkbox';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import InstantSiteCheckout from '@/agency/components/InstantSiteCheckout';
 import '@/styles/file-input.css';
 

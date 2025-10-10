@@ -1,6 +1,6 @@
 
 
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { ArrowUpRight, Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
 
 const Contact = () => {

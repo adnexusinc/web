@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 // Remove Navbar import since it's now global
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import VideoCard from '@/agency/components/VideoCard';
 import { BentoGrid, BentoCard } from '@/agency/components/BentoGrid';
 import ParallaxItem from '@/agency/components/ParallaxItem';

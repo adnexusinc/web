@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { ArrowLeft, Globe, Linkedin, Instagram, Facebook, Twitter, ArrowUpRight } from 'lucide-react';
 import GlobalMuteButton from '@/agency/components/GlobalMuteButton';
 import VideoMuteButton from '@/agency/components/VideoMuteButton';

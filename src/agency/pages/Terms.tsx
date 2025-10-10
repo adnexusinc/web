@@ -1,4 +1,4 @@
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 
 const Terms = () => {
   return (

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Check } from 'lucide-react';
 import { buttonModifiers } from '@/agency/lib/button-utils';
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/button';
 import { Service } from '@/agency/data/services';
 

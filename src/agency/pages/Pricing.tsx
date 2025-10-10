@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { PricingCard } from '@/components/ui/pricing-card';
 import { PricingToggle } from '@/components/ui/pricing-toggle';
 import GradientBackground from '@/agency/components/GradientBackground';

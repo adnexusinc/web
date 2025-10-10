@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import Footer from '@/agency/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/button';
 import { ArrowUpRight, Check, Shield, Clock, Star, Users, Database, Lock, Globe } from 'lucide-react';
 import { buttonModifiers } from '@/agency/lib/button-utils';
