@@ -321,6 +321,12 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
             <NavigationMenu className="hidden lg:flex">
               <NavigationMenuList className="gap-2">
                 <NavigationMenuItem>
+                  <Link to="/platform/overview" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
+                    Product
+                  </Link>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
                   <Link to="/pricing" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
                     Pricing
                   </Link>

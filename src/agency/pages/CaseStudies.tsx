@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/sections/Footer';
 import VideoCard from '@/agency/components/VideoCard';
 import { BentoGrid, BentoCard } from '@/agency/components/BentoGrid';
@@ -59,7 +59,7 @@ const CaseStudies = () => {
   return (
     <ScrollReveal>
       <div className="min-h-screen bg-black text-white">
-        {/* <Navbar /> removed - using global NewHeader */}
+        <Navigation />
         <GlobalMuteButton />
         
         <main className="pt-24">
