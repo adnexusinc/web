@@ -115,7 +115,7 @@ const FAQPage = () => {
                 href="https://cal.com/adnexus"
                 className="inline-flex items-center justify-center rounded-full px-8 py-3 text-base font-medium border border-white/40 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white/30 focus:ring-offset-2"
               >
-                Book a Demo
+                Get Started
               </a>
             </div>
           </div>

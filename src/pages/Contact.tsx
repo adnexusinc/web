@@ -87,7 +87,7 @@ const Contact = () => {
             <Card className="hover:shadow-lg transition-shadow">
               <CardHeader>
                 <MessageSquare className="h-10 w-10 text-primary mb-4" />
-                <CardTitle>Book a Demo</CardTitle>
+                <CardTitle>Get Started</CardTitle>
                 <CardDescription>
                   Schedule a personalized walkthrough
                 </CardDescription>

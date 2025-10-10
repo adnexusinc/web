@@ -223,7 +223,7 @@ const FAQPage = () => {
             <div className="mt-8">
               <a href="https://cal.com/adnexus" target="_blank" rel="noopener noreferrer">
                 <Button size="lg">
-                  Book a Demo Call
+                  Get Started Call
                 </Button>
               </a>
             </div>

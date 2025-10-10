@@ -32,7 +32,7 @@ export default function BuildAwareness() {
                   href="https://cal.com/adnexus"
                   className="inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-full border border-white text-white hover:bg-white/10 transition-colors"
                 >
-                  Schedule a Demo
+                  Get Started
                 </a>
               </div>
 

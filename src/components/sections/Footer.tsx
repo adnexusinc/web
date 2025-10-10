@@ -115,7 +115,7 @@ export const Footer = () => {
             <div className="pt-4 flex flex-col gap-3 w-fit">
               <a href="https://cal.com/adnexus"
                 className="group bg-white text-black border border-gray-700 px-8 py-3.5 rounded-full font-medium hover:bg-gray-100 transition-all duration-200 ease-in-out inline-flex items-center justify-start whitespace-nowrap">
-                Schedule a Demo
+                Get Started
                 <ArrowUpRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1 group-hover:-translate-y-1" />
               </a>
               <a href="https://auth.ad.nexus"

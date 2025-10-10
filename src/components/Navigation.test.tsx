@@ -28,8 +28,8 @@ describe('Navigation', () => {
     expect(header).toHaveStyle({ top: '0' });
   });
 
-  it('renders Book a Demo button', () => {
+  it('renders Get Started button', () => {
     render(<Navigation />);
-    expect(screen.getByText('Book a Demo')).toBeInTheDocument();
+    expect(screen.getByText('Get Started')).toBeInTheDocument();
   });
 });

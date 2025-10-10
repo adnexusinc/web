@@ -101,7 +101,7 @@ export default function BookDemo() {
                   disabled={!formData.budget}
                   className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white"
                 >
-                  Book Your Demo <ArrowRight className="ml-2" />
+                  Get Started <ArrowRight className="ml-2" />
                 </Button>
               </div>
             </div>

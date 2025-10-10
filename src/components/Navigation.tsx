@@ -495,7 +495,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
               </NavigationMenu>
               <a href="/book-demo">
                 <Button size="sm" className="group">
-                  Book a Demo
+                  Get Started
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </a>
@@ -628,7 +628,7 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                     </a>
                     <a href="/book-demo" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
                       <Button variant="outline" className="w-full">
-                        Book a Demo
+                        Get Started
                       </Button>
                     </a>
                   </div>
