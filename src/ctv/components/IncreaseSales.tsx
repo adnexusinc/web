@@ -57,24 +57,6 @@ export default function IncreaseSales() {
             </div>
           </div>
         </section>
-        <section className="py-20 bg-gradient-to-b from-black via-gray-900 to-black">
-          <div className="container mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-4">Proven Results</h2>
-              <p className="text-white text-lg">Real brands, real growth</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {data.success_stories.slice(0, 9).map((story: any, index: number) => (
-                <div key={index} className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-white transition-all duration-300">
-                  <div className="text-5xl font-bold text-white mb-2">{story.metric}</div>
-                  <div className="text-sm text-gray-500 mb-4">{story.metric_label}</div>
-                  <h3 className="text-lg font-semibold mb-3 line-clamp-2">{story.title}</h3>
-                  <div className="text-sm text-white">{story.company}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
         <section className="py-20 bg-black">
           <div className="container mx-auto px-6">
             <div className="text-center mb-12"><h2 className="text-3xl font-bold mb-4">Explore More Goals</h2></div>
@@ -87,7 +69,7 @@ export default function IncreaseSales() {
             </div>
           </div>
         </section>
-        <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+        <section className="py-20 pb-32 bg-gradient-to-b from-black to-gray-900">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Increase Sales?</h2>

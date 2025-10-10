@@ -12,7 +12,11 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:report": "playwright show-report"
   },
   "dependencies": {
     "@anthropic-ai/claude-code": "^2.0.5",
@@ -68,6 +72,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.37.0",
+    "@playwright/test": "^1.56.0",
     "@tailwindcss/forms": "0.5.10",
     "@tailwindcss/postcss": "4.1.14",
     "@tailwindcss/typography": "0.5.19",
