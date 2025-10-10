@@ -1,6 +1,6 @@
 {
-  "url": "https://www.vibe.co/industry/home-improvement",
-  "title": "Home Improvement | Vibe",
+  "url": "https://ad.nexus/industry/home-improvement",
+  "title": "Home Improvement | Adnexus",
   "meta": {
     "industry": "home-improvement",
     "category": "industry-solutions"
@@ -10,8 +10,8 @@
       "Drive Sales with TV Ads"
     ],
     "h2": [
-      "Target high-intent home owners and generate leads with Vibe",
-      "Why 3,000 local businesses choose Vibe",
+      "Target high-intent home owners and generate leads with Adnexus",
+      "Why 3,000 local businesses choose Adnexus",
       "Integrated with the tools you know and love",
       "Success Stories"
     ]
@@ -20,17 +20,17 @@
     {
       "id": "hero",
       "heading": "Drive Sales with TV Ads",
-      "content": "Target high-intent home owners and generate leads with Vibe"
+      "content": "Target high-intent home owners and generate leads with Adnexus"
     },
     {
       "id": "key-features",
-      "heading": "Why 3,000 local businesses choose Vibe",
+      "heading": "Why 3,000 local businesses choose Adnexus",
       "content": "Industry-specific features for home improvement businesses"
     },
     {
       "id": "customer-logos",
-      "heading": "Brands Using Vibe",
-      "content": "Home improvement and local businesses successfully using Vibe platform"
+      "heading": "Brands Using Adnexus",
+      "content": "Home improvement and local businesses successfully using Adnexus platform"
     },
     {
       "id": "testimonials",
@@ -162,12 +162,12 @@
   "callToAction": [
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/get-started",
       "type": "primary"
     },
     {
       "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo",
+      "href": "https://ad.nexus/book-a-demo",
       "type": "secondary"
     },
     {
@@ -177,7 +177,7 @@
     },
     {
       "text": "Browse all integrations",
-      "href": "https://www.vibe.co/integrations",
+      "href": "https://ad.nexus/integrations",
       "type": "link"
     }
   ],

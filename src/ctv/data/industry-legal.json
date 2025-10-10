@@ -1,6 +1,6 @@
 {
-  "url": "https://www.vibe.co/industry/legal",
-  "title": "Grow your Law Firm with TV Ads | Vibe",
+  "url": "https://ad.nexus/industry/legal",
+  "title": "Grow your Law Firm with TV Ads | Adnexus",
   "meta": {
     "industry": "legal",
     "category": "industry-solutions"
@@ -11,7 +11,7 @@
     ],
     "h2": [
       "Smarter Reach. Stronger Results. Legal Marketing That Works.",
-      "Why law firms trust Vibe",
+      "Why law firms trust Adnexus",
       "Integrated with the tools you know and love",
       "Hear from leaders in your industry"
     ]
@@ -24,7 +24,7 @@
     },
     {
       "id": "key-features",
-      "heading": "Why law firms trust Vibe",
+      "heading": "Why law firms trust Adnexus",
       "content": "Core features for legal marketing success"
     },
     {
@@ -35,7 +35,7 @@
     {
       "id": "testimonials",
       "heading": "Hear from leaders in your industry",
-      "content": "Real results from law firms using Vibe"
+      "content": "Real results from law firms using Adnexus"
     }
   ],
   "features": [
@@ -51,7 +51,7 @@
     },
     {
       "title": "AI Optimization",
-      "description": "Vibe's programmatic engine keeps CPMs low and impact high",
+      "description": "Adnexus's programmatic engine keeps CPMs low and impact high",
       "details": [
         "Programmatic engine optimization",
         "Low CPMs",
@@ -117,12 +117,12 @@
   "callToAction": [
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/get-started",
       "type": "primary"
     },
     {
       "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo",
+      "href": "https://ad.nexus/book-a-demo",
       "type": "secondary"
     }
   ],

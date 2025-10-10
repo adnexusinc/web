@@ -1,12 +1,12 @@
 {
-  "url": "https://www.vibe.co/industry/politics",
-  "title": "Politics | Vibe",
+  "url": "https://ad.nexus/industry/politics",
+  "title": "Politics | Adnexus",
   "meta": {
     "viewport": "width=device-width, initial-scale=1",
     "description": "Instantly launch and optimize TV Ads for powerful campaigns.",
-    "og:title": "Politics | Vibe",
+    "og:title": "Politics | Adnexus",
     "og:description": "Instantly launch and optimize TV Ads for powerful campaigns.",
-    "og:url": "https://www.vibe.co/industry/politics",
+    "og:url": "https://ad.nexus/industry/politics",
     "twitter:card": "summary_large_image"
   },
   "headings": {
@@ -15,10 +15,10 @@
     ],
     "h2": [
       "Hear from leaders in your industry",
-      "Why political campaigns choose Vibe",
+      "Why political campaigns choose Adnexus",
       "Integrated with the tools you know and love",
       "Success Stories",
-      "Get started with Vibe in minutes"
+      "Get started with Adnexus in minutes"
     ],
     "h3": [
       "Driving Voter Awareness Through CTV",
@@ -38,7 +38,7 @@
   },
   "paragraphs": [
     "Instantly launch and optimize TV Ads for powerful campaigns.",
-    "Vibe helped Scott Walker's campaign achieve a 98% VTR and $0.05 CPV by using unskippable CTV ads to precisely target key voter segments—driving awareness and securing a win.",
+    "Adnexus helped Scott Walker's campaign achieve a 98% VTR and $0.05 CPV by using unskippable CTV ads to precisely target key voter segments—driving awareness and securing a win.",
     "Reach key voter segments and turn real-time audience data into actionable targeting insights.",
     "Keep voters engaged with 98%+ VTR on CTV and scale your brand on TV.",
     "Access 120M households across 500+ premium apps and channels.",
@@ -48,8 +48,8 @@
   "navigation": {
     "header": [
       {
-        "text": "Vibe",
-        "href": "https://www.vibe.co/"
+        "text": "Adnexus",
+        "href": "https://ad.nexus/"
       },
       {
         "text": "Product",
@@ -61,11 +61,11 @@
       },
       {
         "text": "Pricing",
-        "href": "https://www.vibe.co/pricing"
+        "href": "https://ad.nexus/pricing"
       },
       {
         "text": "Testimonials",
-        "href": "https://www.vibe.co/testimonials"
+        "href": "https://ad.nexus/testimonials"
       },
       {
         "text": "resources",
@@ -73,158 +73,158 @@
       },
       {
         "text": "Book a demo",
-        "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Findustry%2Fpolitics"
+        "href": "https://ad.nexus/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Findustry%2Fpolitics"
       },
       {
         "text": "Log in",
-        "href": "https://www.vibe.co/sign-in"
+        "href": "https://ad.nexus/sign-in"
       }
     ],
     "footer": [
       {
         "text": "Apps & Gaming",
-        "href": "https://www.vibe.co/industry/apps-gaming"
+        "href": "https://ad.nexus/industry/apps-gaming"
       },
       {
         "text": "Ecommerce",
-        "href": "https://www.vibe.co/industry/ecommerce"
+        "href": "https://ad.nexus/industry/ecommerce"
       },
       {
         "text": "Education & Non-profit",
-        "href": "https://www.vibe.co/industry/education-non-profit"
+        "href": "https://ad.nexus/industry/education-non-profit"
       },
       {
         "text": "Automotive",
-        "href": "https://www.vibe.co/industry/automotive"
+        "href": "https://ad.nexus/industry/automotive"
       },
       {
         "text": "Media & Agencies",
-        "href": "https://www.vibe.co/industry/media-agencies"
+        "href": "https://ad.nexus/industry/media-agencies"
       },
       {
         "text": "Legal",
-        "href": "https://www.vibe.co/industry/legal"
+        "href": "https://ad.nexus/industry/legal"
       },
       {
         "text": "Politics",
-        "href": "https://www.vibe.co/industry/politics"
+        "href": "https://ad.nexus/industry/politics"
       },
       {
         "text": "Home Improvement",
-        "href": "https://www.vibe.co/industry/home-improvement"
+        "href": "https://ad.nexus/industry/home-improvement"
       },
       {
         "text": "Retail",
-        "href": "https://www.vibe.co/industry/retail"
+        "href": "https://ad.nexus/industry/retail"
       },
       {
         "text": "B2B",
-        "href": "https://www.vibe.co/industry/b2b"
+        "href": "https://ad.nexus/industry/b2b"
       },
       {
         "text": "Entertainment",
-        "href": "https://www.vibe.co/industry/entertainment"
+        "href": "https://ad.nexus/industry/entertainment"
       },
       {
         "text": "Apps & Channels",
-        "href": "https://www.vibe.co/features/apps-channels"
+        "href": "https://ad.nexus/features/apps-channels"
       },
       {
         "text": "Audience Targeting",
-        "href": "https://www.vibe.co/features/audience-targeting"
+        "href": "https://ad.nexus/features/audience-targeting"
       },
       {
         "text": "AI Optimization",
-        "href": "https://www.vibe.co/features/ai-optimization"
+        "href": "https://ad.nexus/features/ai-optimization"
       },
       {
         "text": "Measurement & Reporting",
-        "href": "https://www.vibe.co/features/measurement-reporting"
+        "href": "https://ad.nexus/features/measurement-reporting"
       },
       {
         "text": "AI Creatives",
-        "href": "https://www.vibe.co/features/ai-creatives"
+        "href": "https://ad.nexus/features/ai-creatives"
       },
       {
         "text": "Integrations & API",
-        "href": "https://www.vibe.co/features/integrations-api"
+        "href": "https://ad.nexus/features/integrations-api"
       },
       {
         "text": "Video Generator",
-        "href": "https://www.vibe.co/studio"
+        "href": "https://ad.nexus/studio"
       },
       {
         "text": "Pricing",
-        "href": "https://www.vibe.co/pricing"
+        "href": "https://ad.nexus/pricing"
       },
       {
         "text": "Testimonials",
-        "href": "https://www.vibe.co/testimonials"
+        "href": "https://ad.nexus/testimonials"
       },
       {
         "text": "Case Studies",
-        "href": "https://www.vibe.co/blog/case-studies"
+        "href": "https://ad.nexus/blog/case-studies"
       },
       {
         "text": "Apps & Channels",
-        "href": "https://www.vibe.co/apps-and-channels"
+        "href": "https://ad.nexus/apps-and-channels"
       },
       {
         "text": "Integrations",
-        "href": "https://www.vibe.co/integrations"
+        "href": "https://ad.nexus/integrations"
       },
       {
         "text": "Help center",
-        "href": "https://help.vibe.co/en/"
+        "href": "https://ad.nexus/help/en/"
       },
       {
         "text": "Blog",
-        "href": "https://www.vibe.co/blog"
+        "href": "https://ad.nexus/blog"
       },
       {
         "text": "Newsletter",
-        "href": "https://www.vibe.co/newsletter"
+        "href": "https://ad.nexus/newsletter"
       },
       {
         "text": "About us",
-        "href": "https://www.vibe.co/about"
+        "href": "https://ad.nexus/about"
       },
       {
         "text": "Events",
-        "href": "https://www.vibe.co/events/vibe-stream-2024"
+        "href": "https://ad.nexus/events/adnexus-stream-2024"
       },
       {
         "text": "Jobs",
-        "href": "https://jobs.ashbyhq.com/vibe"
+        "href": "https://jobs.ashbyhq.com/adnexus"
       },
       {
         "text": "Newsroom",
-        "href": "https://www.vibe.co/blog/whats-new"
+        "href": "https://ad.nexus/blog/whats-new"
       },
       {
         "text": "Privacy Policy",
-        "href": "https://www.vibe.co/legal/privacy-policy"
+        "href": "https://ad.nexus/legal/privacy-policy"
       },
       {
         "text": "Terms of Service",
-        "href": "https://www.vibe.co/legal/terms-of-service"
+        "href": "https://ad.nexus/legal/terms-of-service"
       }
     ]
   },
   "buttons": [
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/get-started",
       "type": "link"
     },
     {
       "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Findustry%2Fpolitics",
+      "href": "https://ad.nexus/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Findustry%2Fpolitics",
       "type": "link"
     },
     {
       "text": "Log in",
-      "href": "https://www.vibe.co/sign-in",
+      "href": "https://ad.nexus/sign-in",
       "type": "link"
     },
     {
@@ -234,28 +234,28 @@
     },
     {
       "text": "Browse all integrations",
-      "href": "https://www.vibe.co/integrations",
+      "href": "https://ad.nexus/integrations",
       "type": "link"
     }
   ],
   "images": [
     {
-      "src": "https://www.vibe.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvibe-logo.svg",
-      "alt": "Vibe Logo",
+      "src": "https://ad.nexus/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fadnexus-logo.svg",
+      "alt": "Adnexus Logo",
       "title": ""
     },
     {
-      "src": "https://www.vibe.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftv-advertising-platform.png",
+      "src": "https://ad.nexus/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftv-advertising-platform.png",
       "alt": "TV advertising platform interface",
       "title": ""
     },
     {
-      "src": "https://www.vibe.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Findustry-analytics-bar-chart.png",
+      "src": "https://ad.nexus/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Findustry-analytics-bar-chart.png",
       "alt": "Industry analytics bar chart",
       "title": ""
     },
     {
-      "src": "https://www.vibe.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpeople-watching-tv.png",
+      "src": "https://ad.nexus/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpeople-watching-tv.png",
       "alt": "Picture of people watching TV",
       "title": ""
     }
@@ -281,11 +281,11 @@
     {
       "id": "testimonials",
       "heading": "Hear from leaders in your industry",
-      "content": "Driving Voter Awareness Through CTV - Vibe helped Scott Walker's campaign achieve a 98% VTR and $0.05 CPV by using unskippable CTV ads to precisely target key voter segments—driving awareness and securing a win."
+      "content": "Driving Voter Awareness Through CTV - Adnexus helped Scott Walker's campaign achieve a 98% VTR and $0.05 CPV by using unskippable CTV ads to precisely target key voter segments—driving awareness and securing a win."
     },
     {
       "id": "features",
-      "heading": "Why political campaigns choose Vibe",
+      "heading": "Why political campaigns choose Adnexus",
       "content": "Platform features including Target Smarter Win Faster, Increase Your Political Impact, and Maximize Your Reach"
     },
     {
@@ -300,7 +300,7 @@
     },
     {
       "id": "cta-footer",
-      "heading": "Get started with Vibe in minutes.",
+      "heading": "Get started with Adnexus in minutes.",
       "content": "Final call-to-action with email signup form and G2 rating display"
     }
   ],
@@ -356,22 +356,22 @@
     {
       "name": "WordPress",
       "description": "Use plugins or theme settings to add tracking.",
-      "href": "https://www.vibe.co/integrations/wordpress"
+      "href": "https://ad.nexus/integrations/wordpress"
     },
     {
       "name": "Google Analytics",
       "description": "Track the direct influence of your TV ads on online behavior.",
-      "href": "https://www.vibe.co/integrations/google-analytics"
+      "href": "https://ad.nexus/integrations/google-analytics"
     },
     {
       "name": "Google Tag Manager",
       "description": "Manage tags without editing code.",
-      "href": "https://www.vibe.co/integrations/google-tag-manager"
+      "href": "https://ad.nexus/integrations/google-tag-manager"
     }
   ],
   "testimonials": [
     {
-      "quote": "Vibe helped Scott Walker's campaign achieve a 98% VTR and $0.05 CPV by using unskippable CTV ads to precisely target key voter segments—driving awareness and securing a win.",
+      "quote": "Adnexus helped Scott Walker's campaign achieve a 98% VTR and $0.05 CPV by using unskippable CTV ads to precisely target key voter segments—driving awareness and securing a win.",
       "title": "Driving Voter Awareness Through CTV",
       "author": "",
       "position": "",
@@ -383,152 +383,152 @@
       "company": "Political Consultancy",
       "metric": "192% Favorability Score",
       "title": "How a Political Consultancy Increased Candidates' Favorability Score by 192%",
-      "href": "https://www.vibe.co/blog/how-a-political-consultancy-increased-candidates-favorability-score-by-192"
+      "href": "https://ad.nexus/blog/how-a-political-consultancy-increased-candidates-favorability-score-by-192"
     },
     {
       "company": "Meshki",
       "metric": "$0.93 Cost Per Session",
-      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
-      "href": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+      "title": "Meshki Beats ROAS and CPV Goals with Adnexus",
+      "href": "https://ad.nexus/blog/meshki-beats-roas-and-cpv-goals-with-adnexus"
     },
     {
       "company": "Abuelos",
       "metric": "-80% Cost Per Session",
       "title": "Abuelo's Lowers Cost Per Session by 80%",
-      "href": "https://www.vibe.co/blog/abuelo-s-x-vibe-case-study"
+      "href": "https://ad.nexus/blog/abuelo-s-x-adnexus-case-study"
     },
     {
       "company": "Eden Prairie Center",
       "metric": "458% Household Reach",
       "title": "How an Iconic Mall Increased Household Reach by 458% with CTV",
-      "href": "https://www.vibe.co/blog/how-an-iconic-mall-increased-household-reach-by-458-with-ctv"
+      "href": "https://ad.nexus/blog/how-an-iconic-mall-increased-household-reach-by-458-with-ctv"
     },
     {
       "company": "Food Distributor",
       "metric": "85% Engagement Rate",
       "title": "How a Food Distributor Authentically Engaged a Hispanic Audience",
-      "href": "https://www.vibe.co/blog/how-a-food-distributor-authentically-engaged-a-hispanic-audience"
+      "href": "https://ad.nexus/blog/how-a-food-distributor-authentically-engaged-a-hispanic-audience"
     },
     {
       "company": "Petfolk",
       "metric": "30% Acquisition Lift",
-      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
-      "href": "https://www.vibe.co/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Adnexus",
+      "href": "https://ad.nexus/blog/petfolk-exceeds-30-acquisition-lift-with-adnexus"
     },
     {
       "company": "Farm & Home",
       "metric": "$28 CPM",
       "title": "How Farm & Home Supply Advertised on Top TV Channels for under $28/CPM",
-      "href": "https://www.vibe.co/blog/ctv-ads-turned-this-farm-store-into-a-goldmine"
+      "href": "https://ad.nexus/blog/ctv-ads-turned-this-farm-store-into-a-goldmine"
     },
     {
       "company": "Samford",
       "metric": "<$2 Cost Per Session",
       "title": "Nonprofit University Exceeds Growth Targets with Streaming TV",
-      "href": "https://www.vibe.co/blog/non-profit-university-exceeds-growth-targets-with-streaming-tv"
+      "href": "https://ad.nexus/blog/non-profit-university-exceeds-growth-targets-with-streaming-tv"
     },
     {
       "company": "TruHeight",
       "metric": "728% ROAS",
       "title": "How TruHeight Reached 728% ROAS with CTV",
-      "href": "https://www.vibe.co/blog/vibe-x-truheight-vitamins-case-study"
+      "href": "https://ad.nexus/blog/adnexus-x-truheight-vitamins-case-study"
     },
     {
       "company": "Hoodsly",
       "metric": "409% ROAS",
-      "title": "409% ROAS for Hoodsly with Vibe",
-      "href": "https://www.vibe.co/blog/case-study-vibe-hoodsly"
+      "title": "409% ROAS for Hoodsly with Adnexus",
+      "href": "https://ad.nexus/blog/case-study-adnexus-hoodsly"
     },
     {
       "company": "Sota Clothing",
       "metric": "$0.70 CPPV",
-      "title": "How Sota Clothing Got their CPPV Below $0.70 with Vibe & Klaviyo",
-      "href": "https://www.vibe.co/blog/apparel-brand-crushes-roi-goals-with-ctv"
+      "title": "How Sota Clothing Got their CPPV Below $0.70 with Adnexus & Klaviyo",
+      "href": "https://ad.nexus/blog/apparel-brand-crushes-roi-goals-with-ctv"
     },
     {
       "company": "King Kanine",
       "metric": "165% ROAS",
-      "title": "How King Kanine Reached 165% ROAS with Vibe's ML",
-      "href": "https://www.vibe.co/blog/pet-brand-reaches-new-highs-with-ctv"
+      "title": "How King Kanine Reached 165% ROAS with Adnexus's ML",
+      "href": "https://ad.nexus/blog/pet-brand-reaches-new-highs-with-ctv"
     },
     {
       "company": "Bagelcode",
       "metric": "x2+ D7 ROI",
       "title": "Bagelcode Wins Big with Club Vegas Campaign",
-      "href": "https://www.vibe.co/blog/bagelcode-wins-big-with-club-vegas-campaign"
+      "href": "https://ad.nexus/blog/bagelcode-wins-big-with-club-vegas-campaign"
     },
     {
       "company": "Branded Bills",
       "metric": "2,000% ROAS",
-      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
-      "href": "https://www.vibe.co/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Adnexus",
+      "href": "https://ad.nexus/blog/adnexus-supercharges-apparel-brand-s-performance-campaigns"
     },
     {
       "company": "Car Stickers",
       "metric": "275% ROAS on Mobile",
       "title": "Car Stickers Reaches 275% ROAS on Mobile",
-      "href": "https://www.vibe.co/blog/car-stickers-reaches-275-roas-on-mobile"
+      "href": "https://ad.nexus/blog/car-stickers-reaches-275-roas-on-mobile"
     },
     {
       "company": "SmartLiner",
       "metric": "1,635% ROAS",
-      "title": "SmartLiner Experiments and Wins with Vibe.co",
-      "href": "https://www.vibe.co/blog/smartliner-experiments-and-wins-with-vibe-co"
+      "title": "SmartLiner Experiments and Wins with Adnexus",
+      "href": "https://ad.nexus/blog/smartliner-experiments-and-wins-with-adnexus"
     },
     {
       "company": "Morris Media",
       "metric": "70% Web Traffic Increase",
       "title": "How a Full Service Agency Boosted Web Traffic by 70% with CTV",
-      "href": "https://www.vibe.co/blog/how-a-full-service-agency-boosted-web-traffic-by-70-with-ctv"
+      "href": "https://ad.nexus/blog/how-a-full-service-agency-boosted-web-traffic-by-70-with-ctv"
     },
     {
       "company": "Pamos",
       "metric": "<$2 Cost Per Session",
       "title": "How a Disruptor Brand Hit CPS <$2",
-      "href": "https://www.vibe.co/blog/how-a-disruptor-brand-hit-cps-2"
+      "href": "https://ad.nexus/blog/how-a-disruptor-brand-hit-cps-2"
     },
     {
       "company": "Sijo",
       "metric": "3.2x Average Order Value",
-      "title": "Sijo Home Upsells with Klaviyo and Vibe",
-      "href": "https://www.vibe.co/blog/sijo-home-upsells-with-klaviyo-and-vibe"
+      "title": "Sijo Home Upsells with Klaviyo and Adnexus",
+      "href": "https://ad.nexus/blog/sijo-home-upsells-with-klaviyo-and-adnexus"
     },
     {
       "company": "Zoriz",
       "metric": "600% ROAS",
       "title": "How Zoriz Golf Surpassed 600% ROAS with CTV",
-      "href": "https://www.vibe.co/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
+      "href": "https://ad.nexus/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
     },
     {
       "company": "Herb Jones",
       "metric": "800% Web Traffic Increase",
       "title": "How this Car Dealership Increased Web Traffic by 800%",
-      "href": "https://www.vibe.co/blog/how-this-car-dealership-increased-web-traffic-by-800"
+      "href": "https://ad.nexus/blog/how-this-car-dealership-increased-web-traffic-by-800"
     },
     {
       "company": "AirDog",
       "metric": "450% ROAS",
       "title": "How an E-Comm Brand Reached 450% ROAS for their New Product Launch",
-      "href": "https://www.vibe.co/blog/how-an-e-comm-brand-reached-450-roas-for-their-new-product-launch"
+      "href": "https://ad.nexus/blog/how-an-e-comm-brand-reached-450-roas-for-their-new-product-launch"
     },
     {
       "company": "Village Green",
       "metric": "100% Household Coverage",
       "title": "How Village Green Achieved Full Household Coverage with CTV",
-      "href": "https://www.vibe.co/blog/how-village-green-achieved-full-household-coverage-with-ctv"
+      "href": "https://ad.nexus/blog/how-village-green-achieved-full-household-coverage-with-ctv"
     },
     {
       "company": "NYXT",
       "metric": "$0.85 Cost Per Lead",
       "title": "How NYXT Reduced their Cost per Lead to a $0.85 Avg.",
-      "href": "https://www.vibe.co/blog/how-nyxt-reduced-their-cost-per-lead-to-a-0-85-avg"
+      "href": "https://ad.nexus/blog/how-nyxt-reduced-their-cost-per-lead-to-a-0-85-avg"
     }
   ],
   "g2Rating": "4.8 out of 5 on G2",
   "socialLinks": [
     {
       "platform": "LinkedIn",
-      "href": "https://www.linkedin.com/company/vibedotco"
+      "href": "https://www.linkedin.com/company/adnexusdotco"
     },
     {
       "platform": "YouTube",
@@ -536,12 +536,12 @@
     },
     {
       "platform": "Facebook",
-      "href": "https://www.facebook.com/p/Vibeco-100087504983744/"
+      "href": "https://www.facebook.com/p/Adnexusco-100087504983744/"
     },
     {
       "platform": "X",
-      "href": "https://twitter.com/vibedotco"
+      "href": "https://twitter.com/adnexusdotco"
     }
   ],
-  "copyright": "© 2025 Vibe, Inc."
+  "copyright": "© 2025 Adnexus, Inc."
 }

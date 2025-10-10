@@ -1,17 +1,17 @@
 {
-  "url": "https://www.vibe.co/features/integrations-api",
-  "title": "Integrations & API | Vibe",
+  "url": "https://ad.nexus/features/integrations-api",
+  "title": "Integrations & API | Adnexus",
   "meta": {
     "viewport": "width=device-width, initial-scale=1",
-    "description": "Integrate with products you know and love: Klaviyo, Shopify, Google Analytics and more. From targeting to web and app tracking, Vibe connects with over 20 partners.",
-    "og:title": "Integrations & API | Vibe",
-    "og:description": "Integrate with products you know and love: Klaviyo, Shopify, Google Analytics and more. From targeting to web and app tracking, Vibe connects with over 20 partners.",
-    "og:url": "https://www.vibe.co/features/integrations-api",
+    "description": "Integrate with products you know and love: Klaviyo, Shopify, Google Analytics and more. From targeting to web and app tracking, Adnexusnnects with over 20 partners.",
+    "og:title": "Integrations & API | Adnexus",
+    "og:description": "Integrate with products you know and love: Klaviyo, Shopify, Google Analytics and more. From targeting to web and app tracking, Adnexusnnects with over 20 partners.",
+    "og:url": "https://ad.nexus/features/integrations-api",
     "twitter:card": "summary_large_image"
   },
   "headings": {
     "h1": [
-      "Vibe Integrations & API"
+      "Adnexus Integrations & API"
     ],
     "h2": [
       "Apps Analytics",
@@ -24,9 +24,9 @@
     "h3": []
   },
   "paragraphs": [
-    "Connect Vibe with your favorite tools to boost campaign performance.",
+    "Connect Adnexus with your favorite tools to boost campaign performance.",
     "Sync third-party data, measure CTV data, and track user behavior across web and Streaming TV.",
-    "Seamlessly integrate Vibe with your existing workflow to automate ad placements, optimize campaigns, and maximize reach."
+    "Seamlessly integrate Adnexus with your existing workflow to automate ad placements, optimize campaigns, and maximize reach."
   ],
   "integrationCategories": [
     {
@@ -212,7 +212,7 @@
   ],
   "apiDetails": {
     "heading": "Need More? Unlock the power of our API",
-    "description": "Seamlessly integrate Vibe with your existing workflow to automate ad placements, optimize campaigns, and maximize reach.",
+    "description": "Seamlessly integrate Adnexus with your existing workflow to automate ad placements, optimize campaigns, and maximize reach.",
     "features": [
       "Automate ad placements",
       "Optimize campaigns programmatically",
@@ -297,19 +297,19 @@
   "buttons": [
     {
       "text": "Book a call",
-      "href": "https://www.vibe.co/book-a-demo",
+      "href": "https://ad.nexus/book-a-demo",
       "type": "link",
       "purpose": "API consultation"
     },
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/get-started",
       "type": "link",
       "purpose": "Platform onboarding"
     },
     {
       "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo",
+      "href": "https://ad.nexus/book-a-demo",
       "type": "link",
       "purpose": "Product demonstration"
     }
@@ -317,8 +317,8 @@
   "navigation": {
     "header": [
       {
-        "text": "Vibe",
-        "href": "https://www.vibe.co/"
+        "text": "Adnexus",
+        "href": "https://ad.nexus/"
       },
       {
         "text": "Product",
@@ -330,11 +330,11 @@
       },
       {
         "text": "Pricing",
-        "href": "https://www.vibe.co/pricing"
+        "href": "https://ad.nexus/pricing"
       },
       {
         "text": "Testimonials",
-        "href": "https://www.vibe.co/testimonials"
+        "href": "https://ad.nexus/testimonials"
       },
       {
         "text": "Resources",
@@ -342,81 +342,81 @@
       },
       {
         "text": "Book a demo",
-        "href": "https://www.vibe.co/book-a-demo"
+        "href": "https://ad.nexus/book-a-demo"
       },
       {
         "text": "Log in",
-        "href": "https://www.vibe.co/sign-in"
+        "href": "https://ad.nexus/sign-in"
       }
     ],
     "footer": [
       {
         "text": "Apps & Gaming",
-        "href": "https://www.vibe.co/industry/apps-gaming"
+        "href": "https://ad.nexus/industry/apps-gaming"
       },
       {
         "text": "Ecommerce",
-        "href": "https://www.vibe.co/industry/ecommerce"
+        "href": "https://ad.nexus/industry/ecommerce"
       },
       {
         "text": "Education & Non-profit",
-        "href": "https://www.vibe.co/industry/education-non-profit"
+        "href": "https://ad.nexus/industry/education-non-profit"
       },
       {
         "text": "Automotive",
-        "href": "https://www.vibe.co/industry/automotive"
+        "href": "https://ad.nexus/industry/automotive"
       },
       {
         "text": "Media & Agencies",
-        "href": "https://www.vibe.co/industry/media-agencies"
+        "href": "https://ad.nexus/industry/media-agencies"
       },
       {
         "text": "Apps & Channels",
-        "href": "https://www.vibe.co/features/apps-channels"
+        "href": "https://ad.nexus/features/apps-channels"
       },
       {
         "text": "Audience Targeting",
-        "href": "https://www.vibe.co/features/audience-targeting"
+        "href": "https://ad.nexus/features/audience-targeting"
       },
       {
         "text": "AI Optimization",
-        "href": "https://www.vibe.co/features/ai-optimization"
+        "href": "https://ad.nexus/features/ai-optimization"
       },
       {
         "text": "Measurement & Reporting",
-        "href": "https://www.vibe.co/features/measurement-reporting"
+        "href": "https://ad.nexus/features/measurement-reporting"
       },
       {
         "text": "AI Creatives",
-        "href": "https://www.vibe.co/features/ai-creatives"
+        "href": "https://ad.nexus/features/ai-creatives"
       },
       {
         "text": "Integrations & API",
-        "href": "https://www.vibe.co/features/integrations-api"
+        "href": "https://ad.nexus/features/integrations-api"
       },
       {
         "text": "Help center",
-        "href": "https://help.vibe.co/en/"
+        "href": "https://ad.nexus/help/en/"
       },
       {
         "text": "Blog",
-        "href": "https://www.vibe.co/blog"
+        "href": "https://ad.nexus/blog"
       },
       {
         "text": "Privacy Policy",
-        "href": "https://www.vibe.co/legal/privacy-policy"
+        "href": "https://ad.nexus/legal/privacy-policy"
       },
       {
         "text": "Terms of Service",
-        "href": "https://www.vibe.co/legal/terms-of-service"
+        "href": "https://ad.nexus/legal/terms-of-service"
       }
     ]
   },
   "sections": [
     {
       "id": "hero",
-      "heading": "Vibe Integrations & API",
-      "content": "Connect Vibe with your favorite tools to boost campaign performance. Sync third-party data, measure CTV data, and track user behavior across web and Streaming TV."
+      "heading": "Adnexus Integrations & API",
+      "content": "Connect Adnexus with your favorite tools to boost campaign performance. Sync third-party data, measure CTV data, and track user behavior across web and Streaming TV."
     },
     {
       "id": "apps-analytics",
@@ -446,7 +446,7 @@
     {
       "id": "api-cta",
       "heading": "Need More? Unlock the power of our API",
-      "content": "Seamlessly integrate Vibe with your existing workflow to automate ad placements, optimize campaigns, and maximize reach."
+      "content": "Seamlessly integrate Adnexus with your existing workflow to automate ad placements, optimize campaigns, and maximize reach."
     }
   ],
   "integrationLogos": [
@@ -499,8 +499,8 @@
       "Engagement metrics"
     ],
     "supportedFlows": [
-      "Audience sync from CRM to Vibe",
-      "Conversion tracking from web/app to Vibe",
+      "Audience sync from CRM to Adnexus",
+      "Conversion tracking from web/app to Adnexus",
       "Campaign data export to dashboarding tools",
       "Attribution data to MMPs",
       "Performance data to MMM platforms"
@@ -510,7 +510,7 @@
   "socialLinks": [
     {
       "platform": "LinkedIn",
-      "href": "https://www.linkedin.com/company/vibedotco"
+      "href": "https://www.linkedin.com/company/adnexusdotco"
     },
     {
       "platform": "YouTube",
@@ -518,12 +518,12 @@
     },
     {
       "platform": "Facebook",
-      "href": "https://www.facebook.com/p/Vibeco-100087504983744/"
+      "href": "https://www.facebook.com/p/Adnexusco-100087504983744/"
     },
     {
       "platform": "X",
-      "href": "https://twitter.com/vibedotco"
+      "href": "https://twitter.com/adnexusdotco"
     }
   ],
-  "copyright": "© 2025 Vibe, Inc."
+  "copyright": "© 2025 Adnexus, Inc."
 }

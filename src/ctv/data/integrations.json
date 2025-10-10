@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "source": "https://www.vibe.co/integrations",
+    "source": "https://ad.nexus/integrations",
     "scraped_at": "2025-10-05",
     "total_integrations": 38,
     "categories": [
@@ -20,7 +20,7 @@
       "urlPath": "/integrations/adjust",
       "setupGuide": {
         "steps": [
-          "Link Accounts - Connect your Adjust account with Vibe",
+          "Link Accounts - Connect your Adjust account with Adnexus",
           "Set Up Tracking - Configure event tracking and attribution settings",
           "Implement SDK - Add the Adjust SDK to your mobile app",
           "Analyze Results - Monitor campaign performance and user behavior"
@@ -35,7 +35,7 @@
       "urlPath": "/integrations/airbridge",
       "setupGuide": {
         "steps": [
-          "Connect Airbridge account to Vibe platform",
+          "Connect Airbridge account to Adnexus platform",
           "Configure attribution settings",
           "Implement tracking SDK in mobile app",
           "Monitor app install attribution"
@@ -48,7 +48,7 @@
       "description": "Track installs and user engagement",
       "website": "appsflyer.com",
       "urlPath": "/integrations/appsflyer",
-      "overview": "Integrating AppsFlyer with Vibe empowers advertisers to seamlessly measure and optimize their Streaming TV campaigns by linking mobile attribution and analytics capabilities.",
+      "overview": "Integrating AppsFlyer with Adnexus empowers advertisers to seamlessly measure and optimize their Streaming TV campaigns by linking mobile attribution and analytics capabilities.",
       "benefits": [
         "Comprehensive insights into user engagement",
         "Accurate attribution of app installs and in-app events",
@@ -58,7 +58,7 @@
       ],
       "setupGuide": {
         "steps": [
-          "Link Accounts - Connect your AppsFlyer account with Vibe",
+          "Link Accounts - Connect your AppsFlyer account with Adnexus",
           "Set Up Tracking - Configure event tracking and attribution settings",
           "Implement SDK - Add the AppsFlyer SDK to your mobile app",
           "Analyze Results - Monitor campaign performance and user behavior"
@@ -77,7 +77,7 @@
       "urlPath": "/integrations/gamesight",
       "setupGuide": {
         "steps": [
-          "Connect Gamesight account with Vibe",
+          "Connect Gamesight account with Adnexus",
           "Configure game install tracking",
           "Set up event tracking for in-game actions",
           "Monitor campaign performance"
@@ -87,12 +87,12 @@
     {
       "name": "Kochava",
       "categories": ["Apps Analytics"],
-      "description": "Use Kochava for attribution with Vibe campaigns",
+      "description": "Use Kochava for attribution with Adnexus campaigns",
       "website": "kochava.com",
       "urlPath": "/integrations/kochava",
       "setupGuide": {
         "steps": [
-          "Link Kochava account to Vibe",
+          "Link Kochava account to Adnexus",
           "Configure attribution settings",
           "Implement Kochava SDK",
           "Track and analyze campaign results"
@@ -107,7 +107,7 @@
       "urlPath": "/integrations/singular",
       "setupGuide": {
         "steps": [
-          "Connect Singular account to Vibe",
+          "Connect Singular account to Adnexus",
           "Set up attribution tracking",
           "Configure analytics settings",
           "Review performance metrics"
@@ -134,14 +134,14 @@
       ],
       "setupGuide": {
         "steps": [
-          "Connect HubSpot - Start the integration from the Vibe Marketplace and approve access in HubSpot",
+          "Connect HubSpot - Start the integration from the Adnexus Marketplace and approve access in HubSpot",
           "Select lists - Choose the contact lists you want to sync",
-          "Activate audiences - Synced lists appear in Vibe under Custom Audiences, ready for campaigns",
-          "Run & track - Use these audiences in your campaigns and monitor performance in Vibe"
+          "Activate audiences - Synced lists appear in Adnexus under Custom Audiences, ready for campaigns",
+          "Run & track - Use these audiences in your campaigns and monitor performance in Adnexus"
         ],
         "technicalRequirements": [
           "Active HubSpot CRM account",
-          "Vibe platform access",
+          "Adnexus platform access",
           "Permission to sync contact lists"
         ]
       }
@@ -154,7 +154,7 @@
       "urlPath": "/integrations/klaviyo",
       "setupGuide": {
         "steps": [
-          "Connect Klaviyo account to Vibe",
+          "Connect Klaviyo account to Adnexus",
           "Select customer segments to sync",
           "Configure audience targeting",
           "Launch campaigns with synced data"
@@ -169,7 +169,7 @@
       "urlPath": "/integrations/funnel",
       "setupGuide": {
         "steps": [
-          "Connect Funnel account to Vibe",
+          "Connect Funnel account to Adnexus",
           "Configure data sync settings",
           "Set up dashboards and reports",
           "Monitor marketing performance"
@@ -184,7 +184,7 @@
       "urlPath": "/integrations/supermetrics",
       "setupGuide": {
         "steps": [
-          "Connect Supermetrics to Vibe",
+          "Connect Supermetrics to Adnexus",
           "Select data sources",
           "Configure reporting templates",
           "Analyze campaign data"
@@ -199,7 +199,7 @@
       "urlPath": "/integrations/triple-whale",
       "setupGuide": {
         "steps": [
-          "Link Triple Whale account to Vibe",
+          "Link Triple Whale account to Adnexus",
           "Configure data integration",
           "Set up performance dashboards",
           "Monitor metrics and insights"
@@ -214,7 +214,7 @@
       "urlPath": "/integrations/windsor-ai",
       "setupGuide": {
         "steps": [
-          "Connect Windsor.ai to Vibe",
+          "Connect Windsor.ai to Adnexus",
           "Select data sources to integrate",
           "Configure sync schedules",
           "Access unified reporting"
@@ -229,7 +229,7 @@
       "urlPath": "/integrations/haus",
       "setupGuide": {
         "steps": [
-          "Connect Haus platform to Vibe",
+          "Connect Haus platform to Adnexus",
           "Configure incrementality measurement",
           "Set up experiment tracking",
           "Analyze incremental impact"
@@ -244,7 +244,7 @@
       "urlPath": "/integrations/incrmntal",
       "setupGuide": {
         "steps": [
-          "Link INCRMNTAL account to Vibe",
+          "Link INCRMNTAL account to Adnexus",
           "Configure measurement parameters",
           "Set up AI-powered analysis",
           "Review incrementality reports"
@@ -259,7 +259,7 @@
       "urlPath": "/integrations/lifesight",
       "setupGuide": {
         "steps": [
-          "Connect Lifesight to Vibe",
+          "Connect Lifesight to Adnexus",
           "Configure marketing mix modeling",
           "Set up attribution tracking",
           "Analyze unified measurements"
@@ -274,7 +274,7 @@
       "urlPath": "/integrations/workmagic",
       "setupGuide": {
         "steps": [
-          "Link WorkMagic to Vibe",
+          "Link WorkMagic to Adnexus",
           "Configure lift measurement",
           "Set up test and control groups",
           "Review incremental lift results"
@@ -284,12 +284,12 @@
     {
       "name": "Adobe Commerce",
       "categories": ["Web Analytics"],
-      "description": "Add Vibe pixel to websites",
+      "description": "Add Adnexus pixel to websites",
       "website": "business.adobe.com/products/magento/magento-commerce.html",
       "urlPath": "/integrations/adobe-commerce",
       "setupGuide": {
         "steps": [
-          "Access Vibe pixel settings",
+          "Access Adnexus pixel settings",
           "Copy pixel code",
           "Add pixel to Adobe Commerce site",
           "Verify tracking implementation"
@@ -304,7 +304,7 @@
       "urlPath": "/integrations/bigcommerce",
       "setupGuide": {
         "steps": [
-          "Access Vibe tracking settings",
+          "Access Adnexus tracking settings",
           "Configure BigCommerce integration",
           "Install tracking pixel",
           "Monitor e-commerce events"
@@ -319,7 +319,7 @@
       "urlPath": "/integrations/godaddy",
       "setupGuide": {
         "steps": [
-          "Access Vibe pixel settings",
+          "Access Adnexus pixel settings",
           "Copy tracking code",
           "Add to GoDaddy Website Builder",
           "Test conversion tracking"
@@ -334,7 +334,7 @@
       "urlPath": "/integrations/gohighlevel",
       "setupGuide": {
         "steps": [
-          "Connect GoHighLevel to Vibe",
+          "Connect GoHighLevel to Adnexus",
           "Configure tracking settings",
           "Set up conversion events",
           "Monitor campaign performance"
@@ -360,11 +360,11 @@
         "Utilize machine learning for trend prediction"
       ],
       "setupGuide": {
-        "method": "Connect Google Analytics account to Vibe",
+        "method": "Connect Google Analytics account to Adnexus",
         "primaryPurpose": "Measure Connected TV (Streaming TV) advertising campaign performance",
         "technicalRequirements": [
           "Active Google Analytics account",
-          "Vibe advertising campaign"
+          "Adnexus advertising campaign"
         ]
       }
     },
@@ -376,7 +376,7 @@
       "urlPath": "/integrations/google-tag-manager",
       "setupGuide": {
         "steps": [
-          "Access Vibe pixel code",
+          "Access Adnexus pixel code",
           "Create new tag in Google Tag Manager",
           "Configure tag settings",
           "Publish container changes"
@@ -401,15 +401,15 @@
       ],
       "setupGuide": {
         "steps": [
-          "Log into your Vibe.co account",
+          "Log into your Adnexus account",
           "Navigate to Settings menu to set up web tracking code",
           "Choose Shopify as implementation method",
           "Copy your Pixel ID",
-          "Open Vibe app in Shopify store",
+          "Open Adnexus app in Shopify store",
           "Paste Pixel ID to complete setup"
         ],
         "technicalRequirements": [
-          "Active Vibe.co account",
+          "Active Adnexus account",
           "Shopify store",
           "Access to Shopify app settings"
         ]
@@ -423,7 +423,7 @@
       "urlPath": "/integrations/squarespace",
       "setupGuide": {
         "steps": [
-          "Access Vibe pixel settings",
+          "Access Adnexus pixel settings",
           "Copy tracking code",
           "Add to Squarespace site header",
           "Verify tracking is active"
@@ -438,7 +438,7 @@
       "urlPath": "/integrations/ticketmaster",
       "setupGuide": {
         "steps": [
-          "Connect Ticketmaster account to Vibe",
+          "Connect Ticketmaster account to Adnexus",
           "Configure event tracking",
           "Set up conversion pixels",
           "Monitor ticket sales attribution"
@@ -453,7 +453,7 @@
       "urlPath": "/integrations/wix",
       "setupGuide": {
         "steps": [
-          "Access Vibe tracking pixel",
+          "Access Adnexus tracking pixel",
           "Open Wix site settings",
           "Add tracking code to site",
           "Test conversion tracking"
@@ -468,7 +468,7 @@
       "urlPath": "/integrations/woocommerce",
       "setupGuide": {
         "steps": [
-          "Access Vibe pixel code",
+          "Access Adnexus pixel code",
           "Install tracking plugin or add code manually",
           "Configure e-commerce events",
           "Verify purchase tracking"
@@ -483,7 +483,7 @@
       "urlPath": "/integrations/wordpress",
       "setupGuide": {
         "steps": [
-          "Copy Vibe tracking pixel",
+          "Copy Adnexus tracking pixel",
           "Add to WordPress theme header",
           "Configure tracking events",
           "Monitor website conversions"

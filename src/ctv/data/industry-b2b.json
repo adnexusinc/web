@@ -1,6 +1,6 @@
 {
-  "url": "https://www.vibe.co/industry/b2b",
-  "title": "B2B | Vibe",
+  "url": "https://ad.nexus/industry/b2b",
+  "title": "B2B | Adnexus",
   "meta": {
     "industry": "b2b",
     "category": "industry-solutions"
@@ -10,7 +10,7 @@
       "Generate Leads with TV Ads"
     ],
     "h2": [
-      "Why thousands of businesses choose Vibe",
+      "Why thousands of businesses choose Adnexus",
       "Integrated with the tools you know and love",
       "Success Stories"
     ],
@@ -28,7 +28,7 @@
     },
     {
       "id": "key-features",
-      "heading": "Why thousands of businesses choose Vibe",
+      "heading": "Why thousands of businesses choose Adnexus",
       "content": "B2B-specific features for lead generation"
     },
     {
@@ -244,12 +244,12 @@
   "callToAction": [
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/get-started",
       "type": "primary"
     },
     {
       "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo",
+      "href": "https://ad.nexus/book-a-demo",
       "type": "secondary"
     }
   ],
@@ -273,7 +273,7 @@
   ],
   "notification": {
     "type": "New demos booked",
-    "content": "Buyer from Tubi, Roku via Vibe"
+    "content": "Buyer from Tubi, Roku via Adnexus"
   },
   "liveData": {
     "metric": "789",

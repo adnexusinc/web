@@ -1,5 +1,5 @@
 {
-  "url": "https://help.vibe.co/en/collections/5792768-account-management-and-admin",
+  "url": "https://ad.nexus/help/en/collections/5792768-account-management-and-admin",
   "title": "Account Management and Admin",
   "description": "Easily manage your team permissions and account settings.",
   "scraped_at": "2025-10-05",
@@ -8,38 +8,38 @@
   "articles": [
     {
       "title": "Billing and Payment",
-      "description": "Set up your Vibe payment options quickly and easily.",
-      "url": "https://help.vibe.co/en/articles/6134950-billing-and-payment"
+      "description": "Set up your Adnexus payment options quickly and easily.",
+      "url": "https://ad.nexus/help/en/articles/6134950-billing-and-payment"
     },
     {
       "title": "Account Sharing",
       "description": "",
-      "url": "https://help.vibe.co/en/articles/8279936-account-sharing"
+      "url": "https://ad.nexus/help/en/articles/8279936-account-sharing"
     },
     {
       "title": "Add Team Members to Your Account",
       "description": "",
-      "url": "https://help.vibe.co/en/articles/8009783-add-team-members-to-your-account"
+      "url": "https://ad.nexus/help/en/articles/8009783-add-team-members-to-your-account"
     },
     {
       "title": "How to Create Several Advertisers Under One Account",
       "description": "",
-      "url": "https://help.vibe.co/en/articles/6134947-how-to-create-several-advertisers-under-one-account"
+      "url": "https://ad.nexus/help/en/articles/6134947-how-to-create-several-advertisers-under-one-account"
     },
     {
       "title": "How to Apply a Promo Code",
       "description": "",
-      "url": "https://help.vibe.co/en/articles/8099637-how-to-apply-a-promo-code"
+      "url": "https://ad.nexus/help/en/articles/8099637-how-to-apply-a-promo-code"
     },
     {
       "title": "Manage Multiple Accounts",
       "description": "Keep clients and product lines separate under just one login.",
-      "url": "https://help.vibe.co/en/articles/8395877-manage-multiple-accounts"
+      "url": "https://ad.nexus/help/en/articles/8395877-manage-multiple-accounts"
     },
     {
       "title": "Add a Backup Credit Card",
       "description": "Protect your campaigns with a secondary payment method",
-      "url": "https://help.vibe.co/en/articles/8946251-add-a-backup-credit-card"
+      "url": "https://ad.nexus/help/en/articles/8946251-add-a-backup-credit-card"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "url": "https://www.vibe.co/features/ai-creatives",
+  "url": "https://ad.nexus/features/ai-creatives",
   "scrapeDate": "2025-10-05",
-  "pageTitle": "AI Creatives - Vibe Features",
+  "pageTitle": "AI Creatives - Adnexus Features",
   "description": "AI-powered creative studio for instant TV ad generation from business URLs, featuring GenAI technology, custom voiceovers, and zero-cost creative production",
   "platform": {
     "rating": "4.8/5",
@@ -133,19 +133,19 @@
   "testimonials": [
     {
       "company": "Sota Clothing",
-      "quote": "I took the video that we had and used Vibe Studio to add a custom voiceover...",
+      "quote": "I took the video that we had and used Adnexus Studio to add a custom voiceover...",
       "metric": "$0.70 CPPV",
       "metricType": "Cost Per Page View"
     },
     {
       "company": "Sijo Home",
-      "quote": "Having the creative studio with Vibe is a lot of help...",
+      "quote": "Having the creative studio with Adnexus is a lot of help...",
       "metric": "3.2x Average Order Value",
       "metricType": "AOV Increase"
     },
     {
       "company": "Petfolk",
-      "quote": "Vibe's reporting is so detailed and transparent...",
+      "quote": "Adnexus's reporting is so detailed and transparent...",
       "metric": "534% ROAS",
       "metricType": "Return on Ad Spend"
     }

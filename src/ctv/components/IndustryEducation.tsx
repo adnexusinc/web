@@ -3,10 +3,10 @@ import { Container, Box, Heading, Text, Button, Link, Stack, Grid } from '@hanzo
 
 export default function IndustryEducation() {
   return (
-    <Container maxWidth="7xl" className="vibe-page">
+    <Container maxWidth="7xl" className="adnexus-page">
       <Box as="header" className="py-4 border-b">
         <Stack direction="row" spacing={6} align="center">
-          <Link href="/" className="text-2xl font-bold">Vibe</Link>
+          <Link href="/" className="text-2xl font-bold">Adnexus</Link>
           <Stack direction="row" spacing={4}>
             
           </Stack>
@@ -15,7 +15,7 @@ export default function IndustryEducation() {
 
       <Box as="main" className="py-12">
         <Heading level={1} className="text-5xl mb-6">
-          Education & Non-profit | Vibe
+          Education & Non-profit | Adnexus
         </Heading>
 
         {/* Content sections will be added here */}
@@ -23,7 +23,7 @@ export default function IndustryEducation() {
       </Box>
 
       <Box as="footer" className="py-8 border-t mt-16">
-        <Text className="text-sm text-gray-600">© 2025 Vibe, Inc.</Text>
+        <Text className="text-sm text-gray-600">© 2025 Adnexus, Inc.</Text>
       </Box>
     </Container>
   );

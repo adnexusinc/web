@@ -3,10 +3,10 @@ import { Container, Box, Heading, Text, Button, Link, Stack, Grid } from '@hanzo
 
 export default function HelpTroubleshooting() {
   return (
-    <Container maxWidth="7xl" className="vibe-page">
+    <Container maxWidth="7xl" className="adnexus-page">
       <Box as="header" className="py-4 border-b">
         <Stack direction="row" spacing={6} align="center">
-          <Link href="/" className="text-2xl font-bold">Vibe</Link>
+          <Link href="/" className="text-2xl font-bold">Adnexus</Link>
           <Stack direction="row" spacing={4}>
             
           </Stack>
@@ -23,7 +23,7 @@ export default function HelpTroubleshooting() {
       </Box>
 
       <Box as="footer" className="py-8 border-t mt-16">
-        <Text className="text-sm text-gray-600">© 2025 Vibe, Inc.</Text>
+        <Text className="text-sm text-gray-600">© 2025 Adnexus, Inc.</Text>
       </Box>
     </Container>
   );

@@ -49,10 +49,10 @@ export default function Pricing() {
   };
 
   return (
-    <Container maxWidth="7xl" className="vibe-page">
+    <Container maxWidth="7xl" className="adnexus-page">
       <Box as="header" className="py-4 border-b">
         <Stack direction="row" spacing={6} align="center">
-          <Link href="/" className="text-2xl font-bold">Vibe</Link>
+          <Link href="/" className="text-2xl font-bold">Adnexus</Link>
         </Stack>
       </Box>
 
@@ -106,7 +106,7 @@ export default function Pricing() {
         {/* FAQ Section - Using placeholder since data has empty array */}
         <FAQSection
           title="Have Questions?"
-          description="Get in touch with our team to learn more about Vibe's Connected TV advertising platform"
+          description="Get in touch with our team to learn more about Adnexus's Connected TV advertising platform"
           faqs={[
             {
               question: "What is the minimum budget to get started?",
@@ -122,7 +122,7 @@ export default function Pricing() {
             },
             {
               question: "Do you provide creative services?",
-              answer: "Yes! Vibe Studio provides creative tools, hosting, compression & resampling, and A/B testing to help you create and optimize your TV ads."
+              answer: "Yes! Adnexus Studio provides creative tools, hosting, compression & resampling, and A/B testing to help you create and optimize your TV ads."
             },
             {
               question: "How do I track campaign performance?",
@@ -134,7 +134,7 @@ export default function Pricing() {
       </Box>
 
       <Box as="footer" className="py-8 border-t mt-16">
-        <p className="text-sm text-gray-600 text-center">© 2025 Vibe, Inc.</p>
+        <p className="text-sm text-gray-600 text-center">© 2025 Adnexus, Inc.</p>
       </Box>
     </Container>
   );

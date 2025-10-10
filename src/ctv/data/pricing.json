@@ -1,5 +1,5 @@
 {
-  "url": "https://www.vibe.co/pricing",
+  "url": "https://ad.nexus/pricing",
   "scraped_at": "2025-10-05",
   "page_title": "Affordable TV Advertising. For everyone.",
   "meta": {
@@ -23,7 +23,7 @@
         "Geo Targeting",
         "Retargeting",
         "Email Targeting",
-        "Vibe Studio",
+        "Adnexus Studio",
         "Creative Hosting",
         "Compression & Resampling",
         "A/B Testing",
@@ -97,7 +97,7 @@
       "Email Targeting"
     ],
     "creatives": [
-      "Vibe Studio",
+      "Adnexus Studio",
       "Hosting",
       "Compression & Resampling",
       "A/B Testing"

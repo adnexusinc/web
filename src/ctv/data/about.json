@@ -1,17 +1,17 @@
 {
-  "url": "https://www.vibe.co/about",
-  "title": "About Vibe - Making Television Advertising Simple",
+  "url": "https://ad.nexus/about",
+  "title": "About Adnexus - Making Television Advertising Simple",
   "meta": {
     "viewport": "width=device-width, initial-scale=1",
-    "description": "Learn about Vibe, the team behind the easiest-to-use Streaming TV Ad Platform. Our mission is to make television advertising crazy simple for brands of all sizes.",
-    "og:title": "About Vibe - Making Television Advertising Simple",
-    "og:description": "Learn about Vibe, the team behind the easiest-to-use Streaming TV Ad Platform. Our mission is to make television advertising crazy simple for brands of all sizes.",
-    "og:url": "https://www.vibe.co/about",
+    "description": "Learn about Adnexus, the team behind the easiest-to-use Streaming TV Ad Platform. Our mission is to make television advertising crazy simple for brands of all sizes.",
+    "og:title": "About Adnexus - Making Television Advertising Simple",
+    "og:description": "Learn about Adnexus, the team behind the easiest-to-use Streaming TV Ad Platform. Our mission is to make television advertising crazy simple for brands of all sizes.",
+    "og:url": "https://ad.nexus/about",
     "twitter:card": "summary_large_image"
   },
   "headings": {
     "h1": [
-      "About Vibe"
+      "About Adnexus"
     ],
     "h2": [
       "Our Mission",
@@ -37,8 +37,8 @@
   "navigation": {
     "header": [
       {
-        "text": "Vibe",
-        "href": "https://www.vibe.co/"
+        "text": "Adnexus",
+        "href": "https://ad.nexus/"
       },
       {
         "text": "Product",
@@ -50,11 +50,11 @@
       },
       {
         "text": "Pricing",
-        "href": "https://www.vibe.co/pricing"
+        "href": "https://ad.nexus/pricing"
       },
       {
         "text": "Testimonials",
-        "href": "https://www.vibe.co/testimonials"
+        "href": "https://ad.nexus/testimonials"
       },
       {
         "text": "resources",
@@ -62,175 +62,175 @@
       },
       {
         "text": "Book a demo",
-        "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fabout"
+        "href": "https://ad.nexus/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fabout"
       },
       {
         "text": "Log in",
-        "href": "https://www.vibe.co/sign-in"
+        "href": "https://ad.nexus/sign-in"
       }
     ],
     "footer": [
       {
         "text": "Apps & Gaming",
-        "href": "https://www.vibe.co/industry/apps-gaming"
+        "href": "https://ad.nexus/industry/apps-gaming"
       },
       {
         "text": "Ecommerce",
-        "href": "https://www.vibe.co/industry/ecommerce"
+        "href": "https://ad.nexus/industry/ecommerce"
       },
       {
         "text": "Education & Non-profit",
-        "href": "https://www.vibe.co/industry/education-non-profit"
+        "href": "https://ad.nexus/industry/education-non-profit"
       },
       {
         "text": "Automotive",
-        "href": "https://www.vibe.co/industry/automotive"
+        "href": "https://ad.nexus/industry/automotive"
       },
       {
         "text": "Media & Agencies",
-        "href": "https://www.vibe.co/industry/media-agencies"
+        "href": "https://ad.nexus/industry/media-agencies"
       },
       {
         "text": "Legal",
-        "href": "https://www.vibe.co/industry/legal"
+        "href": "https://ad.nexus/industry/legal"
       },
       {
         "text": "Politics",
-        "href": "https://www.vibe.co/industry/politics"
+        "href": "https://ad.nexus/industry/politics"
       },
       {
         "text": "Home Improvement",
-        "href": "https://www.vibe.co/industry/home-improvement"
+        "href": "https://ad.nexus/industry/home-improvement"
       },
       {
         "text": "Retail",
-        "href": "https://www.vibe.co/industry/retail"
+        "href": "https://ad.nexus/industry/retail"
       },
       {
         "text": "B2B",
-        "href": "https://www.vibe.co/industry/b2b"
+        "href": "https://ad.nexus/industry/b2b"
       },
       {
         "text": "Entertainment",
-        "href": "https://www.vibe.co/industry/entertainment"
+        "href": "https://ad.nexus/industry/entertainment"
       },
       {
         "text": "Apps & Channels",
-        "href": "https://www.vibe.co/features/apps-channels"
+        "href": "https://ad.nexus/features/apps-channels"
       },
       {
         "text": "Audience Targeting",
-        "href": "https://www.vibe.co/features/audience-targeting"
+        "href": "https://ad.nexus/features/audience-targeting"
       },
       {
         "text": "AI Optimization",
-        "href": "https://www.vibe.co/features/ai-optimization"
+        "href": "https://ad.nexus/features/ai-optimization"
       },
       {
         "text": "Measurement & Reporting",
-        "href": "https://www.vibe.co/features/measurement-reporting"
+        "href": "https://ad.nexus/features/measurement-reporting"
       },
       {
         "text": "AI Creatives",
-        "href": "https://www.vibe.co/features/ai-creatives"
+        "href": "https://ad.nexus/features/ai-creatives"
       },
       {
         "text": "Integrations & API",
-        "href": "https://www.vibe.co/features/integrations-api"
+        "href": "https://ad.nexus/features/integrations-api"
       },
       {
         "text": "Video Generator",
-        "href": "https://www.vibe.co/studio"
+        "href": "https://ad.nexus/studio"
       },
       {
         "text": "Pricing",
-        "href": "https://www.vibe.co/pricing"
+        "href": "https://ad.nexus/pricing"
       },
       {
         "text": "Testimonials",
-        "href": "https://www.vibe.co/testimonials"
+        "href": "https://ad.nexus/testimonials"
       },
       {
         "text": "Case Studies",
-        "href": "https://www.vibe.co/blog/case-studies"
+        "href": "https://ad.nexus/blog/case-studies"
       },
       {
         "text": "Apps & Channels",
-        "href": "https://www.vibe.co/apps-and-channels"
+        "href": "https://ad.nexus/apps-and-channels"
       },
       {
         "text": "Integrations",
-        "href": "https://www.vibe.co/integrations"
+        "href": "https://ad.nexus/integrations"
       },
       {
         "text": "Help center",
-        "href": "https://help.vibe.co/en/"
+        "href": "https://ad.nexus/help/en/"
       },
       {
         "text": "Blog",
-        "href": "https://www.vibe.co/blog"
+        "href": "https://ad.nexus/blog"
       },
       {
         "text": "Newsletter",
-        "href": "https://www.vibe.co/newsletter"
+        "href": "https://ad.nexus/newsletter"
       },
       {
         "text": "About us",
-        "href": "https://www.vibe.co/about"
+        "href": "https://ad.nexus/about"
       },
       {
         "text": "Events",
-        "href": "https://www.vibe.co/events/vibe-stream-2024"
+        "href": "https://ad.nexus/events/adnexus-stream-2024"
       },
       {
         "text": "Jobs",
-        "href": "https://jobs.ashbyhq.com/vibe"
+        "href": "https://jobs.ashbyhq.com/adnexus"
       },
       {
         "text": "Newsroom",
-        "href": "https://www.vibe.co/blog/whats-new"
+        "href": "https://ad.nexus/blog/whats-new"
       },
       {
         "text": "Privacy Policy",
-        "href": "https://www.vibe.co/legal/privacy-policy"
+        "href": "https://ad.nexus/legal/privacy-policy"
       },
       {
         "text": "Terms of Service",
-        "href": "https://www.vibe.co/legal/terms-of-service"
+        "href": "https://ad.nexus/legal/terms-of-service"
       }
     ]
   },
   "buttons": [
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/get-started",
       "type": "link"
     },
     {
       "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fabout",
+      "href": "https://ad.nexus/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fabout",
       "type": "link"
     },
     {
       "text": "Log in",
-      "href": "https://www.vibe.co/sign-in",
+      "href": "https://ad.nexus/sign-in",
       "type": "link"
     },
     {
       "text": "Follow us on LinkedIn",
-      "href": "https://www.linkedin.com/company/vibedotco",
+      "href": "https://www.linkedin.com/company/adnexusdotco",
       "type": "link"
     },
     {
       "text": "Join our team",
-      "href": "https://jobs.ashbyhq.com/vibe",
+      "href": "https://jobs.ashbyhq.com/adnexus",
       "type": "link"
     }
   ],
   "images": [
     {
-      "src": "https://www.vibe.co/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvibe-logo.svg",
-      "alt": "Vibe Logo",
+      "src": "https://ad.nexus/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fadnexus-logo.svg",
+      "alt": "Adnexus Logo",
       "title": ""
     }
   ],
@@ -238,8 +238,8 @@
   "sections": [
     {
       "id": "hero",
-      "heading": "About Vibe",
-      "content": "Learn about Vibe, the team behind the easiest-to-use Streaming TV Ad Platform."
+      "heading": "About Adnexus",
+      "content": "Learn about Adnexus, the team behind the easiest-to-use Streaming TV Ad Platform."
     },
     {
       "id": "mission",
@@ -254,7 +254,7 @@
     {
       "id": "story",
       "heading": "Our Story",
-      "content": "Timeline of Vibe's growth from founding to Series A funding, showcasing our rapid development and market success."
+      "content": "Timeline of Adnexus's growth from founding to Series A funding, showcasing our rapid development and market success."
     },
     {
       "id": "leadership",
@@ -273,7 +273,7 @@
     }
   ],
   "companyInfo": {
-    "name": "Vibe",
+    "name": "Adnexus",
     "tagline": "Making television advertising crazy simple",
     "mission": "We come to work every day with one goal: to make television advertising crazy simple. We are a passionate, competitive bunch focused on one thing: allowing any marketer, any brand, of any size, to advertise on TV in under 5 minutes.",
     "vision": "Democratizing TV advertising for small and medium enterprises by removing barriers to entry in streaming TV advertising. Our goal is to become the #1 TV Ad Platform by 2025.",
@@ -289,13 +289,13 @@
   "timeline": [
     {
       "date": "Aug 2021",
-      "event": "Vibe founded",
+      "event": "Adnexus founded",
       "description": "Team starts developing the platform"
     },
     {
       "date": "Sept 2022",
       "event": "Launched in US",
-      "description": "Vibe launches in the US after 12 months of development"
+      "description": "Adnexus launches in the US after 12 months of development"
     },
     {
       "date": "Sept 2023",
@@ -349,7 +349,7 @@
   "socialLinks": [
     {
       "platform": "LinkedIn",
-      "href": "https://www.linkedin.com/company/vibedotco"
+      "href": "https://www.linkedin.com/company/adnexusdotco"
     },
     {
       "platform": "YouTube",
@@ -357,16 +357,16 @@
     },
     {
       "platform": "Facebook",
-      "href": "https://www.facebook.com/p/Vibeco-100087504983744/"
+      "href": "https://www.facebook.com/p/Adnexusco-100087504983744/"
     },
     {
       "platform": "X",
-      "href": "https://twitter.com/vibedotco"
+      "href": "https://twitter.com/adnexusdotco"
     }
   ],
   "careers": {
-    "url": "https://jobs.ashbyhq.com/vibe",
+    "url": "https://jobs.ashbyhq.com/adnexus",
     "callToAction": "Join our team"
   },
-  "copyright": "© 2025 Vibe, Inc."
+  "copyright": "© 2025 Adnexus, Inc."
 }

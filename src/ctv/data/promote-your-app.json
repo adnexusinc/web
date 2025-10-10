@@ -1,11 +1,11 @@
 {
-  "url": "https://www.vibe.co/goals/promote-your-app",
-  "title": "Promote Your App | Vibe",
+  "url": "https://ad.nexus/goals/promote-your-app",
+  "title": "Promote Your App | Adnexus",
   "meta": {
     "description": "Drive app revenue with TV Streaming",
-    "ogTitle": "Promote Your App | Vibe",
+    "ogTitle": "Promote Your App | Adnexus",
     "ogDescription": "Drive app revenue with TV Streaming",
-    "ogImage": "https://www.vibe.co/goals/promote-your-app/opengraph-image"
+    "ogImage": "https://ad.nexus/goals/promote-your-app/opengraph-image"
   },
   "hero": {
     "heading": "Drive app revenue",
@@ -34,7 +34,7 @@
     },
     {
       "heading": "ROI Optimization",
-      "description": "Use Vibe's AI-powered bidder to continuously optimize your campaign."
+      "description": "Use Adnexus's AI-powered bidder to continuously optimize your campaign."
     }
   ],
   "integrations": {
@@ -97,17 +97,17 @@
     {
       "company": "BagelCode",
       "metric": "x2+ D7 ROI",
-      "url": "https://www.vibe.co/blog/bagelcode-wins-big-with-club-vegas-campaign"
+      "url": "https://ad.nexus/blog/bagelcode-wins-big-with-club-vegas-campaign"
     },
     {
       "company": "Meshki",
       "metric": "$0.93 Cost Per Session",
-      "url": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+      "url": "https://ad.nexus/blog/meshki-beats-roas-and-cpv-goals-with-adnexus"
     },
     {
       "company": "Abuelos",
       "metric": "-80% Cost Per Session",
-      "url": "https://www.vibe.co/blog/abuelo-s-x-vibe-case-study"
+      "url": "https://ad.nexus/blog/abuelo-s-x-adnexus-case-study"
     }
   ]
 }

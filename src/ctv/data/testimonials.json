@@ -1,9 +1,9 @@
 {
-  "page_title": "Testimonials | Vibe",
-  "url": "https://www.vibe.co/testimonials",
+  "page_title": "Testimonials | Adnexus",
+  "url": "https://ad.nexus/testimonials",
   "scraped_at": "2025-10-05T00:00:00.000Z",
   "overview": {
-    "heading": "Companies of all shapes and sizes advertise with Vibe",
+    "heading": "Companies of all shapes and sizes advertise with Adnexus",
     "subheading": "Trusted by over 5,000 businesses"
   },
   "statistics": {
@@ -29,12 +29,12 @@
   "video_testimonials": [
     {
       "company": "Herb Jones",
-      "quote": "Partnering with Vibe for our OTT advertising has been an absolute game-changer.",
+      "quote": "Partnering with Adnexus for our OTT advertising has been an absolute game-changer.",
       "reviewer": {
         "name": "Lauren Jones",
         "title": "Owner @ Herb Jones"
       },
-      "case_study_url": "https://www.vibe.co/blog/case-studies/how-this-car-dealership-increased-web-traffic-by-800",
+      "case_study_url": "https://ad.nexus/blog/case-studies/how-this-car-dealership-increased-web-traffic-by-800",
       "has_video": true
     },
     {
@@ -44,7 +44,7 @@
         "name": "Bridgette Coyne",
         "title": "Content Manager @ Car Stickers"
       },
-      "case_study_url": "https://www.vibe.co/blog/case-studies/car-stickers-reaches-275-roas-on-mobile",
+      "case_study_url": "https://ad.nexus/blog/case-studies/car-stickers-reaches-275-roas-on-mobile",
       "has_video": true
     },
     {
@@ -54,27 +54,27 @@
         "name": "Jasmine Abney",
         "title": "Sr Manager Paid Social @ Sijo"
       },
-      "case_study_url": "https://www.vibe.co/blog/case-studies/sijo-home-upsells-with-klaviyo-and-vibe",
+      "case_study_url": "https://ad.nexus/blog/case-studies/sijo-home-upsells-with-klaviyo-and-adnexus",
       "has_video": true
     },
     {
       "company": "Branded Bills",
-      "quote": "Vibe's account management team was super helpful in getting us on board and the platform is so easy to use and transparent. I can really drill down on the data I'm actually interested in.",
+      "quote": "Adnexus's account management team was super helpful in getting us on board and the platform is so easy to use and transparent. I can really drill down on the data I'm actually interested in.",
       "reviewer": {
         "name": "Michael Schneider",
         "title": "Marketing Lead @ Branded Bills"
       },
-      "case_study_url": "/blog/vibe-supercharges-apparel-brand-s-performance-campaigns",
+      "case_study_url": "/blog/adnexus-supercharges-apparel-brand-s-performance-campaigns",
       "has_video": true
     },
     {
       "company": "Conquest",
-      "quote": "With Vibe, site visits, real engagement and evidence. For a team built on results, Vibe turned TV into a performance channel they can trust.",
+      "quote": "With Adnexus, site visits, real engagement and evidence. For a team built on results, Adnexus turned TV into a performance channel they can trust.",
       "reviewer": {
         "name": "JJ Quest",
         "title": "Chief Strategist @ Conquest"
       },
-      "case_study_url": "/blog/case-studies/how-an-auto-ad-agency-hit-cps-3-50-across-8m-views-with-vibe-co",
+      "case_study_url": "/blog/case-studies/how-an-auto-ad-agency-hit-cps-3-50-across-8m-views-with-adnexus",
       "has_video": true
     }
   ],
@@ -84,7 +84,7 @@
         "name": "Susan G.",
         "title": "Online Course Developer"
       },
-      "quote": "It was easy to set up our campaign for Hard Bottoms Flooring and tweak the campaign because Vibe takes customer success very seriously. Our CPM is only $15.15 and we're gaining traction. Thank you Vibe!!!!",
+      "quote": "It was easy to set up our campaign for Hard Bottoms Flooring and tweak the campaign because Adnexus takes customer success very seriously. Our CPM is only $15.15 and we're gaining traction. Thank you Adnexus!!!!",
       "metrics": {
         "cpm": "$15.15"
       }
@@ -94,14 +94,14 @@
         "name": "Katherine W.",
         "title": "Marketing Specialist"
       },
-      "quote": "Vibe has completely changed the game for our marketing strategy! I love being able to self-service my campaign, and have full control over channels, targeting and budget. Plus, the campaign analytics are unmatched!"
+      "quote": "Adnexus has completely changed the game for our marketing strategy! I love being able to self-service my campaign, and have full control over channels, targeting and budget. Plus, the campaign analytics are unmatched!"
     },
     {
       "reviewer": {
         "name": "Erik E.",
         "title": "Marketing PM"
       },
-      "quote": "Vibe has an easy-to-use platform - we initially started with a retargeting campaign and saw a 3% lift in returning web visitors.",
+      "quote": "Adnexus has an easy-to-use platform - we initially started with a retargeting campaign and saw a 3% lift in returning web visitors.",
       "metrics": {
         "lift_in_returning_visitors": "3%"
       }
@@ -111,7 +111,7 @@
         "name": "Lauren Jones",
         "title": "Owner"
       },
-      "quote": "Partnering with Vibe for our OTT advertising has been an absolute game-changer."
+      "quote": "Partnering with Adnexus for our OTT advertising has been an absolute game-changer."
     },
     {
       "reviewer": {
@@ -125,20 +125,20 @@
         "name": "JJ Quest",
         "title": "Chief Strategist"
       },
-      "quote": "With Vibe, site visits, real engagement and evidence. For a team built on results, Vibe turned TV into a performance channel they can trust."
+      "quote": "With Adnexus, site visits, real engagement and evidence. For a team built on results, Adnexus turned TV into a performance channel they can trust."
     },
     {
       "reviewer": {
         "name": "Michael Schneider",
         "title": "Marketing Lead"
       },
-      "quote": "Vibe's account management team was super helpful in getting us on board and the platform is so easy to use and transparent. I can really drill down on the data I'm actually interested in."
+      "quote": "Adnexus's account management team was super helpful in getting us on board and the platform is so easy to use and transparent. I can really drill down on the data I'm actually interested in."
     }
   ],
   "case_studies": [
     {
       "company": "Sota Clothing",
-      "title": "How Sota Clothing Got their CPPV Below $0.70 with Vibe & Klaviyo",
+      "title": "How Sota Clothing Got their CPPV Below $0.70 with Adnexus & Klaviyo",
       "url": "/blog/apparel-brand-crushes-roi-goals-with-ctv",
       "metrics": {
         "cppv": "Below $0.70"
@@ -146,13 +146,13 @@
     },
     {
       "company": "Meshki",
-      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
-      "url": "/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+      "title": "Meshki Beats ROAS and CPV Goals with Adnexus",
+      "url": "/blog/meshki-beats-roas-and-cpv-goals-with-adnexus"
     },
     {
       "company": "Petfolk",
-      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
-      "url": "/blog/petfolk-exceeds-30-acquisition-lift-with-vibe",
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Adnexus",
+      "url": "/blog/petfolk-exceeds-30-acquisition-lift-with-adnexus",
       "metrics": {
         "acquisition_lift": "30%"
       }
@@ -167,8 +167,8 @@
     },
     {
       "company": "Hoodsly",
-      "title": "409% ROAS for Hoodsly with Vibe",
-      "url": "/blog/case-study-vibe-hoodsly",
+      "title": "409% ROAS for Hoodsly with Adnexus",
+      "url": "/blog/case-study-adnexus-hoodsly",
       "metrics": {
         "roas": "409%"
       }
@@ -176,7 +176,7 @@
     {
       "company": "TruHeight",
       "title": "How TruHeight Reached 728% ROAS with CTV",
-      "url": "/blog/vibe-x-truheight-vitamins-case-study",
+      "url": "/blog/adnexus-x-truheight-vitamins-case-study",
       "metrics": {
         "roas": "728%"
       }
@@ -184,7 +184,7 @@
     {
       "company": "Herb Jones",
       "title": "How this car dealership increased web traffic by 800%",
-      "url": "https://www.vibe.co/blog/case-studies/how-this-car-dealership-increased-web-traffic-by-800",
+      "url": "https://ad.nexus/blog/case-studies/how-this-car-dealership-increased-web-traffic-by-800",
       "metrics": {
         "web_traffic_increase": "800%"
       }
@@ -192,25 +192,25 @@
     {
       "company": "Car Stickers",
       "title": "Car Stickers Reaches 275% ROAS on Mobile",
-      "url": "https://www.vibe.co/blog/case-studies/car-stickers-reaches-275-roas-on-mobile",
+      "url": "https://ad.nexus/blog/case-studies/car-stickers-reaches-275-roas-on-mobile",
       "metrics": {
         "roas": "275%"
       }
     },
     {
       "company": "Sijo",
-      "title": "Sijo Home Upsells with Klaviyo and Vibe",
-      "url": "https://www.vibe.co/blog/case-studies/sijo-home-upsells-with-klaviyo-and-vibe"
+      "title": "Sijo Home Upsells with Klaviyo and Adnexus",
+      "url": "https://ad.nexus/blog/case-studies/sijo-home-upsells-with-klaviyo-and-adnexus"
     },
     {
       "company": "Branded Bills",
-      "title": "Vibe Supercharges Apparel Brand's Performance Campaigns",
-      "url": "/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+      "title": "Adnexus Supercharges Apparel Brand's Performance Campaigns",
+      "url": "/blog/adnexus-supercharges-apparel-brand-s-performance-campaigns"
     },
     {
       "company": "Conquest",
-      "title": "How an Auto Ad Agency Hit CPS $3.50 Across 8M Views with Vibe.co",
-      "url": "/blog/case-studies/how-an-auto-ad-agency-hit-cps-3-50-across-8m-views-with-vibe-co",
+      "title": "How an Auto Ad Agency Hit CPS $3.50 Across 8M Views with Adnexus",
+      "url": "/blog/case-studies/how-an-auto-ad-agency-hit-cps-3-50-across-8m-views-with-adnexus",
       "metrics": {
         "cps": "$3.50",
         "views": "8M"

@@ -1,24 +1,24 @@
 {
-  "url": "https://www.vibe.co/blog/whats-new",
-  "title": "What's New at Vibe - Product Updates & Features",
+  "url": "https://ad.nexus/blog/whats-new",
+  "title": "What's New at Adnexus - Product Updates & Features",
   "meta": {
-    "description": "Stay updated with the latest product releases, features, and improvements at Vibe.",
-    "og:title": "What's New at Vibe - Product Updates & Features",
-    "og:description": "Stay updated with the latest product releases, features, and improvements at Vibe."
+    "description": "Stay updated with the latest product releases, features, and improvements at Adnexus.",
+    "og:title": "What's New at Adnexus - Product Updates & Features",
+    "og:description": "Stay updated with the latest product releases, features, and improvements at Adnexus."
   },
   "heading": "What's New",
   "subheading": "Latest product updates, features, and announcements",
   "posts": [
     {
-      "id": "vibe-studio-2.0-launch",
-      "title": "Introducing Vibe Studio 2.0: AI-Powered Video Creation",
+      "id": "adnexus-studio-2.0-launch",
+      "title": "Introducing Adnexus Studio 2.0: AI-Powered Video Creation",
       "excerpt": "Create broadcast-quality TV ads in seconds with our revolutionary AI-powered Studio 2.0.",
       "image": "/images/updates/studio-2.0.jpg",
       "category": "Product Launch",
       "date": "2025-10-03",
-      "author": "Vibe Team",
+      "author": "Adnexus Team",
       "readTime": "4 min read",
-      "href": "https://www.vibe.co/blog/vibe-studio-2.0-launch"
+      "href": "https://ad.nexus/blog/adnexus-studio-2.0-launch"
     },
     {
       "id": "advanced-targeting-features",
@@ -27,9 +27,9 @@
       "image": "/images/updates/advanced-targeting.jpg",
       "category": "Feature Update",
       "date": "2025-09-30",
-      "author": "Vibe Team",
+      "author": "Adnexus Team",
       "readTime": "3 min read",
-      "href": "https://www.vibe.co/blog/advanced-targeting-features"
+      "href": "https://ad.nexus/blog/advanced-targeting-features"
     },
     {
       "id": "real-time-reporting-dashboard",
@@ -38,9 +38,9 @@
       "image": "/images/updates/reporting-dashboard.jpg",
       "category": "Product Update",
       "date": "2025-09-27",
-      "author": "Vibe Team",
+      "author": "Adnexus Team",
       "readTime": "3 min read",
-      "href": "https://www.vibe.co/blog/real-time-reporting-dashboard"
+      "href": "https://ad.nexus/blog/real-time-reporting-dashboard"
     },
     {
       "id": "tiktok-integration-launch",
@@ -49,9 +49,9 @@
       "image": "/images/updates/tiktok-integration.jpg",
       "category": "Integration",
       "date": "2025-09-24",
-      "author": "Vibe Team",
+      "author": "Adnexus Team",
       "readTime": "5 min read",
-      "href": "https://www.vibe.co/blog/tiktok-integration-launch"
+      "href": "https://ad.nexus/blog/tiktok-integration-launch"
     },
     {
       "id": "programmatic-guaranteed-launch",
@@ -60,9 +60,9 @@
       "image": "/images/updates/programmatic-guaranteed.jpg",
       "category": "Feature Launch",
       "date": "2025-09-20",
-      "author": "Vibe Team",
+      "author": "Adnexus Team",
       "readTime": "4 min read",
-      "href": "https://www.vibe.co/blog/programmatic-guaranteed-launch"
+      "href": "https://ad.nexus/blog/programmatic-guaranteed-launch"
     },
     {
       "id": "ai-bid-optimization-update",
@@ -71,9 +71,9 @@
       "image": "/images/updates/ai-bid-optimization.jpg",
       "category": "AI Enhancement",
       "date": "2025-09-17",
-      "author": "Vibe Team",
+      "author": "Adnexus Team",
       "readTime": "3 min read",
-      "href": "https://www.vibe.co/blog/ai-bid-optimization-update"
+      "href": "https://ad.nexus/blog/ai-bid-optimization-update"
     }
   ]
 }

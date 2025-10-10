@@ -1,6 +1,6 @@
 {
-  "url": "https://www.vibe.co/industry/entertainment",
-  "title": "Entertainment TV Advertising Solutions | Vibe",
+  "url": "https://ad.nexus/industry/entertainment",
+  "title": "Entertainment TV Advertising Solutions | Adnexus",
   "meta": {
     "industry": "entertainment",
     "category": "industry-solutions"
@@ -10,14 +10,14 @@
       "Sell out Shows with TV Ads"
     ],
     "h2": [
-      "Generate high-intent traffic and leads with Vibe"
+      "Generate high-intent traffic and leads with Adnexus"
     ]
   },
   "sections": [
     {
       "id": "hero",
       "heading": "Sell out Shows with TV Ads",
-      "content": "Generate high-intent traffic and leads with Vibe"
+      "content": "Generate high-intent traffic and leads with Adnexus"
     },
     {
       "id": "key-features",
@@ -26,8 +26,8 @@
     },
     {
       "id": "customer-logos",
-      "heading": "Brands Using Vibe",
-      "content": "Entertainment brands successfully using Vibe platform"
+      "heading": "Brands Using Adnexus",
+      "content": "Entertainment brands successfully using Adnexus platform"
     },
     {
       "id": "testimonials",
@@ -146,12 +146,12 @@
   "callToAction": [
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/get-started",
       "type": "primary"
     },
     {
       "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo",
+      "href": "https://ad.nexus/book-a-demo",
       "type": "secondary"
     }
   ],

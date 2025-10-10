@@ -1,6 +1,6 @@
 {
-  "url": "https://www.vibe.co/industry/ecommerce",
-  "title": "E-commerce TV Advertising Solutions | Vibe",
+  "url": "https://ad.nexus/industry/ecommerce",
+  "title": "E-commerce TV Advertising Solutions | Adnexus",
   "meta": {
     "industry": "ecommerce",
     "category": "industry-solutions"
@@ -10,14 +10,14 @@
       "Drive Online Sales with TV Ads"
     ],
     "h2": [
-      "Grow revenue with Vibe. See how your ads drive sales in real-time."
+      "Grow revenue with Adnexus. See how your ads drive sales in real-time."
     ]
   },
   "sections": [
     {
       "id": "hero",
       "heading": "Drive Online Sales with TV Ads",
-      "content": "Grow revenue with Vibe. See how your ads drive sales in real-time."
+      "content": "Grow revenue with Adnexus. See how your ads drive sales in real-time."
     },
     {
       "id": "key-features",
@@ -26,8 +26,8 @@
     },
     {
       "id": "customer-logos",
-      "heading": "Brands Using Vibe",
-      "content": "E-commerce brands successfully using Vibe platform"
+      "heading": "Brands Using Adnexus",
+      "content": "E-commerce brands successfully using Adnexus platform"
     },
     {
       "id": "testimonials",
@@ -107,91 +107,91 @@
       "industry": "E-commerce",
       "metric": "728% ROAS",
       "title": "How TruHeight Reached 728% ROAS with CTV",
-      "href": "https://www.vibe.co/blog/vibe-x-truheight-vitamins-case-study"
+      "href": "https://ad.nexus/blog/adnexus-x-truheight-vitamins-case-study"
     },
     {
       "company": "Car Stickers",
       "industry": "E-commerce",
       "metric": "275% ROAS on Mobile",
       "title": "Car Stickers Reaches 275% ROAS on Mobile",
-      "href": "https://www.vibe.co/blog/car-stickers-reaches-275-roas-on-mobile"
+      "href": "https://ad.nexus/blog/car-stickers-reaches-275-roas-on-mobile"
     },
     {
       "company": "Sota Clothing",
       "industry": "E-commerce",
       "metric": "$0.70 CPPV",
-      "title": "How Sota Clothing Got their CPPV Below $0.70 with Vibe & Klaviyo",
-      "href": "https://www.vibe.co/blog/apparel-brand-crushes-roi-goals-with-ctv"
+      "title": "How Sota Clothing Got their CPPV Below $0.70 with Adnexus & Klaviyo",
+      "href": "https://ad.nexus/blog/apparel-brand-crushes-roi-goals-with-ctv"
     },
     {
       "company": "Meshki",
       "industry": "E-commerce",
       "metric": "$0.93 Cost Per Session",
-      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
-      "href": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+      "title": "Meshki Beats ROAS and CPV Goals with Adnexus",
+      "href": "https://ad.nexus/blog/meshki-beats-roas-and-cpv-goals-with-adnexus"
     },
     {
       "company": "Petfolk",
       "industry": "E-commerce",
       "metric": "30% Acquisition Lift",
-      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
-      "href": "https://www.vibe.co/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Adnexus",
+      "href": "https://ad.nexus/blog/petfolk-exceeds-30-acquisition-lift-with-adnexus"
     },
     {
       "company": "King Kanine",
       "industry": "E-commerce",
       "metric": "165% ROAS",
-      "title": "How King Kanine Reached 165% ROAS with Vibe's ML",
-      "href": "https://www.vibe.co/blog/pet-brand-reaches-new-highs-with-ctv"
+      "title": "How King Kanine Reached 165% ROAS with Adnexus's ML",
+      "href": "https://ad.nexus/blog/pet-brand-reaches-new-highs-with-ctv"
     },
     {
       "company": "Branded Bills",
       "industry": "E-commerce",
       "metric": "2,000% ROAS",
-      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
-      "href": "https://www.vibe.co/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Adnexus",
+      "href": "https://ad.nexus/blog/adnexus-supercharges-apparel-brand-s-performance-campaigns"
     },
     {
       "company": "SmartLiner",
       "industry": "E-commerce",
       "metric": "1,635% ROAS",
-      "title": "SmartLiner Experiments and Wins with Vibe.co",
-      "href": "https://www.vibe.co/blog/smartliner-experiments-and-wins-with-vibe-co"
+      "title": "SmartLiner Experiments and Wins with Adnexus",
+      "href": "https://ad.nexus/blog/smartliner-experiments-and-wins-with-adnexus"
     },
     {
       "company": "Pamos",
       "industry": "E-commerce",
       "metric": "<$2 Cost Per Session",
       "title": "How a Disruptor Brand Hit CPS <$2",
-      "href": "https://www.vibe.co/blog/how-a-disruptor-brand-hit-cps-2"
+      "href": "https://ad.nexus/blog/how-a-disruptor-brand-hit-cps-2"
     },
     {
       "company": "Sijo",
       "industry": "E-commerce",
       "metric": "3.2x Average Order Value",
-      "title": "Sijo Home Upsells with Klaviyo and Vibe",
-      "href": "https://www.vibe.co/blog/sijo-home-upsells-with-klaviyo-and-vibe"
+      "title": "Sijo Home Upsells with Klaviyo and Adnexus",
+      "href": "https://ad.nexus/blog/sijo-home-upsells-with-klaviyo-and-adnexus"
     },
     {
       "company": "Zoriz",
       "industry": "E-commerce",
       "metric": "600% ROAS",
       "title": "How Zoriz Golf Surpassed 600% ROAS with CTV",
-      "href": "https://www.vibe.co/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
+      "href": "https://ad.nexus/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
     },
     {
       "company": "AirDog",
       "industry": "E-commerce",
       "metric": "450% ROAS",
       "title": "How an E-Comm Brand Reached 450% ROAS for their New Product Launch",
-      "href": "https://www.vibe.co/blog/how-an-e-comm-brand-reached-450-roas-for-their-new-product-launch"
+      "href": "https://ad.nexus/blog/how-an-e-comm-brand-reached-450-roas-for-their-new-product-launch"
     },
     {
       "company": "Hoodsly",
       "industry": "E-commerce",
       "metric": "409% ROAS",
-      "title": "409% ROAS for Hoodsly with Vibe",
-      "href": "https://www.vibe.co/blog/case-study-vibe-hoodsly"
+      "title": "409% ROAS for Hoodsly with Adnexus",
+      "href": "https://ad.nexus/blog/case-study-adnexus-hoodsly"
     }
   ],
   "integrations": [
@@ -237,12 +237,12 @@
   "callToAction": [
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/get-started",
       "type": "primary"
     },
     {
       "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo",
+      "href": "https://ad.nexus/book-a-demo",
       "type": "secondary"
     }
   ],

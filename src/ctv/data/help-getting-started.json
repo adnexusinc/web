@@ -1,6 +1,6 @@
 {
-  "url": "https://help.vibe.co/en/collections/5792737-getting-started",
-  "title": "Getting Started - Vibe Help Center",
+  "url": "https://ad.nexus/help/en/collections/5792737-getting-started",
+  "title": "Getting Started - Adnexus Help Center",
   "meta": {
     "description": "Here's how to build and launch your 1st campaign in minutes.",
     "collection": "Getting Started",
@@ -9,13 +9,13 @@
   "collection": {
     "title": "Getting Started",
     "description": "Here's how to build and launch your 1st campaign in minutes.",
-    "url": "https://help.vibe.co/en/collections/5792737-getting-started"
+    "url": "https://ad.nexus/help/en/collections/5792737-getting-started"
   },
   "articles": [
     {
       "id": "6300741",
       "title": "Platform Demo Video",
-      "url": "https://help.vibe.co/en/articles/6300741-platform-demo-video",
+      "url": "https://ad.nexus/help/en/articles/6300741-platform-demo-video",
       "author": "Nicolas Hemidy",
       "updated": "Over 2 years ago",
       "description": "Want to get more comfortable with our platform? Here's a quick overview, from audience targeting to campaign launch. It really is this simple!",
@@ -27,39 +27,39 @@
         "Hubspot Integration"
       ],
       "links": [
-        "https://calendly.com/inbound-team-xocb/vibe-onboarding"
+        "https://calendly.com/inbound-team-xocb/adnexus-onboarding"
       ]
     },
     {
       "id": "6134944",
       "title": "Create Your Account",
-      "url": "https://help.vibe.co/en/articles/6134944-create-your-account",
+      "url": "https://ad.nexus/help/en/articles/6134944-create-your-account",
       "author": "Nicolas Hemidy",
       "updated": "Over 2 years ago",
-      "description": "In order to start advertising with Vibe, you need to create a Vibe account!",
-      "content": "To register for a Vibe account, follow these steps:\n1. Visit https://vibe.co/\n2. Click 'Create an Account' in the top right corner\n3. Register using Google or enter personal details (first name, last name, work email, password)",
+      "description": "In order to start advertising with Adnexus, you need to create a Adnexus account!",
+      "content": "To register for a Adnexus account, follow these steps:\n1. Visit https://adnexus.co/\n2. Click 'Create an Account' in the top right corner\n3. Register using Google or enter personal details (first name, last name, work email, password)",
       "type": "tutorial",
       "keyNotes": [
-        "Vibe only accepts business emails for platform signups (we do not accept @gmail, @yahoo, etc.)"
+        "Adnexus only accepts business emails for platform signups (we do not accept @gmail, @yahoo, etc.)"
       ],
       "relatedArticles": [
-        "Vibe Pixel",
+        "Adnexus Pixel",
         "Account Sharing",
         "I Can't Register with my Email Address"
       ],
       "links": [
-        "https://vibe.co/",
-        "https://calendly.com/inbound-team-xocb/vibe-onboarding"
+        "https://adnexus.co/",
+        "https://calendly.com/inbound-team-xocb/adnexus-onboarding"
       ]
     },
     {
       "id": "6134946",
       "title": "Create your Campaign",
-      "url": "https://help.vibe.co/en/articles/6134946-create-your-campaign",
+      "url": "https://ad.nexus/help/en/articles/6134946-create-your-campaign",
       "author": "Nicolas Hemidy",
       "updated": "Over 2 weeks ago",
-      "description": "Set your budget, targets, and dates to launch your campaign with Vibe in minutes.",
-      "content": "Step-by-step guide to creating a campaign on Vibe platform",
+      "description": "Set your budget, targets, and dates to launch your campaign with Adnexus in minutes.",
+      "content": "Step-by-step guide to creating a campaign on Adnexus platform",
       "type": "tutorial",
       "headings": [
         "Name Your Campaign",
@@ -98,17 +98,17 @@
         "Targeting includes audience and placement controls"
       ],
       "links": [
-        "https://calendly.com/inbound-team-xocb/vibe-onboarding"
+        "https://calendly.com/inbound-team-xocb/adnexus-onboarding"
       ]
     },
     {
       "id": "6134952",
       "title": "Set a Budget for your Campaign",
-      "url": "https://help.vibe.co/en/articles/6134952-set-a-budget-for-your-campaign",
+      "url": "https://ad.nexus/help/en/articles/6134952-set-a-budget-for-your-campaign",
       "author": "Nicolas Hemidy",
       "updated": "Over 3 months ago",
-      "description": "Vibe's budget setting guide for advertising campaigns",
-      "content": "Guide to setting and managing campaign budgets on Vibe",
+      "description": "Adnexus's budget setting guide for advertising campaigns",
+      "content": "Guide to setting and managing campaign budgets on Adnexus",
       "type": "guide",
       "headings": [
         "Budget and Date Management",
@@ -131,7 +131,7 @@
         "Can mix budget types within a campaign",
         "Strategies can be scheduled independently",
         "Users can run multiple strategies concurrently",
-        "Vibe does not charge any platform, subscription, extra user seat, or joining fees"
+        "Adnexus does not charge any platform, subscription, extra user seat, or joining fees"
       ],
       "relatedArticles": [
         "Create your Campaign",
@@ -144,10 +144,10 @@
     {
       "id": "6134953",
       "title": "Campaign Targeting",
-      "url": "https://help.vibe.co/en/articles/6134953-campaign-targeting",
+      "url": "https://ad.nexus/help/en/articles/6134953-campaign-targeting",
       "author": "Nicolas Hemidy",
       "updated": "Over 2 months ago",
-      "description": "The Vibe platform offers flexible and transparent targeting options for your Streaming TV campaign, from geo-location to precise demographic filters.",
+      "description": "The Adnexus platform offers flexible and transparent targeting options for your Streaming TV campaign, from geo-location to precise demographic filters.",
       "content": "Comprehensive guide to targeting options for streaming TV advertising campaigns",
       "type": "guide",
       "targetingTypes": [
@@ -176,13 +176,13 @@
       ],
       "keyRecommendation": "We recommend limiting the number of strict targeting restrictions to maintain optimal deliverability.",
       "links": [
-        "https://calendly.com/inbound-team-xocb/vibe-onboarding"
+        "https://calendly.com/inbound-team-xocb/adnexus-onboarding"
       ]
     },
     {
       "id": "7207451",
       "title": "Campaign Retargeting",
-      "url": "https://help.vibe.co/en/articles/7207451-campaign-retargeting",
+      "url": "https://ad.nexus/help/en/articles/7207451-campaign-retargeting",
       "author": "Vincent Paoli",
       "updated": "Over a year ago",
       "description": "Learn how to enable retargeting and its best practices.",
@@ -195,7 +195,7 @@
         "Audience Updates"
       ],
       "retargetingSteps": [
-        "Add Vibe pixel to website header",
+        "Add Adnexus pixel to website header",
         "Collect web visitor data",
         "Select 'Visitors' under Website Audiences tab",
         "Implement 'Leads' and 'Purchasers' events"
@@ -209,7 +209,7 @@
       "keyFacts": [
         "Audiences updated hourly",
         "Website visitors removed after 30 days",
-        "Vibe updates your retargeting audience every hour, as long as your pixel is active"
+        "Adnexus updates your retargeting audience every hour, as long as your pixel is active"
       ],
       "troubleshooting": [
         "Pixel not pasted in website header",
@@ -217,20 +217,20 @@
         "Pixel not functioning correctly"
       ],
       "links": [
-        "mailto:support@vibe.co",
-        "https://calendly.com/inbound-team-xocb/vibe-onboarding"
+        "mailto:support@adnexus.co",
+        "https://calendly.com/inbound-team-xocb/adnexus-onboarding"
       ],
       "relatedArticles": [
-        "Vibe pixel installation guide"
+        "Adnexus pixel installation guide"
       ]
     },
     {
       "id": "6134954",
       "title": "Upload Your Video Ad",
-      "url": "https://help.vibe.co/en/articles/6134954-upload-your-video-ad",
+      "url": "https://ad.nexus/help/en/articles/6134954-upload-your-video-ad",
       "author": "Nicolas Hemidy",
       "updated": "Over 3 months ago",
-      "description": "A guide for uploading video ads to the Vibe platform",
+      "description": "A guide for uploading video ads to the Adnexus platform",
       "content": "Guide for uploading video ads with technical requirements and step-by-step instructions",
       "type": "tutorial",
       "videoRequirements": {
@@ -255,13 +255,13 @@
         "Best Practices"
       ],
       "links": [
-        "https://calendly.com/inbound-team-xocb/vibe-onboarding"
+        "https://calendly.com/inbound-team-xocb/adnexus-onboarding"
       ]
     },
     {
       "id": "8274016",
       "title": "Video Creative Compliance",
-      "url": "https://help.vibe.co/en/articles/8274016-video-creative-compliance",
+      "url": "https://ad.nexus/help/en/articles/8274016-video-creative-compliance",
       "author": "Nicolas Hemidy",
       "updated": "Over 6 months ago",
       "description": "Make sure your creative follows these guidelines and launch your campaign in minutes.",
@@ -290,16 +290,16 @@
         "Peacock & Disney+ / Hulu creative guidelines"
       ],
       "links": [
-        "https://www.vibe.co"
+        "https://ad.nexus"
       ]
     },
     {
       "id": "6134949",
       "title": "How to Create Separate Strategies aka Ad Sets",
-      "url": "https://help.vibe.co/en/articles/6134949-how-to-create-separate-strategies-aka-ad-sets",
+      "url": "https://ad.nexus/help/en/articles/6134949-how-to-create-separate-strategies-aka-ad-sets",
       "author": "Nicolas Hemidy",
       "updated": "Over 2 years ago",
-      "description": "Explains how to create and manage multiple strategies within a single campaign on the Vibe platform.",
+      "description": "Explains how to create and manage multiple strategies within a single campaign on the Adnexus platform.",
       "content": "Your campaign can be split into as many strategies as you need to test different approaches within a campaign. Simply toggle between them under the campaign menu on the left side of your dashboard.",
       "type": "guide",
       "strategyFeatures": [
@@ -319,17 +319,17 @@
         "Glossary"
       ],
       "links": [
-        "https://calendly.com/inbound-team-xocb/vibe-onboarding"
+        "https://calendly.com/inbound-team-xocb/adnexus-onboarding"
       ]
     },
     {
       "id": "8016403",
       "title": "A/B Testing",
-      "url": "https://help.vibe.co/en/articles/8016403-a-b-testing",
+      "url": "https://ad.nexus/help/en/articles/8016403-a-b-testing",
       "author": "Nicolas Hemidy",
       "updated": "Over a year ago",
       "description": "Test and optimize your campaigns in real-time.",
-      "content": "Guide to A/B testing functionality within Vibe's advertising platform, focusing on strategy creation and performance optimization",
+      "content": "Guide to A/B testing functionality within Adnexus's advertising platform, focusing on strategy creation and performance optimization",
       "type": "guide",
       "keyFeatures": [
         "Create multiple strategies within a given campaign",
@@ -350,7 +350,7 @@
     {
       "id": "9735845",
       "title": "Peacock creative guidelines",
-      "url": "https://help.vibe.co/en/articles/9735845-peacock-creative-guidelines",
+      "url": "https://ad.nexus/help/en/articles/9735845-peacock-creative-guidelines",
       "author": "Nicolas Hemidy",
       "updated": "Over 8 months ago",
       "description": "Find here all the relevant documentation for having creatives ready to advertise on this streaming service.",
@@ -391,7 +391,7 @@
     {
       "id": "11131427",
       "title": "Peacock & Disney+ / Hulu creative guidelines",
-      "url": "https://help.vibe.co/en/articles/11131427-peacock-disney-hulu-creative-guidelines",
+      "url": "https://ad.nexus/help/en/articles/11131427-peacock-disney-hulu-creative-guidelines",
       "author": "Nicolas Hemidy",
       "updated": "Over 3 months ago",
       "description": "Find here all the relevant documentation for having creatives ready to advertise on these streaming services.",
@@ -406,7 +406,7 @@
         "Creative validation is required",
         "Additional review process can take extra days",
         "Recommended to pair with other channels",
-        "Only creative uploads in Vibe are supported (no external VAST tags)"
+        "Only creative uploads in Adnexus are supported (no external VAST tags)"
       ],
       "disneyPlusHuluGuidelines": {
         "prohibited": [

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Generate Leads | Vibe",
+    "title": "Generate Leads | Adnexus",
     "description": "Turn an engaged audience into high-quality leads.",
     "ogImage": ""
   },
@@ -12,7 +12,7 @@
     },
     {
       "level": 2,
-      "text": "Generating Leads with Vibe is easy",
+      "text": "Generating Leads with Adnexus is easy",
       "id": ""
     },
     {
@@ -52,12 +52,12 @@
     },
     {
       "level": 2,
-      "text": "More ways Vibe can make you grow",
+      "text": "More ways Adnexus can make you grow",
       "id": ""
     },
     {
       "level": 2,
-      "text": "Get started with Vibe in minutes.",
+      "text": "Get started with Adnexus in minutes.",
       "id": ""
     },
     {
@@ -88,24 +88,24 @@
       "headingLevel": 1,
       "paragraphs": [
         "Turn an engaged audience into high-quality leads.",
-        "10,000+ performance marketers have generated millions in revenue with Vibe"
+        "10,000+ performance marketers have generated millions in revenue with Adnexus"
       ],
       "lists": [],
       "links": [
         {
           "text": "Get started",
-          "href": "https://www.vibe.co/get-started",
+          "href": "https://ad.nexus/get-started",
           "aria": ""
         },
         {
           "text": "Meet our customers",
-          "href": "https://www.vibe.co/testimonials",
+          "href": "https://ad.nexus/testimonials",
           "aria": ""
         }
       ],
       "images": [
         {
-          "src": "https://www.vibe.co/_next/image?url=%2Fimages%2Fgoals%2Fgenerate-leads%2Fhero.png",
+          "src": "https://ad.nexus/_next/image?url=%2Fimages%2Fgoals%2Fgenerate-leads%2Fhero.png",
           "alt": "TV advertising platform interface",
           "width": 0,
           "height": 0
@@ -115,7 +115,7 @@
     },
     {
       "id": "features",
-      "heading": "Generating Leads with Vibe is easy",
+      "heading": "Generating Leads with Adnexus is easy",
       "headingLevel": 2,
       "paragraphs": [],
       "lists": [],
@@ -134,13 +134,13 @@
       "links": [],
       "images": [
         {
-          "src": "https://www.vibe.co/_next/image?url=%2Fimages%2Fgoals%2Fgenerate-leads%2Fgoogle-analytics.svg",
+          "src": "https://ad.nexus/_next/image?url=%2Fimages%2Fgoals%2Fgenerate-leads%2Fgoogle-analytics.svg",
           "alt": "Google Analytics",
           "width": 0,
           "height": 0
         },
         {
-          "src": "https://www.vibe.co/_next/image?url=%2Fimages%2Fgoals%2Fgenerate-leads%2Fgoogle-tag-manager.svg",
+          "src": "https://ad.nexus/_next/image?url=%2Fimages%2Fgoals%2Fgenerate-leads%2Fgoogle-tag-manager.svg",
           "alt": "Google Tag Manager",
           "width": 0,
           "height": 0
@@ -159,7 +159,7 @@
       "links": [],
       "images": [
         {
-          "src": "https://www.vibe.co/_next/image?url=%2Fimages%2Fgoals%2Fgenerate-leads%2Fklaviyo.svg",
+          "src": "https://ad.nexus/_next/image?url=%2Fimages%2Fgoals%2Fgenerate-leads%2Fklaviyo.svg",
           "alt": "Klaviyo logo",
           "width": 0,
           "height": 0
@@ -220,7 +220,7 @@
       "heading": "Reach Optimization",
       "headingLevel": 3,
       "paragraphs": [
-        "Use Vibe's AI-powered bidder to continuously optimize your campaign."
+        "Use Adnexus's AI-powered bidder to continuously optimize your campaign."
       ],
       "lists": [],
       "links": [],
@@ -231,8 +231,8 @@
   "navigation": {
     "header": [
       {
-        "text": "Vibe",
-        "href": "https://www.vibe.co/"
+        "text": "Adnexus",
+        "href": "https://ad.nexus/"
       },
       {
         "text": "Product",
@@ -244,11 +244,11 @@
       },
       {
         "text": "Pricing",
-        "href": "https://www.vibe.co/pricing"
+        "href": "https://ad.nexus/pricing"
       },
       {
         "text": "Testimonials",
-        "href": "https://www.vibe.co/testimonials"
+        "href": "https://ad.nexus/testimonials"
       },
       {
         "text": "resources",
@@ -256,182 +256,182 @@
       },
       {
         "text": "Book a demo",
-        "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fgoals%2Fgenerate-leads"
+        "href": "https://ad.nexus/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fgoals%2Fgenerate-leads"
       },
       {
         "text": "Log in",
-        "href": "https://www.vibe.co/sign-in"
+        "href": "https://ad.nexus/sign-in"
       },
       {
         "text": "Build Awareness",
-        "href": "https://www.vibe.co/goals/build-awareness"
+        "href": "https://ad.nexus/goals/build-awareness"
       },
       {
         "text": "Attract Traffic",
-        "href": "https://www.vibe.co/goals/attract-traffic"
+        "href": "https://ad.nexus/goals/attract-traffic"
       },
       {
         "text": "Generate Leads",
-        "href": "https://www.vibe.co/goals/generate-leads"
+        "href": "https://ad.nexus/goals/generate-leads"
       },
       {
         "text": "Increase Sales",
-        "href": "https://www.vibe.co/goals/increase-sales"
+        "href": "https://ad.nexus/goals/increase-sales"
       },
       {
         "text": "Retarget Prospects",
-        "href": "https://www.vibe.co/goals/retarget-prospects"
+        "href": "https://ad.nexus/goals/retarget-prospects"
       },
       {
         "text": "Promote Your App",
-        "href": "https://www.vibe.co/goals/promote-your-app"
+        "href": "https://ad.nexus/goals/promote-your-app"
       }
     ],
     "footer": [
       {
         "text": "Apps & Gaming",
-        "href": "https://www.vibe.co/industry/apps-gaming"
+        "href": "https://ad.nexus/industry/apps-gaming"
       },
       {
         "text": "Ecommerce",
-        "href": "https://www.vibe.co/industry/ecommerce"
+        "href": "https://ad.nexus/industry/ecommerce"
       },
       {
         "text": "Education & Non-profit",
-        "href": "https://www.vibe.co/industry/education-non-profit"
+        "href": "https://ad.nexus/industry/education-non-profit"
       },
       {
         "text": "Automotive",
-        "href": "https://www.vibe.co/industry/automotive"
+        "href": "https://ad.nexus/industry/automotive"
       },
       {
         "text": "Media & Agencies",
-        "href": "https://www.vibe.co/industry/media-agencies"
+        "href": "https://ad.nexus/industry/media-agencies"
       },
       {
         "text": "Legal",
-        "href": "https://www.vibe.co/industry/legal"
+        "href": "https://ad.nexus/industry/legal"
       },
       {
         "text": "Politics",
-        "href": "https://www.vibe.co/industry/politics"
+        "href": "https://ad.nexus/industry/politics"
       },
       {
         "text": "Home Improvement",
-        "href": "https://www.vibe.co/industry/home-improvement"
+        "href": "https://ad.nexus/industry/home-improvement"
       },
       {
         "text": "Retail",
-        "href": "https://www.vibe.co/industry/retail"
+        "href": "https://ad.nexus/industry/retail"
       },
       {
         "text": "B2B",
-        "href": "https://www.vibe.co/industry/b2b"
+        "href": "https://ad.nexus/industry/b2b"
       },
       {
         "text": "Entertainment",
-        "href": "https://www.vibe.co/industry/entertainment"
+        "href": "https://ad.nexus/industry/entertainment"
       },
       {
         "text": "Apps & Channels",
-        "href": "https://www.vibe.co/features/apps-channels"
+        "href": "https://ad.nexus/features/apps-channels"
       },
       {
         "text": "Audience Targeting",
-        "href": "https://www.vibe.co/features/audience-targeting"
+        "href": "https://ad.nexus/features/audience-targeting"
       },
       {
         "text": "AI Optimization",
-        "href": "https://www.vibe.co/features/ai-optimization"
+        "href": "https://ad.nexus/features/ai-optimization"
       },
       {
         "text": "Measurement & Reporting",
-        "href": "https://www.vibe.co/features/measurement-reporting"
+        "href": "https://ad.nexus/features/measurement-reporting"
       },
       {
         "text": "AI Creatives",
-        "href": "https://www.vibe.co/features/ai-creatives"
+        "href": "https://ad.nexus/features/ai-creatives"
       },
       {
         "text": "Integrations & API",
-        "href": "https://www.vibe.co/features/integrations-api"
+        "href": "https://ad.nexus/features/integrations-api"
       },
       {
         "text": "Video Generator",
-        "href": "https://www.vibe.co/studio"
+        "href": "https://ad.nexus/studio"
       },
       {
         "text": "Pricing",
-        "href": "https://www.vibe.co/pricing"
+        "href": "https://ad.nexus/pricing"
       },
       {
         "text": "Testimonials",
-        "href": "https://www.vibe.co/testimonials"
+        "href": "https://ad.nexus/testimonials"
       },
       {
         "text": "Case Studies",
-        "href": "https://www.vibe.co/blog/case-studies"
+        "href": "https://ad.nexus/blog/case-studies"
       },
       {
         "text": "Apps & Channels",
-        "href": "https://www.vibe.co/apps-and-channels"
+        "href": "https://ad.nexus/apps-and-channels"
       },
       {
         "text": "Integrations",
-        "href": "https://www.vibe.co/integrations"
+        "href": "https://ad.nexus/integrations"
       },
       {
         "text": "Help center",
-        "href": "https://help.vibe.co/en/"
+        "href": "https://ad.nexus/help/en/"
       },
       {
         "text": "Blog",
-        "href": "https://www.vibe.co/blog"
+        "href": "https://ad.nexus/blog"
       },
       {
         "text": "Newsletter",
-        "href": "https://www.vibe.co/newsletter"
+        "href": "https://ad.nexus/newsletter"
       },
       {
         "text": "About us",
-        "href": "https://www.vibe.co/about"
+        "href": "https://ad.nexus/about"
       },
       {
         "text": "Events",
-        "href": "https://www.vibe.co/events/vibe-stream-2024"
+        "href": "https://ad.nexus/events/adnexus-stream-2024"
       },
       {
         "text": "Jobs",
-        "href": "https://jobs.ashbyhq.com/vibe"
+        "href": "https://jobs.ashbyhq.com/adnexus"
       },
       {
         "text": "Newsroom",
-        "href": "https://www.vibe.co/blog/whats-new"
+        "href": "https://ad.nexus/blog/whats-new"
       },
       {
         "text": "Privacy Policy",
-        "href": "https://www.vibe.co/legal/privacy-policy"
+        "href": "https://ad.nexus/legal/privacy-policy"
       },
       {
         "text": "Terms of Service",
-        "href": "https://www.vibe.co/legal/terms-of-service"
+        "href": "https://ad.nexus/legal/terms-of-service"
       }
     ]
   },
   "ctas": [
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/get-started",
       "type": "a"
     },
     {
       "text": "Meet our customers",
-      "href": "https://www.vibe.co/testimonials",
+      "href": "https://ad.nexus/testimonials",
       "type": "button"
     },
     {
       "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fgoals%2Fgenerate-leads",
+      "href": "https://ad.nexus/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fgoals%2Fgenerate-leads",
       "type": "a"
     }
   ],
@@ -454,36 +454,36 @@
       "company": "Meshki",
       "metric": "$0.93",
       "metricLabel": "Cost Per Session",
-      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
-      "url": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+      "title": "Meshki Beats ROAS and CPV Goals with Adnexus",
+      "url": "https://ad.nexus/blog/meshki-beats-roas-and-cpv-goals-with-adnexus"
     },
     {
       "company": "Abuelos",
       "metric": "-80%",
       "metricLabel": "Cost Per Session",
       "title": "Abuelo's Lowers Cost Per Session by 80%",
-      "url": "https://www.vibe.co/blog/abuelo-s-x-vibe-case-study"
+      "url": "https://ad.nexus/blog/abuelo-s-x-adnexus-case-study"
     },
     {
       "company": "Eden Prairie Center",
       "metric": "458%",
       "metricLabel": "Household Reach",
       "title": "How an Iconic Mall Increased Household Reach by 458% with CTV",
-      "url": "https://www.vibe.co/blog/how-an-iconic-mall-increased-household-reach-by-458-with-ctv"
+      "url": "https://ad.nexus/blog/how-an-iconic-mall-increased-household-reach-by-458-with-ctv"
     },
     {
       "company": "TruHeight",
       "metric": "728%",
       "metricLabel": "ROAS",
       "title": "How TruHeight Reached 728% ROAS with CTV",
-      "url": "https://www.vibe.co/blog/vibe-x-truheight-vitamins-case-study"
+      "url": "https://ad.nexus/blog/adnexus-x-truheight-vitamins-case-study"
     },
     {
       "company": "Nyxt",
       "metric": "$0.85",
       "metricLabel": "Cost Per Lead",
       "title": "How NYXT Reduced their Cost per Lead to a $0.85 Avg.",
-      "url": "https://www.vibe.co/blog/how-nyxt-reduced-their-cost-per-lead-to-a-0-85-avg"
+      "url": "https://ad.nexus/blog/how-nyxt-reduced-their-cost-per-lead-to-a-0-85-avg"
     }
   ],
   "integrations": [

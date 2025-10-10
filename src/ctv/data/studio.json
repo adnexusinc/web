@@ -1,16 +1,16 @@
 {
-  "url": "https://www.vibe.co/studio",
-  "title": "Vibe Studio - Video Generator",
+  "url": "https://ad.nexus/studio",
+  "title": "Adnexus Studio - Video Generator",
   "meta": {
     "viewport": "width=device-width, initial-scale=1",
-    "description": "Create TV-ready ads in less than 30 seconds with Vibe Studio. AI-powered video generation tool for businesses of all sizes.",
-    "og:title": "Vibe Studio - AI Video Generator for TV Ads",
+    "description": "Create TV-ready ads in less than 30 seconds with Adnexus Studio. AI-powered video generation tool for businesses of all sizes.",
+    "og:title": "Adnexus Studio - AI Video Generator for TV Ads",
     "og:description": "Generate professional TV commercials instantly with AI. No creative skills required.",
-    "og:url": "https://www.vibe.co/studio"
+    "og:url": "https://ad.nexus/studio"
   },
   "headings": {
     "h1": [
-      "Vibe Studio - AI Video Generator"
+      "Adnexus Studio - AI Video Generator"
     ],
     "h2": [
       "Create TV-Ready Ads in Seconds",

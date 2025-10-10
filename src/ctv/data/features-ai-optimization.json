@@ -1,12 +1,12 @@
 {
-  "url": "https://www.vibe.co/features/ai-optimization",
-  "title": "Vibe: AI Optimization for Connected TV Advertising",
+  "url": "https://ad.nexus/features/ai-optimization",
+  "title": "Adnexus: AI Optimization for Connected TV Advertising",
   "meta": {
     "viewport": "width=device-width, initial-scale=1",
     "description": "AI-powered optimization for streaming TV advertising. Maximize ROAS with smarter bidding, audience targeting, and performance-driven media buying.",
-    "og:title": "AI Optimization - Vibe Connected TV Advertising Platform",
+    "og:title": "AI Optimization - Adnexus Connected TV Advertising Platform",
     "og:description": "Optimize your campaign outcomes with AI-powered solutions for smarter bidding, audience targeting, and performance-driven media buying.",
-    "og:url": "https://www.vibe.co/features/ai-optimization"
+    "og:url": "https://ad.nexus/features/ai-optimization"
   },
   "headings": {
     "h1": [
@@ -69,7 +69,7 @@
     },
     {
       "name": "Performance-Driven Media Buying",
-      "description": "Powered by Vibe Connect integrated SSP to ensure premium publisher placements with real-time data injection. Retrieval model targets most likely converters.",
+      "description": "Powered by Adnexus Connect integrated SSP to ensure premium publisher placements with real-time data injection. Retrieval model targets most likely converters.",
       "category": "Media Buying & Placement",
       "keyBenefits": [
         "Premium publisher placements",
@@ -79,7 +79,7 @@
         "Retrieval model optimization"
       ],
       "technicalDetails": {
-        "platform": "Vibe Connect integrated SSP",
+        "platform": "Adnexus Connect integrated SSP",
         "optimization": "Real-time data injection",
         "targeting": "Retrieval model for likely converters",
         "approach": "Performance-driven placement"
@@ -224,7 +224,7 @@
     {
       "text": "Get started",
       "type": "primary",
-      "action": "Sign up for Vibe platform"
+      "action": "Sign up for Adnexus platform"
     },
     {
       "text": "Book a demo",
@@ -232,7 +232,7 @@
       "action": "Schedule product demonstration"
     }
   ],
-  "valueProposition": "Optimize your campaign outcomes with AI-powered solutions for smarter bidding, audience targeting, and performance-driven media buying. Get started with Vibe in minutes.",
+  "valueProposition": "Optimize your campaign outcomes with AI-powered solutions for smarter bidding, audience targeting, and performance-driven media buying. Get started with Adnexus in minutes.",
   "useCases": [
     {
       "useCase": "E-commerce ROAS Optimization",
@@ -275,6 +275,6 @@
     "No wasted views targeting approach"
   ],
   "scraped": "2025-10-05",
-  "scrapedBy": "Vibe Scraper",
+  "scrapedBy": "Adnexus Scraper",
   "dataVersion": "1.0"
 }

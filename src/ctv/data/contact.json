@@ -1,17 +1,17 @@
 {
-  "url": "https://www.vibe.co/contact",
-  "title": "Contact Vibe - Get in Touch with Our TV Advertising Experts",
+  "url": "https://ad.nexus/contact",
+  "title": "Contact Adnexus - Get in Touch with Our TV Advertising Experts",
   "meta": {
     "viewport": "width=device-width, initial-scale=1",
-    "description": "Contact Vibe for TV advertising support. Book a demo, reach our support team, or connect with our CTV experts.",
-    "og:title": "Contact Vibe - Get in Touch with Our TV Advertising Experts",
-    "og:description": "Contact Vibe for TV advertising support. Book a demo, reach our support team, or connect with our CTV experts.",
-    "og:url": "https://www.vibe.co/contact",
+    "description": "Contact Adnexus for TV advertising support. Book a demo, reach our support team, or connect with our CTV experts.",
+    "og:title": "Contact Adnexus - Get in Touch with Our TV Advertising Experts",
+    "og:description": "Contact Adnexus for TV advertising support. Book a demo, reach our support team, or connect with our CTV experts.",
+    "og:url": "https://ad.nexus/contact",
     "twitter:card": "summary_large_image"
   },
   "headings": {
     "h1": [
-      "Contact Vibe"
+      "Contact Adnexus"
     ],
     "h2": [
       "Get in Touch",
@@ -22,14 +22,14 @@
     "h3": []
   },
   "paragraphs": [
-    "Get in touch with Vibe's team of TV advertising experts.",
+    "Get in touch with Adnexus's team of TV advertising experts.",
     "Book a demo and launch your TV ads in 5 minutes.",
     "Schedule a demo with our TV ad experts.",
     "Our support team is here to help you succeed with streaming TV advertising."
   ],
   "contactMethods": {
     "demo": {
-      "url": "https://www.vibe.co/book-a-demo",
+      "url": "https://ad.nexus/book-a-demo",
       "description": "Book a demo and launch your TV ads in 5 minutes",
       "form": {
         "fields": [
@@ -42,12 +42,12 @@
       }
     },
     "support": {
-      "helpCenter": "https://help.vibe.co/en/",
+      "helpCenter": "https://ad.nexus/help/en/",
       "intercom": true,
       "description": "Get help from our support team through the help center or live chat"
     },
     "meeting": {
-      "url": "https://calendly.com/inbound-team-xocb/vibe-onboarding",
+      "url": "https://calendly.com/inbound-team-xocb/adnexus-onboarding",
       "description": "Book a meeting with a CTV expert"
     },
     "email": {
@@ -66,7 +66,7 @@
   "supportChannels": [
     {
       "name": "Help Center",
-      "url": "https://help.vibe.co/en/",
+      "url": "https://ad.nexus/help/en/",
       "description": "Browse articles and guides"
     },
     {
@@ -76,19 +76,19 @@
     },
     {
       "name": "Book a Meeting",
-      "url": "https://calendly.com/inbound-team-xocb/vibe-onboarding",
+      "url": "https://calendly.com/inbound-team-xocb/adnexus-onboarding",
       "description": "Schedule a meeting with a CTV expert"
     },
     {
       "name": "Demo Request",
-      "url": "https://www.vibe.co/book-a-demo",
+      "url": "https://ad.nexus/book-a-demo",
       "description": "Request a product demo"
     }
   ],
   "socialLinks": [
     {
       "platform": "LinkedIn",
-      "href": "https://www.linkedin.com/company/vibedotco"
+      "href": "https://www.linkedin.com/company/adnexusdotco"
     },
     {
       "platform": "LinkedIn (Support)",
@@ -100,18 +100,18 @@
     },
     {
       "platform": "Facebook",
-      "href": "https://www.facebook.com/p/Vibeco-100087504983744/"
+      "href": "https://www.facebook.com/p/Adnexusco-100087504983744/"
     },
     {
       "platform": "X",
-      "href": "https://twitter.com/vibedotco"
+      "href": "https://twitter.com/adnexusdotco"
     }
   ],
   "navigation": {
     "header": [
       {
-        "text": "Vibe",
-        "href": "https://www.vibe.co/"
+        "text": "Adnexus",
+        "href": "https://ad.nexus/"
       },
       {
         "text": "Product",
@@ -123,11 +123,11 @@
       },
       {
         "text": "Pricing",
-        "href": "https://www.vibe.co/pricing"
+        "href": "https://ad.nexus/pricing"
       },
       {
         "text": "Testimonials",
-        "href": "https://www.vibe.co/testimonials"
+        "href": "https://ad.nexus/testimonials"
       },
       {
         "text": "resources",
@@ -135,51 +135,51 @@
       },
       {
         "text": "Book a demo",
-        "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fcontact"
+        "href": "https://ad.nexus/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fcontact"
       },
       {
         "text": "Log in",
-        "href": "https://www.vibe.co/sign-in"
+        "href": "https://ad.nexus/sign-in"
       }
     ],
     "footer": [
       {
         "text": "Help center",
-        "href": "https://help.vibe.co/en/"
+        "href": "https://ad.nexus/help/en/"
       },
       {
         "text": "Blog",
-        "href": "https://www.vibe.co/blog"
+        "href": "https://ad.nexus/blog"
       },
       {
         "text": "About us",
-        "href": "https://www.vibe.co/about"
+        "href": "https://ad.nexus/about"
       },
       {
         "text": "Jobs",
-        "href": "https://jobs.ashbyhq.com/vibe"
+        "href": "https://jobs.ashbyhq.com/adnexus"
       }
     ]
   },
   "buttons": [
     {
       "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fcontact",
+      "href": "https://ad.nexus/book-a-demo?utm_source=website&utm_medium=navigation&utm_content=%2Fcontact",
       "type": "link"
     },
     {
       "text": "Visit Help Center",
-      "href": "https://help.vibe.co/en/",
+      "href": "https://ad.nexus/help/en/",
       "type": "link"
     },
     {
       "text": "Schedule a Meeting",
-      "href": "https://calendly.com/inbound-team-xocb/vibe-onboarding",
+      "href": "https://calendly.com/inbound-team-xocb/adnexus-onboarding",
       "type": "link"
     },
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/get-started",
       "type": "link"
     }
   ],
@@ -203,8 +203,8 @@
   "sections": [
     {
       "id": "contact-hero",
-      "heading": "Contact Vibe",
-      "content": "Get in touch with Vibe's team of TV advertising experts. We're here to help you launch your streaming TV campaigns."
+      "heading": "Contact Adnexus",
+      "content": "Get in touch with Adnexus's team of TV advertising experts. We're here to help you launch your streaming TV campaigns."
     },
     {
       "id": "demo",
@@ -225,19 +225,19 @@
   "additionalResources": [
     {
       "name": "Help Center",
-      "url": "https://help.vibe.co/en/",
+      "url": "https://ad.nexus/help/en/",
       "description": "Browse our comprehensive knowledge base"
     },
     {
       "name": "Blog",
-      "url": "https://www.vibe.co/blog",
+      "url": "https://ad.nexus/blog",
       "description": "Learn about TV advertising best practices"
     },
     {
       "name": "Careers",
-      "url": "https://jobs.ashbyhq.com/vibe",
+      "url": "https://jobs.ashbyhq.com/adnexus",
       "description": "Join our growing team"
     }
   ],
-  "copyright": "© 2025 Vibe, Inc."
+  "copyright": "© 2025 Adnexus, Inc."
 }

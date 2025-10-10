@@ -1,7 +1,7 @@
 {
-  "url": "https://www.vibe.co/features/audience-targeting",
+  "url": "https://ad.nexus/features/audience-targeting",
   "scrapeDate": "2025-10-05",
-  "pageTitle": "Audience Targeting - Vibe Features",
+  "pageTitle": "Audience Targeting - Adnexus Features",
   "description": "Target those who matter for your brand. Let your brand resonate with your audience and launch impactful campaigns.",
   "platform": {
     "rating": "4.8/5",
@@ -74,7 +74,7 @@
   "crmIntegration": {
     "enabled": true,
     "features": [
-      "Connect your CRM with Vibe",
+      "Connect your CRM with Adnexus",
       "Create your own customer list"
     ]
   },
@@ -108,7 +108,7 @@
   ],
   "testimonials": [
     {
-      "quote": "We chose Vibe because I really like a nimble platform able to do different targeting for different creatives.",
+      "quote": "We chose Adnexus because I really like a nimble platform able to do different targeting for different creatives.",
       "author": "Nathaniel Jones",
       "role": "Marketing Director",
       "company": "Farm and Home Supply"

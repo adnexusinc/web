@@ -1,20 +1,20 @@
 {
-  "url": "https://www.vibe.co/blog/case-studies",
-  "title": "CTV Advertising Case Studies - Success Stories | Vibe",
+  "url": "https://ad.nexus/blog/case-studies",
+  "title": "CTV Advertising Case Studies - Success Stories | Adnexus",
   "meta": {
-    "description": "Explore real success stories and proven results from brands using Vibe's CTV advertising platform.",
-    "og:title": "CTV Advertising Case Studies - Success Stories | Vibe",
-    "og:description": "Explore real success stories and proven results from brands using Vibe's CTV advertising platform."
+    "description": "Explore real success stories and proven results from brands using Adnexus's CTV advertising platform.",
+    "og:title": "CTV Advertising Case Studies - Success Stories | Adnexus",
+    "og:description": "Explore real success stories and proven results from brands using Adnexus's CTV advertising platform."
   },
   "heading": "Case Studies",
-  "subheading": "Real results from brands using Vibe",
+  "subheading": "Real results from brands using Adnexus",
   "stories": [
     {
       "company": "Meshki",
       "logo": "/images/logos/meshki.svg",
       "metric": "$0.93 Cost Per Session",
-      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
-      "description": "Fashion retailer Meshki achieved exceptional cost efficiency and exceeded their ROAS targets using Vibe's CTV platform.",
+      "title": "Meshki Beats ROAS and CPV Goals with Adnexus",
+      "description": "Fashion retailer Meshki achieved exceptional cost efficiency and exceeded their ROAS targets using Adnexus's CTV platform.",
       "image": "/images/case-studies/meshki.jpg",
       "industry": "Fashion & Retail",
       "results": [
@@ -22,7 +22,7 @@
         "250% ROAS achieved",
         "45% lower CPV than target"
       ],
-      "href": "https://www.vibe.co/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+      "href": "https://ad.nexus/blog/meshki-beats-roas-and-cpv-goals-with-adnexus"
     },
     {
       "company": "Abuelos",
@@ -37,14 +37,14 @@
         "3x increase in location visits",
         "500K+ households reached"
       ],
-      "href": "https://www.vibe.co/blog/abuelo-s-x-vibe-case-study"
+      "href": "https://ad.nexus/blog/abuelo-s-x-adnexus-case-study"
     },
     {
       "company": "TruHeight",
       "logo": "/images/logos/truheight.svg",
       "metric": "728% ROAS",
       "title": "How TruHeight Reached 728% ROAS with CTV",
-      "description": "Health supplement brand TruHeight achieved remarkable return on ad spend using Vibe's AI-powered optimization.",
+      "description": "Health supplement brand TruHeight achieved remarkable return on ad spend using Adnexus's AI-powered optimization.",
       "image": "/images/case-studies/truheight.jpg",
       "industry": "Health & Wellness",
       "results": [
@@ -52,14 +52,14 @@
         "$2.3M in attributed revenue",
         "4.2x better than Meta campaigns"
       ],
-      "href": "https://www.vibe.co/blog/vibe-x-truheight-vitamins-case-study"
+      "href": "https://ad.nexus/blog/adnexus-x-truheight-vitamins-case-study"
     },
     {
       "company": "Branded Bills",
       "logo": "/images/logos/branded-bills.svg",
       "metric": "2,000% ROAS",
-      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
-      "description": "Apparel brand achieved extraordinary results by integrating Vibe's CTV advertising with Klaviyo's email marketing.",
+      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Adnexus",
+      "description": "Apparel brand achieved extraordinary results by integrating Adnexus's CTV advertising with Klaviyo's email marketing.",
       "image": "/images/case-studies/branded-bills.jpg",
       "industry": "Apparel",
       "results": [
@@ -67,13 +67,13 @@
         "$5M+ in attributed sales",
         "92% brand lift"
       ],
-      "href": "https://www.vibe.co/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+      "href": "https://ad.nexus/blog/adnexus-supercharges-apparel-brand-s-performance-campaigns"
     },
     {
       "company": "SmartLiner",
       "logo": "/images/logos/smartliner.svg",
       "metric": "1,635% ROAS",
-      "title": "SmartLiner Experiments and Wins with Vibe.co",
+      "title": "SmartLiner Experiments and Wins with Adnexus",
       "description": "Automotive accessory brand SmartLiner tested CTV and achieved industry-leading return on investment.",
       "image": "/images/case-studies/smartliner.jpg",
       "industry": "Automotive",
@@ -82,14 +82,14 @@
         "$1.2M in revenue",
         "67% new customer acquisition"
       ],
-      "href": "https://www.vibe.co/blog/smartliner-experiments-and-wins-with-vibe-co"
+      "href": "https://ad.nexus/blog/smartliner-experiments-and-wins-with-adnexus"
     },
     {
       "company": "Hoodsly",
       "logo": "/images/logos/hoodsly.svg",
       "metric": "409% ROAS",
-      "title": "409% ROAS for Hoodsly with Vibe",
-      "description": "Streetwear brand Hoodsly scaled profitably using Vibe's audience targeting and creative optimization tools.",
+      "title": "409% ROAS for Hoodsly with Adnexus",
+      "description": "Streetwear brand Hoodsly scaled profitably using Adnexus's audience targeting and creative optimization tools.",
       "image": "/images/case-studies/hoodsly.jpg",
       "industry": "Fashion",
       "results": [
@@ -97,7 +97,7 @@
         "$850K in sales",
         "3.1x AOV increase"
       ],
-      "href": "https://www.vibe.co/blog/case-study-vibe-hoodsly"
+      "href": "https://ad.nexus/blog/case-study-adnexus-hoodsly"
     },
     {
       "company": "Zoriz Golf",
@@ -112,13 +112,13 @@
         "$1.8M in revenue",
         "450K+ golfers reached"
       ],
-      "href": "https://www.vibe.co/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
+      "href": "https://ad.nexus/blog/how-zoriz-golf-surpassed-600-roas-with-ctv"
     },
     {
       "company": "Petfolk",
       "logo": "/images/logos/petfolk.svg",
       "metric": "30% Acquisition Lift",
-      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Adnexus",
       "description": "Pet care subscription service Petfolk drove significant new customer growth through strategic CTV campaigns.",
       "image": "/images/case-studies/petfolk.jpg",
       "industry": "Pet Care",
@@ -127,7 +127,7 @@
         "280% subscriber growth",
         "$0.45 cost per acquisition"
       ],
-      "href": "https://www.vibe.co/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+      "href": "https://ad.nexus/blog/petfolk-exceeds-30-acquisition-lift-with-adnexus"
     },
     {
       "company": "Herb Jones",
@@ -142,7 +142,7 @@
         "450 qualified leads",
         "$28 cost per lead"
       ],
-      "href": "https://www.vibe.co/blog/how-this-car-dealership-increased-web-traffic-by-800"
+      "href": "https://ad.nexus/blog/how-this-car-dealership-increased-web-traffic-by-800"
     }
   ]
 }

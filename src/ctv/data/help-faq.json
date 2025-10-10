@@ -1,49 +1,49 @@
 {
   "collection": "FAQ",
-  "collectionUrl": "https://help.vibe.co/en/collections/5792831-faq",
+  "collectionUrl": "https://ad.nexus/help/en/collections/5792831-faq",
   "collectionDescription": "Learn more about the platform.",
   "scrapedAt": "2025-10-05T00:00:00.000Z",
   "totalArticles": 17,
   "subcollections": [
     {
       "title": "Get Started",
-      "url": "https://help.vibe.co/en/collections/5929515-get-started",
-      "description": "Vibe platform basics to get you started on the right foot"
+      "url": "https://ad.nexus/help/en/collections/5929515-get-started",
+      "description": "Adnexus platform basics to get you started on the right foot"
     },
     {
       "title": "Features",
-      "url": "https://help.vibe.co/en/collections/5929516-features",
-      "description": "What to expect - and not to expect - from the Vibe platform"
+      "url": "https://ad.nexus/help/en/collections/5929516-features",
+      "description": "What to expect - and not to expect - from the Adnexus platform"
     },
     {
       "title": "Compliance",
-      "url": "https://help.vibe.co/en/collections/5929518-compliance",
+      "url": "https://ad.nexus/help/en/collections/5929518-compliance",
       "description": "Video content guidelines"
     }
   ],
   "articles": [
     {
       "id": "8006470",
-      "slug": "how-much-does-advertising-with-vibe-cost",
-      "title": "How much does advertising with Vibe cost?",
+      "slug": "how-much-does-advertising-with-adnexusst",
+      "title": "How much does advertising with Adnexusst?",
       "description": null,
-      "url": "https://help.vibe.co/en/articles/8006470-how-much-does-advertising-with-vibe-cost",
+      "url": "https://ad.nexus/help/en/articles/8006470-how-much-does-advertising-with-adnexusst",
       "subcollection": "Get Started"
     },
     {
       "id": "8006474",
-      "slug": "how-does-audience-targeting-work-on-the-vibe-platform",
-      "title": "How does audience targeting work on the Vibe platform?",
+      "slug": "how-does-audience-targeting-work-on-the-adnexus-platform",
+      "title": "How does audience targeting work on the Adnexus platform?",
       "description": null,
-      "url": "https://help.vibe.co/en/articles/8006474-how-does-audience-targeting-work-on-the-vibe-platform",
+      "url": "https://ad.nexus/help/en/articles/8006474-how-does-audience-targeting-work-on-the-adnexus-platform",
       "subcollection": "Get Started"
     },
     {
       "id": "8016324",
-      "slug": "what-are-vibe-s-video-formatting-specs",
-      "title": "What are Vibe's video formatting specs?",
+      "slug": "what-are-adnexus-s-video-formatting-specs",
+      "title": "What are Adnexus's video formatting specs?",
       "description": null,
-      "url": "https://help.vibe.co/en/articles/8016324-what-are-vibe-s-video-formatting-specs",
+      "url": "https://ad.nexus/help/en/articles/8016324-what-are-adnexus-s-video-formatting-specs",
       "subcollection": "Get Started"
     },
     {
@@ -51,7 +51,7 @@
       "slug": "what-does-campaign-reporting-look-like",
       "title": "What does campaign reporting look like?",
       "description": null,
-      "url": "https://help.vibe.co/en/articles/8009750-what-does-campaign-reporting-look-like",
+      "url": "https://ad.nexus/help/en/articles/8009750-what-does-campaign-reporting-look-like",
       "subcollection": "Get Started"
     },
     {
@@ -59,23 +59,23 @@
       "slug": "how-can-i-evenly-distribute-my-campaign-budget-across-targets-and-channels",
       "title": "How can I evenly distribute my campaign budget across targets and channels?",
       "description": null,
-      "url": "https://help.vibe.co/en/articles/8016491-how-can-i-evenly-distribute-my-campaign-budget-across-targets-and-channels",
+      "url": "https://ad.nexus/help/en/articles/8016491-how-can-i-evenly-distribute-my-campaign-budget-across-targets-and-channels",
       "subcollection": "Get Started"
     },
     {
       "id": "8009899",
-      "slug": "what-channels-does-vibe-work-with",
-      "title": "What channels does Vibe work with?",
+      "slug": "what-channels-does-adnexus-work-with",
+      "title": "What channels does Adnexus work with?",
       "description": null,
-      "url": "https://help.vibe.co/en/articles/8009899-what-channels-does-vibe-work-with",
+      "url": "https://ad.nexus/help/en/articles/8009899-what-channels-does-adnexus-work-with",
       "subcollection": "Features"
     },
     {
       "id": "8016566",
-      "slug": "does-vibe-offer-account-management",
-      "title": "Does Vibe offer account management?",
-      "description": "Vibe is here to help, so matter your question.",
-      "url": "https://help.vibe.co/en/articles/8016566-does-vibe-offer-account-management",
+      "slug": "does-adnexus-offer-account-management",
+      "title": "Does Adnexus offer account management?",
+      "description": "Adnexus is here to help, so matter your question.",
+      "url": "https://ad.nexus/help/en/articles/8016566-does-adnexus-offer-account-management",
       "subcollection": "Features"
     },
     {
@@ -83,23 +83,23 @@
       "slug": "can-i-set-a-maximum-cpm-per-campaign",
       "title": "Can I set a maximum CPM per campaign?",
       "description": null,
-      "url": "https://help.vibe.co/en/articles/8009908-can-i-set-a-maximum-cpm-per-campaign",
+      "url": "https://ad.nexus/help/en/articles/8009908-can-i-set-a-maximum-cpm-per-campaign",
       "subcollection": "Features"
     },
     {
       "id": "8016560",
-      "slug": "does-vibe-offer-creative-services",
-      "title": "Does Vibe offer creative services?",
+      "slug": "does-adnexus-offer-creative-services",
+      "title": "Does Adnexus offer creative services?",
       "description": null,
-      "url": "https://help.vibe.co/en/articles/8016560-does-vibe-offer-creative-services",
+      "url": "https://ad.nexus/help/en/articles/8016560-does-adnexus-offer-creative-services",
       "subcollection": "Features"
     },
     {
       "id": "8016554",
       "slug": "are-ctv-ads-clickable",
       "title": "Are CTV ads clickable?",
-      "description": "Interactive CTV ad formats are changing all the time. Here's where Vibe stands.",
-      "url": "https://help.vibe.co/en/articles/8016554-are-ctv-ads-clickable",
+      "description": "Interactive CTV ad formats are changing all the time. Here's where Adnexus stands.",
+      "url": "https://ad.nexus/help/en/articles/8016554-are-ctv-ads-clickable",
       "subcollection": "Features"
     },
     {
@@ -107,7 +107,7 @@
       "slug": "can-i-advertise-on-live-sports-channels",
       "title": "Can I advertise on Live Sports channels?",
       "description": "Advertisers can now choose which live sports games to advertise next to.",
-      "url": "https://help.vibe.co/en/articles/8597998-can-i-advertise-on-live-sports-channels",
+      "url": "https://ad.nexus/help/en/articles/8597998-can-i-advertise-on-live-sports-channels",
       "subcollection": "Features"
     },
     {
@@ -115,47 +115,47 @@
       "slug": "how-to-upload-and-manage-a-manual-crm-audience",
       "title": "How to Upload and Manage a Manual CRM Audience",
       "description": null,
-      "url": "https://help.vibe.co/en/articles/11695875-how-to-upload-and-manage-a-manual-crm-audience",
+      "url": "https://ad.nexus/help/en/articles/11695875-how-to-upload-and-manage-a-manual-crm-audience",
       "subcollection": "Features"
     },
     {
       "id": "9806165",
       "slug": "klaviyo-integration",
       "title": "Klaviyo Integration",
-      "description": "You will learn how to synchronize and activate your Klaviyo audiences when using Vibe. Also, learn how Vibe sends an imp event to Klaviyo.",
-      "url": "https://help.vibe.co/en/articles/9806165-klaviyo-integration",
+      "description": "You will learn how to synchronize and activate your Klaviyo audiences when using Adnexus. Also, learn how Adnexus sends an imp event to Klaviyo.",
+      "url": "https://ad.nexus/help/en/articles/9806165-klaviyo-integration",
       "subcollection": "Features"
     },
     {
       "id": "12106078",
       "slug": "hubspot-integration",
       "title": "Hubspot Integration",
-      "description": "How to Synchronize, Import, and Use HubSpot Audiences with Vibe",
-      "url": "https://help.vibe.co/en/articles/12106078-hubspot-integration",
+      "description": "How to Synchronize, Import, and Use HubSpot Audiences with Adnexus",
+      "url": "https://ad.nexus/help/en/articles/12106078-hubspot-integration",
       "subcollection": "Features"
     },
     {
       "id": "8016550",
-      "slug": "what-type-of-content-does-vibe-allow",
-      "title": "What type of content does Vibe allow?",
-      "description": "Your creative can be approved quickly and easily right on the Vibe platform.",
-      "url": "https://help.vibe.co/en/articles/8016550-what-type-of-content-does-vibe-allow",
+      "slug": "what-type-of-content-does-adnexus-allow",
+      "title": "What type of content does Adnexus allow?",
+      "description": "Your creative can be approved quickly and easily right on the Adnexus platform.",
+      "url": "https://ad.nexus/help/en/articles/8016550-what-type-of-content-does-adnexus-allow",
       "subcollection": "Compliance"
     },
     {
       "id": "8009963",
-      "slug": "what-is-vibe-s-creative-approval-process-like",
-      "title": "What is Vibe's creative approval process like?",
+      "slug": "what-is-adnexus-s-creative-approval-process-like",
+      "title": "What is Adnexus's creative approval process like?",
       "description": null,
-      "url": "https://help.vibe.co/en/articles/8009963-what-is-vibe-s-creative-approval-process-like",
+      "url": "https://ad.nexus/help/en/articles/8009963-what-is-adnexus-s-creative-approval-process-like",
       "subcollection": "Compliance"
     },
     {
       "id": "8016547",
-      "slug": "are-political-ads-allowed-on-the-vibe-platform",
-      "title": "Are political ads allowed on the Vibe platform?",
+      "slug": "are-political-ads-allowed-on-the-adnexus-platform",
+      "title": "Are political ads allowed on the Adnexus platform?",
       "description": null,
-      "url": "https://help.vibe.co/en/articles/8016547-are-political-ads-allowed-on-the-vibe-platform",
+      "url": "https://ad.nexus/help/en/articles/8016547-are-political-ads-allowed-on-the-adnexus-platform",
       "subcollection": "Compliance"
     }
   ]

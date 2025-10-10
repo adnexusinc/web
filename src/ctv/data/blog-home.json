@@ -1,12 +1,12 @@
 {
-  "url": "https://www.vibe.co/blog",
-  "title": "Vibe Blog - CTV Advertising Insights & Best Practices",
+  "url": "https://ad.nexus/blog",
+  "title": "Adnexus Blog - CTV Advertising Insights & Best Practices",
   "meta": {
-    "description": "Discover the latest insights, trends, and best practices in Connected TV advertising. Learn how to maximize your CTV campaigns with Vibe.",
-    "og:title": "Vibe Blog - CTV Advertising Insights & Best Practices",
+    "description": "Discover the latest insights, trends, and best practices in Connected TV advertising. Learn how to maximize your CTV campaigns with Adnexus.",
+    "og:title": "Adnexus Blog - CTV Advertising Insights & Best Practices",
     "og:description": "Discover the latest insights, trends, and best practices in Connected TV advertising."
   },
-  "heading": "Vibe Blog",
+  "heading": "Adnexus Blog",
   "subheading": "Insights, trends, and best practices in CTV advertising",
   "posts": [
     {
@@ -18,7 +18,7 @@
       "date": "2025-10-01",
       "author": "Sarah Johnson",
       "readTime": "5 min read",
-      "href": "https://www.vibe.co/blog/ctv-advertising-trends-2025"
+      "href": "https://ad.nexus/blog/ctv-advertising-trends-2025"
     },
     {
       "id": "maximizing-roas-ctv",
@@ -29,7 +29,7 @@
       "date": "2025-09-28",
       "author": "Michael Chen",
       "readTime": "7 min read",
-      "href": "https://www.vibe.co/blog/maximizing-roas-ctv"
+      "href": "https://ad.nexus/blog/maximizing-roas-ctv"
     },
     {
       "id": "ai-powered-creative-optimization",
@@ -40,7 +40,7 @@
       "date": "2025-09-25",
       "author": "Emily Rodriguez",
       "readTime": "6 min read",
-      "href": "https://www.vibe.co/blog/ai-powered-creative-optimization"
+      "href": "https://ad.nexus/blog/ai-powered-creative-optimization"
     },
     {
       "id": "audience-targeting-best-practices",
@@ -51,7 +51,7 @@
       "date": "2025-09-22",
       "author": "David Kim",
       "readTime": "8 min read",
-      "href": "https://www.vibe.co/blog/audience-targeting-best-practices"
+      "href": "https://ad.nexus/blog/audience-targeting-best-practices"
     },
     {
       "id": "measuring-ctv-campaign-success",
@@ -62,7 +62,7 @@
       "date": "2025-09-19",
       "author": "Lisa Park",
       "readTime": "6 min read",
-      "href": "https://www.vibe.co/blog/measuring-ctv-campaign-success"
+      "href": "https://ad.nexus/blog/measuring-ctv-campaign-success"
     },
     {
       "id": "cross-channel-attribution-ctv",
@@ -73,7 +73,7 @@
       "date": "2025-09-15",
       "author": "James Wilson",
       "readTime": "9 min read",
-      "href": "https://www.vibe.co/blog/cross-channel-attribution-ctv"
+      "href": "https://ad.nexus/blog/cross-channel-attribution-ctv"
     }
   ]
 }

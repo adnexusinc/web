@@ -1,6 +1,6 @@
 {
-  "url": "https://www.vibe.co/industry/apps-gaming",
-  "title": "Apps & Gaming TV Advertising Solutions | Vibe",
+  "url": "https://ad.nexus/industry/apps-gaming",
+  "title": "Apps & Gaming TV Advertising Solutions | Adnexus",
   "meta": {
     "industry": "apps-gaming",
     "category": "industry-solutions"
@@ -10,14 +10,14 @@
       "Drive App Installs with TV Ads"
     ],
     "h2": [
-      "Track app installs and revenue directly from Vibe"
+      "Track app installs and revenue directly from Adnexus"
     ]
   },
   "sections": [
     {
       "id": "hero",
       "heading": "Drive App Installs with TV Ads",
-      "content": "Track app installs and revenue directly from Vibe"
+      "content": "Track app installs and revenue directly from Adnexus"
     },
     {
       "id": "key-features",
@@ -26,8 +26,8 @@
     },
     {
       "id": "customer-logos",
-      "heading": "Brands Using Vibe",
-      "content": "Gaming and app companies successfully using Vibe platform"
+      "heading": "Brands Using Adnexus",
+      "content": "Gaming and app companies successfully using Adnexus platform"
     },
     {
       "id": "testimonials",
@@ -81,7 +81,7 @@
   "testimonials": [
     {
       "company": "BagelCode",
-      "quote": "Vibe has been significantly over our net D7 ROAS goal",
+      "quote": "Adnexus has been significantly over our net D7 ROAS goal",
       "result": "2x+ D7 ROI",
       "metric": "2x+ D7 ROI"
     }
@@ -91,15 +91,15 @@
       "company": "BagelCode",
       "industry": "Apps & Gaming",
       "metric": "2x+ D7 ROI",
-      "title": "BagelCode Exceeds D7 ROAS Goals with Vibe",
-      "href": "https://www.vibe.co/blog/bagelcode-case-study"
+      "title": "BagelCode Exceeds D7 ROAS Goals with Adnexus",
+      "href": "https://ad.nexus/blog/bagelcode-case-study"
     }
   ],
   "integrations": [
     {
       "name": "AppsFlyer",
       "category": "Mobile Attribution",
-      "description": "Track app installs and attribution from Vibe campaigns"
+      "description": "Track app installs and attribution from Adnexus campaigns"
     },
     {
       "name": "Adjust",
@@ -133,12 +133,12 @@
   "callToAction": [
     {
       "text": "Get started",
-      "href": "https://www.vibe.co/get-started",
+      "href": "https://ad.nexus/get-started",
       "type": "primary"
     },
     {
       "text": "Book a demo",
-      "href": "https://www.vibe.co/book-a-demo",
+      "href": "https://ad.nexus/book-a-demo",
       "type": "secondary"
     }
   ],

@@ -1,15 +1,15 @@
 {
   "title": "Privacy Policy",
-  "company": "Vibe Advertising Inc",
-  "operatingAs": "Vibe.co",
-  "website": "www.Vibe.co.com",
+  "company": "Adnexus Advertising Inc",
+  "operatingAs": "Adnexus",
+  "website": "www.Adnexus.com",
   "lastUpdated": "2025-10-05",
-  "contactEmail": "support@vibe.co",
+  "contactEmail": "support@adnexus.co",
   "sections": [
     {
       "id": "introduction",
       "title": "Introduction",
-      "content": "Vibe Advertising Inc, operating as Vibe.co (\"we,\" \"us,\" or \"our\"), have designed this Vibe.co Website Privacy Policy (this \"Website Privacy Policy\") to help you understand how we may collect, use, and share information through, or in relation to, our corporate website, www.Vibe.co.com, and any other websites owned or operated by us (each, this \"Website\")."
+      "content": "Adnexus Advertising Inc, operating as Adnexus (\"we,\" \"us,\" or \"our\"), have designed this Adnexus Website Privacy Policy (this \"Website Privacy Policy\") to help you understand how we may collect, use, and share information through, or in relation to, our corporate website, www.Adnexus.com, and any other websites owned or operated by us (each, this \"Website\")."
     },
     {
       "id": "information-collection",
@@ -93,7 +93,7 @@
         "To personalize your user experience",
         "To communicate with you to provide technical or administrative support",
         "To conduct, manage, and grow our organization",
-        "To market and advertise to you, such as to provide information and updates on our Website or other news or information about Vibe.co",
+        "To market and advertise to you, such as to provide information and updates on our Website or other news or information about Adnexus",
         "To analyze, research, investigate, and improve the use of the Website",
         "To prevent, investigate, and provide fraud notifications, unlawful or criminal activity, unauthorized access to or use of personal information, our data system services, and to meet governmental and institutional policy obligations",
         "To investigate and resolve disputes and security issues",
@@ -179,8 +179,8 @@
     {
       "id": "contact",
       "title": "Contact Us",
-      "content": "If you have any questions about this Website Privacy Policy, please contact us at: support@vibe.co",
-      "email": "support@vibe.co"
+      "content": "If you have any questions about this Website Privacy Policy, please contact us at: support@adnexus.co",
+      "email": "support@adnexus.co"
     }
   ],
   "dataCollectionSummary": {
@@ -293,7 +293,7 @@
   "securityMeasures": "Not explicitly stated in the privacy policy",
   "metadata": {
     "scrapedDate": "2025-10-05",
-    "sourceUrl": "https://www.vibe.co/legal/privacy-policy",
+    "sourceUrl": "https://ad.nexus/legal/privacy-policy",
     "policyType": "Website Privacy Policy",
     "jurisdiction": "Not specified"
   }

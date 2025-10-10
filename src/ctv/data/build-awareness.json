@@ -1,6 +1,6 @@
 {
-  "url": "https://www.vibe.co/goals/build-awareness",
-  "title": "Build Awareness | Vibe",
+  "url": "https://ad.nexus/goals/build-awareness",
+  "title": "Build Awareness | Adnexus",
   "goal": "Build Awareness",
   "hero": {
     "headline": "Stay top of mind",
@@ -27,8 +27,8 @@
     "Tubi",
     "DirectTv"
   ],
-  "customer_count": "10,000+ performance marketers have generated millions in revenue with Vibe",
-  "main_heading": "5,000+ brands raise awareness with Vibe",
+  "customer_count": "10,000+ performance marketers have generated millions in revenue with Adnexus",
+  "main_heading": "5,000+ brands raise awareness with Adnexus",
   "features": [
     {
       "title": "Real-Time Impressions",
@@ -120,15 +120,15 @@
       "company": "Meshki",
       "metric": "$0.93",
       "metric_label": "Cost Per Session",
-      "title": "Meshki Beats ROAS and CPV Goals with Vibe.co",
-      "url": "/blog/meshki-beats-roas-and-cpv-goals-with-vibe-co"
+      "title": "Meshki Beats ROAS and CPV Goals with Adnexus",
+      "url": "/blog/meshki-beats-roas-and-cpv-goals-with-adnexus"
     },
     {
       "company": "Abuelos",
       "metric": "-80%",
       "metric_label": "Cost Per Session",
       "title": "Abuelo's Lowers Cost Per Session by 80%",
-      "url": "/blog/abuelo-s-x-vibe-case-study"
+      "url": "/blog/abuelo-s-x-adnexus-case-study"
     },
     {
       "company": "EdenPrairieCenter",
@@ -148,8 +148,8 @@
       "company": "Petfolk",
       "metric": "30%",
       "metric_label": "Acquisition Lift",
-      "title": "Petfolk Exceeds 30% Acquisition Lift with Vibe",
-      "url": "/blog/petfolk-exceeds-30-acquisition-lift-with-vibe"
+      "title": "Petfolk Exceeds 30% Acquisition Lift with Adnexus",
+      "url": "/blog/petfolk-exceeds-30-acquisition-lift-with-adnexus"
     },
     {
       "company": "FarmAndHome",
@@ -170,27 +170,27 @@
       "metric": "728%",
       "metric_label": "ROAS",
       "title": "How TruHeight Reached 728% ROAS with CTV",
-      "url": "/blog/vibe-x-truheight-vitamins-case-study"
+      "url": "/blog/adnexus-x-truheight-vitamins-case-study"
     },
     {
       "company": "Hoodsly",
       "metric": "409%",
       "metric_label": "ROAS",
-      "title": "409% ROAS for Hoodsly with Vibe",
-      "url": "/blog/case-study-vibe-hoodsly"
+      "title": "409% ROAS for Hoodsly with Adnexus",
+      "url": "/blog/case-study-adnexus-hoodsly"
     },
     {
       "company": "SotaClothing",
       "metric": "$0.70",
       "metric_label": "CPPV",
-      "title": "How Sota Clothing Got their CPPV Below $0.70 with Vibe & Klaviyo",
+      "title": "How Sota Clothing Got their CPPV Below $0.70 with Adnexus & Klaviyo",
       "url": "/blog/apparel-brand-crushes-roi-goals-with-ctv"
     },
     {
       "company": "KingKanine",
       "metric": "165%",
       "metric_label": "ROAS",
-      "title": "How King Kanine Reached 165% ROAS with Vibe's ML",
+      "title": "How King Kanine Reached 165% ROAS with Adnexus's ML",
       "url": "/blog/pet-brand-reaches-new-highs-with-ctv"
     },
     {
@@ -204,8 +204,8 @@
       "company": "BrandedBills",
       "metric": "2,000%",
       "metric_label": "ROAS",
-      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Vibe",
-      "url": "/blog/vibe-supercharges-apparel-brand-s-performance-campaigns"
+      "title": "How Branded Bills Hit 2000% ROAS with Klaviyo and Adnexus",
+      "url": "/blog/adnexus-supercharges-apparel-brand-s-performance-campaigns"
     },
     {
       "company": "CarStickers",
@@ -218,8 +218,8 @@
       "company": "SmartLiner",
       "metric": "1,635%",
       "metric_label": "ROAS",
-      "title": "SmartLiner Experiments and Wins with Vibe.co",
-      "url": "/blog/smartliner-experiments-and-wins-with-vibe-co"
+      "title": "SmartLiner Experiments and Wins with Adnexus",
+      "url": "/blog/smartliner-experiments-and-wins-with-adnexus"
     },
     {
       "company": "MorrisMedia",
@@ -239,8 +239,8 @@
       "company": "Sijo",
       "metric": "3.2x",
       "metric_label": "Average Order Value",
-      "title": "Sijo Home Upsells with Klaviyo and Vibe",
-      "url": "/blog/sijo-home-upsells-with-klaviyo-and-vibe"
+      "title": "Sijo Home Upsells with Klaviyo and Adnexus",
+      "url": "/blog/sijo-home-upsells-with-klaviyo-and-adnexus"
     },
     {
       "company": "Zoriz",
@@ -331,7 +331,7 @@
     "reach": "120M households",
     "channels": "500+ premium apps and channels",
     "customers": "10,000+ performance marketers",
-    "brands": "5,000+ brands raise awareness with Vibe"
+    "brands": "5,000+ brands raise awareness with Adnexus"
   },
   "scraped_at": "2025-10-05"
 }

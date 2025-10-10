@@ -1,12 +1,12 @@
 {
-  "pageTitle": "Vibe: Streaming & Connected TV Advertising Platform",
-  "pageUrl": "https://www.vibe.co/features/apps-channels",
+  "pageTitle": "Adnexus: Streaming & Connected TV Advertising Platform",
+  "pageUrl": "https://ad.nexus/features/apps-channels",
   "scrapedDate": "2025-10-05",
   "heading": "The best streaming has to offer",
   "description": "Engage with your audience during their favorite shows and live events.",
   "inventorySection": {
     "title": "Apps & Channels inventory",
-    "subtitle": "Explore Vibe's streaming inventory.",
+    "subtitle": "Explore Adnexus's streaming inventory.",
     "searchFunctionality": {
       "enabled": true,
       "placeholder": "Search for a channel",
@@ -303,6 +303,6 @@
   "metadata": {
     "note": "This data represents featured channels only. Total inventory includes 195+ local news channels and additional channels across all categories.",
     "totalCategorizedChannels": 548,
-    "dataSource": "Vibe.co Apps & Channels page"
+    "dataSource": "Adnexus Apps & Channels page"
   }
 }
