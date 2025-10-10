@@ -28,7 +28,7 @@ export default function IncreaseSales() {
               </div>
               {data.stats && (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-                  {Object.values(data.stats).map((stat: any, index) => (
+                  {Object.values(data.stats).map((stat, index) => (
                     <div key={index} className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6">
                       <div className="text-4xl font-bold text-white mb-2">{stat.value}</div>
                       <div className="text-sm text-white">{stat.label}</div>
@@ -47,7 +47,7 @@ export default function IncreaseSales() {
               <p className="text-white text-lg max-w-3xl mx-auto">{data.customer_count}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {data.features.map((feature: any, index: number) => (
+              {data.features.map((feature, index: number) => (
                 <div key={index} className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-white transition-all duration-300 hover:shadow-2xl hover:shadow-gray-900/20">
                   <div className="mb-4"><DollarSign className="h-10 w-10 text-white" /></div>
                   <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
@@ -61,7 +61,7 @@ export default function IncreaseSales() {
           <div className="container mx-auto px-6">
             <div className="text-center mb-12"><h2 className="text-3xl font-bold mb-4">Explore More Goals</h2></div>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-              {data.related_goals.map((goal: any, index: number) => (
+              {data.related_goals.map((goal, index: number) => (
                 <Link key={index} to={goal.url} className="bg-gray-800 border border-gray-700 rounded-xl p-6 text-center hover:border-white hover:bg-gray-700 transition-all duration-300">
                   <div className="text-lg font-semibold">{goal.name}</div>
                 </Link>

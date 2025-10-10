@@ -36,7 +36,7 @@ export default function FeaturesAiOptimization() {
               <p className="text-white text-lg max-w-3xl mx-auto">{data.customer_count || 'Trusted by thousands of advertisers'}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {data.features && data.features.map((feature: any, index: number) => (
+              {data.features && data.features.map((feature, index: number) => (
                 <div key={index} className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-white transition-all duration-300 hover:shadow-2xl hover:shadow-gray-900/20">
                   <div className="mb-4"><Sparkles className="h-10 w-10 text-white" /></div>
                   <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
@@ -54,7 +54,7 @@ export default function FeaturesAiOptimization() {
             </div>
             {data.success_stories && (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {data.success_stories.slice(0, 9).map((story: any, index: number) => (
+                {data.success_stories.slice(0, 9).map((story, index: number) => (
                   <div key={index} className="bg-gray-900 border border-gray-800 rounded-xl p-6 hover:border-white transition-all duration-300">
                     <div className="text-5xl font-bold text-white mb-2">{story.metric}</div>
                     <div className="text-sm text-gray-500 mb-4">{story.metric_label}</div>

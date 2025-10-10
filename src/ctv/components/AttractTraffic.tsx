@@ -39,7 +39,7 @@ export default function AttractTraffic() {
               {/* Stats */}
               {data.stats && (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-                  {Object.values(data.stats).map((stat: any, index) => (
+                  {Object.values(data.stats).map((stat, index) => (
                     <div key={index} className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-2xl p-6">
                       <div className="text-4xl font-bold text-white mb-2">
                         {stat.value}
@@ -71,7 +71,7 @@ export default function AttractTraffic() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {data.features.map((feature: any, index: number) => (
+              {data.features.map((feature, index: number) => (
                 <div
                   key={index}
                   className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-white transition-all duration-300 hover:shadow-2xl hover:shadow-gray-900/20"
@@ -95,7 +95,7 @@ export default function AttractTraffic() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
-              {data.related_goals.map((goal: any, index: number) => (
+              {data.related_goals.map((goal, index: number) => (
                 <Link
                   key={index}
                   to={goal.url}
