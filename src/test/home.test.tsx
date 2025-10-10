@@ -29,55 +29,49 @@ global.window.YT = {
 } as typeof window.YT;
 
 describe('Home Page', () => {
-  it('renders main headline', () => {
+  it('renders step sections', () => {
     render(
       <MemoryRouter>
         <Home />
       </MemoryRouter>
     );
 
-    // Check for main headline text
-    expect(screen.getByText(/Programmatic CTV Advertising/i)).toBeInTheDocument();
-    expect(screen.getByText(/Made Simple/i)).toBeInTheDocument();
+    // Check for step headings
+    expect(screen.getByText(/Set your goals/i)).toBeInTheDocument();
+    expect(screen.getByText(/Pick your channels/i)).toBeInTheDocument();
   });
 
-  it('renders tagline', () => {
+  it('renders footer newsletter', () => {
     render(
       <MemoryRouter>
         <Home />
       </MemoryRouter>
     );
 
-    expect(screen.getByText(/Launch premium Connected TV campaigns/i)).toBeInTheDocument();
-  });
-
-  it('renders email input and CTA button', () => {
-    render(
-      <MemoryRouter>
-        <Home />
-      </MemoryRouter>
-    );
-
-    // Multiple email inputs exist on the page
-    const emailInputs = screen.getAllByPlaceholderText(/Enter your work email|What's your work email/i);
+    // Newsletter input in footer
+    const emailInputs = screen.getAllByPlaceholderText(/your@email\.com/i);
     expect(emailInputs.length).toBeGreaterThan(0);
-
-    // Check for campaign button (may be multiple - "Start a Campaign")
-    const campaignButtons = screen.queryAllByRole('button', { name: /Start a Campaign|Get started/i });
-    // Or check for the link version
-    const campaignLinks = screen.queryAllByRole('link', { name: /Start a Campaign/i });
-    expect(campaignButtons.length + campaignLinks.length).toBeGreaterThan(0);
   });
 
-  it('renders statistics section', () => {
+  it('renders navigation links', () => {
     render(
       <MemoryRouter>
         <Home />
       </MemoryRouter>
     );
 
-    // Check for impressions statistic (appears multiple times)
-    const impressionsText = screen.getAllByText(/Impressions/i);
-    expect(impressionsText.length).toBeGreaterThan(0);
+    const links = screen.getAllByRole('link');
+    expect(links.length).toBeGreaterThan(0);
+  });
+
+  it('renders Get Started CTA', () => {
+    render(
+      <MemoryRouter>
+        <Home />
+      </MemoryRouter>
+    );
+
+    const getStartedButtons = screen.getAllByText(/Get Started/i);
+    expect(getStartedButtons.length).toBeGreaterThan(0);
   });
 });

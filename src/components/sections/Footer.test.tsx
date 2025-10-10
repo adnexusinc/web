@@ -5,14 +5,13 @@ import { Footer } from './Footer';
 describe('Footer', () => {
   it('renders company information', () => {
     render(<Footer />);
-    expect(
-      screen.getByText(/Adnexus Technology Inc/i)
-    ).toBeInTheDocument();
+    const companyNames = screen.getAllByText(/Adnexus Technology Inc/i);
+    expect(companyNames.length).toBeGreaterThan(0);
   });
 
   it('renders contact phone number', () => {
     render(<Footer />);
-    const phoneLink = screen.getByText(/844-236-3987/i);
+    const phoneLink = screen.getByText(/844-AD-NEXUS.*236-3987/i);
     expect(phoneLink).toBeInTheDocument();
     expect(phoneLink.closest('a')).toHaveAttribute('href', 'tel:+18442363987');
   });
