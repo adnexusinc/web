@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navigation } from '@/components/Navigation';
-import { Footer } from '@/components/Footer';
+import { Footer } from '@/components/sections/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Phone, Mail, MapPin, MessageSquare, Clock, MessageCircle } from 'lucide-react';

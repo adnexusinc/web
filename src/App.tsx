@@ -26,6 +26,7 @@ const Enterprise = lazy(() => import("./pages/Enterprise"));
 const Newsletter = lazy(() => import("./pages/Newsletter"));
 const BookDemo = lazy(() => import("./pages/BookDemo"));
 const GetStarted = lazy(() => import("./pages/GetStarted"));
+const Help = lazy(() => import("./pages/Help"));
 
 // Agency pages (full Hanzo Agency site under /agency)
 const AgencyIndex = lazy(() => import("./agency/pages/Index"));
@@ -174,6 +175,8 @@ const App = () => (
             <Route path="/enterprise" element={<Enterprise />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/help" element={<Help />} />
+            <Route path="/support" element={<Help />} />
 
             {/* Services & Solutions - Redirect to Agency */}
             <Route path="/services" element={<Navigate to="/agency/services" replace />} />

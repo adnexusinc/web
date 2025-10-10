@@ -25,6 +25,8 @@ const routes = [
   // Main pages
   '/contact',
   '/faq',
+  '/help',
+  '/support',
   '/pricing',
   '/about',
   '/company',

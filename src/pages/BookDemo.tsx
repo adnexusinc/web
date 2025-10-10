@@ -3,7 +3,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { CalComEmbed } from '@/components/CalComEmbed';
-import { ArrowRight, Star, Calendar } from 'lucide-react';
+import { ArrowRight, Star, Calendar, Zap } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
 
 export default function BookDemo() {
   const [step, setStep] = useState(1);
@@ -13,6 +14,36 @@ export default function BookDemo() {
     budget: '',
     name: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleBookDemo = async () => {
+    if (!formData.budget) return;
+
+    setIsSubmitting(true);
+
+    try {
+      // Save to contacts table
+      const { error } = await supabase
+        .from('contacts')
+        .insert({
+          name: formData.name,
+          email: formData.email,
+          company: formData.industry,
+          interest_area: 'demo_request',
+          message: `Budget: ${formData.budget}`,
+        });
+
+      if (error) console.error('Error saving:', error);
+
+      // Move to choice page
+      setStep(4);
+    } catch (error) {
+      console.error('Error:', error);
+      setStep(4); // Continue anyway
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   const industries = ['Ecommerce', 'Apps & Gaming', 'B2B/SaaS', 'Finance', 'Healthcare', 'Automotive', 'Education', 'Entertainment', 'Retail', 'Other'];
   const budgets = ['Under $1K/mo', '$1K-$5K/mo', '$5K-$10K/mo', '$10K-$25K/mo', '$25K-$50K/mo', '$50K+/mo'];
@@ -97,17 +128,49 @@ export default function BookDemo() {
                   </SelectContent>
                 </Select>
                 <Button
-                  onClick={() => setStep(4)}
-                  disabled={!formData.budget}
+                  onClick={handleBookDemo}
+                  disabled={!formData.budget || isSubmitting}
                   className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white"
                 >
-                  Get Started <ArrowRight className="ml-2" />
+                  {isSubmitting ? 'Saving...' : 'Continue'} <ArrowRight className="ml-2" />
                 </Button>
               </div>
             </div>
           )}
 
           {step === 4 && (
+            <div>
+              <h2 className="text-3xl font-bold mb-4 text-black">Choose Your Path</h2>
+              <p className="text-gray-600 mb-8">How would you like to get started?</p>
+
+              <div className="space-y-4">
+                <Button
+                  onClick={() => window.location.href = 'https://dsp.ad.nexus/signup'}
+                  className="w-full h-auto py-6 bg-blue-600 hover:bg-blue-700 text-white text-left flex flex-col items-start"
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <Zap className="h-5 w-5" />
+                    <span className="text-lg font-bold">Self-Service</span>
+                  </div>
+                  <span className="text-sm text-white/90">Launch your campaign now. Like Facebook Ads for TV.</span>
+                </Button>
+
+                <Button
+                  onClick={() => setStep(5)}
+                  variant="outline"
+                  className="w-full h-auto py-6 border-2 border-gray-300 hover:border-gray-400 hover:bg-gray-50 text-left flex flex-col items-start"
+                >
+                  <div className="flex items-center gap-2 mb-2">
+                    <Calendar className="h-5 w-5" />
+                    <span className="text-lg font-bold text-black">Talk to Sales</span>
+                  </div>
+                  <span className="text-sm text-gray-600">Get expert help. Schedule a 15-minute consultation.</span>
+                </Button>
+              </div>
+            </div>
+          )}
+
+          {step === 5 && (
             <div className="h-full">
               <CalComEmbed
                 calLink="adnexus/15min"

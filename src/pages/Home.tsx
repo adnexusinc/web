@@ -806,7 +806,7 @@ const Home = () => {
           </div>
 
           <div className="text-center">
-            <a href="/get-started/" className="inline-block">
+            <a href="/book-demo/" className="inline-block">
               <Button size="lg" className="bg-white text-black hover:bg-gray-100 px-12 py-6 text-lg">
                 Start Your First Campaign
                 <ArrowRight className="ml-2 h-5 w-5" />
