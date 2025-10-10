@@ -12,8 +12,9 @@ describe('Navigation', () => {
   it('renders main navigation links', () => {
     render(<Navigation />);
     expect(screen.getByText('Product')).toBeInTheDocument();
-    expect(screen.getByText('Solutions')).toBeInTheDocument();
     expect(screen.getByText('Pricing')).toBeInTheDocument();
+    expect(screen.getByText('Case Studies')).toBeInTheDocument();
+    expect(screen.getByText('Help')).toBeInTheDocument();
   });
 
   it('adjusts position when banner is visible', () => {
