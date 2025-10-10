@@ -319,140 +319,24 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
             </Link>
 
             <NavigationMenu className="hidden lg:flex">
-              <NavigationMenuList>
+              <NavigationMenuList className="gap-2">
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent">
-                    Product
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <div className="w-screen max-w-5xl p-8">
-                      <div className="grid md:grid-cols-3 gap-8">
-                        {/* By Goal Panel */}
-                        <div className="md:col-span-1">
-                          <h3 className="text-xs font-semibold text-muted-foreground/60 uppercase tracking-wider mb-4 px-2">By Goal</h3>
-                          <ul className="space-y-1">
-                            {goalItems.map((item) => (
-                              <ListItem
-                                key={item.title}
-                                title={item.title}
-                                href={item.href}
-                                icon={item.icon}
-                                className="opacity-75 hover:opacity-100"
-                              >
-                                {item.description}
-                              </ListItem>
-                            ))}
-                          </ul>
-                        </div>
-
-                        {/* By Feature Panel */}
-                        <div className="md:col-span-1">
-                          <h3 className="text-xs font-semibold text-muted-foreground/60 uppercase tracking-wider mb-4 px-2">By Feature</h3>
-                          <ul className="space-y-1">
-                            {featureItems.map((item) => (
-                              <ListItem
-                                key={item.title}
-                                title={item.title}
-                                href={item.href}
-                                icon={item.icon}
-                                className="opacity-75 hover:opacity-100"
-                              >
-                                {item.description}
-                              </ListItem>
-                            ))}
-                          </ul>
-                        </div>
-
-                        {/* Studio CTA Panel */}
-                        <div className="md:col-span-1 flex flex-col justify-center p-6 bg-gradient-to-br from-purple-600/10 to-blue-600/10 rounded-lg border border-purple-600/20">
-                          <Film className="h-14 w-14 text-purple-400 mx-auto mb-4" />
-                          <h3 className="text-xl font-bold mb-2 text-center">Ad Studio</h3>
-                          <p className="text-sm text-muted-foreground mb-6 text-center">
-                            Create a TV ad spot for free in 2 minutes.
-                          </p>
-                          <a
-                            href="https://studio.ad.nexus"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg text-sm font-semibold text-center transition-colors"
-                          >
-                            Open Studio →
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent">
-                    Solutions
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-screen max-w-3xl gap-3 p-4">
-                      {solutionItems.map((item) => (
-                        <ListItem
-                          key={item.title}
-                          title={item.title}
-                          href={item.href}
-                          icon={item.icon}
-                          badge={item.badge}
-                        >
-                          {item.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent">
-                    Resources
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-screen max-w-3xl gap-3 p-4">
-                      {resourcesItems.map((item) => (
-                        <ListItem
-                          key={item.title}
-                          title={item.title}
-                          href={item.href}
-                          icon={item.icon}
-                          badge={item.badge}
-                        >
-                          {item.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent">
-                    Company
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-screen max-w-3xl gap-3 p-4">
-                      {companyItems.map((item) => (
-                        <ListItem
-                          key={item.title}
-                          title={item.title}
-                          href={item.href}
-                          icon={item.icon}
-                          badge={item.badge}
-                        >
-                          {item.description}
-                        </ListItem>
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <Link to="/pricing" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+                  <Link to="/pricing" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
                     Pricing
                   </Link>
                 </NavigationMenuItem>
 
+                <NavigationMenuItem>
+                  <Link to="/case-studies" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
+                    Case Studies
+                  </Link>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <Link to="/help" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground">
+                    Help
+                  </Link>
+                </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
           </div>
@@ -493,12 +377,12 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                   </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
-              <a href="/book-demo">
+              <Link to="/get-started">
                 <Button size="sm" className="group">
                   Get Started
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
-              </a>
+              </Link>
             </div>
 
             {/* Mobile Menu */}
@@ -510,90 +394,27 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
               </SheetTrigger>
               <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                 <div className="flex flex-col gap-6 mt-6">
-                  <div>
-                    <h3 className="font-semibold mb-3">By Goal</h3>
-                    <div className="space-y-2">
-                      {goalItems.map((item) => (
-                        <Link
-                          key={item.title}
-                          to={item.href}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="block p-2 rounded-lg hover:bg-accent transition-colors"
-                        >
-                          <div className="flex items-center gap-3">
-                            <item.icon className="w-4 h-4 text-primary" />
-                            <div>
-                              <div className="font-medium">{item.title}</div>
-                              <div className="text-xs text-muted-foreground">{item.description}</div>
-                            </div>
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div>
-                    <h3 className="font-semibold mb-3">By Feature</h3>
-                    <div className="space-y-2">
-                      {featureItems.slice(0, 3).map((item) => (
-                        <Link
-                          key={item.title}
-                          to={item.href}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="block p-2 rounded-lg hover:bg-accent transition-colors"
-                        >
-                          <div className="flex items-center gap-3">
-                            <item.icon className="w-4 h-4 text-primary" />
-                            <div>
-                              <div className="font-medium">{item.title}</div>
-                              <div className="text-xs text-muted-foreground">{item.description}</div>
-                            </div>
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Studio CTA for Mobile */}
-                  <div className="p-4 bg-gradient-to-br from-purple-600/10 to-blue-600/10 rounded-lg border border-purple-600/20">
-                    <Film className="h-8 w-8 text-purple-400 mb-2" />
-                    <h3 className="font-bold mb-1">Ad Studio</h3>
-                    <p className="text-xs text-muted-foreground mb-3">
-                      Create a TV ad spot for free in 2 minutes
-                    </p>
-                    <a
-                      href="https://studio.ad.nexus"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="block bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md text-sm font-medium text-center transition-colors"
-                    >
-                      Open Studio →
-                    </a>
-                  </div>
-
-                  <div>
-                    <h3 className="font-semibold mb-3">Solutions</h3>
-                    <div className="space-y-2">
-                      {solutionItems.map((item) => (
-                        <Link
-                          key={item.title}
-                          to={item.href}
-                          onClick={() => setIsMobileMenuOpen(false)}
-                          className="block p-2 rounded-lg hover:bg-accent transition-colors"
-                        >
-                          <div className="flex items-center gap-3">
-                            <item.icon className="w-4 h-4 text-primary" />
-                            <div>
-                              <div className="font-medium">{item.title}</div>
-                              <div className="text-xs text-muted-foreground">{item.description}</div>
-                            </div>
-                          </div>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-
+                  <Link
+                    to="/pricing"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg font-semibold hover:text-primary transition-colors"
+                  >
+                    Pricing
+                  </Link>
+                  <Link
+                    to="/case-studies"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg font-semibold hover:text-primary transition-colors"
+                  >
+                    Case Studies
+                  </Link>
+                  <Link
+                    to="/help"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="text-lg font-semibold hover:text-primary transition-colors"
+                  >
+                    Help
+                  </Link>
 
                   <div className="pt-4 border-t space-y-2">
                     <div className="px-2 py-1.5 text-sm font-semibold text-muted-foreground">
@@ -626,11 +447,11 @@ export const Navigation = ({ bannerVisible = false }: NavigationProps) => {
                         </div>
                       </Button>
                     </a>
-                    <a href="/book-demo" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Link to="/get-started" onClick={() => setIsMobileMenuOpen(false)}>
                       <Button variant="outline" className="w-full">
                         Get Started
                       </Button>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </SheetContent>
